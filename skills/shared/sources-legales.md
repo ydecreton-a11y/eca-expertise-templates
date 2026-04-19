@@ -80,3 +80,28 @@ Avant de conclure à l'inexistence : tenter au moins 2 stratégies différentes.
 | Majoration manquement délibéré | **40 %** | Art. 1729 CGI |
 | Majoration abus de droit | **80 %** | Art. L64 LPF |
 | Seuil DAS2 | **2 400 €**/bénéficiaire/an | BOI-BIC-DECLA-30-70-20 §140 |
+
+---
+
+## 5. Articles C. civ. clés — Droit patrimonial et successoral
+
+> Chargés par patrimonial-structuring via MCP Légifrance.
+> Vérifier systématiquement avant tout conseil.
+
+| Domaine | Articles | Code |
+|---------|---------|------|
+| Usufruit / Nue-propriété | Art. 578 à 624 | C. civ. |
+| Quasi-usufruit | Art. 587 | C. civ. |
+| Successions légales | Art. 720 à 892 | C. civ. |
+| Libéralités, donations | Art. 893 à 1099 | C. civ. |
+| Réserve héréditaire | Art. 912 à 930-5 | C. civ. |
+| RAAR | Art. 929 à 930-5 | C. civ. |
+| Régimes matrimoniaux | Art. 1387 à 1581 | C. civ. |
+| Changement de régime | Art. 1397 | C. civ. |
+| Communauté universelle | Art. 1526 | C. civ. |
+| Avantages matrimoniaux | Art. 1515 à 1525 | C. civ. |
+| Barème NP/usufruit | Art. 669 | CGI |
+| Abattements DMTG | Art. 779 à 790 G | CGI |
+| Assurance-vie fiscal | Art. 757 B et 990 I | CGI |
+| Exonération conjoint | Art. 796-0 bis | CGI |
+| IFI — assiette | Art. 964 à 983 | CGI |
