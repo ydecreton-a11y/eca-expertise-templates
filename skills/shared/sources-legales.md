@@ -105,3 +105,39 @@ Avant de conclure à l'inexistence : tenter au moins 2 stratégies différentes.
 | Assurance-vie fiscal | Art. 757 B et 990 I | CGI |
 | Exonération conjoint | Art. 796-0 bis | CGI |
 | IFI — assiette | Art. 964 à 983 | CGI |
+
+---
+
+## 6. Règles fiscales définitivement établies (ne pas recalculer de mémoire)
+
+| Règle | Valeur / Position | Source vérifiée |
+|-------|-------------------|-----------------|
+| PV 150-0 B ter + quotient 163-0 A | **JAMAIS applicable** — Art. 200 A, 2 ter CGI (taux historique, régime dérogatoire) | TA Bordeaux n°2301446 du 19/12/2024 — Cons. const. n°2016-538 QPC 22/04/2016 |
+| LMNP réintégration amortissements PV | Depuis **15/02/2025** — LF 2025 Art. 84, CGI Art. 150 VB III | Vérifier Art. 150 VB via MCP avant tout calcul LMNP |
+| Apport-cession + CDHR | Art. 150-0 F ter CGI neutralise le gain si RFR > 500 000 € | Vérifier via calcul-plus-value, jamais conclure à un avantage sans calcul CDHR |
+| DAS2 seuil 2024+ | **2 400 €** / bénéficiaire / an (ex 1 200 €) | BOFiP 12/02/2025, BOI-BIC-DECLA-30-70-20 §140 |
+
+---
+
+## 7. AUREP — Modules disponibles
+
+Base URL : `https://raw.githubusercontent.com/ydecreton-a11y/eca-expertise-templates/main/aurep/`
+
+| Module | Fichier | Sujets |
+|--------|---------|--------|
+| M5 | `M5_usufruit_article_13_5_CGI.md` | Usufruit, Art. 13-5 CGI, quasi-usufruit, imposition revenus en démembrement |
+| M8 | `M8_usufruit_droits_sociaux.md` | Usufruit de droits sociaux, dividendes en démembrement, droits de vote |
+| M10 | `M10_actualites_patrimoniales.md` | LMNP réforme 2025, abattement retraite, actualités LF 2026 |
+
+Fetcher si la demande touche : démembrement, quasi-usufruit, LMNP, régimes matrimoniaux, abattement retraite.
+
+---
+
+## 8. API Entreprises — SIREN auto-lookup
+
+```
+web_fetch("https://recherche-entreprises.api.gouv.fr/search?q=[SIREN_ou_denomination]&per_page=1")
+```
+
+Déclencher systématiquement quand un SIREN ou une dénomination sociale est fournie.
+Pré-remplit : dénomination exacte, forme juridique, capital, adresse, RCS, dirigeants.
