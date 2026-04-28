@@ -168,3 +168,174 @@ VI. RECOMMANDATIONS
 - Signature : Raleway gras sz=22, **#495864**, centré
 - Charger skill docx pour la mise en forme
 
+
+
+---
+
+## ENRICHISSEMENT — Templates GAP standardisés (Garantie d'Actif et de Passif)
+
+### Clauses GAP fréquemment recommandées
+
+**Clause de garantie générale d'actif et de passif :**
+> « Le Cédant garantit au Cessionnaire que les comptes de la Société à la date du
+> [date de référence] reflètent fidèlement l'actif et le passif de celle-ci, et
+> qu'aucun élément de passif non comptabilisé ou sous-évalué, ni aucune diminution
+> d'actif non comptabilisée ou surévaluée, n'est susceptible d'apparaître au-delà
+> de [seuil franchise] €, à raison de tout fait, acte ou omission antérieurs à la
+> Date de Réalisation. »
+
+**Clause de garantie spécifique fiscale :**
+> « Le Cédant garantit au Cessionnaire toute charge fiscale (impôts, taxes,
+> cotisations, intérêts, pénalités) afférente à la période antérieure à la Date de
+> Réalisation, qui viendrait à être réclamée à la Société dans le délai de
+> prescription légale, et non comptabilisée au bilan de référence. »
+
+**Clause de garantie sociale (litiges prud'homaux et URSSAF) :**
+> « Le Cédant garantit toute condamnation prononcée à l'encontre de la Société au
+> titre de litiges prud'homaux ou de redressements URSSAF afférents à des faits
+> antérieurs à la Date de Réalisation, à hauteur du montant non provisionné. »
+
+### Paramètres à négocier systématiquement
+
+| Paramètre | Valeur de référence ECA | Justification |
+|-----------|------------------------|---------------|
+| Plafond global | 25 % à 100 % du prix selon risque | Au-delà = perte de motivation cédant |
+| Seuil de franchise (de minimis) | 0,5 % à 1 % du prix | Évite les contentieux mineurs |
+| Seuil de déclenchement (panier) | 1 % à 2 % du prix | Cumul des préjudices avant activation |
+| Durée garantie générale | 18 à 36 mois | Borne du contrôle fiscal du cessionnaire |
+| Durée garantie fiscale/sociale | Prescription légale (3 à 10 ans) | Aligné sur risque de redressement |
+| Garantie de la garantie | Séquestre / cautionnement bancaire / GAP miroir | Solvabilité du cédant à long terme |
+
+### Cas spécifiques
+
+**Litige prud'homal en cours dans la cible :**
+1. Vérifier provisionnement comptable
+2. Si provisionné insuffisamment → demander complément ou clause spécifique pour le delta
+3. Cession ne purge pas le risque (contrat de travail transféré L1224-1 ou maintenu)
+4. Inclure dans GAP avec seuil zéro (pas de franchise sur litiges identifiés)
+
+**Data room incomplète :**
+1. Identifier les zones non documentées (lister précisément)
+2. Demander complément avant signature LOI
+3. Si refus du cédant → clauses GAP renforcées sur les zones grises
+4. Mention « représentations à jour de la connaissance du Cédant » à proscrire seule
+5. ⚠️ Signaler dans l'executive summary du rapport DD : « DD partielle — zones non documentées : [liste] »
+
+---
+
+## EXEMPLE — Rapport DD bien formé (extrait)
+
+**Contexte :** Acquisition 100% des titres de SAS Plâtrerie X (25 salariés, CA 4,2 M€).
+
+**Executive Summary (extrait) :**
+> « **Appréciation globale : 🟠 Risque modéré.**
+>
+> Trois points appellent une vigilance particulière :
+> 1. Deux contrats clients (60 % du CA cumulé) comportent une clause de
+>    changement de contrôle exigeant l'accord préalable du donneur d'ordre.
+>    **Action :** purger les clauses avant closing (condition suspensive).
+> 2. Un litige prud'homal en cours (réclamation 84 k€) provisionné à 30 k€.
+>    **Action :** clause GAP spécifique non plafonnée, sans franchise.
+> 3. Redressement URSSAF en cours d'instruction (montant non chiffré).
+>    **Action :** clause GAP fiscale/sociale sur prescription légale + séquestre.
+>
+> Aucun point bloquant identifié, opération réalisable sous réserve des trois
+> conditions ci-dessus. »
+
+**❌ Ce qui est insuffisant :**
+> « La cible présente quelques risques. Une GAP est recommandée. »
+
+
+---
+
+## 🛡️ PHASE FINALE — Auto-déclenchement legal-hallucination-checker
+
+⚠️ **OBLIGATOIRE — Étape non sautable.**
+
+Avant remise du livrable au client ou à Yoann, déclencher automatiquement :
+
+```
+1. Charger skill legal-hallucination-checker
+2. Extraire toutes les références citées :
+   — Articles de code (CGI, C. civ., C. com., LPF, CMF, CSS, CPI...)
+   — Jurisprudence (CE, Cass., CAA, TA, Cons. const.)
+   — BOFiP (BOI-...)
+   — Lois, ordonnances, décrets
+3. Vérifier chacune via MCP Légifrance avec au minimum 2 stratégies de recherche
+4. Produire le rapport de vérification (score /100)
+5. Décision :
+   — Si score ≥ 70 et 0 ⛔ HALLUCINATION → livrer + mentionner « Vérifié — score [N]/100 »
+   — Si score < 70 ou présence de ⛔ HALLUCINATION → NE PAS LIVRER
+     → Corriger les références fautives → relancer le checker → attendre validation Yoann
+```
+
+**Marquage final obligatoire dans le livrable :**
+> *« Vérifié via legal-hallucination-checker — [N] références contrôlées — score [X]/100 »*
+
+Cette mention est la signature qualité ECA. Sa présence engage Yoann ;
+son absence signifie que la vérification n'a pas eu lieu.
+
+
+---
+
+## ✅ CHECKLIST AVANT REMISE
+
+Valider mentalement chaque point avant d'envoyer la réponse :
+
+- [ ] Toutes les références citées vérifiées via MCP Légifrance (Pattern 3 ci-dessous)
+- [ ] Zones d'incertitude explicitement balisées avec ⚠️ INCERTAIN
+- [ ] La conclusion répond directement et précisément à la question posée
+- [ ] Niveau de risque justifié par un argumentaire (pas seulement affiché)
+- [ ] Aucune position incertaine présentée comme certaine
+- [ ] legal-hallucination-checker déclenché et score ≥ 70/100
+- [ ] Charte graphique ECA respectée si livrable Word (#999999 / #C00000 / #495864)
+- [ ] Référence YD + expert-comptable signataire mentionnée
+- [ ] Périmètre DD (titres / fonds / fusion) confirmé en tête
+- [ ] Grille 4 domaines couverte (juridique / fiscal / social / actifs)
+- [ ] Cotation 🔴/🟠/🟢 portée sur chaque risque identifié
+- [ ] Clauses GAP recommandées formulées concrètement
+- [ ] Conditions suspensives suggérées listées
+- [ ] Données de la data room manquantes signalées explicitement
+
+**Si un seul item n'est pas validé → ne pas livrer. Reprendre la phase concernée.**
+
+
+---
+
+## 🔍 ANNEXE — Commandes MCP Légifrance exactes
+
+Ne plus écrire « via MCP Légifrance » sans la commande. Utiliser les patterns suivants :
+
+### Articles de code
+```
+rechercher_code(code_name="Code général des impôts", search="[numéro]", champ="NUM_ARTICLE")
+rechercher_code(code_name="Code de commerce", search="[numéro]", champ="NUM_ARTICLE")
+rechercher_code(code_name="Code civil", search="[numéro]", champ="NUM_ARTICLE")
+rechercher_code(code_name="Livre des procédures fiscales", search="L. [numéro]", champ="NUM_ARTICLE")
+rechercher_code(code_name="Code monétaire et financier", search="L. [numéro]", champ="NUM_ARTICLE")
+rechercher_code(code_name="Code du travail", search="L. [numéro]", champ="NUM_ARTICLE")
+```
+
+### Jurisprudence
+```
+# Conseil d'État, CAA, TA
+rechercher_jurisprudence_administrative(search="[numéro affaire]", champ="NUM_AFFAIRE")
+# Cour de cassation
+rechercher_jurisprudence_judiciaire(search="[numéro pourvoi]", champ="NUM_AFFAIRE")
+# Conseil constitutionnel
+rechercher_decisions_constitutionnelles(search="[N°-AAAA QPC]")
+```
+
+### Doctrine et textes officiels
+```
+# BOFiP
+web_fetch("https://bofip.impots.gouv.fr/bofip/[identifiant]")
+# Loi / ordonnance / décret
+recherche_journal_officiel(search="[numéro ou titre]", text_types=["LOI"])
+# Texte consolidé
+rechercher_dans_texte_legal(search="[mots-clés]")
+```
+
+**Règle de robustesse** : avant de conclure à l'inexistence d'une référence,
+tenter au minimum 2 stratégies (numéro exact + mots-clés + date approximative).
+Une référence non trouvée via MCP ≠ référence inexistante.

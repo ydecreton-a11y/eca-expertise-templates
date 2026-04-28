@@ -158,3 +158,153 @@ Contactez [Nom] au [Téléphone] pour en discuter.
 **❌ Ce qui est insuffisant :**
 > "Suite à la LFSS 2026 (loi n°2025-1403), le taux de CSG sur les revenus
 > du patrimoine est porté à 10,6% conformément à l'Art. L136-8 CSS."
+
+
+---
+
+## ENRICHISSEMENT — Template Fiche Pratique 1 page
+
+Format compact pour les sujets où le client a besoin d'un calendrier, d'une checklist
+ou d'un tableau de bord, plutôt qu'un texte explicatif.
+
+```
+[TITRE — sujet en 4-7 mots]
+Fiche pratique ECA EXPERTISE — [date]
+
+EN BREF
+[3 à 4 lignes — le sujet, son enjeu, la décision à prendre]
+
+CALENDRIER
+| Étape | Quand | Qui |
+|-------|-------|-----|
+| [...] | J+0 | Client |
+| [...] | J+30 | ECA |
+| [...] | J+90 | Notaire |
+
+POINTS D'ATTENTION
+🔴 [point bloquant si pas traité]
+🟠 [point à anticiper]
+🟢 [point favorable]
+
+QUESTIONS FRÉQUENTES
+Q : [question 1]
+R : [réponse en 2-3 lignes]
+
+CONTACT
+[Nom] — [téléphone] — [email]
+```
+
+**Quand utiliser ce format :**
+- Le sujet a une dimension temporelle (Dutreil, donation progressive, OBO)
+- Le client doit suivre des étapes successives
+- Le sujet est récurrent dans la clientèle ECA et bénéficie d'un format réutilisable
+
+---
+
+## ENRICHISSEMENT — Profils clients étendus
+
+| Profil | Registre | Spécificités |
+|--------|----------|--------------|
+| Héritier (succession en cours) | Empathique, pédagogique, pas de pression temporelle (deuil) | Délai 6 mois prolongé / option succession |
+| Conjoint survivant | Rassurant, étapes claires, focus sur ses droits | Quasi-usufruit, pension de réversion, droit viager |
+| Dirigeant en cession imminente | Direct, chiffré, orienté décision | Calendrier serré, fiscalité chiffrée |
+| Bénéficiaire d'assurance-vie | Pédagogique sur la fiscalité spécifique (990 I / 757 B) | Distinguer primes < 70 ans / > 70 ans |
+| Donataire (donation reçue) | Explicatif sur les obligations futures (rappel 15 ans) | Réintégration successorale, base de calcul |
+| Particulier en patrimoine immo | Concret, illustré par cas chiffrés | Régime matrimonial impact, IFI seuil 1,3M€ |
+
+**Règle transverse** : un client en situation émotionnelle (deuil, divorce, conflit
+familial) ne lit pas une note de la même façon qu'un dirigeant en pleine forme.
+Calibrer le ton avant d'optimiser le contenu.
+
+---
+
+## EXEMPLE — Fiche pratique Dutreil bien formée
+
+```
+DONATION-TRANSMISSION DUTREIL — VOTRE CALENDRIER
+Fiche pratique ECA EXPERTISE — Avril 2026
+
+EN BREF
+Vous transmettez votre entreprise familiale via un Pacte Dutreil. Cette opération
+réduit l'impôt de donation de 75 %, mais impose des engagements précis sur 6 ans
+(LF 2026). Voici le calendrier à suivre.
+
+CALENDRIER
+| Étape | Quand | Qui |
+|-------|-------|-----|
+| Engagement collectif de conservation (2 ans min.) | M-24 | Vous + co-signataires |
+| Évaluation de la société (méthode validée) | M-3 | Expert-comptable + auditeur |
+| Donation devant notaire (acte authentique) | M-0 | Vous + notaire + donataires |
+| Engagement individuel des donataires (4 ans) | À la donation | Donataires (signature acte) |
+| Direction effective par un signataire (3 ans) | À la donation et après | Vous ou un donataire |
+
+POINTS D'ATTENTION
+🔴 Cession partielle pendant l'engagement = remise en cause totale de l'avantage
+🟠 Distribution trop importante de réserves pourrait être requalifiée
+🟢 Possibilité de cumul avec donation en nue-propriété (réduction supplémentaire)
+
+QUESTIONS FRÉQUENTES
+Q : Que se passe-t-il si je décède pendant l'engagement collectif ?
+R : Vos héritiers reprennent l'engagement à votre place. Pas de remise en cause si
+   l'engagement est tenu jusqu'au terme initial.
+
+Q : Puis-je vendre une partie des titres pour faire face à un besoin urgent ?
+R : Non, sauf cession entre signataires de l'engagement collectif. Toute autre
+   cession entraîne perte de l'abattement.
+
+CONTACT
+Yoann Decreton — 03 27 72 00 10 — accueilcambrai@eca-groupe.com
+```
+
+
+---
+
+## 🛡️ PHASE FINALE — Auto-déclenchement legal-hallucination-checker
+
+⚠️ **OBLIGATOIRE — Étape non sautable.**
+
+Avant remise du livrable au client ou à Yoann, déclencher automatiquement :
+
+```
+1. Charger skill legal-hallucination-checker
+2. Extraire toutes les références citées :
+   — Articles de code (CGI, C. civ., C. com., LPF, CMF, CSS, CPI...)
+   — Jurisprudence (CE, Cass., CAA, TA, Cons. const.)
+   — BOFiP (BOI-...)
+   — Lois, ordonnances, décrets
+3. Vérifier chacune via MCP Légifrance avec au minimum 2 stratégies de recherche
+4. Produire le rapport de vérification (score /100)
+5. Décision :
+   — Si score ≥ 70 et 0 ⛔ HALLUCINATION → livrer + mentionner « Vérifié — score [N]/100 »
+   — Si score < 70 ou présence de ⛔ HALLUCINATION → NE PAS LIVRER
+     → Corriger les références fautives → relancer le checker → attendre validation Yoann
+```
+
+**Marquage final obligatoire dans le livrable :**
+> *« Vérifié via legal-hallucination-checker — [N] références contrôlées — score [X]/100 »*
+
+Cette mention est la signature qualité ECA. Sa présence engage Yoann ;
+son absence signifie que la vérification n'a pas eu lieu.
+
+
+---
+
+## ✅ CHECKLIST AVANT REMISE
+
+Valider mentalement chaque point avant d'envoyer la réponse :
+
+- [ ] Toutes les références citées vérifiées via MCP Légifrance (Pattern 3 ci-dessous)
+- [ ] Zones d'incertitude explicitement balisées avec ⚠️ INCERTAIN
+- [ ] La conclusion répond directement et précisément à la question posée
+- [ ] Niveau de risque justifié par un argumentaire (pas seulement affiché)
+- [ ] Aucune position incertaine présentée comme certaine
+- [ ] legal-hallucination-checker déclenché et score ≥ 70/100
+- [ ] Charte graphique ECA respectée si livrable Word (#999999 / #C00000 / #495864)
+- [ ] Référence YD + expert-comptable signataire mentionnée
+- [ ] Profil destinataire identifié et registre calibré
+- [ ] Aucun terme technique non défini en langage courant
+- [ ] Tout taux ou abattement cité a été fetché (jamais de mémoire)
+- [ ] Action concrète demandée au client en fin de note
+- [ ] Coordonnées du contact ECA mentionnées
+
+**Si un seul item n'est pas validé → ne pas livrer. Reprendre la phase concernée.**

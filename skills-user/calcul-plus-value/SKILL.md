@@ -224,3 +224,97 @@ sans avoir calculé l'impact CDHR. Voir references/contributions.md.
 
 **Rappel règle 150-0 B ter + quotient :** PV en report → Art. 200 A, 2 ter → JAMAIS
 barème Art. 197 → JAMAIS quotient Art. 163-0 A. Règle définitive (TA Bordeaux 2301446).
+
+
+---
+
+## 🛡️ PHASE FINALE — Auto-déclenchement legal-hallucination-checker
+
+⚠️ **OBLIGATOIRE — Étape non sautable.**
+
+Avant remise du livrable au client ou à Yoann, déclencher automatiquement :
+
+```
+1. Charger skill legal-hallucination-checker
+2. Extraire toutes les références citées :
+   — Articles de code (CGI, C. civ., C. com., LPF, CMF, CSS, CPI...)
+   — Jurisprudence (CE, Cass., CAA, TA, Cons. const.)
+   — BOFiP (BOI-...)
+   — Lois, ordonnances, décrets
+3. Vérifier chacune via MCP Légifrance avec au minimum 2 stratégies de recherche
+4. Produire le rapport de vérification (score /100)
+5. Décision :
+   — Si score ≥ 70 et 0 ⛔ HALLUCINATION → livrer + mentionner « Vérifié — score [N]/100 »
+   — Si score < 70 ou présence de ⛔ HALLUCINATION → NE PAS LIVRER
+     → Corriger les références fautives → relancer le checker → attendre validation Yoann
+```
+
+**Marquage final obligatoire dans le livrable :**
+> *« Vérifié via legal-hallucination-checker — [N] références contrôlées — score [X]/100 »*
+
+Cette mention est la signature qualité ECA. Sa présence engage Yoann ;
+son absence signifie que la vérification n'a pas eu lieu.
+
+
+---
+
+## ✅ CHECKLIST AVANT REMISE
+
+Valider mentalement chaque point avant d'envoyer la réponse :
+
+- [ ] Toutes les références citées vérifiées via MCP Légifrance (Pattern 3 ci-dessous)
+- [ ] Zones d'incertitude explicitement balisées avec ⚠️ INCERTAIN
+- [ ] La conclusion répond directement et précisément à la question posée
+- [ ] Niveau de risque justifié par un argumentaire (pas seulement affiché)
+- [ ] Aucune position incertaine présentée comme certaine
+- [ ] legal-hallucination-checker déclenché et score ≥ 70/100
+- [ ] Charte graphique ECA respectée si livrable Word (#999999 / #C00000 / #495864)
+- [ ] Référence YD + expert-comptable signataire mentionnée
+- [ ] Type de PV qualifié (immo / mobilière / pro / IS / régime spécial)
+- [ ] Taux PFU 31,4% / PS 18,6% / PV immo 17,2% appliqués selon le régime
+- [ ] CDHR vérifiée si apport-cession ou RFR > 250k€ / 500k€
+- [ ] Règle 150-0 B ter + quotient 163-0 A INAPPLICABLE rappelée si pertinent
+- [ ] Obligations déclaratives (formulaires, délais) mentionnées
+
+**Si un seul item n'est pas validé → ne pas livrer. Reprendre la phase concernée.**
+
+
+---
+
+## 🔍 ANNEXE — Commandes MCP Légifrance exactes
+
+Ne plus écrire « via MCP Légifrance » sans la commande. Utiliser les patterns suivants :
+
+### Articles de code
+```
+rechercher_code(code_name="Code général des impôts", search="[numéro]", champ="NUM_ARTICLE")
+rechercher_code(code_name="Code de commerce", search="[numéro]", champ="NUM_ARTICLE")
+rechercher_code(code_name="Code civil", search="[numéro]", champ="NUM_ARTICLE")
+rechercher_code(code_name="Livre des procédures fiscales", search="L. [numéro]", champ="NUM_ARTICLE")
+rechercher_code(code_name="Code monétaire et financier", search="L. [numéro]", champ="NUM_ARTICLE")
+rechercher_code(code_name="Code du travail", search="L. [numéro]", champ="NUM_ARTICLE")
+```
+
+### Jurisprudence
+```
+# Conseil d'État, CAA, TA
+rechercher_jurisprudence_administrative(search="[numéro affaire]", champ="NUM_AFFAIRE")
+# Cour de cassation
+rechercher_jurisprudence_judiciaire(search="[numéro pourvoi]", champ="NUM_AFFAIRE")
+# Conseil constitutionnel
+rechercher_decisions_constitutionnelles(search="[N°-AAAA QPC]")
+```
+
+### Doctrine et textes officiels
+```
+# BOFiP
+web_fetch("https://bofip.impots.gouv.fr/bofip/[identifiant]")
+# Loi / ordonnance / décret
+recherche_journal_officiel(search="[numéro ou titre]", text_types=["LOI"])
+# Texte consolidé
+rechercher_dans_texte_legal(search="[mots-clés]")
+```
+
+**Règle de robustesse** : avant de conclure à l'inexistence d'une référence,
+tenter au minimum 2 stratégies (numéro exact + mots-clés + date approximative).
+Une référence non trouvée via MCP ≠ référence inexistante.
