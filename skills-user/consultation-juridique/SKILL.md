@@ -269,3 +269,74 @@ non encore consolidée dans le BOFiP.
 > ⚠️ INCERTAIN — La position BOFiP sur les holdings mixtes (activité animatrice
 > partielle) n'est pas encore stabilisée depuis [arrêt]. À vérifier via
 > BOI-ENR-DMTG-10-20-40-10 avant de structurer le Dutreil."
+
+
+---
+
+## 🛡️ PHASE FINALE — Auto-déclenchement legal-hallucination-checker
+
+⚠️ **OBLIGATOIRE — Étape non sautable.**
+
+Avant remise du livrable au client ou à Yoann, déclencher automatiquement :
+
+```
+1. Charger skill legal-hallucination-checker
+2. Extraire toutes les références citées :
+   — Articles de code (CGI, C. civ., C. com., LPF, CMF, CSS, CPI...)
+   — Jurisprudence (CE, Cass., CAA, TA, Cons. const.)
+   — BOFiP (BOI-...)
+   — Lois, ordonnances, décrets
+3. Vérifier chacune via MCP Légifrance avec au minimum 2 stratégies de recherche
+4. Produire le rapport de vérification (score /100)
+5. Décision :
+   — Si score ≥ 70 et 0 ⛔ HALLUCINATION → livrer + mentionner « Vérifié — score [N]/100 »
+   — Si score < 70 ou présence de ⛔ HALLUCINATION → NE PAS LIVRER
+     → Corriger les références fautives → relancer le checker → attendre validation Yoann
+```
+
+**Marquage final obligatoire dans le livrable :**
+> *« Vérifié via legal-hallucination-checker — [N] références contrôlées — score [X]/100 »*
+
+Cette mention est la signature qualité ECA. Sa présence engage Yoann ;
+son absence signifie que la vérification n'a pas eu lieu.
+
+
+---
+
+## 🔍 ANNEXE — Commandes MCP Légifrance exactes
+
+Ne plus écrire « via MCP Légifrance » sans la commande. Utiliser les patterns suivants :
+
+### Articles de code
+```
+rechercher_code(code_name="Code général des impôts", search="[numéro]", champ="NUM_ARTICLE")
+rechercher_code(code_name="Code de commerce", search="[numéro]", champ="NUM_ARTICLE")
+rechercher_code(code_name="Code civil", search="[numéro]", champ="NUM_ARTICLE")
+rechercher_code(code_name="Livre des procédures fiscales", search="L. [numéro]", champ="NUM_ARTICLE")
+rechercher_code(code_name="Code monétaire et financier", search="L. [numéro]", champ="NUM_ARTICLE")
+rechercher_code(code_name="Code du travail", search="L. [numéro]", champ="NUM_ARTICLE")
+```
+
+### Jurisprudence
+```
+# Conseil d'État, CAA, TA
+rechercher_jurisprudence_administrative(search="[numéro affaire]", champ="NUM_AFFAIRE")
+# Cour de cassation
+rechercher_jurisprudence_judiciaire(search="[numéro pourvoi]", champ="NUM_AFFAIRE")
+# Conseil constitutionnel
+rechercher_decisions_constitutionnelles(search="[N°-AAAA QPC]")
+```
+
+### Doctrine et textes officiels
+```
+# BOFiP
+web_fetch("https://bofip.impots.gouv.fr/bofip/[identifiant]")
+# Loi / ordonnance / décret
+recherche_journal_officiel(search="[numéro ou titre]", text_types=["LOI"])
+# Texte consolidé
+rechercher_dans_texte_legal(search="[mots-clés]")
+```
+
+**Règle de robustesse** : avant de conclure à l'inexistence d'une référence,
+tenter au minimum 2 stratégies (numéro exact + mots-clés + date approximative).
+Une référence non trouvée via MCP ≠ référence inexistante.

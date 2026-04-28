@@ -202,3 +202,215 @@ Fait à [ville], le [date]
   cession sans agrément est inopposable à la société.
 - Utiliser des données d'identification non vérifiées via l'API Entreprises —
   une dénomination erronée peut invalider l'acte.
+
+
+---
+
+## ENRICHISSEMENT — Templates d'actes complémentaires
+
+### Décision TUP (Transmission Universelle de Patrimoine — Art. 1844-5 al.3 C. civ.)
+
+**Conditions :**
+- Société dissoute détenue à 100 % par une personne morale (associé unique)
+- Décision de l'associé unique de prononcer la dissolution sans liquidation
+- Délai d'opposition créanciers : 30 jours après publication
+
+**Template décision :**
+```
+[Forme] — [Dénomination de la société dissoute]
+DÉCISION DE L'ASSOCIÉ UNIQUE
+PORTANT DISSOLUTION SANS LIQUIDATION (TUP)
+Du [date]
+
+L'associé unique de [société dissoute], [forme] au capital de [montant] €,
+immatriculée au RCS de [ville] sous le numéro [SIREN], dont le siège social
+est situé [adresse],
+
+Soit la société [dénomination de l'associé unique], [forme] au capital de
+[montant] €, immatriculée au RCS de [ville] sous le numéro [SIREN], dont le
+siège social est situé [adresse], représentée par [Nom], [qualité],
+
+Constatant que la société [société dissoute] est détenue à 100 % par
+[associé unique] et qu'il est décidé d'opérer la simplification de la
+structure par voie de transmission universelle de patrimoine,
+
+a pris la décision suivante :
+
+DÉCISION UNIQUE — DISSOLUTION SANS LIQUIDATION
+
+Conformément aux dispositions de l'article 1844-5 alinéa 3 du Code civil,
+l'associé unique décide la dissolution de la société [dénomination de la
+société dissoute] sans qu'il soit nécessaire de procéder à sa liquidation.
+
+L'ensemble du patrimoine de la société [société dissoute], composé de
+l'intégralité de son actif et de son passif, est transmis à l'associé unique
+[dénomination] avec effet à l'expiration du délai d'opposition des
+créanciers prévu à l'article 1844-5 du Code civil, soit 30 jours à compter
+de la publication de la présente décision dans un journal d'annonces légales.
+
+Tous pouvoirs sont donnés à [Nom] pour effectuer les formalités de publicité,
+de radiation au RCS et toute formalité utile.
+
+Fait à [ville], le [date]
+[Signature]
+```
+
+**Formalités post-décision :**
+1. Publication JAL → délai d'opposition créanciers de 30 j
+2. Si pas d'opposition → enregistrement de la décision (droit fixe 375 € si CS < 225k€)
+3. Dépôt au greffe : décision + JAL + Cerfa M4
+4. Radiation RCS de la société dissoute
+5. Mise à jour RBE (radiation)
+6. Reprise comptable chez l'associé unique (mali ou boni de confusion)
+
+### PV de dissolution-liquidation amiable (sociétés à plus d'un associé)
+
+**Template synthétique :**
+```
+PROCÈS-VERBAL DE L'ASSEMBLÉE GÉNÉRALE EXTRAORDINAIRE
+DÉCIDANT LA DISSOLUTION ANTICIPÉE
+
+[En-tête société]
+
+L'an [AAAA], le [date], à [heure], les associés/actionnaires de [société]
+se sont réunis en AGE sur convocation de [organe de direction],
+
+Après lecture des rapports et discussion, l'AGE :
+
+PREMIÈRE RÉSOLUTION — DISSOLUTION ANTICIPÉE
+L'AGE décide la dissolution anticipée de la société [dénomination] à compter
+du [date d'effet]. La dénomination sociale sera suivie de la mention
+« société en liquidation ».
+
+DEUXIÈME RÉSOLUTION — NOMINATION DU LIQUIDATEUR
+L'AGE nomme [Nom du liquidateur] en qualité de liquidateur amiable, avec les
+pouvoirs les plus étendus pour réaliser l'actif, apurer le passif et procéder
+au partage du boni éventuel. La durée de ses fonctions est fixée à [3 ans
+maximum, sauf prorogation par AGE].
+
+TROISIÈME RÉSOLUTION — SIÈGE DE LA LIQUIDATION
+Le siège de la liquidation est fixé à [adresse — souvent au siège social ou
+au domicile du liquidateur].
+
+QUATRIÈME RÉSOLUTION — POUVOIRS POUR LES FORMALITÉS
+Tous pouvoirs sont conférés à [Nom] pour effectuer les formalités légales.
+```
+
+**Étapes de la liquidation amiable :**
+1. PV dissolution + nomination liquidateur (formalités JAL + greffe + Cerfa M2)
+2. Réalisation de l'actif et apurement du passif par le liquidateur
+3. Comptes de liquidation établis et approuvés en AGO de clôture
+4. AGO approbation comptes + quitus liquidateur + constatation clôture
+5. Formalités de radiation (JAL + greffe + Cerfa M4)
+6. Délai global : minimum 6 mois, en pratique 12 à 18 mois
+
+⚠️ **Boni de liquidation** : imposé au PFU 31,4 % chez les associés PP,
+   éligible au régime mère-fille pour les associés personnes morales IS
+   (Art. 145 et 216 CGI sous conditions).
+
+### Cession de fonds de commerce — checklist mentions obligatoires
+
+Toute cession de fonds doit mentionner (Art. L141-1 C. com. abrogé en 2019,
+mais bonnes pratiques maintenues + mentions sociales et fiscales) :
+- Identité des parties + dénomination du fonds
+- Désignation précise des éléments cédés (corporels et incorporels)
+- Prix global et ventilation par catégorie d'éléments
+- Privilège de vendeur et nantissement éventuels
+- Bail commercial : référence, propriétaire, durée résiduelle
+- Chiffre d'affaires des 3 derniers exercices et résultats
+- Information préalable des salariés (Art. L141-23 et L141-28 C. com. — délai 2 mois)
+- Information préalable de la commune (Art. L214-1 C. urbanisme — DCE)
+
+
+---
+
+## 🛡️ PHASE FINALE — Auto-déclenchement legal-hallucination-checker
+
+⚠️ **OBLIGATOIRE — Étape non sautable.**
+
+Avant remise du livrable au client ou à Yoann, déclencher automatiquement :
+
+```
+1. Charger skill legal-hallucination-checker
+2. Extraire toutes les références citées :
+   — Articles de code (CGI, C. civ., C. com., LPF, CMF, CSS, CPI...)
+   — Jurisprudence (CE, Cass., CAA, TA, Cons. const.)
+   — BOFiP (BOI-...)
+   — Lois, ordonnances, décrets
+3. Vérifier chacune via MCP Légifrance avec au minimum 2 stratégies de recherche
+4. Produire le rapport de vérification (score /100)
+5. Décision :
+   — Si score ≥ 70 et 0 ⛔ HALLUCINATION → livrer + mentionner « Vérifié — score [N]/100 »
+   — Si score < 70 ou présence de ⛔ HALLUCINATION → NE PAS LIVRER
+     → Corriger les références fautives → relancer le checker → attendre validation Yoann
+```
+
+**Marquage final obligatoire dans le livrable :**
+> *« Vérifié via legal-hallucination-checker — [N] références contrôlées — score [X]/100 »*
+
+Cette mention est la signature qualité ECA. Sa présence engage Yoann ;
+son absence signifie que la vérification n'a pas eu lieu.
+
+
+---
+
+## ✅ CHECKLIST AVANT REMISE
+
+Valider mentalement chaque point avant d'envoyer la réponse :
+
+- [ ] Toutes les références citées vérifiées via MCP Légifrance (Pattern 3 ci-dessous)
+- [ ] Zones d'incertitude explicitement balisées avec ⚠️ INCERTAIN
+- [ ] La conclusion répond directement et précisément à la question posée
+- [ ] Niveau de risque justifié par un argumentaire (pas seulement affiché)
+- [ ] Aucune position incertaine présentée comme certaine
+- [ ] legal-hallucination-checker déclenché et score ≥ 70/100
+- [ ] Charte graphique ECA respectée si livrable Word (#999999 / #C00000 / #495864)
+- [ ] Référence YD + expert-comptable signataire mentionnée
+- [ ] API recherche-entreprises consultée si SIREN / dénomination
+- [ ] Mentions légales obligatoires vérifiées (capital, RCS, siège, dirigeants)
+- [ ] Clauses statutaires d'agrément / préemption analysées si cession
+- [ ] RBE mis à jour si modification BE (délai 30 jours, Art. L561-46 CMF)
+- [ ] Formalités post-signature listées (JAL, BODACC, greffe, enregistrement)
+
+**Si un seul item n'est pas validé → ne pas livrer. Reprendre la phase concernée.**
+
+
+---
+
+## 🔍 ANNEXE — Commandes MCP Légifrance exactes
+
+Ne plus écrire « via MCP Légifrance » sans la commande. Utiliser les patterns suivants :
+
+### Articles de code
+```
+rechercher_code(code_name="Code général des impôts", search="[numéro]", champ="NUM_ARTICLE")
+rechercher_code(code_name="Code de commerce", search="[numéro]", champ="NUM_ARTICLE")
+rechercher_code(code_name="Code civil", search="[numéro]", champ="NUM_ARTICLE")
+rechercher_code(code_name="Livre des procédures fiscales", search="L. [numéro]", champ="NUM_ARTICLE")
+rechercher_code(code_name="Code monétaire et financier", search="L. [numéro]", champ="NUM_ARTICLE")
+rechercher_code(code_name="Code du travail", search="L. [numéro]", champ="NUM_ARTICLE")
+```
+
+### Jurisprudence
+```
+# Conseil d'État, CAA, TA
+rechercher_jurisprudence_administrative(search="[numéro affaire]", champ="NUM_AFFAIRE")
+# Cour de cassation
+rechercher_jurisprudence_judiciaire(search="[numéro pourvoi]", champ="NUM_AFFAIRE")
+# Conseil constitutionnel
+rechercher_decisions_constitutionnelles(search="[N°-AAAA QPC]")
+```
+
+### Doctrine et textes officiels
+```
+# BOFiP
+web_fetch("https://bofip.impots.gouv.fr/bofip/[identifiant]")
+# Loi / ordonnance / décret
+recherche_journal_officiel(search="[numéro ou titre]", text_types=["LOI"])
+# Texte consolidé
+rechercher_dans_texte_legal(search="[mots-clés]")
+```
+
+**Règle de robustesse** : avant de conclure à l'inexistence d'une référence,
+tenter au minimum 2 stratégies (numéro exact + mots-clés + date approximative).
+Une référence non trouvée via MCP ≠ référence inexistante.

@@ -190,3 +190,178 @@ VI. CONCLUSION
 **❌ Ce qui est insuffisant :**
 > "La clause de limitation de responsabilité pourrait poser problème."
 
+
+
+---
+
+## ENRICHISSEMENT — Templates de modifications rédactionnelles courantes
+
+Quand l'analyse identifie un risque 🔴, ne jamais s'arrêter à « clause à renégocier ».
+Toujours proposer la rédaction de remplacement. Voici les patterns ECA validés.
+
+### 1. Clause de limitation de responsabilité — version équilibrée
+```
+« La responsabilité du Prestataire au titre de l'exécution du présent contrat
+ne pourra excéder, tous préjudices confondus, un montant équivalent à [N×]
+les honoraires versés au titre des [12] mois précédant le fait générateur,
+sous réserve des cas pour lesquels la loi exclut toute limitation
+(dol, faute lourde, atteinte aux personnes). »
+```
+
+### 2. Clause de non-concurrence — version sécurisée (Cass. soc. 10/07/2002)
+```
+« Pendant une durée de [X] mois suivant la cessation du présent contrat, le
+[Salarié/Prestataire] s'interdit, dans la zone géographique de [périmètre
+précis et limité], d'exercer une activité de [activité précisément définie
+et limitée à ce qui est nécessaire à la protection des intérêts du Client].
+En contrepartie, le [Client] versera mensuellement au [Salarié/Prestataire]
+une indemnité d'un montant égal à [au minimum 30 % de la rémunération mensuelle
+moyenne]. »
+```
+Quatre conditions cumulatives (proportionnalité, limitation espace/temps,
+intérêts légitimes, contrepartie financière) — l'absence d'une seule entraîne nullité.
+
+### 3. Clause de force majeure — version Art. 1218 C. civ. enrichie
+```
+« Constitue un cas de force majeure tout événement échappant au contrôle du
+débiteur, qui ne pouvait être raisonnablement prévu lors de la conclusion du
+contrat et dont les effets ne peuvent être évités par des mesures appropriées,
+empêchant l'exécution de son obligation par le débiteur (Art. 1218 C. civ.).
+La Partie qui invoque la force majeure notifiera l'autre Partie par écrit dans
+un délai de [X jours] suivant la survenance de l'événement. Si l'empêchement
+est définitif ou excède [X mois], chaque Partie pourra résilier le contrat
+sans indemnité, par lettre recommandée avec accusé de réception. »
+```
+
+### 4. Clause d'imprévision — version Art. 1195 C. civ. négociée
+```
+« En cas de changement de circonstances imprévisible lors de la conclusion du
+contrat rendant l'exécution excessivement onéreuse pour l'une des Parties, et
+sous réserve qu'elle n'ait pas accepté d'en assumer le risque, cette Partie
+pourra demander une renégociation à l'autre Partie. À défaut d'accord dans un
+délai de [X mois], les Parties pourront, d'un commun accord, résoudre le contrat
+ou demander d'un commun accord au juge de procéder à son adaptation. »
+```
+**Vigilance** : l'Art. 1195 C. civ. est supplétif — il peut être écarté par
+les parties. L'absence ou l'aménagement de la clause doit être un choix conscient.
+
+### 5. Clause d'indexation — version sécurisée
+```
+« Le prix sera révisé chaque [période] selon la formule suivante :
+P = P₀ × (I_n / I_n-1)
+où I est l'indice [INSEE / professionnel précis], dans sa dernière publication
+disponible à la date de révision, et I_n-1 sa valeur de référence à la date
+[de signature/de la révision précédente].
+En cas de disparition de l'indice, il sera remplacé par l'indice de
+substitution publié par l'organisme compétent ou, à défaut, par l'indice
+ayant le périmètre le plus proche. »
+```
+
+---
+
+## CAS — Contrat partiel ou en langue étrangère
+
+### Contrat fourni en extrait seulement
+- Signaler dès le début : « Analyse partielle — clauses non communiquées : [...] »
+- Identifier les clauses absentes structurellement (résiliation, juridiction, force majeure)
+- Demander les clauses manquantes avant analyse finale
+- Ne jamais conclure sur la sécurité globale d'un contrat sur la base d'extraits
+
+### Contrat en langue étrangère
+- Si la langue est maîtrisée (anglais, allemand) : analyser, mais signaler que la
+  version juridiquement opposable est celle du droit applicable
+- Si traduction nécessaire : refuser l'analyse de fond avant traduction certifiée
+  pour les clauses critiques (responsabilité, juridiction, prix)
+- Mentionner systématiquement la clause de langue applicable
+
+
+---
+
+## 🛡️ PHASE FINALE — Auto-déclenchement legal-hallucination-checker
+
+⚠️ **OBLIGATOIRE — Étape non sautable.**
+
+Avant remise du livrable au client ou à Yoann, déclencher automatiquement :
+
+```
+1. Charger skill legal-hallucination-checker
+2. Extraire toutes les références citées :
+   — Articles de code (CGI, C. civ., C. com., LPF, CMF, CSS, CPI...)
+   — Jurisprudence (CE, Cass., CAA, TA, Cons. const.)
+   — BOFiP (BOI-...)
+   — Lois, ordonnances, décrets
+3. Vérifier chacune via MCP Légifrance avec au minimum 2 stratégies de recherche
+4. Produire le rapport de vérification (score /100)
+5. Décision :
+   — Si score ≥ 70 et 0 ⛔ HALLUCINATION → livrer + mentionner « Vérifié — score [N]/100 »
+   — Si score < 70 ou présence de ⛔ HALLUCINATION → NE PAS LIVRER
+     → Corriger les références fautives → relancer le checker → attendre validation Yoann
+```
+
+**Marquage final obligatoire dans le livrable :**
+> *« Vérifié via legal-hallucination-checker — [N] références contrôlées — score [X]/100 »*
+
+Cette mention est la signature qualité ECA. Sa présence engage Yoann ;
+son absence signifie que la vérification n'a pas eu lieu.
+
+
+---
+
+## ✅ CHECKLIST AVANT REMISE
+
+Valider mentalement chaque point avant d'envoyer la réponse :
+
+- [ ] Toutes les références citées vérifiées via MCP Légifrance (Pattern 3 ci-dessous)
+- [ ] Zones d'incertitude explicitement balisées avec ⚠️ INCERTAIN
+- [ ] La conclusion répond directement et précisément à la question posée
+- [ ] Niveau de risque justifié par un argumentaire (pas seulement affiché)
+- [ ] Aucune position incertaine présentée comme certaine
+- [ ] legal-hallucination-checker déclenché et score ≥ 70/100
+- [ ] Charte graphique ECA respectée si livrable Word (#999999 / #C00000 / #495864)
+- [ ] Référence YD + expert-comptable signataire mentionnée
+- [ ] Qualification juridique du contrat explicitée (Art. applicable)
+- [ ] Cotation 🔴/🟠/🟢 portée sur chaque clause sensible
+- [ ] Recommandation rédactionnelle proposée pour chaque risque 🔴
+
+**Si un seul item n'est pas validé → ne pas livrer. Reprendre la phase concernée.**
+
+
+---
+
+## 🔍 ANNEXE — Commandes MCP Légifrance exactes
+
+Ne plus écrire « via MCP Légifrance » sans la commande. Utiliser les patterns suivants :
+
+### Articles de code
+```
+rechercher_code(code_name="Code général des impôts", search="[numéro]", champ="NUM_ARTICLE")
+rechercher_code(code_name="Code de commerce", search="[numéro]", champ="NUM_ARTICLE")
+rechercher_code(code_name="Code civil", search="[numéro]", champ="NUM_ARTICLE")
+rechercher_code(code_name="Livre des procédures fiscales", search="L. [numéro]", champ="NUM_ARTICLE")
+rechercher_code(code_name="Code monétaire et financier", search="L. [numéro]", champ="NUM_ARTICLE")
+rechercher_code(code_name="Code du travail", search="L. [numéro]", champ="NUM_ARTICLE")
+```
+
+### Jurisprudence
+```
+# Conseil d'État, CAA, TA
+rechercher_jurisprudence_administrative(search="[numéro affaire]", champ="NUM_AFFAIRE")
+# Cour de cassation
+rechercher_jurisprudence_judiciaire(search="[numéro pourvoi]", champ="NUM_AFFAIRE")
+# Conseil constitutionnel
+rechercher_decisions_constitutionnelles(search="[N°-AAAA QPC]")
+```
+
+### Doctrine et textes officiels
+```
+# BOFiP
+web_fetch("https://bofip.impots.gouv.fr/bofip/[identifiant]")
+# Loi / ordonnance / décret
+recherche_journal_officiel(search="[numéro ou titre]", text_types=["LOI"])
+# Texte consolidé
+rechercher_dans_texte_legal(search="[mots-clés]")
+```
+
+**Règle de robustesse** : avant de conclure à l'inexistence d'une référence,
+tenter au minimum 2 stratégies (numéro exact + mots-clés + date approximative).
+Une référence non trouvée via MCP ≠ référence inexistante.

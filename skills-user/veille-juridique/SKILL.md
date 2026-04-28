@@ -180,3 +180,173 @@ Champs à renseigner :
 
 **❌ Ce qui est insuffisant :**
 > "Les prélèvements sociaux augmentent. À surveiller pour vos clients."
+
+
+---
+
+## ENRICHISSEMENT — Gestion des cas particuliers
+
+### Cas 1 — Erratum publié au JORF
+Un texte de loi ou d'ordonnance peut être corrigé par un erratum dans les jours/
+semaines suivant sa publication. **Toujours vérifier au JORF la version consolidée
+en vigueur.**
+
+```
+recherche_journal_officiel(search="erratum [titre du texte ou numéro]", text_types=["LOI"])
+```
+
+Si erratum identifié :
+- Signaler en tête de la note : « Note rédigée sur la base du texte tel que rectifié
+  par l'erratum publié au JORF du [date] »
+- Mentionner explicitement les passages corrigés si la veille les concerne
+
+### Cas 2 — Décrets d'application en attente
+Une loi peut être votée mais inapplicable tant que ses décrets ne sont pas publiés.
+
+**Workflow :**
+1. Identifier les renvois à décret dans le texte (« Un décret en Conseil d'État précise... »)
+2. Vérifier sur Légifrance si les décrets ont été publiés
+3. Si non publiés :
+   - Signaler que le dispositif n'est pas encore opérationnel
+   - Estimer le calendrier (référence au programme de travail du gouvernement si disponible)
+   - ⚠️ INCERTAIN sur les modalités précises tant que le décret n'est pas paru
+
+### Cas 3 — Jurisprudence à intégrer dans la veille
+La veille n'est pas limitée aux textes législatifs. Une jurisprudence majeure
+(CE Plénière, Cass. ch. mixte, Cons. const. QPC) peut renverser une position
+établie et appelle une analyse veille.
+
+**Critères de déclenchement :**
+- Décision de juridiction suprême (CE, Cass., Cons. const.)
+- Renversement, précision ou consécration d'une position
+- Impact sur au moins un profil client ECA
+
+**Workflow spécifique jurisprudence :**
+```
+1. Identification : juridiction, formation, date, numéro, mots-clés
+2. Étude : faits, question de droit, solution, motivation, portée
+3. Comparaison : ancienne position vs nouvelle (jurisprudence antérieure / BOFiP / doctrine)
+4. Impact pratique :
+   — Dossiers en cours concernés ?
+   — Stratégies à réviser ?
+   — Communication client requise ?
+5. Action ECA recommandée : note d'information, mise à jour skills, RDV ciblés
+```
+
+---
+
+## EXEMPLE — Veille jurisprudence bien formée
+
+**CE 14 octobre 2024 n°490685 — Donation usufruit Article 13 5° CGI**
+
+> « **Synthèse en 3 lignes**
+> Le Conseil d'État précise que la « première cession à titre onéreux » au sens de
+> l'Art. 13, 5° CGI vise la constitution initiale de l'usufruit à titre onéreux, et
+> non la prorogation ou le démembrement préalable à titre gratuit.
+> **Impact :** la prorogation d'un usufruit préexistant (par renouvellement
+> contractuel ou par effet de la donation antérieure) ne déclenche pas la
+> qualification de revenu et reste imposable selon le régime de la PV.
+> **Applicable :** dossiers en cours et opérations futures. »
+
+> **Impact par profil ECA :**
+> | Profil | Impact | Urgence |
+> |--------|--------|---------|
+> | Démembrement de droits sociaux | 🟢 Sécurisation des montages prorogations | Faible |
+> | OBO avec usufruit temporaire | 🟠 Vérifier si prorogation envisagée | Modérée |
+> | Donation NP + USU temporaire | 🟢 Confirmation de l'analyse antérieure | Faible |
+
+> **Action ECA :** mise à jour AUREP M5 + skill patrimonial-structuring + entrée Notion.
+
+
+---
+
+## 🛡️ PHASE FINALE — Auto-déclenchement legal-hallucination-checker
+
+⚠️ **OBLIGATOIRE — Étape non sautable.**
+
+Avant remise du livrable au client ou à Yoann, déclencher automatiquement :
+
+```
+1. Charger skill legal-hallucination-checker
+2. Extraire toutes les références citées :
+   — Articles de code (CGI, C. civ., C. com., LPF, CMF, CSS, CPI...)
+   — Jurisprudence (CE, Cass., CAA, TA, Cons. const.)
+   — BOFiP (BOI-...)
+   — Lois, ordonnances, décrets
+3. Vérifier chacune via MCP Légifrance avec au minimum 2 stratégies de recherche
+4. Produire le rapport de vérification (score /100)
+5. Décision :
+   — Si score ≥ 70 et 0 ⛔ HALLUCINATION → livrer + mentionner « Vérifié — score [N]/100 »
+   — Si score < 70 ou présence de ⛔ HALLUCINATION → NE PAS LIVRER
+     → Corriger les références fautives → relancer le checker → attendre validation Yoann
+```
+
+**Marquage final obligatoire dans le livrable :**
+> *« Vérifié via legal-hallucination-checker — [N] références contrôlées — score [X]/100 »*
+
+Cette mention est la signature qualité ECA. Sa présence engage Yoann ;
+son absence signifie que la vérification n'a pas eu lieu.
+
+
+---
+
+## ✅ CHECKLIST AVANT REMISE
+
+Valider mentalement chaque point avant d'envoyer la réponse :
+
+- [ ] Toutes les références citées vérifiées via MCP Légifrance (Pattern 3 ci-dessous)
+- [ ] Zones d'incertitude explicitement balisées avec ⚠️ INCERTAIN
+- [ ] La conclusion répond directement et précisément à la question posée
+- [ ] Niveau de risque justifié par un argumentaire (pas seulement affiché)
+- [ ] Aucune position incertaine présentée comme certaine
+- [ ] legal-hallucination-checker déclenché et score ≥ 70/100
+- [ ] Charte graphique ECA respectée si livrable Word (#999999 / #C00000 / #495864)
+- [ ] Référence YD + expert-comptable signataire mentionnée
+- [ ] Date d'entrée en vigueur ≠ date de publication vérifiée
+- [ ] Décrets d'application identifiés (publiés / attendus)
+- [ ] Erratum éventuel vérifié au JORF
+- [ ] Impact par profil client ECA évalué (au moins 4 profils)
+- [ ] Entrée Notion Veille Juridique préparée si demandée
+
+**Si un seul item n'est pas validé → ne pas livrer. Reprendre la phase concernée.**
+
+
+---
+
+## 🔍 ANNEXE — Commandes MCP Légifrance exactes
+
+Ne plus écrire « via MCP Légifrance » sans la commande. Utiliser les patterns suivants :
+
+### Articles de code
+```
+rechercher_code(code_name="Code général des impôts", search="[numéro]", champ="NUM_ARTICLE")
+rechercher_code(code_name="Code de commerce", search="[numéro]", champ="NUM_ARTICLE")
+rechercher_code(code_name="Code civil", search="[numéro]", champ="NUM_ARTICLE")
+rechercher_code(code_name="Livre des procédures fiscales", search="L. [numéro]", champ="NUM_ARTICLE")
+rechercher_code(code_name="Code monétaire et financier", search="L. [numéro]", champ="NUM_ARTICLE")
+rechercher_code(code_name="Code du travail", search="L. [numéro]", champ="NUM_ARTICLE")
+```
+
+### Jurisprudence
+```
+# Conseil d'État, CAA, TA
+rechercher_jurisprudence_administrative(search="[numéro affaire]", champ="NUM_AFFAIRE")
+# Cour de cassation
+rechercher_jurisprudence_judiciaire(search="[numéro pourvoi]", champ="NUM_AFFAIRE")
+# Conseil constitutionnel
+rechercher_decisions_constitutionnelles(search="[N°-AAAA QPC]")
+```
+
+### Doctrine et textes officiels
+```
+# BOFiP
+web_fetch("https://bofip.impots.gouv.fr/bofip/[identifiant]")
+# Loi / ordonnance / décret
+recherche_journal_officiel(search="[numéro ou titre]", text_types=["LOI"])
+# Texte consolidé
+rechercher_dans_texte_legal(search="[mots-clés]")
+```
+
+**Règle de robustesse** : avant de conclure à l'inexistence d'une référence,
+tenter au minimum 2 stratégies (numéro exact + mots-clés + date approximative).
+Une référence non trouvée via MCP ≠ référence inexistante.
