@@ -1,3 +1,17 @@
+---
+name: positions-eca
+description: >
+  Boucle de rétroaction ECA EXPERTISE — base Notion des positions juridiques et
+  fiscales validées. Consulte automatiquement la base AVANT chaque livrable
+  (anti-dérive entre conversations) et propose l'ajout de nouvelles positions
+  APRÈS chaque consultation tranchée (enrichissement continu). Déclencher sur :
+  toute activation d'un skill métier ECA (consultation-juridique, calcul-plus-value,
+  contentieux-fiscal, diagnostic-transmission, patrimonial-structuring, analyse-contrat,
+  due-diligence-juridique, redaction-acte, veille-juridique, note-information-client).
+  NE PAS utiliser comme skill standalone — c'est un composant transverse activé
+  automatiquement par les autres skills.
+---
+
 # Skill : positions-eca
 
 ## Trigger
