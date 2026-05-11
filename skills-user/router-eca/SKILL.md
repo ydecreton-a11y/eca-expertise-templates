@@ -18,7 +18,43 @@ Ce router donne cette règle.
 
 ---
 
+## 🔔 MÉMO DÉBUT DE SESSION — Prompt-Codes ECA
+
+> **À chaque nouvelle session, rappeler à Yoann :**
+> Tu peux modifier le comportement de Claude en ajoutant un code EN DÉBUT de message.
+> Référentiel complet : `skills-user/prompt-codes-eca.md`
+>
+> **Codes les plus utiles selon le contexte :**
+>
+> | Besoin du moment | Code à utiliser |
+> |-----------------|-----------------|
+> | Voir le raisonnement étape par étape | `/think` |
+> | Trouver les failles d'une position | `/critique` |
+> | Tester l'argument adverse | `/devil` |
+> | Construire le meilleur argument | `/steelman` |
+> | Détecter ce qui manque | `/gaps` |
+> | Réponse longue et développée | `/verbose` |
+> | Réponse courte et structurée | `/concise` |
+> | Direct sans précautions de forme | `/brutal` |
+> | Raisonner à rebours depuis l'objectif | `/inversethink` |
+> | Comparer des options | `/compare` |
+> | Note client accessible | `/human` + `/bulletproof` |
+> | Post LinkedIn ECA | `/firstperson` + `/human` |
+> | Tableau de bord interactif | [prompt] + `/dashboard` |
+> | Simulation de calcul interactive | [prompt] + `/calculator` |
+>
+> ⚠️ `/nohedge` et `/human` : jamais sur livrables juridiques clients
+> 📄 Référentiel complet des règles d'exclusion → `prompt-codes-eca.md`
+
+---
+
 ## Pré-vérifications systématiques (avant l'arbre de décision)
+
+### Code de prompt détecté en début de message ?
+Si le message de Yoann commence par un code (`/think`, `/critique`, `/brutal`, etc.) :
+→ Appliquer le modificateur de comportement correspondant (voir `prompt-codes-eca.md`)
+→ Puis continuer l'arbre de décision normalement pour le routing skill
+→ Les codes ne suspendent jamais les règles permanentes ECA (Légifrance, legal-hallucination-checker, etc.)
 
 ### SIREN fourni ?
 Si un numéro SIREN est mentionné dans la demande :
