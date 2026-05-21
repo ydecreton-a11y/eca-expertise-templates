@@ -78,6 +78,74 @@ Vérifier s'il existe un historique avant de démarrer quoi que ce soit.
 
 ---
 
+## Reformulateur d'intention — déclenchement automatique
+
+Ce composant absorbe les prompts vagues ou imprécis AVANT d'entrer dans l'arbre
+de décision. Il reformule l'intention, propose un routing, et attend confirmation.
+Objectif : éliminer les mauvais départs sans pénaliser l'imprécision naturelle.
+
+### Quand activer ?
+
+Activer si AU MOINS 2 de ces signaux sont présents dans le message de Yoann :
+
+| Signal | Exemple |
+|--------|---------|
+| Absence de mot-clé skill en tête | *"j'ai un client qui vend..."* |
+| Marqueur d'hésitation | *"enfin", "c'est un peu compliqué", "je sais pas trop"* |
+| Plusieurs sujets mélangés sans question centrale | *"holding + cession + succession"* |
+| Absence de livrable spécifié (`→ livrable :` absent) | message sans format de sortie |
+| Phrase nominale sans verbe d'action | *"COUSSEMACQ indivision EURL YODA"* |
+
+### Ne PAS activer si (exécution directe) :
+
+- Mot-clé skill présent en tête :
+  `consultation` / `calcule` / `rédige` / `DD` / `diagnostic` /
+  `contrat` / `contentieux` / `note client` / `veille`
+- Document joint → `analyse-contrat` direct
+- SIREN fourni → API lookup direct
+- Output Casus collé → enrichissement direct
+- `→ livrable :` présent dans le message
+- Code de prompt `/xxx` présent → appliquer le modificateur + routing direct
+
+### Format de sortie obligatoire
+
+Produire UNIQUEMENT ce bloc — pas de consultation, pas d'analyse, pas de développement :
+
+```
+📋 REFORMULATION — avant d'exécuter
+
+Dossier/client   : [détecté via conversation_search, ou "?" si inconnu]
+Opération        : [qualifiée en 1 ligne]
+Question centrale: [reformulée en 1 phrase nette]
+Skill pressenti  : [skill X]
+Livrable         : [consultation word / calcul / acte word / note client]
+
+→ Je lance [skill X] sur cette base ?
+  Tape "go" pour confirmer, ou corrige ce qui est inexact.
+```
+
+### Après confirmation
+
+| Réponse de Yoann | Comportement |
+|------------------|-------------|
+| `"go"` / `"oui"` / `"ok"` | Exécuter le skill identifié immédiatement |
+| Correction courte (1-2 mots) | Intégrer, reformuler une dernière fois, puis exécuter |
+| Silence / changement de sujet | Ne pas exécuter — attendre une instruction explicite |
+| Désaccord complet | Revenir à la règle de refus élégant (1 question discriminante) |
+
+### Exemples de déclenchement
+
+**Entrée :** *"j'ai un client enfin c'est une situation un peu particulière
+avec une indivision et une EURL tu vois le truc..."*
+→ 3 signaux détectés (hésitation + sujets mélangés + pas de livrable)
+→ Reformulation activée
+
+**Entrée :** `consultation COUSSEMACQ régime fiscal soulte indivision → livrable : note word`
+→ Mot-clé skill en tête + livrable présent
+→ Reformulation NON activée — routing direct consultation-juridique
+
+---
+
 ## Arbre de décision principal
 
 ### Étape 0 — Un document est-il fourni ?
