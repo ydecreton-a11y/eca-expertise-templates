@@ -2,7 +2,7 @@
 name: calcul-plus-value
 description: >
   Skill ECA EXPERTISE pour tout calcul ou estimation de plus-value :
-  immobilière (vente d'immeuble, terrain, parts SCI/SPI, LMNP, non-résidents),
+  immobilière (vente d'immeuble, terrain, parts SCI/SPI, LMNP (voir aussi AUREP M11 patrimoine immobilier), non-résidents),
   mobilière (cession de parts sociales, actions, BSPCE, crypto, PEA, AGA),
   professionnelle (BIC/BNC/BA, marchand de biens), IS (titres de participation,
   fusions 210 A/B), report/sursis (150-0 B, 150-0 B ter), exit tax, CEHR, CDHR.
@@ -88,6 +88,13 @@ Fetcher avant d'utiliser un taux, un outil MCP ou une référence BOFiP :
 
 ```
 web_fetch("https://raw.githubusercontent.com/ydecreton-a11y/eca-expertise-templates/main/skills/shared/sources-legales.md")
+```
+> **📋 INDEX RESSOURCES** : Après fetch de sources-legales.md, scanner la **section 9
+> (Index des ressources GitHub)** pour identifier les modules AUREP (M1-M12),
+> dossiers (DUTREIL_2026, démembrement-immobilier-entreprise) et PDF (Royal Formation,
+> résidence fiscale UF2026) pertinents pour la demande en cours. Fetcher toute
+> ressource identifiée comme pertinente avant de commencer l'analyse.
+
 ```
 
 Ce fetch (2 secondes) garantit les taux et références à jour.
