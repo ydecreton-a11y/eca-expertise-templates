@@ -8,6 +8,9 @@ description: >
   question où plusieurs skills pourraient s'appliquer. Ce skill identifie
   le bon skill (ou la bonne combinaison) et orchestre la réponse.
 ---
+> **📋 RESSOURCES** : Pour identifier les modules AUREP, PDF et dossiers
+> pertinents, consulter sources-legales.md **section 9 (Index des ressources GitHub)**.
+
 
 # Router ECA — Orchestrateur de l'écosystème skills juridique
 
@@ -240,7 +243,7 @@ Déclencher le fetch des modules AUREP correspondants dès que la demande touche
 | Sujet | Module à fetcher |
 |-------|-----------------|
 | Démembrement, usufruit, nue-propriété | `aurep/M5_usufruit_article_13_5_CGI.md` + `M8_usufruit_droits_sociaux.md` |
-| LMNP, LMP, revenus fonciers | `aurep/M10_actualites_patrimoniales.md` |
+| LMNP (voir aussi AUREP M11 patrimoine immobilier), LMP, revenus fonciers | `aurep/M10_actualites_patrimoniales.md` |
 | Régimes matrimoniaux, quasi-usufruit | `aurep/M5_usufruit_article_13_5_CGI.md` |
 | Successions, abattement retraite | `aurep/M10_actualites_patrimoniales.md` |
 
