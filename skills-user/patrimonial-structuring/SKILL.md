@@ -68,7 +68,7 @@ Avant toute recherche, identifier mentalement :
 
 ## PHASE 1b — AUREP fetch obligatoire
 
-Si la demande touche démembrement, quasi-usufruit, régimes matrimoniaux, successions ou LMNP :
+Si la demande touche démembrement, quasi-usufruit, régimes matrimoniaux, successions ou LMNP (voir aussi AUREP M11 patrimoine immobilier) :
 
 ```
 # Usufruit, quasi-usufruit, Art. 13-5 CGI
@@ -92,6 +92,13 @@ Fetcher avant toute vérification :
 
 ```
 web_fetch("https://raw.githubusercontent.com/ydecreton-a11y/eca-expertise-templates/main/skills/shared/sources-legales.md")
+```
+> **📋 INDEX RESSOURCES** : Après fetch de sources-legales.md, scanner la **section 9
+> (Index des ressources GitHub)** pour identifier les modules AUREP (M1-M12),
+> dossiers (DUTREIL_2026, démembrement-immobilier-entreprise) et PDF (Royal Formation,
+> résidence fiscale UF2026) pertinents pour la demande en cours. Fetcher toute
+> ressource identifiée comme pertinente avant de commencer l'analyse.
+
 ```
 
 Charger le fichier de référence correspondant au domaine :
@@ -298,7 +305,7 @@ Valider mentalement chaque point avant d'envoyer la réponse :
 - [ ] Référence YD + expert-comptable signataire mentionnée
 - [ ] Régime matrimonial qualifié et conséquences analysées
 - [ ] Réserve héréditaire vérifiée si donation ou démembrement
-- [ ] Module(s) AUREP fetché(s) si sujet couvert (M5 / M8 / M10)
+- [ ] Module(s) AUREP fetché(s) si sujet couvert (M1 à M12 + DUTREIL_2026 (voir sources-legales.md § 9))
 - [ ] Risque d'abus de droit / fictivité examiné explicitement
 - [ ] Notaire requis identifié si acte authentique nécessaire
 
