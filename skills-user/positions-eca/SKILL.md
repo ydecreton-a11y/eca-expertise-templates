@@ -11,6 +11,9 @@ description: >
   NE PAS utiliser comme skill standalone — c'est un composant transverse activé
   automatiquement par les autres skills.
 ---
+> **📋 RESSOURCES** : Pour identifier les modules AUREP, PDF et dossiers
+> pertinents, consulter sources-legales.md **section 9 (Index des ressources GitHub)**.
+
 
 # Skill : positions-eca
 
@@ -44,7 +47,7 @@ Après avoir livré une consultation, un calcul, ou une analyse, **proposer l'aj
 
 ```
 1. Identifier les mots-clés du sujet demandé par Yoann
-   (ex: "PFU", "150-0 B ter", "Dutreil", "quasi-usufruit", "LMNP", etc.)
+   (ex: "PFU", "150-0 B ter", "Dutreil", "quasi-usufruit", "LMNP (voir aussi AUREP M11 patrimoine immobilier)", etc.)
 
 2. Rechercher dans la base Notion Positions ECA :
    notion-search(query="[mots-clés du sujet]",
