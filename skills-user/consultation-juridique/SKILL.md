@@ -104,6 +104,13 @@ référence BOFiP :
 ```
 web_fetch("https://raw.githubusercontent.com/ydecreton-a11y/eca-expertise-templates/main/skills/shared/sources-legales.md")
 ```
+> **📋 INDEX RESSOURCES** : Après fetch de sources-legales.md, scanner la **section 9
+> (Index des ressources GitHub)** pour identifier les modules AUREP (M1-M12),
+> dossiers (DUTREIL_2026, démembrement-immobilier-entreprise) et PDF (Royal Formation,
+> résidence fiscale UF2026) pertinents pour la demande en cours. Fetcher toute
+> ressource identifiée comme pertinente avant de commencer l'analyse.
+
+```
 
 Ce fetch (2 secondes) garantit que tu travailles avec les taux et références
 à jour — pas avec des valeurs mémorisées potentiellement périmées après
@@ -188,7 +195,7 @@ Charger le fichier de domaine pertinent depuis `references/domaines/` :
 |---------|---------|
 | Transmission d'entreprise, Dutreil | `references/domaines/transmission-dutreil.md` |
 | Apport-cession, report 150-0 B ter | `references/domaines/apport-cession.md` |
-| LMNP / LMP | `references/domaines/lmnp-lmp.md` |
+| LMNP (voir aussi AUREP M11 patrimoine immobilier) / LMP | `references/domaines/lmnp-lmp.md` |
 | Cession de titres, PFU, QPFC | `references/domaines/cession-titres.md` |
 | Contentieux fiscal, procédure | `references/domaines/contentieux-fiscal.md` |
 | Patrimonial, succession, régimes matrim. | `→ skill patrimonial-structuring` |
