@@ -8,6 +8,9 @@ description: >
   Fonctionne via MCP Légifrance (OpenLegi). Ne pas attendre que l'utilisateur
   le demande — ce skill doit s'auto-déclencher en fin de tout livrable.
 ---
+> **📋 RESSOURCES** : Pour identifier les modules AUREP, PDF et dossiers
+> pertinents, consulter sources-legales.md **section 9 (Index des ressources GitHub)**.
+
 
 # Legal Hallucination Checker — ECA EXPERTISE
 
