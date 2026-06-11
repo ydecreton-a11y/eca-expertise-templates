@@ -141,3 +141,78 @@ web_fetch("https://recherche-entreprises.api.gouv.fr/search?q=[SIREN_ou_denomina
 
 Déclencher systématiquement quand un SIREN ou une dénomination sociale est fournie.
 Pré-remplit : dénomination exacte, forme juridique, capital, adresse, RCS, dirigeants.
+
+---
+
+## 9. Index des ressources GitHub — Catalogue complet
+
+> **RÈGLE** : Avant toute réponse, scanner cet index pour identifier les ressources
+> pertinentes et les fetcher. Quand Yoann ajoute une nouvelle source au repo,
+> l'indexer ici immédiatement (sujet, chemin, mots-clés déclencheurs).
+
+Base URL : `https://raw.githubusercontent.com/ydecreton-a11y/eca-expertise-templates/main/`
+
+### 9.1 Modules AUREP (formation continue — .md lisibles directement)
+
+| Module | Fichier | Sujets / Mots-clés déclencheurs |
+|--------|---------|--------------------------------|
+| M1 | `aurep/M1_actualites_SCI.md` | SCI, guichet unique, usufruitier parts sociales, unanimité, DPE, valorisation usufruit cédé, réévaluation libre, droit fixe 125€ |
+| M5 | `aurep/M5_usufruit_article_13_5_CGI.md` | Art. 13-5 CGI, usufruit onéreux, quasi-usufruit, imposition revenus démembrement |
+| M7 | `aurep/M7_retroplanning_transmission.md` | Rétroplanning transmission, planification cession, filialisation, donation avant cession, abattement retraite, PER, réinvestissement holding |
+| M8 | `aurep/M8_usufruit_droits_sociaux.md` | Usufruit droits sociaux, dividendes démembrement, droits de vote USU/NP, convention quasi-usufruit |
+| M9 | `aurep/M9_holdings_transmissions.md` | Holdings, LBO, apport-cession, mère-fille, QPFC 12%, évaluation titres, paiement différé, intégration fiscale |
+| M10 | `aurep/M10_actualites_patrimoniales.md` | LMNP réintégration, abattement retraite 500k€, actualités LF 2025-2026, participation acquêts |
+| M10b | `aurep/M10b_enjeux_pacte_dutreil.md` | Dutreil approfondi, engagement collectif/individuel, activités éligibles, holding animatrice, sociétés interposées, valorisation, biens somptuaires |
+| M11 | `aurep/M11_patrimoine_immobilier.md` | Immobilier d'entreprise, LMNP, SCI IS, OBO immobilier, apport-donation immo, SARL famille, densification patrimoniale, location nue vs meublée |
+| M12 | `aurep/M12_outils_civils_transmission.md` | Donation simple, donation-partage, régime matrimonial chef entreprise, Dutreil civil, libéralités, tarif notarié |
+
+### 9.2 Dossier DUTREIL 2026 (LF 2026 art. 23, ≥ 21/02/2026)
+
+Chemin : `aurep/DUTREIL_2026/`
+
+| Fichier | Contenu | Usage |
+|---------|---------|-------|
+| `00_DUTREIL_RF2026_MASTER.md` | Synthèse 12 sections, tableaux LF2025 vs LF2026, EIC 6 ans, biens somptuaires, holdings animatrices | Consultation, analyse juridique |
+| `CHECKLIST_ENGAGEMENT.md` | Phase pré-transmission, vérifications éligibilité, formules types | Préparation actes, vérifications |
+| `CHECKLIST_TRANSMISSION.md` | Pièces justificatives, points critiques DMTG, calendrier suivi | Dépôt DMTG, complétude dossier |
+| `SOURCES_LEGIFRANCE.md` | Index articles CGI, LF, BOFiP, jurisprudence Dutreil | Vérification hallucination-checker |
+
+**Mots-clés déclencheurs** : Dutreil, 787 B, 787 C, engagement collectif, engagement individuel, EIC, ECU, ECRA, transmission entreprise gratuite, exonération 75%, holding animatrice, biens somptuaires, LF 2026 art. 23
+
+### 9.3 PDF de référence (web_fetch pour contenu)
+
+| Fichier | Chemin | Sujets / Quand fetcher |
+|---------|--------|----------------------|
+| Royal Formation 2026 | `aurep/50_Actualites-juridiques-fiscales-2026-gestion-de-patrimoine.pdf` | 53 sujets patrimoine : 150-0 B ter durci, Dutreil, PER, démembrement, CE/CAA T1 2026. **Fetcher sur toute question juridique/fiscale pour vérifier couverture.** |
+| Résidence fiscale 2026 | `aurep/UF2026_residence_fiscale_particuliers_E_PARIS.pdf` | Résidence fiscale, domicile fiscal, non-résidents, conventions fiscales internationales, art. 4 B CGI, critères domiciliation, exit tax |
+| Revue Fiduciaire Dutreil | `aurep/La Revue Fiduciaire - Impression.pdf` | Dutreil, source RF FH 4134, régime complet post-LF 2026 |
+| Revue Fiduciaire (2) | `aurep/La Revue Fiduciaire - Impression.pdf 2.pdf` | Complément RF Dutreil |
+| Guide pacte d'associés | `08_Pacte_Associes/guide-de-redaction-de-pacte-d-associés.pdf` | Pacte d'associés, clauses types, rédaction, SAS, préemption, sortie conjointe, exclusion |
+| Consultation mère-fille SEL | `11_Consultations/régime mère fille sel holding.pdf` | Régime mère-fille, SEL, SPFPL, holding, intégration fiscale |
+
+### 9.4 Sources documentaires (dossiers multi-PDF)
+
+| Dossier | Chemin | Contenu | Quand fetcher |
+|---------|--------|---------|--------------|
+| Démembrement immobilier entreprise | `sources/demembrement-immobilier-entreprise/` (11 parties PDF + README) | Démembrement de propriété immobilier d'entreprise, usufruit immeubles, SCI, baux | Démembrement + immobilier d'entreprise, OBO, SCI IS, usufruit immeuble professionnel |
+
+### 9.5 Modèles d'actes (bibliothèque)
+
+| Dossier | Contenu | Quand consulter |
+|---------|---------|----------------|
+| `01_Statuts/` | Statuts SAS, SARL, SARL holding, SCI, SELARL, SPFPL | Rédaction statuts |
+| `02_Cessions_Titres/` | Cessions actions SAS, SELAS, parts SARL, SCI, SCM, patientèle | Cession de titres |
+| `03_Fonds_Commerce/` | LOI, compromis, actes définitifs cession fonds | Cession fonds de commerce |
+| `04_MA_*/` | Séquences M&A complètes (Exotel, ADEQUA, Garages Lucas) | Due diligence, M&A, protocole, GAP |
+| `05_PV_Decisions/` | PV AGE, DU dissolution/liquidation/dividende | Rédaction PV, décisions |
+| `06_Apport_Holding/` | Traité apport nature, CAC apports, attestation 150-0 B ter | Apport-cession, constitution holding |
+| `07_Sortie_Associe_Liquidation/` | Convention crédit-vendeur, abandon compte courant | Sortie associé, liquidation |
+| `08_Pacte_Associes/` | Modèle pacte SAS 42 articles + clauses sanctions | Rédaction pacte |
+| `09_Conventions/` | Convention commissionnement intra-groupe (prix transfert) | Prix de transfert, conventions intragroupe |
+| `10_Operationnel_Immatriculation/` | Devis ECA template, procuration, attestations | Template charte, immatriculation |
+| `11_Consultations/` | Consultations fiscales (ex. filiale belge + entrepôt France) | Consultation fiscale internationale |
+
+---
+
+*Dernière mise à jour index : 11/06/2026*
+*Règle : toute nouvelle source ajoutée au repo doit être indexée ici immédiatement.*
