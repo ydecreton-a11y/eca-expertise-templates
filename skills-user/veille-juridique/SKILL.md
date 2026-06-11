@@ -51,6 +51,13 @@ référence BOFiP :
 ```
 web_fetch("https://raw.githubusercontent.com/ydecreton-a11y/eca-expertise-templates/main/skills/shared/sources-legales.md")
 ```
+> **📋 INDEX RESSOURCES** : Après fetch de sources-legales.md, scanner la **section 9
+> (Index des ressources GitHub)** pour identifier les modules AUREP (M1-M12),
+> dossiers (DUTREIL_2026, démembrement-immobilier-entreprise) et PDF (Royal Formation,
+> résidence fiscale UF2026) pertinents pour la demande en cours. Fetcher toute
+> ressource identifiée comme pertinente avant de commencer l'analyse.
+
+```
 
 Ce fetch (2 secondes) garantit que tu travailles avec les taux et références
 à jour — pas avec des valeurs mémorisées potentiellement périmées après
@@ -104,7 +111,7 @@ clients ECA :
 
 | Profil client | Impact du texte | Urgence | Action recommandée |
 |---------------|-----------------|---------|-------------------|
-| LMNP/LMP | [impact spécifique] | 🔴/🟠/🟢 | [action] |
+| LMNP (voir aussi AUREP M11 patrimoine immobilier)/LMP | [impact spécifique] | 🔴/🟠/🟢 | [action] |
 | Dirigeants SARL/SAS IS | [impact] | | |
 | SCI à l'IS | [impact] | | |
 | Transmission en cours | [impact] | | |
