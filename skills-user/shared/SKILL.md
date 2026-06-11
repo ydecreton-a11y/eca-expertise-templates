@@ -109,14 +109,20 @@ JAMAIS recréer from scratch.
 
 Base : `https://raw.githubusercontent.com/ydecreton-a11y/eca-expertise-templates/main/aurep/`
 
-| Module | Fichier | Sujets couverts |
-|--------|---------|-----------------|
-| M5 | `M5_usufruit_article_13_5_CGI.md` | Usufruit, Art. 13-5 CGI, quasi-usufruit |
-| M8 | `M8_usufruit_droits_sociaux.md` | Usufruit de droits sociaux, dividendes en démembrement |
-| M10 | `M10_actualites_patrimoniales.md` | LMNP, abattement retraite, actualités LF 2026 |
+| Module | Fichier |
+|--------|---------|
+| M1 | `M1_actualites_SCI.md` |
+| M5 | `M5_usufruit_article_13_5_CGI.md` |
+| M7 | `M7_retroplanning_transmission.md` |
+| M8 | `M8_usufruit_droits_sociaux.md` |
+| M9 | `M9_holdings_transmissions.md` |
+| M10 | `M10_actualites_patrimoniales.md` |
+| M10b | `M10b_enjeux_pacte_dutreil.md` |
+| M11 | `M11_patrimoine_immobilier.md` |
+| M12 | `M12_outils_civils_transmission.md` |
+| DUTREIL 2026 | `DUTREIL_2026/` (4 fichiers) |
 
-Fetcher dès que la demande touche : démembrement, quasi-usufruit, LMNP, régimes matrimoniaux,
-droit des sociétés patrimonial, abattement retraite.
+Sujets couverts et mots-clés déclencheurs détaillés → `sources-legales.md` section 9.
 
 ---
 
