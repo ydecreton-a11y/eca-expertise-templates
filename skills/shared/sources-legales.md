@@ -108,11 +108,11 @@ Avant de conclure à l'inexistence : tenter au moins 2 stratégies différentes.
 
 ---
 
-## 6. Règles fiscales définitivement établies (ne pas recalculer de mémoire)
+## 6. Positions fiscales vérifiées ECA (ne pas recalculer de mémoire)
 
 | Règle | Valeur / Position | Source vérifiée |
 |-------|-------------------|-----------------|
-| PV 150-0 B ter + quotient 163-0 A | **JAMAIS applicable** — Art. 200 A, 2 ter CGI (taux historique, régime dérogatoire) | TA Bordeaux n°2301446 du 19/12/2024 — Cons. const. n°2016-538 QPC 22/04/2016 |
+| PV 150-0 B ter + quotient 163-0 A | **JP DIVERGENTE — pas de règle absolue.** Contre : TA Bordeaux 19/12/2024 n°2301446 (200 A 2 ter = dérogatoire). Pour : TA Bordeaux 13/11/2025 n°2304900, TA Paris 13/02/2025 n°2212919, Rép. min. Lequiller n°70807 (L.80 A). Aucun arrêt CE. | **Position ECA** : toujours présenter les 2 thèses + recommander rescrit L.80 B + invocation Lequiller L.80 A. Ne jamais dire « inapplicable de facto » ni « acquis ». |
 | LMNP réintégration amortissements PV | Depuis **15/02/2025** — LF 2025 Art. 84, CGI Art. 150 VB III | Vérifier Art. 150 VB via MCP avant tout calcul LMNP |
 | Apport-cession + CDHR | Art. 150-0 F ter CGI neutralise le gain si RFR > 500 000 € | Vérifier via calcul-plus-value, jamais conclure à un avantage sans calcul CDHR |
 | DAS2 seuil 2024+ | **2 400 €** / bénéficiaire / an (ex 1 200 €) | BOFiP 12/02/2025, BOI-BIC-DECLA-30-70-20 §140 |
