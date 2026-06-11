@@ -72,6 +72,13 @@ Fetcher avant de citer un taux fiscal :
 ```
 web_fetch("https://raw.githubusercontent.com/ydecreton-a11y/eca-expertise-templates/main/skills/shared/sources-legales.md")
 ```
+> **📋 INDEX RESSOURCES** : Après fetch de sources-legales.md, scanner la **section 9
+> (Index des ressources GitHub)** pour identifier les modules AUREP (M1-M12),
+> dossiers (DUTREIL_2026, démembrement-immobilier-entreprise) et PDF (Royal Formation,
+> résidence fiscale UF2026) pertinents pour la demande en cours. Fetcher toute
+> ressource identifiée comme pertinente avant de commencer l'analyse.
+
+```
 Ne jamais citer un taux ou un abattement de mémoire dans une note client.
 Un taux erroné dans une note client crée une responsabilité directe du cabinet.
 
