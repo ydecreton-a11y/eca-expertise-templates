@@ -27,16 +27,17 @@ Elles priment sur toute valeur mémorisée à l'entraînement.
 | PFU mobilier (dividendes, PV titres, intérêts) | **31,4 %** (12,8 % IR + 18,6 % PS) | LFSS loi 2025-1403 |
 | PS revenus fonciers nus | **17,2 %** (inchangé) | LFSS 2025-1403 |
 | PS plus-values immobilières | **17,2 %** → charge totale 36,2 % | LFSS 2025-1403 |
-| PV 150-0 B ter + quotient 163-0 A | **JAMAIS applicable** | TA Bordeaux n°2301446 du 19/12/2024 |
+| PV 150-0 B ter + quotient 163-0 A | **JP divergente** — présenter les 2 thèses + rescrit L.80 B | Voir sources-legales.md § 6 |
 | Mécanisme PV 150-0 B ter | Art. 200 A, 2 ter CGI (taux historique) ≠ barème Art. 197 | Cons. const. n°2016-538 QPC 22/04/2016 |
 | DAS2 seuil déclaration 2024+ | **2 400 €** / bénéficiaire / an | BOFiP 12/02/2025, BOI-BIC-DECLA-30-70-20 §140 |
 | LMNP réintégration amortissements | Depuis **15/02/2025** (LF 2025 Art. 84, Art. 150 VB III) | Vérifier via MCP |
 
-**Règle 150-0 B ter + quotient — rappel critique :**
-PV en report d'imposition (150-0 B ter) → soumise à Art. 200 A, 2 ter CGI (régime dérogatoire avec
-taux historique) → JAMAIS au barème Art. 197 → JAMAIS au quotient Art. 163-0 A.
-Ne jamais conclure à l'applicabilité du quotient sur une PV en report, même si le client invoque
-une imposition exceptionnelle. Cette règle est définitive.
+**Règle 150-0 B ter + quotient — JP divergente :**
+Contre quotient : TA Bordeaux 19/12/2024 n°2301446 (art. 200 A, 2 ter = régime dérogatoire,
+Cons. const. 2016-538 QPC). Pour quotient : TA Bordeaux 13/11/2025 n°2304900, TA Paris
+13/02/2025 n°2212919, Rép. min. Lequiller n°70807 (opposable L.80 A). Aucun arrêt CE.
+→ Toujours présenter les 2 thèses au client + recommander rescrit L.80 B + invocation Lequiller.
+→ Ne JAMAIS présenter le quotient comme « inapplicable de facto » ni comme « acquis ».
 
 ---
 
@@ -222,8 +223,8 @@ neutralise mécaniquement le gain fiscal de l'apport-cession dès que le RFR
 dépasse 500 000 €. Ne jamais conclure à un avantage de l'apport-cession
 sans avoir calculé l'impact CDHR. Voir references/contributions.md.
 
-**Rappel règle 150-0 B ter + quotient :** PV en report → Art. 200 A, 2 ter → JAMAIS
-barème Art. 197 → JAMAIS quotient Art. 163-0 A. Règle définitive (TA Bordeaux 2301446).
+**Rappel règle 150-0 B ter + quotient :** JP divergente — présenter les 2 thèses +
+recommander rescrit L.80 B. Détail → sources-legales.md § 6.
 
 
 ---
@@ -273,7 +274,7 @@ Valider mentalement chaque point avant d'envoyer la réponse :
 - [ ] Type de PV qualifié (immo / mobilière / pro / IS / régime spécial)
 - [ ] Taux PFU 31,4% / PS 18,6% / PV immo 17,2% appliqués selon le régime
 - [ ] CDHR vérifiée si apport-cession ou RFR > 250k€ / 500k€
-- [ ] Règle 150-0 B ter + quotient 163-0 A INAPPLICABLE rappelée si pertinent
+- [ ] Règle 150-0 B ter + quotient 163-0 A : JP divergente signalée + rescrit recommandé si pertinent
 - [ ] Obligations déclaratives (formulaires, délais) mentionnées
 
 **Si un seul item n'est pas validé → ne pas livrer. Reprendre la phase concernée.**
