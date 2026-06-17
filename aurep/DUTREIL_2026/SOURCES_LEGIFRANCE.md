@@ -77,6 +77,8 @@ Chaque référence ci-dessous doit être vérifiée sur https://www.legifrance.g
 | **Cass. com. 16/04/2013** | 2013 | EIC non-rétroactif | EIC **doit être dans acte** (principe immuable) |
 | **Cass. com. 01/12/2021** | 2021 | Usufruit droits sociaux NP | Associé seul peut être NP de droits sociaux |
 | **Cass. com. 12/02/2025** | 2025 | Distribution RAN hors AGOA | RAN non-distribuable = null |
+| **Cass. com. 28/05/2026 n° 25-12612** | 2026 | Trésorerie excédentaire Dutreil | Trésorerie 90% actif = activité civile prépondérante, exonération refusée. Faisceau d'indices : ratio tréso/CA, destination fonds, projets investissement. Peu importe origine fonds ni répartition revenus. |
+| **Cass. com. 28/05/2026 n° 25-12610** | 2026 | Trésorerie excédentaire (renvoi) | Même argumentaire, exercices antérieurs |
 
 ### Tribunaux Administratifs (Contentieux DMTG)
 
@@ -166,6 +168,7 @@ Chaque référence ci-dessous doit être vérifiée sur https://www.legifrance.g
 2. **Holdings animatrices** : Critères précis de "participation active"
 3. **Affectation "exclusive"** : Durée 3 ans, test continu jusqu'à fin EIC
 4. **LMNP hybrid** : Frontière entre location meublée + service (hôtel)
+5. **Trésorerie excédentaire** : Point de bascule non défini — Cass. com. 28/05/2026 n° 25-12612 confirme refus Dutreil si tréso ≥ 90% actif sans projet d'emploi, mais reconnaît que constituer/faire fructifier trésorerie ≠ en soi activité civile distincte
 
 ---
 
@@ -193,5 +196,5 @@ Vérifier transposition CGI 787 B, 787 C
 
 ---
 
-**Index validé : 06/05/2026**
+**Index validé : 17/06/2026**
 **À mettre à jour suite à circulaire admin (attendue Q2/Q3 2026)**
