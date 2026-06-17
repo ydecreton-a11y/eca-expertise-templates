@@ -34,6 +34,12 @@ Retranscription structurée et complète du **Pacte Dutreil** suite aux modifica
 - Jurisprudence clés (Cass., TA, CC)
 - **À utiliser pour** : Vérification legal-hallucination-checker avant citation client
 
+#### **cass_com_28052026_tresorerie_excedentaire.md** (Jurisprudence)
+- Cass. com. 28/05/2026 n° 25-12612 : trésorerie excédentaire = activité civile prépondérante
+- Faisceau d'indices : ratio trésorerie/actif, destination des fonds, projets d'investissement
+- Recommandations pratiques ECA pour clients à forte trésorerie
+- **À utiliser pour** : Diagnostic Dutreil sociétés de services, audit trésorerie, sécurisation pré-transmission
+
 ---
 
 ## 🆕 Changements majeurs LF 2026 (≥ 21/02/2026)
@@ -75,12 +81,13 @@ Retranscription structurée et complète du **Pacte Dutreil** suite aux modifica
 
 ## ⚠️ Points d'attention
 
-### Zones d'incertitude (jurisprudence en cours)
+### Zones d'incertitude (jurisprudence en cours / récente)
 
 1. **Calcul biens somptuaires en groupe** : Circulaire application attendue
 2. **Holdings animatrices** : Critères TA/CAA à observer
 3. **Affectation "exclusive"** : Définition opérationnelle en construction
 4. **LMNP hybrid** : Frontière location meublée vs service
+5. **Trésorerie excédentaire** : Point de bascule non défini (Cass. com. 28/05/2026 n° 25-12612) — seuil d'appréciation au cas par cas, faisceau d'indices
 
 ### Délai mise à jour
 
@@ -97,4 +104,4 @@ Utilise ce dossier dans tes consultations futures et propose améliorations apr�
 ---
 
 **Maintenu par** : Claude-ECA / Yoann Decréton
-**Dernière mise à jour** : 06/05/2026
+**Dernière mise à jour** : 17/06/2026
