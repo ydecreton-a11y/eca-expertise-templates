@@ -24,7 +24,7 @@ Bibliothèque de modèles d'actes juridiques et fiscaux du cabinet **ECA EXPERTI
 
 Chaque fichier peut être soumis directement à Claude comme référence verbatim lors de la rédaction d'un acte similaire.
 
-**Template charte ECA** : `10_Operationnel_Immatriculation/Devis_ECA_Constitution_SAS.docx`
+**Template charte ECA** : courrier ECA
 
 ---
 *Cabinet ECA EXPERTISE — Juriste : Yoann DECRETON*
