@@ -1,0 +1,5452 @@
+{
+ "schema": 1,
+ "date_creation": "2026-10-23",
+ "derniere_maintenance": null,
+ "regle": "Une entrée 'verifie' a été lue à la source à la date indiquée. Une entrée 'a_verifier' n'a pas encore été contrôlée dans sa version en vigueur : la prochaine maintenance la lit en entier et confronte le passage du skill au texte. Les numéros de ligne sont indicatifs (ils bougent avec les skills) ; l'extrait sert d'ancre.",
+ "references": [
+  {
+   "id": "code-civil:1583",
+   "type": "article",
+   "code": "code-civil",
+   "article": "1583",
+   "cle_librejustice": "1583",
+   "statut_verification": "verifie",
+   "derniere_verification": "2026-10-23",
+   "etat_source": null,
+   "occurrences": [
+    {
+     "skill": "acte-definitif-titres",
+     "ligne": 14,
+     "extrait": "> suspensives est déjà la vente (C. civ. 1583, vérifié 23/10/2026). L'acte"
+    },
+    {
+     "skill": "lettre-intention",
+     "ligne": 72,
+     "extrait": "- **C. civ. 1583 et 1589** — vente parfaite dès l'accord sur la chose et le"
+    },
+    {
+     "skill": "protocole-cession",
+     "ligne": 114,
+     "extrait": "| Promesse synallagmatique | Vente parfaite dès l'accord sur la chose et le prix (Art. 1583 C. civ.), sous conditions suspensives | C'est le cas usuel du « prot"
+    }
+   ]
+  },
+  {
+   "id": "code-civil:1304-3",
+   "type": "article",
+   "code": "code-civil",
+   "article": "1304-3",
+   "cle_librejustice": "1304-3",
+   "statut_verification": "verifie",
+   "derniere_verification": "2026-10-23",
+   "etat_source": null,
+   "occurrences": [
+    {
+     "skill": "acte-definitif-titres",
+     "ligne": 44,
+     "extrait": "empêché l'accomplissement (C. civ. 1304-3, vérifié 23/10/2026) : la"
+    },
+    {
+     "skill": "protocole-cession",
+     "ligne": 293,
+     "extrait": "⚠️ **Art. 1304-3 C. civ.** — la condition est réputée accomplie si celui qui y"
+    }
+   ]
+  },
+  {
+   "id": "code-de-commerce:L. 228-1",
+   "type": "article",
+   "code": "code-de-commerce",
+   "article": "L. 228-1",
+   "cle_librejustice": "l228-1",
+   "statut_verification": "a_verifier",
+   "derniere_verification": null,
+   "etat_source": null,
+   "occurrences": [
+    {
+     "skill": "acte-definitif-titres",
+     "ligne": 61,
+     "extrait": "| SAS / SA | Inscription des titres au compte de l'acquéreur | Ordre de mouvement + mise à jour du registre des mouvements et des comptes d'actionnaires ; acte "
+    }
+   ]
+  },
+  {
+   "id": "code-monetaire-et-financier:L. 211-15",
+   "type": "article",
+   "code": "code-monetaire-et-financier",
+   "article": "L. 211-15",
+   "cle_librejustice": "l211-15",
+   "statut_verification": "a_verifier",
+   "derniere_verification": null,
+   "etat_source": null,
+   "occurrences": [
+    {
+     "skill": "acte-definitif-titres",
+     "ligne": 61,
+     "extrait": "| SAS / SA | Inscription des titres au compte de l'acquéreur | Ordre de mouvement + mise à jour du registre des mouvements et des comptes d'actionnaires ; acte "
+    }
+   ]
+  },
+  {
+   "id": "code-monetaire-et-financier:L. 211-17",
+   "type": "article",
+   "code": "code-monetaire-et-financier",
+   "article": "L. 211-17",
+   "cle_librejustice": "l211-17",
+   "statut_verification": "a_verifier",
+   "derniere_verification": null,
+   "etat_source": null,
+   "occurrences": [
+    {
+     "skill": "acte-definitif-titres",
+     "ligne": 61,
+     "extrait": "| SAS / SA | Inscription des titres au compte de l'acquéreur | Ordre de mouvement + mise à jour du registre des mouvements et des comptes d'actionnaires ; acte "
+    }
+   ]
+  },
+  {
+   "id": "code-de-commerce:L. 223-17",
+   "type": "article",
+   "code": "code-de-commerce",
+   "article": "L. 223-17",
+   "cle_librejustice": "l223-17",
+   "statut_verification": "verifie",
+   "derniere_verification": "2026-10-23",
+   "etat_source": null,
+   "occurrences": [
+    {
+     "skill": "acte-definitif-titres",
+     "ligne": 62,
+     "extrait": "| SARL | Écrit ; opposabilité à la société par signification ou par dépôt d'un original au siège contre attestation du gérant ; opposabilité aux tiers après ces"
+    },
+    {
+     "skill": "protocole-cession",
+     "ligne": 136,
+     "extrait": "| SARL | Art. L. 223-14 C. com. — agrément légal pour les cessions à tiers | Écrit ; opposabilité à la société par signification (C. civ. 1690) ou dépôt d'un or"
+    }
+   ]
+  },
+  {
+   "id": "code-de-commerce:L. 221-14",
+   "type": "article",
+   "code": "code-de-commerce",
+   "article": "L. 221-14",
+   "cle_librejustice": "l221-14",
+   "statut_verification": "verifie",
+   "derniere_verification": "2026-10-23",
+   "etat_source": null,
+   "occurrences": [
+    {
+     "skill": "acte-definitif-titres",
+     "ligne": 62,
+     "extrait": "| SARL | Écrit ; opposabilité à la société par signification ou par dépôt d'un original au siège contre attestation du gérant ; opposabilité aux tiers après ces"
+    },
+    {
+     "skill": "protocole-cession",
+     "ligne": 136,
+     "extrait": "| SARL | Art. L. 223-14 C. com. — agrément légal pour les cessions à tiers | Écrit ; opposabilité à la société par signification (C. civ. 1690) ou dépôt d'un or"
+    }
+   ]
+  },
+  {
+   "id": "code-civil:1690",
+   "type": "article",
+   "code": "code-civil",
+   "article": "1690",
+   "cle_librejustice": "1690",
+   "statut_verification": "verifie",
+   "derniere_verification": "2026-10-23",
+   "etat_source": null,
+   "occurrences": [
+    {
+     "skill": "acte-definitif-titres",
+     "ligne": 62,
+     "extrait": "| SARL | Écrit ; opposabilité à la société par signification ou par dépôt d'un original au siège contre attestation du gérant ; opposabilité aux tiers après ces"
+    },
+    {
+     "skill": "protocole-cession",
+     "ligne": 136,
+     "extrait": "| SARL | Art. L. 223-14 C. com. — agrément légal pour les cessions à tiers | Écrit ; opposabilité à la société par signification (C. civ. 1690) ou dépôt d'un or"
+    }
+   ]
+  },
+  {
+   "id": "code-civil:1865",
+   "type": "article",
+   "code": "code-civil",
+   "article": "1865",
+   "cle_librejustice": "1865",
+   "statut_verification": "a_verifier",
+   "derniere_verification": null,
+   "etat_source": null,
+   "occurrences": [
+    {
+     "skill": "acte-definitif-titres",
+     "ligne": 63,
+     "extrait": "| Sociétés civiles | Écrit ; opposabilité à la société par signification ou, si les statuts le prévoient, par transfert sur les registres ; opposabilité aux tie"
+    }
+   ]
+  },
+  {
+   "id": "code-civil:1424",
+   "type": "article",
+   "code": "code-civil",
+   "article": "1424",
+   "cle_librejustice": "1424",
+   "statut_verification": "verifie",
+   "derniere_verification": "2026-10-23",
+   "etat_source": null,
+   "occurrences": [
+    {
+     "skill": "acte-definitif-titres",
+     "ligne": 80,
+     "extrait": "pour la perception du prix (C. civ. 1424, vérifié 23/10/2026)."
+    },
+    {
+     "skill": "cession-fonds",
+     "ligne": 49,
+     "extrait": "| Régime matrimonial du cédant personne physique | fonds commun ? | | conjoint (C. civ. 1424) |"
+    },
+    {
+     "skill": "cession-fonds",
+     "ligne": 60,
+     "extrait": "| Conjoint commun en biens | Aliénation d'un fonds de commerce commun et perception des capitaux en provenant : accord des deux époux | C. civ. 1424 — vérifié 2"
+    },
+    {
+     "skill": "cession-fonds",
+     "ligne": 133,
+     "extrait": "(C. civ. 1424) ; acquéreur substituable"
+    },
+    {
+     "skill": "protocole-cession",
+     "ligne": 200,
+     "extrait": "**Point de vigilance conjoint (Art. 1424 C. civ., vérifié 23/10/2026)** — le"
+    },
+    {
+     "skill": "protocole-cession",
+     "ligne": 482,
+     "extrait": "1.  Comparution et qualités (⚠️ conjoint, Art. 1424 C. civ. si parts communes)"
+    },
+    {
+     "skill": "protocole-cession",
+     "ligne": 583,
+     "extrait": "- [ ] Consentement du conjoint traité si parts communes (Art. 1424 C. civ.),"
+    }
+   ]
+  },
+  {
+   "id": "code-civil:1321",
+   "type": "article",
+   "code": "code-civil",
+   "article": "1321",
+   "cle_librejustice": "1321",
+   "statut_verification": "verifie",
+   "derniere_verification": "2026-10-23",
+   "etat_source": null,
+   "occurrences": [
+    {
+     "skill": "acte-definitif-titres",
+     "ligne": 98,
+     "extrait": "C. civ. 1321 s., vérifié 23/10/2026 pour 1321 : consentement du débiteur"
+    },
+    {
+     "skill": "acte-definitif-titres",
+     "ligne": 98,
+     "extrait": "C. civ. 1321 s., vérifié 23/10/2026 pour 1321 : consentement du débiteur"
+    }
+   ]
+  },
+  {
+   "id": "code-general-des-impots:635",
+   "type": "article",
+   "code": "code-general-des-impots",
+   "article": "635",
+   "cle_librejustice": "635",
+   "statut_verification": "verifie",
+   "derniere_verification": "2026-10-23",
+   "etat_source": null,
+   "occurrences": [
+    {
+     "skill": "acte-definitif-titres",
+     "ligne": 162,
+     "extrait": "| Enregistrement | Les actes portant cession d'actions ou de parts sociales s'enregistrent dans le délai d'un mois à compter de leur date (CGI art. 635, 2, 7°) "
+    },
+    {
+     "skill": "cession-fonds",
+     "ligne": 67,
+     "extrait": "| Enregistrement | Actes portant transmission de propriété de fonds de commerce ou de clientèles : enregistrement dans le délai d'un mois à compter de leur date"
+    },
+    {
+     "skill": "cession-fonds",
+     "ligne": 169,
+     "extrait": "enregistrement (CGI art. 635, 2, 5° et 676)"
+    },
+    {
+     "skill": "protocole-cession",
+     "ligne": 387,
+     "extrait": "délai d'un mois à compter de leur date (CGI art. 635, 2, 7°) ; pour une mutation"
+    },
+    {
+     "skill": "redaction-acte",
+     "ligne": 107,
+     "extrait": "| Enregistrement | Dans le délai d'un mois : actes constatant la transformation d'une société et ceux constatant une augmentation de capital, sauf augmentation "
+    },
+    {
+     "skill": "redaction-acte",
+     "ligne": 217,
+     "extrait": "- **Fiscal** : CGI art. 635, 1, 5° (enregistrement) ; rachat de titres et"
+    },
+    {
+     "skill": "redaction-acte",
+     "ligne": 241,
+     "extrait": "(CGI art. 221, 2) ; à défaut, neutralité. Enregistrement : CGI art. 635, 1,"
+    }
+   ]
+  },
+  {
+   "id": "code-general-des-impots:726",
+   "type": "article",
+   "code": "code-general-des-impots",
+   "article": "726",
+   "cle_librejustice": "726",
+   "statut_verification": "verifie",
+   "derniere_verification": "2026-10-23",
+   "etat_source": null,
+   "occurrences": [
+    {
+     "skill": "acte-definitif-titres",
+     "ligne": 162,
+     "extrait": "| Enregistrement | Les actes portant cession d'actions ou de parts sociales s'enregistrent dans le délai d'un mois à compter de leur date (CGI art. 635, 2, 7°) "
+    },
+    {
+     "skill": "positions-eca",
+     "ligne": 221,
+     "extrait": "s'applique en plus de l'IR/PS sur la PV\" (Art. 726 CGI)"
+    },
+    {
+     "skill": "positions-eca",
+     "ligne": 229,
+     "extrait": "Référence : Art. 726 I 2° CGI"
+    },
+    {
+     "skill": "protocole-cession",
+     "ligne": 136,
+     "extrait": "| SARL | Art. L. 223-14 C. com. — agrément légal pour les cessions à tiers | Écrit ; opposabilité à la société par signification (C. civ. 1690) ou dépôt d'un or"
+    },
+    {
+     "skill": "protocole-cession",
+     "ligne": 137,
+     "extrait": "| SAS | Art. L. 227-14 C. com. — agrément **statutaire** seulement | Ordre de mouvement, inscription au registre des mouvements et aux comptes d'actionnaires | "
+    },
+    {
+     "skill": "protocole-cession",
+     "ligne": 138,
+     "extrait": "| SA non cotée | Art. L. 228-23 C. com. — clause statutaire | Ordre de mouvement, registre | CGI Art. 726 |"
+    },
+    {
+     "skill": "protocole-cession",
+     "ligne": 139,
+     "extrait": "| Société à prépondérance immobilière | — | Selon la forme | CGI Art. 726 I 2° — taux majoré |"
+    },
+    {
+     "skill": "protocole-cession",
+     "ligne": 375,
+     "extrait": "CGI Art. 726 — taux différenciés selon la forme sociale et le caractère de"
+    }
+   ]
+  },
+  {
+   "id": "code-general-des-impots:676",
+   "type": "article",
+   "code": "code-general-des-impots",
+   "article": "676",
+   "cle_librejustice": "676",
+   "statut_verification": "verifie",
+   "derniere_verification": "2026-10-23",
+   "etat_source": null,
+   "occurrences": [
+    {
+     "skill": "acte-definitif-titres",
+     "ligne": 163,
+     "extrait": "| Mutation sous condition suspensive | Le régime fiscal et les valeurs imposables s'apprécient à la date de réalisation de la condition (CGI art. 676) : calcule"
+    },
+    {
+     "skill": "cession-fonds",
+     "ligne": 67,
+     "extrait": "| Enregistrement | Actes portant transmission de propriété de fonds de commerce ou de clientèles : enregistrement dans le délai d'un mois à compter de leur date"
+    },
+    {
+     "skill": "cession-fonds",
+     "ligne": 169,
+     "extrait": "enregistrement (CGI art. 635, 2, 5° et 676)"
+    },
+    {
+     "skill": "protocole-cession",
+     "ligne": 389,
+     "extrait": "s'apprécient à la date de réalisation de la condition (CGI art. 676). Prévoir"
+    }
+   ]
+  },
+  {
+   "id": "code-de-commerce:R. 123-105",
+   "type": "article",
+   "code": "code-de-commerce",
+   "article": "R. 123-105",
+   "cle_librejustice": "r123-105",
+   "statut_verification": "a_verifier",
+   "derniere_verification": null,
+   "etat_source": null,
+   "occurrences": [
+    {
+     "skill": "acte-definitif-titres",
+     "ligne": 164,
+     "extrait": "| Dépôt au greffe (parts sociales, statuts modifiés) | Actes modificatifs déposés dans le délai d'un mois à compter de leur date, avec un exemplaire des statuts"
+    },
+    {
+     "skill": "redaction-acte",
+     "ligne": 104,
+     "extrait": "| Dépôt des actes | Actes, délibérations ou décisions modifiant les pièces déposées : dépôt dans le délai d'un mois à compter de leur date, avec un exemplaire d"
+    }
+   ]
+  },
+  {
+   "id": "code-monetaire-et-financier:L. 561-45-1",
+   "type": "article",
+   "code": "code-monetaire-et-financier",
+   "article": "L. 561-45-1",
+   "cle_librejustice": "l561-45-1",
+   "statut_verification": "verifie",
+   "derniere_verification": "2026-10-23",
+   "etat_source": null,
+   "occurrences": [
+    {
+     "skill": "acte-definitif-titres",
+     "ligne": 165,
+     "extrait": "| Bénéficiaires effectifs | Obligation d'obtenir et de conserver des informations à jour (C. mon. fin. L. 561-45-1) ; déclaration au RCS (L. 561-46 ; version en"
+    }
+   ]
+  },
+  {
+   "id": "code-monetaire-et-financier:L. 561-46",
+   "type": "article",
+   "code": "code-monetaire-et-financier",
+   "article": "L. 561-46",
+   "cle_librejustice": "l561-46",
+   "statut_verification": "verifie",
+   "derniere_verification": "2026-10-23",
+   "etat_source": {
+    "statut": "ABROGE_DIFF",
+    "version_depuis": "2025-05-03",
+    "version_jusqu_a": "2028-12-31",
+    "dernier_texte_modificateur": "Ordonnance n° 2025-1091 du 19/11/2025, art. 28",
+    "versions_futures": [
+     {
+      "statut": "VIGUEUR_DIFF",
+      "depuis": "2029-01-01"
+     }
+    ],
+    "lecture": "pas une abrogation : nouvelle rédaction au 01/01/2029 (renvois au code de procédure pénale réécrit)"
+   },
+   "occurrences": [
+    {
+     "skill": "acte-definitif-titres",
+     "ligne": 165,
+     "extrait": "| Bénéficiaires effectifs | Obligation d'obtenir et de conserver des informations à jour (C. mon. fin. L. 561-45-1) ; déclaration au RCS (L. 561-46 ; version en"
+    },
+    {
+     "skill": "maintenance-skills",
+     "ligne": 76,
+     "extrait": "⚠️ **Piège constaté le 23/10/2026 (C. mon. fin. L. 561-46).** Une version"
+    },
+    {
+     "skill": "redaction-acte",
+     "ligne": 106,
+     "extrait": "| Bénéficiaires effectifs | Inscription modificative dans les trente jours suivant tout fait ou acte modifiant les informations déclarées | C. mon. fin. R. 561-"
+    }
+   ]
+  },
+  {
+   "id": "code-general-des-impots:150-0 A",
+   "type": "article",
+   "code": "code-general-des-impots",
+   "article": "150-0 A",
+   "cle_librejustice": "150-0-a",
+   "statut_verification": "verifie",
+   "derniere_verification": "2026-10-23",
+   "etat_source": null,
+   "occurrences": [
+    {
+     "skill": "acte-definitif-titres",
+     "ligne": 166,
+     "extrait": "| Plus-value du cédant | CGI art. 150-0 A s. ; formulaire en vigueur ; renvoi `calcul-plus-value` |"
+    },
+    {
+     "skill": "calcul-plus-value",
+     "ligne": 80,
+     "extrait": "| PV mobilière PP | CGI art. 150-0 A à 150-0 E, 200 A ; abattements éventuels (dont départ à la retraite art. 150-0 D ter) | BOFiP RPPM-PVBMI |"
+    },
+    {
+     "skill": "protocole-cession",
+     "ligne": 399,
+     "extrait": "| Complément de prix (earn-out) | CGI Art. 150-0 A, I, 2 (vérifié 23/10/2026) — imposable au titre de l'année de perception ; le prix d'acquisition retenu par l"
+    }
+   ]
+  },
+  {
+   "id": "code-general-des-impots:1681 F",
+   "type": "article",
+   "code": "code-general-des-impots",
+   "article": "1681 F",
+   "cle_librejustice": "1681-f",
+   "statut_verification": "verifie",
+   "derniere_verification": "2026-10-23",
+   "etat_source": null,
+   "occurrences": [
+    {
+     "skill": "acte-definitif-titres",
+     "ligne": 167,
+     "extrait": "| Crédit-vendeur | Demande de paiement échelonné de l'impôt : CGI art. 1681 F, I bis — conditions et date limite de demande (voir `protocole-cession` § 4.2) |"
+    },
+    {
+     "skill": "cession-fonds",
+     "ligne": 71,
+     "extrait": "| Crédit-vendeur consenti par un cédant entreprise individuelle | Plan de règlement échelonné de l'impôt sur le revenu afférent aux plus-values à long terme, lo"
+    },
+    {
+     "skill": "protocole-cession",
+     "ligne": 400,
+     "extrait": "| Crédit-vendeur | **CGI Art. 1681 F, I bis** — plan de règlement échelonné de l'IR sur demande | Conditions cumulatives strictes (voir ci-dessous) |"
+    },
+    {
+     "skill": "protocole-cession",
+     "ligne": 403,
+     "extrait": "**Crédit-vendeur — CGI Art. 1681 F, I bis (vérifié 23/10/2026).** Le plan de"
+    },
+    {
+     "skill": "protocole-cession",
+     "ligne": 587,
+     "extrait": "- [ ] Crédit-vendeur : compatibilité avec CGI Art. 1681 F, I bis vérifiée"
+    }
+   ]
+  },
+  {
+   "id": "code-civil:1211",
+   "type": "article",
+   "code": "code-civil",
+   "article": "1211",
+   "cle_librejustice": "1211",
+   "statut_verification": "a_verifier",
+   "derniere_verification": null,
+   "etat_source": null,
+   "occurrences": [
+    {
+     "skill": "analyse-contrat",
+     "ligne": 70,
+     "extrait": "4. Durée, reconduction, résiliation (Art. 1211 s. C. civ.)"
+    }
+   ]
+  },
+  {
+   "id": "code-civil:1218",
+   "type": "article",
+   "code": "code-civil",
+   "article": "1218",
+   "cle_librejustice": "1218",
+   "statut_verification": "a_verifier",
+   "derniere_verification": null,
+   "etat_source": null,
+   "occurrences": [
+    {
+     "skill": "analyse-contrat",
+     "ligne": 72,
+     "extrait": "6. Force majeure (Art. 1218 C. civ.) et imprévision (Art. 1195 C. civ.)"
+    },
+    {
+     "skill": "analyse-contrat",
+     "ligne": 164,
+     "extrait": "### 3. Clause de force majeure — version Art. 1218 C. civ. enrichie"
+    },
+    {
+     "skill": "analyse-contrat",
+     "ligne": 169,
+     "extrait": "empêchant l'exécution de son obligation par le débiteur (Art. 1218 C. civ.)."
+    }
+   ]
+  },
+  {
+   "id": "code-civil:1195",
+   "type": "article",
+   "code": "code-civil",
+   "article": "1195",
+   "cle_librejustice": "1195",
+   "statut_verification": "a_verifier",
+   "derniere_verification": null,
+   "etat_source": null,
+   "occurrences": [
+    {
+     "skill": "analyse-contrat",
+     "ligne": 72,
+     "extrait": "6. Force majeure (Art. 1218 C. civ.) et imprévision (Art. 1195 C. civ.)"
+    },
+    {
+     "skill": "analyse-contrat",
+     "ligne": 176,
+     "extrait": "### 4. Clause d'imprévision — version Art. 1195 C. civ. négociée"
+    },
+    {
+     "skill": "analyse-contrat",
+     "ligne": 185,
+     "extrait": "**Vigilance** : l'Art. 1195 C. civ. est supplétif — il peut être écarté par"
+    }
+   ]
+  },
+  {
+   "id": "code-de-la-propriete-intellectuelle:L. 131-3",
+   "type": "article",
+   "code": "code-de-la-propriete-intellectuelle",
+   "article": "L. 131-3",
+   "cle_librejustice": "l131-3",
+   "statut_verification": "a_verifier",
+   "derniere_verification": null,
+   "etat_source": null,
+   "occurrences": [
+    {
+     "skill": "analyse-contrat",
+     "ligne": 75,
+     "extrait": "9. Propriété intellectuelle (Art. L131-3 CPI pour cessions écrites)"
+    }
+   ]
+  },
+  {
+   "id": "code-de-la-consommation:L. 212-1",
+   "type": "article",
+   "code": "code-de-la-consommation",
+   "article": "L. 212-1",
+   "cle_librejustice": "l212-1",
+   "statut_verification": "a_verifier",
+   "derniere_verification": null,
+   "etat_source": null,
+   "occurrences": [
+    {
+     "skill": "analyse-contrat",
+     "ligne": 79,
+     "extrait": "- Clauses abusives B2C (Art. L212-1 C. conso.)"
+    }
+   ]
+  },
+  {
+   "id": "code-de-commerce:L. 442-1",
+   "type": "article",
+   "code": "code-de-commerce",
+   "article": "L. 442-1",
+   "cle_librejustice": "l442-1",
+   "statut_verification": "a_verifier",
+   "derniere_verification": null,
+   "etat_source": null,
+   "occurrences": [
+    {
+     "skill": "analyse-contrat",
+     "ligne": 80,
+     "extrait": "- Déséquilibre significatif B2B (Art. L442-1 C. com.)"
+    }
+   ]
+  },
+  {
+   "id": "code-general-des-impots:150 U",
+   "type": "article",
+   "code": "code-general-des-impots",
+   "article": "150 U",
+   "cle_librejustice": "150-u",
+   "statut_verification": "a_verifier",
+   "derniere_verification": null,
+   "etat_source": null,
+   "occurrences": [
+    {
+     "skill": "calcul-plus-value",
+     "ligne": 78,
+     "extrait": "| PV immobilière PP | CGI art. 150 U à 150 VH ; surtaxe art. 1609 nonies G ; prélèvements sociaux CSS L. 136-7 et L. 136-8 | BOFiP RFPI-PVI (Legal Data Hunter) "
+    },
+    {
+     "skill": "calcul-plus-value",
+     "ligne": 78,
+     "extrait": "| PV immobilière PP | CGI art. 150 U à 150 VH ; surtaxe art. 1609 nonies G ; prélèvements sociaux CSS L. 136-7 et L. 136-8 | BOFiP RFPI-PVI (Legal Data Hunter) "
+    }
+   ]
+  },
+  {
+   "id": "code-general-des-impots:150 VH",
+   "type": "article",
+   "code": "code-general-des-impots",
+   "article": "150 VH",
+   "cle_librejustice": "150-vh",
+   "statut_verification": "a_verifier",
+   "derniere_verification": null,
+   "etat_source": null,
+   "occurrences": [
+    {
+     "skill": "calcul-plus-value",
+     "ligne": 78,
+     "extrait": "| PV immobilière PP | CGI art. 150 U à 150 VH ; surtaxe art. 1609 nonies G ; prélèvements sociaux CSS L. 136-7 et L. 136-8 | BOFiP RFPI-PVI (Legal Data Hunter) "
+    },
+    {
+     "skill": "calcul-plus-value",
+     "ligne": 78,
+     "extrait": "| PV immobilière PP | CGI art. 150 U à 150 VH ; surtaxe art. 1609 nonies G ; prélèvements sociaux CSS L. 136-7 et L. 136-8 | BOFiP RFPI-PVI (Legal Data Hunter) "
+    }
+   ]
+  },
+  {
+   "id": "code-general-des-impots:150 VB",
+   "type": "article",
+   "code": "code-general-des-impots",
+   "article": "150 VB",
+   "cle_librejustice": "150-vb",
+   "statut_verification": "a_verifier",
+   "derniere_verification": null,
+   "etat_source": null,
+   "occurrences": [
+    {
+     "skill": "calcul-plus-value",
+     "ligne": 79,
+     "extrait": "| LMNP | CGI art. 150 VB III (et ses exceptions) | BOFiP correspondant ; module de formation du dépôt sur l'immobilier |"
+    },
+    {
+     "skill": "socle-eca",
+     "ligne": 217,
+     "extrait": "| LMNP — réintégration des amortissements | Le prix d'acquisition est minoré des amortissements déduits, **mais** des exceptions ont été ajoutées (résidences ét"
+    }
+   ]
+  },
+  {
+   "id": "code-general-des-impots:1609 nonies G",
+   "type": "article",
+   "code": "code-general-des-impots",
+   "article": "1609 nonies G",
+   "cle_librejustice": "1609-nonies-g",
+   "statut_verification": "a_verifier",
+   "derniere_verification": null,
+   "etat_source": null,
+   "occurrences": [
+    {
+     "skill": "calcul-plus-value",
+     "ligne": 78,
+     "extrait": "| PV immobilière PP | CGI art. 150 U à 150 VH ; surtaxe art. 1609 nonies G ; prélèvements sociaux CSS L. 136-7 et L. 136-8 | BOFiP RFPI-PVI (Legal Data Hunter) "
+    }
+   ]
+  },
+  {
+   "id": "code-de-la-securite-sociale:L. 136-7",
+   "type": "article",
+   "code": "code-de-la-securite-sociale",
+   "article": "L. 136-7",
+   "cle_librejustice": "l136-7",
+   "statut_verification": "a_verifier",
+   "derniere_verification": null,
+   "etat_source": null,
+   "occurrences": [
+    {
+     "skill": "calcul-plus-value",
+     "ligne": 78,
+     "extrait": "| PV immobilière PP | CGI art. 150 U à 150 VH ; surtaxe art. 1609 nonies G ; prélèvements sociaux CSS L. 136-7 et L. 136-8 | BOFiP RFPI-PVI (Legal Data Hunter) "
+    }
+   ]
+  },
+  {
+   "id": "code-de-la-securite-sociale:L. 136-8",
+   "type": "article",
+   "code": "code-de-la-securite-sociale",
+   "article": "L. 136-8",
+   "cle_librejustice": "l136-8",
+   "statut_verification": "a_verifier",
+   "derniere_verification": null,
+   "etat_source": null,
+   "occurrences": [
+    {
+     "skill": "calcul-plus-value",
+     "ligne": 78,
+     "extrait": "| PV immobilière PP | CGI art. 150 U à 150 VH ; surtaxe art. 1609 nonies G ; prélèvements sociaux CSS L. 136-7 et L. 136-8 | BOFiP RFPI-PVI (Legal Data Hunter) "
+    },
+    {
+     "skill": "calcul-plus-value",
+     "ligne": 85,
+     "extrait": "| Contributions | CEHR art. 223 sexies ; CDHR art. 224 ; prélèvements sociaux CSS L. 136-8 | — |"
+    },
+    {
+     "skill": "note-information-client",
+     "ligne": 128,
+     "extrait": "> patrimoine est porté à [x] % conformément à l'art. L. 136-8 CSS.\""
+    },
+    {
+     "skill": "socle-eca",
+     "ligne": 216,
+     "extrait": "| Prélèvements sociaux du patrimoine | Les taux de CSG sont **différenciés** selon la nature du revenu (dividendes/PV mobilières ≠ revenus fonciers et PV immobi"
+    }
+   ]
+  },
+  {
+   "id": "code-general-des-impots:150-0 E",
+   "type": "article",
+   "code": "code-general-des-impots",
+   "article": "150-0 E",
+   "cle_librejustice": "150-0-e",
+   "statut_verification": "a_verifier",
+   "derniere_verification": null,
+   "etat_source": null,
+   "occurrences": [
+    {
+     "skill": "calcul-plus-value",
+     "ligne": 80,
+     "extrait": "| PV mobilière PP | CGI art. 150-0 A à 150-0 E, 200 A ; abattements éventuels (dont départ à la retraite art. 150-0 D ter) | BOFiP RPPM-PVBMI |"
+    }
+   ]
+  },
+  {
+   "id": "code-general-des-impots:200 A",
+   "type": "article",
+   "code": "code-general-des-impots",
+   "article": "200 A",
+   "cle_librejustice": "200-a",
+   "statut_verification": "a_verifier",
+   "derniere_verification": null,
+   "etat_source": null,
+   "occurrences": [
+    {
+     "skill": "calcul-plus-value",
+     "ligne": 80,
+     "extrait": "| PV mobilière PP | CGI art. 150-0 A à 150-0 E, 200 A ; abattements éventuels (dont départ à la retraite art. 150-0 D ter) | BOFiP RPPM-PVBMI |"
+    },
+    {
+     "skill": "legal-hallucination-checker",
+     "ligne": 28,
+     "extrait": "| Cons. const. n°2016-538 QPC 22/04/2016 | Existe — vise l'art. 200 A, 2 ter CGI | Portée au regard de la version de l'article applicable |"
+    },
+    {
+     "skill": "legal-hallucination-checker",
+     "ligne": 28,
+     "extrait": "| Cons. const. n°2016-538 QPC 22/04/2016 | Existe — vise l'art. 200 A, 2 ter CGI | Portée au regard de la version de l'article applicable |"
+    },
+    {
+     "skill": "legal-hallucination-checker",
+     "ligne": 30,
+     "extrait": "| Art. 200 A, 2 ter CGI | Existe | Version à la date du fait générateur |"
+    },
+    {
+     "skill": "legal-hallucination-checker",
+     "ligne": 30,
+     "extrait": "| Art. 200 A, 2 ter CGI | Existe | Version à la date du fait générateur |"
+    },
+    {
+     "skill": "socle-eca",
+     "ligne": 216,
+     "extrait": "| Prélèvements sociaux du patrimoine | Les taux de CSG sont **différenciés** selon la nature du revenu (dividendes/PV mobilières ≠ revenus fonciers et PV immobi"
+    }
+   ]
+  },
+  {
+   "id": "code-general-des-impots:150-0 D ter",
+   "type": "article",
+   "code": "code-general-des-impots",
+   "article": "150-0 D ter",
+   "cle_librejustice": "150-0-d-ter",
+   "statut_verification": "a_verifier",
+   "derniere_verification": null,
+   "etat_source": null,
+   "occurrences": [
+    {
+     "skill": "calcul-plus-value",
+     "ligne": 80,
+     "extrait": "| PV mobilière PP | CGI art. 150-0 A à 150-0 E, 200 A ; abattements éventuels (dont départ à la retraite art. 150-0 D ter) | BOFiP RPPM-PVBMI |"
+    }
+   ]
+  },
+  {
+   "id": "code-general-des-impots:150-0 B",
+   "type": "article",
+   "code": "code-general-des-impots",
+   "article": "150-0 B",
+   "cle_librejustice": "150-0-b",
+   "statut_verification": "a_verifier",
+   "derniere_verification": null,
+   "etat_source": null,
+   "occurrences": [
+    {
+     "skill": "calcul-plus-value",
+     "ligne": 81,
+     "extrait": "| Report / sursis | CGI art. 150-0 B, 150-0 B ter ; état de suivi annuel | BOFiP RPPM-PVBMI-30 |"
+    }
+   ]
+  },
+  {
+   "id": "code-general-des-impots:150-0 B ter",
+   "type": "article",
+   "code": "code-general-des-impots",
+   "article": "150-0 B ter",
+   "cle_librejustice": "150-0-b-ter",
+   "statut_verification": "a_verifier",
+   "derniere_verification": null,
+   "etat_source": null,
+   "occurrences": [
+    {
+     "skill": "calcul-plus-value",
+     "ligne": 81,
+     "extrait": "| Report / sursis | CGI art. 150-0 B, 150-0 B ter ; état de suivi annuel | BOFiP RPPM-PVBMI-30 |"
+    },
+    {
+     "skill": "consultation-juridique",
+     "ligne": 96,
+     "extrait": "150-0 B ter CGI pour bénéficier du report d'imposition.\""
+    },
+    {
+     "skill": "consultation-juridique",
+     "ligne": 181,
+     "extrait": "II. Problématique : Conditions d'application de l'Art. 150-0 B ter CGI"
+    },
+    {
+     "skill": "consultation-juridique",
+     "ligne": 185,
+     "extrait": "III. Règles : art. 150-0 B ter CGI dans sa version à la date de l'apport"
+    },
+    {
+     "skill": "holding-apport",
+     "ligne": 44,
+     "extrait": "| Report d'imposition | Condition de contrôle de la holding, obligations de conservation, cession dans le délai et réinvestissement (quotité, nature, délai), dé"
+    },
+    {
+     "skill": "legal-hallucination-checker",
+     "ligne": 29,
+     "extrait": "| Art. 150-0 B ter CGI | Existe | Version à la date de l'apport |"
+    },
+    {
+     "skill": "legal-hallucination-checker",
+     "ligne": 69,
+     "extrait": "| `Art. [N] CGI` / `Art. [N] C. civ.` / `Art. L[N] LPF` | Article de code | Art. 150-0 B ter CGI |"
+    },
+    {
+     "skill": "protocole-cession",
+     "ligne": 410,
+     "extrait": "au sens du 2° du III de l'Art. 150-0 B ter CGI ;"
+    },
+    {
+     "skill": "strategie-patrimoniale",
+     "ligne": 74,
+     "extrait": "| Cession avant ou après donation | Purge de la plus-value par la donation | Antériorité réelle de la donation, absence de cession déjà engagée | Jurisprudence "
+    }
+   ]
+  },
+  {
+   "id": "code-general-des-impots:39 duodecies",
+   "type": "article",
+   "code": "code-general-des-impots",
+   "article": "39 duodecies",
+   "cle_librejustice": "39-duodecies",
+   "statut_verification": "a_verifier",
+   "derniere_verification": null,
+   "etat_source": null,
+   "occurrences": [
+    {
+     "skill": "calcul-plus-value",
+     "ligne": 82,
+     "extrait": "| PV professionnelle | CGI art. 39 duodecies s. ; exonérations art. 151 septies, 151 septies A, 238 quindecies, 151 nonies selon le cas | BOFiP BIC-PVMV |"
+    }
+   ]
+  },
+  {
+   "id": "code-general-des-impots:39",
+   "type": "article",
+   "code": "code-general-des-impots",
+   "article": "39",
+   "cle_librejustice": "39",
+   "statut_verification": "a_verifier",
+   "derniere_verification": null,
+   "etat_source": null,
+   "occurrences": [
+    {
+     "skill": "contentieux-fiscal",
+     "ligne": 291,
+     "extrait": "> En premier lieu, l'article 39, 1-5° du CGI admet la déductibilité des"
+    }
+   ]
+  },
+  {
+   "id": "code-general-des-impots:151 septies",
+   "type": "article",
+   "code": "code-general-des-impots",
+   "article": "151 septies",
+   "cle_librejustice": "151-septies",
+   "statut_verification": "a_verifier",
+   "derniere_verification": null,
+   "etat_source": null,
+   "occurrences": [
+    {
+     "skill": "calcul-plus-value",
+     "ligne": 82,
+     "extrait": "| PV professionnelle | CGI art. 39 duodecies s. ; exonérations art. 151 septies, 151 septies A, 238 quindecies, 151 nonies selon le cas | BOFiP BIC-PVMV |"
+    }
+   ]
+  },
+  {
+   "id": "code-general-des-impots:151 septies A",
+   "type": "article",
+   "code": "code-general-des-impots",
+   "article": "151 septies A",
+   "cle_librejustice": "151-septies-a",
+   "statut_verification": "a_verifier",
+   "derniere_verification": null,
+   "etat_source": null,
+   "occurrences": [
+    {
+     "skill": "calcul-plus-value",
+     "ligne": 82,
+     "extrait": "| PV professionnelle | CGI art. 39 duodecies s. ; exonérations art. 151 septies, 151 septies A, 238 quindecies, 151 nonies selon le cas | BOFiP BIC-PVMV |"
+    }
+   ]
+  },
+  {
+   "id": "code-general-des-impots:238 quindecies",
+   "type": "article",
+   "code": "code-general-des-impots",
+   "article": "238 quindecies",
+   "cle_librejustice": "238-quindecies",
+   "statut_verification": "a_verifier",
+   "derniere_verification": null,
+   "etat_source": null,
+   "occurrences": [
+    {
+     "skill": "calcul-plus-value",
+     "ligne": 82,
+     "extrait": "| PV professionnelle | CGI art. 39 duodecies s. ; exonérations art. 151 septies, 151 septies A, 238 quindecies, 151 nonies selon le cas | BOFiP BIC-PVMV |"
+    }
+   ]
+  },
+  {
+   "id": "code-general-des-impots:151 nonies",
+   "type": "article",
+   "code": "code-general-des-impots",
+   "article": "151 nonies",
+   "cle_librejustice": "151-nonies",
+   "statut_verification": "a_verifier",
+   "derniere_verification": null,
+   "etat_source": null,
+   "occurrences": [
+    {
+     "skill": "calcul-plus-value",
+     "ligne": 82,
+     "extrait": "| PV professionnelle | CGI art. 39 duodecies s. ; exonérations art. 151 septies, 151 septies A, 238 quindecies, 151 nonies selon le cas | BOFiP BIC-PVMV |"
+    }
+   ]
+  },
+  {
+   "id": "code-general-des-impots:219",
+   "type": "article",
+   "code": "code-general-des-impots",
+   "article": "219",
+   "cle_librejustice": "219",
+   "statut_verification": "a_verifier",
+   "derniere_verification": null,
+   "etat_source": null,
+   "occurrences": [
+    {
+     "skill": "calcul-plus-value",
+     "ligne": 83,
+     "extrait": "| PV à l'IS | CGI art. 219 I a quinquies (titres de participation) ; taux d'IS en vigueur | BOFiP IS-BASE |"
+    },
+    {
+     "skill": "dissolution-liquidation-tup",
+     "ligne": 52,
+     "extrait": "| Boni — associé personne morale | Régime mère-fille sur la fraction distribuée, plus-value / moins-value sur titres | CGI art. 145, 216, 219 |"
+    },
+    {
+     "skill": "redaction-acte",
+     "ligne": 179,
+     "extrait": "le plafond du taux réduit d'IS (CGI art. 219, I, b) et le calendrier des"
+    }
+   ]
+  },
+  {
+   "id": "code-general-des-impots:223 sexies",
+   "type": "article",
+   "code": "code-general-des-impots",
+   "article": "223 sexies",
+   "cle_librejustice": "223-sexies",
+   "statut_verification": "a_verifier",
+   "derniere_verification": null,
+   "etat_source": null,
+   "occurrences": [
+    {
+     "skill": "holding-apport",
+     "ligne": 45,
+     "extrait": "| Coût global | Purge vs report, CEHR et CDHR des années concernées | Renvoi `calcul-plus-value` ; CGI art. 223 sexies et 224 |"
+    }
+   ]
+  },
+  {
+   "id": "code-general-des-impots:224",
+   "type": "article",
+   "code": "code-general-des-impots",
+   "article": "224",
+   "cle_librejustice": "224",
+   "statut_verification": "a_verifier",
+   "derniere_verification": null,
+   "etat_source": null,
+   "occurrences": [
+    {
+     "skill": "consultation-juridique",
+     "ligne": 187,
+     "extrait": "lus à la source, jamais de mémoire), CDHR (art. 224 CGI), doctrine BOFiP"
+    },
+    {
+     "skill": "holding-apport",
+     "ligne": 45,
+     "extrait": "| Coût global | Purge vs report, CEHR et CDHR des années concernées | Renvoi `calcul-plus-value` ; CGI art. 223 sexies et 224 |"
+    },
+    {
+     "skill": "legal-hallucination-checker",
+     "ligne": 325,
+     "extrait": "l'art. 224 CGI)."
+    },
+    {
+     "skill": "socle-eca",
+     "ligne": 225,
+     "extrait": "| Contribution différentielle (CDHR) | Elle figure à l'**art. 224 CGI** — l'« art. 150-0 F ter » cité dans les anciennes versions des skills **n'existe pas**. L"
+    },
+    {
+     "skill": "socle-eca",
+     "ligne": 225,
+     "extrait": "| Contribution différentielle (CDHR) | Elle figure à l'**art. 224 CGI** — l'« art. 150-0 F ter » cité dans les anciennes versions des skills **n'existe pas**. L"
+    }
+   ]
+  },
+  {
+   "id": "code-general-des-impots:167 bis",
+   "type": "article",
+   "code": "code-general-des-impots",
+   "article": "167 bis",
+   "cle_librejustice": "167-bis",
+   "statut_verification": "a_verifier",
+   "derniere_verification": null,
+   "etat_source": null,
+   "occurrences": [
+    {
+     "skill": "calcul-plus-value",
+     "ligne": 86,
+     "extrait": "| Exit tax | CGI art. 167 bis | BOFiP |"
+    }
+   ]
+  },
+  {
+   "id": "code-de-commerce:L. 141-23",
+   "type": "article",
+   "code": "code-de-commerce",
+   "article": "L. 141-23",
+   "cle_librejustice": "l141-23",
+   "statut_verification": "verifie",
+   "derniere_verification": "2026-10-23",
+   "etat_source": null,
+   "occurrences": [
+    {
+     "skill": "cession-fonds",
+     "ligne": 58,
+     "extrait": "| Information des salariés (entreprises sans obligation de CSE à attributions élargies) | Information au plus tard un mois avant la vente ; vente possible avant"
+    },
+    {
+     "skill": "cession-fonds",
+     "ligne": 59,
+     "extrait": "| Information-consultation du CSE (attributions élargies) | Consultation sur le projet ; à défaut de CSE constaté selon L. 2314-9 C. trav., retour à L. 141-23 s"
+    },
+    {
+     "skill": "cession-fonds",
+     "ligne": 99,
+     "extrait": "les cessions de fonds, régies par L. 141-23 à L. 141-28."
+    },
+    {
+     "skill": "lettre-intention",
+     "ligne": 159,
+     "extrait": "- Information des salariés (C. com. L. 141-23 et L. 141-28, rédaction issue de"
+    },
+    {
+     "skill": "socle-eca",
+     "ligne": 220,
+     "extrait": "| Information des salariés (cession titres / fonds) | Champ indexé sur l'absence d'obligation de CSE « attributions élargies » ; délai d'un mois ; amende civile"
+    }
+   ]
+  },
+  {
+   "id": "code-de-commerce:L. 141-27",
+   "type": "article",
+   "code": "code-de-commerce",
+   "article": "L. 141-27",
+   "cle_librejustice": "l141-27",
+   "statut_verification": "verifie",
+   "derniere_verification": "2026-10-23",
+   "etat_source": null,
+   "occurrences": [
+    {
+     "skill": "cession-fonds",
+     "ligne": 58,
+     "extrait": "| Information des salariés (entreprises sans obligation de CSE à attributions élargies) | Information au plus tard un mois avant la vente ; vente possible avant"
+    }
+   ]
+  },
+  {
+   "id": "code-du-travail:L. 2314-9",
+   "type": "article",
+   "code": "code-du-travail",
+   "article": "L. 2314-9",
+   "cle_librejustice": "l2314-9",
+   "statut_verification": "verifie",
+   "derniere_verification": "2026-10-23",
+   "etat_source": null,
+   "occurrences": [
+    {
+     "skill": "cession-fonds",
+     "ligne": 59,
+     "extrait": "| Information-consultation du CSE (attributions élargies) | Consultation sur le projet ; à défaut de CSE constaté selon L. 2314-9 C. trav., retour à L. 141-23 s"
+    }
+   ]
+  },
+  {
+   "id": "code-de-commerce:L. 141-28",
+   "type": "article",
+   "code": "code-de-commerce",
+   "article": "L. 141-28",
+   "cle_librejustice": "l141-28",
+   "statut_verification": "verifie",
+   "derniere_verification": "2026-10-23",
+   "etat_source": null,
+   "occurrences": [
+    {
+     "skill": "cession-fonds",
+     "ligne": 59,
+     "extrait": "| Information-consultation du CSE (attributions élargies) | Consultation sur le projet ; à défaut de CSE constaté selon L. 2314-9 C. trav., retour à L. 141-23 s"
+    },
+    {
+     "skill": "cession-fonds",
+     "ligne": 99,
+     "extrait": "les cessions de fonds, régies par L. 141-23 à L. 141-28."
+    },
+    {
+     "skill": "lettre-intention",
+     "ligne": 159,
+     "extrait": "- Information des salariés (C. com. L. 141-23 et L. 141-28, rédaction issue de"
+    },
+    {
+     "skill": "protocole-cession",
+     "ligne": 177,
+     "extrait": "L. 141-28 et vise « tout projet de vente d'un **fonds de commerce** », tout"
+    }
+   ]
+  },
+  {
+   "id": "code-du-travail:L. 1224-1",
+   "type": "article",
+   "code": "code-du-travail",
+   "article": "L. 1224-1",
+   "cle_librejustice": "l1224-1",
+   "statut_verification": "verifie",
+   "derniere_verification": "2026-10-23",
+   "etat_source": null,
+   "occurrences": [
+    {
+     "skill": "cession-fonds",
+     "ligne": 61,
+     "extrait": "| Transfert des contrats de travail | Les contrats en cours subsistent avec le nouvel employeur | C. trav. L. 1224-1 (vérifié 23/10/2026) et L. 1224-2 |"
+    },
+    {
+     "skill": "dissolution-liquidation-tup",
+     "ligne": 47,
+     "extrait": "| TUP — contrats et salariés | Clauses d'intuitu personae et de changement de contrôle, autorisations personnelles ; maintien des contrats de travail (C. trav. "
+    },
+    {
+     "skill": "due-diligence-juridique",
+     "ligne": 35,
+     "extrait": "| Cession de fonds | Baux commerciaux, contrats de travail L1224-1, licences, marques |"
+    },
+    {
+     "skill": "due-diligence-juridique",
+     "ligne": 63,
+     "extrait": "- Art. L1224-1 : transfert automatique si cession de fonds"
+    },
+    {
+     "skill": "lettre-intention",
+     "ligne": 166,
+     "extrait": "- Salariés repris de plein droit (C. trav. L. 1224-1, vérifié 23/10/2026)."
+    },
+    {
+     "skill": "restructurations",
+     "ligne": 114,
+     "extrait": "- **Salariés** : maintien de plein droit des contrats (C. trav. L. 1224-1,"
+    }
+   ]
+  },
+  {
+   "id": "code-du-travail:L. 1224-2",
+   "type": "article",
+   "code": "code-du-travail",
+   "article": "L. 1224-2",
+   "cle_librejustice": "l1224-2",
+   "statut_verification": "verifie",
+   "derniere_verification": "2026-10-23",
+   "etat_source": null,
+   "occurrences": [
+    {
+     "skill": "cession-fonds",
+     "ligne": 61,
+     "extrait": "| Transfert des contrats de travail | Les contrats en cours subsistent avec le nouvel employeur | C. trav. L. 1224-1 (vérifié 23/10/2026) et L. 1224-2 |"
+    }
+   ]
+  },
+  {
+   "id": "code-de-commerce:L. 145-16",
+   "type": "article",
+   "code": "code-de-commerce",
+   "article": "L. 145-16",
+   "cle_librejustice": "l145-16",
+   "statut_verification": "verifie",
+   "derniere_verification": "2026-10-23",
+   "etat_source": null,
+   "occurrences": [
+    {
+     "skill": "cession-fonds",
+     "ligne": 62,
+     "extrait": "| Bail commercial | Clauses de cession, intervention du bailleur ; la garantie du cédant au profit du bailleur n'est invocable que pendant trois ans à compter d"
+    },
+    {
+     "skill": "dissolution-liquidation-tup",
+     "ligne": 46,
+     "extrait": "| TUP — bail commercial | La société bénéficiaire est substituée au preneur nonobstant toute stipulation contraire | C. com. L. 145-16, al. 2 (vérifié 23/10/202"
+    },
+    {
+     "skill": "prompt-builder-eca",
+     "ligne": 29,
+     "extrait": "Si tu te surprends à écrire « par ailleurs, l'Art. L. 145-16 prévoit que… »,"
+    },
+    {
+     "skill": "prompt-builder-eca",
+     "ligne": 314,
+     "extrait": "rappel de l'Art. L. 145-16 que Yoann connaît déjà."
+    },
+    {
+     "skill": "restructurations",
+     "ligne": 102,
+     "extrait": "L. 145-16, vérifié)."
+    }
+   ]
+  },
+  {
+   "id": "code-de-commerce:L. 145-16-2",
+   "type": "article",
+   "code": "code-de-commerce",
+   "article": "L. 145-16-2",
+   "cle_librejustice": "l145-16-2",
+   "statut_verification": "verifie",
+   "derniere_verification": "2026-10-23",
+   "etat_source": null,
+   "occurrences": [
+    {
+     "skill": "cession-fonds",
+     "ligne": 62,
+     "extrait": "| Bail commercial | Clauses de cession, intervention du bailleur ; la garantie du cédant au profit du bailleur n'est invocable que pendant trois ans à compter d"
+    }
+   ]
+  },
+  {
+   "id": "code-de-commerce:L. 214-1",
+   "type": "article",
+   "code": "code-de-commerce",
+   "article": "L. 214-1",
+   "cle_librejustice": "l214-1",
+   "statut_verification": "verifie",
+   "derniere_verification": "2026-10-23",
+   "etat_source": null,
+   "occurrences": [
+    {
+     "skill": "cession-fonds",
+     "ligne": 63,
+     "extrait": "| Droit de préemption de la commune | Dans un périmètre de sauvegarde : déclaration préalable du cédant **à peine de nullité** (prix, activité de l'acquéreur pr"
+    },
+    {
+     "skill": "lettre-intention",
+     "ligne": 162,
+     "extrait": "- Droit de préemption de la commune (C. urb. L. 214-1, vérifié 23/10/2026) :"
+    }
+   ]
+  },
+  {
+   "id": "code-de-commerce:L. 141-12",
+   "type": "article",
+   "code": "code-de-commerce",
+   "article": "L. 141-12",
+   "cle_librejustice": "l141-12",
+   "statut_verification": "verifie",
+   "derniere_verification": "2026-10-23",
+   "etat_source": null,
+   "occurrences": [
+    {
+     "skill": "cession-fonds",
+     "ligne": 64,
+     "extrait": "| Publicité de la vente | Publication dans la quinzaine de sa date, à la diligence de l'acquéreur, sur un support d'annonces légales et au BODACC ; le texte vis"
+    }
+   ]
+  },
+  {
+   "id": "code-de-commerce:L. 141-14",
+   "type": "article",
+   "code": "code-de-commerce",
+   "article": "L. 141-14",
+   "cle_librejustice": "l141-14",
+   "statut_verification": "verifie",
+   "derniere_verification": "2026-10-23",
+   "etat_source": null,
+   "occurrences": [
+    {
+     "skill": "cession-fonds",
+     "ligne": 65,
+     "extrait": "| Oppositions des créanciers | Délai courant de la dernière publication, forme à peine de nullité, inopposabilité de tout transport du prix aux opposants → séqu"
+    }
+   ]
+  },
+  {
+   "id": "code-general-des-impots:1684",
+   "type": "article",
+   "code": "code-general-des-impots",
+   "article": "1684",
+   "cle_librejustice": "1684",
+   "statut_verification": "verifie",
+   "derniere_verification": "2026-10-23",
+   "etat_source": null,
+   "occurrences": [
+    {
+     "skill": "cession-fonds",
+     "ligne": 66,
+     "extrait": "| Solidarité fiscale du cessionnaire | Responsabilité limitée au prix ; délai de mise en cause courant de la déclaration de cession, réduit lorsque le cédant re"
+    }
+   ]
+  },
+  {
+   "id": "code-general-des-impots:201",
+   "type": "article",
+   "code": "code-general-des-impots",
+   "article": "201",
+   "cle_librejustice": "201",
+   "statut_verification": "verifie",
+   "derniere_verification": "2026-10-23",
+   "etat_source": null,
+   "occurrences": [
+    {
+     "skill": "cession-fonds",
+     "ligne": 66,
+     "extrait": "| Solidarité fiscale du cessionnaire | Responsabilité limitée au prix ; délai de mise en cause courant de la déclaration de cession, réduit lorsque le cédant re"
+    },
+    {
+     "skill": "restructurations",
+     "ligne": 136,
+     "extrait": "| Obligations déclaratives | État de suivi des plus-values en sursis (lire CGI art. 54 septies), déclaration de cessation et de résultat de la société absorbée "
+    }
+   ]
+  },
+  {
+   "id": "code-general-des-impots:719",
+   "type": "article",
+   "code": "code-general-des-impots",
+   "article": "719",
+   "cle_librejustice": "719",
+   "statut_verification": "verifie",
+   "derniere_verification": "2026-10-23",
+   "etat_source": null,
+   "occurrences": [
+    {
+     "skill": "cession-fonds",
+     "ligne": 68,
+     "extrait": "| Droits d'enregistrement | Barème par fractions, assiette (achalandage, droit au bail, objets mobiliers ; inventaire détaillé et estimatif) ; marchandises neuv"
+    }
+   ]
+  },
+  {
+   "id": "code-general-des-impots:723",
+   "type": "article",
+   "code": "code-general-des-impots",
+   "article": "723",
+   "cle_librejustice": "723",
+   "statut_verification": "verifie",
+   "derniere_verification": "2026-10-23",
+   "etat_source": null,
+   "occurrences": [
+    {
+     "skill": "cession-fonds",
+     "ligne": 68,
+     "extrait": "| Droits d'enregistrement | Barème par fractions, assiette (achalandage, droit au bail, objets mobiliers ; inventaire détaillé et estimatif) ; marchandises neuv"
+    }
+   ]
+  },
+  {
+   "id": "code-general-des-impots:257 bis",
+   "type": "article",
+   "code": "code-general-des-impots",
+   "article": "257 bis",
+   "cle_librejustice": "257-bis",
+   "statut_verification": "verifie",
+   "derniere_verification": "2026-10-23",
+   "etat_source": {
+    "statut": "ABROGE_DIFF",
+    "version_depuis": "2023-01-01",
+    "version_jusqu_a": "2027-01-01",
+    "dernier_texte_modificateur": "Ordonnance n° 2025-1247 du 17/12/2025, art. 9",
+    "versions_futures": [],
+    "lecture": "abrogation au 01/01/2027 sans version future : transfert au CIBS"
+   },
+   "occurrences": [
+    {
+     "skill": "cession-fonds",
+     "ligne": 69,
+     "extrait": "| TVA | Dispense de taxation en cas de transmission d'universalité ; le bénéficiaire continue la personne du cédant pour les régularisations | CGI art. 257 bis "
+    },
+    {
+     "skill": "restructurations",
+     "ligne": 135,
+     "extrait": "| TVA | Dispense de taxation de la transmission d'universalité, régularisations transmises (CGI art. 257 bis jusqu'au 31/12/2026, puis CIBS — socle § 5) |"
+    },
+    {
+     "skill": "socle-eca",
+     "ligne": 221,
+     "extrait": "| Recodification de la TVA | Les articles TVA du CGI (ex. art. 257 bis) sont abrogés à effet différé au **01/01/2027** par l'ordonnance n° 2025-1247 (transfert "
+    }
+   ]
+  },
+  {
+   "id": "code-de-commerce:L. 23-10-7",
+   "type": "article",
+   "code": "code-de-commerce",
+   "article": "L. 23-10-7",
+   "cle_librejustice": "l23-10-7",
+   "statut_verification": "a_verifier",
+   "derniere_verification": null,
+   "etat_source": null,
+   "occurrences": [
+    {
+     "skill": "cession-fonds",
+     "ligne": 97,
+     "extrait": "Note : la discordance relevée sur L. 23-10-7 (chapitre des titres, qui vise un"
+    },
+    {
+     "skill": "lettre-intention",
+     "ligne": 149,
+     "extrait": "de L. 23-10-7 : voir `protocole-cession` § 2.3."
+    },
+    {
+     "skill": "protocole-cession",
+     "ligne": 151,
+     "extrait": "| Information-consultation du CSE | C. com. Art. L. 23-10-7 ; C. trav. Art. L. 2312-8 | Sociétés dotées d'un CSE à attributions élargies | Délit d'entrave, susp"
+    },
+    {
+     "skill": "protocole-cession",
+     "ligne": 161,
+     "extrait": "28/05/2026). Les articles L. 23-10-1 et L. 23-10-7 C. com. ont été réécrits"
+    },
+    {
+     "skill": "protocole-cession",
+     "ligne": 582,
+     "extrait": "discordance L. 23-10-7 traitée par prudence"
+    }
+   ]
+  },
+  {
+   "id": "code-civil:1304-2",
+   "type": "article",
+   "code": "code-civil",
+   "article": "1304-2",
+   "cle_librejustice": "1304-2",
+   "statut_verification": "a_verifier",
+   "derniere_verification": null,
+   "etat_source": null,
+   "occurrences": [
+    {
+     "skill": "cession-fonds",
+     "ligne": 146,
+     "extrait": "(C. civ. 1304-2 : nullité de la condition dépendant de la seule volonté"
+    },
+    {
+     "skill": "protocole-cession",
+     "ligne": 290,
+     "extrait": "⚠️ **Art. 1304-2 C. civ.** — la condition dont la réalisation dépend de la seule"
+    }
+   ]
+  },
+  {
+   "id": "livre-des-procedures-fiscales:L. 80 A",
+   "type": "article",
+   "code": "livre-des-procedures-fiscales",
+   "article": "L. 80 A",
+   "cle_librejustice": "l80-a",
+   "statut_verification": "a_verifier",
+   "derniere_verification": null,
+   "etat_source": null,
+   "occurrences": [
+    {
+     "skill": "consultation-juridique",
+     "ligne": 73,
+     "extrait": "sa date de publication (opposabilité art. L. 80 A LPF)."
+    },
+    {
+     "skill": "contentieux-fiscal",
+     "ligne": 77,
+     "extrait": "- Positions BOFiP favorables applicables (Art. L80 A LPF)"
+    },
+    {
+     "skill": "contentieux-fiscal",
+     "ligne": 89,
+     "extrait": "- **Fond** : CGI à la date du fait générateur ; BOFiP opposable (L. 80 A) via"
+    },
+    {
+     "skill": "contentieux-fiscal",
+     "ligne": 110,
+     "extrait": "| **BOFiP** | Existe-t-il une position administrative plus favorable ? (Art. L80 A LPF) |"
+    },
+    {
+     "skill": "contentieux-fiscal",
+     "ligne": 326,
+     "extrait": "- [ ] Position BOFiP opposable (Art. L80 A LPF) recherchée"
+    }
+   ]
+  },
+  {
+   "id": "code-general-des-impots:1727",
+   "type": "article",
+   "code": "code-general-des-impots",
+   "article": "1727",
+   "cle_librejustice": "1727",
+   "statut_verification": "a_verifier",
+   "derniere_verification": null,
+   "etat_source": null,
+   "occurrences": [
+    {
+     "skill": "consultation-juridique",
+     "ligne": 127,
+     "extrait": "— Pénalités et intérêts applicables (CGI art. 1727 et s., LPF L. 64 — taux lus à la source)"
+    }
+   ]
+  },
+  {
+   "id": "livre-des-procedures-fiscales:L. 64",
+   "type": "article",
+   "code": "livre-des-procedures-fiscales",
+   "article": "L. 64",
+   "cle_librejustice": "l64",
+   "statut_verification": "a_verifier",
+   "derniere_verification": null,
+   "etat_source": null,
+   "occurrences": [
+    {
+     "skill": "consultation-juridique",
+     "ligne": 127,
+     "extrait": "— Pénalités et intérêts applicables (CGI art. 1727 et s., LPF L. 64 — taux lus à la source)"
+    },
+    {
+     "skill": "holding-apport",
+     "ligne": 46,
+     "extrait": "| Abus de droit | Substance de la holding, réinvestissement économique, calendrier | LPF L. 64 et L. 64 A ; jurisprudence récente (Légifrance + LibreJustice) |"
+    }
+   ]
+  },
+  {
+   "id": "livre-des-procedures-fiscales:L. 57",
+   "type": "article",
+   "code": "livre-des-procedures-fiscales",
+   "article": "L. 57",
+   "cle_librejustice": "l57",
+   "statut_verification": "a_verifier",
+   "derniere_verification": null,
+   "etat_source": null,
+   "occurrences": [
+    {
+     "skill": "contentieux-fiscal",
+     "ligne": 35,
+     "extrait": "(LPF L. 57 et R*57-1 — délai et conditions lus à la source)"
+    }
+   ]
+  },
+  {
+   "id": "livre-des-procedures-fiscales:R*57-1",
+   "type": "article",
+   "code": "livre-des-procedures-fiscales",
+   "article": "R*57-1",
+   "cle_librejustice": "r57-1",
+   "statut_verification": "a_verifier",
+   "derniere_verification": null,
+   "etat_source": null,
+   "occurrences": [
+    {
+     "skill": "contentieux-fiscal",
+     "ligne": 35,
+     "extrait": "(LPF L. 57 et R*57-1 — délai et conditions lus à la source)"
+    }
+   ]
+  },
+  {
+   "id": "livre-des-procedures-fiscales:L. 10",
+   "type": "article",
+   "code": "livre-des-procedures-fiscales",
+   "article": "L. 10",
+   "cle_librejustice": "l10",
+   "statut_verification": "a_verifier",
+   "derniere_verification": null,
+   "etat_source": null,
+   "occurrences": [
+    {
+     "skill": "contentieux-fiscal",
+     "ligne": 40,
+     "extrait": "droits et obligations du contribuable vérifié, opposable — LPF L. 10),"
+    }
+   ]
+  },
+  {
+   "id": "livre-des-procedures-fiscales:R*199-1",
+   "type": "article",
+   "code": "livre-des-procedures-fiscales",
+   "article": "R*199-1",
+   "cle_librejustice": "r199-1",
+   "statut_verification": "a_verifier",
+   "derniere_verification": null,
+   "etat_source": null,
+   "occurrences": [
+    {
+     "skill": "contentieux-fiscal",
+     "ligne": 48,
+     "extrait": "lu dans le LPF (R*199-1) ; ne pas confondre avec les délais de droit commun"
+    }
+   ]
+  },
+  {
+   "id": "livre-des-procedures-fiscales:L. 190",
+   "type": "article",
+   "code": "livre-des-procedures-fiscales",
+   "article": "L. 190",
+   "cle_librejustice": "l190",
+   "statut_verification": "a_verifier",
+   "derniere_verification": null,
+   "etat_source": null,
+   "occurrences": [
+    {
+     "skill": "contentieux-fiscal",
+     "ligne": 181,
+     "extrait": "### 4.2 Réclamation préalable (LPF L. 190 et R*196-1 s.)"
+    },
+    {
+     "skill": "contentieux-fiscal",
+     "ligne": 198,
+     "extrait": "En application des articles L. 190 et R*196-1 [ou R*196-3] du LPF, [contribuable]"
+    }
+   ]
+  },
+  {
+   "id": "livre-des-procedures-fiscales:R*196-1",
+   "type": "article",
+   "code": "livre-des-procedures-fiscales",
+   "article": "R*196-1",
+   "cle_librejustice": "r196-1",
+   "statut_verification": "a_verifier",
+   "derniere_verification": null,
+   "etat_source": null,
+   "occurrences": [
+    {
+     "skill": "contentieux-fiscal",
+     "ligne": 181,
+     "extrait": "### 4.2 Réclamation préalable (LPF L. 190 et R*196-1 s.)"
+    },
+    {
+     "skill": "contentieux-fiscal",
+     "ligne": 184,
+     "extrait": "- délai général : LPF R*196-1 (version en vigueur depuis le 30/07/2026,"
+    },
+    {
+     "skill": "contentieux-fiscal",
+     "ligne": 198,
+     "extrait": "En application des articles L. 190 et R*196-1 [ou R*196-3] du LPF, [contribuable]"
+    },
+    {
+     "skill": "socle-eca",
+     "ligne": 222,
+     "extrait": "| Délais de réclamation fiscale | R*196-1 LPF modifié par le décret n° 2026-692 (en vigueur au 30/07/2026) ; après une procédure de reprise, le contribuable dis"
+    },
+    {
+     "skill": "socle-eca",
+     "ligne": 222,
+     "extrait": "| Délais de réclamation fiscale | R*196-1 LPF modifié par le décret n° 2026-692 (en vigueur au 30/07/2026) ; après une procédure de reprise, le contribuable dis"
+    }
+   ]
+  },
+  {
+   "id": "livre-des-procedures-fiscales:R*196-2",
+   "type": "article",
+   "code": "livre-des-procedures-fiscales",
+   "article": "R*196-2",
+   "cle_librejustice": "r196-2",
+   "statut_verification": "a_verifier",
+   "derniere_verification": null,
+   "etat_source": null,
+   "occurrences": [
+    {
+     "skill": "contentieux-fiscal",
+     "ligne": 189,
+     "extrait": "- autres délais spéciaux (R*196-2 et suivants) selon l'impôt."
+    }
+   ]
+  },
+  {
+   "id": "livre-des-procedures-fiscales:R*196-3",
+   "type": "article",
+   "code": "livre-des-procedures-fiscales",
+   "article": "R*196-3",
+   "cle_librejustice": "r196-3",
+   "statut_verification": "a_verifier",
+   "derniere_verification": null,
+   "etat_source": null,
+   "occurrences": [
+    {
+     "skill": "contentieux-fiscal",
+     "ligne": 198,
+     "extrait": "En application des articles L. 190 et R*196-1 [ou R*196-3] du LPF, [contribuable]"
+    },
+    {
+     "skill": "socle-eca",
+     "ligne": 222,
+     "extrait": "| Délais de réclamation fiscale | R*196-1 LPF modifié par le décret n° 2026-692 (en vigueur au 30/07/2026) ; après une procédure de reprise, le contribuable dis"
+    },
+    {
+     "skill": "socle-eca",
+     "ligne": 222,
+     "extrait": "| Délais de réclamation fiscale | R*196-1 LPF modifié par le décret n° 2026-692 (en vigueur au 30/07/2026) ; après une procédure de reprise, le contribuable dis"
+    }
+   ]
+  },
+  {
+   "id": "livre-des-procedures-fiscales:L. 59",
+   "type": "article",
+   "code": "livre-des-procedures-fiscales",
+   "article": "L. 59",
+   "cle_librejustice": "l59",
+   "statut_verification": "a_verifier",
+   "derniere_verification": null,
+   "etat_source": null,
+   "occurrences": [
+    {
+     "skill": "contentieux-fiscal",
+     "ligne": 220,
+     "extrait": "### 4.3 Saisine de la commission (LPF L. 59 s.)"
+    },
+    {
+     "skill": "contentieux-fiscal",
+     "ligne": 226,
+     "extrait": "compétente (départementale, nationale) lus dans le LPF en vigueur (L. 59 s., R*59-1)"
+    },
+    {
+     "skill": "contentieux-fiscal",
+     "ligne": 239,
+     "extrait": "application de l'article L. 59 du LPF, eu égard au désaccord persistant"
+    }
+   ]
+  },
+  {
+   "id": "livre-des-procedures-fiscales:R*59-1",
+   "type": "article",
+   "code": "livre-des-procedures-fiscales",
+   "article": "R*59-1",
+   "cle_librejustice": "r59-1",
+   "statut_verification": "a_verifier",
+   "derniere_verification": null,
+   "etat_source": null,
+   "occurrences": [
+    {
+     "skill": "contentieux-fiscal",
+     "ligne": 226,
+     "extrait": "compétente (départementale, nationale) lus dans le LPF en vigueur (L. 59 s., R*59-1)"
+    }
+   ]
+  },
+  {
+   "id": "code-civil:1844-5",
+   "type": "article",
+   "code": "code-civil",
+   "article": "1844-5",
+   "cle_librejustice": "1844-5",
+   "statut_verification": "verifie",
+   "derniere_verification": "2026-10-23",
+   "etat_source": null,
+   "occurrences": [
+    {
+     "skill": "dissolution-liquidation-tup",
+     "ligne": 45,
+     "extrait": "| TUP | Applicable seulement si l'associé unique est une personne morale ; opposition des créanciers dans les trente jours de la publication de la dissolution ;"
+    },
+    {
+     "skill": "dissolution-liquidation-tup",
+     "ligne": 98,
+     "extrait": "pas (C. civ. 1844-5, dernier alinéa)."
+    },
+    {
+     "skill": "redaction-acte",
+     "ligne": 269,
+     "extrait": "(C. civ. 1844-5, vérifié) ; adapter la gouvernance (registre, décisions)."
+    },
+    {
+     "skill": "restructurations",
+     "ligne": 47,
+     "extrait": "| Texte (vérifié) | C. civ. 1844-5 | C. com. L. 236-11 | C. com. L. 236-12 | C. com. L. 236-1 s. | C. com. L. 236-18 s. | C. com. L. 236-27 ; L. 236-28 |"
+    }
+   ]
+  },
+  {
+   "id": "code-general-des-impots:210 A",
+   "type": "article",
+   "code": "code-general-des-impots",
+   "article": "210 A",
+   "cle_librejustice": "210-a",
+   "statut_verification": "verifie",
+   "derniere_verification": "2026-10-23",
+   "etat_source": null,
+   "occurrences": [
+    {
+     "skill": "dissolution-liquidation-tup",
+     "ligne": 45,
+     "extrait": "| TUP | Applicable seulement si l'associé unique est une personne morale ; opposition des créanciers dans les trente jours de la publication de la dissolution ;"
+    },
+    {
+     "skill": "restructurations",
+     "ligne": 129,
+     "extrait": "| Régime de faveur | CGI art. 210 A : engagements de l'absorbante ou de la bénéficiaire, à reproduire intégralement dans le traité (lire le texte en vigueur ava"
+    }
+   ]
+  },
+  {
+   "id": "code-civil:1844-7",
+   "type": "article",
+   "code": "code-civil",
+   "article": "1844-7",
+   "cle_librejustice": "1844-7",
+   "statut_verification": "a_verifier",
+   "derniere_verification": null,
+   "etat_source": null,
+   "occurrences": [
+    {
+     "skill": "dissolution-liquidation-tup",
+     "ligne": 48,
+     "extrait": "| Dissolution anticipée | Organe et majorité, publicité, mention « en liquidation » | Statuts ; C. civ. art. 1844-7 ; C. com. L. 237-1 s. |"
+    }
+   ]
+  },
+  {
+   "id": "code-de-commerce:L. 237-1",
+   "type": "article",
+   "code": "code-de-commerce",
+   "article": "L. 237-1",
+   "cle_librejustice": "l237-1",
+   "statut_verification": "a_verifier",
+   "derniere_verification": null,
+   "etat_source": null,
+   "occurrences": [
+    {
+     "skill": "dissolution-liquidation-tup",
+     "ligne": 48,
+     "extrait": "| Dissolution anticipée | Organe et majorité, publicité, mention « en liquidation » | Statuts ; C. civ. art. 1844-7 ; C. com. L. 237-1 s. |"
+    }
+   ]
+  },
+  {
+   "id": "code-de-commerce:L. 237-2",
+   "type": "article",
+   "code": "code-de-commerce",
+   "article": "L. 237-2",
+   "cle_librejustice": "l237-2",
+   "statut_verification": "a_verifier",
+   "derniere_verification": null,
+   "etat_source": null,
+   "occurrences": [
+    {
+     "skill": "dissolution-liquidation-tup",
+     "ligne": 49,
+     "extrait": "| Liquidateur | Nomination, pouvoirs, durée, rapport | C. com. L. 237-2 s. ; C. civ. art. 1844-8 |"
+    }
+   ]
+  },
+  {
+   "id": "code-civil:1844-8",
+   "type": "article",
+   "code": "code-civil",
+   "article": "1844-8",
+   "cle_librejustice": "1844-8",
+   "statut_verification": "a_verifier",
+   "derniere_verification": null,
+   "etat_source": null,
+   "occurrences": [
+    {
+     "skill": "dissolution-liquidation-tup",
+     "ligne": 49,
+     "extrait": "| Liquidateur | Nomination, pouvoirs, durée, rapport | C. com. L. 237-2 s. ; C. civ. art. 1844-8 |"
+    }
+   ]
+  },
+  {
+   "id": "code-de-commerce:L. 237-9",
+   "type": "article",
+   "code": "code-de-commerce",
+   "article": "L. 237-9",
+   "cle_librejustice": "l237-9",
+   "statut_verification": "a_verifier",
+   "derniere_verification": null,
+   "etat_source": null,
+   "occurrences": [
+    {
+     "skill": "dissolution-liquidation-tup",
+     "ligne": 50,
+     "extrait": "| Comptes de clôture et partage | Approbation, quitus, partage du boni, attribution en nature | C. com. L. 237-9 s. ; C. civ. art. 1844-9 |"
+    }
+   ]
+  },
+  {
+   "id": "code-civil:1844-9",
+   "type": "article",
+   "code": "code-civil",
+   "article": "1844-9",
+   "cle_librejustice": "1844-9",
+   "statut_verification": "a_verifier",
+   "derniere_verification": null,
+   "etat_source": null,
+   "occurrences": [
+    {
+     "skill": "dissolution-liquidation-tup",
+     "ligne": 50,
+     "extrait": "| Comptes de clôture et partage | Approbation, quitus, partage du boni, attribution en nature | C. com. L. 237-9 s. ; C. civ. art. 1844-9 |"
+    }
+   ]
+  },
+  {
+   "id": "code-general-des-impots:112",
+   "type": "article",
+   "code": "code-general-des-impots",
+   "article": "112",
+   "cle_librejustice": "112",
+   "statut_verification": "a_verifier",
+   "derniere_verification": null,
+   "etat_source": null,
+   "occurrences": [
+    {
+     "skill": "dissolution-liquidation-tup",
+     "ligne": 51,
+     "extrait": "| Boni de liquidation — associé PP | Part représentant le remboursement des apports / le surplus imposable ; prélèvements sociaux | CGI art. 112 et 161 ; règles"
+    }
+   ]
+  },
+  {
+   "id": "code-general-des-impots:161",
+   "type": "article",
+   "code": "code-general-des-impots",
+   "article": "161",
+   "cle_librejustice": "161",
+   "statut_verification": "a_verifier",
+   "derniere_verification": null,
+   "etat_source": null,
+   "occurrences": [
+    {
+     "skill": "dissolution-liquidation-tup",
+     "ligne": 51,
+     "extrait": "| Boni de liquidation — associé PP | Part représentant le remboursement des apports / le surplus imposable ; prélèvements sociaux | CGI art. 112 et 161 ; règles"
+    }
+   ]
+  },
+  {
+   "id": "code-general-des-impots:145",
+   "type": "article",
+   "code": "code-general-des-impots",
+   "article": "145",
+   "cle_librejustice": "145",
+   "statut_verification": "a_verifier",
+   "derniere_verification": null,
+   "etat_source": null,
+   "occurrences": [
+    {
+     "skill": "dissolution-liquidation-tup",
+     "ligne": 52,
+     "extrait": "| Boni — associé personne morale | Régime mère-fille sur la fraction distribuée, plus-value / moins-value sur titres | CGI art. 145, 216, 219 |"
+    },
+    {
+     "skill": "holding-apport",
+     "ligne": 52,
+     "extrait": "| Remontée de dividendes | Régime mère-fille (taux de détention, conservation), quote-part de frais et charges ; intégration fiscale | CGI art. 145 et 216 ; art"
+    },
+    {
+     "skill": "juridique-annuel",
+     "ligne": 87,
+     "extrait": "| Fiscalité de la distribution | Prélèvement à la source et déclaration des revenus distribués ; associé personne morale | CGI art. 117 quater, 242 ter, 145 et "
+    }
+   ]
+  },
+  {
+   "id": "code-general-des-impots:216",
+   "type": "article",
+   "code": "code-general-des-impots",
+   "article": "216",
+   "cle_librejustice": "216",
+   "statut_verification": "a_verifier",
+   "derniere_verification": null,
+   "etat_source": null,
+   "occurrences": [
+    {
+     "skill": "dissolution-liquidation-tup",
+     "ligne": 52,
+     "extrait": "| Boni — associé personne morale | Régime mère-fille sur la fraction distribuée, plus-value / moins-value sur titres | CGI art. 145, 216, 219 |"
+    },
+    {
+     "skill": "holding-apport",
+     "ligne": 52,
+     "extrait": "| Remontée de dividendes | Régime mère-fille (taux de détention, conservation), quote-part de frais et charges ; intégration fiscale | CGI art. 145 et 216 ; art"
+    },
+    {
+     "skill": "juridique-annuel",
+     "ligne": 87,
+     "extrait": "| Fiscalité de la distribution | Prélèvement à la source et déclaration des revenus distribués ; associé personne morale | CGI art. 117 quater, 242 ter, 145 et "
+    }
+   ]
+  },
+  {
+   "id": "code-general-des-impots:221",
+   "type": "article",
+   "code": "code-general-des-impots",
+   "article": "221",
+   "cle_librejustice": "221",
+   "statut_verification": "a_verifier",
+   "derniere_verification": null,
+   "etat_source": null,
+   "occurrences": [
+    {
+     "skill": "dissolution-liquidation-tup",
+     "ligne": 54,
+     "extrait": "| SCI à l'IS | Imposition du boni et de l'actif réévalué, partage d'un immeuble | CGI art. 221 ; droits de partage art. 746 |"
+    },
+    {
+     "skill": "redaction-acte",
+     "ligne": 136,
+     "extrait": "obligatoire (CGI art. 221, 2 et 3) → consultation-juridique."
+    },
+    {
+     "skill": "redaction-acte",
+     "ligne": 149,
+     "extrait": "l'activité réelle emporte cessation d'entreprise (CGI art. 221, 5, a). Il y a"
+    },
+    {
+     "skill": "redaction-acte",
+     "ligne": 177,
+     "extrait": "à l'IS par CGI art. 221, 1). Intégration fiscale : exercices ouverts et clos aux mêmes"
+    },
+    {
+     "skill": "redaction-acte",
+     "ligne": 241,
+     "extrait": "(CGI art. 221, 2) ; à défaut, neutralité. Enregistrement : CGI art. 635, 1,"
+    },
+    {
+     "skill": "redaction-acte",
+     "ligne": 318,
+     "extrait": "dépôts, seuils de l'article 221, 5 du CGI, expiration de la durée sociale)."
+    },
+    {
+     "skill": "redaction-acte",
+     "ligne": 329,
+     "extrait": "- Modifier l'objet social sans mesurer l'article 221, 5 du CGI ni la"
+    },
+    {
+     "skill": "restructurations",
+     "ligne": 136,
+     "extrait": "| Obligations déclaratives | État de suivi des plus-values en sursis (lire CGI art. 54 septies), déclaration de cessation et de résultat de la société absorbée "
+    }
+   ]
+  },
+  {
+   "id": "code-general-des-impots:746",
+   "type": "article",
+   "code": "code-general-des-impots",
+   "article": "746",
+   "cle_librejustice": "746",
+   "statut_verification": "a_verifier",
+   "derniere_verification": null,
+   "etat_source": null,
+   "occurrences": [
+    {
+     "skill": "dissolution-liquidation-tup",
+     "ligne": 54,
+     "extrait": "| SCI à l'IS | Imposition du boni et de l'actif réévalué, partage d'un immeuble | CGI art. 221 ; droits de partage art. 746 |"
+    },
+    {
+     "skill": "dissolution-liquidation-tup",
+     "ligne": 56,
+     "extrait": "| Droits d'enregistrement | Dissolution, partage, attribution | CGI art. 811, 746 et s. |"
+    },
+    {
+     "skill": "socle-eca",
+     "ligne": 219,
+     "extrait": "| Droit de partage | Taux réduit réservé aux partages consécutifs à un divorce, une séparation de corps ou une rupture de PACS ; un changement de régime matrimo"
+    },
+    {
+     "skill": "strategie-patrimoniale",
+     "ligne": 77,
+     "extrait": "| Régime matrimonial | Protection du conjoint, avantages matrimoniaux | Procédure de changement (notaire, information, homologation éventuelle) ; coût (droit de"
+    }
+   ]
+  },
+  {
+   "id": "code-general-des-impots:119 bis",
+   "type": "article",
+   "code": "code-general-des-impots",
+   "article": "119 bis",
+   "cle_librejustice": "119-bis",
+   "statut_verification": "a_verifier",
+   "derniere_verification": null,
+   "etat_source": null,
+   "occurrences": [
+    {
+     "skill": "dissolution-liquidation-tup",
+     "ligne": 55,
+     "extrait": "| Associés non-résidents | Retenue à la source, convention fiscale applicable | Legal Data Hunter (convention) ; CGI art. 119 bis |"
+    }
+   ]
+  },
+  {
+   "id": "code-general-des-impots:811",
+   "type": "article",
+   "code": "code-general-des-impots",
+   "article": "811",
+   "cle_librejustice": "811",
+   "statut_verification": "a_verifier",
+   "derniere_verification": null,
+   "etat_source": null,
+   "occurrences": [
+    {
+     "skill": "dissolution-liquidation-tup",
+     "ligne": 56,
+     "extrait": "| Droits d'enregistrement | Dissolution, partage, attribution | CGI art. 811, 746 et s. |"
+    }
+   ]
+  },
+  {
+   "id": "code-civil:1137",
+   "type": "article",
+   "code": "code-civil",
+   "article": "1137",
+   "cle_librejustice": "1137",
+   "statut_verification": "a_verifier",
+   "derniere_verification": null,
+   "etat_source": null,
+   "occurrences": [
+    {
+     "skill": "gap",
+     "ligne": 86,
+     "extrait": "(Art. 1137 C. civ.) fait tomber la garantie **et** ouvre la nullité, c'est un"
+    },
+    {
+     "skill": "gap",
+     "ligne": 126,
+     "extrait": "| Dol / réticence dolosive | Art. 1137 C. civ. | Preuve de l'intention de tromper |"
+    },
+    {
+     "skill": "gap",
+     "ligne": 131,
+     "extrait": "⚠️ **Art. 1137 al. 3 C. civ.** : ne constitue pas un dol le fait de ne pas révéler"
+    },
+    {
+     "skill": "gap",
+     "ligne": 131,
+     "extrait": "⚠️ **Art. 1137 al. 3 C. civ.** : ne constitue pas un dol le fait de ne pas révéler"
+    },
+    {
+     "skill": "protocole-cession",
+     "ligne": 61,
+     "extrait": "- Ne pas organiser la dissimulation d'un fait connu (Art. 1137 C. civ.) : la"
+    }
+   ]
+  },
+  {
+   "id": "code-civil:1626",
+   "type": "article",
+   "code": "code-civil",
+   "article": "1626",
+   "cle_librejustice": "1626",
+   "statut_verification": "a_verifier",
+   "derniere_verification": null,
+   "etat_source": null,
+   "occurrences": [
+    {
+     "skill": "gap",
+     "ligne": 119,
+     "extrait": "(Art. 1626 C. civ.) et vices cachés (Art. 1641 C. civ.) — porte sur **les titres"
+    },
+    {
+     "skill": "gap",
+     "ligne": 129,
+     "extrait": "| Garantie légale | Art. 1626, 1641 C. civ. | Porte sur les titres, pas sur l'actif social |"
+    }
+   ]
+  },
+  {
+   "id": "code-civil:1641",
+   "type": "article",
+   "code": "code-civil",
+   "article": "1641",
+   "cle_librejustice": "1641",
+   "statut_verification": "a_verifier",
+   "derniere_verification": null,
+   "etat_source": null,
+   "occurrences": [
+    {
+     "skill": "gap",
+     "ligne": 119,
+     "extrait": "(Art. 1626 C. civ.) et vices cachés (Art. 1641 C. civ.) — porte sur **les titres"
+    },
+    {
+     "skill": "gap",
+     "ligne": 129,
+     "extrait": "| Garantie légale | Art. 1626, 1641 C. civ. | Porte sur les titres, pas sur l'actif social |"
+    }
+   ]
+  },
+  {
+   "id": "code-civil:1112-1",
+   "type": "article",
+   "code": "code-civil",
+   "article": "1112-1",
+   "cle_librejustice": "1112-1",
+   "statut_verification": "a_verifier",
+   "derniere_verification": null,
+   "etat_source": null,
+   "occurrences": [
+    {
+     "skill": "gap",
+     "ligne": 127,
+     "extrait": "| Manquement à l'obligation d'information | Art. 1112-1 C. civ. | Exclut l'estimation de la valeur |"
+    }
+   ]
+  },
+  {
+   "id": "code-civil:1132",
+   "type": "article",
+   "code": "code-civil",
+   "article": "1132",
+   "cle_librejustice": "1132",
+   "statut_verification": "a_verifier",
+   "derniere_verification": null,
+   "etat_source": null,
+   "occurrences": [
+    {
+     "skill": "gap",
+     "ligne": 128,
+     "extrait": "| Erreur sur les qualités essentielles | Art. 1132 s. C. civ. | Nullité, pas indemnisation |"
+    }
+   ]
+  },
+  {
+   "id": "code-civil:1170",
+   "type": "article",
+   "code": "code-civil",
+   "article": "1170",
+   "cle_librejustice": "1170",
+   "statut_verification": "a_verifier",
+   "derniere_verification": null,
+   "etat_source": null,
+   "occurrences": [
+    {
+     "skill": "gap",
+     "ligne": 145,
+     "extrait": "de sa substance (Art. 1170 C. civ.). Une clause de plafond ou d'exclusivité de"
+    }
+   ]
+  },
+  {
+   "id": "code-general-des-impots:150-0 D",
+   "type": "article",
+   "code": "code-general-des-impots",
+   "article": "150-0 D",
+   "cle_librejustice": "150-0-d",
+   "statut_verification": "verifie",
+   "derniere_verification": "2026-10-23",
+   "etat_source": null,
+   "occurrences": [
+    {
+     "skill": "gap",
+     "ligne": 153,
+     "extrait": "### 2.3 Le point fiscal structurant — CGI Art. 150-0 D, 14"
+    },
+    {
+     "skill": "gap",
+     "ligne": 460,
+     "extrait": "Qualification au regard de l'Art. 150-0 D, 14 CGI — bénéficiaire, mécanique"
+    },
+    {
+     "skill": "gap",
+     "ligne": 523,
+     "extrait": "Réclamation Art. 150-0 D, 14 CGI — délai, forme, pièces"
+    },
+    {
+     "skill": "gap",
+     "ligne": 537,
+     "extrait": "- [ ] Bénéficiaire du versement vérifié au regard de l'Art. 150-0 D, 14 CGI"
+    },
+    {
+     "skill": "protocole-cession",
+     "ligne": 399,
+     "extrait": "| Complément de prix (earn-out) | CGI Art. 150-0 A, I, 2 (vérifié 23/10/2026) — imposable au titre de l'année de perception ; le prix d'acquisition retenu par l"
+    },
+    {
+     "skill": "protocole-cession",
+     "ligne": 438,
+     "extrait": "échéant des sommes reçues au titre de la GAP (CGI Art. 150-0 D, 14)"
+    }
+   ]
+  },
+  {
+   "id": "code-civil:2224",
+   "type": "article",
+   "code": "code-civil",
+   "article": "2224",
+   "cle_librejustice": "2224",
+   "statut_verification": "a_verifier",
+   "derniere_verification": null,
+   "etat_source": null,
+   "occurrences": [
+    {
+     "skill": "gap",
+     "ligne": 271,
+     "extrait": "| 13 | Propriété des titres | Aligné | Prescription de droit commun (Art. 2224 C. civ.) | Prescription de droit commun |"
+    }
+   ]
+  },
+  {
+   "id": "code-civil:2321",
+   "type": "article",
+   "code": "code-civil",
+   "article": "2321",
+   "cle_librejustice": "2321",
+   "statut_verification": "a_verifier",
+   "derniere_verification": null,
+   "etat_source": null,
+   "occurrences": [
+    {
+     "skill": "gap",
+     "ligne": 301,
+     "extrait": "| Garantie autonome à première demande | Art. 2321 C. civ. | Très forte — inopposabilité des exceptions | Élevé (commission bancaire, contre-garantie) |"
+    }
+   ]
+  },
+  {
+   "id": "code-civil:2288",
+   "type": "article",
+   "code": "code-civil",
+   "article": "2288",
+   "cle_librejustice": "2288",
+   "statut_verification": "a_verifier",
+   "derniere_verification": null,
+   "etat_source": null,
+   "occurrences": [
+    {
+     "skill": "gap",
+     "ligne": 302,
+     "extrait": "| Caution bancaire | Art. 2288 s. C. civ. | Forte | Élevé |"
+    }
+   ]
+  },
+  {
+   "id": "code-civil:1956",
+   "type": "article",
+   "code": "code-civil",
+   "article": "1956",
+   "cle_librejustice": "1956",
+   "statut_verification": "a_verifier",
+   "derniere_verification": null,
+   "etat_source": null,
+   "occurrences": [
+    {
+     "skill": "gap",
+     "ligne": 303,
+     "extrait": "| Séquestre d'une fraction du prix | Art. 1956 s. C. civ. | Forte | Immobilisation de trésorerie |"
+    }
+   ]
+  },
+  {
+   "id": "code-general-des-impots:210 B",
+   "type": "article",
+   "code": "code-general-des-impots",
+   "article": "210 B",
+   "cle_librejustice": "210-b",
+   "statut_verification": "verifie",
+   "derniere_verification": "2026-10-23",
+   "etat_source": {
+    "statut": "VIGUEUR",
+    "version_depuis": "2018-12-31",
+    "dernier_texte_modificateur": "Loi n° 2018-1317 du 28/12/2018, art. 35",
+    "versions_futures": []
+   },
+   "occurrences": [
+    {
+     "skill": "holding-apport",
+     "ligne": 28,
+     "extrait": "apport partiel d'actif, régime des scissions, CGI art. 210 B), ou lorsqu'une"
+    },
+    {
+     "skill": "restructurations",
+     "ligne": 130,
+     "extrait": "| APA et scission (vérifié) | 210 A s'applique de plein droit à l'APA d'une ou plusieurs branches complètes d'activité ou d'éléments assimilés (participations d"
+    },
+    {
+     "skill": "restructurations",
+     "ligne": 131,
+     "extrait": "| Titres reçus en contrepartie d'un APA | Plus-value future calculée par référence à la valeur fiscale des biens apportés dans les écritures de l'apporteuse (CG"
+    }
+   ]
+  },
+  {
+   "id": "livre-des-procedures-fiscales:L. 64 A",
+   "type": "article",
+   "code": "livre-des-procedures-fiscales",
+   "article": "L. 64 A",
+   "cle_librejustice": "l64-a",
+   "statut_verification": "a_verifier",
+   "derniere_verification": null,
+   "etat_source": null,
+   "occurrences": [
+    {
+     "skill": "holding-apport",
+     "ligne": 46,
+     "extrait": "| Abus de droit | Substance de la holding, réinvestissement économique, calendrier | LPF L. 64 et L. 64 A ; jurisprudence récente (Légifrance + LibreJustice) |"
+    }
+   ]
+  },
+  {
+   "id": "code-de-commerce:L. 223-9",
+   "type": "article",
+   "code": "code-de-commerce",
+   "article": "L. 223-9",
+   "cle_librejustice": "l223-9",
+   "statut_verification": "a_verifier",
+   "derniere_verification": null,
+   "etat_source": null,
+   "occurrences": [
+    {
+     "skill": "holding-apport",
+     "ligne": 48,
+     "extrait": "| Commissaire aux apports | Obligation ou dispense selon la forme et les seuils en vigueur ; responsabilité des associés en cas de dispense | C. com. L. 223-9 ("
+    },
+    {
+     "skill": "redaction-acte",
+     "ligne": 205,
+     "extrait": "ou par décision de justice (SARL : L. 223-33 renvoyant à L. 223-9 ; SA et"
+    }
+   ]
+  },
+  {
+   "id": "code-de-commerce:L. 225-147",
+   "type": "article",
+   "code": "code-de-commerce",
+   "article": "L. 225-147",
+   "cle_librejustice": "l225-147",
+   "statut_verification": "verifie",
+   "derniere_verification": "2026-10-23",
+   "etat_source": null,
+   "occurrences": [
+    {
+     "skill": "holding-apport",
+     "ligne": 48,
+     "extrait": "| Commissaire aux apports | Obligation ou dispense selon la forme et les seuils en vigueur ; responsabilité des associés en cas de dispense | C. com. L. 223-9 ("
+    },
+    {
+     "skill": "redaction-acte",
+     "ligne": 206,
+     "extrait": "SAS : L. 225-147 — vérifiés) ; cas de dispense et seuils réglementaires à"
+    }
+   ]
+  },
+  {
+   "id": "code-general-des-impots:809",
+   "type": "article",
+   "code": "code-general-des-impots",
+   "article": "809",
+   "cle_librejustice": "809",
+   "statut_verification": "a_verifier",
+   "derniere_verification": null,
+   "etat_source": null,
+   "occurrences": [
+    {
+     "skill": "holding-apport",
+     "ligne": 50,
+     "extrait": "| Droits d'enregistrement | Apport pur et simple / à titre onéreux (prise en charge de passif) | CGI art. 809 et 810 |"
+    },
+    {
+     "skill": "redaction-acte",
+     "ligne": 107,
+     "extrait": "| Enregistrement | Dans le délai d'un mois : actes constatant la transformation d'une société et ceux constatant une augmentation de capital, sauf augmentation "
+    }
+   ]
+  },
+  {
+   "id": "code-general-des-impots:810",
+   "type": "article",
+   "code": "code-general-des-impots",
+   "article": "810",
+   "cle_librejustice": "810",
+   "statut_verification": "a_verifier",
+   "derniere_verification": null,
+   "etat_source": null,
+   "occurrences": [
+    {
+     "skill": "holding-apport",
+     "ligne": 50,
+     "extrait": "| Droits d'enregistrement | Apport pur et simple / à titre onéreux (prise en charge de passif) | CGI art. 809 et 810 |"
+    }
+   ]
+  },
+  {
+   "id": "code-de-commerce:L. 227-7",
+   "type": "article",
+   "code": "code-de-commerce",
+   "article": "L. 227-7",
+   "cle_librejustice": "l227-7",
+   "statut_verification": "verifie",
+   "derniere_verification": "2026-10-23",
+   "etat_source": null,
+   "occurrences": [
+    {
+     "skill": "holding-apport",
+     "ligne": 51,
+     "extrait": "| Holding dirigeante | Personne morale présidente de SAS possible ; représentant ; responsabilité ; marchés publics et qualifications. La SARL est gérée par une"
+    }
+   ]
+  },
+  {
+   "id": "code-de-commerce:L. 223-18",
+   "type": "article",
+   "code": "code-de-commerce",
+   "article": "L. 223-18",
+   "cle_librejustice": "l223-18",
+   "statut_verification": "verifie",
+   "derniere_verification": "2026-10-23",
+   "etat_source": null,
+   "occurrences": [
+    {
+     "skill": "holding-apport",
+     "ligne": 51,
+     "extrait": "| Holding dirigeante | Personne morale présidente de SAS possible ; représentant ; responsabilité ; marchés publics et qualifications. La SARL est gérée par une"
+    },
+    {
+     "skill": "redaction-acte",
+     "ligne": 133,
+     "extrait": "la moitié des parts (L. 223-18 et L. 223-30, vérifiés). SA — conseil, sous"
+    },
+    {
+     "skill": "redaction-acte",
+     "ligne": 250,
+     "extrait": "possible, représentant ; SARL : personne physique obligatoire, L. 223-18,"
+    },
+    {
+     "skill": "redaction-acte",
+     "ligne": 262,
+     "extrait": "impératives, sous réserve de ratification (L. 223-18) ; SA : le conseil, sous"
+    }
+   ]
+  },
+  {
+   "id": "code-general-des-impots:223 A",
+   "type": "article",
+   "code": "code-general-des-impots",
+   "article": "223 A",
+   "cle_librejustice": "223-a",
+   "statut_verification": "a_verifier",
+   "derniere_verification": null,
+   "etat_source": null,
+   "occurrences": [
+    {
+     "skill": "holding-apport",
+     "ligne": 52,
+     "extrait": "| Remontée de dividendes | Régime mère-fille (taux de détention, conservation), quote-part de frais et charges ; intégration fiscale | CGI art. 145 et 216 ; art"
+    },
+    {
+     "skill": "redaction-acte",
+     "ligne": 178,
+     "extrait": "dates, en principe de douze mois (CGI art. 223 A). Lire aussi l'incidence sur"
+    },
+    {
+     "skill": "restructurations",
+     "ligne": 133,
+     "extrait": "| Intégration fiscale | Incidences sur le périmètre et la neutralisation : lire CGI art. 223 A s. |"
+    }
+   ]
+  },
+  {
+   "id": "code-general-des-impots:57",
+   "type": "article",
+   "code": "code-general-des-impots",
+   "article": "57",
+   "cle_librejustice": "57",
+   "statut_verification": "a_verifier",
+   "derniere_verification": null,
+   "etat_source": null,
+   "occurrences": [
+    {
+     "skill": "holding-apport",
+     "ligne": 54,
+     "extrait": "| Conventions intragroupe | Prix de marché, conventions réglementées, TVA des prestations | C. com. conventions réglementées ; CGI art. 57 si international |"
+    }
+   ]
+  },
+  {
+   "id": "code-de-commerce:L. 232-22",
+   "type": "article",
+   "code": "code-de-commerce",
+   "article": "L. 232-22",
+   "cle_librejustice": "l232-22",
+   "statut_verification": "verifie",
+   "derniere_verification": "2026-10-23",
+   "etat_source": null,
+   "occurrences": [
+    {
+     "skill": "juridique-annuel",
+     "ligne": 67,
+     "extrait": "| **B — Reprise d'un confrère** | 1. PV antérieurs remis par le client ou par le confrère prédécesseur ; 2. pièces déposées au greffe : avec les comptes annuels"
+    },
+    {
+     "skill": "juridique-annuel",
+     "ligne": 92,
+     "extrait": "| Dépôt et confidentialité | Dépôt dans le délai (un mois après l'approbation, deux mois par voie électronique) avec la proposition et la décision d'affectation"
+    },
+    {
+     "skill": "juridique-annuel",
+     "ligne": 92,
+     "extrait": "| Dépôt et confidentialité | Dépôt dans le délai (un mois après l'approbation, deux mois par voie électronique) avec la proposition et la décision d'affectation"
+    }
+   ]
+  },
+  {
+   "id": "code-de-commerce:L. 232-23",
+   "type": "article",
+   "code": "code-de-commerce",
+   "article": "L. 232-23",
+   "cle_librejustice": "l232-23",
+   "statut_verification": "verifie",
+   "derniere_verification": "2026-10-23",
+   "etat_source": null,
+   "occurrences": [
+    {
+     "skill": "juridique-annuel",
+     "ligne": 67,
+     "extrait": "| **B — Reprise d'un confrère** | 1. PV antérieurs remis par le client ou par le confrère prédécesseur ; 2. pièces déposées au greffe : avec les comptes annuels"
+    },
+    {
+     "skill": "juridique-annuel",
+     "ligne": 92,
+     "extrait": "| Dépôt et confidentialité | Dépôt dans le délai (un mois après l'approbation, deux mois par voie électronique) avec la proposition et la décision d'affectation"
+    },
+    {
+     "skill": "juridique-annuel",
+     "ligne": 92,
+     "extrait": "| Dépôt et confidentialité | Dépôt dans le délai (un mois après l'approbation, deux mois par voie électronique) avec la proposition et la décision d'affectation"
+    }
+   ]
+  },
+  {
+   "id": "code-de-commerce:L. 210-6",
+   "type": "article",
+   "code": "code-de-commerce",
+   "article": "L. 210-6",
+   "cle_librejustice": "l210-6",
+   "statut_verification": "verifie",
+   "derniere_verification": "2026-10-23",
+   "etat_source": null,
+   "occurrences": [
+    {
+     "skill": "juridique-annuel",
+     "ligne": 68,
+     "extrait": "| **C — Nouvelle immatriculation** | 1. Statuts constitutifs et pièces de constitution du dossier interne ; 2. modèle du dépôt ; 3. précédents ECA anonymisés de"
+    },
+    {
+     "skill": "lettre-intention",
+     "ligne": 38,
+     "extrait": "par la société une fois immatriculée (C. com. L. 210-6, vérifié"
+    },
+    {
+     "skill": "redaction-acte",
+     "ligne": 223,
+     "extrait": "personne morale nouvelle (C. com. L. 210-6, vérifié)."
+    }
+   ]
+  },
+  {
+   "id": "code-de-commerce:R. 210-5",
+   "type": "article",
+   "code": "code-de-commerce",
+   "article": "R. 210-5",
+   "cle_librejustice": "r210-5",
+   "statut_verification": "verifie",
+   "derniere_verification": "2026-10-23",
+   "etat_source": null,
+   "occurrences": [
+    {
+     "skill": "juridique-annuel",
+     "ligne": 68,
+     "extrait": "| **C — Nouvelle immatriculation** | 1. Statuts constitutifs et pièces de constitution du dossier interne ; 2. modèle du dépôt ; 3. précédents ECA anonymisés de"
+    }
+   ]
+  },
+  {
+   "id": "code-de-commerce:R. 210-6",
+   "type": "article",
+   "code": "code-de-commerce",
+   "article": "R. 210-6",
+   "cle_librejustice": "r210-6",
+   "statut_verification": "verifie",
+   "derniere_verification": "2026-10-23",
+   "etat_source": null,
+   "occurrences": [
+    {
+     "skill": "juridique-annuel",
+     "ligne": 68,
+     "extrait": "| **C — Nouvelle immatriculation** | 1. Statuts constitutifs et pièces de constitution du dossier interne ; 2. modèle du dépôt ; 3. précédents ECA anonymisés de"
+    }
+   ]
+  },
+  {
+   "id": "code-de-commerce:L. 223-26",
+   "type": "article",
+   "code": "code-de-commerce",
+   "article": "L. 223-26",
+   "cle_librejustice": "l223-26",
+   "statut_verification": "a_verifier",
+   "derniere_verification": null,
+   "etat_source": null,
+   "occurrences": [
+    {
+     "skill": "juridique-annuel",
+     "ligne": 82,
+     "extrait": "| Délai d'approbation | Respect du délai légal ; prorogation à demander si dépassé | C. com. L. 223-26 (SARL), L. 225-100 (SA), L. 227-9 et statuts (SAS) |"
+    }
+   ]
+  },
+  {
+   "id": "code-de-commerce:L. 225-100",
+   "type": "article",
+   "code": "code-de-commerce",
+   "article": "L. 225-100",
+   "cle_librejustice": "l225-100",
+   "statut_verification": "a_verifier",
+   "derniere_verification": null,
+   "etat_source": null,
+   "occurrences": [
+    {
+     "skill": "juridique-annuel",
+     "ligne": 82,
+     "extrait": "| Délai d'approbation | Respect du délai légal ; prorogation à demander si dépassé | C. com. L. 223-26 (SARL), L. 225-100 (SA), L. 227-9 et statuts (SAS) |"
+    }
+   ]
+  },
+  {
+   "id": "code-de-commerce:L. 227-9",
+   "type": "article",
+   "code": "code-de-commerce",
+   "article": "L. 227-9",
+   "cle_librejustice": "l227-9",
+   "statut_verification": "a_verifier",
+   "derniere_verification": null,
+   "etat_source": null,
+   "occurrences": [
+    {
+     "skill": "juridique-annuel",
+     "ligne": 82,
+     "extrait": "| Délai d'approbation | Respect du délai légal ; prorogation à demander si dépassé | C. com. L. 223-26 (SARL), L. 225-100 (SA), L. 227-9 et statuts (SAS) |"
+    },
+    {
+     "skill": "juridique-annuel",
+     "ligne": 83,
+     "extrait": "| Organe et forme | AGO, consultation écrite, acte unanime, associé unique (registre, approbation par dépôt dans certains cas d'EURL) | C. com. L. 223-27, L. 22"
+    },
+    {
+     "skill": "redaction-acte",
+     "ligne": 89,
+     "extrait": "| SAS | Les statuts fixent les décisions collectives et leurs conditions ; certaines matières relèvent obligatoirement de la collectivité des associés (capital,"
+    },
+    {
+     "skill": "redaction-acte",
+     "ligne": 92,
+     "extrait": "| Associé unique | Décision consignée au registre ; pas de délégation (SAS) | C. com. L. 227-9 (SAS) ; L. 223-31 (EURL, à lire) |"
+    }
+   ]
+  },
+  {
+   "id": "code-de-commerce:L. 223-27",
+   "type": "article",
+   "code": "code-de-commerce",
+   "article": "L. 223-27",
+   "cle_librejustice": "l223-27",
+   "statut_verification": "a_verifier",
+   "derniere_verification": null,
+   "etat_source": null,
+   "occurrences": [
+    {
+     "skill": "juridique-annuel",
+     "ligne": 83,
+     "extrait": "| Organe et forme | AGO, consultation écrite, acte unanime, associé unique (registre, approbation par dépôt dans certains cas d'EURL) | C. com. L. 223-27, L. 22"
+    }
+   ]
+  },
+  {
+   "id": "code-de-commerce:L. 223-31",
+   "type": "article",
+   "code": "code-de-commerce",
+   "article": "L. 223-31",
+   "cle_librejustice": "l223-31",
+   "statut_verification": "a_verifier",
+   "derniere_verification": null,
+   "etat_source": null,
+   "occurrences": [
+    {
+     "skill": "juridique-annuel",
+     "ligne": 83,
+     "extrait": "| Organe et forme | AGO, consultation écrite, acte unanime, associé unique (registre, approbation par dépôt dans certains cas d'EURL) | C. com. L. 223-27, L. 22"
+    },
+    {
+     "skill": "redaction-acte",
+     "ligne": 92,
+     "extrait": "| Associé unique | Décision consignée au registre ; pas de délégation (SAS) | C. com. L. 227-9 (SAS) ; L. 223-31 (EURL, à lire) |"
+    }
+   ]
+  },
+  {
+   "id": "code-de-commerce:L. 232-10",
+   "type": "article",
+   "code": "code-de-commerce",
+   "article": "L. 232-10",
+   "cle_librejustice": "l232-10",
+   "statut_verification": "verifie",
+   "derniere_verification": "2026-10-23",
+   "etat_source": null,
+   "occurrences": [
+    {
+     "skill": "juridique-annuel",
+     "ligne": 84,
+     "extrait": "| Affectation | Dotation de la réserve légale jusqu'au plafond ; bénéfice distribuable = bénéfice de l'exercice, diminué des pertes antérieures et des dotations"
+    }
+   ]
+  },
+  {
+   "id": "code-de-commerce:L. 232-11",
+   "type": "article",
+   "code": "code-de-commerce",
+   "article": "L. 232-11",
+   "cle_librejustice": "l232-11",
+   "statut_verification": "verifie",
+   "derniere_verification": "2026-10-23",
+   "etat_source": null,
+   "occurrences": [
+    {
+     "skill": "juridique-annuel",
+     "ligne": 84,
+     "extrait": "| Affectation | Dotation de la réserve légale jusqu'au plafond ; bénéfice distribuable = bénéfice de l'exercice, diminué des pertes antérieures et des dotations"
+    },
+    {
+     "skill": "juridique-annuel",
+     "ligne": 85,
+     "extrait": "| Distribution | Sommes distribuables constatées après approbation ; décision de l'organe compétent ; aucune distribution si les capitaux propres sont ou devien"
+    },
+    {
+     "skill": "juridique-annuel",
+     "ligne": 109,
+     "extrait": "priorité sur le bénéfice distribuable de l'exercice (L. 232-11, al. 2,"
+    }
+   ]
+  },
+  {
+   "id": "code-de-commerce:L. 232-12",
+   "type": "article",
+   "code": "code-de-commerce",
+   "article": "L. 232-12",
+   "cle_librejustice": "l232-12",
+   "statut_verification": "verifie",
+   "derniere_verification": "2026-10-23",
+   "etat_source": null,
+   "occurrences": [
+    {
+     "skill": "juridique-annuel",
+     "ligne": 85,
+     "extrait": "| Distribution | Sommes distribuables constatées après approbation ; décision de l'organe compétent ; aucune distribution si les capitaux propres sont ou devien"
+    },
+    {
+     "skill": "juridique-annuel",
+     "ligne": 113,
+     "extrait": "limite du bénéfice réalisé depuis la clôture précédente (L. 232-12, al. 2,"
+    },
+    {
+     "skill": "juridique-annuel",
+     "ligne": 117,
+     "extrait": "fictif** (L. 232-12, al. 3) : risque de répétition et de responsabilité."
+    }
+   ]
+  },
+  {
+   "id": "code-de-la-securite-sociale:L. 136-3",
+   "type": "article",
+   "code": "code-de-la-securite-sociale",
+   "article": "L. 136-3",
+   "cle_librejustice": "l136-3",
+   "statut_verification": "verifie",
+   "derniere_verification": "2026-10-23",
+   "etat_source": null,
+   "occurrences": [
+    {
+     "skill": "juridique-annuel",
+     "ligne": 86,
+     "extrait": "| Dividendes de dirigeants non salariés | Part des dividendes intégrée à l'assiette sociale au-delà d'un seuil calculé sur le capital, les primes et les comptes"
+    },
+    {
+     "skill": "juridique-annuel",
+     "ligne": 181,
+     "extrait": "CSS L. 136-3 dans sa version applicable."
+    }
+   ]
+  },
+  {
+   "id": "code-general-des-impots:117 quater",
+   "type": "article",
+   "code": "code-general-des-impots",
+   "article": "117 quater",
+   "cle_librejustice": "117-quater",
+   "statut_verification": "a_verifier",
+   "derniere_verification": null,
+   "etat_source": null,
+   "occurrences": [
+    {
+     "skill": "juridique-annuel",
+     "ligne": 87,
+     "extrait": "| Fiscalité de la distribution | Prélèvement à la source et déclaration des revenus distribués ; associé personne morale | CGI art. 117 quater, 242 ter, 145 et "
+    }
+   ]
+  },
+  {
+   "id": "code-general-des-impots:242 ter",
+   "type": "article",
+   "code": "code-general-des-impots",
+   "article": "242 ter",
+   "cle_librejustice": "242-ter",
+   "statut_verification": "a_verifier",
+   "derniere_verification": null,
+   "etat_source": null,
+   "occurrences": [
+    {
+     "skill": "juridique-annuel",
+     "ligne": 87,
+     "extrait": "| Fiscalité de la distribution | Prélèvement à la source et déclaration des revenus distribués ; associé personne morale | CGI art. 117 quater, 242 ter, 145 et "
+    }
+   ]
+  },
+  {
+   "id": "code-de-commerce:L. 223-19",
+   "type": "article",
+   "code": "code-de-commerce",
+   "article": "L. 223-19",
+   "cle_librejustice": "l223-19",
+   "statut_verification": "a_verifier",
+   "derniere_verification": null,
+   "etat_source": null,
+   "occurrences": [
+    {
+     "skill": "juridique-annuel",
+     "ligne": 88,
+     "extrait": "| Conventions réglementées | Rapport spécial, vote, associé intéressé exclu du vote selon la forme ; conventions courantes | C. com. L. 223-19 à L. 223-21 (SARL"
+    }
+   ]
+  },
+  {
+   "id": "code-de-commerce:L. 223-21",
+   "type": "article",
+   "code": "code-de-commerce",
+   "article": "L. 223-21",
+   "cle_librejustice": "l223-21",
+   "statut_verification": "a_verifier",
+   "derniere_verification": null,
+   "etat_source": null,
+   "occurrences": [
+    {
+     "skill": "juridique-annuel",
+     "ligne": 88,
+     "extrait": "| Conventions réglementées | Rapport spécial, vote, associé intéressé exclu du vote selon la forme ; conventions courantes | C. com. L. 223-19 à L. 223-21 (SARL"
+    },
+    {
+     "skill": "juridique-annuel",
+     "ligne": 91,
+     "extrait": "| Comptes courants débiteurs | Associé ou dirigeant personne physique : interdiction et sanctions possibles | C. com. L. 223-21 (SARL), L. 225-43 (SA) et L. 227"
+    }
+   ]
+  },
+  {
+   "id": "code-de-commerce:L. 227-10",
+   "type": "article",
+   "code": "code-de-commerce",
+   "article": "L. 227-10",
+   "cle_librejustice": "l227-10",
+   "statut_verification": "a_verifier",
+   "derniere_verification": null,
+   "etat_source": null,
+   "occurrences": [
+    {
+     "skill": "juridique-annuel",
+     "ligne": 88,
+     "extrait": "| Conventions réglementées | Rapport spécial, vote, associé intéressé exclu du vote selon la forme ; conventions courantes | C. com. L. 223-19 à L. 223-21 (SARL"
+    }
+   ]
+  },
+  {
+   "id": "code-de-commerce:L. 225-38",
+   "type": "article",
+   "code": "code-de-commerce",
+   "article": "L. 225-38",
+   "cle_librejustice": "l225-38",
+   "statut_verification": "a_verifier",
+   "derniere_verification": null,
+   "etat_source": null,
+   "occurrences": [
+    {
+     "skill": "juridique-annuel",
+     "ligne": 88,
+     "extrait": "| Conventions réglementées | Rapport spécial, vote, associé intéressé exclu du vote selon la forme ; conventions courantes | C. com. L. 223-19 à L. 223-21 (SARL"
+    }
+   ]
+  },
+  {
+   "id": "code-de-commerce:L. 223-42",
+   "type": "article",
+   "code": "code-de-commerce",
+   "article": "L. 223-42",
+   "cle_librejustice": "l223-42",
+   "statut_verification": "a_verifier",
+   "derniere_verification": null,
+   "etat_source": null,
+   "occurrences": [
+    {
+     "skill": "juridique-annuel",
+     "ligne": 90,
+     "extrait": "| Capitaux propres < ½ capital | Décision de dissolution ou non dans le délai légal, publicité, régularisation dans le délai | C. com. L. 223-42 (SARL), L. 225-"
+    }
+   ]
+  },
+  {
+   "id": "code-de-commerce:L. 225-248",
+   "type": "article",
+   "code": "code-de-commerce",
+   "article": "L. 225-248",
+   "cle_librejustice": "l225-248",
+   "statut_verification": "a_verifier",
+   "derniere_verification": null,
+   "etat_source": null,
+   "occurrences": [
+    {
+     "skill": "juridique-annuel",
+     "ligne": 90,
+     "extrait": "| Capitaux propres < ½ capital | Décision de dissolution ou non dans le délai légal, publicité, régularisation dans le délai | C. com. L. 223-42 (SARL), L. 225-"
+    }
+   ]
+  },
+  {
+   "id": "code-de-commerce:L. 225-43",
+   "type": "article",
+   "code": "code-de-commerce",
+   "article": "L. 225-43",
+   "cle_librejustice": "l225-43",
+   "statut_verification": "a_verifier",
+   "derniere_verification": null,
+   "etat_source": null,
+   "occurrences": [
+    {
+     "skill": "juridique-annuel",
+     "ligne": 91,
+     "extrait": "| Comptes courants débiteurs | Associé ou dirigeant personne physique : interdiction et sanctions possibles | C. com. L. 223-21 (SARL), L. 225-43 (SA) et L. 227"
+    }
+   ]
+  },
+  {
+   "id": "code-de-commerce:L. 227-12",
+   "type": "article",
+   "code": "code-de-commerce",
+   "article": "L. 227-12",
+   "cle_librejustice": "l227-12",
+   "statut_verification": "a_verifier",
+   "derniere_verification": null,
+   "etat_source": null,
+   "occurrences": [
+    {
+     "skill": "juridique-annuel",
+     "ligne": 91,
+     "extrait": "| Comptes courants débiteurs | Associé ou dirigeant personne physique : interdiction et sanctions possibles | C. com. L. 223-21 (SARL), L. 225-43 (SA) et L. 227"
+    }
+   ]
+  },
+  {
+   "id": "code-de-commerce:L. 232-21",
+   "type": "article",
+   "code": "code-de-commerce",
+   "article": "L. 232-21",
+   "cle_librejustice": "l232-21",
+   "statut_verification": "verifie",
+   "derniere_verification": "2026-10-23",
+   "etat_source": null,
+   "occurrences": [
+    {
+     "skill": "juridique-annuel",
+     "ligne": 92,
+     "extrait": "| Dépôt et confidentialité | Dépôt dans le délai (un mois après l'approbation, deux mois par voie électronique) avec la proposition et la décision d'affectation"
+    }
+   ]
+  },
+  {
+   "id": "code-de-commerce:L. 232-25",
+   "type": "article",
+   "code": "code-de-commerce",
+   "article": "L. 232-25",
+   "cle_librejustice": "l232-25",
+   "statut_verification": "verifie",
+   "derniere_verification": "2026-10-23",
+   "etat_source": null,
+   "occurrences": [
+    {
+     "skill": "juridique-annuel",
+     "ligne": 92,
+     "extrait": "| Dépôt et confidentialité | Dépôt dans le délai (un mois après l'approbation, deux mois par voie électronique) avec la proposition et la décision d'affectation"
+    }
+   ]
+  },
+  {
+   "id": "code-de-commerce:L. 823-1",
+   "type": "article",
+   "code": "code-de-commerce",
+   "article": "L. 823-1",
+   "cle_librejustice": "l823-1",
+   "statut_verification": "a_verifier",
+   "derniere_verification": null,
+   "etat_source": null,
+   "occurrences": [
+    {
+     "skill": "juridique-annuel",
+     "ligne": 93,
+     "extrait": "| Commissaire aux comptes | Rapports à viser ; fin de mandat à renouveler ou non | C. com. L. 823-1 s. |"
+    }
+   ]
+  },
+  {
+   "id": "code-civil:1123",
+   "type": "article",
+   "code": "code-civil",
+   "article": "1123",
+   "cle_librejustice": "1123",
+   "statut_verification": "a_verifier",
+   "derniere_verification": null,
+   "etat_source": null,
+   "occurrences": [
+    {
+     "skill": "lettre-intention",
+     "ligne": 69,
+     "extrait": "- **C. civ. 1123 et 1124** — pacte de préférence ; promesse unilatérale"
+    }
+   ]
+  },
+  {
+   "id": "code-civil:1114",
+   "type": "article",
+   "code": "code-civil",
+   "article": "1114",
+   "cle_librejustice": "1114",
+   "statut_verification": "a_verifier",
+   "derniere_verification": null,
+   "etat_source": null,
+   "occurrences": [
+    {
+     "skill": "lettre-intention",
+     "ligne": 134,
+     "extrait": "1114 C. civ. et ne forme ni vente ni promesse"
+    }
+   ]
+  },
+  {
+   "id": "code-de-commerce:L. 23-10-1",
+   "type": "article",
+   "code": "code-de-commerce",
+   "article": "L. 23-10-1",
+   "cle_librejustice": "l23-10-1",
+   "statut_verification": "a_verifier",
+   "derniere_verification": null,
+   "etat_source": null,
+   "occurrences": [
+    {
+     "skill": "lettre-intention",
+     "ligne": 145,
+     "extrait": "- Information des salariés (C. com. L. 23-10-1 s., rédaction issue de la loi"
+    },
+    {
+     "skill": "protocole-cession",
+     "ligne": 161,
+     "extrait": "28/05/2026). Les articles L. 23-10-1 et L. 23-10-7 C. com. ont été réécrits"
+    },
+    {
+     "skill": "protocole-cession",
+     "ligne": 178,
+     "extrait": "en renvoyant aux articles L. 23-10-1 à L. 23-10-6 (titres) en l'absence de"
+    },
+    {
+     "skill": "protocole-cession",
+     "ligne": 184,
+     "extrait": "L. 23-10-1 à L. 23-10-6. Le coût d'une formalité inutile est nul ; celui"
+    },
+    {
+     "skill": "socle-eca",
+     "ligne": 220,
+     "extrait": "| Information des salariés (cession titres / fonds) | Champ indexé sur l'absence d'obligation de CSE « attributions élargies » ; délai d'un mois ; amende civile"
+    }
+   ]
+  },
+  {
+   "id": "code-general-des-impots:787 B",
+   "type": "article",
+   "code": "code-general-des-impots",
+   "article": "787 B",
+   "cle_librejustice": "787-b",
+   "statut_verification": "a_verifier",
+   "derniere_verification": null,
+   "etat_source": null,
+   "occurrences": [
+    {
+     "skill": "note-information-client",
+     "ligne": 199,
+     "extrait": "lus dans l'article 787 B CGI en vigueur à la date de la transmission]. Voici le"
+    },
+    {
+     "skill": "socle-eca",
+     "ligne": 223,
+     "extrait": "| Pacte Dutreil | Régime modifié par la LF 2026 (art. 8) : lire 787 B dans la version à la date de transmission (biens exclus, détention indirecte, durées). Don"
+    },
+    {
+     "skill": "strategie-patrimoniale",
+     "ligne": 72,
+     "extrait": "| Pacte Dutreil | Exonération partielle de droits | Engagements (collectif, individuel), direction, activité, holding animatrice, biens exclus — **régime modifi"
+    }
+   ]
+  },
+  {
+   "id": "code-civil:1843-4",
+   "type": "article",
+   "code": "code-civil",
+   "article": "1843-4",
+   "cle_librejustice": "1843-4",
+   "statut_verification": "a_verifier",
+   "derniere_verification": null,
+   "etat_source": null,
+   "occurrences": [
+    {
+     "skill": "pacte-associes",
+     "ligne": 105,
+     "extrait": "devient déterminable → l'article 1843-4 C. civ. ne joue plus de plein droit :"
+    },
+    {
+     "skill": "socle-eca",
+     "ligne": 261,
+     "extrait": "conventionnel exprès à l'art. 1843-4 C. civ. dans la clause d'expertise)."
+    }
+   ]
+  },
+  {
+   "id": "code-de-commerce:L. 223-14",
+   "type": "article",
+   "code": "code-de-commerce",
+   "article": "L. 223-14",
+   "cle_librejustice": "l223-14",
+   "statut_verification": "verifie",
+   "derniere_verification": "2026-10-23",
+   "etat_source": null,
+   "occurrences": [
+    {
+     "skill": "protocole-cession",
+     "ligne": 136,
+     "extrait": "| SARL | Art. L. 223-14 C. com. — agrément légal pour les cessions à tiers | Écrit ; opposabilité à la société par signification (C. civ. 1690) ou dépôt d'un or"
+    },
+    {
+     "skill": "protocole-cession",
+     "ligne": 153,
+     "extrait": "| Agrément | Statuts / L. 223-14, L. 227-14, L. 228-23 C. com. | Selon forme et statuts | Nullité de la cession |"
+    }
+   ]
+  },
+  {
+   "id": "code-de-commerce:L. 227-14",
+   "type": "article",
+   "code": "code-de-commerce",
+   "article": "L. 227-14",
+   "cle_librejustice": "l227-14",
+   "statut_verification": "a_verifier",
+   "derniere_verification": null,
+   "etat_source": null,
+   "occurrences": [
+    {
+     "skill": "protocole-cession",
+     "ligne": 137,
+     "extrait": "| SAS | Art. L. 227-14 C. com. — agrément **statutaire** seulement | Ordre de mouvement, inscription au registre des mouvements et aux comptes d'actionnaires | "
+    },
+    {
+     "skill": "protocole-cession",
+     "ligne": 153,
+     "extrait": "| Agrément | Statuts / L. 223-14, L. 227-14, L. 228-23 C. com. | Selon forme et statuts | Nullité de la cession |"
+    }
+   ]
+  },
+  {
+   "id": "code-de-commerce:L. 228-23",
+   "type": "article",
+   "code": "code-de-commerce",
+   "article": "L. 228-23",
+   "cle_librejustice": "l228-23",
+   "statut_verification": "a_verifier",
+   "derniere_verification": null,
+   "etat_source": null,
+   "occurrences": [
+    {
+     "skill": "protocole-cession",
+     "ligne": 138,
+     "extrait": "| SA non cotée | Art. L. 228-23 C. com. — clause statutaire | Ordre de mouvement, registre | CGI Art. 726 |"
+    },
+    {
+     "skill": "protocole-cession",
+     "ligne": 153,
+     "extrait": "| Agrément | Statuts / L. 223-14, L. 227-14, L. 228-23 C. com. | Selon forme et statuts | Nullité de la cession |"
+    }
+   ]
+  },
+  {
+   "id": "code-du-travail:L. 2312-8",
+   "type": "article",
+   "code": "code-du-travail",
+   "article": "L. 2312-8",
+   "cle_librejustice": "l2312-8",
+   "statut_verification": "a_verifier",
+   "derniere_verification": null,
+   "etat_source": null,
+   "occurrences": [
+    {
+     "skill": "protocole-cession",
+     "ligne": 151,
+     "extrait": "| Information-consultation du CSE | C. com. Art. L. 23-10-7 ; C. trav. Art. L. 2312-8 | Sociétés dotées d'un CSE à attributions élargies | Délit d'entrave, susp"
+    },
+    {
+     "skill": "restructurations",
+     "ligne": 116,
+     "extrait": "l'organisation économique ou juridique (C. trav. L. 2312-8, II, 2°,"
+    }
+   ]
+  },
+  {
+   "id": "code-civil:1427",
+   "type": "article",
+   "code": "code-civil",
+   "article": "1427",
+   "cle_librejustice": "1427",
+   "statut_verification": "verifie",
+   "derniere_verification": "2026-10-23",
+   "etat_source": null,
+   "occurrences": [
+    {
+     "skill": "protocole-cession",
+     "ligne": 152,
+     "extrait": "| Consentement du conjoint | **C. civ. Art. 1424** | Parts sociales (droits sociaux **non négociables**) dépendant d'une communauté | Nullité relative (Art. 142"
+    },
+    {
+     "skill": "protocole-cession",
+     "ligne": 207,
+     "extrait": "(Art. 1427 C. civ., vérifié 23/10/2026)."
+    }
+   ]
+  },
+  {
+   "id": "code-de-commerce:L. 430-1",
+   "type": "article",
+   "code": "code-de-commerce",
+   "article": "L. 430-1",
+   "cle_librejustice": "l430-1",
+   "statut_verification": "a_verifier",
+   "derniere_verification": null,
+   "etat_source": null,
+   "occurrences": [
+    {
+     "skill": "protocole-cession",
+     "ligne": 155,
+     "extrait": "| Contrôle des concentrations | C. com. Art. L. 430-1 s. | Franchissement des seuils — **seuils à lire à la source en vigueur** | Nullité de l'opération, amende"
+    }
+   ]
+  },
+  {
+   "id": "code-monetaire-et-financier:L. 151-3",
+   "type": "article",
+   "code": "code-monetaire-et-financier",
+   "article": "L. 151-3",
+   "cle_librejustice": "l151-3",
+   "statut_verification": "a_verifier",
+   "derniere_verification": null,
+   "etat_source": null,
+   "occurrences": [
+    {
+     "skill": "protocole-cession",
+     "ligne": 156,
+     "extrait": "| Contrôle des investissements étrangers | CMF Art. L. 151-3 | Investisseur étranger, secteur sensible | Nullité, injonctions |"
+    }
+   ]
+  },
+  {
+   "id": "code-du-travail:L. 2312-1",
+   "type": "article",
+   "code": "code-du-travail",
+   "article": "L. 2312-1",
+   "cle_librejustice": "l2312-1",
+   "statut_verification": "a_verifier",
+   "derniere_verification": null,
+   "etat_source": null,
+   "occurrences": [
+    {
+     "skill": "protocole-cession",
+     "ligne": 168,
+     "extrait": "alinéa de l'article L. 2312-1 C. trav. Information au plus tard **un mois"
+    }
+   ]
+  },
+  {
+   "id": "code-de-commerce:L. 23-10-6",
+   "type": "article",
+   "code": "code-de-commerce",
+   "article": "L. 23-10-6",
+   "cle_librejustice": "l23-10-6",
+   "statut_verification": "a_verifier",
+   "derniere_verification": null,
+   "etat_source": null,
+   "occurrences": [
+    {
+     "skill": "protocole-cession",
+     "ligne": 178,
+     "extrait": "en renvoyant aux articles L. 23-10-1 à L. 23-10-6 (titres) en l'absence de"
+    },
+    {
+     "skill": "protocole-cession",
+     "ligne": 184,
+     "extrait": "L. 23-10-1 à L. 23-10-6. Le coût d'une formalité inutile est nul ; celui"
+    }
+   ]
+  },
+  {
+   "id": "code-civil:1592",
+   "type": "article",
+   "code": "code-civil",
+   "article": "1592",
+   "cle_librejustice": "1592",
+   "statut_verification": "a_verifier",
+   "derniere_verification": null,
+   "etat_source": null,
+   "occurrences": [
+    {
+     "skill": "protocole-cession",
+     "ligne": 226,
+     "extrait": "| 5 | Expert en cas de désaccord | Expert-comptable désigné d'accord | Expert indépendant, décision définitive | Tiers estimateur, Art. 1592 C. civ. |"
+    },
+    {
+     "skill": "protocole-cession",
+     "ligne": 245,
+     "extrait": "**Tiers estimateur (Art. 1592 C. civ.)** — sa décision s'impose aux parties."
+    }
+   ]
+  },
+  {
+   "id": "code-general-des-impots:150-0 B bis",
+   "type": "article",
+   "code": "code-general-des-impots",
+   "article": "150-0 B bis",
+   "cle_librejustice": "150-0-b-bis",
+   "statut_verification": "verifie",
+   "derniere_verification": "2026-10-23",
+   "etat_source": null,
+   "occurrences": [
+    {
+     "skill": "protocole-cession",
+     "ligne": 399,
+     "extrait": "| Complément de prix (earn-out) | CGI Art. 150-0 A, I, 2 (vérifié 23/10/2026) — imposable au titre de l'année de perception ; le prix d'acquisition retenu par l"
+    }
+   ]
+  },
+  {
+   "id": "code-civil:1188",
+   "type": "article",
+   "code": "code-civil",
+   "article": "1188",
+   "cle_librejustice": "1188",
+   "statut_verification": "a_verifier",
+   "derniere_verification": null,
+   "etat_source": null,
+   "occurrences": [
+    {
+     "skill": "protocole-cession",
+     "ligne": 483,
+     "extrait": "2.  Exposé préalable (valeur interprétative — Art. 1188 C. civ. ; y consigner"
+    }
+   ]
+  },
+  {
+   "id": "code-de-commerce:L. 223-30",
+   "type": "article",
+   "code": "code-de-commerce",
+   "article": "L. 223-30",
+   "cle_librejustice": "l223-30",
+   "statut_verification": "verifie",
+   "derniere_verification": "2026-10-23",
+   "etat_source": null,
+   "occurrences": [
+    {
+     "skill": "redaction-acte",
+     "ligne": 88,
+     "extrait": "| SARL | Changement de nationalité : unanimité. Siège : associés représentant plus de la moitié des parts. Autres modifications : trois quarts des parts (SARL c"
+    },
+    {
+     "skill": "redaction-acte",
+     "ligne": 133,
+     "extrait": "la moitié des parts (L. 223-18 et L. 223-30, vérifiés). SA — conseil, sous"
+    },
+    {
+     "skill": "redaction-acte",
+     "ligne": 208,
+     "extrait": "- **Incorporation de réserves** : SARL, moitié des parts (L. 223-30)."
+    }
+   ]
+  },
+  {
+   "id": "code-de-commerce:L. 227-19",
+   "type": "article",
+   "code": "code-de-commerce",
+   "article": "L. 227-19",
+   "cle_librejustice": "l227-19",
+   "statut_verification": "verifie",
+   "derniere_verification": "2026-10-23",
+   "etat_source": null,
+   "occurrences": [
+    {
+     "skill": "redaction-acte",
+     "ligne": 89,
+     "extrait": "| SAS | Les statuts fixent les décisions collectives et leurs conditions ; certaines matières relèvent obligatoirement de la collectivité des associés (capital,"
+    },
+    {
+     "skill": "redaction-acte",
+     "ligne": 258,
+     "extrait": "(L. 227-19, vérifié). Cohérence obligatoire avec le pacte → pacte-associes."
+    }
+   ]
+  },
+  {
+   "id": "code-de-commerce:L. 225-36",
+   "type": "article",
+   "code": "code-de-commerce",
+   "article": "L. 225-36",
+   "cle_librejustice": "l225-36",
+   "statut_verification": "verifie",
+   "derniere_verification": "2026-10-23",
+   "etat_source": null,
+   "occurrences": [
+    {
+     "skill": "redaction-acte",
+     "ligne": 90,
+     "extrait": "| SA | AGE ; le conseil peut transférer le siège sur le territoire français et mettre les statuts en harmonie avec la loi, sous réserve de ratification | C. com"
+    },
+    {
+     "skill": "redaction-acte",
+     "ligne": 134,
+     "extrait": "réserve de ratification par l'AGO (L. 225-36, vérifié). SAS — statuts."
+    },
+    {
+     "skill": "redaction-acte",
+     "ligne": 263,
+     "extrait": "réserve de ratification par l'AGE (L. 225-36) — vérifiés. Profiter de toute"
+    }
+   ]
+  },
+  {
+   "id": "code-civil:1836",
+   "type": "article",
+   "code": "code-civil",
+   "article": "1836",
+   "cle_librejustice": "1836",
+   "statut_verification": "a_verifier",
+   "derniere_verification": null,
+   "etat_source": null,
+   "occurrences": [
+    {
+     "skill": "redaction-acte",
+     "ligne": 91,
+     "extrait": "| Sociétés civiles | Unanimité à défaut de clause contraire ; jamais d'augmentation des engagements sans consentement | C. civ. 1836 |"
+    }
+   ]
+  },
+  {
+   "id": "code-de-commerce:R. 210-9",
+   "type": "article",
+   "code": "code-de-commerce",
+   "article": "R. 210-9",
+   "cle_librejustice": "r210-9",
+   "statut_verification": "a_verifier",
+   "derniere_verification": null,
+   "etat_source": null,
+   "occurrences": [
+    {
+     "skill": "redaction-acte",
+     "ligne": 103,
+     "extrait": "| Annonce légale | Avis de modification lorsque la modification rend caduque une mention de l'avis de constitution ; il reproduit l'ancienne mention à côté de l"
+    },
+    {
+     "skill": "redaction-acte",
+     "ligne": 143,
+     "extrait": "changement de département (à vérifier selon R. 210-9 et la pratique du"
+    },
+    {
+     "skill": "redaction-acte",
+     "ligne": 186,
+     "extrait": "(R. 210-9, à vérifier)."
+    }
+   ]
+  },
+  {
+   "id": "code-de-commerce:R. 210-4",
+   "type": "article",
+   "code": "code-de-commerce",
+   "article": "R. 210-4",
+   "cle_librejustice": "r210-4",
+   "statut_verification": "a_verifier",
+   "derniere_verification": null,
+   "etat_source": null,
+   "occurrences": [
+    {
+     "skill": "redaction-acte",
+     "ligne": 103,
+     "extrait": "| Annonce légale | Avis de modification lorsque la modification rend caduque une mention de l'avis de constitution ; il reproduit l'ancienne mention à côté de l"
+    }
+   ]
+  },
+  {
+   "id": "code-de-commerce:R. 123-66",
+   "type": "article",
+   "code": "code-de-commerce",
+   "article": "R. 123-66",
+   "cle_librejustice": "r123-66",
+   "statut_verification": "a_verifier",
+   "derniere_verification": null,
+   "etat_source": null,
+   "occurrences": [
+    {
+     "skill": "redaction-acte",
+     "ligne": 105,
+     "extrait": "| Inscription modificative | Demande par le guichet unique dans le mois de tout fait ou acte la rendant nécessaire | C. com. R. 123-66 |"
+    },
+    {
+     "skill": "redaction-acte",
+     "ligne": 252,
+     "extrait": "modificative (R. 123-66) et bénéficiaires effectifs (R. 561-55) ; clause de"
+    }
+   ]
+  },
+  {
+   "id": "code-monetaire-et-financier:R. 561-55",
+   "type": "article",
+   "code": "code-monetaire-et-financier",
+   "article": "R. 561-55",
+   "cle_librejustice": "r561-55",
+   "statut_verification": "a_verifier",
+   "derniere_verification": null,
+   "etat_source": null,
+   "occurrences": [
+    {
+     "skill": "redaction-acte",
+     "ligne": 106,
+     "extrait": "| Bénéficiaires effectifs | Inscription modificative dans les trente jours suivant tout fait ou acte modifiant les informations déclarées | C. mon. fin. R. 561-"
+    },
+    {
+     "skill": "redaction-acte",
+     "ligne": 252,
+     "extrait": "modificative (R. 123-66) et bénéficiaires effectifs (R. 561-55) ; clause de"
+    }
+   ]
+  },
+  {
+   "id": "code-de-la-propriete-intellectuelle:L. 711-3",
+   "type": "article",
+   "code": "code-de-la-propriete-intellectuelle",
+   "article": "L. 711-3",
+   "cle_librejustice": "l711-3",
+   "statut_verification": "verifie",
+   "derniere_verification": "2026-10-23",
+   "etat_source": null,
+   "occurrences": [
+    {
+     "skill": "redaction-acte",
+     "ligne": 123,
+     "extrait": "L. 711-3, vérifié 23/10/2026). Proposer le dépôt de la marque et du nom de"
+    }
+   ]
+  },
+  {
+   "id": "code-de-commerce:L. 145-47",
+   "type": "article",
+   "code": "code-de-commerce",
+   "article": "L. 145-47",
+   "cle_librejustice": "l145-47",
+   "statut_verification": "verifie",
+   "derniere_verification": "2026-10-23",
+   "etat_source": null,
+   "occurrences": [
+    {
+     "skill": "redaction-acte",
+     "ligne": 160,
+     "extrait": "déchéance (C. com. L. 145-47, vérifié) ; activité étrangère à la"
+    }
+   ]
+  },
+  {
+   "id": "code-general-des-impots:37",
+   "type": "article",
+   "code": "code-general-des-impots",
+   "article": "37",
+   "cle_librejustice": "37",
+   "statut_verification": "a_verifier",
+   "derniere_verification": null,
+   "etat_source": null,
+   "occurrences": [
+    {
+     "skill": "redaction-acte",
+     "ligne": 176,
+     "extrait": "est établie sur les bénéfices de la période écoulée (CGI art. 37, applicable"
+    },
+    {
+     "skill": "redaction-acte",
+     "ligne": 331,
+     "extrait": "- Prolonger un exercice sans mesurer l'article 37 du CGI et l'intégration"
+    }
+   ]
+  },
+  {
+   "id": "code-civil:1844-6",
+   "type": "article",
+   "code": "code-civil",
+   "article": "1844-6",
+   "cle_librejustice": "1844-6",
+   "statut_verification": "a_verifier",
+   "derniere_verification": null,
+   "etat_source": null,
+   "occurrences": [
+    {
+     "skill": "redaction-acte",
+     "ligne": 193,
+     "extrait": "l'année qui suit l'expiration (C. civ. 1844-6)."
+    }
+   ]
+  },
+  {
+   "id": "code-de-commerce:L. 225-129-6",
+   "type": "article",
+   "code": "code-de-commerce",
+   "article": "L. 225-129-6",
+   "cle_librejustice": "l225-129-6",
+   "statut_verification": "verifie",
+   "derniere_verification": "2026-10-23",
+   "etat_source": null,
+   "occurrences": [
+    {
+     "skill": "redaction-acte",
+     "ligne": 201,
+     "extrait": "d'augmentation réservée aux salariés (C. com. L. 225-129-6, vérifié ;"
+    }
+   ]
+  },
+  {
+   "id": "code-de-commerce:L. 227-1",
+   "type": "article",
+   "code": "code-de-commerce",
+   "article": "L. 227-1",
+   "cle_librejustice": "l227-1",
+   "statut_verification": "verifie",
+   "derniere_verification": "2026-10-23",
+   "etat_source": null,
+   "occurrences": [
+    {
+     "skill": "redaction-acte",
+     "ligne": 202,
+     "extrait": "applicable à la SAS par renvoi de L. 227-1, vérifié), sauf exception du"
+    },
+    {
+     "skill": "redaction-acte",
+     "ligne": 232,
+     "extrait": "- **SAS → autre forme** : règles des SA par renvoi de L. 227-1, **à"
+    },
+    {
+     "skill": "restructurations",
+     "ligne": 166,
+     "extrait": "exclue pour la SAS par L. 227-1 (vérifié). ⚠️ INCERTAIN pour la SARL depuis la"
+    }
+   ]
+  },
+  {
+   "id": "code-de-commerce:L. 223-33",
+   "type": "article",
+   "code": "code-de-commerce",
+   "article": "L. 223-33",
+   "cle_librejustice": "l223-33",
+   "statut_verification": "a_verifier",
+   "derniere_verification": null,
+   "etat_source": null,
+   "occurrences": [
+    {
+     "skill": "redaction-acte",
+     "ligne": 205,
+     "extrait": "ou par décision de justice (SARL : L. 223-33 renvoyant à L. 223-9 ; SA et"
+    }
+   ]
+  },
+  {
+   "id": "code-de-commerce:L. 223-34",
+   "type": "article",
+   "code": "code-de-commerce",
+   "article": "L. 223-34",
+   "cle_librejustice": "l223-34",
+   "statut_verification": "a_verifier",
+   "derniere_verification": null,
+   "etat_source": null,
+   "occurrences": [
+    {
+     "skill": "redaction-acte",
+     "ligne": 212,
+     "extrait": "annulation ; égalité des associés (SARL L. 223-34 ; SA et SAS L. 225-205 —"
+    },
+    {
+     "skill": "redaction-acte",
+     "ligne": 216,
+     "extrait": "points d'entrée à lire (C. com. L. 223-34, L. 225-204, L. 231-1 s.)."
+    }
+   ]
+  },
+  {
+   "id": "code-de-commerce:L. 225-205",
+   "type": "article",
+   "code": "code-de-commerce",
+   "article": "L. 225-205",
+   "cle_librejustice": "l225-205",
+   "statut_verification": "a_verifier",
+   "derniere_verification": null,
+   "etat_source": null,
+   "occurrences": [
+    {
+     "skill": "redaction-acte",
+     "ligne": 212,
+     "extrait": "annulation ; égalité des associés (SARL L. 223-34 ; SA et SAS L. 225-205 —"
+    }
+   ]
+  },
+  {
+   "id": "code-de-commerce:L. 225-204",
+   "type": "article",
+   "code": "code-de-commerce",
+   "article": "L. 225-204",
+   "cle_librejustice": "l225-204",
+   "statut_verification": "a_verifier",
+   "derniere_verification": null,
+   "etat_source": null,
+   "occurrences": [
+    {
+     "skill": "redaction-acte",
+     "ligne": 216,
+     "extrait": "points d'entrée à lire (C. com. L. 223-34, L. 225-204, L. 231-1 s.)."
+    }
+   ]
+  },
+  {
+   "id": "code-de-commerce:L. 231-1",
+   "type": "article",
+   "code": "code-de-commerce",
+   "article": "L. 231-1",
+   "cle_librejustice": "l231-1",
+   "statut_verification": "a_verifier",
+   "derniere_verification": null,
+   "etat_source": null,
+   "occurrences": [
+    {
+     "skill": "redaction-acte",
+     "ligne": 216,
+     "extrait": "points d'entrée à lire (C. com. L. 223-34, L. 225-204, L. 231-1 s.)."
+    }
+   ]
+  },
+  {
+   "id": "code-de-commerce:L. 227-3",
+   "type": "article",
+   "code": "code-de-commerce",
+   "article": "L. 227-3",
+   "cle_librejustice": "l227-3",
+   "statut_verification": "a_verifier",
+   "derniere_verification": null,
+   "etat_source": null,
+   "occurrences": [
+    {
+     "skill": "redaction-acte",
+     "ligne": 224,
+     "extrait": "- **SARL → SAS** : unanimité (L. 227-3). **SARL → SA** : majorité de"
+    }
+   ]
+  },
+  {
+   "id": "code-de-commerce:L. 223-43",
+   "type": "article",
+   "code": "code-de-commerce",
+   "article": "L. 223-43",
+   "cle_librejustice": "l223-43",
+   "statut_verification": "a_verifier",
+   "derniere_verification": null,
+   "etat_source": null,
+   "occurrences": [
+    {
+     "skill": "redaction-acte",
+     "ligne": 226,
+     "extrait": "la situation de la société (L. 223-43). **SARL → SNC ou commandite** :"
+    },
+    {
+     "skill": "redaction-acte",
+     "ligne": 227,
+     "extrait": "unanimité (L. 223-43)."
+    }
+   ]
+  },
+  {
+   "id": "code-de-commerce:L. 224-3",
+   "type": "article",
+   "code": "code-de-commerce",
+   "article": "L. 224-3",
+   "cle_librejustice": "l224-3",
+   "statut_verification": "a_verifier",
+   "derniere_verification": null,
+   "etat_source": null,
+   "occurrences": [
+    {
+     "skill": "redaction-acte",
+     "ligne": 231,
+     "extrait": "l'évaluation, à peine de nullité (L. 224-3)."
+    }
+   ]
+  },
+  {
+   "id": "code-de-commerce:L. 225-244",
+   "type": "article",
+   "code": "code-de-commerce",
+   "article": "L. 225-244",
+   "cle_librejustice": "l225-244",
+   "statut_verification": "a_verifier",
+   "derniere_verification": null,
+   "etat_source": null,
+   "occurrences": [
+    {
+     "skill": "redaction-acte",
+     "ligne": 236,
+     "extrait": "capital (L. 225-244) ; transformation en SARL aux conditions de modification"
+    }
+   ]
+  },
+  {
+   "id": "code-de-commerce:L. 225-245",
+   "type": "article",
+   "code": "code-de-commerce",
+   "article": "L. 225-245",
+   "cle_librejustice": "l225-245",
+   "statut_verification": "a_verifier",
+   "derniere_verification": null,
+   "etat_source": null,
+   "occurrences": [
+    {
+     "skill": "redaction-acte",
+     "ligne": 237,
+     "extrait": "des statuts des SARL (L. 225-245). **SA → autre forme** : L. 225-243"
+    }
+   ]
+  },
+  {
+   "id": "code-de-commerce:L. 225-243",
+   "type": "article",
+   "code": "code-de-commerce",
+   "article": "L. 225-243",
+   "cle_librejustice": "l225-243",
+   "statut_verification": "a_verifier",
+   "derniere_verification": null,
+   "etat_source": null,
+   "occurrences": [
+    {
+     "skill": "redaction-acte",
+     "ligne": 237,
+     "extrait": "des statuts des SARL (L. 225-245). **SA → autre forme** : L. 225-243"
+    }
+   ]
+  },
+  {
+   "id": "code-de-commerce:L. 227-13",
+   "type": "article",
+   "code": "code-de-commerce",
+   "article": "L. 227-13",
+   "cle_librejustice": "l227-13",
+   "statut_verification": "a_verifier",
+   "derniere_verification": null,
+   "etat_source": null,
+   "occurrences": [
+    {
+     "skill": "redaction-acte",
+     "ligne": 256,
+     "extrait": "- Inaliénabilité (dix ans au plus, L. 227-13) et exclusion : unanimité pour"
+    }
+   ]
+  },
+  {
+   "id": "code-general-des-impots:8",
+   "type": "article",
+   "code": "code-general-des-impots",
+   "article": "8",
+   "cle_librejustice": "8",
+   "statut_verification": "a_verifier",
+   "derniere_verification": null,
+   "etat_source": null,
+   "occurrences": [
+    {
+     "skill": "redaction-acte",
+     "ligne": 271,
+     "extrait": "physique peut relever d'un régime fiscal différent — lire CGI art. 8 et 206,"
+    }
+   ]
+  },
+  {
+   "id": "code-general-des-impots:206",
+   "type": "article",
+   "code": "code-general-des-impots",
+   "article": "206",
+   "cle_librejustice": "206",
+   "statut_verification": "a_verifier",
+   "derniere_verification": null,
+   "etat_source": null,
+   "occurrences": [
+    {
+     "skill": "redaction-acte",
+     "ligne": 271,
+     "extrait": "physique peut relever d'un régime fiscal différent — lire CGI art. 8 et 206,"
+    }
+   ]
+  },
+  {
+   "id": "code-general-des-impots:210-0 A",
+   "type": "article",
+   "code": "code-general-des-impots",
+   "article": "210-0 A",
+   "cle_librejustice": "210-0-a",
+   "statut_verification": "verifie",
+   "derniere_verification": "2026-10-23",
+   "etat_source": null,
+   "occurrences": [
+    {
+     "skill": "restructurations",
+     "ligne": 36,
+     "extrait": "un risque (CGI art. 210-0 A, III, vérifié : exclusion des régimes de faveur"
+    },
+    {
+     "skill": "restructurations",
+     "ligne": 127,
+     "extrait": "| Définitions des opérations éligibles | Fusion, scission, APA d'une ou plusieurs branches complètes, opérations sans échange de titres (CGI art. 210-0 A, I, vé"
+    }
+   ]
+  },
+  {
+   "id": "code-de-commerce:L. 236-11",
+   "type": "article",
+   "code": "code-de-commerce",
+   "article": "L. 236-11",
+   "cle_librejustice": "l236-11",
+   "statut_verification": "verifie",
+   "derniere_verification": "2026-10-23",
+   "etat_source": null,
+   "occurrences": [
+    {
+     "skill": "restructurations",
+     "ligne": 47,
+     "extrait": "| Texte (vérifié) | C. civ. 1844-5 | C. com. L. 236-11 | C. com. L. 236-12 | C. com. L. 236-1 s. | C. com. L. 236-18 s. | C. com. L. 236-27 ; L. 236-28 |"
+    },
+    {
+     "skill": "restructurations",
+     "ligne": 195,
+     "extrait": "En fusion simplifiée (L. 236-11), le projet ne mentionne ni les modalités de"
+    }
+   ]
+  },
+  {
+   "id": "code-de-commerce:L. 236-12",
+   "type": "article",
+   "code": "code-de-commerce",
+   "article": "L. 236-12",
+   "cle_librejustice": "l236-12",
+   "statut_verification": "verifie",
+   "derniere_verification": "2026-10-23",
+   "etat_source": null,
+   "occurrences": [
+    {
+     "skill": "restructurations",
+     "ligne": 47,
+     "extrait": "| Texte (vérifié) | C. civ. 1844-5 | C. com. L. 236-11 | C. com. L. 236-12 | C. com. L. 236-1 s. | C. com. L. 236-18 s. | C. com. L. 236-27 ; L. 236-28 |"
+    }
+   ]
+  },
+  {
+   "id": "code-de-commerce:L. 236-1",
+   "type": "article",
+   "code": "code-de-commerce",
+   "article": "L. 236-1",
+   "cle_librejustice": "l236-1",
+   "statut_verification": "verifie",
+   "derniere_verification": "2026-10-23",
+   "etat_source": null,
+   "occurrences": [
+    {
+     "skill": "restructurations",
+     "ligne": 47,
+     "extrait": "| Texte (vérifié) | C. civ. 1844-5 | C. com. L. 236-11 | C. com. L. 236-12 | C. com. L. 236-1 s. | C. com. L. 236-18 s. | C. com. L. 236-27 ; L. 236-28 |"
+    },
+    {
+     "skill": "restructurations",
+     "ligne": 53,
+     "extrait": "| Rémunération | Aucune | Aucun échange de titres (L. 236-3, II) | Échange pour les minoritaires | Échange, soulte limitée à 10 % du nominal (L. 236-1) | Échang"
+    }
+   ]
+  },
+  {
+   "id": "code-de-commerce:L. 236-18",
+   "type": "article",
+   "code": "code-de-commerce",
+   "article": "L. 236-18",
+   "cle_librejustice": "l236-18",
+   "statut_verification": "verifie",
+   "derniere_verification": "2026-10-23",
+   "etat_source": null,
+   "occurrences": [
+    {
+     "skill": "restructurations",
+     "ligne": 47,
+     "extrait": "| Texte (vérifié) | C. civ. 1844-5 | C. com. L. 236-11 | C. com. L. 236-12 | C. com. L. 236-1 s. | C. com. L. 236-18 s. | C. com. L. 236-27 ; L. 236-28 |"
+    },
+    {
+     "skill": "restructurations",
+     "ligne": 53,
+     "extrait": "| Rémunération | Aucune | Aucun échange de titres (L. 236-3, II) | Échange pour les minoritaires | Échange, soulte limitée à 10 % du nominal (L. 236-1) | Échang"
+    }
+   ]
+  },
+  {
+   "id": "code-de-commerce:L. 236-27",
+   "type": "article",
+   "code": "code-de-commerce",
+   "article": "L. 236-27",
+   "cle_librejustice": "l236-27",
+   "statut_verification": "verifie",
+   "derniere_verification": "2026-10-23",
+   "etat_source": null,
+   "occurrences": [
+    {
+     "skill": "restructurations",
+     "ligne": 47,
+     "extrait": "| Texte (vérifié) | C. civ. 1844-5 | C. com. L. 236-11 | C. com. L. 236-12 | C. com. L. 236-1 s. | C. com. L. 236-18 s. | C. com. L. 236-27 ; L. 236-28 |"
+    },
+    {
+     "skill": "restructurations",
+     "ligne": 53,
+     "extrait": "| Rémunération | Aucune | Aucun échange de titres (L. 236-3, II) | Échange pour les minoritaires | Échange, soulte limitée à 10 % du nominal (L. 236-1) | Échang"
+    },
+    {
+     "skill": "restructurations",
+     "ligne": 100,
+     "extrait": "scission, de TUP ou d'APA réalisé selon L. 236-27 ; le tribunal peut"
+    },
+    {
+     "skill": "restructurations",
+     "ligne": 204,
+     "extrait": "Article 2   Objet : fusion par absorption / scission / APA (option L. 236-27)"
+    }
+   ]
+  },
+  {
+   "id": "code-de-commerce:L. 236-28",
+   "type": "article",
+   "code": "code-de-commerce",
+   "article": "L. 236-28",
+   "cle_librejustice": "l236-28",
+   "statut_verification": "verifie",
+   "derniere_verification": "2026-10-23",
+   "etat_source": null,
+   "occurrences": [
+    {
+     "skill": "restructurations",
+     "ligne": 47,
+     "extrait": "| Texte (vérifié) | C. civ. 1844-5 | C. com. L. 236-11 | C. com. L. 236-12 | C. com. L. 236-1 s. | C. com. L. 236-18 s. | C. com. L. 236-27 ; L. 236-28 |"
+    }
+   ]
+  },
+  {
+   "id": "code-de-commerce:L. 236-2",
+   "type": "article",
+   "code": "code-de-commerce",
+   "article": "L. 236-2",
+   "cle_librejustice": "l236-2",
+   "statut_verification": "a_verifier",
+   "derniere_verification": null,
+   "etat_source": null,
+   "occurrences": [
+    {
+     "skill": "restructurations",
+     "ligne": 48,
+     "extrait": "| Décision des associés | Décision de dissolution de l'associé unique | Pas d'AGE des sociétés participantes (sauf demande d'associés de l'absorbante détenant 5"
+    }
+   ]
+  },
+  {
+   "id": "code-de-commerce:R. 236-2",
+   "type": "article",
+   "code": "code-de-commerce",
+   "article": "R. 236-2",
+   "cle_librejustice": "r236-2",
+   "statut_verification": "verifie",
+   "derniere_verification": "2026-10-23",
+   "etat_source": null,
+   "occurrences": [
+    {
+     "skill": "restructurations",
+     "ligne": 50,
+     "extrait": "| Publicité, dépôt | Publication de la dissolution | Projet déposé et publié trente jours au moins avant la prise d'effet (R. 236-2) | Projet déposé et publié s"
+    },
+    {
+     "skill": "restructurations",
+     "ligne": 50,
+     "extrait": "| Publicité, dépôt | Publication de la dissolution | Projet déposé et publié trente jours au moins avant la prise d'effet (R. 236-2) | Projet déposé et publié s"
+    },
+    {
+     "skill": "restructurations",
+     "ligne": 50,
+     "extrait": "| Publicité, dépôt | Publication de la dissolution | Projet déposé et publié trente jours au moins avant la prise d'effet (R. 236-2) | Projet déposé et publié s"
+    },
+    {
+     "skill": "restructurations",
+     "ligne": 52,
+     "extrait": "| Date d'effet | Fin du délai d'opposition ou issue des oppositions : pas de date choisie | Date fixée par le traité, au plus tôt trente jours après dépôt et pu"
+    },
+    {
+     "skill": "restructurations",
+     "ligne": 152,
+     "extrait": "R. 236-2, vérifiés) : **trente jours au moins** (délai légal, prévoir une"
+    }
+   ]
+  },
+  {
+   "id": "code-de-commerce:R. 236-11",
+   "type": "article",
+   "code": "code-de-commerce",
+   "article": "R. 236-11",
+   "cle_librejustice": "r236-11",
+   "statut_verification": "verifie",
+   "derniere_verification": "2026-10-23",
+   "etat_source": null,
+   "occurrences": [
+    {
+     "skill": "restructurations",
+     "ligne": 51,
+     "extrait": "| Créanciers | Opposition dans les trente jours de la publication ; la transmission n'a lieu qu'à l'issue du délai ou après rejet, remboursement ou garanties | "
+    },
+    {
+     "skill": "restructurations",
+     "ligne": 156,
+     "extrait": "6. Délai d'opposition des créanciers (R. 236-11, vérifié) et décision sur les"
+    }
+   ]
+  },
+  {
+   "id": "code-de-commerce:L. 236-15",
+   "type": "article",
+   "code": "code-de-commerce",
+   "article": "L. 236-15",
+   "cle_librejustice": "l236-15",
+   "statut_verification": "a_verifier",
+   "derniere_verification": null,
+   "etat_source": null,
+   "occurrences": [
+    {
+     "skill": "restructurations",
+     "ligne": 51,
+     "extrait": "| Créanciers | Opposition dans les trente jours de la publication ; la transmission n'a lieu qu'à l'issue du délai ou après rejet, remboursement ou garanties | "
+    },
+    {
+     "skill": "restructurations",
+     "ligne": 104,
+     "extrait": "d'exigibilité anticipée en cas de fusion (préservées par L. 236-15, dernier"
+    },
+    {
+     "skill": "restructurations",
+     "ligne": 223,
+     "extrait": "Article 11  Créanciers : substitution sans novation, oppositions (L. 236-15)"
+    },
+    {
+     "skill": "restructurations",
+     "ligne": 281,
+     "extrait": "elle survit à l'opération (L. 236-15)."
+    }
+   ]
+  },
+  {
+   "id": "code-de-commerce:L. 236-4",
+   "type": "article",
+   "code": "code-de-commerce",
+   "article": "L. 236-4",
+   "cle_librejustice": "l236-4",
+   "statut_verification": "verifie",
+   "derniere_verification": "2026-10-23",
+   "etat_source": null,
+   "occurrences": [
+    {
+     "skill": "restructurations",
+     "ligne": 52,
+     "extrait": "| Date d'effet | Fin du délai d'opposition ou issue des oppositions : pas de date choisie | Date fixée par le traité, au plus tôt trente jours après dépôt et pu"
+    },
+    {
+     "skill": "restructurations",
+     "ligne": 52,
+     "extrait": "| Date d'effet | Fin du délai d'opposition ou issue des oppositions : pas de date choisie | Date fixée par le traité, au plus tôt trente jours après dépôt et pu"
+    },
+    {
+     "skill": "restructurations",
+     "ligne": 56,
+     "extrait": "**Bornes de la date d'effet (L. 236-4, vérifié)** : création d'une société"
+    },
+    {
+     "skill": "restructurations",
+     "ligne": 215,
+     "extrait": "(bornes de L. 236-4)"
+    },
+    {
+     "skill": "restructurations",
+     "ligne": 261,
+     "extrait": "- [ ] Date d'effet dans les bornes de L. 236-4 ; cohérence comptable et fiscale"
+    },
+    {
+     "skill": "restructurations",
+     "ligne": 279,
+     "extrait": "- Fixer une date d'effet rétroactive hors des bornes de L. 236-4."
+    }
+   ]
+  },
+  {
+   "id": "code-de-commerce:L. 236-3",
+   "type": "article",
+   "code": "code-de-commerce",
+   "article": "L. 236-3",
+   "cle_librejustice": "l236-3",
+   "statut_verification": "verifie",
+   "derniere_verification": "2026-10-23",
+   "etat_source": null,
+   "occurrences": [
+    {
+     "skill": "restructurations",
+     "ligne": 53,
+     "extrait": "| Rémunération | Aucune | Aucun échange de titres (L. 236-3, II) | Échange pour les minoritaires | Échange, soulte limitée à 10 % du nominal (L. 236-1) | Échang"
+    },
+    {
+     "skill": "restructurations",
+     "ligne": 66,
+     "extrait": "**Absence d'échange (L. 236-3, II, vérifié)** : titres détenus par la"
+    },
+    {
+     "skill": "restructurations",
+     "ligne": 212,
+     "extrait": "d'échange (L. 236-3, II) ; augmentation de capital ; prime ;"
+    },
+    {
+     "skill": "restructurations",
+     "ligne": 230,
+     "extrait": "et transmission universelle (L. 236-3, I)"
+    }
+   ]
+  },
+  {
+   "id": "code-de-commerce:R. 236-1",
+   "type": "article",
+   "code": "code-de-commerce",
+   "article": "R. 236-1",
+   "cle_librejustice": "r236-1",
+   "statut_verification": "verifie",
+   "derniere_verification": "2026-10-23",
+   "etat_source": null,
+   "occurrences": [
+    {
+     "skill": "restructurations",
+     "ligne": 63,
+     "extrait": "comptable et fiscal**, qui peut rétroagir dans ces bornes (R. 236-1, 5°) ; ne"
+    },
+    {
+     "skill": "restructurations",
+     "ligne": 148,
+     "extrait": "3. Arrêté du projet par les dirigeants de chaque société (R. 236-1, vérifié)."
+    },
+    {
+     "skill": "restructurations",
+     "ligne": 180,
+     "extrait": "Mentions obligatoires (R. 236-1, vérifié), toutes reprises en articles"
+    },
+    {
+     "skill": "restructurations",
+     "ligne": 197,
+     "extrait": "(R. 236-1, dernier alinéa, vérifié)."
+    },
+    {
+     "skill": "restructurations",
+     "ligne": 259,
+     "extrait": "- [ ] Mentions de R. 236-1 toutes présentes (ou exclues à juste titre en régime"
+    }
+   ]
+  },
+  {
+   "id": "code-civil:1844-4",
+   "type": "article",
+   "code": "code-civil",
+   "article": "1844-4",
+   "cle_librejustice": "1844-4",
+   "statut_verification": "verifie",
+   "derniere_verification": "2026-10-23",
+   "etat_source": null,
+   "occurrences": [
+    {
+     "skill": "restructurations",
+     "ligne": 72,
+     "extrait": "décidées aux conditions de modification des statuts (C. civ. 1844-4, vérifié) ;"
+    }
+   ]
+  },
+  {
+   "id": "code-general-des-impots:209",
+   "type": "article",
+   "code": "code-general-des-impots",
+   "article": "209",
+   "cle_librejustice": "209",
+   "statut_verification": "a_verifier",
+   "derniere_verification": null,
+   "etat_source": null,
+   "occurrences": [
+    {
+     "skill": "restructurations",
+     "ligne": 132,
+     "extrait": "| Déficits | Transfert des déficits sur agrément : lire CGI art. 209, II |"
+    }
+   ]
+  },
+  {
+   "id": "code-general-des-impots:816",
+   "type": "article",
+   "code": "code-general-des-impots",
+   "article": "816",
+   "cle_librejustice": "816",
+   "statut_verification": "verifie",
+   "derniere_verification": "2026-10-23",
+   "etat_source": null,
+   "occurrences": [
+    {
+     "skill": "restructurations",
+     "ligne": 134,
+     "extrait": "| Droits d'enregistrement | Fusion entre personnes morales passibles de l'IS : enregistrement gratuit, y compris la prise en charge du passif (CGI art. 816) ; é"
+    }
+   ]
+  },
+  {
+   "id": "code-general-des-impots:817",
+   "type": "article",
+   "code": "code-general-des-impots",
+   "article": "817",
+   "cle_librejustice": "817",
+   "statut_verification": "verifie",
+   "derniere_verification": "2026-10-23",
+   "etat_source": null,
+   "occurrences": [
+    {
+     "skill": "restructurations",
+     "ligne": 134,
+     "extrait": "| Droits d'enregistrement | Fusion entre personnes morales passibles de l'IS : enregistrement gratuit, y compris la prise en charge du passif (CGI art. 816) ; é"
+    }
+   ]
+  },
+  {
+   "id": "code-general-des-impots:54 septies",
+   "type": "article",
+   "code": "code-general-des-impots",
+   "article": "54 septies",
+   "cle_librejustice": "54-septies",
+   "statut_verification": "a_verifier",
+   "derniere_verification": null,
+   "etat_source": null,
+   "occurrences": [
+    {
+     "skill": "restructurations",
+     "ligne": 136,
+     "extrait": "| Obligations déclaratives | État de suivi des plus-values en sursis (lire CGI art. 54 septies), déclaration de cessation et de résultat de la société absorbée "
+    }
+   ]
+  },
+  {
+   "id": "code-de-commerce:L. 236-10",
+   "type": "article",
+   "code": "code-de-commerce",
+   "article": "L. 236-10",
+   "cle_librejustice": "l236-10",
+   "statut_verification": "verifie",
+   "derniere_verification": "2026-10-23",
+   "etat_source": null,
+   "occurrences": [
+    {
+     "skill": "restructurations",
+     "ligne": 150,
+     "extrait": "de ne pas en désigner (L. 236-10, vérifié)."
+    },
+    {
+     "skill": "restructurations",
+     "ligne": 242,
+     "extrait": "commissaire (L. 236-10)."
+    }
+   ]
+  },
+  {
+   "id": "code-de-commerce:L. 236-6",
+   "type": "article",
+   "code": "code-de-commerce",
+   "article": "L. 236-6",
+   "cle_librejustice": "l236-6",
+   "statut_verification": "a_verifier",
+   "derniere_verification": null,
+   "etat_source": null,
+   "occurrences": [
+    {
+     "skill": "restructurations",
+     "ligne": 151,
+     "extrait": "5. Dépôt du projet au greffe de chaque société et avis au BODACC (L. 236-6 ;"
+    }
+   ]
+  },
+  {
+   "id": "code-de-commerce:R. 236-3",
+   "type": "article",
+   "code": "code-de-commerce",
+   "article": "R. 236-3",
+   "cle_librejustice": "r236-3",
+   "statut_verification": "a_verifier",
+   "derniere_verification": null,
+   "etat_source": null,
+   "occurrences": [
+    {
+     "skill": "restructurations",
+     "ligne": 155,
+     "extrait": "(R. 236-3)."
+    }
+   ]
+  },
+  {
+   "id": "code-de-commerce:L. 236-17",
+   "type": "article",
+   "code": "code-de-commerce",
+   "article": "L. 236-17",
+   "cle_librejustice": "l236-17",
+   "statut_verification": "verifie",
+   "derniere_verification": "2026-10-23",
+   "etat_source": null,
+   "occurrences": [
+    {
+     "skill": "restructurations",
+     "ligne": 164,
+     "extrait": "⚠️ **Déclaration de conformité** : L. 236-17 (vérifié) l'impose aux sociétés"
+    }
+   ]
+  },
+  {
+   "id": "code-de-commerce:L. 236-9",
+   "type": "article",
+   "code": "code-de-commerce",
+   "article": "L. 236-9",
+   "cle_librejustice": "l236-9",
+   "statut_verification": "a_verifier",
+   "derniere_verification": null,
+   "etat_source": null,
+   "occurrences": [
+    {
+     "skill": "restructurations",
+     "ligne": 241,
+     "extrait": "L. 236-9, sauf dispense) ; requête ou décision unanime relative au"
+    }
+   ]
+  },
+  {
+   "id": "code-general-des-impots:235 ter",
+   "type": "article",
+   "code": "code-general-des-impots",
+   "article": "235 ter",
+   "cle_librejustice": "235-ter",
+   "statut_verification": "a_verifier",
+   "derniere_verification": null,
+   "etat_source": null,
+   "occurrences": [
+    {
+     "skill": "socle-eca",
+     "ligne": 216,
+     "extrait": "| Prélèvements sociaux du patrimoine | Les taux de CSG sont **différenciés** selon la nature du revenu (dividendes/PV mobilières ≠ revenus fonciers et PV immobi"
+    }
+   ]
+  },
+  {
+   "id": "code-general-des-impots:669",
+   "type": "article",
+   "code": "code-general-des-impots",
+   "article": "669",
+   "cle_librejustice": "669",
+   "statut_verification": "a_verifier",
+   "derniere_verification": null,
+   "etat_source": null,
+   "occurrences": [
+    {
+     "skill": "socle-eca",
+     "ligne": 218,
+     "extrait": "| Barème usufruit / nue-propriété | Lire la tranche « moins de N ans révolus » ; erreur fréquente d'une tranche (58 ans → NP 50 %, pas 60 %). | 23/10/2026 | CGI"
+    },
+    {
+     "skill": "strategie-patrimoniale",
+     "ligne": 70,
+     "extrait": "| Démembrement (donation de nue-propriété) | Assiette réduite, revenus conservés | Âge de l'usufruitier au jour de la donation ; droits de vote dans les société"
+    }
+   ]
+  },
+  {
+   "id": "code-general-des-impots:787 C",
+   "type": "article",
+   "code": "code-general-des-impots",
+   "article": "787 C",
+   "cle_librejustice": "787-c",
+   "statut_verification": "a_verifier",
+   "derniere_verification": null,
+   "etat_source": null,
+   "occurrences": [
+    {
+     "skill": "socle-eca",
+     "ligne": 223,
+     "extrait": "| Pacte Dutreil | Régime modifié par la LF 2026 (art. 8) : lire 787 B dans la version à la date de transmission (biens exclus, détention indirecte, durées). Don"
+    },
+    {
+     "skill": "strategie-patrimoniale",
+     "ligne": 72,
+     "extrait": "| Pacte Dutreil | Exonération partielle de droits | Engagements (collectif, individuel), direction, activité, holding animatrice, biens exclus — **régime modifi"
+    }
+   ]
+  },
+  {
+   "id": "code-general-des-impots:150-0 F ter",
+   "type": "mention_inexistante",
+   "code": "code-general-des-impots",
+   "article": "150-0 F ter",
+   "cle_librejustice": "150-0-f-ter",
+   "statut_verification": "verifie",
+   "derniere_verification": "2026-10-23",
+   "etat_source": null,
+   "occurrences": [
+    {
+     "skill": "socle-eca",
+     "ligne": 225,
+     "extrait": "| Contribution différentielle (CDHR) | Elle figure à l'**art. 224 CGI** — l'« art. 150-0 F ter » cité dans les anciennes versions des skills **n'existe pas**. L"
+    }
+   ],
+   "note": "Cité comme article inexistant (mise en garde du socle) : contrôler qu'il n'existe toujours pas ; la CDHR figure à l'art. 224 CGI"
+  },
+  {
+   "id": "code-civil:893",
+   "type": "article",
+   "code": "code-civil",
+   "article": "893",
+   "cle_librejustice": "893",
+   "statut_verification": "a_verifier",
+   "derniere_verification": null,
+   "etat_source": null,
+   "occurrences": [
+    {
+     "skill": "strategie-patrimoniale",
+     "ligne": 69,
+     "extrait": "| Donation simple / donation-partage | Transmission anticipée, gel des valeurs (partage) | Réserve, rapport, accord des héritiers (partage) | C. civ. art. 893 s"
+    }
+   ]
+  },
+  {
+   "id": "code-civil:1075",
+   "type": "article",
+   "code": "code-civil",
+   "article": "1075",
+   "cle_librejustice": "1075",
+   "statut_verification": "a_verifier",
+   "derniere_verification": null,
+   "etat_source": null,
+   "occurrences": [
+    {
+     "skill": "strategie-patrimoniale",
+     "ligne": 69,
+     "extrait": "| Donation simple / donation-partage | Transmission anticipée, gel des valeurs (partage) | Réserve, rapport, accord des héritiers (partage) | C. civ. art. 893 s"
+    }
+   ]
+  },
+  {
+   "id": "code-general-des-impots:777",
+   "type": "article",
+   "code": "code-general-des-impots",
+   "article": "777",
+   "cle_librejustice": "777",
+   "statut_verification": "a_verifier",
+   "derniere_verification": null,
+   "etat_source": null,
+   "occurrences": [
+    {
+     "skill": "strategie-patrimoniale",
+     "ligne": 69,
+     "extrait": "| Donation simple / donation-partage | Transmission anticipée, gel des valeurs (partage) | Réserve, rapport, accord des héritiers (partage) | C. civ. art. 893 s"
+    }
+   ]
+  },
+  {
+   "id": "code-general-des-impots:779",
+   "type": "article",
+   "code": "code-general-des-impots",
+   "article": "779",
+   "cle_librejustice": "779",
+   "statut_verification": "a_verifier",
+   "derniere_verification": null,
+   "etat_source": null,
+   "occurrences": [
+    {
+     "skill": "strategie-patrimoniale",
+     "ligne": 69,
+     "extrait": "| Donation simple / donation-partage | Transmission anticipée, gel des valeurs (partage) | Réserve, rapport, accord des héritiers (partage) | C. civ. art. 893 s"
+    }
+   ]
+  },
+  {
+   "id": "code-general-des-impots:784",
+   "type": "article",
+   "code": "code-general-des-impots",
+   "article": "784",
+   "cle_librejustice": "784",
+   "statut_verification": "a_verifier",
+   "derniere_verification": null,
+   "etat_source": null,
+   "occurrences": [
+    {
+     "skill": "strategie-patrimoniale",
+     "ligne": 69,
+     "extrait": "| Donation simple / donation-partage | Transmission anticipée, gel des valeurs (partage) | Réserve, rapport, accord des héritiers (partage) | C. civ. art. 893 s"
+    }
+   ]
+  },
+  {
+   "id": "code-civil:578",
+   "type": "article",
+   "code": "code-civil",
+   "article": "578",
+   "cle_librejustice": "578",
+   "statut_verification": "a_verifier",
+   "derniere_verification": null,
+   "etat_source": null,
+   "occurrences": [
+    {
+     "skill": "strategie-patrimoniale",
+     "ligne": 70,
+     "extrait": "| Démembrement (donation de nue-propriété) | Assiette réduite, revenus conservés | Âge de l'usufruitier au jour de la donation ; droits de vote dans les société"
+    }
+   ]
+  },
+  {
+   "id": "code-civil:1844",
+   "type": "article",
+   "code": "code-civil",
+   "article": "1844",
+   "cle_librejustice": "1844",
+   "statut_verification": "a_verifier",
+   "derniere_verification": null,
+   "etat_source": null,
+   "occurrences": [
+    {
+     "skill": "strategie-patrimoniale",
+     "ligne": 70,
+     "extrait": "| Démembrement (donation de nue-propriété) | Assiette réduite, revenus conservés | Âge de l'usufruitier au jour de la donation ; droits de vote dans les société"
+    }
+   ]
+  },
+  {
+   "id": "code-civil:587",
+   "type": "article",
+   "code": "code-civil",
+   "article": "587",
+   "cle_librejustice": "587",
+   "statut_verification": "a_verifier",
+   "derniere_verification": null,
+   "etat_source": null,
+   "occurrences": [
+    {
+     "skill": "strategie-patrimoniale",
+     "ligne": 71,
+     "extrait": "| Quasi-usufruit | Usufruitier dispose des sommes, créance de restitution | Convention écrite antérieure ou concomitante, garanties, risque fiscal sur la dette "
+    }
+   ]
+  },
+  {
+   "id": "code-general-des-impots:773",
+   "type": "article",
+   "code": "code-general-des-impots",
+   "article": "773",
+   "cle_librejustice": "773",
+   "statut_verification": "a_verifier",
+   "derniere_verification": null,
+   "etat_source": null,
+   "occurrences": [
+    {
+     "skill": "strategie-patrimoniale",
+     "ligne": 71,
+     "extrait": "| Quasi-usufruit | Usufruitier dispose des sommes, créance de restitution | Convention écrite antérieure ou concomitante, garanties, risque fiscal sur la dette "
+    }
+   ]
+  },
+  {
+   "id": "code-general-des-impots:774 bis",
+   "type": "article",
+   "code": "code-general-des-impots",
+   "article": "774 bis",
+   "cle_librejustice": "774-bis",
+   "statut_verification": "a_verifier",
+   "derniere_verification": null,
+   "etat_source": null,
+   "occurrences": [
+    {
+     "skill": "strategie-patrimoniale",
+     "ligne": 71,
+     "extrait": "| Quasi-usufruit | Usufruitier dispose des sommes, créance de restitution | Convention écrite antérieure ou concomitante, garanties, risque fiscal sur la dette "
+    }
+   ]
+  },
+  {
+   "id": "code-general-des-impots:757 B",
+   "type": "article",
+   "code": "code-general-des-impots",
+   "article": "757 B",
+   "cle_librejustice": "757-b",
+   "statut_verification": "a_verifier",
+   "derniere_verification": null,
+   "etat_source": null,
+   "occurrences": [
+    {
+     "skill": "strategie-patrimoniale",
+     "ligne": 75,
+     "extrait": "| Assurance-vie | Transmission hors succession | Âge aux versements, clause bénéficiaire, primes excessives | CGI art. 757 B et 990 I ; C. assur. L. 132-12 s. |"
+    }
+   ]
+  },
+  {
+   "id": "code-general-des-impots:990 I",
+   "type": "article",
+   "code": "code-general-des-impots",
+   "article": "990 I",
+   "cle_librejustice": "990-i",
+   "statut_verification": "a_verifier",
+   "derniere_verification": null,
+   "etat_source": null,
+   "occurrences": [
+    {
+     "skill": "strategie-patrimoniale",
+     "ligne": 75,
+     "extrait": "| Assurance-vie | Transmission hors succession | Âge aux versements, clause bénéficiaire, primes excessives | CGI art. 757 B et 990 I ; C. assur. L. 132-12 s. |"
+    }
+   ]
+  },
+  {
+   "id": "code-des-assurances:L. 132-12",
+   "type": "article",
+   "code": "code-des-assurances",
+   "article": "L. 132-12",
+   "cle_librejustice": "l132-12",
+   "statut_verification": "a_verifier",
+   "derniere_verification": null,
+   "etat_source": null,
+   "occurrences": [
+    {
+     "skill": "strategie-patrimoniale",
+     "ligne": 75,
+     "extrait": "| Assurance-vie | Transmission hors succession | Âge aux versements, clause bénéficiaire, primes excessives | CGI art. 757 B et 990 I ; C. assur. L. 132-12 s. |"
+    }
+   ]
+  },
+  {
+   "id": "code-civil:1832",
+   "type": "article",
+   "code": "code-civil",
+   "article": "1832",
+   "cle_librejustice": "1832",
+   "statut_verification": "a_verifier",
+   "derniere_verification": null,
+   "etat_source": null,
+   "occurrences": [
+    {
+     "skill": "strategie-patrimoniale",
+     "ligne": 76,
+     "extrait": "| SCI familiale | Gestion, transmission progressive des parts | IS ou IR, gérance, clauses d'agrément | C. civ. art. 1832 s. |"
+    }
+   ]
+  },
+  {
+   "id": "code-civil:1397",
+   "type": "article",
+   "code": "code-civil",
+   "article": "1397",
+   "cle_librejustice": "1397",
+   "statut_verification": "a_verifier",
+   "derniere_verification": null,
+   "etat_source": null,
+   "occurrences": [
+    {
+     "skill": "strategie-patrimoniale",
+     "ligne": 77,
+     "extrait": "| Régime matrimonial | Protection du conjoint, avantages matrimoniaux | Procédure de changement (notaire, information, homologation éventuelle) ; coût (droit de"
+    }
+   ]
+  },
+  {
+   "id": "code-civil:929",
+   "type": "article",
+   "code": "code-civil",
+   "article": "929",
+   "cle_librejustice": "929",
+   "statut_verification": "a_verifier",
+   "derniere_verification": null,
+   "etat_source": null,
+   "occurrences": [
+    {
+     "skill": "strategie-patrimoniale",
+     "ligne": 78,
+     "extrait": "| Pacte successoral (RAAR) | Renonciation anticipée à l'action en réduction | Acte notarié spécifique | C. civ. art. 929 s. |"
+    }
+   ]
+  },
+  {
+   "id": "code-general-des-impots:964",
+   "type": "article",
+   "code": "code-general-des-impots",
+   "article": "964",
+   "cle_librejustice": "964",
+   "statut_verification": "a_verifier",
+   "derniere_verification": null,
+   "etat_source": null,
+   "occurrences": [
+    {
+     "skill": "strategie-patrimoniale",
+     "ligne": 79,
+     "extrait": "| IFI | Assiette, dettes déductibles, biens professionnels | Qualification professionnelle, démembrement | CGI art. 964 s. |"
+    }
+   ]
+  },
+  {
+   "id": "code-general-des-impots:13",
+   "type": "article",
+   "code": "code-general-des-impots",
+   "article": "13",
+   "cle_librejustice": "13",
+   "statut_verification": "a_verifier",
+   "derniere_verification": null,
+   "etat_source": null,
+   "occurrences": [
+    {
+     "skill": "veille-juridique",
+     "ligne": 230,
+     "extrait": "**CE, 9 octobre 2024, n° 490685 (mentionné aux tables) — usufruit temporaire, art. 13, 5 CGI**"
+    },
+    {
+     "skill": "veille-juridique",
+     "ligne": 234,
+     "extrait": "> dérogatoires de l'art. 13, 5 CGI, s'entend de la constitution initiale à titre"
+    }
+   ]
+  },
+  {
+   "id": "livre-des-procedures-fiscales:L. 169",
+   "type": "article",
+   "code": "livre-des-procedures-fiscales",
+   "article": "L. 169",
+   "cle_librejustice": "l169",
+   "statut_verification": "a_verifier",
+   "derniere_verification": null,
+   "etat_source": null,
+   "occurrences": [
+    {
+     "skill": "gap",
+     "ligne": 193,
+     "extrait": "rechercher_code(code_name=\"Livre des procédures fiscales\", search=\"L. 169\", champ=\"NUM_ARTICLE\")"
+    }
+   ]
+  },
+  {
+   "id": "livre-des-procedures-fiscales:L. 176",
+   "type": "article",
+   "code": "livre-des-procedures-fiscales",
+   "article": "L. 176",
+   "cle_librejustice": "l176",
+   "statut_verification": "a_verifier",
+   "derniere_verification": null,
+   "etat_source": null,
+   "occurrences": [
+    {
+     "skill": "gap",
+     "ligne": 194,
+     "extrait": "rechercher_code(code_name=\"Livre des procédures fiscales\", search=\"L. 176\", champ=\"NUM_ARTICLE\")"
+    }
+   ]
+  },
+  {
+   "id": "code-de-la-securite-sociale:L. 244-3",
+   "type": "article",
+   "code": "code-de-la-securite-sociale",
+   "article": "L. 244-3",
+   "cle_librejustice": "l244-3",
+   "statut_verification": "a_verifier",
+   "derniere_verification": null,
+   "etat_source": null,
+   "occurrences": [
+    {
+     "skill": "gap",
+     "ligne": 195,
+     "extrait": "rechercher_code(code_name=\"Code de la sécurité sociale\", search=\"L. 244-3\", champ=\"NUM_ARTICLE\")"
+    }
+   ]
+  },
+  {
+   "id": "code-general-des-impots:244 bis A",
+   "type": "article",
+   "code": "code-general-des-impots",
+   "article": "244 bis A",
+   "cle_librejustice": "244-bis-a",
+   "statut_verification": "a_verifier",
+   "derniere_verification": null,
+   "etat_source": null,
+   "occurrences": [
+    {
+     "skill": "calcul-plus-value",
+     "ligne": 84,
+     "extrait": "| Non-résidents | CGI art. 244 bis A, 244 bis B ; convention fiscale | Legal Data Hunter (convention) |"
+    }
+   ]
+  },
+  {
+   "id": "code-general-des-impots:244 bis B",
+   "type": "article",
+   "code": "code-general-des-impots",
+   "article": "244 bis B",
+   "cle_librejustice": "244-bis-b",
+   "statut_verification": "a_verifier",
+   "derniere_verification": null,
+   "etat_source": null,
+   "occurrences": [
+    {
+     "skill": "calcul-plus-value",
+     "ligne": 84,
+     "extrait": "| Non-résidents | CGI art. 244 bis A, 244 bis B ; convention fiscale | Legal Data Hunter (convention) |"
+    }
+   ]
+  }
+ ],
+ "bofip": [
+  {
+   "id": "BOI-RFPI-PVI-20",
+   "skills": [
+    "protocole-cession"
+   ],
+   "note": "§ 30 — date de la cession sous condition suspensive (PV immobilières) ; repéré le 23/10/2026",
+   "derniere_verification": "2026-10-23",
+   "statut_verification": "verifie"
+  },
+  {
+   "id": "BOI-RPPM-PVBMI",
+   "skills": [
+    "protocole-cession"
+   ],
+   "note": "série à lire pour le fait générateur des cessions de titres sous condition suspensive",
+   "derniere_verification": null,
+   "statut_verification": "a_verifier"
+  },
+  {
+   "id": "BOI-BIC-PROV-20-10-10",
+   "skills": [
+    "contentieux-fiscal"
+   ],
+   "note": "exemple de rédaction (§ X) marqué INCERTAIN dans le skill",
+   "derniere_verification": null,
+   "statut_verification": "a_verifier"
+  },
+  {
+   "id": "BOI-ENR-DMTG-10-20-40-10",
+   "skills": [
+    "strategie-patrimoniale"
+   ],
+   "note": "",
+   "derniere_verification": null,
+   "statut_verification": "a_verifier"
+  },
+  {
+   "id": "BOI-RPPM-PVBMI-30-10-60",
+   "skills": [
+    "legal-hallucination-checker"
+   ],
+   "note": "exemple de format dans la table des motifs",
+   "derniere_verification": null,
+   "statut_verification": "a_verifier"
+  }
+ ],
+ "jurisprudence": [
+  {
+   "id": "Cass. com. 12/02/2025 n° 23-11.410",
+   "skills": [
+    "juridique-annuel",
+    "legal-hallucination-checker"
+   ],
+   "portee_retenue": "report à nouveau distribuable seulement par l'assemblée approuvant les comptes de l'exercice suivant",
+   "derniere_verification": "2026-10-23",
+   "statut_verification": "verifie"
+  },
+  {
+   "id": "CE 09/10/2024 n° 490685",
+   "skills": [
+    "veille-juridique"
+   ],
+   "portee_retenue": "usufruit temporaire, art. 13, 5 CGI (exemple de veille)",
+   "derniere_verification": null,
+   "statut_verification": "a_verifier"
+  },
+  {
+   "id": "TA Bordeaux 19/12/2024 n° 2301446",
+   "skills": [
+    "legal-hallucination-checker"
+   ],
+   "portee_retenue": "existe ; ne pas en déduire une règle",
+   "derniere_verification": null,
+   "statut_verification": "a_verifier"
+  },
+  {
+   "id": "TA Bordeaux 13/11/2025 n° 2304900",
+   "skills": [
+    "legal-hallucination-checker"
+   ],
+   "portee_retenue": "jurisprudence divergente",
+   "derniere_verification": null,
+   "statut_verification": "a_verifier"
+  },
+  {
+   "id": "TA Paris 13/02/2025 n° 2212919",
+   "skills": [
+    "legal-hallucination-checker"
+   ],
+   "portee_retenue": "jurisprudence divergente",
+   "derniere_verification": null,
+   "statut_verification": "a_verifier"
+  },
+  {
+   "id": "Cons. const. n° 2016-538 QPC du 22/04/2016",
+   "skills": [
+    "legal-hallucination-checker"
+   ],
+   "portee_retenue": "vise l'art. 200 A, 2 ter CGI",
+   "derniere_verification": null,
+   "statut_verification": "a_verifier"
+  },
+  {
+   "id": "Cass. com. 28/05/2026 n° 25-12612",
+   "skills": [
+    "socle-eca"
+   ],
+   "portee_retenue": "Dutreil, trésorerie excédentaire (note du dépôt)",
+   "derniere_verification": null,
+   "statut_verification": "a_verifier"
+  },
+  {
+   "id": "Cass. soc. 10/07/2002",
+   "skills": [
+    "analyse-contrat"
+   ],
+   "portee_retenue": "conditions de validité de la clause de non-concurrence",
+   "derniere_verification": null,
+   "statut_verification": "a_verifier",
+   "note": "référence sans numéro de pourvoi : à compléter"
+  },
+  {
+   "id": "Jurisprudence « Quémener » (CE)",
+   "skills": [
+    "calcul-plus-value",
+    "dissolution-liquidation-tup"
+   ],
+   "portee_retenue": "correctif de calcul de la plus-value sur parts de société de personnes",
+   "derniere_verification": null,
+   "statut_verification": "a_verifier",
+   "note": "nom d'usage : établir la référence exacte avant toute citation"
+  },
+  {
+   "id": "CE 27/11/2020 n° 425986",
+   "skills": [
+    "legal-hallucination-checker"
+   ],
+   "portee_retenue": "exemple de format",
+   "derniere_verification": null,
+   "statut_verification": "a_verifier",
+   "note": "exemple de la table des motifs : vérifier qu'il ne s'agit pas d'un numéro fictif"
+  }
+ ],
+ "textes": [
+  {
+   "id": "Loi n° 2026-403 du 26/05/2026, art. 22",
+   "skills": [
+    "protocole-cession",
+    "cession-fonds",
+    "lettre-intention",
+    "socle-eca"
+   ],
+   "objet": "information des salariés (L. 23-10-1 s., L. 141-23 s. C. com.)",
+   "derniere_verification": "2026-10-23"
+  },
+  {
+   "id": "Ordonnance n° 2025-1247 du 17/12/2025",
+   "skills": [
+    "socle-eca",
+    "restructurations",
+    "cession-fonds"
+   ],
+   "objet": "recodification de la TVA dans le CIBS, effet au 01/01/2027",
+   "derniere_verification": "2026-10-23"
+  },
+  {
+   "id": "Ordonnance n° 2025-1091 du 19/11/2025, art. 28",
+   "skills": [
+    "redaction-acte",
+    "acte-definitif-titres"
+   ],
+   "objet": "nouvelle rédaction de L. 561-46 CMF au 01/01/2029",
+   "derniere_verification": "2026-10-23"
+  },
+  {
+   "id": "Ordonnance n° 2023-393 du 24/05/2023 et décret n° 2023-430 du 02/06/2023",
+   "skills": [
+    "restructurations"
+   ],
+   "objet": "réforme des fusions, scissions et APA (projets déposés à compter du 01/07/2023)",
+   "derniere_verification": "2026-10-23"
+  },
+  {
+   "id": "Décret n° 2026-692",
+   "skills": [
+    "socle-eca",
+    "contentieux-fiscal"
+   ],
+   "objet": "LPF R*196-1 (en vigueur au 30/07/2026)",
+   "derniere_verification": null
+  },
+  {
+   "id": "Loi n° 2026-534",
+   "skills": [
+    "socle-eca"
+   ],
+   "objet": "CSG (CSS L. 136-8), version au 27/06/2026",
+   "derniere_verification": null
+  },
+  {
+   "id": "Règlement (UE) n° 651/2014",
+   "skills": [
+    "protocole-cession"
+   ],
+   "objet": "définition de la petite entreprise (CGI 1681 F, I bis)",
+   "derniere_verification": null
+  }
+ ],
+ "pieges_dates_socle": [
+  {
+   "piege": "Prélèvements sociaux du patrimoine",
+   "verifie": "23/10/2026 — version en vigueur au 27/06/2026 (loi 2026-534)",
+   "sources": "CSS art. L. 136-8 (I 2° et IV) + CGI art. 200 A et 235 ter"
+  },
+  {
+   "piege": "LMNP — réintégration des amortissements",
+   "verifie": "23/10/2026 — version au 21/02/2026",
+   "sources": "CGI art. 150 VB III, version à la date de cession"
+  },
+  {
+   "piege": "Barème usufruit / nue-propriété",
+   "verifie": "23/10/2026",
+   "sources": "CGI art. 669"
+  },
+  {
+   "piege": "Droit de partage",
+   "verifie": "23/10/2026",
+   "sources": "CGI art. 746"
+  },
+  {
+   "piege": "Information des salariés (cession titres / fonds)",
+   "verifie": "23/10/2026 — loi 2026-403",
+   "sources": "C. com. art. L. 23-10-1 et L. 141-23"
+  },
+  {
+   "piege": "Recodification de la TVA",
+   "verifie": "23/10/2026",
+   "sources": "Ordonnance n° 2025-1247 du 17/12/2025 ; statut de l'article cité à la date de l'opération"
+  },
+  {
+   "piege": "Délais de réclamation fiscale",
+   "verifie": "23/10/2026",
+   "sources": "LPF R*196-1 et R*196-3"
+  },
+  {
+   "piege": "Pacte Dutreil",
+   "verifie": "23/10/2026 — version au 21/02/2026",
+   "sources": "CGI art. 787 B et 787 C ; dossier Dutreil 2026 du dépôt"
+  },
+  {
+   "piege": "Report 150-0 B ter + quotient",
+   "verifie": "Position ECA",
+   "sources": "Base Positions ECA + checker"
+  },
+  {
+   "piege": "Contribution différentielle (CDHR)",
+   "verifie": "23/10/2026 — version au 21/02/2026 (LF 2026 art. 2)",
+   "sources": "CGI art. 224"
+  }
+ ],
+ "echeances": [
+  {
+   "date": "2027-01-01",
+   "objet": "Abrogation des articles TVA du CGI (dont 257 bis) et bascule au CIBS (ordonnance n° 2025-1247)",
+   "action": "Remplacer dans les skills chaque référence TVA du CGI par sa référence CIBS, en gardant l'ancienne en regard pour les opérations antérieures",
+   "skills": [
+    "socle-eca",
+    "restructurations",
+    "cession-fonds"
+   ]
+  },
+  {
+   "date": "2029-01-01",
+   "objet": "Nouvelle rédaction de L. 561-46 CMF (ordonnance n° 2025-1091)",
+   "action": "Relire l'article et ajuster redaction-acte (§ 4.2) et acte-definitif-titres",
+   "skills": [
+    "redaction-acte",
+    "acte-definitif-titres"
+   ]
+  },
+  {
+   "date": "à chaque loi de finances",
+   "objet": "Loi de finances de l'année, loi de finances rectificative, LFSS",
+   "action": "Maintenance ciblée sur les articles modifiés (déclenchée par la veille du mercredi) puis contrôle complet au trimestre suivant",
+   "skills": [
+    "tous"
+   ]
+  }
+ ]
+}

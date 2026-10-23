@@ -162,7 +162,7 @@ qualifiée :
 | Enregistrement | Les actes portant cession d'actions ou de parts sociales s'enregistrent dans le délai d'un mois à compter de leur date (CGI art. 635, 2, 7°) ; droits : CGI art. 726 (taux et abattement à lire) |
 | Mutation sous condition suspensive | Le régime fiscal et les valeurs imposables s'apprécient à la date de réalisation de la condition (CGI art. 676) : calculer les droits à la date de levée, et articuler l'enregistrement du protocole et celui de l'acte définitif (aucun double paiement, aucun défaut d'enregistrement) |
 | Dépôt au greffe (parts sociales, statuts modifiés) | Actes modificatifs déposés dans le délai d'un mois à compter de leur date, avec un exemplaire des statuts à jour certifié conforme (C. com. R. 123-105) |
-| Bénéficiaires effectifs | Obligation d'obtenir et de conserver des informations à jour (C. mon. fin. L. 561-45-1) ; déclaration au RCS (L. 561-46, abrogation différée au 31/12/2028 : relire le régime à la date de l'acte) |
+| Bénéficiaires effectifs | Obligation d'obtenir et de conserver des informations à jour (C. mon. fin. L. 561-45-1) ; déclaration au RCS (L. 561-46 ; version en vigueur jusqu'au 31/12/2028, remplacée au 01/01/2029 par la rédaction issue de l'ordonnance n° 2025-1091 du 19/11/2025, art. 28 — vérifié 23/10/2026 : relire le régime à la date de l'acte) |
 | Plus-value du cédant | CGI art. 150-0 A s. ; formulaire en vigueur ; renvoi `calcul-plus-value` |
 | Crédit-vendeur | Demande de paiement échelonné de l'impôt : CGI art. 1681 F, I bis — conditions et date limite de demande (voir `protocole-cession` § 4.2) |
 | Séquestre, GAP, earn-out | Dates de libération, de déclaration, de calcul : protocole et GAP |

@@ -103,7 +103,7 @@ Toujours vérifier en outre : décisions qui augmentent les engagements
 | Annonce légale | Avis de modification lorsque la modification rend caduque une mention de l'avis de constitution ; il reproduit l'ancienne mention à côté de la nouvelle | C. com. R. 210-9 (liste des mentions de l'avis de constitution : lire R. 210-4) |
 | Dépôt des actes | Actes, délibérations ou décisions modifiant les pièces déposées : dépôt dans le délai d'un mois à compter de leur date, avec un exemplaire des statuts à jour certifié conforme | C. com. R. 123-105 |
 | Inscription modificative | Demande par le guichet unique dans le mois de tout fait ou acte la rendant nécessaire | C. com. R. 123-66 |
-| Bénéficiaires effectifs | Inscription modificative dans les trente jours suivant tout fait ou acte modifiant les informations déclarées | C. mon. fin. R. 561-55 ; L. 561-46 (abrogation différée au 31/12/2028) |
+| Bénéficiaires effectifs | Inscription modificative dans les trente jours suivant tout fait ou acte modifiant les informations déclarées | C. mon. fin. R. 561-55 ; L. 561-46 (version en vigueur jusqu'au 31/12/2028, nouvelle rédaction au 01/01/2029 issue de l'ordonnance n° 2025-1091) |
 | Enregistrement | Dans le délai d'un mois : actes constatant la transformation d'une société et ceux constatant une augmentation de capital, sauf augmentation en numéraire ou par incorporation de bénéfices, réserves ou provisions | CGI art. 635, 1, 5° ; droits : CGI art. 809 s. (à lire) |
 
 ## Étape 4 bis — Fiches par modification
