@@ -39,7 +39,7 @@ Chaque référence ci-dessous doit être vérifiée sur https://www.legifrance.g
 
 | Loi | Date | Modification | Impact |
 |---|---|---|---|
-| **LF 2026-103** | 19/02/2026 | Art. 23 : EIC 4→6 ans ; Biens somptuaires | 🔴 CRITIQUE |
+| **LF 2026 (loi n° 2026-103)** | 19/02/2026 | Art. 8 : EIC 4→6 ans ; Biens somptuaires | 🔴 CRITIQUE |
 | **LF 2025** | 2024 | Art. 70 : Abattement retraite 500 k€ | Extension |
 | **LF 2023-1322** | 17/10/2023 | Art. 1/23 : Exclusion LMNP + Holdings | Restriction importante |
 | **LF 2018-1317** | 01/01/2019 | Seuils ECU ; apports à holding | Assouplissement |
@@ -102,7 +102,7 @@ Chaque référence ci-dessous doit être vérifiée sur https://www.legifrance.g
 
 - **Art. CGI 787 B** : Exonération sociétés (texte principal)
 - **Art. CGI 787 C** : Exonération EI
-- **LF 2026, art. 23** : Modifications applicables ≥ 21/02/2026
+- **LF 2026, art. 8 (loi n° 2026-103 du 19/02/2026)** : Modifications applicables ≥ 21/02/2026
 - **BOFiP DMTG-60** : Commentaires admin
 
 ### 🔵 Engagements de conservation
@@ -130,7 +130,7 @@ Chaque référence ci-dessous doit être vérifiée sur https://www.legifrance.g
 
 ### 🔵 Biens somptuaires (🆕 LF 2026)
 
-- **LF 2026, art. 23** : Définition + exclusion
+- **LF 2026, art. 8 (loi n° 2026-103 du 19/02/2026)** : Définition + exclusion
 - **Art. CGI 787 B, modifié** : Assiette exonérée réduite
 - **CGI art. 238 bis AB** : Exception œuvres d'art vivants
 
@@ -149,11 +149,11 @@ Chaque référence ci-dessous doit être vérifiée sur https://www.legifrance.g
 | Point à vérifier | Ref CGI | Ref Loi | Statut |
 |---|---|---|---|
 | Exonération 75 % existe | 787 B | LF 2006 origine | ✅ Vérifier applicabilité |
-| EIC durée | 787 B, 2e al. | LF 2026 art. 23 | ✅ IMPÉRATIF : 6 ans (≥21/02) |
+| EIC durée | 787 B, 2e al. | LF 2026 art. 8 | ✅ IMPÉRATIF : 6 ans (≥21/02) |
 | ECU seuils | 787 B, 1er al. | LF 2018-1317 | ✅ 17/34 % non-côté |
 | Fonction direction | 787 B | LF 2006 | ✅ 2 ans avant + 3 ans après |
 | Démembrement usufruit | 787 B, i. al. 2 | Baseline | ✅ Droits vote limités |
-| Biens somptuaires exclusion | 787 B, modifié | LF 2026 art. 23 | ⚠️ Appliquer si ≥21/02/2026 |
+| Biens somptuaires exclusion | 787 B, modifié | LF 2026 art. 8 | ⚠️ Appliquer si ≥21/02/2026 |
 | LMNP exclusion | 787 B | LF 2023-1322 | ✅ Applicable depuis 17/10/2023 |
 | Interposition max 2 niv. | 787 B formule | LF 2016 art. 32 | ✅ Limite stricte |
 
@@ -187,7 +187,7 @@ Chaque référence ci-dessous doit être vérifiée sur https://www.legifrance.g
 5. Documenter source + date consultation
 ```
 
-**Pour LF 2026, art. 23 spécifiquement** :
+**Pour LF 2026, art. 8 (loi n° 2026-103 du 19/02/2026) spécifiquement** :
 ```
 Vérifier JO 20/02/2026
 Vérifier entrée en vigueur ≥ 21/02/2026

@@ -2,7 +2,7 @@
 
 ## 📁 Contenu de ce dossier
 
-Retranscription structurée et complète du **Pacte Dutreil** suite aux modifications **LF 2026** (art. 23, applicable ≥ 21/02/2026).
+Retranscription structurée et complète du **Pacte Dutreil** suite aux modifications **LF 2026** (loi n° 2026-103 du 19/02/2026, art. 8 — applicable aux transmissions ≥ 21/02/2026).
 
 ### 📄 Fichiers
 
@@ -105,3 +105,5 @@ Utilise ce dossier dans tes consultations futures et propose améliorations apr�
 
 **Maintenu par** : Claude-ECA / Yoann Decréton
 **Dernière mise à jour** : 17/06/2026
+
+> Correction du 23/10/2026 : la réforme LF 2026 du Pacte Dutreil résulte de l'**art. 8** de la loi n° 2026-103 du 19/02/2026 (et non de l'« art. 23 » mentionné dans les versions antérieures de ce dossier ; le support Royal Formation cite l'art. 3 quater, numérotation du projet de loi). Vérifié sur Légifrance / LibreJustice (historique des art. 787 B et 787 C CGI).

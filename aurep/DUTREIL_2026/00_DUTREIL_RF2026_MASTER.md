@@ -20,7 +20,7 @@ Le **Pacte Dutreil** (CGI art. 787 B et 787 C) demeure l'outil privilégié de t
 |-----------|---------------|---------|--------|
 | **Engagement individuel de conservation (EIC)** | 4 ans | **6 ans** | +2 ans d'immobilisation |
 | **Biens somptuaires** | Inclus dans assiette | **Exclus si non-affectés** à l'activité | Réduction base taxable |
-| **LMNP** | Régime DUTREIL | Régime DUTREIL | Inchangé (cf. art. 23 LF 2026) |
+| **LMNP** | Régime DUTREIL | Régime DUTREIL | Inchangé (cf. art. 8 de la LF 2026 (loi n° 2026-103 du 19/02/2026)) |
 | **Holdings animatrices** | Éligibles sous conditions | **Éligibles + définition légale** | Clarification bienvenue |
 
 ### ⚠️ Durée totale de conservation
@@ -47,7 +47,7 @@ Le Pacte Dutreil exonère de 75 % la base taxable des **donations-successions** 
 **Textes applicables** :
 - CGI **art. 787 B** (sociétés)
 - CGI **art. 787 C** (entreprises individuelles)
-- LF 2026, art. 23 (modifications)
+- LF 2026, art. 8 (loi n° 2026-103 du 19/02/2026) (modifications)
 
 ### 1.2 Préalables à l'exonération
 
@@ -861,7 +861,7 @@ Attestation confirmant :
 |---|---|---|
 | **CGI art. 787 B** | [Légifrance](https://www.legifrance.gouv.fr) | Sociétés - Exonération 75 % |
 | **CGI art. 787 C** | [Légifrance](https://www.legifrance.gouv.fr) | EI - Exonération 75 % |
-| **LF 2026, art. 23** | [Légifrance](https://www.legifrance.gouv.fr) | Modifications EIC/biens somptuaires |
+| **LF 2026, art. 8 (loi n° 2026-103 du 19/02/2026)** | [Légifrance](https://www.legifrance.gouv.fr) | Modifications EIC/biens somptuaires |
 | **LF 2023-1322, art. 1** | [Légifrance](https://www.legifrance.gouv.fr) | Exclusion LMNP (17/10/2023) |
 | **CGI art. 669** | [Légifrance](https://www.legifrance.gouv.fr) | Abattement usufruit |
 | **BOFiP-DMTG** | [BOFiP](https://bofip.impots.gouv.fr) | Lignes directrices admin |

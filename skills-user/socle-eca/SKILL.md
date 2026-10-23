@@ -4,8 +4,8 @@ description: >
   Socle commun de tous les skills ECA EXPERTISE (remplace « shared ») : ouverture
   de dossier, carte des connecteurs (quel besoin → quel outil), règles de
   vérification, pièges datés, standard de rédaction M&A international, corpus
-  documentaire du dépôt (Dutreil 2026, Royal Formation, démembrement de
-  l'immobilier d'entreprise, Revue Fiduciaire, AUREP), charte et méthode Word ECA,
+  documentaire évolutif du dépôt (inventaire du jour, recherche plein texte,
+  lecture intégrale du verbatim des documents pertinents), charte et méthode Word ECA,
   garde-fous (pseudonymisation, périmètre, confidentialité). Chargé automatiquement
   par tout skill métier ECA. Déclencher sur : socle, shared, référentiel ECA,
   charte, méthode Word, carte des connecteurs, pièges fiscaux, corpus, Royal
@@ -37,8 +37,8 @@ pièges (§ 5), datée et sourcée, qui sert d'alarme et doit être revérifiée
 5. Données comptables→ Pennylane si le chiffre conditionne la réponse
                        (balance, capitaux propres, comptes courants, résultat).
 6. Positions ECA     → skill positions-eca (base Notion « 📌 Positions ECA »).
-7. Corpus            → si le sujet est couvert par le corpus du dépôt (§ 4 bis),
-                       le lire avant d'analyser.
+7. Corpus            → inventaire du jour, recherche plein texte sur tout le
+                       corpus, lecture intégrale des documents pertinents (§ 4 bis).
 8. Annoncer en une ligne : « Suite du dossier X — [dernier état] » ou
                        « Nouveau dossier ».
 ```
@@ -77,7 +77,7 @@ change). Si un outil est indisponible, le dire et passer au suivant.
 | Mails, pièces, agenda | Microsoft 365 (brouillons uniquement, jamais d'envoi sans accord) | — |
 | Positions du cabinet, veille, consultations | Notion | — |
 | Slides de veille | Gamma | — |
-| Doctrine et formation internes (Dutreil 2026, Royal Formation, démembrement, AUREP…) | Dépôt GitHub (§ 4 bis) | Source primaire |
+| Doctrine, formation et documents de référence internes (tout document présent dans le dépôt le jour de la demande) | Dépôt GitHub (§ 4 bis) | Source primaire |
 
 Identifiants Notion (les vérifier par une recherche si une requête échoue) :
 - Positions ECA : collection `6dc1e530-7996-4a62-b5b6-b378b4c8f204`
@@ -142,34 +142,71 @@ Règles d'usage :
 - Si une ressource attendue manque : le signaler dans le livrable
   (« Ressource absente : [objet] ») et poursuivre par sources primaires.
 
-### 4 bis. Corpus documentaire du dépôt — à consulter **réflexivement**
+### 4 bis. Corpus documentaire — base secondaire de toute réponse, **évolutive**
 
-Le dépôt contient, en plus des modèles d'actes, un corpus de doctrine et de
-formation. Il se repère par son **titre**, pas par un chemin. Dès que le sujet
-d'une demande y correspond : rechercher le document, en lire **intégralement la
-partie pertinente**, et l'exploiter (analyse, pièges, cas pratiques, références
-à vérifier). Mentionner dans la réponse ce qui en a été tiré.
+Le dépôt contient, outre les modèles d'actes, des documents de doctrine, de
+formation et de référence que Yoann **enrichit en continu** (tous formats). Ce
+corpus est la base documentaire secondaire de **toute** demande juridique ou
+fiscale. Il ne se limite jamais à une liste figée : ce qui compte est ce qui se
+trouve dans le dépôt **le jour de la demande**.
 
-| Document (titre à rechercher) | Contenu | À mobiliser pour |
+**Process obligatoire, à chaque demande :**
+
+1. **Inventaire du jour** — lister **tous** les fichiers du dépôt (hors `.git`),
+   quel que soit leur dossier ou leur nom, avec format, taille, nombre de pages
+   ou de mots et sommaire (titres, première page). Un document ajouté la veille
+   est traité comme les autres ; aucun document n'est écarté parce qu'il ne
+   figure pas dans le tableau ci-dessous.
+2. **Extraction intégrale** — extraire le texte complet de chaque document :
+   .docx (paragraphes, tableaux, notes, commentaires, passages surlignés),
+   .pdf (texte ; reconnaissance de texte si scanné ou si des pages sont des
+   images), .md / .txt, .xlsx / .csv (toutes les feuilles), .doc et .pptx après
+   conversion, images par lecture visuelle. Signaler tout fichier illisible.
+3. **Recherche plein texte sur 100 % du corpus** — chercher les notions de la
+   demande (termes juridiques, synonymes, articles, régimes, noms d'opérations)
+   dans le texte **complet** de chaque document, pas seulement dans les titres.
+4. **Lecture intégrale du verbatim** — pour chaque document qui traite du sujet :
+   lire **100 % de son texte**, mot à mot, et non un résumé, des extraits ou les
+   seuls passages trouvés par la recherche. Pour un ouvrage en plusieurs
+   parties : lire intégralement chaque partie pertinente, son sommaire et les
+   annexes auxquelles elle renvoie. Si le volume dépasse ce qui tient en une
+   lecture, lire par passes successives jusqu'à la fin, en relevant les passages
+   utiles avec leur page ou leur section. Contrôle : mots lus = mots extraits ;
+   sinon, le signaler (§ 3.6) avant tout livrable.
+5. **Exploitation** — en tirer l'analyse, les pièges, les cas pratiques, les
+   décisions et références citées ; vérifier chacune à la source primaire avant
+   de la reprendre (§ 3).
+6. **Traçabilité** — indiquer dans la réponse : « Corpus consulté : [documents],
+   lus intégralement » ; ou « Recherche plein texte sur l'ensemble du corpus :
+   aucun document ne traite de [sujet] ». Ne jamais affirmer avoir lu un document
+   qui ne l'a pas été en entier.
+
+**Repères au 23/10/2026 — exemples, liste non limitative** (le corpus réel est
+celui de l'inventaire du jour) :
+
+| Document (titre) | Contenu | Sujets typiques |
 |---|---|---|
-| Dossier **DUTREIL 2026** (document maître, checklists d'engagement et de transmission, index des sources, note Cass. com. 28/05/2026 sur la trésorerie excédentaire) | Régime Dutreil après la LF 2026, formules types, pièces, calendrier | Toute transmission d'entreprise à titre gratuit, holding animatrice, trésorerie excédentaire |
-| **Actualités juridiques et fiscales 2026 — gestion de patrimoine** (Royal Formation, Henry Royal) | Fiches chronologiques LF et LFSS 2026, jurisprudence CE / CAA / Cass. du 1er semestre 2026 (150-0 B ter, Dutreil, démembrement, indivision, IFI, plus-values) | **Vérifier systématiquement** si le sujet y est traité, pour toute question patrimoniale ou fiscale ; repérer les décisions récentes à lire ensuite à la source |
-| **Démembrement de l'immobilier d'entreprise** (ouvrage en 11 parties, juillet 2023) | Acquisition démembrée, valorisation des droits, cession d'usufruit, sécurisation fiscale, cas pratiques, annexes | Démembrement d'immeuble professionnel, cession temporaire d'usufruit, OBO, SCI à l'IS — **antérieur aux LF 2025 et 2026 : revérifier chaque règle** |
-| **Revue Fiduciaire — L'essentiel du patrimoine privé**, chapitres 5 et 6 | Protection du mineur par ses représentants ; opérations patrimoniales des mineurs (vente, apport, emprunt, vote, assurance-vie) | Donation à un mineur, mineur associé de SCI ou de société, actes de disposition et autorisation du juge |
-| **Modules AUREP** (SCI, usufruit 13-5°, rétroplanning de transmission, usufruit de droits sociaux, holdings, actualités patrimoniales, Dutreil, immobilier, outils civils) | Supports de formation thématiques | Le sujet du module ; complément de raisonnement |
-| **Résidence fiscale des particuliers 2026** | Domicile fiscal, non-résidents, conventions, exit tax | Mobilité internationale, non-résidents |
-| **Guide du régime social des locations meublées** (juillet 2026) | Affiliation sociale LMNP / LMP | Cotisations sociales des loueurs en meublé |
+| Dossier **DUTREIL 2026** (document maître, checklists, index des sources, note Cass. com. 28/05/2026) | Régime Dutreil après la LF 2026 | Transmission à titre gratuit, holding animatrice, trésorerie excédentaire |
+| **Actualités juridiques et fiscales 2026 — gestion de patrimoine** (Royal Formation, Henry Royal) | Fiches LF et LFSS 2026, jurisprudence du 1er semestre 2026 | Toute question patrimoniale ou fiscale récente |
+| **Démembrement de l'immobilier d'entreprise** (11 parties, juillet 2023) | Acquisition démembrée, valorisation, cession d'usufruit, sécurisation, cas pratiques | Immeuble professionnel démembré, OBO, SCI à l'IS |
+| **Revue Fiduciaire — L'essentiel du patrimoine privé**, chapitres 5 et 6 | Protection et opérations patrimoniales des mineurs | Donation à un mineur, mineur associé |
+| **Modules AUREP** | Supports de formation thématiques | Sujet du module |
+| **Résidence fiscale des particuliers 2026** | Domicile fiscal, non-résidents, exit tax | Mobilité internationale |
+| **Guide du régime social des locations meublées** (juillet 2026) | Affiliation LMNP / LMP | Cotisations des loueurs en meublé |
 
 Règles :
-- Ces documents sont des **sources secondaires** : chaque règle ou décision
-  qu'on en tire est vérifiée à la source primaire avant d'être citée.
-- Ils datent : comparer leur date à celle des textes en vigueur (LF, LFSS).
-- Écart entre un document du corpus et la source primaire : retenir la source
-  primaire et **signaler l'écart à Yoann** (ex. relevé le 23/10/2026 : le dossier
-  Dutreil 2026 rattache la réforme à l'« art. 23 » de la LF 2026, Légifrance la
-  rattache à l'art. 8 de la loi n° 2026-103).
-- Nouveau document ajouté au dépôt : il est trouvé par la recherche ; s'il
-  s'agit d'un corpus durable, proposer à Yoann de l'ajouter à ce tableau.
+- **Source secondaire** : tout ce qui en est tiré est vérifié à la source
+  primaire avant d'être cité ; le corpus ne remplace jamais Légifrance,
+  LibreJustice, Legal Data Hunter ou Pourvoi.
+- **Date** : comparer la date du document aux textes en vigueur ; un document
+  antérieur à une loi de finances est relu à la lumière de celle-ci.
+- **Écart** entre un document et la source primaire : retenir la source primaire
+  et signaler l'écart à Yoann, en proposant la correction du document du dépôt.
+- **Nouveau document** repéré à l'inventaire : le signaler en une ligne à Yoann
+  lors de sa première utilisation (titre, objet) ; s'il constitue une ressource
+  durable, proposer de l'ajouter aux repères ci-dessus.
+- **Documents clients** du dépôt (actes, consultations nominatives) : servent de
+  précédents (§ 4), jamais à reprendre de données d'un autre client.
 
 ---
 
