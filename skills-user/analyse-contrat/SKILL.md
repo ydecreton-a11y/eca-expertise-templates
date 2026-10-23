@@ -236,7 +236,7 @@ Valider mentalement chaque point avant d'envoyer la réponse :
 - [ ] La conclusion répond directement et précisément à la question posée
 - [ ] Niveau de risque justifié par un argumentaire (pas seulement affiché)
 - [ ] Aucune position incertaine présentée comme certaine
-- [ ] legal-hallucination-checker déclenché et score ≥ 70/100
+- [ ] legal-hallucination-checker déclenché sur 100 % des références, sans référence non vérifiée restante (bloquant)
 - [ ] Word ECA conforme au socle § 8 (corps noir ; titres d'actes noir gras)
 - [ ] Référence YD + expert-comptable signataire mentionnée
 - [ ] Qualification juridique du contrat explicitée (Art. applicable)

@@ -542,7 +542,7 @@ VI. STRATÉGIE : négociation amiable, expertise, contentieux
 - [ ] Cohérence des définitions et des renvois avec le protocole et la LOI
 - [ ] Déclarations alignées sur les constats de due diligence
 - [ ] Zones d'incertitude balisées ⚠️ INCERTAIN
-- [ ] legal-hallucination-checker déclenché, score ≥ 70/100
+- [ ] legal-hallucination-checker déclenché sur 100 % des références, sans référence non vérifiée restante (bloquant)
 - [ ] Word ECA conforme au socle § 8 (corps noir ; titres d'actes noir gras)
 - [ ] Conflit d'intérêts vérifié si ECA est l'expert-comptable de la cible
 
