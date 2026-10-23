@@ -1,13 +1,6 @@
 ---
 name: veille-juridique
-description: >
-  Skill ECA EXPERTISE pour toute veille, synthèse ou analyse d'un texte
-  législatif ou réglementaire nouveau. Déclencher sur : loi de finances,
-  ordonnance, décret, circulaire, directive européenne, arrêté, instruction
-  fiscale, jurisprudence récente à impact client. Mots-clés : veille juridique,
-  veille fiscale, actualité, nouveauté fiscale, qu'est-ce que change, analyse
-  de la loi, synthèse réforme, impact réforme, LF 2025, LF 2026, décret récent,
-  nouveauté législative, ce qui change, impact pour mes clients.
+description: "Skill ECA EXPERTISE pour toute veille, synthèse ou analyse d'un texte législatif ou réglementaire nouveau, et pour les deux tâches de veille programmées (lundi LinkedIn, mercredi Gamma). Déclencher sur : loi de finances, ordonnance, décret, circulaire, directive européenne, arrêté, instruction fiscale, jurisprudence récente à impact client. Mots-clés : veille juridique, veille fiscale, actualité, nouveauté fiscale, qu'est-ce que change, analyse de la loi, synthèse réforme, impact réforme, LF 2026, LF 2027, décret récent, nouveauté législative, ce qui change, impact pour mes clients."
 ---
 
 # Skill : Veille juridique et fiscale — ECA EXPERTISE
@@ -69,6 +62,12 @@ Ne retenir que des éléments datés de la période couverte, avec référence e
 - Enregistrement des entrées dans la base Notion Veille (socle § 2).
 - **Lien dossiers** : si un élément touche un dossier actif (fiche mémoire),
   le signaler nommément à Yoann dans la synthèse.
+- **Impact skills** : croiser les textes de la semaine avec l'index des
+  références du dépôt (rechercher « references-index »). Si un texte modifie,
+  abroge ou renumérote une référence indexée, ou s'il s'agit d'une loi de
+  finances, d'une loi de finances rectificative ou d'une LFSS : section
+  « Impact skills » dans la synthèse (texte, références touchées, skills
+  concernés) et lancement de `maintenance-skills` en mode ciblé.
 
 ## PHASE 2 — Analyse du texte
 
@@ -220,7 +219,8 @@ La veille n'est pas limitée aux textes législatifs. Une jurisprudence majeure
    — Dossiers en cours concernés ?
    — Stratégies à réviser ?
    — Communication client requise ?
-5. Action ECA recommandée : note d'information, mise à jour skills, RDV ciblés
+5. Action ECA recommandée : note d'information, mise à jour des skills
+   (→ `maintenance-skills`), RDV ciblés
 ```
 
 ---
@@ -275,4 +275,3 @@ Valider mentalement chaque point avant d'envoyer la réponse :
 **Si un seul item n'est pas validé → ne pas livrer. Reprendre la phase concernée.**
 
 ---
-

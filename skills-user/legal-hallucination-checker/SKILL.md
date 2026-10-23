@@ -1,5 +1,5 @@
 ---
-name: "legal-hallucination-checker"
+name: legal-hallucination-checker
 description: "Vérification bloquante de 100 % des références juridiques (articles, décisions, BOFiP, textes) en fin de tout livrable juridique ou fiscal ECA EXPERTISE, par recoupement Légifrance, LibreJustice, Legal Data Hunter, Pourvoi et OpenEU selon la compétence de chaque outil ; contrôle de l'existence, de la version applicable, du contenu, de la portée et du sort procédural. Déclencher automatiquement en fin de livrable, et sur : vérifie les références, checker, hallucination, contrôle des citations, est-ce que cet arrêt existe, cet article est-il en vigueur."
 ---
 
@@ -14,17 +14,20 @@ principe, l'est tout autant. Ce skill est le filet de sécurité final.
 
 ---
 
-## Règle de départ — Références à ne pas vérifier
+## Règle de départ — Références déjà contrôlées
 
-Les références suivantes sont définitivement vérifiées et ne nécessitent
-pas de re-vérification :
+Aucune référence n'est dispensée de vérification. Celles ci-dessous ont déjà été
+contrôlées : leur **existence** est acquise, mais leur **version applicable** et
+leur **contenu** se revérifient à chaque usage, car un texte en vigueur
+aujourd'hui peut être modifié par la prochaine loi de finances (suivi : index
+des références du dépôt et `maintenance-skills`).
 
-| Référence | Statut |
-|-----------|--------|
-| TA Bordeaux n°2301446 du 19/12/2024 | ✅ Existe — ⚠️ NE PAS en déduire une règle : JP divergente depuis (TA Bordeaux 13/11/2025 n°2304900, TA Paris 13/02/2025 n°2212919) |
-| Cons. const. n°2016-538 QPC 22/04/2016 | ✅ Vérifié — Art. 200 A 2 ter |
-| Art. 150-0 B ter CGI | ✅ En vigueur |
-| Art. 200 A, 2 ter CGI | ✅ En vigueur |
+| Référence | Acquis | À revérifier à chaque usage |
+|-----------|--------|-----------------------------|
+| TA Bordeaux n°2301446 du 19/12/2024 | Existe | ⚠️ NE PAS en déduire une règle : JP divergente depuis (TA Bordeaux 13/11/2025 n°2304900, TA Paris 13/02/2025 n°2212919) ; rechercher toute décision postérieure |
+| Cons. const. n°2016-538 QPC 22/04/2016 | Existe — vise l'art. 200 A, 2 ter CGI | Portée au regard de la version de l'article applicable |
+| Art. 150-0 B ter CGI | Existe | Version à la date de l'apport |
+| Art. 200 A, 2 ter CGI | Existe | Version à la date du fait générateur |
 
 Pour toute autre référence, appliquer le workflow ci-dessous.
 
@@ -131,8 +134,8 @@ sans conclure à une hallucination.
 ### Phase 2bis — Vérification croisée via LibreJustice, Legal Data Hunter et Pourvoi
 
 **Obligatoire pour toute référence non confirmée en Phase 2, et recommandé
-en confirmation croisée pour toute référence à enjeu (🔴 critique du
-référentiel `shared`).** N'interroger que les outils compétents (matrice
+en confirmation croisée pour toute référence à enjeu (🔴 critique, pièges
+datés du `socle-eca` § 5).** N'interroger que les outils compétents (matrice
 ci-dessus).
 
 **LibreJustice :**
@@ -290,17 +293,21 @@ Si aucune correction n'est nécessaire : "Toutes les références vérifiées �
 
 ---
 
-## Point de contrôle — Avant livraison
+## Point de contrôle — Avant livraison (bloquant à 100 %)
 
-Ne pas livrer le livrable si le rapport contient des ⛔ HALLUCINATION non corrigées.
-Attendre validation de Yoann avant livraison si le score global < 70/100.
+Aucun livrable n'est remis tant qu'une seule référence n'est pas ✅ VÉRIFIÉ_EXACT
+ou 🟡 VÉRIFIÉ_MINEUR corrigée. Le score global du rapport est une information,
+jamais un seuil de tolérance.
 
 ```
-if score < 70:
-    → NE PAS livrer
-    → Corriger les hallucinations identifiées
-    → Re-déclencher le checker sur la version corrigée
-    → Attendre confirmation de Yoann
+pour chaque référence :
+    ⛔ HALLUCINATION ou 🔴 SUBSTANTIELLEMENT_ERRONÉ → corriger ou retirer
+    🟠 PARTIELLEMENT_EXACT                         → reformuler (portée, version)
+    🟡 VÉRIFIÉ_MINEUR                              → corriger
+    ⚪ NON_CONFIRMÉ                                 → retirer, ou signaler à Yoann,
+                                                      qui décide ; jamais conservée
+                                                      sans mention
+puis re-déclencher le checker sur la version corrigée
 ```
 
 ## Règle d'auto-déclenchement

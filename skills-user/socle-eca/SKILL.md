@@ -1,16 +1,6 @@
 ---
 name: socle-eca
-description: >
-  Socle commun de tous les skills ECA EXPERTISE (remplace « shared ») : ouverture
-  de dossier, carte des connecteurs (quel besoin → quel outil), règles de
-  vérification, pièges datés, standard de rédaction M&A international, corpus
-  documentaire évolutif du dépôt (inventaire du jour, recherche plein texte,
-  lecture intégrale du verbatim des documents pertinents), charte et méthode Word ECA,
-  garde-fous (pseudonymisation, périmètre, confidentialité). Chargé automatiquement
-  par tout skill métier ECA. Déclencher sur : socle, shared, référentiel ECA,
-  charte, méthode Word, carte des connecteurs, pièges fiscaux, corpus, Royal
-  Formation, accès dépôt. NE PAS utiliser seul pour répondre à une question de
-  fond : il équipe les autres skills.
+description: "Socle commun de tous les skills ECA EXPERTISE (remplace « shared ») : ouverture de dossier, carte des connecteurs (quel besoin → quel outil), règles de vérification, pièges datés, standard de rédaction M&A international, corpus documentaire évolutif du dépôt (inventaire du jour, recherche plein texte, lecture intégrale du verbatim des documents pertinents), charte et méthode Word ECA, garde-fous (pseudonymisation, périmètre, confidentialité). Chargé automatiquement par tout skill métier ECA. Déclencher sur : socle, shared, référentiel ECA, charte, méthode Word, carte des connecteurs, pièges fiscaux, corpus, Royal Formation, accès dépôt. NE PAS utiliser seul pour répondre à une question de fond : il équipe les autres skills."
 ---
 
 # Socle ECA EXPERTISE
@@ -18,8 +8,12 @@ description: >
 Ce fichier contient des **règles et des process**, pas des données. Un taux, un
 seuil, un délai chiffré ou un numéro de jurisprudence ne s'écrit jamais de
 mémoire ni depuis un skill : il se lit à la source, au jour du livrable, dans la
-version applicable au fait générateur. Seule exception : la liste courte des
-pièges (§ 5), datée et sourcée, qui sert d'alarme et doit être revérifiée.
+version applicable au fait générateur. Exceptions : la liste courte des pièges
+(§ 5), datée et sourcée, qui sert d'alarme, et les références marquées
+« vérifié JJ/MM/AAAA » dans les skills. Les unes et les autres sont inscrites à
+l'index des références du dépôt (rechercher « references-index ») et
+contrôlées par `maintenance-skills` ; elles se relisent à la source avant tout
+usage, dans la version applicable.
 
 ---
 
@@ -214,7 +208,8 @@ Règles :
 
 Chaque ligne indique la date et la source de sa dernière vérification. Avant
 tout usage chiffré : relire la source dans sa version au fait générateur.
-Si la source a changé : corriger, signaler à Yoann, mettre à jour cette liste.
+Si la source a changé : corriger, signaler à Yoann, mettre à jour cette liste et
+l'index des références (`maintenance-skills`).
 
 | Piège | Ce qu'il faut savoir | Vérifié | Source à relire |
 |---|---|---|---|

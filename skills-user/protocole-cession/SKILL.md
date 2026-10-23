@@ -1,20 +1,6 @@
 ---
 name: protocole-cession
-description: >
-  Skill ECA EXPERTISE pour tout protocole de cession de titres sociaux (parts
-  sociales ou actions) : négociation, analyse d'un projet reçu, rédaction,
-  conditions suspensives, prix et ajustement, earn-out, crédit-vendeur, gestion
-  intercalaire, closing, non-concurrence. Couvre aussi la promesse
-  synallagmatique ou unilatérale et la LOI. Travaille TOUJOURS pour un
-  camp — cédant ou acquéreur — jamais en position neutre. Déclencher sur :
-  protocole de cession, SPA, promesse de cession, cession de parts sociales,
-  cession d'actions, cession de titres, lettre d'intention,
-  term sheet, condition suspensive, ajustement de prix, complément de prix,
-  earn-out, crédit-vendeur, séquestre du prix, closing, gestion intercalaire.
-  NE PAS utiliser si la demande porte sur la garantie d'actif et de passif
-  (→ gap), un audit de cible (→ due-diligence-juridique), un chiffrage de
-  plus-value (→ calcul-plus-value), un pacte d'associés post-closing
-  (→ pacte-associes) ou une cession de fonds de commerce (→ cession-fonds).
+description: "Skill ECA EXPERTISE pour tout protocole de cession de titres sociaux (parts sociales ou actions) : négociation, analyse d'un projet reçu, rédaction du protocole sous conditions suspensives ou de la promesse (synallagmatique ou unilatérale), prix et ajustement, earn-out, crédit-vendeur, gestion intercalaire, non-concurrence, ainsi que la cession simple signée en un temps. TOUJOURS pour un camp. Déclencher sur : protocole de cession, SPA, promesse de cession, cession de parts sociales, cession d'actions, cession de titres, condition suspensive, ajustement de prix, complément de prix, earn-out, crédit-vendeur, séquestre du prix, gestion intercalaire. NE PAS utiliser pour la lettre d'intention ou la term sheet (→ lettre-intention), l'acte définitif ou le closing après levée des conditions (→ acte-definitif-titres), la GAP (→ gap), un audit de cible (→ due-diligence-juridique), un chiffrage de plus-value (→ calcul-plus-value), un pacte (→ pacte-associes) ou un fonds de commerce (→ cession-fonds)."
 ---
 
 # Skill : Protocole de cession de titres — ECA EXPERTISE
@@ -28,6 +14,10 @@ description: >
 > Le protocole fixe le prix, le calendrier et les conditions du transfert. La GAP
 > fixe le risque. Les deux se lisent ensemble mais se négocient séparément, et
 > une incohérence entre eux est la première cause de contentieux post-closing.
+
+> **Chaîne documentaire** : `lettre-intention` (LOI, term sheet) →
+> **ce skill** (protocole sous conditions suspensives) → `gap` →
+> `acte-definitif-titres` (réitération et closing après levée des conditions).
 
 ---
 
@@ -82,10 +72,12 @@ description: >
 
 ## PHASE 0-S — Cession simple (sans négociation M&A)
 
-Cession de parts ou d'actions entre parties d'accord, sans protocole négocié
-(entrée ou sortie d'associé, reclassement familial ou intragroupe, cession à la
-holding) : la porte de posture s'applique (qui conseille-t-on ?), mais la table
-des curseurs est allégée. Produire :
+Cession de parts ou d'actions entre parties d'accord, signée **en un seul
+temps** sans protocole préalable (entrée ou sortie d'associé, reclassement
+familial ou intragroupe, cession à la holding) : la porte de posture
+s'applique (qui conseille-t-on ?), mais la table des curseurs est allégée.
+Si un protocole sous conditions a été signé auparavant, l'acte de cession
+relève de `acte-definitif-titres`. Produire :
 1. décision d'agrément ou de renonciation à la préemption (statuts et pacte) ;
 2. acte de cession au standard du socle § 6 (définitions, déclarations du
    cédant par rubrique, prix et paiement, transfert de propriété, garantie
@@ -102,10 +94,11 @@ comptes courants.
 ## PHASE 0-M — Mode de travail
 
 ```
+LOI / term sheet à rédiger ou analyser → lettre-intention (hors de ce skill)
 Projet reçu de la partie adverse       → MODE ANALYSE      (§ 5.1)
 Aucun texte, protocole à produire      → MODE RÉDACTION    (§ 5.2)
 Aller-retour, arbitrages à rendre      → MODE NÉGOCIATION  (§ 5.3)
-Protocole signé, closing à organiser   → MODE EXÉCUTION    (§ 5.4)
+Protocole signé, closing à organiser   → acte-definitif-titres (§ 5.4)
 ```
 
 ---
@@ -116,10 +109,10 @@ Protocole signé, closing à organiser   → MODE EXÉCUTION    (§ 5.4)
 
 | Instrument | Effet | Vigilance |
 |---|---|---|
-| LOI / term sheet | Engageant sur ce qu'il formule fermement | Distinguer clauses fermes et clauses d'intention |
+| LOI / term sheet | Engageant sur ce qu'il formule fermement | Traitée par `lettre-intention` ; vérifier ici sa cohérence avec le protocole (Phase 6) |
 | Promesse unilatérale de vente | Engage le seul promettant ; le bénéficiaire dispose d'une option | Indemnité d'immobilisation, durée de l'option |
 | Promesse synallagmatique | Vente parfaite dès l'accord sur la chose et le prix (Art. 1583 C. civ.), sous conditions suspensives | C'est le cas usuel du « protocole » |
-| Cession définitive | Transfert immédiat | Rare sur titres de PME |
+| Cession définitive | Transfert immédiat | Cession simple (Phase 0-S) ou réitération (`acte-definitif-titres`) |
 
 **Conséquence majeure** : le protocole synallagmatique **est la vente**. Le
 closing n'est que son exécution. Une partie qui refuse de closer sans motif tiré
@@ -131,11 +124,16 @@ dommages-intérêts.
 - *Pro acquéreur* — l'inverse : ne signer qu'une fois la DD achevée, ou assortir
   la signature de conditions suspensives réellement libératoires.
 
+**Préparer la réitération dès le protocole** : prévoir si un acte réitératif
+sera exigé, la date et le lieu de réalisation, la liste des remises, la clause
+de survie et la règle de primauté entre protocole et acte définitif. Ce que le
+protocole ne prévoit pas devra être négocié au closing, au pire moment.
+
 ### 2.2 Forme sociale et régime du transfert
 
 | Forme | Agrément | Formalisme du transfert | Enregistrement |
 |---|---|---|---|
-| SARL | Art. L. 223-14 C. com. — agrément légal pour les cessions à tiers | Écrit ; opposabilité à la société (Art. L. 223-17 renvoyant à L. 221-14 C. com.) ⚠️ vérifier via MCP | CGI Art. 726 — taux et abattement à fetcher dans `shared` |
+| SARL | Art. L. 223-14 C. com. — agrément légal pour les cessions à tiers | Écrit ; opposabilité à la société par signification (C. civ. 1690) ou dépôt d'un original au siège contre attestation du gérant ; opposabilité aux tiers après ces formalités et publication des statuts modifiés au RCS (Art. L. 223-17 renvoyant à L. 221-14 C. com. — vérifié 23/10/2026) | CGI Art. 726 — taux et abattement à lire à la source en vigueur |
 | SAS | Art. L. 227-14 C. com. — agrément **statutaire** seulement | Ordre de mouvement, inscription au registre des mouvements et aux comptes d'actionnaires | CGI Art. 726 |
 | SA non cotée | Art. L. 228-23 C. com. — clause statutaire | Ordre de mouvement, registre | CGI Art. 726 |
 | Société à prépondérance immobilière | — | Selon la forme | CGI Art. 726 I 2° — taux majoré |
@@ -154,45 +152,59 @@ et leur respect érigé en condition suspensive ou en déclaration.
 | Consentement du conjoint | **C. civ. Art. 1424** | Parts sociales (droits sociaux **non négociables**) dépendant d'une communauté | Nullité relative (Art. 1427 C. civ.) |
 | Agrément | Statuts / L. 223-14, L. 227-14, L. 228-23 C. com. | Selon forme et statuts | Nullité de la cession |
 | Droit de préemption | Statuts ou pacte | Clause | Inopposabilité, dommages-intérêts |
-| Contrôle des concentrations | C. com. Art. L. 430-1 s. | Franchissement des seuils — **fetcher `shared`** | Nullité de l'opération, amende |
+| Contrôle des concentrations | C. com. Art. L. 430-1 s. | Franchissement des seuils — **seuils à lire à la source en vigueur** | Nullité de l'opération, amende |
 | Contrôle des investissements étrangers | CMF Art. L. 151-3 | Investisseur étranger, secteur sensible | Nullité, injonctions |
 
 ### ⚠️ ALERTE — Information des salariés : dispositif modifié en 2026
 
-**Vérifié via MCP Légifrance.** L'article L. 23-10-1 C. com. a été réécrit par la
-**loi n° 2026-403 du 26 mai 2026** (entrée en vigueur le 28 mai 2026, applicable
-aux ventes conclues deux mois au moins après la promulgation). Deux changements
-que les modèles antérieurs ne reflètent pas :
+**Vérifié via LibreJustice le 23/10/2026** (versions en vigueur depuis le
+28/05/2026). Les articles L. 23-10-1 et L. 23-10-7 C. com. ont été réécrits
+par la **loi n° 2026-403 du 26 mai 2026** (art. 22) ; ils s'appliquent aux
+**ventes conclues deux mois au moins après la promulgation**. Deux
+changements que les modèles antérieurs ne reflètent pas :
 
 1. **Le champ n'est plus indexé sur le seuil de 50 salariés** mais sur l'absence
    d'obligation de mettre en place un CSE exerçant les attributions du deuxième
-   alinéa de l'article L. 2312-1 C. trav.
-2. **L'amende civile est ramenée de 2 % à 0,5 %** du montant de la vente, et son
-   prononcé suppose désormais qu'une action en responsabilité soit engagée, sur
+   alinéa de l'article L. 2312-1 C. trav. Information au plus tard **un mois
+   avant la vente** ; vente possible avant si chaque salarié a fait connaître
+   sa décision de ne pas présenter d'offre.
+2. **L'amende civile est ramenée à 0,5 %** du montant de la vente, et son
+   prononcé suppose qu'une action en responsabilité soit engagée, à la
    demande du ministère public.
 
-L'article L. 23-10-7 a été corrélativement réécrit : il vise l'information-
-consultation du CSE et renvoie aux articles L. 23-10-1 à L. 23-10-6 lorsque
-l'absence de CSE est constatée dans les conditions de l'article L. 2314-9 C. trav.
+⚠️ **Discordance confirmée sur L. 23-10-7** — le corps de l'article, placé
+dans le chapitre relatif aux titres, reproduit mot pour mot celui de
+L. 141-28 et vise « tout projet de vente d'un **fonds de commerce** », tout
+en renvoyant aux articles L. 23-10-1 à L. 23-10-6 (titres) en l'absence de
+CSE. Les intitulés de sections mentionnent encore les seuils de 50 et 249
+salariés. Erreur de coordination probable, non corrigée à cette date.
+**Conduite à tenir** : traiter par excès de prudence — dans une société
+dotée d'un CSE à attributions élargies, informer-consulter le CSE sur le
+projet de cession de titres ; à défaut de CSE constaté, appliquer
+L. 23-10-1 à L. 23-10-6. Le coût d'une formalité inutile est nul ; celui
+d'une omission ne l'est pas. Revérifier le texte à la date de la vente.
 
-⚠️ INCERTAIN — l'intitulé de la section 2 vise toujours la vente de titres
-donnant accès à la majorité du capital, alors que le corps de l'article L. 23-10-7
-vise la vente d'un fonds de commerce. Cette discordance apparente doit être
-vérifiée via MCP et, en cas de doute sur une opération réelle, **traitée par
-excès de prudence** : notifier dans tous les cas où le doute subsiste. Le coût
-d'une notification inutile est nul ; celui d'une omission ne l'est pas.
+**Point de départ — « avant la vente »** : le protocole synallagmatique
+pouvant constituer la vente (§ 2.1), **notifier les salariés au moins un
+mois avant la signature du protocole**, et non avant le closing.
+⚠️ INCERTAIN — la date de « la vente » en présence de conditions
+suspensives n'est pas tranchée par le texte : retenir la date la plus
+précoce.
 
 **Conséquence de posture** :
-- *Pro acquéreur* — ériger l'accomplissement de la formalité en condition
-  suspensive et exiger la production des justificatifs de notification au closing.
+- *Pro acquéreur* — exiger les justificatifs de notification (et leur date)
+  avant signature, et une déclaration du cédant sur leur accomplissement.
 - *Pro cédant* — la formalité pèse sur le cédant ; l'accomplir tôt, car le délai
-  d'un mois court avant la vente et retarde mécaniquement le calendrier.
+  d'un mois retarde mécaniquement le calendrier.
 
-**Point de vigilance conjoint (Art. 1424 C. civ.)** — le texte impose la
-cogestion non seulement pour l'aliénation des parts sociales communes, mais aussi
-pour la **perception du prix**. Le conjoint doit donc intervenir à l'acte à double
-titre. Omission fréquente dans les protocoles, et cause de nullité relative
-ouverte pendant deux ans.
+**Point de vigilance conjoint (Art. 1424 C. civ., vérifié 23/10/2026)** — le
+texte impose la cogestion non seulement pour l'aliénation des droits sociaux non
+négociables communs (parts sociales), mais aussi pour la **perception des
+capitaux** qui en proviennent. Le conjoint doit donc intervenir à l'acte à double
+titre. Omission fréquente dans les protocoles : le conjoint peut demander
+l'annulation pendant deux années à partir du jour où il a eu connaissance de
+l'acte, sans pouvoir agir plus de deux ans après la dissolution de la communauté
+(Art. 1427 C. civ., vérifié 23/10/2026).
 
 ---
 
@@ -288,6 +300,11 @@ avait intérêt en a empêché l'accomplissement.
 - *Pro acquéreur* — accepter une obligation de diligence, jamais une obligation
   de résultat, et refuser toute clause faisant du refus bancaire une faute.
 
+**Forme de la levée et de la renonciation** — prévoir dès le protocole comment
+chaque condition est constatée (pièce, notification) et comment son
+bénéficiaire y renonce (écrit, délai). C'est ce tableau que
+`acte-definitif-titres` reprendra au closing.
+
 ### 3.4 Gestion intercalaire et MAC
 
 | # | Paramètre | Curseur CÉDANT | Curseur ACQUÉREUR | Atterrissage fréquent |
@@ -356,8 +373,8 @@ Traiter systématiquement, jamais en annexe.
 ### 4.1 Droits d'enregistrement
 
 CGI Art. 726 — taux différenciés selon la forme sociale et le caractère de
-prépondérance immobilière. **Fetcher `shared` pour les taux et l'abattement en
-vigueur.** Trancher expressément dans le protocole qui les supporte : la loi les
+prépondérance immobilière. **Lire à la source les taux et l'abattement en
+vigueur à la date de la cession.** Trancher expressément dans le protocole qui les supporte : la loi les
 met à la charge de l'acquéreur, mais la clause peut en disposer autrement, et le
 silence est une source de discussion au closing.
 
@@ -365,39 +382,55 @@ silence est une source de discussion au closing.
 société d'exploitation propriétaire de ses murs peut y basculer et le
 différentiel de taux est significatif.
 
+⚠️ **Protocole sous conditions et enregistrement (vérifié 23/10/2026)** — les
+actes portant cession d'actions ou de parts sociales s'enregistrent dans le
+délai d'un mois à compter de leur date (CGI art. 635, 2, 7°) ; pour une mutation
+affectée d'une condition suspensive, le régime fiscal et les valeurs imposables
+s'apprécient à la date de réalisation de la condition (CGI art. 676). Prévoir
+dès le protocole l'articulation de son enregistrement avec celui de l'acte
+définitif (aucun double paiement, aucun défaut d'enregistrement) et la
+partie qui accomplit la formalité.
+
 ### 4.2 Fiscalité du cédant
 
 | Point | Règle | Vigilance |
 |---|---|---|
-| Fait générateur | Date de la cession, c'est-à-dire du transfert de propriété | ⚠️ **La fraction séquestrée du prix est imposable dès la cession**, même si elle n'est perçue que plus tard. Piège de trésorerie majeur — l'anticiper avec le client |
-| Complément de prix (earn-out) | CGI Art. 150-0 A, I, 2 — imposable au titre de l'année de perception | L'abattement applicable au prix principal peut bénéficier au complément lorsque les conditions sont réunies (CGI Art. 150-0 D, 1) — vérifier via MCP |
+| Fait générateur | Date de la cession, c'est-à-dire du transfert de propriété. Sous condition suspensive : la doctrine retient la date de réalisation de la condition pour les plus-values immobilières (BOI-RFPI-PVI-20, § 30, repéré le 23/10/2026) ; pour les titres, lire la doctrine BOI-RPPM-PVBMI avant de l'affirmer | ⚠️ **La fraction séquestrée du prix est imposable dès la cession**, même si elle n'est perçue que plus tard. Piège de trésorerie majeur — l'anticiper avec le client ; l'année d'imposition dépend de la date de levée de la dernière condition |
+| Complément de prix (earn-out) | CGI Art. 150-0 A, I, 2 (vérifié 23/10/2026) — imposable au titre de l'année de perception ; le prix d'acquisition retenu par le cessionnaire en est augmenté (150-0 D, 2) | L'application au complément de l'abattement éventuellement applicable au prix principal (CGI Art. 150-0 D, 1) se vérifie à la source avant de l'affirmer au client ; report possible du complément réinvesti : lire CGI Art. 150-0 B bis |
 | Crédit-vendeur | **CGI Art. 1681 F, I bis** — plan de règlement échelonné de l'IR sur demande | Conditions cumulatives strictes (voir ci-dessous) |
 | Régimes de faveur | 150-0 D ter, 150-0 B ter, exonérations professionnelles | Vérifier l'antériorité des conditions **avant** de figer le calendrier |
 
-**Crédit-vendeur — CGI Art. 1681 F, I bis (vérifié via MCP).** Le plan de
-règlement échelonné suppose la réunion de conditions cumulatives dont deux sont
-souvent découvertes trop tard :
+**Crédit-vendeur — CGI Art. 1681 F, I bis (vérifié 23/10/2026).** Le plan de
+règlement échelonné de l'impôt sur le revenu suppose un paiement différé ou
+échelonné de tout ou partie du prix, et la réunion de conditions cumulatives
+dont deux sont souvent découvertes trop tard :
 
 - la cession doit porter sur **la majorité du capital social** ;
 - à l'issue de la cession, la société ne doit **pas être contrôlée par le cédant**
   au sens du 2° du III de l'Art. 150-0 B ter CGI ;
-- la société emploie moins de cinquante salariés et présente un total de bilan ou
-  un chiffre d'affaires n'excédant pas dix millions d'euros au titre de l'exercice
-  de la cession, et répond à la définition européenne de petite entreprise ;
-- l'imposition ne résulte pas d'une rectification ;
-- le redevable est à jour de ses obligations fiscales et **constitue des garanties**
-  auprès du comptable public ;
+- la société emploie moins de cinquante salariés, a un total de bilan ou un
+  chiffre d'affaires n'excédant pas dix millions d'euros au titre de l'exercice
+  de la cession, et répond à la définition de petite entreprise du règlement
+  (UE) n° 651/2014 ;
+- l'imposition ne résulte ni d'une rectification ni d'une procédure
+  d'imposition d'office ;
+- le redevable respecte ses obligations fiscales courantes et **constitue des
+  garanties** auprès du comptable public (complément exigible en cas
+  d'insuffisance) ;
 - la demande doit être formulée **au plus tard à la date limite de paiement portée
   sur l'avis d'imposition** — une échéance qu'il faut inscrire au calendrier du
   dossier dès la signature du protocole ;
 - la durée du plan ne peut excéder celle du paiement du prix ni se prolonger
-  au-delà du 31 décembre de la cinquième année suivant la cession.
+  au-delà du 31 décembre de la cinquième année qui suit celle de la cession ;
+  les échéances d'impôt suivent les modalités de paiement du prix prévues à
+  l'acte.
 
 **Conséquence de posture** : *pro cédant*, calibrer le crédit-vendeur pour rester
-dans ces bornes — un échelonnement sur sept ans prive le cédant du dispositif et
-lui fait payer l'impôt sur un prix qu'il n'a pas encore encaissé. *Pro acquéreur*,
-c'est un levier de négociation : proposer un crédit-vendeur compatible avec
-l'Art. 1681 F rend l'échelonnement acceptable pour le cédant à moindre coût.
+dans ces bornes — si le prix est échelonné au-delà, le plan reste plafonné au
+31 décembre de la cinquième année qui suit la cession : le cédant paie le solde
+de l'impôt avant d'avoir encaissé le solde du prix. *Pro acquéreur*, c'est un
+levier de négociation : proposer un crédit-vendeur compatible avec l'Art. 1681 F
+rend l'échelonnement acceptable pour le cédant à moindre coût.
 
 ### 4.3 Fiscalité de l'acquéreur
 
@@ -454,13 +487,17 @@ IX. CONCLUSION
 5.  Prix — montant, mécanique d'ajustement, exemple chiffré annexé
 6.  Complément de prix / earn-out
 7.  Modalités de paiement — séquestre, crédit-vendeur, sûretés
-8.  Conditions suspensives — liste, délai, bénéficiaire, renonciation, caducité
+8.  Conditions suspensives — liste, délai, bénéficiaire, forme de la levée et
+    de la renonciation, caducité
 9.  Formalités préalables — information des salariés, agrément, conjoint,
     préemption, autorisations
 10. Gestion intercalaire — liste fermée d'actes soumis à accord
 11. Clause MAC (si retenue — objectivée et chiffrée)
-12. Réalisation (closing) — lieu, date, ordre des opérations, liste des remises
-13. Déclarations et garanties — renvoi à l'annexe GAP
+12. Réalisation (closing) — lieu, date, acte réitératif exigé ou non, ordre
+    des opérations, liste des remises, survie du protocole et règle de
+    primauté avec l'acte définitif
+13. Déclarations et garanties — renvoi à l'annexe GAP ; réitération à la date
+    de réalisation
 14. Non-concurrence et non-sollicitation
 15. Accompagnement post-closing
 16. Cautions personnelles et comptes courants
@@ -470,7 +507,8 @@ IX. CONCLUSION
 20. Notifications, intégralité, nullité partielle
 21. Loi applicable, attribution de juridiction, conciliation préalable
 22. Annexes — comptes de référence, annexe de divulgation, projet de GAP,
-    modèle d'ordre de mouvement, exemple chiffré d'ajustement
+    modèle d'ordre de mouvement, projet d'acte réitératif, exemple chiffré
+    d'ajustement
 ```
 
 Faire précéder d'une **note d'intention à Yoann** : positions retenues, points de
@@ -500,38 +538,27 @@ IV. PACKAGE DE SORTIE
 - La non-concurrence se concède tard : elle coûte peu à l'acquéreur de la réduire
   et rassure le cédant à bon compte
 
-### 5.4 MODE EXÉCUTION — closing
+### 5.4 Closing — renvoi
 
-Produire une **check-list de closing** ordonnée, avec pour chaque ligne : la
-pièce, la partie qui la fournit, et l'ordre chronologique des remises.
-
-Points à ne jamais omettre :
-- Justificatifs d'accomplissement des formalités d'information des salariés
-- Procès-verbal d'agrément
-- Intervention du conjoint le cas échéant
-- Ordres de mouvement signés, mise à jour du registre des mouvements et des
-  comptes d'actionnaires (sociétés par actions) ou signification / dépôt
-  (parts sociales)
-- Démissions des dirigeants et organes, avec quitus ou réserve expresse
-- Assemblée de nomination des nouveaux dirigeants
-- Mainlevées ou contre-garanties des cautions personnelles
-- Traitement des comptes courants
-- GAP signée et sûreté constituée (séquestre libéré, caution émise)
-- Enregistrement dans le délai légal
-- Formalités de dépôt et de publicité
+Une fois le protocole signé, la réalisation (constat de levée des conditions,
+acte réitératif, pièces de closing, formalités et échéances post-closing)
+relève de **`acte-definitif-titres`**. Ce skill reste compétent pour
+interpréter le protocole et pour tout avenant (prorogation du délai de
+réalisation, modification du prix ou des conditions).
 
 ---
 
 ## PHASE 6 — Cohérence inter-documents (contrôle final systématique)
 
-Une opération se joue sur cinq documents qui doivent parler la même langue. Ce
-contrôle est la source la plus fréquente de sinistres post-closing, et il n'est
-presque jamais fait.
+Une opération se joue sur plusieurs documents qui doivent parler la même
+langue. Ce contrôle est la source la plus fréquente de sinistres post-closing,
+et il n'est presque jamais fait.
 
 | Contrôle | Ce qui doit concorder |
 |---|---|
 | LOI ↔ protocole | Prix, calendrier, exclusivité, conditions annoncées |
 | Protocole ↔ GAP | **Définitions identiques**, date des comptes de référence, plafonds, dates de closing, renvois d'articles |
+| Protocole ↔ acte définitif | Définitions, survie, primauté, absence de novation (voir `acte-definitif-titres`) |
 | Protocole ↔ statuts | Agrément, préemption, inaliénabilité, majorités |
 | Protocole ↔ pacte existant | Sortie conjointe, préemption, engagements du cédant survivant à la cession |
 | Protocole ↔ contrats de la cible | Clauses de changement de contrôle relevées en DD |
@@ -550,18 +577,21 @@ les montants en chiffres et en lettres concordent-ils ?
 - [ ] **Aucune formulation « équilibrée » ou « les parties pourraient »**
 - [ ] Forme sociale identifiée, statuts et pacte lus avant rédaction
 - [ ] Carte des formalités d'ordre public complétée, aucune case vide
-- [ ] Information des salariés : régime post-loi 2026-403 vérifié via MCP
+- [ ] Information des salariés : régime post-loi 2026-403 relu à la date de la
+      vente, notification antérieure d'un mois à la signature du protocole,
+      discordance L. 23-10-7 traitée par prudence
 - [ ] Consentement du conjoint traité si parts communes (Art. 1424 C. civ.),
       pour l'aliénation **et** pour la perception du prix
 - [ ] Mécanique de prix tranchée (locked box / closing accounts), exemple chiffré annexé
 - [ ] Earn-out : indicateur défini contractuellement, protections calibrées selon la posture
 - [ ] Crédit-vendeur : compatibilité avec CGI Art. 1681 F, I bis vérifiée
 - [ ] Fait générateur fiscal et sort de la fraction séquestrée expliqués au client
-- [ ] Conditions suspensives : bénéficiaire, délai, caducité, Art. 1304-2 et 1304-3
+- [ ] Conditions suspensives : bénéficiaire, délai, forme de levée et de
+      renonciation, caducité, Art. 1304-2 et 1304-3
+- [ ] Réalisation préparée : acte réitératif, survie, primauté, remises
 - [ ] Gestion intercalaire bornée, absence de *gun jumping*
 - [ ] Cautions personnelles et comptes courants traités expressément
 - [ ] Non-concurrence : temps, espace, activité, proportionnalité
-- [ ] Check-list de closing produite si MODE EXÉCUTION
 - [ ] Cohérence inter-documents contrôlée (Phase 6), renvois vérifiés un à un
 - [ ] `calcul-plus-value` déclenché si enjeu de plus-value non chiffré
 - [ ] Zones d'incertitude balisées ⚠️ INCERTAIN
@@ -570,5 +600,3 @@ les montants en chiffres et en lettres concordent-ils ?
 - [ ] Conflit d'intérêts vérifié si ECA intervient pour la cible
 
 **Si un seul item n'est pas validé → ne pas livrer.**
-
----

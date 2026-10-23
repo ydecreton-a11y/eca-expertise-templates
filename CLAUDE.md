@@ -2,11 +2,13 @@
 
 > Index de routage. Aucune donnée métier volatile (taux, seuil, délai, chemin) :
 > chaque information vit à un seul endroit, ce manifeste y pointe.
-> Dernière mise à jour : 23/10/2026 — refonte de l'écosystème (socle unique).
+> Dernière mise à jour : 23/10/2026 — refonte de l'écosystème (socle unique) ;
+> ajout de `lettre-intention`, `acte-definitif-titres`, `restructurations` et
+> `maintenance-skills` ; index des références et maintenance trimestrielle.
 
 ---
 
-## 1. Carte de l'écosystème (24 skills)
+## 1. Carte de l'écosystème (28 skills)
 
 | Couche | Skill | Rôle |
 |---|---|---|
@@ -21,19 +23,23 @@
 | Analyse | `contentieux-fiscal` | Défense fiscale : rectification, recours, réclamation, juridiction |
 | Analyse | `analyse-contrat` | Analyse et sécurisation d'un contrat entre parties |
 | Analyse | `due-diligence-juridique` | Audit de cible et rapport de DD |
-| M&A à posture | `protocole-cession` | Cession de titres (SPA, LOI, cession simple) |
+| M&A à posture | `lettre-intention` | Lettre d'intention, term sheet, offre indicative (titres ou fonds) |
+| M&A à posture | `protocole-cession` | Protocole ou promesse de cession de titres sous conditions, cession simple |
+| M&A à posture | `acte-definitif-titres` | Acte définitif et closing après levée des conditions (titres) |
 | M&A à posture | `gap` | Garantie d'actif et de passif |
-| M&A à posture | `cession-fonds` | Cession de fonds de commerce ou artisanal |
-| Process d'actes | `redaction-acte` | Moteur de rédaction (statuts, PV, nominations, capital) |
+| M&A à posture | `cession-fonds` | Cession de fonds de commerce ou artisanal (compromis, acte définitif) |
+| Process d'actes | `redaction-acte` | Moteur de rédaction et fiches de toutes les modifications statutaires |
 | Process d'actes | `pacte-associes` | Pacte d'associés à partir des trois documents de référence |
 | Process d'actes | `juridique-annuel` | Approbation des comptes, dividendes, capitaux propres |
-| Process d'actes | `holding-apport` | Holding, apport de titres, report 150-0 B ter |
-| Process d'actes | `dissolution-liquidation-tup` | Dissolution, liquidation, TUP |
+| Process d'actes | `holding-apport` | Holding, apport de titres par une personne physique, report 150-0 B ter |
+| Process d'actes | `restructurations` | Fusion, fusion simplifiée, scission, apport partiel d'actif, choix TUP ou fusion |
+| Process d'actes | `dissolution-liquidation-tup` | Dissolution, liquidation, exécution d'une TUP |
 | Sortie | `note-information-client` | Notes client, courriers, réponses aux collègues |
 | Sortie | `avocat-adverse` | Relecture par le contradicteur le plus compétent |
 | Sortie | `veille-juridique` | Veille ; post LinkedIn du lundi, veille Gamma du mercredi |
 | Outillage | `darwin-skill` | Évaluation et optimisation des skills |
 | Outillage | `pieces-pseudonymisees` | Travail sur pièces pseudonymisées |
+| Outillage | `maintenance-skills` | Contrôle périodique des références citées dans les skills (trimestre, loi de finances) et mise à jour |
 
 Retirés le 23/10/2026 : `shared` (→ `socle-eca`), `diagnostic-transmission` et
 `patrimonial-structuring` (→ `strategie-patrimoniale`), `devils-advocate`
@@ -70,6 +76,8 @@ Retirés le 23/10/2026 : `shared` (→ `socle-eca`), `diagnostic-transmission` e
 | Veille | Notion, `f201a44e-556f-4420-8f61-eec1f8cb2d5a` (ne pas confondre avec la base Positions) |
 | Consultations | Notion, `cadd1870-11e1-4dfa-9298-7d5c5977f564` |
 | Skills (source) | `skills-user/` de ce dépôt, réinstallés dans claude.ai après chaque modification |
+| Références citées dans les skills (« vérifié JJ/MM/AAAA »), pièges datés, échéances annoncées | `skills-user/maintenance/references-index.json` (vue lisible : `references-index.md`), tenu par `maintenance-skills` |
+| Rapports de maintenance des skills | `skills-user/maintenance/rapports/` |
 | Codes de prompt | `skills-user/prompt-codes-eca.md` |
 
 ---
@@ -77,7 +85,9 @@ Retirés le 23/10/2026 : `shared` (→ `socle-eca`), `diagnostic-transmission` e
 ## 4. Anti-patterns
 
 - ❌ Écrire un taux, un seuil, un délai, un chemin de fichier ou une syntaxe
-  d'outil dans un skill métier.
+  d'outil dans un skill métier — seule exception : une référence datée
+  « vérifié JJ/MM/AAAA », inscrite à l'index des références et suivie par
+  `maintenance-skills`.
 - ❌ Citer une référence sans l'avoir lue à la source dans la version applicable.
 - ❌ Reprendre une donnée d'un précédent client dans un nouvel acte.
 - ❌ Mentionner un modèle ou un auteur tiers dans un livrable client.

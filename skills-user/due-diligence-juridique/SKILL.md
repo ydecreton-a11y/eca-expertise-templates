@@ -1,17 +1,6 @@
 ---
 name: due-diligence-juridique
-description: >
-  Audit de due diligence juridique, fiscal et social d'une cible pour ECA
-  EXPERTISE (acquisition, cession, entrée au capital, fusion), toujours pour un
-  camp : grille d'analyse, revue de la data room et des contrats clés, passif
-  latent, rapport de DD avec cotation des risques et traduction en instructions
-  de négociation (prix, conditions, garanties). Déclencher sur : due diligence,
-  DD, audit juridique, audit d'acquisition, audit fiscal de cible, revue de
-  passif, data room, rapport de DD, vendor due diligence.
-  NE PAS utiliser pour rédiger la GAP (→ gap), le protocole ou la lettre
-  d'intention (→ protocole-cession), une cession de fonds (→ cession-fonds),
-  une question de droit sans cible (→ consultation-juridique) ou un seul contrat
-  (→ analyse-contrat).
+description: "Audit de due diligence juridique, fiscal et social d'une cible pour ECA EXPERTISE (acquisition, cession, entrée au capital, fusion), toujours pour un camp : grille d'analyse, revue de la data room et des contrats clés, passif latent, rapport de DD avec cotation des risques et traduction en instructions de négociation (prix, conditions, garanties). Déclencher sur : due diligence, DD, audit juridique, audit d'acquisition, audit fiscal de cible, revue de passif, data room, rapport de DD, vendor due diligence. NE PAS utiliser pour rédiger la GAP (→ gap), la lettre d'intention (→ lettre-intention), le protocole de cession de titres (→ protocole-cession), le compromis ou l'acte de cession de fonds (→ cession-fonds), une question de droit sans cible (→ consultation-juridique) ou un seul contrat (→ analyse-contrat)."
 ---
 
 # Skill : Due diligence juridique et fiscale — ECA EXPERTISE
@@ -60,8 +49,9 @@ qui le fonde (référence de la pièce).
   automatique en cas de changement de contrôle
 
 ### Fiscal
-- Déclarations IS des 3 dernières années — cohérence
-- Redressements fiscaux en cours ou prescrits depuis moins de 3 ans
+- Déclarations IS des exercices non prescrits — cohérence (délai de reprise
+  lu à la source dans le LPF, y compris les cas de délai allongé)
+- Redressements fiscaux en cours ou récents
 - TVA : régularisations en cours, rappels potentiels
 - Dividendes distribués : régularité, base légale
 - PV latentes sur actifs
@@ -119,12 +109,15 @@ Chaque risque de la synthèse est traduit, dans le rapport, en **instruction de
 négociation** : ajustement du prix, condition suspensive, déclaration
 spécifique, garantie spécifique sans franchise, séquestre. La rédaction et le
 calibrage des garanties relèvent du skill `gap` (avec la même posture), les
-conditions et le prix du skill `protocole-cession`. Ne pas rédiger ici de
-clauses de garantie concurrentes.
+conditions et le prix du skill `protocole-cession` (titres) ou `cession-fonds`
+(fonds). Ne pas rédiger ici de clauses de garantie concurrentes. Si la DD
+révèle un écart avec la lettre d'intention signée (prix, périmètre,
+conditions), le signaler et renvoyer à `lettre-intention` pour mesurer ce qui
+engage déjà les parties.
 
 Data room incomplète : lister précisément les zones non documentées, les
 signaler dans le résumé (« DD partielle — zones non documentées : [...] ») et
-demander les compléments avant la signature de la lettre d'intention.
+demander les compléments avant la signature du protocole ou du compromis.
 
 ## EXEMPLE — Rapport DD bien formé (extrait)
 
@@ -154,7 +147,7 @@ demander les compléments avant la signature de la lettre d'intention.
 
 Valider mentalement chaque point avant d'envoyer la réponse :
 
-- [ ] Toutes les références citées vérifiées via MCP Légifrance (voir annexe en fin de skill)
+- [ ] Toutes les références citées vérifiées à la source primaire en vigueur (socle § 2 et § 3)
 - [ ] Zones d'incertitude explicitement balisées avec ⚠️ INCERTAIN
 - [ ] La conclusion répond directement et précisément à la question posée
 - [ ] Niveau de risque justifié par un argumentaire (pas seulement affiché)
@@ -170,6 +163,3 @@ Valider mentalement chaque point avant d'envoyer la réponse :
 - [ ] Données de la data room manquantes signalées explicitement
 
 **Si un seul item n'est pas validé → ne pas livrer. Reprendre la phase concernée.**
-
----
-

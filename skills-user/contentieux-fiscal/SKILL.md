@@ -1,16 +1,6 @@
 ---
 name: contentieux-fiscal
-description: >
-  Skill ECA EXPERTISE pour toute procédure de défense fiscale : réponse à
-  proposition de rectification, réclamation contentieuse, mémoire hiérarchique,
-  saisine de la Commission des impôts directs (CID), transaction fiscale,
-  recours juridictionnel (TA, CAA, CE). Déclencher sur : contrôle fiscal,
-  vérification de comptabilité, ESFP, proposition de rectification, redressement,
-  réclamation, Commission des impôts, contentieux fiscal, défense fiscale,
-  mémoire en réponse, provision déductible, chef de redressement, pénalités
-  fiscales, manquement délibéré, abus de droit, transaction.
-  NE PAS utiliser pour des questions de droit fiscal pur sans procédure en cours
-  (→ consultation-juridique).
+description: "Skill ECA EXPERTISE pour toute procédure de défense fiscale : réponse à proposition de rectification, réclamation contentieuse, mémoire hiérarchique, saisine de la Commission des impôts directs (CID), transaction fiscale, recours juridictionnel (TA, CAA, CE). Déclencher sur : contrôle fiscal, vérification de comptabilité, ESFP, proposition de rectification, redressement, réclamation, Commission des impôts, contentieux fiscal, défense fiscale, mémoire en réponse, provision déductible, chef de redressement, pénalités fiscales, manquement délibéré, abus de droit, transaction. NE PAS utiliser pour des questions de droit fiscal pur sans procédure en cours (→ consultation-juridique)."
 ---
 
 # Skill : Contentieux fiscal — ECA EXPERTISE
@@ -322,7 +312,7 @@ VI. CALENDRIER PROCÉDURAL
 
 Valider mentalement chaque point avant d'envoyer la réponse :
 
-- [ ] Toutes les références citées vérifiées via MCP Légifrance (voir annexe en fin de skill)
+- [ ] Toutes les références citées vérifiées à la source primaire en vigueur (socle § 2 et § 3)
 - [ ] Zones d'incertitude explicitement balisées avec ⚠️ INCERTAIN
 - [ ] La conclusion répond directement et précisément à la question posée
 - [ ] Niveau de risque justifié par un argumentaire (pas seulement affiché)
@@ -339,4 +329,3 @@ Valider mentalement chaque point avant d'envoyer la réponse :
 **Si un seul item n'est pas validé → ne pas livrer. Reprendre la phase concernée.**
 
 ---
-

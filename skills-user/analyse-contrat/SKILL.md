@@ -1,17 +1,6 @@
 ---
 name: analyse-contrat
-description: >
-  Skill ECA EXPERTISE pour toute analyse, relecture, rédaction ou sécurisation
-  d'un document contractuel : contrat, convention, bail, CGV, pacte, NDA, MOU,
-  lettre de mission, protocole, acte de cession, garantie. Déclencher dès qu'un
-  document contractuel est fourni ou qu'une clause doit être analysée ou rédigée.
-  Mots-clés : analyser, relire, vérifier, sécuriser, rédiger, améliorer un contrat,
-  une clause, un accord, un avenant.
-  NE PAS utiliser si : la demande est une consultation de droit pur sans document
-  fourni (→ consultation-juridique), si un acte de droit des sociétés doit être
-  créé de zéro (→ redaction-acte), ou si le document est un pacte d'associés
-  (→ pacte-associes), un protocole ou une cession de titres (→ protocole-cession),
-  une GAP (→ gap) ou une cession de fonds (→ cession-fonds).
+description: "Skill ECA EXPERTISE pour toute analyse, relecture, rédaction ou sécurisation d'un document contractuel : contrat, convention, bail, CGV, pacte, NDA, MOU, lettre de mission, protocole, acte de cession, garantie. Déclencher dès qu'un document contractuel est fourni ou qu'une clause doit être analysée ou rédigée. Mots-clés : analyser, relire, vérifier, sécuriser, rédiger, améliorer un contrat, une clause, un accord, un avenant. NE PAS utiliser si : la demande est une consultation de droit pur sans document fourni (→ consultation-juridique), si un acte de droit des sociétés doit être créé de zéro (→ redaction-acte), ou si le document est un pacte d'associés (→ pacte-associes), un protocole ou une cession de titres (→ protocole-cession), une GAP (→ gap) ou une cession de fonds (→ cession-fonds)."
 ---
 
 # Skill : Analyse contractuelle — ECA EXPERTISE
@@ -231,7 +220,7 @@ ayant le périmètre le plus proche. »
 
 Valider mentalement chaque point avant d'envoyer la réponse :
 
-- [ ] Toutes les références citées vérifiées via MCP Légifrance (voir annexe en fin de skill)
+- [ ] Toutes les références citées vérifiées à la source primaire en vigueur (socle § 2 et § 3)
 - [ ] Zones d'incertitude explicitement balisées avec ⚠️ INCERTAIN
 - [ ] La conclusion répond directement et précisément à la question posée
 - [ ] Niveau de risque justifié par un argumentaire (pas seulement affiché)
@@ -246,4 +235,3 @@ Valider mentalement chaque point avant d'envoyer la réponse :
 **Si un seul item n'est pas validé → ne pas livrer. Reprendre la phase concernée.**
 
 ---
-

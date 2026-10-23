@@ -1,18 +1,6 @@
 ---
 name: holding-apport
-description: >
-  Création d'une holding et apport de titres (ou de fonds) pour ECA EXPERTISE :
-  choix de l'opération (apport, apport-cession, cession à soi-même / OBO),
-  report d'imposition 150-0 B ter, commissaire aux apports, traité d'apport,
-  statuts de la holding, nomination de la holding comme dirigeante, conventions
-  d'animation ou de prestations, régime mère-fille et intégration, suivi annuel
-  du report. Déclencher sur : holding, apport de titres, apport en nature,
-  apport-cession, 150-0 B ter, traité d'apport, commissaire aux apports, holding
-  présidente, holding animatrice, convention d'animation, management fees,
-  filialisation, OBO, réinvestissement, attestation de report.
-  NE PAS utiliser en phase exploratoire sans opération choisie
-  (→ strategie-patrimoniale), pour un pur chiffrage (→ calcul-plus-value) ou
-  pour un apport d'immeuble isolé sans holding (→ consultation-juridique).
+description: "Création d'une holding et apport de titres (ou de fonds) pour ECA EXPERTISE : choix de l'opération (apport, apport-cession, cession à soi-même / OBO), report d'imposition 150-0 B ter, commissaire aux apports, traité d'apport, statuts de la holding, nomination de la holding comme dirigeante, conventions d'animation ou de prestations, régime mère-fille et intégration, suivi annuel du report. Déclencher sur : holding, apport de titres, apport en nature, apport-cession, 150-0 B ter, traité d'apport, commissaire aux apports, holding présidente, holding animatrice, convention d'animation, management fees, filialisation, OBO, réinvestissement, attestation de report. NE PAS utiliser en phase exploratoire sans opération choisie (→ strategie-patrimoniale), pour un pur chiffrage (→ calcul-plus-value) pour un apport d'immeuble isolé sans holding (→ consultation-juridique) ou pour un apport partiel d'actif d'une branche d'activité par une société (→ restructurations)."
 ---
 
 # Holding et apport — ECA EXPERTISE
@@ -34,6 +22,13 @@ remonter de la trésorerie, structurer un groupe, désigner une holding
 dirigeante. L'objectif conditionne l'outil ; s'il n'est pas tranché, renvoyer
 vers `strategie-patrimoniale`.
 
+Frontière : ce skill traite l'apport par une **personne physique** (titres, ou
+fonds d'une entreprise individuelle) et l'apport en nature isolé. Lorsqu'une
+**société** apporte une branche d'activité à une filiale (filialisation par
+apport partiel d'actif, régime des scissions, CGI art. 210 B), ou lorsqu'une
+fusion ou une TUP est envisagée pour simplifier le groupe, basculer vers
+`restructurations`.
+
 ## Phase 1 — Données
 
 Ouverture du dossier (socle § 1). Collecter : capital et détention de la société
@@ -53,7 +48,7 @@ l'apporteur (titres communs → consentement), démembrements, garanties bancair
 | Commissaire aux apports | Obligation ou dispense selon la forme et les seuils en vigueur ; responsabilité des associés en cas de dispense | C. com. L. 223-9 (SARL), L. 225-147 (SA, SAS par renvoi), textes réglementaires des seuils |
 | Agrément et préemption | Apport = mutation soumise aux clauses statutaires et au pacte | Statuts et pacte de la société apportée |
 | Droits d'enregistrement | Apport pur et simple / à titre onéreux (prise en charge de passif) | CGI art. 809 et 810 |
-| Holding dirigeante | Personne morale présidente ou gérante selon la forme ; représentant ; responsabilité ; marchés publics et qualifications | C. com. L. 227-7 (SAS) ; impossibilité pour une personne morale d'être gérante de SARL — vérifier |
+| Holding dirigeante | Personne morale présidente de SAS possible ; représentant ; responsabilité ; marchés publics et qualifications. La SARL est gérée par une ou plusieurs personnes physiques : une holding ne peut pas en être gérante | C. com. L. 227-7 (SAS) ; L. 223-18 (SARL, vérifié 23/10/2026) |
 | Remontée de dividendes | Régime mère-fille (taux de détention, conservation), quote-part de frais et charges ; intégration fiscale | CGI art. 145 et 216 ; art. 223 A s. |
 | Holding animatrice | Critères d'animation (Dutreil, IFI, PV) ; convention d'animation et prestations facturées distinctes | Jurisprudence Cass. com. et CE ; BOFiP ; base Positions ECA |
 | Conventions intragroupe | Prix de marché, conventions réglementées, TVA des prestations | C. com. conventions réglementées ; CGI art. 57 si international |
