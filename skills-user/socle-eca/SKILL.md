@@ -139,6 +139,35 @@ Règles d'usage :
 - Si une ressource attendue manque : le signaler dans le livrable
   (« Ressource absente : [objet] ») et poursuivre par sources primaires.
 
+### 4 bis. Corpus documentaire du dépôt — à consulter **réflexivement**
+
+Le dépôt contient, en plus des modèles d'actes, un corpus de doctrine et de
+formation. Il se repère par son **titre**, pas par un chemin. Dès que le sujet
+d'une demande y correspond : rechercher le document, en lire **intégralement la
+partie pertinente**, et l'exploiter (analyse, pièges, cas pratiques, références
+à vérifier). Mentionner dans la réponse ce qui en a été tiré.
+
+| Document (titre à rechercher) | Contenu | À mobiliser pour |
+|---|---|---|
+| Dossier **DUTREIL 2026** (document maître, checklists d'engagement et de transmission, index des sources, note Cass. com. 28/05/2026 sur la trésorerie excédentaire) | Régime Dutreil après la LF 2026, formules types, pièces, calendrier | Toute transmission d'entreprise à titre gratuit, holding animatrice, trésorerie excédentaire |
+| **Actualités juridiques et fiscales 2026 — gestion de patrimoine** (Royal Formation, Henry Royal) | Fiches chronologiques LF et LFSS 2026, jurisprudence CE / CAA / Cass. du 1er semestre 2026 (150-0 B ter, Dutreil, démembrement, indivision, IFI, plus-values) | **Vérifier systématiquement** si le sujet y est traité, pour toute question patrimoniale ou fiscale ; repérer les décisions récentes à lire ensuite à la source |
+| **Démembrement de l'immobilier d'entreprise** (ouvrage en 11 parties, juillet 2023) | Acquisition démembrée, valorisation des droits, cession d'usufruit, sécurisation fiscale, cas pratiques, annexes | Démembrement d'immeuble professionnel, cession temporaire d'usufruit, OBO, SCI à l'IS — **antérieur aux LF 2025 et 2026 : revérifier chaque règle** |
+| **Revue Fiduciaire — L'essentiel du patrimoine privé**, chapitres 5 et 6 | Protection du mineur par ses représentants ; opérations patrimoniales des mineurs (vente, apport, emprunt, vote, assurance-vie) | Donation à un mineur, mineur associé de SCI ou de société, actes de disposition et autorisation du juge |
+| **Modules AUREP** (SCI, usufruit 13-5°, rétroplanning de transmission, usufruit de droits sociaux, holdings, actualités patrimoniales, Dutreil, immobilier, outils civils) | Supports de formation thématiques | Le sujet du module ; complément de raisonnement |
+| **Résidence fiscale des particuliers 2026** | Domicile fiscal, non-résidents, conventions, exit tax | Mobilité internationale, non-résidents |
+| **Guide du régime social des locations meublées** (juillet 2026) | Affiliation sociale LMNP / LMP | Cotisations sociales des loueurs en meublé |
+
+Règles :
+- Ces documents sont des **sources secondaires** : chaque règle ou décision
+  qu'on en tire est vérifiée à la source primaire avant d'être citée.
+- Ils datent : comparer leur date à celle des textes en vigueur (LF, LFSS).
+- Écart entre un document du corpus et la source primaire : retenir la source
+  primaire et **signaler l'écart à Yoann** (ex. relevé le 23/10/2026 : le dossier
+  Dutreil 2026 rattache la réforme à l'« art. 23 » de la LF 2026, Légifrance la
+  rattache à l'art. 8 de la loi n° 2026-103).
+- Nouveau document ajouté au dépôt : il est trouvé par la recherche ; s'il
+  s'agit d'un corpus durable, proposer à Yoann de l'ajouter à ce tableau.
+
 ---
 
 ## 5. Pièges datés — alarmes, pas valeurs de calcul
