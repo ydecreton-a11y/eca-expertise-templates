@@ -45,7 +45,7 @@ Ne retenir que des éléments datés de la période couverte, avec référence e
 
 ## Formats programmés
 
-### A. Lundi — post LinkedIn ECA (relecture par Magalie)
+### A. Lundi — post LinkedIn ECA (relecture par Yoann)
 - Période : 7 derniers jours ; à défaut d'actualité forte, angle de fond utile
   aux dirigeants de PME.
 - Thèmes : transmission, fiscalité, droit des sociétés, restructuration,
@@ -55,8 +55,8 @@ Ne retenir que des éléments datés de la période couverte, avec référence e
   4 à 6 hashtags ; ton professionnel accessible.
 - Toute référence citée vérifiée (checker) avant envoi ; aucun conseil
   individualisé.
-- Livraison : envoi à Magalie pour relecture avant publication (le canal et
-  l'adresse sont ceux de la tâche programmée).
+- Livraison : envoi à Yoann seul pour relecture ; il transmet lui-même le post
+  à la personne qui publie. Jamais d'envoi direct à un tiers.
 
 ### B. Mercredi — veille interne et slides Gamma
 - Période : 7 derniers jours ; sources dans l'ordre de la phase 1.
