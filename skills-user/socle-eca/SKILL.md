@@ -3,12 +3,14 @@ name: socle-eca
 description: >
   Socle commun de tous les skills ECA EXPERTISE (remplace « shared ») : ouverture
   de dossier, carte des connecteurs (quel besoin → quel outil), règles de
-  vérification, pièges datés, standard de rédaction M&A international, charte et
-  méthode Word ECA, accès au dépôt de modèles, garde-fous (pseudonymisation,
-  périmètre, confidentialité). Chargé automatiquement par tout skill métier ECA.
-  Déclencher sur : socle, shared, référentiel ECA, charte, méthode Word, carte
-  des connecteurs, pièges fiscaux, accès dépôt. NE PAS utiliser seul pour
-  répondre à une question de fond : il équipe les autres skills.
+  vérification, pièges datés, standard de rédaction M&A international, corpus
+  documentaire du dépôt (Dutreil 2026, Royal Formation, démembrement de
+  l'immobilier d'entreprise, Revue Fiduciaire, AUREP), charte et méthode Word ECA,
+  garde-fous (pseudonymisation, périmètre, confidentialité). Chargé automatiquement
+  par tout skill métier ECA. Déclencher sur : socle, shared, référentiel ECA,
+  charte, méthode Word, carte des connecteurs, pièges fiscaux, corpus, Royal
+  Formation, accès dépôt. NE PAS utiliser seul pour répondre à une question de
+  fond : il équipe les autres skills.
 ---
 
 # Socle ECA EXPERTISE
@@ -35,7 +37,9 @@ pièges (§ 5), datée et sourcée, qui sert d'alarme et doit être revérifiée
 5. Données comptables→ Pennylane si le chiffre conditionne la réponse
                        (balance, capitaux propres, comptes courants, résultat).
 6. Positions ECA     → skill positions-eca (base Notion « 📌 Positions ECA »).
-7. Annoncer en une ligne : « Suite du dossier X — [dernier état] » ou
+7. Corpus            → si le sujet est couvert par le corpus du dépôt (§ 4 bis),
+                       le lire avant d'analyser.
+8. Annoncer en une ligne : « Suite du dossier X — [dernier état] » ou
                        « Nouveau dossier ».
 ```
 
@@ -73,6 +77,7 @@ change). Si un outil est indisponible, le dire et passer au suivant.
 | Mails, pièces, agenda | Microsoft 365 (brouillons uniquement, jamais d'envoi sans accord) | — |
 | Positions du cabinet, veille, consultations | Notion | — |
 | Slides de veille | Gamma | — |
+| Doctrine et formation internes (Dutreil 2026, Royal Formation, démembrement, AUREP…) | Dépôt GitHub (§ 4 bis) | Source primaire |
 
 Identifiants Notion (les vérifier par une recherche si une requête échoue) :
 - Positions ECA : collection `6dc1e530-7996-4a62-b5b6-b378b4c8f204`
@@ -111,18 +116,20 @@ Identifiants Notion (les vérifier par une recherche si une requête échoue) :
 
 ## 4. Accès au dépôt de modèles et au corpus
 
-Dépôt : `ydecreton-a11y/eca-expertise-templates`.
+Dépôt : `ydecreton-a11y/eca-expertise-templates` (public).
 
 **Méthode** : cloner le dépôt (copie légère, une seule fois par session), puis
-**rechercher** le modèle pertinent par type d'acte et par mots-clés — ne jamais
+**rechercher** le document pertinent par type d'acte, par titre et par
+mots-clés — ne jamais
 se fier à un chemin écrit dans un skill. Lister le contenu réel du dossier
 concerné avant de choisir.
 
 ```
-Accès : clone authentifié de la session (dépôt rattaché) ; à défaut, clone
-        public. Si aucun accès : le dire, demander le fichier à Yoann.
+Accès : clone de la session (dépôt rattaché) ; à défaut, clone public.
+        Si aucun accès : le dire, demander le fichier à Yoann.
 Recherche : lister les dossiers, puis filtrer par nom de fichier et par contenu
-        (extraction texte des .docx/.pdf) sur le type d'acte demandé.
+        (extraction texte des .docx/.pdf ; reconnaissance de texte si PDF scanné ;
+        conversion préalable des .doc).
 ```
 
 Règles d'usage :
@@ -133,9 +140,6 @@ Règles d'usage :
   client (erreur type relevée : article au nom d'un tiers resté par copier-coller).
 - Avant usage, vérifier toutes les références légales du modèle (règle
   permanente) : signaler tout écart et proposer la clause corrigée.
-- Modules de formation (AUREP, Dutreil 2026, Royal Formation, sources
-  documentaires) : rechercher dans le dépôt le module couvrant le sujet ; il
-  complète, il ne remplace jamais la vérification à la source primaire.
 - Si une ressource attendue manque : le signaler dans le livrable
   (« Ressource absente : [objet] ») et poursuivre par sources primaires.
 
@@ -185,7 +189,7 @@ Si la source a changé : corriger, signaler à Yoann, mettre à jour cette liste
 | Information des salariés (cession titres / fonds) | Champ indexé sur l'absence d'obligation de CSE « attributions élargies » ; délai d'un mois ; amende civile réduite. | 23/10/2026 — loi 2026-403 | C. com. art. L. 23-10-1 et L. 141-23 |
 | Recodification de la TVA | Les articles TVA du CGI (ex. art. 257 bis) sont abrogés à effet différé au **01/01/2027** par l'ordonnance n° 2025-1247 (transfert au Code des impositions sur les biens et services). Pour tout livrable couvrant une opération à cheval sur 2027 : citer la référence applicable à la date de l'opération, et la nouvelle référence en regard. | 23/10/2026 | Ordonnance n° 2025-1247 du 17/12/2025 ; statut de l'article cité à la date de l'opération |
 | Délais de réclamation fiscale | R*196-1 LPF modifié par le décret n° 2026-692 (en vigueur au 30/07/2026) ; après une procédure de reprise, le contribuable dispose d'un délai **égal à celui de l'administration** (R*196-3). | 23/10/2026 | LPF R*196-1 et R*196-3 |
-| Pacte Dutreil | Régime modifié par la LF 2026 (art. 8) : lire 787 B dans la version à la date de transmission (biens exclus, détention indirecte, durées). Donation avec réserve d'usufruit : droits de vote de l'usufruitier **statutairement limités à l'affectation des bénéfices**. | 23/10/2026 — version au 21/02/2026 | CGI art. 787 B et 787 C ; module Dutreil du dépôt |
+| Pacte Dutreil | Régime modifié par la LF 2026 (art. 8) : lire 787 B dans la version à la date de transmission (biens exclus, détention indirecte, durées). Donation avec réserve d'usufruit : droits de vote de l'usufruitier **statutairement limités à l'affectation des bénéfices**. | 23/10/2026 — version au 21/02/2026 | CGI art. 787 B et 787 C ; dossier Dutreil 2026 du dépôt |
 | Report 150-0 B ter + quotient | Jurisprudence divergente : **présenter les deux thèses**, recommander un rescrit, ne jamais écrire « acquis » ni « inapplicable ». | Position ECA | Base Positions ECA + checker |
 | Contribution différentielle (CDHR) | Elle figure à l'**art. 224 CGI** — l'« art. 150-0 F ter » cité dans les anciennes versions des skills **n'existe pas**. Le texte traite spécifiquement les plus-values 150-0 B ter dont le report expire (II 6° et IV A) et les revenus exceptionnels (« quart »). Chiffrer la CDHR dans chaque scénario comparé (cession directe / apport-cession / purge) avant toute conclusion. | 23/10/2026 — version au 21/02/2026 (LF 2026 art. 2) | CGI art. 224 |
 
@@ -242,8 +246,8 @@ avec un élément susceptible de ré-identifier une personne ou une société.
 
 ### 7.2 Confidentialité
 Ne pas copier de données client dans un outil tiers non nécessaire, ni dans le
-dépôt public. Pennylane et Microsoft 365 en lecture ; aucune écriture, aucun envoi
-sans accord exprès.
+dépôt (public). Pennylane et Microsoft 365 en lecture ; aucune écriture, aucun
+envoi sans accord exprès.
 
 ### 7.3 Périmètre d'intervention
 Si la demande émane d'un prospect ou d'un tiers non client du cabinet (proche,
