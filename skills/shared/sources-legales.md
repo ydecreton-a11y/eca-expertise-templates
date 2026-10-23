@@ -1,3 +1,5 @@
+> ⚠️ OBSOLÈTE depuis le 23/10/2026 — conservé pour les automatisations qui le lisent encore. Source à jour : skill `socle-eca` (skills-user/socle-eca/SKILL.md). Ne pas utiliser les taux ci-dessous sans vérification à la source.
+
 # Sources juridiques et fiscales — Référentiel partagé ECA EXPERTISE
 
 > ⚠️ CE FICHIER EST LA SOURCE CANONIQUE — hébergé sur GitHub.

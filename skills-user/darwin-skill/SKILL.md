@@ -77,7 +77,8 @@ Annoter `dry_run` dans results.tsv — ne jamais sauter la dimension 8 entièrem
 
 ```
 1. Confirmer le périmètre :
-   - Tous les skills → scanner /mnt/skills/user/*/SKILL.md
+   - Tous les skills → lister les skills installés (dossier des skills de la session)
+     et les comparer au dépôt
    - Skills ciblés → liste fournie par l'utilisateur
 2. Créer une branche git : auto-optimize/YYYYMMDD-HHMM
 3. Initialiser results.tsv si inexistant
@@ -239,7 +240,7 @@ timestamp	commit	skill	old_score	new_score	status	dimension	note	eval_mode
 ```
 
 Colonnes : `eval_mode` = `full_test` (sous-agent) ou `dry_run` (simulation mentale).
-Emplacement : `.claude/skills/auto-optimize-results.tsv`
+Emplacement : `results.tsv` à la racine du dossier de travail des skills (versionné)
 
 ---
 
@@ -277,29 +278,38 @@ Par priorité décroissante (ne traiter qu'une priorité par round) :
 4. **Taille raisonnable** — le SKILL.md optimisé ne doit pas dépasser 150% de la taille originale
 5. **Tout doit être rollbackable** — utiliser git revert, jamais reset --hard
 6. **Indépendance de l'évaluateur** — la dimension 8 ne peut jamais être évaluée dans le même contexte que la modification
-7. **Respecter l'écosystème ECA** — charte graphique, workflow validation, MCP Légifrance obligatoire, hallucination-checker
+7. **Respecter l'écosystème ECA** — socle-eca (standard de rédaction, charte, connecteurs), workflow plan → validation → rédaction → vérification, hallucination-checker
 
 ---
 
 
-## Ressources et URLs
+## Ressources, persistance et vérification
 
-### Repository ECA EXPERTISE
-Base GitHub : `https://raw.githubusercontent.com/ydecreton-a11y/eca-expertise-templates/main/`
-Skills : `/mnt/skills/user/[skill-name]/SKILL.md`
-Résultats : `.claude/skills/auto-optimize-results.tsv`
+### Source de vérité
+Les skills installés dans claude.ai sont des **copies synchronisées** : les
+modifier dans la session ne change rien au compte. La source de vérité est le
+dépôt `ydecreton-a11y/eca-expertise-templates`, dossier des skills utilisateur.
+Toute optimisation :
+1. part de la version **installée** (celle réellement utilisée) — comparer avec
+   le dépôt et signaler toute divergence avant de commencer ;
+2. est travaillée dans une copie versionnée (git) ;
+3. est livrée sous forme de fichiers SKILL.md + diff + journal des scores, à
+   pousser sur le dépôt (branche dédiée) puis à réinstaller dans claude.ai.
 
-### Vérification des skills via MCP
-Pour vérifier si une référence dans un skill est correcte, utiliser MCP Légifrance :
-```
-rechercher_code(code_name="Code général des impôts", search="[article]")
-rechercher_jurisprudence_administrative(search="[numéro]")
-```
+Journal : `results.tsv` à la racine du dossier de travail, versionné avec les
+skills.
 
-### Fetch shared avant toute session
-```
-web_fetch("https://raw.githubusercontent.com/ydecreton-a11y/eca-expertise-templates/main/skills/shared/sources-legales.md")
-```
+### Contrôles propres à l'écosystème ECA
+- **Aucune donnée volatile** (taux, seuil, délai chiffré, numéro de
+  jurisprudence récente, chemin de fichier, syntaxe d'appel d'outil) ne doit
+  apparaître dans un skill métier : uniquement dans la liste datée des pièges
+  du `socle-eca`. Toute occurrence est un défaut de la dimension 5.
+- **Toute référence juridique** figurant dans un skill (y compris dans un
+  exemple) est vérifiée comme dans un livrable (legal-hallucination-checker).
+- **Exemples chiffrés** : n'en garder que la forme ; une erreur dans un exemple
+  est reproduite par le modèle.
+- **Doublons** : un même bloc dans plusieurs skills est un défaut de la
+  dimension 7 → le déplacer dans le socle.
 
 ## Modes d'utilisation
 

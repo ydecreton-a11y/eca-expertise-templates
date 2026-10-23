@@ -6,14 +6,14 @@ description: >
   (anti-dérive entre conversations) et propose l'ajout de nouvelles positions
   APRÈS chaque consultation tranchée (enrichissement continu). Déclencher sur :
   toute activation d'un skill métier ECA (consultation-juridique, calcul-plus-value,
-  contentieux-fiscal, diagnostic-transmission, patrimonial-structuring, analyse-contrat,
-  due-diligence-juridique, redaction-acte, veille-juridique, note-information-client).
+  contentieux-fiscal, strategie-patrimoniale, analyse-contrat, due-diligence-juridique,
+  redaction-acte, pacte-associes, juridique-annuel, holding-apport,
+  dissolution-liquidation-tup, cession-fonds, protocole-cession, gap,
+  veille-juridique, note-information-client) et dès qu'un cas similaire à une
+  position enregistrée est évoqué (prospect, client, dossier).
   NE PAS utiliser comme skill standalone — c'est un composant transverse activé
   automatiquement par les autres skills.
 ---
-> **📋 RESSOURCES** : Pour identifier les modules AUREP, PDF et dossiers
-> pertinents, consulter sources-legales.md **section 9 (Index des ressources GitHub)**.
-
 
 # Skill : positions-eca
 
@@ -24,17 +24,7 @@ Déclencher ce skill **automatiquement** dans deux situations :
 ### A. AVANT tout livrable juridique/fiscal (mode CONSULTATION)
 Avant de répondre à toute question juridique ou fiscale, **consulter la base Notion "📌 Positions ECA"** pour vérifier si le sujet est déjà couvert par une position validée.
 
-**Déclenchement** : dès qu'un des skills suivants est activé :
-- consultation-juridique
-- calcul-plus-value
-- contentieux-fiscal
-- diagnostic-transmission
-- patrimonial-structuring
-- analyse-contrat
-- due-diligence-juridique
-- redaction-acte
-- veille-juridique
-- note-information-client
+**Déclenchement** : dès qu'un skill métier ECA est activé (liste dans la description), et dès qu'un cas évoqué ressemble à une position ou à une idée de montage enregistrée — **quel que soit son statut** (✅ Active ou 🆕 Proposition) : Yoann veut que les montages enregistrés soient mobilisés spontanément.
 
 ### B. APRÈS tout livrable juridique/fiscal (mode ENRICHISSEMENT)
 Après avoir livré une consultation, un calcul, ou une analyse, **proposer l'ajout** de toute position nouvelle qui a été tranchée dans le livrable.
@@ -47,7 +37,7 @@ Après avoir livré une consultation, un calcul, ou une analyse, **proposer l'aj
 
 ```
 1. Identifier les mots-clés du sujet demandé par Yoann
-   (ex: "PFU", "150-0 B ter", "Dutreil", "quasi-usufruit", "LMNP (voir aussi AUREP M11 patrimoine immobilier)", etc.)
+   (ex: "PFU", "150-0 B ter", "Dutreil", "quasi-usufruit", "LMNP", etc.)
 
 2. Rechercher dans la base Notion Positions ECA :
    notion-search(query="[mots-clés du sujet]",
@@ -168,6 +158,9 @@ Si deux positions actives se contredisent (détecté en Phase 1 ou en cours de l
 ---
 
 ## Identifiants Notion
+
+⚠️ Ne pas confondre avec la base Veille (`f201a44e…`), parfois citée à tort comme base des positions.
+
 
 | Ressource | ID |
 |-----------|-----|

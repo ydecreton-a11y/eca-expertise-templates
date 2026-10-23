@@ -1,85 +1,86 @@
 # CLAUDE.md — Manifeste d'orchestration ECA EXPERTISE
 
-> Ce fichier est un index de routage. Il ne contient aucune donnée métier.
-> Chaque information vit à un seul endroit ; ce manifeste y pointe.
+> Index de routage. Aucune donnée métier volatile (taux, seuil, délai, chemin) :
+> chaque information vit à un seul endroit, ce manifeste y pointe.
+> Dernière mise à jour : 23/10/2026 — refonte de l'écosystème (socle unique).
 
 ---
 
-## 1. Carte de l'écosystème (14 skills + 1 référentiel)
+## 1. Carte de l'écosystème (24 skills)
 
-| Skill | Rôle en une ligne |
-|-------|------------------|
-| `router-eca` | Point d'entrée : qualifie la demande, active le bon skill, reformule si ambigu |
-| `consultation-juridique` | Analyse de fond juridique ou fiscale |
-| `redaction-acte` | Rédaction/modification d'actes de droit des sociétés ou civil |
-| `analyse-contrat` | Relecture, sécurisation, rédaction contractuelle |
-| `calcul-plus-value` | Calcul PV immobilière, mobilière, professionnelle, IS, report/sursis |
-| `contentieux-fiscal` | Défense fiscale : réponse à PR, réclamation, CID, TA/CAA/CE |
-| `diagnostic-transmission` | Bilan patrimonial exploratoire avant structuration |
-| `patrimonial-structuring` | Démembrement, quasi-usufruit, régimes matrimoniaux, successions |
-| `due-diligence-juridique` | Audit d'acquisition/cession (juridique, fiscal, social) |
-| `veille-juridique` | Synthèse de textes législatifs/réglementaires nouveaux |
-| `note-information-client` | Communication vulgarisée post-analyse pour client non-juriste |
-| `positions-eca` | Boucle rétroactive : consulte Notion AVANT, propose ajout APRÈS |
-| `legal-hallucination-checker` | Vérification MCP Légifrance de TOUTES les références citées |
-| `darwin-skill` | Optimiseur autonome de SKILL.md (scoring, hill-climbing, git) |
-| `shared` | Référentiel partagé : charte graphique, Notion, équipe, méthode DOCX, AUREP |
+| Couche | Skill | Rôle |
+|---|---|---|
+| Transverse | `socle-eca` | Ouverture de dossier, carte des connecteurs, vérification, pièges datés, standard M&A, corpus documentaire, charte Word, garde-fous |
+| Transverse | `positions-eca` | Base Notion des positions : consultée avant, enrichie après |
+| Transverse | `legal-hallucination-checker` | Vérification bloquante de 100 % des références en fin de livrable |
+| Orientation | `router-eca` | Reformulation d'intention, enchaînements de skills, codes de prompt |
+| Orientation | `prompt-builder-eca` | Fabrique les prompts Casus / Claude à partir de faits bruts |
+| Analyse | `consultation-juridique` | Analyse de fond juridique ou fiscale |
+| Analyse | `strategie-patrimoniale` | Transmission, patrimoine, donation, démembrement, régimes, successions |
+| Analyse | `calcul-plus-value` | Chiffrage des plus-values et contributions, scénarios |
+| Analyse | `contentieux-fiscal` | Défense fiscale : rectification, recours, réclamation, juridiction |
+| Analyse | `analyse-contrat` | Analyse et sécurisation d'un contrat entre parties |
+| Analyse | `due-diligence-juridique` | Audit de cible et rapport de DD |
+| M&A à posture | `protocole-cession` | Cession de titres (SPA, LOI, cession simple) |
+| M&A à posture | `gap` | Garantie d'actif et de passif |
+| M&A à posture | `cession-fonds` | Cession de fonds de commerce ou artisanal |
+| Process d'actes | `redaction-acte` | Moteur de rédaction (statuts, PV, nominations, capital) |
+| Process d'actes | `pacte-associes` | Pacte d'associés à partir des trois documents de référence |
+| Process d'actes | `juridique-annuel` | Approbation des comptes, dividendes, capitaux propres |
+| Process d'actes | `holding-apport` | Holding, apport de titres, report 150-0 B ter |
+| Process d'actes | `dissolution-liquidation-tup` | Dissolution, liquidation, TUP |
+| Sortie | `note-information-client` | Notes client, courriers, réponses aux collègues |
+| Sortie | `avocat-adverse` | Relecture par le contradicteur le plus compétent |
+| Sortie | `veille-juridique` | Veille ; post LinkedIn du lundi, veille Gamma du mercredi |
+| Outillage | `darwin-skill` | Évaluation et optimisation des skills |
+| Outillage | `pieces-pseudonymisees` | Travail sur pièces pseudonymisées |
+
+Retirés le 23/10/2026 : `shared` (→ `socle-eca`), `diagnostic-transmission` et
+`patrimonial-structuring` (→ `strategie-patrimoniale`), `devils-advocate`
+(→ `avocat-adverse`).
 
 ---
 
-## 2. Chaîne d'activation systémique
-
-Tout livrable juridique/fiscal suit cette séquence :
+## 2. Chaîne d'activation de tout livrable
 
 ```
-1. positions-eca     → Chercher position existante dans Notion (DB f201a44e)
-2. shared            → Fetch GitHub : charte, méthode DOCX, bases Notion, AUREP
-3. sources-legales   → Fetch GitHub : taux, seuils, articles, règles vérifiées
-4. Légifrance MCP    → Vérifier TOUTES les références avant citation
-5. [skill métier]    → Exécuter le livrable (plan → validation → rédaction)
-6. hallucination-checker → Vérifier TOUTES les références citées post-rédaction
-7. Proposition Notion → Ajouter nouvelle position si consultation tranchée
+1. socle-eca § 1   → ouverture du dossier (mémoire, historique, Granola, mails, Radar, Pennylane)
+2. positions-eca   → positions existantes (base Positions ECA)
+3. skill métier    → plan → validation de Yoann → recherche à la source → rédaction
+4. checker         → 100 % des références vérifiées (bloquant)
+5. positions-eca   → proposition des positions nouvellement tranchées
+6. avocat-adverse  → proposé pour tout acte engageant une partie
+7. Échéances       → signalées en fin de livrable
 ```
 
 ---
 
-## 3. Sources de vérité (un seul endroit par type de donnée)
+## 3. Sources de vérité
 
-| Donnée | Source canonique unique | Emplacement |
-|--------|----------------------|-------------|
-| Taux fiscaux, seuils, articles CGI, règles vérifiées | `sources-legales.md` | `skills/shared/sources-legales.md` sur GitHub |
-| Charte graphique, méthode DOCX, bases Notion, équipe ECA, AUREP URLs | `shared/SKILL.md` | `skills-user/shared/SKILL.md` sur GitHub |
-| Positions ECA validées | Notion | DB `f201a44e` (veille) · DB `cadd1870` (consultations) |
-| Modèles d'actes | GitHub | Dossiers `01_Statuts` à `11_Consultations` |
-| Modules AUREP | GitHub | `aurep/` (M5, M8, M10 + Royal Formation 2026 PDF) |
-| Prompt-codes ECA | GitHub | `skills-user/prompt-codes-eca.md` |
-
----
-
-## 4. Règles transverses (applicables à TOUS les skills)
-
-Ces règles vivent dans les mémoires Claude (userMemories) car elles doivent être lues
-même sans fetch GitHub. Elles ne sont PAS dupliquées dans les skills.
-
-- **Planning mode obligatoire** : plan structuré → validation Yoann → exécution
-- **Vérification Légifrance systématique** : jamais de référence de mémoire
-- **Vérification seuils fiscaux** : jamais de chiffre de mémoire → BOFiP/web_search
-- **Information Yoann → vérification** : toute position fournie en conversation = vérifier avant d'intégrer
-- **Truncation rule** : signaler immédiatement toute lecture partielle
-- **Hallucination checker** : obligatoire après TOUT livrable, sans exception
-- **SIREN reflex** : auto-lookup API entreprises dès qu'un SIREN apparaît
-- **Casus = base documentaire** : construire dessus, ne pas redoublonner
+| Donnée | Où |
+|---|---|
+| Taux, seuils, délais, articles | À la source primaire au jour du livrable (Légifrance, LibreJustice, Legal Data Hunter) — jamais dans un skill |
+| Pièges datés (alarmes) | `socle-eca` § 5 |
+| Carte des connecteurs | `socle-eca` § 2 |
+| Standard de rédaction M&A | `socle-eca` § 6 |
+| Charte et méthode Word | `socle-eca` § 8 |
+| Corpus documentaire (Dutreil 2026, Royal Formation, démembrement de l'immobilier d'entreprise, Revue Fiduciaire, AUREP) | Ce dépôt — repéré par titre, voir `socle-eca` § 4 bis |
+| Modèles et précédents d'actes | Ce dépôt (dossiers `01_` à `11_`) — trouvés par recherche, pas par chemin |
+| Positions ECA | Notion, collection `6dc1e530-7996-4a62-b5b6-b378b4c8f204` |
+| Veille | Notion, `f201a44e-556f-4420-8f61-eec1f8cb2d5a` (ne pas confondre avec la base Positions) |
+| Consultations | Notion, `cadd1870-11e1-4dfa-9298-7d5c5977f564` |
+| Skills (source) | `skills-user/` de ce dépôt, réinstallés dans claude.ai après chaque modification |
+| Codes de prompt | `skills-user/prompt-codes-eca.md` |
 
 ---
 
-## 5. Anti-patterns à éviter
+## 4. Anti-patterns
 
-- ❌ Ne jamais dupliquer un taux ou un seuil dans un skill → pointer vers `sources-legales.md`
-- ❌ Ne jamais dupliquer la charte graphique → pointer vers `shared/SKILL.md`
-- ❌ Ne jamais figer une position jurisprudentielle comme "absolue" sans arrêt CE
-- ❌ Ne jamais rédiger un acte ECA from scratch → méthode ref_sas/ref_sci
-- ❌ Ne jamais livrer sans rapport hallucination-checker
-
----
-
-*Dernière mise à jour : 10/06/2026 — Migration vers manifeste d'orchestration pur.*
+- ❌ Écrire un taux, un seuil, un délai, un chemin de fichier ou une syntaxe
+  d'outil dans un skill métier.
+- ❌ Citer une référence sans l'avoir lue à la source dans la version applicable.
+- ❌ Reprendre une donnée d'un précédent client dans un nouvel acte.
+- ❌ Mentionner un modèle ou un auteur tiers dans un livrable client.
+- ❌ Laisser un délai en « jours » non qualifié.
+- ❌ Interroger un connecteur nominatif sur une pièce pseudonymisée.
+- ❌ Livrer sans rapport du checker.
