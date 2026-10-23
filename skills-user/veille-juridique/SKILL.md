@@ -227,23 +227,28 @@ La veille n'est pas limitée aux textes législatifs. Une jurisprudence majeure
 
 ## EXEMPLE — Veille jurisprudence bien formée
 
-**CE 14 octobre 2024 n°490685 — Donation usufruit Article 13 5° CGI**
+**CE, 9 octobre 2024, n° 490685 (mentionné aux tables) — usufruit temporaire, art. 13, 5 CGI**
 
 > « **Synthèse en 3 lignes**
-> Le Conseil d'État précise que la « première cession à titre onéreux » au sens de
-> l'Art. 13, 5° CGI vise la constitution initiale de l'usufruit à titre onéreux, et
-> non la prorogation ou le démembrement préalable à titre gratuit.
-> **Impact :** la prorogation d'un usufruit préexistant (par renouvellement
-> contractuel ou par effet de la donation antérieure) ne déclenche pas la
-> qualification de revenu et reste imposable selon le régime de la PV.
-> **Applicable :** dossiers en cours et opérations futures. »
+> La « première cession » d'un usufruit temporaire, imposée selon les règles
+> dérogatoires de l'art. 13, 5 CGI, s'entend de la constitution initiale à titre
+> onéreux d'un usufruit sur un bien donné **pour une période donnée**. Une nouvelle
+> constitution pour une période ultérieure est elle-même une première cession,
+> même si elle suit une cession antérieure et que les parties la qualifient de
+> « prorogation ».
+> **Impact :** la « prorogation » onéreuse d'un usufruit temporaire ne fait pas
+> échapper au régime de l'art. 13, 5 ; le prix est imposé dans la catégorie du
+> revenu du bien.
+> **Applicable :** contentieux en cours et opérations futures. »
 
 > **Impact par profil ECA :**
 > | Profil | Impact | Urgence |
 > |--------|--------|---------|
-> | Démembrement de droits sociaux | 🟢 Sécurisation des montages prorogations | Faible |
-> | OBO avec usufruit temporaire | 🟠 Vérifier si prorogation envisagée | Modérée |
-> | Donation NP + USU temporaire | 🟢 Confirmation de l'analyse antérieure | Faible |
+> | Cession d'usufruit temporaire (SCI, titres) | 🔴 Requalification en revenu de toute « prorogation » onéreuse | Élevée |
+> | OBO ou montage avec usufruit temporaire | 🟠 Revoir les renouvellements prévus | Modérée |
+> | Donation de nue-propriété | 🟢 Hors champ (transmission à titre gratuit) | Faible |
+
+(Exemple de forme : vérifier l'arrêt et sa portée à la source avant toute reprise.)
 
 > **Action ECA :** proposition de position ECA + entrée Notion Veille + signalement des dossiers actifs concernés.
 
