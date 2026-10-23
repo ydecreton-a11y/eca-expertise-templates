@@ -258,12 +258,12 @@ La veille n'est pas limitée aux textes législatifs. Une jurisprudence majeure
 
 Valider mentalement chaque point avant d'envoyer la réponse :
 
-- [ ] Toutes les références citées vérifiées via MCP Légifrance (voir annexe en fin de skill)
+- [ ] Toutes les références citées vérifiées à la source primaire (socle § 2 et § 3)
 - [ ] Zones d'incertitude explicitement balisées avec ⚠️ INCERTAIN
 - [ ] La conclusion répond directement et précisément à la question posée
 - [ ] Niveau de risque justifié par un argumentaire (pas seulement affiché)
 - [ ] Aucune position incertaine présentée comme certaine
-- [ ] legal-hallucination-checker déclenché et score ≥ 70/100
+- [ ] legal-hallucination-checker déclenché sur 100 % des références, sans référence non vérifiée restante (bloquant)
 - [ ] Word ECA conforme au socle § 8 (corps noir ; titres d'actes noir gras)
 - [ ] Référence YD + expert-comptable signataire mentionnée
 - [ ] Date d'entrée en vigueur ≠ date de publication vérifiée
