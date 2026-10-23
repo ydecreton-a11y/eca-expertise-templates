@@ -12,79 +12,63 @@ description: >
 
 # Skill : Veille juridique et fiscale — ECA EXPERTISE
 
-## PHASE 0 — Initialisation (exécuter dans cet ordre, toujours)
+> **Socle** : charger `socle-eca` — ouverture du dossier (§ 1), carte des
+> connecteurs (§ 2), règles de vérification (§ 3), accès aux modèles (§ 4),
+> pièges datés (§ 5), standard de rédaction (§ 6), garde-fous (§ 7), Word ECA
+> (§ 8), fin de livrable (§ 9). Un output Casus collé est une base documentaire
+> à recouper (§ 3.4). Aucun taux, seuil ou délai n'est repris de mémoire.
 
-### 0a — Recherche dossier en cours
-
-Si un nom de client ou de société est mentionné dans la demande :
-
-```
-conversation_search(query="[nom exact du client ou de la société]")
-```
-
-- Si historique trouvé → lire avant d'analyser. Signaler discrètement : "Suite du dossier [client]"
-- Si aucun historique → nouveau dossier, continuer normalement
-- Si demande générique sans nom propre → pas de recherche
-
-### 0b — Vérification du périmètre
-
-La veille produit une analyse d'un texte **nouveau**. Si la demande est une
-question de fond sur le droit existant → skill consultation-juridique.
-Si le texte est connu et qu'un acte doit en découler → skill redaction-acte.
-
-### 0c — Intégration réponse Casus
-
-Si Yoann colle un output Casus dans la conversation :
-- L'utiliser comme base documentaire certifiée pour la partie CGI/BOFiP
-- Claude complète : jurisprudence Légifrance, impact profil client ECA, note Notion
-- Indiquer : "Base Casus intégrée"
-
----
-
-## PHASE 1 — Sourcing
-
-### Fetch dynamique GitHub (obligatoire avant toute vérification)
-
-Fetcher systématiquement avant d'utiliser un taux, un outil MCP ou une
-référence BOFiP :
+## PHASE 0 — Format demandé
 
 ```
-web_fetch("https://raw.githubusercontent.com/ydecreton-a11y/eca-expertise-templates/main/skills/shared/sources-legales.md")
-```
-> **📋 INDEX RESSOURCES** : Après fetch de sources-legales.md, scanner la **section 9
-> (Index des ressources GitHub)** pour identifier les modules AUREP (M1-M12),
-> dossiers (DUTREIL_2026, démembrement-immobilier-entreprise) et PDF (Royal Formation,
-> résidence fiscale UF2026) pertinents pour la demande en cours. Fetcher toute
-> ressource identifiée comme pertinente avant de commencer l'analyse.
-
+Analyse ponctuelle d'un texte ou d'une décision   → NOTE DE VEILLE (phases 1 à 5)
+Tâche programmée du lundi                         → POST LINKEDIN (§ Formats programmés A)
+Tâche programmée du mercredi                      → VEILLE INTERNE + SLIDES GAMMA (§ B)
 ```
 
-Ce fetch (2 secondes) garantit que tu travailles avec les taux et références
-à jour — pas avec des valeurs mémorisées potentiellement périmées après
-une LF. C'est la différence entre 30 % et 31,4 % de PFU.
+## PHASE 1 — Sourcing (sources primaires, jamais de mémoire)
 
-### Sources primaires (ne jamais rédiger de mémoire)
+Un texte récent peut avoir été corrigé par erratum, différé, ou attendre ses
+décrets. Ordre de consultation (socle § 2) :
+1. **JORF** : derniers journaux officiels (Légifrance) ; texte intégral, date
+   d'entrée en vigueur, dispositions transitoires.
+2. **Textes consolidés à date** (LibreJustice) : droit antérieur vs droit
+   nouveau, article par article.
+3. **Doctrine** : BOFiP (Legal Data Hunter) — instruction publiée ou attendue.
+4. **Jurisprudence** : CE, CAA, TA (Légifrance, LibreJustice) ; Cass. et CA
+   (Pourvoi, avec portée et parcours procédural) ; CJUE (OpenEU).
+5. **Union** : directives, règlements, procédures législatives (OpenEU).
+6. **Base Notion Veille** : vérifier que le sujet n'a pas déjà été traité.
 
-Un texte récent peut avoir été modifié, corrigé par erratum, ou ses décrets
-d'application pas encore publiés. Rédiger une veille sans sourcing est une
-faute méthodologique — les clients vont l'appliquer.
+Ne retenir que des éléments datés de la période couverte, avec référence exacte
+(NOR, date, numéro de décision) et lien officiel.
 
-**Sources primaires — ordre de consultation :**
+## Formats programmés
 
-1. **MCP Légifrance** (texte intégral, date d'entrée en vigueur)
-   ```
-   recherche_journal_officiel(search="[titre ou numéro]", text_types=["LOI"])
-   rechercher_code(search="[articles modifiés]", champ="NUM_ARTICLE")
-   ```
+### A. Lundi — post LinkedIn ECA (relecture par Magalie)
+- Période : 7 derniers jours ; à défaut d'actualité forte, angle de fond utile
+  aux dirigeants de PME.
+- Thèmes : transmission, fiscalité, droit des sociétés, restructuration,
+  contentieux fiscal, droit social des dirigeants.
+- Forme : accroche, contexte, 3 à 5 points lisibles, message clé, appel à
+  l'échange ; 300 à 350 mots ; signature du **cabinet** (jamais personnelle) ;
+  4 à 6 hashtags ; ton professionnel accessible.
+- Toute référence citée vérifiée (checker) avant envoi ; aucun conseil
+  individualisé.
+- Livraison : envoi à Magalie pour relecture avant publication (le canal et
+  l'adresse sont ceux de la tâche programmée).
 
-2. **BOFiP** (doctrine administrative d'application)
-   — Vérifier si une instruction a déjà été publiée
-   — `https://bofip.impots.gouv.fr/bofip/recherche.html?q=MOTS_CLES`
-
-3. **DGFiP / Impots.gouv.fr** pour formulaires et FAQ officielles
-4. **EUR-Lex** si directive européenne transposée
-
----
+### B. Mercredi — veille interne et slides Gamma
+- Période : 7 derniers jours ; sources dans l'ordre de la phase 1.
+- Filtre : impact direct sur les dossiers du cabinet et les PME clientes ;
+  écarter ce qui ne concerne que les grands groupes.
+- Pour chaque élément : titre, référence exacte et lien, ce qui change, qui est
+  concerné, action cabinet.
+- Slides Gamma (limite de cartes du plan en vigueur) : couverture, résumé,
+  décisions et textes majeurs, synthèse des actions cabinet ; identité ECA.
+- Enregistrement des entrées dans la base Notion Veille (socle § 2).
+- **Lien dossiers** : si un élément touche un dossier actif (fiche mémoire),
+  le signaler nommément à Yoann dans la synthèse.
 
 ## PHASE 2 — Analyse du texte
 
@@ -111,7 +95,7 @@ clients ECA :
 
 | Profil client | Impact du texte | Urgence | Action recommandée |
 |---------------|-----------------|---------|-------------------|
-| LMNP (voir aussi AUREP M11 patrimoine immobilier)/LMP | [impact spécifique] | 🔴/🟠/🟢 | [action] |
+| LMNP/LMP | [impact spécifique] | 🔴/🟠/🟢 | [action] |
 | Dirigeants SARL/SAS IS | [impact] | | |
 | SCI à l'IS | [impact] | | |
 | Transmission en cours | [impact] | | |
@@ -175,19 +159,18 @@ Champs à renseigner :
 ## Exemple de veille bien formée (extrait)
 
 **Synthèse en 3 lignes (bonne pratique) :**
-> "La LFSS 2026 porte le taux de CSG sur les revenus du patrimoine à 10,6%,
-> portant les prélèvements sociaux à 18,6% sur les PV mobilières et dividendes.
-> Exception : PV immobilières et revenus fonciers nus maintenus à 17,2%.
-> Applicable aux revenus perçus à compter du 1er janvier 2026."
+> "La loi n° [référence vérifiée] porte le taux de CSG sur [catégorie de
+> revenus] à [x] %, soit [y] % de prélèvements sociaux au total. Exception :
+> [catégories exclues, lues dans le texte]. Applicable [date d'effet exacte]."
+> (Exemple de forme : chaque valeur est lue dans le texte au jour de la veille.)
 
 **Impact client correctement formulé :**
-> "Dirigeants percevant des dividendes : hausse de 1,4 point de PS.
-> Sur une distribution de 200 000 €, surcoût de 2 800 €.
-> Action : vérifier si la distribution 2025 peut être avancée avant le 31/12."
+> "Dirigeants percevant des dividendes : hausse de [x] point(s).
+> Sur une distribution de [montant], surcoût de [calcul].
+> Action : [arbitrage de calendrier précis, daté]."
 
 **❌ Ce qui est insuffisant :**
 > "Les prélèvements sociaux augmentent. À surveiller pour vos clients."
-
 
 ---
 
@@ -262,38 +245,7 @@ La veille n'est pas limitée aux textes législatifs. Une jurisprudence majeure
 > | OBO avec usufruit temporaire | 🟠 Vérifier si prorogation envisagée | Modérée |
 > | Donation NP + USU temporaire | 🟢 Confirmation de l'analyse antérieure | Faible |
 
-> **Action ECA :** mise à jour AUREP M5 + skill patrimonial-structuring + entrée Notion.
-
-
----
-
-## 🛡️ PHASE FINALE — Auto-déclenchement legal-hallucination-checker
-
-⚠️ **OBLIGATOIRE — Étape non sautable.**
-
-Avant remise du livrable au client ou à Yoann, déclencher automatiquement :
-
-```
-1. Charger skill legal-hallucination-checker
-2. Extraire toutes les références citées :
-   — Articles de code (CGI, C. civ., C. com., LPF, CMF, CSS, CPI...)
-   — Jurisprudence (CE, Cass., CAA, TA, Cons. const.)
-   — BOFiP (BOI-...)
-   — Lois, ordonnances, décrets
-3. Vérifier chacune via MCP Légifrance avec au minimum 2 stratégies de recherche
-4. Produire le rapport de vérification (score /100)
-5. Décision :
-   — Si score ≥ 70 et 0 ⛔ HALLUCINATION → livrer + mentionner « Vérifié — score [N]/100 »
-   — Si score < 70 ou présence de ⛔ HALLUCINATION → NE PAS LIVRER
-     → Corriger les références fautives → relancer le checker → attendre validation Yoann
-```
-
-**Marquage final obligatoire dans le livrable :**
-> *« Vérifié via legal-hallucination-checker — [N] références contrôlées — score [X]/100 »*
-
-Cette mention est la signature qualité ECA. Sa présence engage Yoann ;
-son absence signifie que la vérification n'a pas eu lieu.
-
+> **Action ECA :** proposition de position ECA + entrée Notion Veille + signalement des dossiers actifs concernés.
 
 ---
 
@@ -301,13 +253,13 @@ son absence signifie que la vérification n'a pas eu lieu.
 
 Valider mentalement chaque point avant d'envoyer la réponse :
 
-- [ ] Toutes les références citées vérifiées via MCP Légifrance (Pattern 3 ci-dessous)
+- [ ] Toutes les références citées vérifiées via MCP Légifrance (voir annexe en fin de skill)
 - [ ] Zones d'incertitude explicitement balisées avec ⚠️ INCERTAIN
 - [ ] La conclusion répond directement et précisément à la question posée
 - [ ] Niveau de risque justifié par un argumentaire (pas seulement affiché)
 - [ ] Aucune position incertaine présentée comme certaine
 - [ ] legal-hallucination-checker déclenché et score ≥ 70/100
-- [ ] Charte graphique ECA respectée si livrable Word (#999999 / #C00000 / #495864)
+- [ ] Word ECA conforme au socle § 8 (corps noir ; titres d'actes noir gras)
 - [ ] Référence YD + expert-comptable signataire mentionnée
 - [ ] Date d'entrée en vigueur ≠ date de publication vérifiée
 - [ ] Décrets d'application identifiés (publiés / attendus)
@@ -317,43 +269,5 @@ Valider mentalement chaque point avant d'envoyer la réponse :
 
 **Si un seul item n'est pas validé → ne pas livrer. Reprendre la phase concernée.**
 
-
 ---
 
-## 🔍 ANNEXE — Commandes MCP Légifrance exactes
-
-Ne plus écrire « via MCP Légifrance » sans la commande. Utiliser les patterns suivants :
-
-### Articles de code
-```
-rechercher_code(code_name="Code général des impôts", search="[numéro]", champ="NUM_ARTICLE")
-rechercher_code(code_name="Code de commerce", search="[numéro]", champ="NUM_ARTICLE")
-rechercher_code(code_name="Code civil", search="[numéro]", champ="NUM_ARTICLE")
-rechercher_code(code_name="Livre des procédures fiscales", search="L. [numéro]", champ="NUM_ARTICLE")
-rechercher_code(code_name="Code monétaire et financier", search="L. [numéro]", champ="NUM_ARTICLE")
-rechercher_code(code_name="Code du travail", search="L. [numéro]", champ="NUM_ARTICLE")
-```
-
-### Jurisprudence
-```
-# Conseil d'État, CAA, TA
-rechercher_jurisprudence_administrative(search="[numéro affaire]", champ="NUM_AFFAIRE")
-# Cour de cassation
-rechercher_jurisprudence_judiciaire(search="[numéro pourvoi]", champ="NUM_AFFAIRE")
-# Conseil constitutionnel
-rechercher_decisions_constitutionnelles(search="[N°-AAAA QPC]")
-```
-
-### Doctrine et textes officiels
-```
-# BOFiP
-web_fetch("https://bofip.impots.gouv.fr/bofip/[identifiant]")
-# Loi / ordonnance / décret
-recherche_journal_officiel(search="[numéro ou titre]", text_types=["LOI"])
-# Texte consolidé
-rechercher_dans_texte_legal(search="[mots-clés]")
-```
-
-**Règle de robustesse** : avant de conclure à l'inexistence d'une référence,
-tenter au minimum 2 stratégies (numéro exact + mots-clés + date approximative).
-Une référence non trouvée via MCP ≠ référence inexistante.

@@ -15,6 +15,12 @@ description: >
 
 # Skill : Contentieux fiscal — ECA EXPERTISE
 
+> **Socle** : charger `socle-eca` — ouverture du dossier (§ 1), carte des
+> connecteurs (§ 2), règles de vérification (§ 3), accès aux modèles (§ 4),
+> pièges datés (§ 5), standard de rédaction (§ 6), garde-fous (§ 7), Word ECA
+> (§ 8), fin de livrable (§ 9). Un output Casus collé est une base documentaire
+> à recouper (§ 3.4). Aucun taux, seuil ou délai n'est repris de mémoire.
+
 Ce skill existe parce que la défense fiscale obéit à des règles procédurales
 strictes avec des délais de forclusion qui ne pardonnent pas. Une réponse
 hors délai ou mal dirigée peut faire perdre des droits définitivement.
@@ -22,35 +28,6 @@ La maîtrise du calendrier procédural est aussi importante que les arguments
 de fond.
 
 ---
-
-## PHASE 0 — Contexte dossier (exécuter en premier, toujours)
-
-### Recherche automatique dans les dossiers en cours
-
-Avant toute analyse, vérifier si ce client ou dossier a déjà été traité :
-
-```
-conversation_search(query="[nom client ou société mentionné dans la demande]")
-```
-
-Si des conversations passées existent sur ce dossier :
-- Les lire pour récupérer : décisions prises, documents produits, positions
-  retenues, points de vigilance identifiés
-- Ne jamais reprendre de zéro un dossier déjà engagé
-- Signaler en début de réponse : "Dossier retrouvé — suite de la consultation
-  du [date]" ou "Nouveau dossier — aucun antécédent trouvé"
-
-Si le nom du client n'est pas mentionné explicitement dans la demande :
-- Continuer sans recherche (ne pas bloquer sur une demande générique)
-- La recherche s'active uniquement si un nom propre de client ou de société
-  est identifiable dans la requête
-
-### 0c — Intégration réponse Casus
-
-Si Yoann colle un output Casus dans la conversation :
-- L utiliser comme base documentaire CGI/LPF certifiée pour les arguments fiscaux
-- Claude complète : stratégie procédurale, jurisprudence CE/CAA, rédaction des actes de procédure
-- Indiquer : "Base Casus intégrée — stratégie procédurale construite dessus"
 
 ## PHASE 0b — Routing et identification de l'étape procédurale
 
@@ -64,16 +41,21 @@ Calcul de l'impôt redressé à vérifier ? → calcul-plus-value en complément
 
 ```
 PROPOSITION DE RECTIFICATION reçue (3924/3926) ?
-  → PHASE A : Réponse dans le délai de 30 jours (prorogeable 30 j sur demande)
+  → PHASE A : Réponse dans le délai légal, prorogeable sur demande expresse
+              (LPF L. 57 et R*57-1 — délai et conditions lus à la source)
 
 RÉPONSE AUX OBSERVATIONS DU CONTRIBUABLE reçue ?
-  → PHASE B : Évaluer CID / Recours hiérarchique / Acceptation
+  → PHASE B : Évaluer recours hiérarchique (supérieur du vérificateur puis
+              interlocuteur départemental ou régional, selon la charte des
+              droits et obligations du contribuable vérifié, opposable — LPF L. 10),
+              saisine de la commission, acceptation partielle
 
 MISE EN RECOUVREMENT reçue (AMR) ?
   → PHASE C : Réclamation préalable obligatoire dans délai légal
 
-REJET DE RÉCLAMATION reçu ?
-  → PHASE D : Recours juridictionnel (TA / TJ selon impôt)
+REJET DE RÉCLAMATION reçu (ou silence) ?
+  → PHASE D : Recours juridictionnel (TA / TJ selon l'impôt) — délai de saisine
+              lu dans le LPF (R*199-1) ; ne pas confondre avec les délais de droit commun
 
 TRANSACTION proposée ?
   → PHASE E : Analyse opportunité + négociation
@@ -107,49 +89,22 @@ TRANSACTION proposée ?
 
 ---
 
-## PHASE 2 — Vérification des sources
+## PHASE 2 — Recherche et vérification des sources
 
-### Fetch dynamique GitHub (obligatoire avant toute vérification)
-
-Fetcher systématiquement avant d'utiliser un taux, un outil MCP ou une
-référence BOFiP :
-
-```
-web_fetch("https://raw.githubusercontent.com/ydecreton-a11y/eca-expertise-templates/main/skills/shared/sources-legales.md")
-```
-> **📋 INDEX RESSOURCES** : Après fetch de sources-legales.md, scanner la **section 9
-> (Index des ressources GitHub)** pour identifier les modules AUREP (M1-M12),
-> dossiers (DUTREIL_2026, démembrement-immobilier-entreprise) et PDF (Royal Formation,
-> résidence fiscale UF2026) pertinents pour la demande en cours. Fetcher toute
-> ressource identifiée comme pertinente avant de commencer l'analyse.
-
-```
-
-Ce fetch (2 secondes) garantit que tu travailles avec les taux et références
-à jour — pas avec des valeurs mémorisées potentiellement périmées après
-une LF. C'est la différence entre 30 % et 31,4 % de PFU.
-
-### Vérifications complémentaires
-
-Fetcher `shared/sources-legales.md` via GitHub (voir bloc Sources ci-dessus) pour les outils MCP.
-
-**Vérifications prioritaires en contentieux :**
-
-```
-rechercher_code("Livre des procédures fiscales", "Art. [N] LPF")
-→ Procédure contradictoire, délais, droits du contribuable
-
-rechercher_jurisprudence_administrative(search="[chef de redressement]", panorama=True)
-→ Jurisprudence CE/CAA récente favorable
-
-web_fetch(BOFiP)
-→ Doctrine administrative opposable (Art. L80 A LPF) — arme principale
-```
-
-**Charger `references/procedure-fiscale.md`** pour les délais et voies de recours.
-**Charger `references/arguments-type.md`** pour les arguments par type de chef.
-
----
+Carte des connecteurs (socle § 2) :
+- **Procédure** : LPF dans la version applicable à chaque étape (LibreJustice
+  à date) — garanties, délais, motivation, débat oral et contradictoire.
+- **Charte du contribuable vérifié** : version remise au contribuable ; ses
+  garanties sont opposables.
+- **Fond** : CGI à la date du fait générateur ; BOFiP opposable (L. 80 A) via
+  Legal Data Hunter, avec le paragraphe exact.
+- **Jurisprudence** : CE, CAA, TA (Légifrance, LibreJustice) ; Pourvoi
+  seulement pour le contentieux judiciaire (enregistrement, IFI, DMTG).
+- **Pièces comptables** : Pennylane (comptes concernés par chaque chef :
+  provisions, charges, TVA) pour reconstituer les faits.
+- **Historique** : fiche mémoire du dossier, Granola (rendez-vous avec le
+  service), mails (Microsoft 365) — ne jamais rédiger sans la dernière position
+  écrite de l'administration.
 
 ## PHASE 3 — Construction de la défense
 
@@ -233,11 +188,16 @@ Veuillez agréer, Madame, Monsieur, l'expression de nos salutations distinguées
 [Signature YD + Expert-comptable signataire]
 ```
 
-### 4.2 Réclamation préalable (Art. R. 190-1 LPF)
+### 4.2 Réclamation préalable (LPF L. 190 et R*196-1 s.)
 
-**Délai de forclusion :** 31 décembre de la 2e année suivant la mise
-en recouvrement (ou l'année du versement pour les impôts à versement
-spontané). **Délai impératif — vérifier via MCP avant toute rédaction.**
+**Délai de forclusion — à calculer à la source, jamais de mémoire :**
+- délai général : LPF R*196-1 (version en vigueur depuis le 30/07/2026,
+  décret n° 2026-692 — l'« événement » ouvrant un nouveau délai a été restreint) ;
+- **après une procédure de reprise ou de rectification : LPF R*196-3**, délai
+  égal à celui dont dispose l'administration — souvent plus long, à vérifier
+  systématiquement ;
+- autres délais spéciaux (R*196-2 et suivants) selon l'impôt.
+Indiquer la date limite calculée **en tête** du livrable.
 
 ```
 [Identification]
@@ -245,7 +205,7 @@ spontané). **Délai impératif — vérifier via MCP avant toute rédaction.**
 
 RÉCLAMATION CONTENTIEUSE
 
-En application des articles L. 190 et R. 190-1 du LPF, [contribuable]
+En application des articles L. 190 et R*196-1 [ou R*196-3] du LPF, [contribuable]
 entend contester les impositions mises en recouvrement le [date]
 pour les motifs suivants :
 
@@ -257,12 +217,23 @@ impositions contestées.
 [Pièces jointes : AMR, proposition de rectification, réponse initiale, justificatifs]
 ```
 
-### 4.3 Saisine de la Commission des impôts directs (Art. L. 59 LPF)
+### 4.2 bis Recours hiérarchique et interlocuteur
+
+Structure : rappel de la procédure et des points restés en désaccord ; pour
+chaque chef, l'argument décisif (droit, doctrine opposable, preuve) et la pièce
+qui le porte ; demande précise (abandon, réduction, modération des pénalités) ;
+proposition d'entretien. Préparer en parallèle une **fiche d'entretien**
+(arguments en 1 page, réponses aux objections attendues, concessions possibles,
+ligne rouge). Après l'entretien : compte rendu (Granola) et courrier de
+confirmation des points actés.
+
+### 4.3 Saisine de la commission (LPF L. 59 s.)
 
 **Conditions :**
 - Désaccord persistant après réponse de l'administration
 - Impôts éligibles : IS, BIC, BNC, BA, TVA (vérifier liste via MCP)
-- Délai : 30 jours après réception de la réponse aux observations
+- Délai : à compter de la réponse aux observations — délai et commission
+  compétente (départementale, nationale) lus dans le LPF en vigueur (L. 59 s., R*59-1)
 
 **La Commission rend un avis consultatif** — non contraignant mais
 avec un fort poids pratique. L'administration suit généralement l'avis.
@@ -314,16 +285,6 @@ VI. CALENDRIER PROCÉDURAL
 
 ---
 
-## PHASE 6 — Livrable Word
-
-- Corps : Raleway sz=22, justifié, **#999999**
-- H1/H2 : Raleway gras, **#C00000**
-- Signature : Raleway gras sz=22, **#495864**, centré
-- Charger skill docx pour la mise en forme
-- Declencher legal-hallucination-checker sur toutes les références citées
-
----
-
 ## Exemple de défense bien formée (extrait)
 
 **Chef de redressement : provisions pour créances douteuses refusées**
@@ -347,7 +308,7 @@ VI. CALENDRIER PROCÉDURAL
 > créance fait l'objet d'un risque probable dès lors que [position
 > favorable — à vérifier via BOFiP avant citation].
 >
-> ⚠️ INCERTAIN — Vérifier la référence BOFiP exacte via web_fetch avant
+> ⚠️ INCERTAIN — Vérifier la référence BOFiP exacte (Legal Data Hunter) avant
 > intégration dans la réponse définitive.
 >
 > En conséquence, nous demandons l'abandon de ce chef de rectification."
@@ -355,51 +316,19 @@ VI. CALENDRIER PROCÉDURAL
 **❌ Ce qui est insuffisant :**
 > "Les provisions sont justifiées car les créances sont douteuses."
 
-
-
----
-
-## 🛡️ PHASE FINALE — Auto-déclenchement legal-hallucination-checker
-
-⚠️ **OBLIGATOIRE — Étape non sautable.**
-
-Avant remise du livrable au client ou à Yoann, déclencher automatiquement :
-
-```
-1. Charger skill legal-hallucination-checker
-2. Extraire toutes les références citées :
-   — Articles de code (CGI, C. civ., C. com., LPF, CMF, CSS, CPI...)
-   — Jurisprudence (CE, Cass., CAA, TA, Cons. const.)
-   — BOFiP (BOI-...)
-   — Lois, ordonnances, décrets
-3. Vérifier chacune via MCP Légifrance avec au minimum 2 stratégies de recherche
-4. Produire le rapport de vérification (score /100)
-5. Décision :
-   — Si score ≥ 70 et 0 ⛔ HALLUCINATION → livrer + mentionner « Vérifié — score [N]/100 »
-   — Si score < 70 ou présence de ⛔ HALLUCINATION → NE PAS LIVRER
-     → Corriger les références fautives → relancer le checker → attendre validation Yoann
-```
-
-**Marquage final obligatoire dans le livrable :**
-> *« Vérifié via legal-hallucination-checker — [N] références contrôlées — score [X]/100 »*
-
-Cette mention est la signature qualité ECA. Sa présence engage Yoann ;
-son absence signifie que la vérification n'a pas eu lieu.
-
-
 ---
 
 ## ✅ CHECKLIST AVANT REMISE
 
 Valider mentalement chaque point avant d'envoyer la réponse :
 
-- [ ] Toutes les références citées vérifiées via MCP Légifrance (Pattern 3 ci-dessous)
+- [ ] Toutes les références citées vérifiées via MCP Légifrance (voir annexe en fin de skill)
 - [ ] Zones d'incertitude explicitement balisées avec ⚠️ INCERTAIN
 - [ ] La conclusion répond directement et précisément à la question posée
 - [ ] Niveau de risque justifié par un argumentaire (pas seulement affiché)
 - [ ] Aucune position incertaine présentée comme certaine
 - [ ] legal-hallucination-checker déclenché et score ≥ 70/100
-- [ ] Charte graphique ECA respectée si livrable Word (#999999 / #C00000 / #495864)
+- [ ] Word ECA conforme au socle § 8 (corps noir ; titres d'actes noir gras)
 - [ ] Référence YD + expert-comptable signataire mentionnée
 - [ ] Étape procédurale identifiée (Phase A/B/C/D/E)
 - [ ] Délai de forclusion calculé et signalé en tête
@@ -409,43 +338,5 @@ Valider mentalement chaque point avant d'envoyer la réponse :
 
 **Si un seul item n'est pas validé → ne pas livrer. Reprendre la phase concernée.**
 
-
 ---
 
-## 🔍 ANNEXE — Commandes MCP Légifrance exactes
-
-Ne plus écrire « via MCP Légifrance » sans la commande. Utiliser les patterns suivants :
-
-### Articles de code
-```
-rechercher_code(code_name="Code général des impôts", search="[numéro]", champ="NUM_ARTICLE")
-rechercher_code(code_name="Code de commerce", search="[numéro]", champ="NUM_ARTICLE")
-rechercher_code(code_name="Code civil", search="[numéro]", champ="NUM_ARTICLE")
-rechercher_code(code_name="Livre des procédures fiscales", search="L. [numéro]", champ="NUM_ARTICLE")
-rechercher_code(code_name="Code monétaire et financier", search="L. [numéro]", champ="NUM_ARTICLE")
-rechercher_code(code_name="Code du travail", search="L. [numéro]", champ="NUM_ARTICLE")
-```
-
-### Jurisprudence
-```
-# Conseil d'État, CAA, TA
-rechercher_jurisprudence_administrative(search="[numéro affaire]", champ="NUM_AFFAIRE")
-# Cour de cassation
-rechercher_jurisprudence_judiciaire(search="[numéro pourvoi]", champ="NUM_AFFAIRE")
-# Conseil constitutionnel
-rechercher_decisions_constitutionnelles(search="[N°-AAAA QPC]")
-```
-
-### Doctrine et textes officiels
-```
-# BOFiP
-web_fetch("https://bofip.impots.gouv.fr/bofip/[identifiant]")
-# Loi / ordonnance / décret
-recherche_journal_officiel(search="[numéro ou titre]", text_types=["LOI"])
-# Texte consolidé
-rechercher_dans_texte_legal(search="[mots-clés]")
-```
-
-**Règle de robustesse** : avant de conclure à l'inexistence d'une référence,
-tenter au minimum 2 stratégies (numéro exact + mots-clés + date approximative).
-Une référence non trouvée via MCP ≠ référence inexistante.

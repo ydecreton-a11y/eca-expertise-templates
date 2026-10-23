@@ -1,328 +1,129 @@
 ---
 name: calcul-plus-value
 description: >
-  Skill ECA EXPERTISE pour tout calcul ou estimation de plus-value :
-  immobilière (vente d'immeuble, terrain, parts SCI/SPI, LMNP (voir aussi AUREP M11 patrimoine immobilier), non-résidents),
-  mobilière (cession de parts sociales, actions, BSPCE, crypto, PEA, AGA),
-  professionnelle (BIC/BNC/BA, marchand de biens), IS (titres de participation,
-  fusions 210 A/B), report/sursis (150-0 B, 150-0 B ter), exit tax, CEHR, CDHR.
-  Déclencher sur : calcul plus-value, impôt cession, PV immobilière, PV mobilière,
-  cession titres, vente immeuble, CEHR, CDHR, Quémener, BSPCE, LMNP, 244 bis,
-  "combien je vais payer si je vends", "quel impôt si je vends mes parts".
-  NE PAS utiliser si la demande est purement stratégique sans données chiffrées
-  disponibles (→ diagnostic-transmission d'abord pour collecter les données).
+  Calcul ou estimation de plus-value pour ECA EXPERTISE : immobilière (immeuble,
+  terrain, parts de SCI ou de société à prépondérance immobilière, LMNP,
+  non-résidents), mobilière (parts sociales, actions, BSPCE, actifs numériques,
+  PEA, actions gratuites, management package), professionnelle (BIC, BNC, BA,
+  marchand de biens), à l'IS (titres de participation), report et sursis
+  (150-0 B, 150-0 B ter), exit tax, CEHR, CDHR, comparaison de scénarios de
+  cession. Déclencher sur : calcul plus-value, impôt cession, PV immobilière,
+  PV mobilière, cession titres, vente immeuble, CEHR, CDHR, Quémener, BSPCE,
+  LMNP, 244 bis, abattement retraite, purge du report, « combien je vais payer
+  si je vends ». NE PAS utiliser si la demande est purement stratégique sans
+  données chiffrées (→ strategie-patrimoniale) ou porte sur des droits de
+  donation ou de succession seuls (→ strategie-patrimoniale).
 ---
 
-# Skill : Calcul de plus-value — ECA EXPERTISE
+# Calcul de plus-value — ECA EXPERTISE
 
----
+> **Socle** : charger `socle-eca` (ouverture du dossier, connecteurs,
+> vérification, pièges datés § 5, Word, fin de livrable). Aucun taux, seuil,
+> abattement ou barème n'est repris de mémoire ni de ce skill : chacun se lit à
+> la source, **dans sa version applicable à la date de la cession**.
 
-## ⚡ RÈGLES FISCALES VÉRIFIÉES — ANCRÉES DANS CE SKILL
-
-Ces règles ont été vérifiées et ne doivent JAMAIS être recalculées de mémoire.
-Elles priment sur toute valeur mémorisée à l'entraînement.
-
-| Règle | Valeur 2026 | Source vérifiée |
-|-------|-------------|-----------------|
-| PFU mobilier (dividendes, PV titres, intérêts) | **31,4 %** (12,8 % IR + 18,6 % PS) | LFSS loi 2025-1403 |
-| PS revenus fonciers nus | **17,2 %** (inchangé) | LFSS 2025-1403 |
-| PS plus-values immobilières | **17,2 %** → charge totale 36,2 % | LFSS 2025-1403 |
-| PV 150-0 B ter + quotient 163-0 A | **JP divergente** — présenter les 2 thèses + rescrit L.80 B | Voir sources-legales.md § 6 |
-| Mécanisme PV 150-0 B ter | Art. 200 A, 2 ter CGI (taux historique) ≠ barème Art. 197 | Cons. const. n°2016-538 QPC 22/04/2016 |
-| DAS2 seuil déclaration 2024+ | **2 400 €** / bénéficiaire / an | BOFiP 12/02/2025, BOI-BIC-DECLA-30-70-20 §140 |
-| LMNP réintégration amortissements | Depuis **15/02/2025** (LF 2025 Art. 84, Art. 150 VB III) | Vérifier via MCP |
-
-**Règle 150-0 B ter + quotient — JP divergente :**
-Contre quotient : TA Bordeaux 19/12/2024 n°2301446 (art. 200 A, 2 ter = régime dérogatoire,
-Cons. const. 2016-538 QPC). Pour quotient : TA Bordeaux 13/11/2025 n°2304900, TA Paris
-13/02/2025 n°2212919, Rép. min. Lequiller n°70807 (opposable L.80 A). Aucun arrêt CE.
-→ Toujours présenter les 2 thèses au client + recommander rescrit L.80 B + invocation Lequiller.
-→ Ne JAMAIS présenter le quotient comme « inapplicable de facto » ni comme « acquis ».
+Chaque type de plus-value obéit à un régime distinct et étanche. Confondre les
+régimes coûte des dizaines de milliers d'euros au client. Le calcul est
+**exécuté par script** (jamais de tête) et chaque paramètre est sourcé.
 
 ---
 
-## PHASE 0 — Contexte dossier (exécuter en premier, toujours)
-
-### Recherche automatique dans les dossiers en cours
-
-Avant toute analyse, vérifier si ce client ou dossier a déjà été traité :
+## Phase 0 — Données et aiguillage
 
 ```
-conversation_search(query="[nom client ou société mentionné dans la demande]")
+Données chiffrées disponibles (prix, prix de revient, dates) ? → continuer
+Phase exploratoire, données manquantes                     → strategie-patrimoniale
+Question de régime à trancher d'abord                       → consultation-juridique
 ```
 
-Si des conversations passées existent sur ce dossier :
-- Les lire pour récupérer : décisions prises, documents produits, positions
-  retenues, points de vigilance identifiés
-- Ne jamais reprendre de zéro un dossier déjà engagé
-- Signaler en début de réponse : "Dossier retrouvé — suite de la consultation
-  du [date]" ou "Nouveau dossier — aucun antécédent trouvé"
+Données à réunir (socle § 1 ; Pennylane si client du cabinet ; Data.gouv
+(valeurs foncières) pour étayer une valeur immobilière ; Legal Data Hunter pour
+une convention fiscale) :
+- cédant : personne physique / société IR / société IS ; résidence fiscale ;
+  situation familiale et RFR prévisible (CEHR, CDHR) ;
+- bien : nature, date et mode d'acquisition (onéreux / gratuit / apport),
+  prix ou valeur d'origine, frais, travaux, amortissements, démembrement ;
+- cession : date, prix, compléments de prix, comptes courants inclus ou non ;
+- antécédents : reports ou sursis en cours, abattements déjà utilisés.
 
-Si le nom du client n'est pas mentionné explicitement dans la demande :
-- Continuer sans recherche (ne pas bloquer sur une demande générique)
+Paramètre manquant : `⚠️ INCERTAIN — [paramètre] : hypothèse retenue [X].
+Résultat à recalculer si différent.`
 
-## PHASE 0b — Routing
-
-```
-Données chiffrées disponibles (prix, prix de revient, dates) ? → continuer ici
-Données manquantes, phase exploratoire ? → diagnostic-transmission d'abord
-Besoin d'une consultation juridique sur le régime ? → consultation-juridique
-  (puis revenir ici pour le chiffrage)
-```
-
-**Intégration réponse Casus :** Si Yoann colle un output Casus dans la conversation,
-utiliser sa réponse comme base documentaire CGI/BOFiP certifiée, construire dessus
-sans redupliquer les vérifications déjà effectuées. Indiquer : "Base Casus intégrée."
-
-**Balise incertitude :**
-```
-⚠️ INCERTAIN — [paramètre] : hypothèse retenue [X]. Résultat à recalculer
-   si ce paramètre est différent.
-```
-
----
-
-## Sources — Fetch dynamique GitHub (obligatoire avant toute vérification)
-
-Fetcher avant d'utiliser un taux, un outil MCP ou une référence BOFiP :
+## Phase 1 — Qualification (arbre)
 
 ```
-web_fetch("https://raw.githubusercontent.com/ydecreton-a11y/eca-expertise-templates/main/skills/shared/sources-legales.md")
+Q1 Activité habituelle d'achat-revente ?              OUI → marchand de biens (BIC)
+Q2 Bien inscrit à l'actif d'une entreprise IR ?        OUI → PV professionnelle
+Q3 Cédant soumis à l'IS ?                              OUI → PV à l'IS
+Q4 Cédant non-résident ?                               OUI → prélèvement spécifique
+                                                            (immobilier / titres) + convention
+Q5 Nature du bien :
+   immeuble, droit immobilier, parts de société IR à prépondérance immobilière
+        → PV immobilière des particuliers (+ correctif Quémener sur parts)
+   meublé (LMNP)          → PV immobilière avec minoration du prix d'acquisition
+                            par les amortissements, sous réserve des exceptions
+                            (socle § 5)
+   parts d'une société de personnes où le cédant exerce → PV professionnelle
+   titres de société IS   → PV mobilière des particuliers
+   régimes spéciaux       → BSPCE, actifs numériques, management package,
+                            actions gratuites, PEA
 ```
-> **📋 INDEX RESSOURCES** : Après fetch de sources-legales.md, scanner la **section 9
-> (Index des ressources GitHub)** pour identifier les modules AUREP (M1-M12),
-> dossiers (DUTREIL_2026, démembrement-immobilier-entreprise) et PDF (Royal Formation,
-> résidence fiscale UF2026) pertinents pour la demande en cours. Fetcher toute
-> ressource identifiée comme pertinente avant de commencer l'analyse.
+Annoncer le régime retenu et pourquoi ; si deux régimes sont plausibles,
+chiffrer les deux.
 
-```
+## Phase 2 — Sources à lire pour le régime retenu
 
-Ce fetch (2 secondes) garantit les taux et références à jour.
+| Régime | Textes à lire (version à la date de cession) | Doctrine |
+|---|---|---|
+| PV immobilière PP | CGI art. 150 U à 150 VH ; surtaxe art. 1609 nonies G ; prélèvements sociaux CSS L. 136-7 et L. 136-8 | BOFiP RFPI-PVI (Legal Data Hunter) |
+| LMNP | CGI art. 150 VB III (et ses exceptions) | BOFiP correspondant ; module de formation du dépôt sur l'immobilier |
+| PV mobilière PP | CGI art. 150-0 A à 150-0 E, 200 A ; abattements éventuels (dont départ à la retraite art. 150-0 D ter) | BOFiP RPPM-PVBMI |
+| Report / sursis | CGI art. 150-0 B, 150-0 B ter ; état de suivi annuel | BOFiP RPPM-PVBMI-30 |
+| PV professionnelle | CGI art. 39 duodecies s. ; exonérations art. 151 septies, 151 septies A, 238 quindecies, 151 nonies selon le cas | BOFiP BIC-PVMV |
+| PV à l'IS | CGI art. 219 I a quinquies (titres de participation) ; taux d'IS en vigueur | BOFiP IS-BASE |
+| Non-résidents | CGI art. 244 bis A, 244 bis B ; convention fiscale | Legal Data Hunter (convention) |
+| Contributions | CEHR art. 223 sexies ; CDHR art. 224 ; prélèvements sociaux CSS L. 136-8 | — |
+| Exit tax | CGI art. 167 bis | BOFiP |
 
----
+Pour chaque paramètre utilisé (taux, abattement, seuil), noter : texte, version,
+date de lecture. Ces paramètres alimentent le script de calcul.
 
-## PHASE 1 — Principe cardinal
+## Phase 3 — Calcul
 
-Chaque type de plus-value obéit à un régime distinct et étanche.
-Confondre les régimes est une erreur professionnelle grave qui peut coûter
-des dizaines de milliers d'euros au client.
+1. Écrire un script (Python) dont chaque paramètre est une variable nommée et
+   sourcée en commentaire ; l'exécuter ; joindre le détail.
+2. Positions ECA à appliquer (socle § 5 et base Positions) :
+   - report 150-0 B ter et quotient : **deux thèses, deux chiffrages**, rescrit
+     recommandé ; jamais « acquis » ni « inapplicable » ;
+   - CDHR chiffrée dans **chaque** scénario comparé.
+3. Comparaison de scénarios si pertinent : cession directe / apport-cession /
+   donation avant cession / purge du report — mêmes hypothèses, mêmes années.
 
-**Séquence obligatoire :**
-Qualifier (§2) → lire le(s) fichier(s) de référence (§3)
-→ calculer → appliquer contributions (references/contributions.md)
-→ vérifier obligations déclaratives (references/obligations-declaratives.md)
-
-Vérifier les taux via `../shared/sources-legales.md` avant tout calcul.
-
----
-
-## PHASE 2 — Arbre de qualification
-
-QUESTION 1 : LE CÉDANT EXERCE-T-IL UNE ACTIVITÉ HABITUELLE D'ACHAT-REVENTE ?
-  OUI → Marchand de biens (BIC) → references/pv-professionnelle.md § 10
-  NON → Continuer
-
-QUESTION 2 : LE BIEN EST-IL INSCRIT À L'ACTIF D'UNE EI/BIC/BNC/BA ?
-  OUI → PV PROFESSIONNELLE → references/pv-professionnelle.md
-  NON → Continuer
-
-QUESTION 3 : LE CÉDANT EST-IL UNE PERSONNE MORALE SOUMISE À L'IS ?
-  OUI → PV IS → references/pv-is.md
-  NON → Continuer (PP ou société de personnes IR)
-
-QUESTION 4 : LE CÉDANT EST-IL NON-RÉSIDENT FISCAL FRANÇAIS ?
-  OUI ET bien immobilier ou SPI → Art. 244 bis A → references/regimes-speciaux.md § 4
-  OUI ET titres de société française → Art. 244 bis B → references/regimes-speciaux.md § 5
-  NON → Continuer
-
-QUESTION 5 : QUEL EST LE BIEN CÉDÉ ?
-
-  IMMEUBLE, TERRAIN, DROITS RÉELS, PARTS SCI IR :
-    → Vérifier si SCI à prépondérance immobilière (SPI) → Art. 150 UB
-    → PV IMMOBILIÈRE PP → references/pv-immobiliere.md
-    → Correctif Quémener obligatoire si cession de parts de société de personnes
-    ⚠️ LMNP : réintégration amortissements dans PV depuis 15/02/2025
-      (LF 2025 Art. 84, CGI Art. 150 VB III) — vérifier via MCP
-    ⚠️ AUREP fetch obligatoire si LMNP :
-      web_fetch("https://raw.githubusercontent.com/ydecreton-a11y/eca-expertise-templates/main/aurep/M10_actualites_patrimoniales.md")
-
-  PARTS SOCIALES, ACTIONS, VALEURS MOBILIÈRES :
-    → Vérifier : CCA inclus dans le prix ? → Déduire du prix de cession
-    → Société liquidée ? Boni de liquidation → references/pv-mobiliere.md § 13
-    → Art. 151 nonies : UNIQUEMENT sociétés de personnes IR (SNC, SCP, SARL
-      de famille IR, EURL IR) — PAS les sociétés IS
-    → OUI (société IR) → PV PROFESSIONNELLE → references/pv-professionnelle.md § 4
-    → NON (SARL IS, SAS, SASU, EURL IS) → PV MOBILIÈRE PP → references/pv-mobiliere.md
-
-  BSPCE → references/regimes-speciaux.md § 1
-  ACTIFS NUMÉRIQUES (crypto) → references/regimes-speciaux.md § 2
-  MANAGEMENT PACKAGE → references/regimes-speciaux.md § 7
-
----
-
-## PHASE 3 — Fichiers de référence
-
-Lire le fichier correspondant au type de PV qualifié en Phase 2 :
-
-| Type | Fichier |
-|------|---------| 
-| PV immobilière PP | references/pv-immobiliere.md |
-| PV mobilière PP | references/pv-mobiliere.md |
-| PV professionnelle | references/pv-professionnelle.md |
-| PV à l'IS | references/pv-is.md |
-| Régimes spéciaux | references/regimes-speciaux.md |
-| Contributions (CEHR, CDHR, PS) | references/contributions.md |
-| Obligations déclaratives | references/obligations-declaratives.md |
-
----
-
-## PHASE 4 — Structure de sortie du calcul
+## Phase 4 — Sortie
 
 ```
-CALCUL DE PLUS-VALUE
-[Client — Date — Référence YD]
+CALCUL DE PLUS-VALUE — [Client — Date — YD]
 
-I. QUALIFICATION
-   Type de PV retenu, base légale, régime applicable.
-   ⚠️ INCERTAIN si données manquantes.
-
-II. CALCUL DE LA PV BRUTE
-   Prix de cession : X €
-   Prix de revient corrigé : X € [détail des corrections]
-   PV brute : X €
-
-III. ABATTEMENTS ET CORRECTIONS
-   [Durée de détention, abattements spéciaux, Quémener si applicable]
-   PV nette imposable : X €
-
-IV. IMPOSITION
-   IR (taux applicable) : X €
-   Prélèvements sociaux : X €   [rappel : 18,6% PV mobilières / 17,2% PV immo]
-   CEHR (si applicable) : X €
-   CDHR (si applicable) : X €
-   TOTAL : X € [taux effectif global : X%]
-
-V. OBLIGATIONS DÉCLARATIVES
-   Formulaire(s), délai(s), points de vigilance.
-
-VI. COMPARAISON DE SCÉNARIOS (si pertinent)
-   [Cession directe vs apport-cession, donation avant cession, etc.]
-   [⚠️ Si apport-cession envisagé : vérifier CDHR obligatoirement avant de conclure
-    à un avantage — voir Règle CDHR ci-dessous]
+I.   QUALIFICATION — régime, base légale, motifs (et régime alternatif écarté)
+II.  PARAMÈTRES — tableau : paramètre / valeur / texte et version / date de lecture
+III. CALCUL — prix de cession, prix de revient corrigé (détail), PV brute,
+     abattements et correctifs, PV nette
+IV.  IMPOSITION — impôt sur le revenu ou IS, prélèvements sociaux, surtaxe,
+     CEHR, CDHR, total et taux effectif
+V.   SCÉNARIOS COMPARÉS (le cas échéant)
+VI.  OBLIGATIONS DÉCLARATIVES — formulaires et délais lus à la source
+VII. POINTS D'INCERTITUDE et hypothèses à confirmer
 ```
 
----
+Droits de donation ou de succession demandés en complément → renvoi
+`strategie-patrimoniale` (le barème et les abattements se lisent à la source).
 
-## DMTG — Fiscalité des donations et successions
+## Checklist avant remise
 
-Hors périmètre strict du skill (PV), mais souvent posé en complément.
-Pour toute question de calcul de droits de mutation à titre gratuit :
-→ Renvoyer vers **patrimonial-structuring** pour l'analyse
-→ Utiliser le barème Art. 777 CGI + abattements Art. 779 CGI
-→ Abattement enfant : 100 000 € / 15 ans — vérifier via MCP
-
----
-
-## Règle CDHR — À vérifier systématiquement
-
-La Contribution Différentielle sur les Hauts Revenus (Art. 150-0 F ter CGI)
-neutralise mécaniquement le gain fiscal de l'apport-cession dès que le RFR
-dépasse 500 000 €. Ne jamais conclure à un avantage de l'apport-cession
-sans avoir calculé l'impact CDHR. Voir references/contributions.md.
-
-**Rappel règle 150-0 B ter + quotient :** JP divergente — présenter les 2 thèses +
-recommander rescrit L.80 B. Détail → sources-legales.md § 6.
-
-
----
-
-## 🛡️ PHASE FINALE — Auto-déclenchement legal-hallucination-checker
-
-⚠️ **OBLIGATOIRE — Étape non sautable.**
-
-Avant remise du livrable au client ou à Yoann, déclencher automatiquement :
-
-```
-1. Charger skill legal-hallucination-checker
-2. Extraire toutes les références citées :
-   — Articles de code (CGI, C. civ., C. com., LPF, CMF, CSS, CPI...)
-   — Jurisprudence (CE, Cass., CAA, TA, Cons. const.)
-   — BOFiP (BOI-...)
-   — Lois, ordonnances, décrets
-3. Vérifier chacune via MCP Légifrance avec au minimum 2 stratégies de recherche
-4. Produire le rapport de vérification (score /100)
-5. Décision :
-   — Si score ≥ 70 et 0 ⛔ HALLUCINATION → livrer + mentionner « Vérifié — score [N]/100 »
-   — Si score < 70 ou présence de ⛔ HALLUCINATION → NE PAS LIVRER
-     → Corriger les références fautives → relancer le checker → attendre validation Yoann
-```
-
-**Marquage final obligatoire dans le livrable :**
-> *« Vérifié via legal-hallucination-checker — [N] références contrôlées — score [X]/100 »*
-
-Cette mention est la signature qualité ECA. Sa présence engage Yoann ;
-son absence signifie que la vérification n'a pas eu lieu.
-
-
----
-
-## ✅ CHECKLIST AVANT REMISE
-
-Valider mentalement chaque point avant d'envoyer la réponse :
-
-- [ ] Toutes les références citées vérifiées via MCP Légifrance (Pattern 3 ci-dessous)
-- [ ] Zones d'incertitude explicitement balisées avec ⚠️ INCERTAIN
-- [ ] La conclusion répond directement et précisément à la question posée
-- [ ] Niveau de risque justifié par un argumentaire (pas seulement affiché)
-- [ ] Aucune position incertaine présentée comme certaine
-- [ ] legal-hallucination-checker déclenché et score ≥ 70/100
-- [ ] Charte graphique ECA respectée si livrable Word (#999999 / #C00000 / #495864)
-- [ ] Référence YD + expert-comptable signataire mentionnée
-- [ ] Type de PV qualifié (immo / mobilière / pro / IS / régime spécial)
-- [ ] Taux PFU 31,4% / PS 18,6% / PV immo 17,2% appliqués selon le régime
-- [ ] CDHR vérifiée si apport-cession ou RFR > 250k€ / 500k€
-- [ ] Règle 150-0 B ter + quotient 163-0 A : JP divergente signalée + rescrit recommandé si pertinent
-- [ ] Obligations déclaratives (formulaires, délais) mentionnées
-
-**Si un seul item n'est pas validé → ne pas livrer. Reprendre la phase concernée.**
-
-
----
-
-## 🔍 ANNEXE — Commandes MCP Légifrance exactes
-
-Ne plus écrire « via MCP Légifrance » sans la commande. Utiliser les patterns suivants :
-
-### Articles de code
-```
-rechercher_code(code_name="Code général des impôts", search="[numéro]", champ="NUM_ARTICLE")
-rechercher_code(code_name="Code de commerce", search="[numéro]", champ="NUM_ARTICLE")
-rechercher_code(code_name="Code civil", search="[numéro]", champ="NUM_ARTICLE")
-rechercher_code(code_name="Livre des procédures fiscales", search="L. [numéro]", champ="NUM_ARTICLE")
-rechercher_code(code_name="Code monétaire et financier", search="L. [numéro]", champ="NUM_ARTICLE")
-rechercher_code(code_name="Code du travail", search="L. [numéro]", champ="NUM_ARTICLE")
-```
-
-### Jurisprudence
-```
-# Conseil d'État, CAA, TA
-rechercher_jurisprudence_administrative(search="[numéro affaire]", champ="NUM_AFFAIRE")
-# Cour de cassation
-rechercher_jurisprudence_judiciaire(search="[numéro pourvoi]", champ="NUM_AFFAIRE")
-# Conseil constitutionnel
-rechercher_decisions_constitutionnelles(search="[N°-AAAA QPC]")
-```
-
-### Doctrine et textes officiels
-```
-# BOFiP
-web_fetch("https://bofip.impots.gouv.fr/bofip/[identifiant]")
-# Loi / ordonnance / décret
-recherche_journal_officiel(search="[numéro ou titre]", text_types=["LOI"])
-# Texte consolidé
-rechercher_dans_texte_legal(search="[mots-clés]")
-```
-
-**Règle de robustesse** : avant de conclure à l'inexistence d'une référence,
-tenter au minimum 2 stratégies (numéro exact + mots-clés + date approximative).
-Une référence non trouvée via MCP ≠ référence inexistante.
+- [ ] Régime qualifié et justifié ; alternative chiffrée si doute
+- [ ] Chaque paramètre sourcé avec sa version et sa date de lecture
+- [ ] Calcul exécuté par script, résultat recoupé
+- [ ] Positions ECA appliquées (150-0 B ter ; CDHR dans chaque scénario)
+- [ ] Obligations déclaratives mentionnées
+- [ ] Incertitudes balisées
+- [ ] Fin de livrable du socle § 9 (checker bloquant, positions, échéances)

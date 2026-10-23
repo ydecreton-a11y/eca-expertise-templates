@@ -9,41 +9,18 @@ description: >
   une clause, un accord, un avenant.
   NE PAS utiliser si : la demande est une consultation de droit pur sans document
   fourni (→ consultation-juridique), si un acte de droit des sociétés doit être
-  créé de zéro (→ redaction-acte).
+  créé de zéro (→ redaction-acte), ou si le document est un pacte d'associés
+  (→ pacte-associes), un protocole ou une cession de titres (→ protocole-cession),
+  une GAP (→ gap) ou une cession de fonds (→ cession-fonds).
 ---
 
 # Skill : Analyse contractuelle — ECA EXPERTISE
 
-## PHASE 0 — Contexte dossier (exécuter en premier, toujours)
-
-### Recherche automatique dans les dossiers en cours
-
-Avant toute analyse, vérifier si ce client ou dossier a déjà été traité :
-
-```
-conversation_search(query="[nom client ou société mentionné dans la demande]")
-```
-
-Si des conversations passées existent sur ce dossier :
-- Les lire pour récupérer : décisions prises, documents produits, positions
-  retenues, points de vigilance identifiés
-- Ne jamais reprendre de zéro un dossier déjà engagé
-- Signaler en début de réponse : "Dossier retrouvé — suite de la consultation
-  du [date]" ou "Nouveau dossier — aucun antécédent trouvé"
-
-Si le nom du client n'est pas mentionné explicitement dans la demande :
-- Continuer sans recherche (ne pas bloquer sur une demande générique)
-- La recherche s'active uniquement si un nom propre de client ou de société
-  est identifiable dans la requête
-
-
-### 0c — Intégration réponse Casus
-
-Si Yoann colle un output Casus dans la conversation :
-- L utiliser comme base documentaire CGI/BOFiP certifiée
-- Ne pas redupliquer les vérifications fiscales déjà faites
-- Rôle Claude : analyse des clauses, risques contractuels, rédaction Word ECA
-- Indiquer : "Base Casus intégrée"
+> **Socle** : charger `socle-eca` — ouverture du dossier (§ 1), carte des
+> connecteurs (§ 2), règles de vérification (§ 3), accès aux modèles (§ 4),
+> pièges datés (§ 5), standard de rédaction (§ 6), garde-fous (§ 7), Word ECA
+> (§ 8), fin de livrable (§ 9). Un output Casus collé est une base documentaire
+> à recouper (§ 3.4). Aucun taux, seuil ou délai n'est repris de mémoire.
 
 ## PHASE 0b — Qualification et routing
 
@@ -73,43 +50,20 @@ Avant d'analyser clause par clause, poser mentalement :
 
 ---
 
-## PHASE 2 — Sources et vérifications
+## PHASE 2 — Posture, sources et vérifications
 
-### Fetch dynamique GitHub (obligatoire avant toute vérification)
+**Posture** : identifier qui ECA conseille (signataire, cocontractant, tiers) ;
+s'il est incertain, demander. Les recommandations et les rédactions de
+remplacement servent ce camp ; signaler loyalement les clauses qu'un juge
+risque d'écarter même si elles le favorisent.
 
-Fetcher systématiquement avant d'utiliser un taux, un outil MCP ou une
-référence BOFiP :
+**Sources** (socle § 2) : droit commun des contrats (C. civ., version à la date
+de conclusion — les contrats antérieurs à la réforme de 2016 restent régis par
+l'ancien droit), règles d'ordre public sectorielles (consommation, commerce,
+travail, baux), jurisprudence récente sur les clauses litigieuses (Pourvoi pour
+la portée), droit de l'Union si le contrat est international (OpenEU), droit
+étranger applicable (Legal Data Hunter).
 
-```
-web_fetch("https://raw.githubusercontent.com/ydecreton-a11y/eca-expertise-templates/main/skills/shared/sources-legales.md")
-```
-> **📋 INDEX RESSOURCES** : Après fetch de sources-legales.md, scanner la **section 9
-> (Index des ressources GitHub)** pour identifier les modules AUREP (M1-M12),
-> dossiers (DUTREIL_2026, démembrement-immobilier-entreprise) et PDF (Royal Formation,
-> résidence fiscale UF2026) pertinents pour la demande en cours. Fetcher toute
-> ressource identifiée comme pertinente avant de commencer l'analyse.
-
-```
-
-Ce fetch (2 secondes) garantit que tu travailles avec les taux et références
-à jour — pas avec des valeurs mémorisées potentiellement périmées après
-une LF. C'est la différence entre 30 % et 31,4 % de PFU.
-
-### Vérifications complémentaires à vérifier
-
-Fetcher `shared/sources-legales.md` via GitHub (voir bloc Sources ci-dessus) pour les outils MCP et BOFiP.
-
-Points à vérifier systématiquement :
-- Articles du Code civil invoqués (force majeure Art. 1218, imprévision Art. 1195)
-- Règles d'ordre public sectorielles (droit conso, droit commercial)
-- Jurisprudence récente sur les clauses litigieuses
-
-**Balise incertitude :**
-```
-⚠️ INCERTAIN — [point précis] : à vérifier via [source] avant conseil définitif.
-```
-
----
 
 ## PHASE 3 — Analyse structurée
 
@@ -172,15 +126,6 @@ VI. CONCLUSION
 
 ---
 
-## PHASE 5 — Livrable Word (si demandé)
-
-- Corps : Raleway sz=22, justifié, **#999999** ← couleur correcte
-- H1/H2 : Raleway gras, **#C00000**
-- Signature : Raleway gras sz=22, **#495864**, centré
-- Méthode : XML injection template ECA validé
-
----
-
 ## Exemple de sortie bien formée
 
 **Input :** "Analyse ce contrat de prestation de services informatiques"
@@ -196,8 +141,6 @@ VI. CONCLUSION
 
 **❌ Ce qui est insuffisant :**
 > "La clause de limitation de responsabilité pourrait poser problème."
-
-
 
 ---
 
@@ -222,7 +165,8 @@ sous réserve des cas pour lesquels la loi exclut toute limitation
 précis et limité], d'exercer une activité de [activité précisément définie
 et limitée à ce qui est nécessaire à la protection des intérêts du Client].
 En contrepartie, le [Client] versera mensuellement au [Salarié/Prestataire]
-une indemnité d'un montant égal à [au minimum 30 % de la rémunération mensuelle
+une indemnité d'un montant égal à [montant conforme à la convention collective
+applicable et à la jurisprudence en vigueur, vérifiés — pourcentage de la rémunération mensuelle
 moyenne]. »
 ```
 Quatre conditions cumulatives (proportionnalité, limitation espace/temps,
@@ -235,7 +179,7 @@ débiteur, qui ne pouvait être raisonnablement prévu lors de la conclusion du
 contrat et dont les effets ne peuvent être évités par des mesures appropriées,
 empêchant l'exécution de son obligation par le débiteur (Art. 1218 C. civ.).
 La Partie qui invoque la force majeure notifiera l'autre Partie par écrit dans
-un délai de [X jours] suivant la survenance de l'événement. Si l'empêchement
+un délai de [X] Jours Ouvrés suivant la survenance de l'événement. Si l'empêchement
 est définitif ou excède [X mois], chaque Partie pourra résilier le contrat
 sans indemnité, par lettre recommandée avec accusé de réception. »
 ```
@@ -281,50 +225,19 @@ ayant le périmètre le plus proche. »
   pour les clauses critiques (responsabilité, juridiction, prix)
 - Mentionner systématiquement la clause de langue applicable
 
-
----
-
-## 🛡️ PHASE FINALE — Auto-déclenchement legal-hallucination-checker
-
-⚠️ **OBLIGATOIRE — Étape non sautable.**
-
-Avant remise du livrable au client ou à Yoann, déclencher automatiquement :
-
-```
-1. Charger skill legal-hallucination-checker
-2. Extraire toutes les références citées :
-   — Articles de code (CGI, C. civ., C. com., LPF, CMF, CSS, CPI...)
-   — Jurisprudence (CE, Cass., CAA, TA, Cons. const.)
-   — BOFiP (BOI-...)
-   — Lois, ordonnances, décrets
-3. Vérifier chacune via MCP Légifrance avec au minimum 2 stratégies de recherche
-4. Produire le rapport de vérification (score /100)
-5. Décision :
-   — Si score ≥ 70 et 0 ⛔ HALLUCINATION → livrer + mentionner « Vérifié — score [N]/100 »
-   — Si score < 70 ou présence de ⛔ HALLUCINATION → NE PAS LIVRER
-     → Corriger les références fautives → relancer le checker → attendre validation Yoann
-```
-
-**Marquage final obligatoire dans le livrable :**
-> *« Vérifié via legal-hallucination-checker — [N] références contrôlées — score [X]/100 »*
-
-Cette mention est la signature qualité ECA. Sa présence engage Yoann ;
-son absence signifie que la vérification n'a pas eu lieu.
-
-
 ---
 
 ## ✅ CHECKLIST AVANT REMISE
 
 Valider mentalement chaque point avant d'envoyer la réponse :
 
-- [ ] Toutes les références citées vérifiées via MCP Légifrance (Pattern 3 ci-dessous)
+- [ ] Toutes les références citées vérifiées via MCP Légifrance (voir annexe en fin de skill)
 - [ ] Zones d'incertitude explicitement balisées avec ⚠️ INCERTAIN
 - [ ] La conclusion répond directement et précisément à la question posée
 - [ ] Niveau de risque justifié par un argumentaire (pas seulement affiché)
 - [ ] Aucune position incertaine présentée comme certaine
 - [ ] legal-hallucination-checker déclenché et score ≥ 70/100
-- [ ] Charte graphique ECA respectée si livrable Word (#999999 / #C00000 / #495864)
+- [ ] Word ECA conforme au socle § 8 (corps noir ; titres d'actes noir gras)
 - [ ] Référence YD + expert-comptable signataire mentionnée
 - [ ] Qualification juridique du contrat explicitée (Art. applicable)
 - [ ] Cotation 🔴/🟠/🟢 portée sur chaque clause sensible
@@ -332,43 +245,5 @@ Valider mentalement chaque point avant d'envoyer la réponse :
 
 **Si un seul item n'est pas validé → ne pas livrer. Reprendre la phase concernée.**
 
-
 ---
 
-## 🔍 ANNEXE — Commandes MCP Légifrance exactes
-
-Ne plus écrire « via MCP Légifrance » sans la commande. Utiliser les patterns suivants :
-
-### Articles de code
-```
-rechercher_code(code_name="Code général des impôts", search="[numéro]", champ="NUM_ARTICLE")
-rechercher_code(code_name="Code de commerce", search="[numéro]", champ="NUM_ARTICLE")
-rechercher_code(code_name="Code civil", search="[numéro]", champ="NUM_ARTICLE")
-rechercher_code(code_name="Livre des procédures fiscales", search="L. [numéro]", champ="NUM_ARTICLE")
-rechercher_code(code_name="Code monétaire et financier", search="L. [numéro]", champ="NUM_ARTICLE")
-rechercher_code(code_name="Code du travail", search="L. [numéro]", champ="NUM_ARTICLE")
-```
-
-### Jurisprudence
-```
-# Conseil d'État, CAA, TA
-rechercher_jurisprudence_administrative(search="[numéro affaire]", champ="NUM_AFFAIRE")
-# Cour de cassation
-rechercher_jurisprudence_judiciaire(search="[numéro pourvoi]", champ="NUM_AFFAIRE")
-# Conseil constitutionnel
-rechercher_decisions_constitutionnelles(search="[N°-AAAA QPC]")
-```
-
-### Doctrine et textes officiels
-```
-# BOFiP
-web_fetch("https://bofip.impots.gouv.fr/bofip/[identifiant]")
-# Loi / ordonnance / décret
-recherche_journal_officiel(search="[numéro ou titre]", text_types=["LOI"])
-# Texte consolidé
-rechercher_dans_texte_legal(search="[mots-clés]")
-```
-
-**Règle de robustesse** : avant de conclure à l'inexistence d'une référence,
-tenter au minimum 2 stratégies (numéro exact + mots-clés + date approximative).
-Une référence non trouvée via MCP ≠ référence inexistante.

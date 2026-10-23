@@ -9,60 +9,30 @@ description: >
   "fais un point sur", "analyse fiscalement", "rédige une consultation",
   consultation, note juridique, note fiscale, analyse fiscale, avis juridique.
   NE PAS utiliser si : un document contractuel est fourni (→ analyse-contrat),
-  le client est en phase exploratoire sans opération définie (→ diagnostic-transmission),
+  le client est en phase exploratoire sans opération définie (→ strategie-patrimoniale),
   la demande porte sur un texte nouveau (→ veille-juridique),
   un acte doit être rédigé sans question de fond (→ redaction-acte).
 ---
 
 # Skill : Consultation juridique et fiscale — ECA EXPERTISE
 
+> **Socle** : charger `socle-eca` — ouverture du dossier (§ 1), carte des
+> connecteurs (§ 2), règles de vérification (§ 3), accès aux modèles (§ 4),
+> pièges datés (§ 5), standard de rédaction (§ 6), garde-fous (§ 7), Word ECA
+> (§ 8), fin de livrable (§ 9). Un output Casus collé est une base documentaire
+> à recouper (§ 3.4). Aucun taux, seuil ou délai n'est repris de mémoire.
 
-## PHASE 0 — Initialisation (exécuter dans cet ordre, toujours)
-
-### 0a — Recherche dossier en cours
-
-Si un nom de client ou de société est mentionné dans la demande :
-
-```
-conversation_search(query="[nom exact du client ou de la société]")
-```
-
-- Si historique trouvé → lire les conversations pertinentes avant d'analyser.
-  Indiquer discrètement : "Suite du dossier [client] — [date dernière conversation]"
-- Si aucun historique → continuer normalement, nouveau dossier.
-- Si la demande est générique sans nom propre → pas de recherche, continuer directement.
-
-### 0b — SIREN fourni ?
-
-Si un numéro SIREN est mentionné dans la demande :
-```
-web_fetch("https://recherche-entreprises.api.gouv.fr/search?q=[SIREN]&per_page=1")
-```
-Pré-remplir automatiquement : dénomination, forme juridique, adresse, dirigeants.
-
-### 0c — Routing
-
-Vérifier que ce skill est le bon avant de continuer.
+## PHASE 0 — Aiguillage
 
 ```
-Document contractuel fourni ? → skill analyse-contrat
-Besoin de chiffrage PV en priorité ? → skill calcul-plus-value d'abord
-Client en phase exploratoire transmission ? → skill diagnostic-transmission
-Texte législatif récent à analyser ? → skill veille-juridique
-Acte à rédiger sans question de fond ? → skill redaction-acte
-→ Aucune de ces situations : continuer ici
+Document contractuel fourni                    → analyse-contrat
+Chiffrage d'abord                              → calcul-plus-value
+Phase exploratoire (transmission, patrimoine)  → strategie-patrimoniale
+Texte nouveau à analyser                       → veille-juridique
+Procédure fiscale en cours                     → contentieux-fiscal
+Acte à rédiger sans question de fond           → redaction-acte ou skill de process
+Sinon                                          → continuer ici
 ```
-
-### 0d — Intégration réponse Casus
-
-Si Yoann colle un output Casus dans la conversation :
-- L'utiliser comme base documentaire CGI/BOFiP certifiée (source de confiance)
-- Ne pas redupliquer les vérifications CGI/BOFiP déjà faites par Casus
-- Rôle Claude : raisonnement juridique global, jurisprudence Légifrance, rédaction Word ECA
-- Indiquer en début de réponse : "Base Casus intégrée — construction sur sa documentation"
-- Ne jamais contredire silencieusement Casus sans vérification Légifrance préalable
-
----
 
 ## PHASE 1 — Raisonnement préalable (avant toute recherche, avant toute rédaction)
 
@@ -94,44 +64,20 @@ ce qui manque et le demander avant de continuer.
 
 ---
 
-## PHASE 2 — Vérification des sources
+## PHASE 2 — Recherche et vérification des sources
 
-### Fetch dynamique GitHub (obligatoire avant toute vérification)
-
-Fetcher systématiquement avant d'utiliser un taux, un outil MCP ou une
-référence BOFiP :
-
-```
-web_fetch("https://raw.githubusercontent.com/ydecreton-a11y/eca-expertise-templates/main/skills/shared/sources-legales.md")
-```
-> **📋 INDEX RESSOURCES** : Après fetch de sources-legales.md, scanner la **section 9
-> (Index des ressources GitHub)** pour identifier les modules AUREP (M1-M12),
-> dossiers (DUTREIL_2026, démembrement-immobilier-entreprise) et PDF (Royal Formation,
-> résidence fiscale UF2026) pertinents pour la demande en cours. Fetcher toute
-> ressource identifiée comme pertinente avant de commencer l'analyse.
-
-```
-
-Ce fetch (2 secondes) garantit que tu travailles avec les taux et références
-à jour — pas avec des valeurs mémorisées potentiellement périmées après
-une LF. C'est la différence entre 30 % et 31,4 % de PFU.
-
-### Vérifications complémentaires
-
-**Règle de vérification :**
-- Tout article cité → vérifié via MCP Légifrance
-- Tout point fiscal → vérifié via BOFiP en complément
-- Toute jurisprudence → numéro et date vérifiés
-
-**Signal d'incertitude obligatoire :**
-Utiliser la balise suivante dès qu'une vérification échoue ou reste partielle :
-
-```
-⚠️ INCERTAIN — [point précis] : [raison de l'incertitude].
-   À vérifier via [source] avant usage opérationnel.
-```
-
----
+Suivre la carte des connecteurs (socle § 2) et les règles du socle § 3 :
+- **Textes** : version en vigueur à la date du fait générateur (LibreJustice
+  pour la lecture à date, Légifrance en recoupement).
+- **Doctrine fiscale** : BOFiP via Legal Data Hunter ; noter le paragraphe et
+  sa date de publication (opposabilité art. L. 80 A LPF).
+- **Jurisprudence** : administrative (Légifrance, LibreJustice) ; judiciaire
+  (Pourvoi, avec parcours procédural) ; Union (OpenEU). Lire la décision, pas
+  son résumé ; qualifier sa portée (principe / espèce, publiée ou non).
+- **Positions ECA** et **modules de formation du dépôt** couvrant le sujet
+  (socle § 4) : compléments, jamais substituts.
+- Une recherche qui n'aboutit pas est consignée (outil, requête) et le point
+  est balisé `⚠️ INCERTAIN`.
 
 ## PHASE 3 — Rédaction de la consultation
 
@@ -174,11 +120,11 @@ V. CONCLUSION OPÉRATIONNELLE
 ```
 VI. CONSÉQUENCES FISCALES CHIFFRÉES (si données disponibles)
     Calcul du coût fiscal, comparaison d'options, simulations.
-    [Rappeler systématiquement : vérifier les taux via references/sources-legales.md]
+    [Paramètres sourcés et datés ; calcul par script ; renvoi calcul-plus-value si chiffrage lourd]
 
 VII. RISQUES DE REDRESSEMENT
      — Qualification du risque fiscal
-     — Pénalités applicables (40 % manquement délibéré / 80 % abus de droit)
+     — Pénalités et intérêts applicables (CGI art. 1727 et s., LPF L. 64 — taux lus à la source)
      — Position BOFiP et jurisprudence récente
 
 VIII. STRATÉGIE D'OPTIMISATION ET ALTERNATIVES
@@ -187,36 +133,22 @@ VIII. STRATÉGIE D'OPTIMISATION ET ALTERNATIVES
 
 ---
 
-## PHASE 4 — Instructions par domaine prioritaire
+## PHASE 4 — Repères par domaine
 
-Charger le fichier de domaine pertinent depuis `references/domaines/` :
-
-| Domaine | Fichier |
-|---------|---------|
-| Transmission d'entreprise, Dutreil | `references/domaines/transmission-dutreil.md` |
-| Apport-cession, report 150-0 B ter | `references/domaines/apport-cession.md` |
-| LMNP (voir aussi AUREP M11 patrimoine immobilier) / LMP | `references/domaines/lmnp-lmp.md` |
-| Cession de titres, PFU, QPFC | `references/domaines/cession-titres.md` |
-| Contentieux fiscal, procédure | `references/domaines/contentieux-fiscal.md` |
-| Patrimonial, succession, régimes matrim. | `→ skill patrimonial-structuring` |
-| Droit social, dirigeants | `references/domaines/droit-social.md` |
-
-Ne pas improviser sur ces domaines sans avoir chargé le fichier correspondant.
+Il n'existe pas de fiche de domaine : pour chaque domaine, lire les sources
+primaires et la base Positions ECA. Renvois vers les skills spécialisés :
+transmission et patrimoine → `strategie-patrimoniale` ; holding et apport →
+`holding-apport` ; chiffrage → `calcul-plus-value` ; procédure → `contentieux-fiscal`.
+Droit social : consulter Gilberto Da Veiga (responsable social du cabinet) si
+la question excède le droit des dirigeants.
 
 ---
 
-## PHASE 5 — Livrable Word (si demandé)
+## PHASE 5 — Livrable
 
-1. Charger le skill `docx`
-2. Appliquer la charte ECA EXPERTISE :
-   - Corps : Raleway 11pt (sz=22), justifié, **#999999** ← couleur correcte
-   - H1 : Raleway gras 14pt, **#C00000**
-   - H2 : Raleway gras 12pt, **#C00000**
-   - Signature : Raleway gras sz=22, **#495864**, centré
-3. Utiliser la méthode XML injection dans le template ECA validé
-4. Mentionner référence signataire YD + expert-comptable (SH/LJ/FV/PL)
-
----
+Consultation au format Word ECA (socle § 8), signée YD et l'expert-comptable
+du dossier. Si le destinataire est le client non juriste : produire en plus
+une note via `note-information-client`.
 
 ## PHASE 6 — Contrôle qualité avant remise
 
@@ -250,9 +182,10 @@ II. Problématique : Conditions d'application de l'Art. 150-0 B ter CGI
     (report d'imposition) + analyse de l'intérêt par rapport à une cession
     directe + risques CDHR.
 
-III. Règles : Art. 150-0 B ter CGI (vérifier via MCP), condition de contrôle
-     (>50% droits de vote), obligation de réinvestissement 70% dans 3 ans,
-     CDHR (Art. 150-0 F ter), BOFiP BOI-RPPM-PVBMI-30-10-60.
+III. Règles : art. 150-0 B ter CGI dans sa version à la date de l'apport
+     (condition de contrôle, quotité, nature et délai du réinvestissement —
+     lus à la source, jamais de mémoire), CDHR (art. 224 CGI), doctrine BOFiP
+     du report d'imposition (identifiant et paragraphe vérifiés).
 
 [Suite de l'analyse avec chiffrage comparatif et recommandation]
 
@@ -260,8 +193,8 @@ III. Règles : Art. 150-0 B ter CGI (vérifier via MCP), condition de contrôle
 > "L'Art. 150-0 B ter permet un report. Il faut contrôler la holding."
 
 **❌ Ce qui est une erreur :**
-> Analyser sans vérifier que la condition de contrôle est remplie au moment
-> de l'apport (80% des droits de vote suffit — à vérifier via MCP).
+> Conclure sur le report sans avoir vérifié, dans le texte en vigueur, que la
+> condition de contrôle est remplie à la date de l'apport.
 
 ---
 
@@ -277,73 +210,5 @@ non encore consolidée dans le BOFiP.
 > partielle) n'est pas encore stabilisée depuis [arrêt]. À vérifier via
 > BOI-ENR-DMTG-10-20-40-10 avant de structurer le Dutreil."
 
-
 ---
 
-## 🛡️ PHASE FINALE — Auto-déclenchement legal-hallucination-checker
-
-⚠️ **OBLIGATOIRE — Étape non sautable.**
-
-Avant remise du livrable au client ou à Yoann, déclencher automatiquement :
-
-```
-1. Charger skill legal-hallucination-checker
-2. Extraire toutes les références citées :
-   — Articles de code (CGI, C. civ., C. com., LPF, CMF, CSS, CPI...)
-   — Jurisprudence (CE, Cass., CAA, TA, Cons. const.)
-   — BOFiP (BOI-...)
-   — Lois, ordonnances, décrets
-3. Vérifier chacune via MCP Légifrance avec au minimum 2 stratégies de recherche
-4. Produire le rapport de vérification (score /100)
-5. Décision :
-   — Si score ≥ 70 et 0 ⛔ HALLUCINATION → livrer + mentionner « Vérifié — score [N]/100 »
-   — Si score < 70 ou présence de ⛔ HALLUCINATION → NE PAS LIVRER
-     → Corriger les références fautives → relancer le checker → attendre validation Yoann
-```
-
-**Marquage final obligatoire dans le livrable :**
-> *« Vérifié via legal-hallucination-checker — [N] références contrôlées — score [X]/100 »*
-
-Cette mention est la signature qualité ECA. Sa présence engage Yoann ;
-son absence signifie que la vérification n'a pas eu lieu.
-
-
----
-
-## 🔍 ANNEXE — Commandes MCP Légifrance exactes
-
-Ne plus écrire « via MCP Légifrance » sans la commande. Utiliser les patterns suivants :
-
-### Articles de code
-```
-rechercher_code(code_name="Code général des impôts", search="[numéro]", champ="NUM_ARTICLE")
-rechercher_code(code_name="Code de commerce", search="[numéro]", champ="NUM_ARTICLE")
-rechercher_code(code_name="Code civil", search="[numéro]", champ="NUM_ARTICLE")
-rechercher_code(code_name="Livre des procédures fiscales", search="L. [numéro]", champ="NUM_ARTICLE")
-rechercher_code(code_name="Code monétaire et financier", search="L. [numéro]", champ="NUM_ARTICLE")
-rechercher_code(code_name="Code du travail", search="L. [numéro]", champ="NUM_ARTICLE")
-```
-
-### Jurisprudence
-```
-# Conseil d'État, CAA, TA
-rechercher_jurisprudence_administrative(search="[numéro affaire]", champ="NUM_AFFAIRE")
-# Cour de cassation
-rechercher_jurisprudence_judiciaire(search="[numéro pourvoi]", champ="NUM_AFFAIRE")
-# Conseil constitutionnel
-rechercher_decisions_constitutionnelles(search="[N°-AAAA QPC]")
-```
-
-### Doctrine et textes officiels
-```
-# BOFiP
-web_fetch("https://bofip.impots.gouv.fr/bofip/[identifiant]")
-# Loi / ordonnance / décret
-recherche_journal_officiel(search="[numéro ou titre]", text_types=["LOI"])
-# Texte consolidé
-rechercher_dans_texte_legal(search="[mots-clés]")
-```
-
-**Règle de robustesse** : avant de conclure à l'inexistence d'une référence,
-tenter au minimum 2 stratégies (numéro exact + mots-clés + date approximative).
-Une référence non trouvée via MCP ≠ référence inexistante.

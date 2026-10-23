@@ -6,46 +6,19 @@ description: >
   fiche pratique, résumé client. À utiliser après qu'une analyse de fond a été
   faite (consultation-juridique ou veille-juridique). Mots-clés : note client,
   expliquer à mon client, vulgariser, reformuler pour un client, fiche pratique,
-  lettre d'information, résumé non technique, synthèse client.
+  lettre d'information, résumé non technique, synthèse client. Couvre aussi les
+  écrits courts du cabinet : courrier au service de l'enregistrement, au SIE ou
+  au greffe, réponse à un collègue, brouillon de mail client (courrier, mail,
+  réponse à Aurélien / Nadège / Rebecca…).
 ---
 
 # Skill : Note d'information client — ECA EXPERTISE
 
-## PHASE 0 — Initialisation (exécuter en premier, toujours)
-
-### 0a — Recherche dossier en cours
-
-Si un nom de client est mentionné dans la demande :
-
-```
-conversation_search(query="[nom client ou société]")
-```
-
-- Si historique trouvé → lire les échanges pertinents avant de rédiger.
-  Une note client doit s'inscrire dans la continuité de ce qui a déjà été
-  expliqué ou conseillé — ne jamais contredire silencieusement une position antérieure.
-- Si aucun historique → continuer normalement
-- Si demande générique sans nom propre → pas de recherche
-
-### 0b — Prérequis de fond
-
-Ce skill produit un document client, pas une analyse de fond.
-Le fond doit être arrêté avant de vulgariser.
-
-```
-Analyse de fond disponible ? → continuer ici
-Fond pas encore établi ? → consultation-juridique ou patrimonial-structuring d'abord,
-                            puis revenir ici pour la note client
-```
-
-### 0c — Intégration réponse Casus
-
-Si Yoann colle un output Casus dans la conversation :
-- L'utiliser comme base factuelle et fiscale vérifiée
-- La note client est la vulgarisation de cet output pour le destinataire
-- Indiquer : "Base Casus intégrée — je vulgarise pour le client"
-
----
+> **Socle** : charger `socle-eca` — ouverture du dossier (§ 1), carte des
+> connecteurs (§ 2), règles de vérification (§ 3), accès aux modèles (§ 4),
+> pièges datés (§ 5), standard de rédaction (§ 6), garde-fous (§ 7), Word ECA
+> (§ 8), fin de livrable (§ 9). Un output Casus collé est une base documentaire
+> à recouper (§ 3.4). Aucun taux, seuil ou délai n'est repris de mémoire.
 
 ## PHASE 1 — Calibrage du destinataire
 
@@ -64,23 +37,6 @@ La note doit permettre au client de :
 3. **Agir** sur la base d'instructions claires
 
 ---
-
-
-### Sources (si la note nécessite de citer un taux ou une règle)
-
-Fetcher avant de citer un taux fiscal :
-```
-web_fetch("https://raw.githubusercontent.com/ydecreton-a11y/eca-expertise-templates/main/skills/shared/sources-legales.md")
-```
-> **📋 INDEX RESSOURCES** : Après fetch de sources-legales.md, scanner la **section 9
-> (Index des ressources GitHub)** pour identifier les modules AUREP (M1-M12),
-> dossiers (DUTREIL_2026, démembrement-immobilier-entreprise) et PDF (Royal Formation,
-> résidence fiscale UF2026) pertinents pour la demande en cours. Fetcher toute
-> ressource identifiée comme pertinente avant de commencer l'analyse.
-
-```
-Ne jamais citer un taux ou un abattement de mémoire dans une note client.
-Un taux erroné dans une note client crée une responsabilité directe du cabinet.
 
 ## PHASE 2 — Règles rédactionnelles
 
@@ -104,6 +60,20 @@ Un taux erroné dans une note client crée une responsabilité directe du cabine
 - Actionnable : toujours terminer par ce que le client doit faire
 
 ---
+
+## PHASE 2 bis — Courriers et messages
+
+Le skill couvre aussi les écrits courts du cabinet :
+- **Courrier administratif** (service de l'enregistrement, SIE, greffe) : gabarit
+  « courrier ECA » du dépôt (socle § 8), objet précis, références du dossier,
+  pièces jointes listées, signature « Le Service Juridique » si Yoann le demande ;
+  lieu de signature à demander.
+- **Réponse à un collègue** (expert-comptable, collaborateur comptable) : réponse
+  en tête en une phrase, puis justification courte, références vérifiées, et ce
+  que le collègue doit faire ; pas de jargon inutile, mais pas de simplification
+  qui fausse la règle.
+- **Mail client** : brouillon dans Microsoft 365 uniquement, jamais d'envoi sans
+  accord exprès.
 
 ## PHASE 3 — Structure de sortie
 
@@ -130,30 +100,21 @@ IV. VOS QUESTIONS ?
 
 ---
 
-## PHASE 4 — Livrable Word
-
-- Corps : Raleway sz=22, justifié, **#999999**
-- H1/H2 : Raleway gras, **#C00000**
-- Signature : Raleway gras sz=22, **#495864**, centré
-- Charger skill docx pour la mise en forme
-- Vérifier que la note ne contient aucune référence légale non expliquée
-
----
-
 ## Exemple de note bien formée
 
 **Objet : Impact de la réforme des prélèvements sociaux sur vos dividendes 2026**
 
-Dès le 1er janvier 2026, le taux des prélèvements sociaux sur les dividendes
-et les plus-values de cession de parts augmente de 1,4 point.
+[Date d'effet lue dans le texte], le taux des prélèvements sociaux sur les
+dividendes et les plus-values de cession de parts augmente de [x] point(s).
 
 **Ce que ça change pour vous :**
 Si vous percevez des dividendes de votre société en 2026, le taux global
-d'imposition (impôt sur le revenu + prélèvements sociaux) passe de 30 %
-à 31,4 % sur chaque euro distribué.
+d'imposition (impôt sur le revenu + prélèvements sociaux) passe de [a] %
+à [b] % sur chaque euro distribué.
 
 **Exemple chiffré :**
-Sur une distribution de 50 000 €, le coût supplémentaire est de 700 €.
+Sur une distribution de [montant du dossier], le coût supplémentaire est de
+[calcul exécuté par script].
 
 **Ce que vous devez faire :**
 Aucune démarche immédiate n'est requise. Si vous envisagiez une distribution
@@ -163,9 +124,9 @@ s'il est préférable de l'anticiper ou de la moduler.
 Contactez [Nom] au [Téléphone] pour en discuter.
 
 **❌ Ce qui est insuffisant :**
-> "Suite à la LFSS 2026 (loi n°2025-1403), le taux de CSG sur les revenus
-> du patrimoine est porté à 10,6% conformément à l'Art. L136-8 CSS."
-
+> "Suite à la loi n° [référence], le taux de CSG sur les revenus du
+> patrimoine est porté à [x] % conformément à l'art. L. 136-8 CSS."
+> (jargon et références brutes, sans traduction concrète pour le client)
 
 ---
 
@@ -217,7 +178,7 @@ CONTACT
 | Dirigeant en cession imminente | Direct, chiffré, orienté décision | Calendrier serré, fiscalité chiffrée |
 | Bénéficiaire d'assurance-vie | Pédagogique sur la fiscalité spécifique (990 I / 757 B) | Distinguer primes < 70 ans / > 70 ans |
 | Donataire (donation reçue) | Explicatif sur les obligations futures (rappel 15 ans) | Réintégration successorale, base de calcul |
-| Particulier en patrimoine immo | Concret, illustré par cas chiffrés | Régime matrimonial impact, IFI seuil 1,3M€ |
+| Particulier en patrimoine immo | Concret, illustré par cas chiffrés | Régime matrimonial, seuil d'IFI (lu à la source) |
 
 **Règle transverse** : un client en situation émotionnelle (deuil, divorce, conflit
 familial) ne lit pas une note de la même façon qu'un dirigeant en pleine forme.
@@ -233,20 +194,23 @@ Fiche pratique ECA EXPERTISE — Avril 2026
 
 EN BREF
 Vous transmettez votre entreprise familiale via un Pacte Dutreil. Cette opération
-réduit l'impôt de donation de 75 %, mais impose des engagements précis sur 6 ans
-(LF 2026). Voici le calendrier à suivre.
+réduit fortement l'impôt de donation, mais impose des engagements de
+conservation et de direction sur plusieurs années [durées, taux et conditions
+lus dans l'article 787 B CGI en vigueur à la date de la transmission]. Voici le
+calendrier à suivre.
 
 CALENDRIER
 | Étape | Quand | Qui |
 |-------|-------|-----|
-| Engagement collectif de conservation (2 ans min.) | M-24 | Vous + co-signataires |
+| Engagement collectif de conservation ([durée légale]) | [date] | Vous + co-signataires |
 | Évaluation de la société (méthode validée) | M-3 | Expert-comptable + auditeur |
 | Donation devant notaire (acte authentique) | M-0 | Vous + notaire + donataires |
-| Engagement individuel des donataires (4 ans) | À la donation | Donataires (signature acte) |
-| Direction effective par un signataire (3 ans) | À la donation et après | Vous ou un donataire |
+| Engagement individuel des donataires ([durée légale]) | À la donation | Donataires (signature acte) |
+| Direction effective par un signataire ([durée légale]) | À la donation et après | Vous ou un donataire |
 
 POINTS D'ATTENTION
-🔴 Cession partielle pendant l'engagement = remise en cause totale de l'avantage
+🔴 Toute cession pendant les engagements doit être analysée avant d'être faite
+   (remise en cause totale ou partielle selon les cas prévus par le texte)
 🟠 Distribution trop importante de réserves pourrait être requalifiée
 🟢 Possibilité de cumul avec donation en nue-propriété (réduction supplémentaire)
 
@@ -263,50 +227,19 @@ CONTACT
 Yoann Decreton — 03 27 72 00 10 — accueilcambrai@eca-groupe.com
 ```
 
-
----
-
-## 🛡️ PHASE FINALE — Auto-déclenchement legal-hallucination-checker
-
-⚠️ **OBLIGATOIRE — Étape non sautable.**
-
-Avant remise du livrable au client ou à Yoann, déclencher automatiquement :
-
-```
-1. Charger skill legal-hallucination-checker
-2. Extraire toutes les références citées :
-   — Articles de code (CGI, C. civ., C. com., LPF, CMF, CSS, CPI...)
-   — Jurisprudence (CE, Cass., CAA, TA, Cons. const.)
-   — BOFiP (BOI-...)
-   — Lois, ordonnances, décrets
-3. Vérifier chacune via MCP Légifrance avec au minimum 2 stratégies de recherche
-4. Produire le rapport de vérification (score /100)
-5. Décision :
-   — Si score ≥ 70 et 0 ⛔ HALLUCINATION → livrer + mentionner « Vérifié — score [N]/100 »
-   — Si score < 70 ou présence de ⛔ HALLUCINATION → NE PAS LIVRER
-     → Corriger les références fautives → relancer le checker → attendre validation Yoann
-```
-
-**Marquage final obligatoire dans le livrable :**
-> *« Vérifié via legal-hallucination-checker — [N] références contrôlées — score [X]/100 »*
-
-Cette mention est la signature qualité ECA. Sa présence engage Yoann ;
-son absence signifie que la vérification n'a pas eu lieu.
-
-
 ---
 
 ## ✅ CHECKLIST AVANT REMISE
 
 Valider mentalement chaque point avant d'envoyer la réponse :
 
-- [ ] Toutes les références citées vérifiées via MCP Légifrance (Pattern 3 ci-dessous)
+- [ ] Toutes les références citées vérifiées via MCP Légifrance + LibreJustice + Legal Data Hunter (voir legal-hallucination-checker)
 - [ ] Zones d'incertitude explicitement balisées avec ⚠️ INCERTAIN
 - [ ] La conclusion répond directement et précisément à la question posée
 - [ ] Niveau de risque justifié par un argumentaire (pas seulement affiché)
 - [ ] Aucune position incertaine présentée comme certaine
 - [ ] legal-hallucination-checker déclenché et score ≥ 70/100
-- [ ] Charte graphique ECA respectée si livrable Word (#999999 / #C00000 / #495864)
+- [ ] Word ECA conforme au socle § 8 (corps noir ; titres d'actes noir gras)
 - [ ] Référence YD + expert-comptable signataire mentionnée
 - [ ] Profil destinataire identifié et registre calibré
 - [ ] Aucun terme technique non défini en langage courant
