@@ -120,9 +120,8 @@ Dépôt : `ydecreton-a11y/eca-expertise-templates` (public).
 
 **Méthode** : cloner le dépôt (copie légère, une seule fois par session), puis
 **rechercher** le document pertinent par type d'acte, par titre et par
-mots-clés — ne jamais
-se fier à un chemin écrit dans un skill. Lister le contenu réel du dossier
-concerné avant de choisir.
+mots-clés — ne jamais se fier à un chemin écrit dans un skill. Lister le contenu
+réel du dossier concerné avant de choisir.
 
 ```
 Accès : clone de la session (dépôt rattaché) ; à défaut, clone public.
