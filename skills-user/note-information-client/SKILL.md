@@ -173,11 +173,11 @@ CONTACT
 
 | Profil | Registre | Spécificités |
 |--------|----------|--------------|
-| Héritier (succession en cours) | Empathique, pédagogique, pas de pression temporelle (deuil) | Délai 6 mois prolongé / option succession |
+| Héritier (succession en cours) | Empathique, pédagogique, pas de pression temporelle (deuil) | Délai de dépôt de la déclaration de succession (CGI art. 641, délai lu à la source) / option successorale |
 | Conjoint survivant | Rassurant, étapes claires, focus sur ses droits | Quasi-usufruit, pension de réversion, droit viager |
 | Dirigeant en cession imminente | Direct, chiffré, orienté décision | Calendrier serré, fiscalité chiffrée |
-| Bénéficiaire d'assurance-vie | Pédagogique sur la fiscalité spécifique (990 I / 757 B) | Distinguer primes < 70 ans / > 70 ans |
-| Donataire (donation reçue) | Explicatif sur les obligations futures (rappel 15 ans) | Réintégration successorale, base de calcul |
+| Bénéficiaire d'assurance-vie | Pédagogique sur la fiscalité spécifique (990 I / 757 B) | Distinguer selon l'âge de l'assuré au versement des primes (seuil lu dans les articles 990 I et 757 B) |
+| Donataire (donation reçue) | Explicatif sur les obligations futures (rappel fiscal des donations antérieures, CGI art. 784, délai lu à la source) | Réintégration successorale, base de calcul |
 | Particulier en patrimoine immo | Concret, illustré par cas chiffrés | Régime matrimonial, seuil d'IFI (lu à la source) |
 
 **Règle transverse** : un client en situation émotionnelle (deuil, divorce, conflit
@@ -194,34 +194,44 @@ Fiche pratique ECA EXPERTISE — Avril 2026
 
 EN BREF
 Vous transmettez votre entreprise familiale via un Pacte Dutreil. Cette opération
-réduit fortement l'impôt de donation, mais impose des engagements de
-conservation et de direction sur plusieurs années [durées, taux et conditions
-lus dans l'article 787 B CGI en vigueur à la date de la transmission]. Voici le
-calendrier à suivre.
+exonère de droits de donation une large part de la valeur des titres transmis,
+mais impose des engagements de conservation et de direction sur plusieurs
+années [quotité exonérée, durées et conditions lues dans l'article 787 B CGI en
+vigueur à la date de la transmission]. Voici le calendrier à suivre.
 
 CALENDRIER
 | Étape | Quand | Qui |
 |-------|-------|-----|
-| Engagement collectif de conservation ([durée légale]) | [date] | Vous + co-signataires |
+| Engagement collectif de conservation ([durée légale]) | Avant la donation, en cours au jour de celle-ci | Vous + co-signataires |
 | Évaluation de la société (méthode validée) | M-3 | Expert-comptable + auditeur |
 | Donation devant notaire (acte authentique) | M-0 | Vous + notaire + donataires |
-| Engagement individuel des donataires ([durée légale]) | À la donation | Donataires (signature acte) |
-| Direction effective par un signataire ([durée légale]) | À la donation et après | Vous ou un donataire |
+| Engagement individuel des donataires ([durée légale]) | Pris dans l'acte de donation ; court à la fin de l'engagement collectif | Donataires (signature acte) |
+| Direction effective par un signataire ou un donataire ([durée légale]) | Pendant l'engagement collectif et après la donation | Vous ou un donataire |
 
 POINTS D'ATTENTION
-🔴 Toute cession pendant les engagements doit être analysée avant d'être faite
-   (remise en cause totale ou partielle selon les cas prévus par le texte)
-🟠 Distribution trop importante de réserves pourrait être requalifiée
-🟢 Possibilité de cumul avec donation en nue-propriété (réduction supplémentaire)
+🔴 Toute vente ou donation de titres pendant les engagements doit être analysée
+   avant d'être faite : selon le cas prévu par la loi, l'avantage est perdu en
+   totalité, pour la seule personne concernée, à hauteur des seuls titres cédés,
+   ou maintenu
+🟠 Les biens de la société qui ne servent pas à son activité (logements, véhicules
+   de tourisme, objets d'art…) ne bénéficient pas de l'exonération [liste et
+   conditions lues dans l'article 787 B]
+🟢 Cumul possible avec une donation de la nue-propriété : l'impôt est calculé sur
+   la seule valeur de la nue-propriété, à condition que les statuts limitent le
+   droit de vote de l'usufruitier aux décisions sur l'affectation des bénéfices
 
 QUESTIONS FRÉQUENTES
-Q : Que se passe-t-il si je décède pendant l'engagement collectif ?
-R : Vos héritiers reprennent l'engagement à votre place. Pas de remise en cause si
-   l'engagement est tenu jusqu'au terme initial.
+Q : Que se passe-t-il si je décède avant la fin des engagements ?
+R : Les engagements déjà pris continuent de s'imposer à vos donataires. Il faut
+   aussi qu'un associé signataire ou un donataire assure la direction de la
+   société pendant toute la durée exigée par la loi : à organiser dès maintenant.
 
-Q : Puis-je vendre une partie des titres pour faire face à un besoin urgent ?
-R : Non, sauf cession entre signataires de l'engagement collectif. Toute autre
-   cession entraîne perte de l'abattement.
+Q : Mes enfants pourront-ils vendre une partie des titres pendant les engagements ?
+R : Pas librement : une vente fait en principe perdre l'avantage fiscal, en tout
+   ou partie. La loi atténue ou écarte cette conséquence dans certains cas (vente
+   ou donation à un autre signataire de l'engagement collectif, apport à une
+   holding familiale sous conditions, donation à leurs propres enfants qui
+   poursuivent l'engagement…). Consultez-nous avant toute opération.
 
 CONTACT
 Yoann Decreton — 03 27 72 00 10 — accueilcambrai@eca-groupe.com

@@ -4,7 +4,7 @@ Créé le 2026-10-23 — dernière maintenance : aucune. Tenu par `maintenance-s
 
 Une entrée 'verifie' a été lue à la source à la date indiquée. Une entrée 'a_verifier' n'a pas encore été contrôlée dans sa version en vigueur : la prochaine maintenance la lit en entier et confronte le passage du skill au texte. Les numéros de ligne sont indicatifs (ils bougent avec les skills) ; l'extrait sert d'ancre.
 
-**249 articles** (115 vérifiés, 134 à vérifier) · 10 BOFiP · 18 décisions · 7 textes · 10 pièges datés · 4 échéances
+**250 articles** (118 vérifiés, 132 à vérifier) · 10 BOFiP · 18 décisions · 7 textes · 10 pièges datés · 4 échéances
 
 ## Échéances annoncées
 
@@ -224,6 +224,7 @@ Une entrée 'verifie' a été lue à la source à la date indiquée. Une entrée
 | code-general-des-impots | 54 septies | à vérifier |  | restructurations |
 | code-general-des-impots | 57 | à vérifier |  | holding-apport |
 | code-general-des-impots | 635 | 2026-10-23 |  | acte-definitif-titres, cession-fonds, protocole-cession, redaction-acte |
+| code-general-des-impots | 641 | à vérifier |  | note-information-client |
 | code-general-des-impots | 669 | à vérifier |  | socle-eca, strategie-patrimoniale |
 | code-general-des-impots | 676 | 2026-10-23 |  | acte-definitif-titres, cession-fonds, protocole-cession |
 | code-general-des-impots | 719 | 2026-10-23 |  | cession-fonds |
@@ -235,8 +236,8 @@ Une entrée 'verifie' a été lue à la source à la date indiquée. Une entrée
 | code-general-des-impots | 774 bis | à vérifier |  | strategie-patrimoniale |
 | code-general-des-impots | 777 | à vérifier |  | strategie-patrimoniale |
 | code-general-des-impots | 779 | à vérifier |  | strategie-patrimoniale |
-| code-general-des-impots | 784 | à vérifier |  | strategie-patrimoniale |
-| code-general-des-impots | 787 B | à vérifier |  | note-information-client, socle-eca, strategie-patrimoniale |
+| code-general-des-impots | 784 | à vérifier |  | note-information-client, strategie-patrimoniale |
+| code-general-des-impots | 787 B | 2026-10-26 | VIGUEUR | consultation-juridique, note-information-client, socle-eca, strategie-patrimoniale |
 | code-general-des-impots | 787 C | à vérifier |  | socle-eca, strategie-patrimoniale |
 | code-general-des-impots | 8 | à vérifier |  | redaction-acte |
 | code-general-des-impots | 809 | à vérifier |  | holding-apport, redaction-acte |
@@ -259,8 +260,8 @@ Une entrée 'verifie' a été lue à la source à la date indiquée. Une entrée
 | livre-des-procedures-fiscales | L. 57 | à vérifier |  | contentieux-fiscal |
 | livre-des-procedures-fiscales | L. 59 | à vérifier |  | contentieux-fiscal |
 | livre-des-procedures-fiscales | L. 59 A | 2026-10-26 | ABROGE_DIFF jusqu'au 2026-12-31 ; version future au 2027-01-01 | contentieux-fiscal |
-| livre-des-procedures-fiscales | L. 64 | à vérifier |  | consultation-juridique, holding-apport |
-| livre-des-procedures-fiscales | L. 64 A | à vérifier |  | holding-apport |
+| livre-des-procedures-fiscales | L. 64 | 2026-10-26 | VIGUEUR | consultation-juridique, holding-apport |
+| livre-des-procedures-fiscales | L. 64 A | 2026-10-26 | VIGUEUR | consultation-juridique, holding-apport |
 | livre-des-procedures-fiscales | L. 80 A | à vérifier |  | consultation-juridique, contentieux-fiscal |
 | livre-des-procedures-fiscales | R*196-1 | 2026-10-26 | VIGUEUR | contentieux-fiscal, gap, socle-eca |
 | livre-des-procedures-fiscales | R*196-2 | à vérifier |  | contentieux-fiscal |

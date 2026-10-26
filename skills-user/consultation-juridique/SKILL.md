@@ -125,7 +125,10 @@ VI. CONSÉQUENCES FISCALES CHIFFRÉES (si données disponibles)
 
 VII. RISQUES DE REDRESSEMENT
      — Qualification du risque fiscal
-     — Pénalités et intérêts applicables (CGI art. 1727 et s., LPF L. 64 — taux lus à la source)
+     — Intérêt de retard et majorations (CGI art. 1727 et s. — taux lus à la source)
+     — Abus de droit : LPF L. 64 (but exclusivement fiscal) et L. 64 A (motif
+       principalement fiscal, rectifications notifiées depuis le 01/01/2021 sur
+       des actes réalisés depuis le 01/01/2020 — vérifié 26/10/2026)
      — Position BOFiP et jurisprudence récente
 
 VIII. STRATÉGIE D'OPTIMISATION ET ALTERNATIVES
@@ -201,15 +204,23 @@ III. Règles : art. 150-0 B ter CGI dans sa version à la date de l'apport
 
 ### Exemple 2 — Signal ⚠️ INCERTAIN correctement utilisé
 
-**Situation :** Jurisprudence récente sur la holding animatrice, position
-non encore consolidée dans le BOFiP.
+**Situation :** Pacte Dutreil sur les titres d'une holding animatrice ; régime
+modifié par la loi de finances pour 2026, doctrine BOFiP antérieure à cette loi.
 
 **Formulation correcte :**
-> "La jurisprudence du CE admet la qualification de holding animatrice sous
-> conditions [référence vérifiée]. Toutefois :
-> ⚠️ INCERTAIN — La position BOFiP sur les holdings mixtes (activité animatrice
-> partielle) n'est pas encore stabilisée depuis [arrêt]. À vérifier via
-> BOI-ENR-DMTG-10-20-40-10 avant de structurer le Dutreil."
+> "L'article 787 B du CGI assimile à une société exerçant une activité
+> commerciale la holding dont l'activité principale est la participation active
+> à la conduite de la politique de son groupe [texte lu dans sa version à la
+> date de la transmission]. En matière de droits de mutation à titre gratuit, la
+> qualification relève du juge judiciaire [arrêts de la chambre commerciale lus
+> et vérifiés]. Toutefois :
+> ⚠️ INCERTAIN — Le commentaire administratif du régime (BOI-ENR-DMTG-10-20-40-10,
+> § 50 et 55 sur les holdings, version du 30/05/2024, vérifié 26/10/2026) est
+> antérieur à la loi n° 2026-103 du 19 février 2026 (art. 8), qui a notamment
+> exclu de l'exonération les actifs non affectés à l'activité et allongé
+> l'engagement individuel de conservation (CGI art. 787 B, version en vigueur
+> depuis le 21/02/2026, vérifié 26/10/2026) : il ne commente pas ces règles.
+> Rechercher une mise à jour avant de structurer le Dutreil."
 
 ---
 

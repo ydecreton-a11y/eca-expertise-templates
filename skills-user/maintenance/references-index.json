@@ -913,12 +913,12 @@
     },
     {
      "skill": "consultation-juridique",
-     "ligne": 182,
+     "ligne": 185,
      "extrait": "II. Problématique : Conditions d'application de l'Art. 150-0 B ter CGI"
     },
     {
      "skill": "consultation-juridique",
-     "ligne": 186,
+     "ligne": 189,
      "extrait": "III. Règles : art. 150-0 B ter CGI dans sa version à la date de l'apport"
     },
     {
@@ -1121,7 +1121,7 @@
    "occurrences": [
     {
      "skill": "consultation-juridique",
-     "ligne": 188,
+     "ligne": 191,
      "extrait": "lus à la source, jamais de mémoire), CDHR (art. 224 CGI), doctrine BOFiP"
     },
     {
@@ -1651,7 +1651,7 @@
     {
      "skill": "consultation-juridique",
      "ligne": 128,
-     "extrait": "— Pénalités et intérêts applicables (CGI art. 1727 et s., LPF L. 64 — taux lus à la source)"
+     "extrait": "— Intérêt de retard et majorations (CGI art. 1727 et s. — taux lus à la source)"
     }
    ]
   },
@@ -1661,14 +1661,19 @@
    "code": "livre-des-procedures-fiscales",
    "article": "L. 64",
    "cle_librejustice": "l64",
-   "statut_verification": "a_verifier",
-   "derniere_verification": null,
-   "etat_source": null,
+   "statut_verification": "verifie",
+   "derniere_verification": "2026-10-26",
+   "etat_source": {
+    "statut": "VIGUEUR",
+    "version_depuis": "2019-01-01",
+    "dernier_texte_modificateur": "Loi n° 2018-1317 du 28/12/2018, art. 202",
+    "lecture": "abus de droit : actes fictifs ou à but exclusivement fiscal"
+   },
    "occurrences": [
     {
      "skill": "consultation-juridique",
-     "ligne": 128,
-     "extrait": "— Pénalités et intérêts applicables (CGI art. 1727 et s., LPF L. 64 — taux lus à la source)"
+     "ligne": 129,
+     "extrait": "— Abus de droit : LPF L. 64 (but exclusivement fiscal) et L. 64 A (motif"
     },
     {
      "skill": "holding-apport",
@@ -2615,10 +2620,20 @@
    "code": "livre-des-procedures-fiscales",
    "article": "L. 64 A",
    "cle_librejustice": "l64-a",
-   "statut_verification": "a_verifier",
-   "derniere_verification": null,
-   "etat_source": null,
+   "statut_verification": "verifie",
+   "derniere_verification": "2026-10-26",
+   "etat_source": {
+    "statut": "VIGUEUR",
+    "version_depuis": "2021-01-01",
+    "dernier_texte_modificateur": "Loi n° 2018-1317 du 28/12/2018, art. 109",
+    "lecture": "motif principalement fiscal ; rectifications notifiées depuis le 01/01/2021 sur des actes passés ou réalisés depuis le 01/01/2020"
+   },
    "occurrences": [
+    {
+     "skill": "consultation-juridique",
+     "ligne": 129,
+     "extrait": "— Abus de droit : LPF L. 64 (but exclusivement fiscal) et L. 64 A (motif"
+    },
     {
      "skill": "holding-apport",
      "ligne": 46,
@@ -3418,14 +3433,29 @@
    "code": "code-general-des-impots",
    "article": "787 B",
    "cle_librejustice": "787-b",
-   "statut_verification": "a_verifier",
-   "derniere_verification": null,
-   "etat_source": null,
+   "statut_verification": "verifie",
+   "derniere_verification": "2026-10-26",
+   "etat_source": {
+    "statut": "VIGUEUR",
+    "version_depuis": "2026-02-21",
+    "dernier_texte_modificateur": "Loi n° 2026-103 du 19/02/2026, art. 8",
+    "lecture": "exclusion des actifs non affectés à l'activité ; engagement individuel porté à six ans"
+   },
    "occurrences": [
+    {
+     "skill": "consultation-juridique",
+     "ligne": 211,
+     "extrait": "> \"L'article 787 B du CGI assimile à une société exerçant une activité"
+    },
+    {
+     "skill": "consultation-juridique",
+     "ligne": 221,
+     "extrait": "> l'engagement individuel de conservation (CGI art. 787 B, version en vigueur"
+    },
     {
      "skill": "note-information-client",
      "ligne": 199,
-     "extrait": "lus dans l'article 787 B CGI en vigueur à la date de la transmission]. Voici le"
+     "extrait": "années [quotité exonérée, durées et conditions lues dans l'article 787 B CGI en"
     },
     {
      "skill": "socle-eca",
@@ -4953,6 +4983,11 @@
    "etat_source": null,
    "occurrences": [
     {
+     "skill": "note-information-client",
+     "ligne": 180,
+     "extrait": "| Donataire (donation reçue) | Explicatif sur les obligations futures (rappel fiscal des donations antérieures, CGI art. 784, délai lu à la source) | Réintégrat"
+    },
+    {
      "skill": "strategie-patrimoniale",
      "ligne": 69,
      "extrait": "| Donation simple / donation-partage | Transmission anticipée, gel des valeurs (partage) | Réserve, rapport, accord des héritiers (partage) | C. civ. art. 893 s"
@@ -5540,6 +5575,23 @@
      "skill": "gap",
      "ligne": 404,
      "extrait": "**Ligne 18 — la solidarité ne se présume pas** (C. civ. art. 1310, vérifié"
+    }
+   ]
+  },
+  {
+   "id": "code-general-des-impots:641",
+   "type": "article",
+   "code": "code-general-des-impots",
+   "article": "641",
+   "cle_librejustice": "641",
+   "statut_verification": "a_verifier",
+   "derniere_verification": null,
+   "etat_source": null,
+   "occurrences": [
+    {
+     "skill": "note-information-client",
+     "ligne": 176,
+     "extrait": "| Héritier (succession en cours) | Empathique, pédagogique, pas de pression temporelle (deuil) | Délai de dépôt de la déclaration de succession (CGI art. 641, d"
     }
    ]
   }
