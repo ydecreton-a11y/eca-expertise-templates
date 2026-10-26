@@ -9,11 +9,16 @@ extract   : relève les références d'articles citées dans tous les SKILL.md
             (dossier contenant un sous-dossier par skill, ou des fichiers .md).
 reconcile : ajoute à l'index les références nouvelles (statut « a_verifier »),
             retire celles qui ne sont plus citées, rafraîchit les occurrences ;
-            affiche le bilan. Ne touche ni aux BOFiP, ni à la jurisprudence,
+            affiche le bilan, dont les entrées « verifie » qu'aucune marque de
+            vérification des skills ne soutient plus (à revoir, jamais
+            rétrogradées en silence). Ne touche ni aux BOFiP, ni à la jurisprudence,
             ni aux textes, pièges et échéances (tenus à la main).
 render    : régénère la vue lisible .md à partir du .json.
-L'extraction est heuristique : son résultat se relit (les faux positifs se
-corrigent dans REMAP / DROP ci-dessous, jamais en silence).
+L'extraction travaille par bloc logique (paragraphe, élément de liste, ligne de
+tableau, titre) : un code ou une marque « vérifié » placés sur la ligne voisine
+d'un paragraphe replié sont pris en compte (règles détaillées dans extract).
+Elle est heuristique : son résultat se relit (les faux positifs se corrigent
+dans REMAP / DROP ci-dessous, jamais en silence). Révision du 26/10/2026.
 """
 import json, re, os, sys, collections, datetime
 CGI = 'code-general-des-impots'
@@ -95,40 +100,171 @@ def _files(d):
         if f.endswith('.md'):
             yield f[:-3], os.path.join(d, f)
 
+ABBR = {'art', 'Art', 'civ', 'com', 'trav', 'mon', 'fin', 'prop', 'intell', 'conso',
+        'assur', 'al', 's', 'cf', 'ex', 'Cass', 'n', 'req', 'éd', 'p', 'soc', 'crim', 'ass', 'plén'}
+DATED = re.compile(r"[vV]érifiée?s?(?:\s+(?:via|sur|à|au|dans)\s[^.;|()\n]{0,30}?)?\s*,?\s*(?:le\s+)?\(?(\d{2}/\d{2}/\d{4})")
+BARE = re.compile(r"(?<!non )\b[vV]érifiée?s?\b")
+NOT_VERIFIED_BEFORE = re.compile(r"\b[Ll]ire\b[^;|]{0,40}$")
+NOT_VERIFIED_AFTER = re.compile(r"^[^;|]{0,30}?\b(?:à lire|à vérifier)\b")
+
+def _blocks(lines, first):
+    """Blocs logiques (paragraphe, élément de liste, ligne de tableau, titre,
+    ligne de code) : liste de (indices de lignes). first = première ligne utile."""
+    out, cur, fence = [], [], False
+    def flush():
+        if cur:
+            out.append(list(cur)); cur.clear()
+    for i in range(first, len(lines)):
+        s = lines[i].strip()
+        if s.startswith('```'):
+            flush(); fence = not fence; continue
+        if fence:
+            if s: out.append([i])
+            continue
+        if not s or s == '>':
+            flush(); continue
+        if s.startswith('#') or s.startswith('|'):
+            flush(); out.append([i]); continue
+        if re.match(r'^(?:>\s*)?(?:[-*+]|\d+\.)\s', s):
+            flush()
+        cur.append(i)
+    flush()
+    return out
+
+def _join(lines, idx):
+    """Texte joint du bloc et table position -> numéro de ligne (0-based)."""
+    parts, owner, pos = [], [], 0
+    for i in idx:
+        s = lines[i].strip()
+        if parts:
+            parts.append(' '); owner.append(i); pos += 1
+        parts.append(s); owner.extend([i] * len(s)); pos += len(s)
+    return ''.join(parts), owner
+
+def _paren_group(text, p):
+    """Bornes (ouvrante, fermante) du groupe de parenthèses le plus intérieur
+    contenant la position p, ou None."""
+    depth, o = 0, None
+    for k in range(p - 1, -1, -1):
+        c = text[k]
+        if c == ')':
+            depth += 1
+        elif c == '(':
+            if depth == 0:
+                o = k; break
+            depth -= 1
+    if o is None:
+        return None
+    depth = 0
+    for k in range(p, len(text)):
+        c = text[k]
+        if c == '(':
+            depth += 1
+        elif c == ')':
+            if depth == 0:
+                return (o, k)
+            depth -= 1
+    return None
+
+def _first_sentence_end(text, start=0):
+    for m in re.finditer(r'\.', text[start:]):
+        k = start + m.start()
+        w = re.search(r'(\w+)$', text[:k])
+        if w and (w.group(1) in ABBR or re.fullmatch(r'[A-Z]', w.group(1))):
+            continue
+        nxt = text[k + 1:k + 4]
+        if nxt == '' or re.match(r'\s+[A-ZÀÂÉÈÊÎÔÙÛÇ«*⚠]|\s*$', nxt):
+            return k + 1
+    return len(text)
+
+def _group_date(g, hdr_date):
+    m = DATED.search(g)
+    if m:
+        return m.group(1)
+    if hdr_date and BARE.search(g):
+        return hdr_date
+    return None
+
 def extract(d):
+    """Relève les références d'articles. Le code s'attribue sur le bloc logique
+    (lignes repliées comprises) ; la date de vérification se lit sur la ligne
+    (règle d'origine) et, à défaut, dans le groupe de parenthèses qui contient
+    la référence, dans le premier énoncé d'un bloc ouvert par une étiquette
+    datée (« **Règle (vérifiée JJ/MM/AAAA)** : … »), dans tout le bloc ouvert
+    par « **Vérifié … JJ/MM/AAAA** », ou dans un tableau placé sous un titre
+    daté. Une référence précédée de « lire » ou suivie de « à lire » /
+    « à vérifier » n'est jamais réputée vérifiée."""
     refs = collections.OrderedDict()
     def add(c, a, occ):
         refs.setdefault((c, a), []).append(occ)
     for skill, path in _files(d):
         txt = open(path, encoding='utf-8').read()
-        hdr = 'vérifié' in txt and re.search(r'« vérifié \d{2}/\d{2}/\d{4} »', txt)
-        hdr_date = None
-        if hdr:
-            hdr_date = re.search(r'« vérifié (\d{2}/\d{2}/\d{4}) »', txt).group(1)
-        for i, line in enumerate(txt.split('\n'), 1):
-            if re.match(r'^\s*(name|description):', line):
-                continue
-            for m in ART.finditer(line):
+        lines = txt.split('\n')
+        hdr = re.search(r'« vérifié\s+(\d{2}/\d{2}/\d{4})\s*»', txt)
+        hdr_date = hdr.group(1) if hdr else None
+        first = 0
+        if lines and lines[0].strip() == '---':
+            for j in range(1, len(lines)):
+                if lines[j].strip() == '---':
+                    first = j + 1; break
+        table_date, in_table = None, False
+        for blk in _blocks(lines, first):
+            text, owner = _join(lines, blk)
+            head = lines[blk[0]].strip()
+            is_row = head.startswith('|')
+            if head.startswith('#'):
+                m = DATED.search(head)
+                table_date, in_table = (m.group(1) if m else None), False
+            elif is_row:
+                in_table = True
+            else:
+                table_date, in_table = None, False
+            lead_scope, lead_date = None, None
+            body = re.sub(r'^(?:>\s*)?(?:[-*+]|\d+\.)?\s*(?:\[.\]\s*)?(?:⚠️\s*)?', '', text)
+            off = len(text) - len(body)
+            lm = re.match(r'\*\*(.+?)\*\*', body)
+            if lm:
+                dm = DATED.search(lm.group(1))
+                if dm:
+                    lead_date = dm.group(1)
+                    if re.match(r'[vV]érifi', lm.group(1)):
+                        lead_scope = (0, len(text))
+                    else:
+                        lead_scope = (0, _first_sentence_end(text, off + lm.end()))
+            for m in ART.finditer(text):
                 art = m.group(1).strip()
-                pre = line[max(0, m.start() - 15):m.start() + 1]
-                if re.fullmatch(r'\d{1,2}', art) and not re.search(r'(art\.|Art\.|article)\s*$', line[max(0, m.start() - 12):m.start() + len(m.group(0)) - len(art)]):
+                pre = text[max(0, m.start() - 15):m.start() + 1]
+                if re.fullmatch(r'\d{1,2}', art) and not re.search(r'(art\.|Art\.|article)\s*$', text[max(0, m.start() - 12):m.start() + len(m.group(0)) - len(art)]):
                     continue
                 if re.fullmatch(r'\d{4}', art) and art.startswith(('19', '20')) and not re.search(r'(art\.|Art\.|C\. ?civ\.)', pre + m.group(0)):
                     continue
-                code = _code_for(line, m.start(1), m.end(1), art)
+                code = _code_for(text, m.start(1), m.end(1), art)
                 if not code:
                     continue
                 a = _norm(code, art)
                 if (code, a) in DROP:
                     continue
                 code, a = REMAP.get((code, a), (code, a))
+                li = owner[m.start(1)]
+                line = lines[li]
                 v = re.search(r'vérifiée?s?\s*(?:le\s*)?\(?(\d{2}/\d{2}/\d{4})', line)
                 vd = v.group(1) if v else (hdr_date if hdr_date and re.search(r'vérifiée?s?\b', line) else None)
-                occ = {'skill': skill, 'ligne': i, 'verifie': vd, 'extrait': line.strip()[:160]}
-                if code == CGI and a == '990' and line[m.end():m.end() + 2] == ' I':
+                if not vd:
+                    g = _paren_group(text, m.start(1))
+                    if g:
+                        vd = _group_date(text[g[0]:g[1] + 1], hdr_date)
+                if not vd and lead_scope and lead_scope[0] <= m.start(1) < lead_scope[1]:
+                    vd = lead_date
+                if not vd and is_row and table_date:
+                    vd = table_date
+                if vd and (NOT_VERIFIED_BEFORE.search(text[max(0, m.start(1) - 45):m.start(1)])
+                           or NOT_VERIFIED_AFTER.search(text[m.end(1):m.end(1) + 40])):
+                    vd = None
+                occ = {'skill': skill, 'ligne': li + 1, 'verifie': vd, 'extrait': line.strip()[:160]}
+                if code == CGI and a == '990' and text[m.end():m.end() + 2] == ' I':
                     a = '990 I'
                 if code == CGI and a == '150':
-                    for x in (['150 U', '150 VH'] if '150 U' in line else ['150 VB']):
+                    for x in (['150 U', '150 VH'] if '150 U' in text else ['150 VB']):
                         add(code, x, dict(occ))
                     continue
                 add(code, a, occ)
@@ -169,6 +305,11 @@ def cmd_reconcile(idx_path, ext_path, today=None):
     json.dump(idx, open(idx_path, 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
     print('Nouvelles références :', len(new)); [print('  +', c, a) for c, a in new]
     print('Références plus citées (retirées) :', len(gone)); [print('  -', c, a) for c, a in gone]
+    dated = {(e['code'], e['article']) for e in ext if any(o.get('verifie') for o in e['occurrences'])}
+    review = [(r['code'], r['article']) for r in idx['references'] if r['statut_verification'] == 'verifie'
+              and r['type'] == 'article' and not r.get('etat_source') and (r['code'], r['article']) not in dated]
+    print('Vérifiées à l\'index sans marque de vérification dans les skills (à revoir, statut inchangé) :', len(review))
+    [print('  ?', c, a) for c, a in review]
 
 def cmd_render(idx_path, md_path):
     idx = json.load(open(idx_path, encoding='utf-8'))

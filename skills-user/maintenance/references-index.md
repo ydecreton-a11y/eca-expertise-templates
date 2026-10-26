@@ -4,7 +4,7 @@ Créé le 2026-10-23 — dernière maintenance : aucune. Tenu par `maintenance-s
 
 Une entrée 'verifie' a été lue à la source à la date indiquée. Une entrée 'a_verifier' n'a pas encore été contrôlée dans sa version en vigueur : la prochaine maintenance la lit en entier et confronte le passage du skill au texte. Les numéros de ligne sont indicatifs (ils bougent avec les skills) ; l'extrait sert d'ancre.
 
-**237 articles** (76 vérifiés, 161 à vérifier) · 5 BOFiP · 10 décisions · 7 textes · 10 pièges datés · 3 échéances
+**239 articles** (91 vérifiés, 148 à vérifier) · 5 BOFiP · 10 décisions · 7 textes · 10 pièges datés · 3 échéances
 
 ## Échéances annoncées
 
@@ -29,10 +29,12 @@ Une entrée 'verifie' a été lue à la source à la date indiquée. Une entrée
 | code-civil | 1195 | à vérifier |  | analyse-contrat |
 | code-civil | 1211 | à vérifier |  | analyse-contrat |
 | code-civil | 1218 | à vérifier |  | analyse-contrat |
+| code-civil | 1231-3 | à vérifier |  | gap |
 | code-civil | 1304-2 | à vérifier |  | cession-fonds, protocole-cession |
 | code-civil | 1304-3 | 2026-10-23 |  | acte-definitif-titres, protocole-cession |
 | code-civil | 1321 | 2026-10-23 |  | acte-definitif-titres |
 | code-civil | 1397 | à vérifier |  | strategie-patrimoniale |
+| code-civil | 1422 | à vérifier |  | strategie-patrimoniale |
 | code-civil | 1424 | 2026-10-23 |  | acte-definitif-titres, cession-fonds, protocole-cession |
 | code-civil | 1427 | 2026-10-23 |  | protocole-cession |
 | code-civil | 1583 | 2026-10-23 |  | acte-definitif-titres, lettre-intention, protocole-cession |
@@ -41,12 +43,12 @@ Une entrée 'verifie' a été lue à la source à la date indiquée. Une entrée
 | code-civil | 1641 | à vérifier |  | gap |
 | code-civil | 1690 | 2026-10-23 |  | acte-definitif-titres, protocole-cession |
 | code-civil | 1832 | à vérifier |  | strategie-patrimoniale |
-| code-civil | 1836 | à vérifier |  | redaction-acte |
+| code-civil | 1836 | 2026-10-23 |  | redaction-acte |
 | code-civil | 1843-4 | à vérifier |  | pacte-associes, socle-eca |
 | code-civil | 1844 | à vérifier |  | strategie-patrimoniale |
 | code-civil | 1844-4 | 2026-10-23 |  | restructurations |
 | code-civil | 1844-5 | 2026-10-23 |  | dissolution-liquidation-tup, redaction-acte, restructurations |
-| code-civil | 1844-6 | à vérifier |  | redaction-acte |
+| code-civil | 1844-6 | 2026-10-23 |  | redaction-acte |
 | code-civil | 1844-7 | à vérifier |  | dissolution-liquidation-tup |
 | code-civil | 1844-8 | à vérifier |  | dissolution-liquidation-tup |
 | code-civil | 1844-9 | à vérifier |  | dissolution-liquidation-tup |
@@ -79,17 +81,17 @@ Une entrée 'verifie' a été lue à la source à la date indiquée. Une entrée
 | code-de-commerce | L. 223-27 | à vérifier |  | juridique-annuel |
 | code-de-commerce | L. 223-30 | 2026-10-23 |  | redaction-acte |
 | code-de-commerce | L. 223-31 | à vérifier |  | juridique-annuel, redaction-acte |
-| code-de-commerce | L. 223-33 | à vérifier |  | redaction-acte |
-| code-de-commerce | L. 223-34 | à vérifier |  | redaction-acte |
+| code-de-commerce | L. 223-33 | 2026-10-23 |  | redaction-acte |
+| code-de-commerce | L. 223-34 | 2026-10-23 |  | redaction-acte |
 | code-de-commerce | L. 223-42 | à vérifier |  | juridique-annuel |
 | code-de-commerce | L. 223-43 | à vérifier |  | redaction-acte |
-| code-de-commerce | L. 223-9 | à vérifier |  | holding-apport, redaction-acte |
+| code-de-commerce | L. 223-9 | 2026-10-23 |  | holding-apport, redaction-acte |
 | code-de-commerce | L. 224-3 | à vérifier |  | redaction-acte |
 | code-de-commerce | L. 225-100 | à vérifier |  | juridique-annuel |
 | code-de-commerce | L. 225-129-6 | 2026-10-23 |  | redaction-acte |
 | code-de-commerce | L. 225-147 | 2026-10-23 |  | holding-apport, redaction-acte |
 | code-de-commerce | L. 225-204 | à vérifier |  | redaction-acte |
-| code-de-commerce | L. 225-205 | à vérifier |  | redaction-acte |
+| code-de-commerce | L. 225-205 | 2026-10-23 |  | redaction-acte |
 | code-de-commerce | L. 225-243 | à vérifier |  | redaction-acte |
 | code-de-commerce | L. 225-244 | à vérifier |  | redaction-acte |
 | code-de-commerce | L. 225-245 | à vérifier |  | redaction-acte |
@@ -105,10 +107,10 @@ Une entrée 'verifie' a été lue à la source à la date indiquée. Une entrée
 | code-de-commerce | L. 227-19 | 2026-10-23 |  | redaction-acte |
 | code-de-commerce | L. 227-3 | à vérifier |  | redaction-acte |
 | code-de-commerce | L. 227-7 | 2026-10-23 |  | holding-apport |
-| code-de-commerce | L. 227-9 | à vérifier |  | juridique-annuel, redaction-acte |
+| code-de-commerce | L. 227-9 | 2026-10-23 |  | juridique-annuel, redaction-acte |
 | code-de-commerce | L. 228-1 | à vérifier |  | acte-definitif-titres |
 | code-de-commerce | L. 228-23 | à vérifier |  | protocole-cession |
-| code-de-commerce | L. 23-10-1 | à vérifier |  | lettre-intention, protocole-cession, socle-eca |
+| code-de-commerce | L. 23-10-1 | 2026-10-23 |  | lettre-intention, protocole-cession, socle-eca |
 | code-de-commerce | L. 23-10-6 | à vérifier |  | protocole-cession |
 | code-de-commerce | L. 23-10-7 | à vérifier |  | cession-fonds, lettre-intention, protocole-cession |
 | code-de-commerce | L. 231-1 | à vérifier |  | redaction-acte |
@@ -123,7 +125,7 @@ Une entrée 'verifie' a été lue à la source à la date indiquée. Une entrée
 | code-de-commerce | L. 236-10 | 2026-10-23 |  | restructurations |
 | code-de-commerce | L. 236-11 | 2026-10-23 |  | restructurations |
 | code-de-commerce | L. 236-12 | 2026-10-23 |  | restructurations |
-| code-de-commerce | L. 236-15 | à vérifier |  | restructurations |
+| code-de-commerce | L. 236-15 | 2026-10-23 |  | restructurations |
 | code-de-commerce | L. 236-17 | 2026-10-23 |  | restructurations |
 | code-de-commerce | L. 236-18 | 2026-10-23 |  | restructurations |
 | code-de-commerce | L. 236-2 | à vérifier |  | restructurations |
@@ -131,7 +133,7 @@ Une entrée 'verifie' a été lue à la source à la date indiquée. Une entrée
 | code-de-commerce | L. 236-28 | 2026-10-23 |  | restructurations |
 | code-de-commerce | L. 236-3 | 2026-10-23 |  | restructurations |
 | code-de-commerce | L. 236-4 | 2026-10-23 |  | restructurations |
-| code-de-commerce | L. 236-6 | à vérifier |  | restructurations |
+| code-de-commerce | L. 236-6 | 2026-10-23 |  | restructurations |
 | code-de-commerce | L. 236-9 | à vérifier |  | restructurations |
 | code-de-commerce | L. 237-1 | à vérifier |  | dissolution-liquidation-tup |
 | code-de-commerce | L. 237-2 | à vérifier |  | dissolution-liquidation-tup |
@@ -139,12 +141,12 @@ Une entrée 'verifie' a été lue à la source à la date indiquée. Une entrée
 | code-de-commerce | L. 430-1 | à vérifier |  | protocole-cession |
 | code-de-commerce | L. 442-1 | à vérifier |  | analyse-contrat |
 | code-de-commerce | L. 823-1 | à vérifier |  | juridique-annuel |
-| code-de-commerce | R. 123-105 | à vérifier |  | acte-definitif-titres, redaction-acte |
-| code-de-commerce | R. 123-66 | à vérifier |  | redaction-acte |
+| code-de-commerce | R. 123-105 | 2026-10-23 |  | acte-definitif-titres, redaction-acte |
+| code-de-commerce | R. 123-66 | 2026-10-23 |  | redaction-acte |
 | code-de-commerce | R. 210-4 | à vérifier |  | redaction-acte |
 | code-de-commerce | R. 210-5 | 2026-10-23 |  | juridique-annuel |
 | code-de-commerce | R. 210-6 | 2026-10-23 |  | juridique-annuel |
-| code-de-commerce | R. 210-9 | à vérifier |  | redaction-acte |
+| code-de-commerce | R. 210-9 | 2026-10-23 |  | redaction-acte |
 | code-de-commerce | R. 236-1 | 2026-10-23 |  | restructurations |
 | code-de-commerce | R. 236-11 | 2026-10-23 |  | restructurations |
 | code-de-commerce | R. 236-2 | 2026-10-23 |  | restructurations |
@@ -160,7 +162,7 @@ Une entrée 'verifie' a été lue à la source à la date indiquée. Une entrée
 | code-du-travail | L. 1224-1 | 2026-10-23 |  | cession-fonds, dissolution-liquidation-tup, due-diligence-juridique, lettre-intention, restructurations |
 | code-du-travail | L. 1224-2 | 2026-10-23 |  | cession-fonds |
 | code-du-travail | L. 2312-1 | à vérifier |  | protocole-cession |
-| code-du-travail | L. 2312-8 | à vérifier |  | protocole-cession, restructurations |
+| code-du-travail | L. 2312-8 | 2026-10-23 |  | protocole-cession, restructurations |
 | code-du-travail | L. 2314-9 | 2026-10-23 |  | cession-fonds |
 | code-general-des-impots | 112 | à vérifier |  | dissolution-liquidation-tup |
 | code-general-des-impots | 117 quater | à vérifier |  | juridique-annuel |
@@ -172,7 +174,7 @@ Une entrée 'verifie' a été lue à la source à la date indiquée. Une entrée
 | code-general-des-impots | 150 VH | à vérifier |  | calcul-plus-value |
 | code-general-des-impots | 150-0 A | 2026-10-23 |  | acte-definitif-titres, calcul-plus-value, protocole-cession |
 | code-general-des-impots | 150-0 B | à vérifier |  | calcul-plus-value |
-| code-general-des-impots | 150-0 B bis | 2026-10-23 |  | protocole-cession |
+| code-general-des-impots | 150-0 B bis | à vérifier |  | protocole-cession |
 | code-general-des-impots | 150-0 B ter | à vérifier |  | calcul-plus-value, consultation-juridique, holding-apport, legal-hallucination-checker, protocole-cession, strategie-patrimoniale |
 | code-general-des-impots | 150-0 D | 2026-10-23 |  | gap, protocole-cession |
 | code-general-des-impots | 150-0 D ter | à vérifier |  | calcul-plus-value |
@@ -196,7 +198,7 @@ Une entrée 'verifie' a été lue à la source à la date indiquée. Une entrée
 | code-general-des-impots | 210-0 A | 2026-10-23 |  | restructurations |
 | code-general-des-impots | 216 | à vérifier |  | dissolution-liquidation-tup, holding-apport, juridique-annuel |
 | code-general-des-impots | 219 | à vérifier |  | calcul-plus-value, dissolution-liquidation-tup, redaction-acte |
-| code-general-des-impots | 221 | à vérifier |  | dissolution-liquidation-tup, redaction-acte, restructurations |
+| code-general-des-impots | 221 | 2026-10-23 |  | dissolution-liquidation-tup, redaction-acte, restructurations |
 | code-general-des-impots | 223 A | à vérifier |  | holding-apport, redaction-acte, restructurations |
 | code-general-des-impots | 223 sexies | à vérifier |  | holding-apport |
 | code-general-des-impots | 224 | à vérifier |  | consultation-juridique, holding-apport, legal-hallucination-checker, socle-eca |
@@ -206,7 +208,7 @@ Une entrée 'verifie' a été lue à la source à la date indiquée. Une entrée
 | code-general-des-impots | 244 bis A | à vérifier |  | calcul-plus-value |
 | code-general-des-impots | 244 bis B | à vérifier |  | calcul-plus-value |
 | code-general-des-impots | 257 bis | 2026-10-23 | ABROGE_DIFF jusqu'au 2027-01-01 | cession-fonds, restructurations, socle-eca |
-| code-general-des-impots | 37 | à vérifier |  | redaction-acte |
+| code-general-des-impots | 37 | 2026-10-23 |  | redaction-acte |
 | code-general-des-impots | 39 | à vérifier |  | contentieux-fiscal |
 | code-general-des-impots | 39 duodecies | à vérifier |  | calcul-plus-value |
 | code-general-des-impots | 54 septies | à vérifier |  | restructurations |
@@ -216,7 +218,7 @@ Une entrée 'verifie' a été lue à la source à la date indiquée. Une entrée
 | code-general-des-impots | 676 | 2026-10-23 |  | acte-definitif-titres, cession-fonds, protocole-cession |
 | code-general-des-impots | 719 | 2026-10-23 |  | cession-fonds |
 | code-general-des-impots | 723 | 2026-10-23 |  | cession-fonds |
-| code-general-des-impots | 726 | 2026-10-23 |  | acte-definitif-titres, positions-eca, protocole-cession |
+| code-general-des-impots | 726 | à vérifier |  | acte-definitif-titres, positions-eca, protocole-cession |
 | code-general-des-impots | 746 | à vérifier |  | dissolution-liquidation-tup, socle-eca, strategie-patrimoniale |
 | code-general-des-impots | 757 B | à vérifier |  | strategie-patrimoniale |
 | code-general-des-impots | 773 | à vérifier |  | strategie-patrimoniale |
@@ -239,7 +241,7 @@ Une entrée 'verifie' a été lue à la source à la date indiquée. Une entrée
 | code-monetaire-et-financier | L. 211-17 | à vérifier |  | acte-definitif-titres |
 | code-monetaire-et-financier | L. 561-45-1 | 2026-10-23 |  | acte-definitif-titres |
 | code-monetaire-et-financier | L. 561-46 | 2026-10-23 | ABROGE_DIFF jusqu'au 2028-12-31 ; version future au 2029-01-01 | acte-definitif-titres, maintenance-skills, redaction-acte |
-| code-monetaire-et-financier | R. 561-55 | à vérifier |  | redaction-acte |
+| code-monetaire-et-financier | R. 561-55 | 2026-10-23 |  | redaction-acte |
 | livre-des-procedures-fiscales | L. 10 | à vérifier |  | contentieux-fiscal |
 | livre-des-procedures-fiscales | L. 169 | à vérifier |  | gap |
 | livre-des-procedures-fiscales | L. 176 | à vérifier |  | gap |

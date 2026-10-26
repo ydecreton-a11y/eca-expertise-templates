@@ -309,8 +309,8 @@
    "code": "code-general-des-impots",
    "article": "726",
    "cle_librejustice": "726",
-   "statut_verification": "verifie",
-   "derniere_verification": "2026-10-23",
+   "statut_verification": "a_verifier",
+   "derniere_verification": null,
    "etat_source": null,
    "occurrences": [
     {
@@ -353,7 +353,8 @@
      "ligne": 375,
      "extrait": "CGI Art. 726 — taux différenciés selon la forme sociale et le caractère de"
     }
-   ]
+   ],
+   "note": "26/10/2026 : statut « vérifié » retiré — il provenait d'une marque de vérification visant une autre référence de la même ligne ; le skill renvoie à une lecture à la source (« à lire » / « lire »)."
   },
   {
    "id": "code-general-des-impots:676",
@@ -393,8 +394,8 @@
    "code": "code-de-commerce",
    "article": "R. 123-105",
    "cle_librejustice": "r123-105",
-   "statut_verification": "a_verifier",
-   "derniere_verification": null,
+   "statut_verification": "verifie",
+   "derniere_verification": "2026-10-23",
    "etat_source": null,
    "occurrences": [
     {
@@ -2112,8 +2113,8 @@
    "code": "code-general-des-impots",
    "article": "221",
    "cle_librejustice": "221",
-   "statut_verification": "a_verifier",
-   "derniere_verification": null,
+   "statut_verification": "verifie",
+   "derniere_verification": "2026-10-23",
    "etat_source": null,
    "occurrences": [
     {
@@ -2521,8 +2522,8 @@
    "code": "code-de-commerce",
    "article": "L. 223-9",
    "cle_librejustice": "l223-9",
-   "statut_verification": "a_verifier",
-   "derniere_verification": null,
+   "statut_verification": "verifie",
+   "derniere_verification": "2026-10-23",
    "etat_source": null,
    "occurrences": [
     {
@@ -2846,8 +2847,8 @@
    "code": "code-de-commerce",
    "article": "L. 227-9",
    "cle_librejustice": "l227-9",
-   "statut_verification": "a_verifier",
-   "derniere_verification": null,
+   "statut_verification": "verifie",
+   "derniere_verification": "2026-10-23",
    "etat_source": null,
    "occurrences": [
     {
@@ -3270,8 +3271,8 @@
    "code": "code-de-commerce",
    "article": "L. 23-10-1",
    "cle_librejustice": "l23-10-1",
-   "statut_verification": "a_verifier",
-   "derniere_verification": null,
+   "statut_verification": "verifie",
+   "derniere_verification": "2026-10-23",
    "etat_source": null,
    "occurrences": [
     {
@@ -3422,8 +3423,8 @@
    "code": "code-du-travail",
    "article": "L. 2312-8",
    "cle_librejustice": "l2312-8",
-   "statut_verification": "a_verifier",
-   "derniere_verification": null,
+   "statut_verification": "verifie",
+   "derniere_verification": "2026-10-23",
    "etat_source": null,
    "occurrences": [
     {
@@ -3561,8 +3562,8 @@
    "code": "code-general-des-impots",
    "article": "150-0 B bis",
    "cle_librejustice": "150-0-b-bis",
-   "statut_verification": "verifie",
-   "derniere_verification": "2026-10-23",
+   "statut_verification": "a_verifier",
+   "derniere_verification": null,
    "etat_source": null,
    "occurrences": [
     {
@@ -3570,7 +3571,8 @@
      "ligne": 399,
      "extrait": "| Complément de prix (earn-out) | CGI Art. 150-0 A, I, 2 (vérifié 23/10/2026) — imposable au titre de l'année de perception ; le prix d'acquisition retenu par l"
     }
-   ]
+   ],
+   "note": "26/10/2026 : statut « vérifié » retiré — il provenait d'une marque de vérification visant une autre référence de la même ligne ; le skill renvoie à une lecture à la source (« à lire » / « lire »)."
   },
   {
    "id": "code-civil:1188",
@@ -3671,8 +3673,8 @@
    "code": "code-civil",
    "article": "1836",
    "cle_librejustice": "1836",
-   "statut_verification": "a_verifier",
-   "derniere_verification": null,
+   "statut_verification": "verifie",
+   "derniere_verification": "2026-10-23",
    "etat_source": null,
    "occurrences": [
     {
@@ -3688,8 +3690,8 @@
    "code": "code-de-commerce",
    "article": "R. 210-9",
    "cle_librejustice": "r210-9",
-   "statut_verification": "a_verifier",
-   "derniere_verification": null,
+   "statut_verification": "verifie",
+   "derniere_verification": "2026-10-23",
    "etat_source": null,
    "occurrences": [
     {
@@ -3732,8 +3734,8 @@
    "code": "code-de-commerce",
    "article": "R. 123-66",
    "cle_librejustice": "r123-66",
-   "statut_verification": "a_verifier",
-   "derniere_verification": null,
+   "statut_verification": "verifie",
+   "derniere_verification": "2026-10-23",
    "etat_source": null,
    "occurrences": [
     {
@@ -3754,8 +3756,8 @@
    "code": "code-monetaire-et-financier",
    "article": "R. 561-55",
    "cle_librejustice": "r561-55",
-   "statut_verification": "a_verifier",
-   "derniere_verification": null,
+   "statut_verification": "verifie",
+   "derniere_verification": "2026-10-23",
    "etat_source": null,
    "occurrences": [
     {
@@ -3810,8 +3812,8 @@
    "code": "code-general-des-impots",
    "article": "37",
    "cle_librejustice": "37",
-   "statut_verification": "a_verifier",
-   "derniere_verification": null,
+   "statut_verification": "verifie",
+   "derniere_verification": "2026-10-23",
    "etat_source": null,
    "occurrences": [
     {
@@ -3832,8 +3834,8 @@
    "code": "code-civil",
    "article": "1844-6",
    "cle_librejustice": "1844-6",
-   "statut_verification": "a_verifier",
-   "derniere_verification": null,
+   "statut_verification": "verifie",
+   "derniere_verification": "2026-10-23",
    "etat_source": null,
    "occurrences": [
     {
@@ -3893,8 +3895,8 @@
    "code": "code-de-commerce",
    "article": "L. 223-33",
    "cle_librejustice": "l223-33",
-   "statut_verification": "a_verifier",
-   "derniere_verification": null,
+   "statut_verification": "verifie",
+   "derniere_verification": "2026-10-23",
    "etat_source": null,
    "occurrences": [
     {
@@ -3910,8 +3912,8 @@
    "code": "code-de-commerce",
    "article": "L. 223-34",
    "cle_librejustice": "l223-34",
-   "statut_verification": "a_verifier",
-   "derniere_verification": null,
+   "statut_verification": "verifie",
+   "derniere_verification": "2026-10-23",
    "etat_source": null,
    "occurrences": [
     {
@@ -3932,8 +3934,8 @@
    "code": "code-de-commerce",
    "article": "L. 225-205",
    "cle_librejustice": "l225-205",
-   "statut_verification": "a_verifier",
-   "derniere_verification": null,
+   "statut_verification": "verifie",
+   "derniere_verification": "2026-10-23",
    "etat_source": null,
    "occurrences": [
     {
@@ -4371,8 +4373,8 @@
    "code": "code-de-commerce",
    "article": "L. 236-15",
    "cle_librejustice": "l236-15",
-   "statut_verification": "a_verifier",
-   "derniere_verification": null,
+   "statut_verification": "verifie",
+   "derniere_verification": "2026-10-23",
    "etat_source": null,
    "occurrences": [
     {
@@ -4621,8 +4623,8 @@
    "code": "code-de-commerce",
    "article": "L. 236-6",
    "cle_librejustice": "l236-6",
-   "statut_verification": "a_verifier",
-   "derniere_verification": null,
+   "statut_verification": "verifie",
+   "derniere_verification": "2026-10-23",
    "etat_source": null,
    "occurrences": [
     {
@@ -5155,6 +5157,40 @@
      "skill": "calcul-plus-value",
      "ligne": 84,
      "extrait": "| Non-résidents | CGI art. 244 bis A, 244 bis B ; convention fiscale | Legal Data Hunter (convention) |"
+    }
+   ]
+  },
+  {
+   "id": "code-civil:1231-3",
+   "type": "article",
+   "code": "code-civil",
+   "article": "1231-3",
+   "cle_librejustice": "1231-3",
+   "statut_verification": "a_verifier",
+   "derniere_verification": null,
+   "etat_source": null,
+   "occurrences": [
+    {
+     "skill": "gap",
+     "ligne": 143,
+     "extrait": "Aucune clause ne fait échec au **dol** ni à la **faute lourde** (Art. 1231-3"
+    }
+   ]
+  },
+  {
+   "id": "code-civil:1422",
+   "type": "article",
+   "code": "code-civil",
+   "article": "1422",
+   "cle_librejustice": "1422",
+   "statut_verification": "a_verifier",
+   "derniere_verification": null,
+   "etat_source": null,
+   "occurrences": [
+    {
+     "skill": "strategie-patrimoniale",
+     "ligne": 48,
+     "extrait": "art. 1422) — et, si les deux époux donnent, chacun ouvre ses propres abattements."
     }
    ]
   }
