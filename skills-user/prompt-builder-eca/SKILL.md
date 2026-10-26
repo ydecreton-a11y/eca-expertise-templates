@@ -206,8 +206,9 @@ Consulter le référentiel avant de composer :
 Référentiel des codes : rechercher « prompt-codes » dans le dépôt (socle § 4).
 ```
 
-Si la lecture du référentiel échoue, composer sans code plutôt que d'en inventer un : un code
-inexistant est ignoré et donne l'illusion d'un cadrage qui n'existe pas.
+Si la lecture du référentiel échoue, composer sans code plutôt que d'en
+inventer un : un code inexistant est ignoré et donne l'illusion d'un cadrage
+qui n'existe pas.
 
 - Deux codes maximum — au-delà ils se neutralisent
 - Respecter les restrictions du référentiel (certains sont proscrits sur
