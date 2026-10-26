@@ -487,6 +487,11 @@
      "extrait": "| PV mobilière PP | CGI art. 150-0 A à 150-0 E, 200 A ; abattements éventuels (dont départ à la retraite art. 150-0 D ter) | BOFiP RPPM-PVBMI |"
     },
     {
+     "skill": "gap",
+     "ligne": 183,
+     "extrait": "l'article 150-0 A du CGI (personne physique), le prix de cession est diminué,"
+    },
+    {
      "skill": "protocole-cession",
      "ligne": 399,
      "extrait": "| Complément de prix (earn-out) | CGI Art. 150-0 A, I, 2 (vérifié 23/10/2026) — imposable au titre de l'année de perception ; le prix d'acquisition retenu par l"
@@ -899,12 +904,12 @@
     },
     {
      "skill": "consultation-juridique",
-     "ligne": 181,
+     "ligne": 182,
      "extrait": "II. Problématique : Conditions d'application de l'Art. 150-0 B ter CGI"
     },
     {
      "skill": "consultation-juridique",
-     "ligne": 185,
+     "ligne": 186,
      "extrait": "III. Règles : art. 150-0 B ter CGI dans sa version à la date de l'apport"
     },
     {
@@ -948,6 +953,11 @@
      "skill": "calcul-plus-value",
      "ligne": 82,
      "extrait": "| PV professionnelle | CGI art. 39 duodecies s. ; exonérations art. 151 septies, 151 septies A, 238 quindecies, 151 nonies selon le cas | BOFiP BIC-PVMV |"
+    },
+    {
+     "skill": "gap",
+     "ligne": 227,
+     "extrait": "au cours d'un exercice postérieur relève du 9 de l'article 39 duodecies du CGI"
     }
    ]
   },
@@ -963,8 +973,18 @@
    "occurrences": [
     {
      "skill": "contentieux-fiscal",
-     "ligne": 291,
+     "ligne": 231,
+     "extrait": "(CGI art. 39, 1, 1° et 111, d) et les dépenses du relevé de l'article"
+    },
+    {
+     "skill": "contentieux-fiscal",
+     "ligne": 303,
      "extrait": "> En premier lieu, l'article 39, 1-5° du CGI admet la déductibilité des"
+    },
+    {
+     "skill": "gap",
+     "ligne": 232,
+     "extrait": "ne pas être déductible — sanctions et pénalités (CGI art. 39, 2), impôt sur"
     }
    ]
   },
@@ -1092,7 +1112,7 @@
    "occurrences": [
     {
      "skill": "consultation-juridique",
-     "ligne": 187,
+     "ligne": 188,
      "extrait": "lus à la source, jamais de mémoire), CDHR (art. 224 CGI), doctrine BOFiP"
     },
     {
@@ -1594,17 +1614,17 @@
     },
     {
      "skill": "contentieux-fiscal",
-     "ligne": 89,
+     "ligne": 90,
      "extrait": "- **Fond** : CGI à la date du fait générateur ; BOFiP opposable (L. 80 A) via"
     },
     {
      "skill": "contentieux-fiscal",
-     "ligne": 110,
+     "ligne": 111,
      "extrait": "| **BOFiP** | Existe-t-il une position administrative plus favorable ? (Art. L80 A LPF) |"
     },
     {
      "skill": "contentieux-fiscal",
-     "ligne": 326,
+     "ligne": 338,
      "extrait": "- [ ] Position BOFiP opposable (Art. L80 A LPF) recherchée"
     }
    ]
@@ -1621,7 +1641,7 @@
    "occurrences": [
     {
      "skill": "consultation-juridique",
-     "ligne": 127,
+     "ligne": 128,
      "extrait": "— Pénalités et intérêts applicables (CGI art. 1727 et s., LPF L. 64 — taux lus à la source)"
     }
    ]
@@ -1638,7 +1658,7 @@
    "occurrences": [
     {
      "skill": "consultation-juridique",
-     "ligne": 127,
+     "ligne": 128,
      "extrait": "— Pénalités et intérêts applicables (CGI art. 1727 et s., LPF L. 64 — taux lus à la source)"
     },
     {
@@ -1728,12 +1748,12 @@
    "occurrences": [
     {
      "skill": "contentieux-fiscal",
-     "ligne": 181,
+     "ligne": 182,
      "extrait": "### 4.2 Réclamation préalable (LPF L. 190 et R*196-1 s.)"
     },
     {
      "skill": "contentieux-fiscal",
-     "ligne": 198,
+     "ligne": 199,
      "extrait": "En application des articles L. 190 et R*196-1 [ou R*196-3] du LPF, [contribuable]"
     }
    ]
@@ -1744,24 +1764,43 @@
    "code": "livre-des-procedures-fiscales",
    "article": "R*196-1",
    "cle_librejustice": "r196-1",
-   "statut_verification": "a_verifier",
-   "derniere_verification": null,
-   "etat_source": null,
+   "statut_verification": "verifie",
+   "derniere_verification": "2026-10-26",
+   "etat_source": {
+    "statut": "VIGUEUR",
+    "version_depuis": "2026-07-30",
+    "dernier_texte_modificateur": "Décret n° 2026-692 du 27/07/2026, art. 1"
+   },
    "occurrences": [
     {
      "skill": "contentieux-fiscal",
-     "ligne": 181,
+     "ligne": 182,
      "extrait": "### 4.2 Réclamation préalable (LPF L. 190 et R*196-1 s.)"
     },
     {
      "skill": "contentieux-fiscal",
-     "ligne": 184,
+     "ligne": 185,
      "extrait": "- délai général : LPF R*196-1 (version en vigueur depuis le 30/07/2026,"
     },
     {
      "skill": "contentieux-fiscal",
-     "ligne": 198,
+     "ligne": 199,
      "extrait": "En application des articles L. 190 et R*196-1 [ou R*196-3] du LPF, [contribuable]"
+    },
+    {
+     "skill": "gap",
+     "ligne": 216,
+     "extrait": "celle de l'événement qui la motive (LPF art. R*196-1, c, vérifié 26/10/2026),"
+    },
+    {
+     "skill": "gap",
+     "ligne": 219,
+     "extrait": "Cette doctrine est antérieure au décret n° 2026-692, qui a modifié R*196-1 :"
+    },
+    {
+     "skill": "gap",
+     "ligne": 654,
+     "extrait": "(LPF art. R*196-1, c), pièces (BOI-RPPM-PVBMI-20-10-10-30, § 120 et 130)"
     },
     {
      "skill": "socle-eca",
@@ -1787,7 +1826,7 @@
    "occurrences": [
     {
      "skill": "contentieux-fiscal",
-     "ligne": 189,
+     "ligne": 190,
      "extrait": "- autres délais spéciaux (R*196-2 et suivants) selon l'impôt."
     }
    ]
@@ -1804,7 +1843,7 @@
    "occurrences": [
     {
      "skill": "contentieux-fiscal",
-     "ligne": 198,
+     "ligne": 199,
      "extrait": "En application des articles L. 190 et R*196-1 [ou R*196-3] du LPF, [contribuable]"
     },
     {
@@ -1831,17 +1870,17 @@
    "occurrences": [
     {
      "skill": "contentieux-fiscal",
-     "ligne": 220,
+     "ligne": 221,
      "extrait": "### 4.3 Saisine de la commission (LPF L. 59 s.)"
     },
     {
      "skill": "contentieux-fiscal",
-     "ligne": 226,
+     "ligne": 238,
      "extrait": "compétente (départementale, nationale) lus dans le LPF en vigueur (L. 59 s., R*59-1)"
     },
     {
      "skill": "contentieux-fiscal",
-     "ligne": 239,
+     "ligne": 251,
      "extrait": "application de l'article L. 59 du LPF, eu égard au désaccord persistant"
     }
    ]
@@ -1858,7 +1897,7 @@
    "occurrences": [
     {
      "skill": "contentieux-fiscal",
-     "ligne": 226,
+     "ligne": 238,
      "extrait": "compétente (départementale, nationale) lus dans le LPF en vigueur (L. 59 s., R*59-1)"
     }
    ]
@@ -2231,29 +2270,29 @@
    "code": "code-civil",
    "article": "1137",
    "cle_librejustice": "1137",
-   "statut_verification": "a_verifier",
-   "derniere_verification": null,
-   "etat_source": null,
+   "statut_verification": "verifie",
+   "derniere_verification": "2026-10-26",
+   "etat_source": {
+    "statut": "VIGUEUR",
+    "version_depuis": "2018-10-01",
+    "dernier_texte_modificateur": "Loi n° 2018-287 du 20/04/2018, art. 5",
+    "lecture": "al. 3 applicable aux actes conclus à compter du 01/10/2018"
+   },
    "occurrences": [
     {
      "skill": "gap",
-     "ligne": 86,
-     "extrait": "(Art. 1137 C. civ.) fait tomber la garantie **et** ouvre la nullité, c'est un"
+     "ligne": 76,
+     "extrait": "(C. civ. art. 1137, al. 2) ouvre la nullité de la cession ou l'indemnisation,"
     },
     {
      "skill": "gap",
-     "ligne": 126,
-     "extrait": "| Dol / réticence dolosive | Art. 1137 C. civ. | Preuve de l'intention de tromper |"
+     "ligne": 137,
+     "extrait": "| Dol / réticence dolosive | C. civ. art. 1137 | Preuve de l'intention ; la dissimulation intentionnelle d'une information dont le cédant sait le caractère déte"
     },
     {
      "skill": "gap",
-     "ligne": 131,
-     "extrait": "⚠️ **Art. 1137 al. 3 C. civ.** : ne constitue pas un dol le fait de ne pas révéler"
-    },
-    {
-     "skill": "gap",
-     "ligne": 131,
-     "extrait": "⚠️ **Art. 1137 al. 3 C. civ.** : ne constitue pas un dol le fait de ne pas révéler"
+     "ligne": 142,
+     "extrait": "⚠️ **C. civ. art. 1137, al. 3 (vérifié 26/10/2026)** : ne constitue pas un dol"
     },
     {
      "skill": "protocole-cession",
@@ -2268,19 +2307,22 @@
    "code": "code-civil",
    "article": "1626",
    "cle_librejustice": "1626",
-   "statut_verification": "a_verifier",
-   "derniere_verification": null,
-   "etat_source": null,
+   "statut_verification": "verifie",
+   "derniere_verification": "2026-10-26",
+   "etat_source": {
+    "statut": "VIGUEUR",
+    "version_depuis": "1804-03-21"
+   },
    "occurrences": [
     {
      "skill": "gap",
-     "ligne": 119,
-     "extrait": "(Art. 1626 C. civ.) et vices cachés (Art. 1641 C. civ.) — porte sur **les titres"
+     "ligne": 126,
+     "extrait": "(C. civ. art. 1626) et vices cachés (C. civ. art. 1641) — porte sur **les titres"
     },
     {
      "skill": "gap",
-     "ligne": 129,
-     "extrait": "| Garantie légale | Art. 1626, 1641 C. civ. | Porte sur les titres, pas sur l'actif social |"
+     "ligne": 140,
+     "extrait": "| Garantie légale | C. civ. art. 1626, 1641 | Porte sur les titres, pas sur l'actif social |"
     }
    ]
   },
@@ -2290,19 +2332,22 @@
    "code": "code-civil",
    "article": "1641",
    "cle_librejustice": "1641",
-   "statut_verification": "a_verifier",
-   "derniere_verification": null,
-   "etat_source": null,
+   "statut_verification": "verifie",
+   "derniere_verification": "2026-10-26",
+   "etat_source": {
+    "statut": "VIGUEUR",
+    "version_depuis": "1804-03-16"
+   },
    "occurrences": [
     {
      "skill": "gap",
-     "ligne": 119,
-     "extrait": "(Art. 1626 C. civ.) et vices cachés (Art. 1641 C. civ.) — porte sur **les titres"
+     "ligne": 126,
+     "extrait": "(C. civ. art. 1626) et vices cachés (C. civ. art. 1641) — porte sur **les titres"
     },
     {
      "skill": "gap",
-     "ligne": 129,
-     "extrait": "| Garantie légale | Art. 1626, 1641 C. civ. | Porte sur les titres, pas sur l'actif social |"
+     "ligne": 140,
+     "extrait": "| Garantie légale | C. civ. art. 1626, 1641 | Porte sur les titres, pas sur l'actif social |"
     }
    ]
   },
@@ -2312,14 +2357,28 @@
    "code": "code-civil",
    "article": "1112-1",
    "cle_librejustice": "1112-1",
-   "statut_verification": "a_verifier",
-   "derniere_verification": null,
-   "etat_source": null,
+   "statut_verification": "verifie",
+   "derniere_verification": "2026-10-26",
+   "etat_source": {
+    "statut": "VIGUEUR",
+    "version_depuis": "2016-10-01",
+    "dernier_texte_modificateur": "Ordonnance n° 2016-131 du 10/02/2016, art. 2"
+   },
    "occurrences": [
     {
      "skill": "gap",
-     "ligne": 127,
-     "extrait": "| Manquement à l'obligation d'information | Art. 1112-1 C. civ. | Exclut l'estimation de la valeur |"
+     "ligne": 138,
+     "extrait": "| Manquement au devoir d'information | C. civ. art. 1112-1 | Ne porte pas sur l'estimation de la valeur (al. 2) ; ne peut être ni limité ni exclu (al. 5) |"
+    },
+    {
+     "skill": "gap",
+     "ligne": 164,
+     "extrait": "exclu (C. civ. art. 1112-1, al. 5). En pratique, l'acquéreur victime d'un dol"
+    },
+    {
+     "skill": "gap",
+     "ligne": 435,
+     "extrait": "être limité ni exclu (C. civ. art. 1112-1, al. 5). La présenter au client comme"
     }
    ]
   },
@@ -2329,14 +2388,18 @@
    "code": "code-civil",
    "article": "1132",
    "cle_librejustice": "1132",
-   "statut_verification": "a_verifier",
-   "derniere_verification": null,
-   "etat_source": null,
+   "statut_verification": "verifie",
+   "derniere_verification": "2026-10-26",
+   "etat_source": {
+    "statut": "VIGUEUR",
+    "version_depuis": "2016-10-01",
+    "dernier_texte_modificateur": "Ordonnance n° 2016-131 du 10/02/2016, art. 2"
+   },
    "occurrences": [
     {
      "skill": "gap",
-     "ligne": 128,
-     "extrait": "| Erreur sur les qualités essentielles | Art. 1132 s. C. civ. | Nullité, pas indemnisation |"
+     "ligne": 139,
+     "extrait": "| Erreur sur les qualités essentielles | C. civ. art. 1132 | Nullité, pas indemnisation ; l'erreur sur la valeur n'est pas une cause de nullité (C. civ. art. 11"
     }
    ]
   },
@@ -2346,14 +2409,18 @@
    "code": "code-civil",
    "article": "1170",
    "cle_librejustice": "1170",
-   "statut_verification": "a_verifier",
-   "derniere_verification": null,
-   "etat_source": null,
+   "statut_verification": "verifie",
+   "derniere_verification": "2026-10-26",
+   "etat_source": {
+    "statut": "VIGUEUR",
+    "version_depuis": "2016-10-01",
+    "dernier_texte_modificateur": "Ordonnance n° 2016-131 du 10/02/2016, art. 2"
+   },
    "occurrences": [
     {
      "skill": "gap",
-     "ligne": 145,
-     "extrait": "de sa substance (Art. 1170 C. civ.). Une clause de plafond ou d'exclusivité de"
+     "ligne": 163,
+     "extrait": "art. 1170) ; le devoir d'information précontractuel ne peut être ni limité ni"
     }
    ]
   },
@@ -2364,28 +2431,37 @@
    "article": "150-0 D",
    "cle_librejustice": "150-0-d",
    "statut_verification": "verifie",
-   "derniere_verification": "2026-10-23",
-   "etat_source": null,
+   "derniere_verification": "2026-10-26",
+   "etat_source": {
+    "statut": "VIGUEUR",
+    "version_depuis": "2026-02-21",
+    "dernier_texte_modificateur": "Loi n° 2026-103 du 19/02/2026 (LF 2026), art. 16 et 24"
+   },
    "occurrences": [
     {
      "skill": "gap",
-     "ligne": 153,
-     "extrait": "### 2.3 Le point fiscal structurant — CGI Art. 150-0 D, 14"
+     "ligne": 180,
+     "extrait": "### 2.3 Le point fiscal structurant — CGI art. 150-0 D, 14"
     },
     {
      "skill": "gap",
-     "ligne": 460,
-     "extrait": "Qualification au regard de l'Art. 150-0 D, 14 CGI — bénéficiaire, mécanique"
+     "ligne": 287,
+     "extrait": "| 1 | Qualification | Révision de prix pure, plafonnée au prix | Garantie indemnitaire, autonome du prix | Révision de prix (CGI art. 150-0 D, 14) |"
     },
     {
      "skill": "gap",
-     "ligne": 523,
-     "extrait": "Réclamation Art. 150-0 D, 14 CGI — délai, forme, pièces"
+     "ligne": 304,
+     "extrait": "antérieurement » est aussi celle du CGI art. 150-0 D, 14."
     },
     {
      "skill": "gap",
-     "ligne": 537,
-     "extrait": "- [ ] Bénéficiaire du versement vérifié au regard de l'Art. 150-0 D, 14 CGI"
+     "ligne": 581,
+     "extrait": "CGI art. 150-0 D, 14 et sa doctrine (§ 2.3) : régime du cédant, bénéficiaire,"
+    },
+    {
+     "skill": "gap",
+     "ligne": 653,
+     "extrait": "Réclamation CGI art. 150-0 D, 14 — caractère définitif du versement, délai"
     },
     {
      "skill": "protocole-cession",
@@ -2405,14 +2481,23 @@
    "code": "code-civil",
    "article": "2224",
    "cle_librejustice": "2224",
-   "statut_verification": "a_verifier",
-   "derniere_verification": null,
-   "etat_source": null,
+   "statut_verification": "verifie",
+   "derniere_verification": "2026-10-26",
+   "etat_source": {
+    "statut": "VIGUEUR",
+    "version_depuis": "2008-06-19",
+    "dernier_texte_modificateur": "Loi n° 2008-561 du 17/06/2008, art. 1"
+   },
    "occurrences": [
     {
      "skill": "gap",
-     "ligne": 271,
-     "extrait": "| 13 | Propriété des titres | Aligné | Prescription de droit commun (Art. 2224 C. civ.) | Prescription de droit commun |"
+     "ligne": 347,
+     "extrait": "| 13 | Propriété des titres | Aligné | Prescription de droit commun (C. civ. art. 2224) | Prescription de droit commun |"
+    },
+    {
+     "skill": "gap",
+     "ligne": 358,
+     "extrait": "l'exercer (C. civ. art. 2224, vérifié 26/10/2026)."
     }
    ]
   },
@@ -2422,14 +2507,18 @@
    "code": "code-civil",
    "article": "2321",
    "cle_librejustice": "2321",
-   "statut_verification": "a_verifier",
-   "derniere_verification": null,
-   "etat_source": null,
+   "statut_verification": "verifie",
+   "derniere_verification": "2026-10-26",
+   "etat_source": {
+    "statut": "VIGUEUR",
+    "version_depuis": "2006-03-24",
+    "dernier_texte_modificateur": "Ordonnance n° 2006-346 du 23/03/2006"
+   },
    "occurrences": [
     {
      "skill": "gap",
-     "ligne": 301,
-     "extrait": "| Garantie autonome à première demande | Art. 2321 C. civ. | Très forte — inopposabilité des exceptions | Élevé (commission bancaire, contre-garantie) |"
+     "ligne": 388,
+     "extrait": "| Garantie autonome à première demande | C. civ. art. 2321 | Très forte — le garant ne peut opposer aucune exception tenant à l'obligation garantie, sauf abus o"
     }
    ]
   },
@@ -2439,14 +2528,23 @@
    "code": "code-civil",
    "article": "2288",
    "cle_librejustice": "2288",
-   "statut_verification": "a_verifier",
-   "derniere_verification": null,
-   "etat_source": null,
+   "statut_verification": "verifie",
+   "derniere_verification": "2026-10-26",
+   "etat_source": {
+    "statut": "VIGUEUR",
+    "version_depuis": "2022-01-01",
+    "dernier_texte_modificateur": "Ordonnance n° 2021-1192 du 15/09/2021, art. 2"
+   },
    "occurrences": [
     {
      "skill": "gap",
-     "ligne": 302,
-     "extrait": "| Caution bancaire | Art. 2288 s. C. civ. | Forte | Élevé |"
+     "ligne": 389,
+     "extrait": "| Caution bancaire | C. civ. art. 2288 s. | Forte | Élevé |"
+    },
+    {
+     "skill": "gap",
+     "ligne": 391,
+     "extrait": "| Caution d'une personne physique (dirigeant ou associé de la holding cédante) | C. civ. art. 2288 s. ; mention apposée par la caution elle-même, montant en let"
     }
    ]
   },
@@ -2456,14 +2554,17 @@
    "code": "code-civil",
    "article": "1956",
    "cle_librejustice": "1956",
-   "statut_verification": "a_verifier",
-   "derniere_verification": null,
-   "etat_source": null,
+   "statut_verification": "verifie",
+   "derniere_verification": "2026-10-26",
+   "etat_source": {
+    "statut": "VIGUEUR",
+    "version_depuis": "1804-03-21"
+   },
    "occurrences": [
     {
      "skill": "gap",
-     "ligne": 303,
-     "extrait": "| Séquestre d'une fraction du prix | Art. 1956 s. C. civ. | Forte | Immobilisation de trésorerie |"
+     "ligne": 390,
+     "extrait": "| Séquestre d'une fraction du prix | C. civ. art. 1956 s. | Forte | Immobilisation de trésorerie |"
     }
    ]
   },
@@ -5081,14 +5182,18 @@
    "code": "livre-des-procedures-fiscales",
    "article": "L. 169",
    "cle_librejustice": "l169",
-   "statut_verification": "a_verifier",
-   "derniere_verification": null,
-   "etat_source": null,
+   "statut_verification": "verifie",
+   "derniere_verification": "2026-10-26",
+   "etat_source": {
+    "statut": "VIGUEUR",
+    "version_depuis": "2026-07-01",
+    "dernier_texte_modificateur": "Décret n° 2026-563 du 29/06/2026, art. 1"
+   },
    "occurrences": [
     {
      "skill": "gap",
-     "ligne": 193,
-     "extrait": "rechercher_code(code_name=\"Livre des procédures fiscales\", search=\"L. 169\", champ=\"NUM_ARTICLE\")"
+     "ligne": 256,
+     "extrait": "| IR, IS | Fin de la troisième année suivant celle au titre de laquelle l'imposition est due | Dix ans : activité occulte, fausse domiciliation fiscale à l'étra"
     }
    ]
   },
@@ -5098,14 +5203,26 @@
    "code": "livre-des-procedures-fiscales",
    "article": "L. 176",
    "cle_librejustice": "l176",
-   "statut_verification": "a_verifier",
-   "derniere_verification": null,
-   "etat_source": null,
+   "statut_verification": "verifie",
+   "derniere_verification": "2026-10-26",
+   "etat_source": {
+    "statut": "ABROGE_DIFF",
+    "version_depuis": "2023-01-01",
+    "version_jusqu_a": "2026-12-31",
+    "versions_futures": [
+     {
+      "statut": "VIGUEUR_DIFF",
+      "depuis": "2027-01-01"
+     }
+    ],
+    "dernier_texte_modificateur": "Ordonnance n° 2026-671 du 27/07/2026, art. 2 (rédaction issue de l'ordonnance n° 2025-1247)",
+    "lecture": "pas une abrogation : nouvelle rédaction au 01/01/2027 (taxes sur les biens et services)"
+   },
    "occurrences": [
     {
      "skill": "gap",
-     "ligne": 194,
-     "extrait": "rechercher_code(code_name=\"Livre des procédures fiscales\", search=\"L. 176\", champ=\"NUM_ARTICLE\")"
+     "ligne": 257,
+     "extrait": "| TVA | Fin de la troisième année suivant celle de l'exigibilité de la taxe | Dix ans : activité occulte, flagrance fiscale | LPF art. L. 176 (vérifié 26/10/202"
     }
    ]
   },
@@ -5115,14 +5232,18 @@
    "code": "code-de-la-securite-sociale",
    "article": "L. 244-3",
    "cle_librejustice": "l244-3",
-   "statut_verification": "a_verifier",
-   "derniere_verification": null,
-   "etat_source": null,
+   "statut_verification": "verifie",
+   "derniere_verification": "2026-10-26",
+   "etat_source": {
+    "statut": "VIGUEUR",
+    "version_depuis": "2017-01-01",
+    "dernier_texte_modificateur": "Loi n° 2016-1827 du 23/12/2016 (LFSS 2017), art. 24"
+   },
    "occurrences": [
     {
      "skill": "gap",
-     "ligne": 195,
-     "extrait": "rechercher_code(code_name=\"Code de la sécurité sociale\", search=\"L. 244-3\", champ=\"NUM_ARTICLE\")"
+     "ligne": 258,
+     "extrait": "| Cotisations et contributions sociales | Trois ans à compter de la fin de l'année civile au titre de laquelle elles sont dues (travailleurs indépendants : à co"
     }
    ]
   },
@@ -5166,14 +5287,18 @@
    "code": "code-civil",
    "article": "1231-3",
    "cle_librejustice": "1231-3",
-   "statut_verification": "a_verifier",
-   "derniere_verification": null,
-   "etat_source": null,
+   "statut_verification": "verifie",
+   "derniere_verification": "2026-10-26",
+   "etat_source": {
+    "statut": "VIGUEUR",
+    "version_depuis": "2016-10-01",
+    "dernier_texte_modificateur": "Ordonnance n° 2016-131 du 10/02/2016, art. 2"
+   },
    "occurrences": [
     {
      "skill": "gap",
-     "ligne": 143,
-     "extrait": "Aucune clause ne fait échec au **dol** ni à la **faute lourde** (Art. 1231-3"
+     "ligne": 161,
+     "extrait": "dolosive (C. civ. art. 1231-3) ; toute clause qui prive de sa substance"
     }
    ]
   },
@@ -5191,6 +5316,221 @@
      "skill": "strategie-patrimoniale",
      "ligne": 48,
      "extrait": "art. 1422) — et, si les deux époux donnent, chacun ouvre ses propres abattements."
+    }
+   ]
+  },
+  {
+   "id": "livre-des-procedures-fiscales:L. 59 A",
+   "type": "article",
+   "code": "livre-des-procedures-fiscales",
+   "article": "L. 59 A",
+   "cle_librejustice": "l59-a",
+   "statut_verification": "verifie",
+   "derniere_verification": "2026-10-26",
+   "etat_source": {
+    "statut": "ABROGE_DIFF",
+    "version_depuis": "2022-01-01",
+    "version_jusqu_a": "2026-12-31",
+    "versions_futures": [
+     {
+      "statut": "VIGUEUR_DIFF",
+      "depuis": "2027-01-01"
+     }
+    ],
+    "dernier_texte_modificateur": "Ordonnance n° 2025-1247 du 17/12/2025, art. 12",
+    "lecture": "pas une abrogation : nouvelle rédaction au 01/01/2027 (commission des impôts directs et des taxes sur les biens et services)"
+   },
+   "occurrences": [
+    {
+     "skill": "contentieux-fiscal",
+     "ligne": 225,
+     "extrait": "- Compétence de la commission (LPF L. 59 A, vérifié 26/10/2026 ; nouvelle"
+    }
+   ]
+  },
+  {
+   "id": "code-general-des-impots:111",
+   "type": "article",
+   "code": "code-general-des-impots",
+   "article": "111",
+   "cle_librejustice": "111",
+   "statut_verification": "a_verifier",
+   "derniere_verification": null,
+   "etat_source": null,
+   "occurrences": [
+    {
+     "skill": "contentieux-fiscal",
+     "ligne": 231,
+     "extrait": "(CGI art. 39, 1, 1° et 111, d) et les dépenses du relevé de l'article"
+    }
+   ]
+  },
+  {
+   "id": "code-general-des-impots:54 quater",
+   "type": "article",
+   "code": "code-general-des-impots",
+   "article": "54 quater",
+   "cle_librejustice": "54-quater",
+   "statut_verification": "a_verifier",
+   "derniere_verification": null,
+   "etat_source": null,
+   "occurrences": [
+    {
+     "skill": "contentieux-fiscal",
+     "ligne": 232,
+     "extrait": "54 quater ; sur la valeur vénale servant de base à la TVA immobilière."
+    }
+   ]
+  },
+  {
+   "id": "code-civil:1136",
+   "type": "article",
+   "code": "code-civil",
+   "article": "1136",
+   "cle_librejustice": "1136",
+   "statut_verification": "verifie",
+   "derniere_verification": "2026-10-26",
+   "etat_source": {
+    "statut": "VIGUEUR",
+    "version_depuis": "2016-10-01",
+    "dernier_texte_modificateur": "Ordonnance n° 2016-131 du 10/02/2016, art. 2"
+   },
+   "occurrences": [
+    {
+     "skill": "gap",
+     "ligne": 139,
+     "extrait": "| Erreur sur les qualités essentielles | C. civ. art. 1132 | Nullité, pas indemnisation ; l'erreur sur la valeur n'est pas une cause de nullité (C. civ. art. 11"
+    }
+   ]
+  },
+  {
+   "id": "code-general-des-impots:38",
+   "type": "article",
+   "code": "code-general-des-impots",
+   "article": "38",
+   "cle_librejustice": "38",
+   "statut_verification": "verifie",
+   "derniere_verification": "2026-10-26",
+   "etat_source": {
+    "statut": "VIGUEUR",
+    "version_depuis": "2025-02-16",
+    "lecture": "2 (bénéfice net = variation de l'actif net) seul lu"
+   },
+   "occurrences": [
+    {
+     "skill": "gap",
+     "ligne": 231,
+     "extrait": "imposable de la cible à l'IS (CGI art. 38, 2), alors que le passif couvert peut"
+    }
+   ]
+  },
+  {
+   "id": "code-general-des-impots:213",
+   "type": "article",
+   "code": "code-general-des-impots",
+   "article": "213",
+   "cle_librejustice": "213",
+   "statut_verification": "verifie",
+   "derniere_verification": "2026-10-26",
+   "etat_source": {
+    "statut": "VIGUEUR",
+    "version_depuis": "2026-07-01",
+    "dernier_texte_modificateur": "Décret n° 2026-562 du 29/06/2026, art. 2"
+   },
+   "occurrences": [
+    {
+     "skill": "gap",
+     "ligne": 233,
+     "extrait": "les sociétés (CGI art. 213). Le paiement à la cible crée alors une perte"
+    }
+   ]
+  },
+  {
+   "id": "code-civil:1205",
+   "type": "article",
+   "code": "code-civil",
+   "article": "1205",
+   "cle_librejustice": "1205",
+   "statut_verification": "verifie",
+   "derniere_verification": "2026-10-26",
+   "etat_source": {
+    "statut": "VIGUEUR",
+    "version_depuis": "2016-10-01",
+    "dernier_texte_modificateur": "Ordonnance n° 2016-131 du 10/02/2016, art. 2"
+   },
+   "occurrences": [
+    {
+     "skill": "gap",
+     "ligne": 294,
+     "extrait": "cible suppose une stipulation pour autrui expresse (C. civ. art. 1205, vérifié"
+    }
+   ]
+  },
+  {
+   "id": "code-civil:2254",
+   "type": "article",
+   "code": "code-civil",
+   "article": "2254",
+   "cle_librejustice": "2254",
+   "statut_verification": "verifie",
+   "derniere_verification": "2026-10-26",
+   "etat_source": {
+    "statut": "VIGUEUR",
+    "version_depuis": "2008-06-19",
+    "dernier_texte_modificateur": "Loi n° 2008-561 du 17/06/2008, art. 1"
+   },
+   "occurrences": [
+    {
+     "skill": "gap",
+     "ligne": 369,
+     "extrait": "(C. civ. art. 2254, vérifié 26/10/2026). Rédiger les deux expressément."
+    }
+   ]
+  },
+  {
+   "id": "code-civil:2297",
+   "type": "article",
+   "code": "code-civil",
+   "article": "2297",
+   "cle_librejustice": "2297",
+   "statut_verification": "verifie",
+   "derniere_verification": "2026-10-26",
+   "etat_source": {
+    "statut": "VIGUEUR",
+    "version_depuis": "2022-01-01",
+    "dernier_texte_modificateur": "Ordonnance n° 2021-1192 du 15/09/2021, art. 3"
+   },
+   "occurrences": [
+    {
+     "skill": "gap",
+     "ligne": 391,
+     "extrait": "| Caution d'une personne physique (dirigeant ou associé de la holding cédante) | C. civ. art. 2288 s. ; mention apposée par la caution elle-même, montant en let"
+    },
+    {
+     "skill": "gap",
+     "ligne": 672,
+     "extrait": "- [ ] Garantie de la garantie traitée, ou son absence signalée comme un choix ; caution personne physique : mention de C. civ. art. 2297"
+    }
+   ]
+  },
+  {
+   "id": "code-civil:1310",
+   "type": "article",
+   "code": "code-civil",
+   "article": "1310",
+   "cle_librejustice": "1310",
+   "statut_verification": "verifie",
+   "derniere_verification": "2026-10-26",
+   "etat_source": {
+    "statut": "VIGUEUR",
+    "version_depuis": "2016-10-01",
+    "dernier_texte_modificateur": "Ordonnance n° 2016-131 du 10/02/2016, art. 3"
+   },
+   "occurrences": [
+    {
+     "skill": "gap",
+     "ligne": 404,
+     "extrait": "**Ligne 18 — la solidarité ne se présume pas** (C. civ. art. 1310, vérifié"
     }
    ]
   }
@@ -5240,6 +5580,24 @@
    "note": "exemple de format dans la table des motifs",
    "derniere_verification": null,
    "statut_verification": "a_verifier"
+  },
+  {
+   "id": "BOI-RPPM-PVBMI-20-10-10-30",
+   "skills": [
+    "gap"
+   ],
+   "note": "version du 20/12/2019 — § 10 à 140 : clause de garantie de passif (versement à la société § 30, convention contemporaine § 50, caractère définitif § 60-70, limite § 80, réclamation R*196-1 c § 110, pièces § 120-130) ; antérieure au décret n° 2026-692",
+   "derniere_verification": "2026-10-26",
+   "statut_verification": "verifie"
+  },
+  {
+   "id": "BOI-BIC-PVMV-40-40",
+   "skills": [
+    "gap"
+   ],
+   "note": "§ 1 — réduction du prix de cession d'un élément de l'actif immobilisé au cours d'un exercice postérieur (CGI art. 39 duodecies, 9)",
+   "derniere_verification": "2026-10-26",
+   "statut_verification": "verifie"
   }
  ],
  "jurisprudence": [
@@ -5337,6 +5695,78 @@
    "derniere_verification": null,
    "statut_verification": "a_verifier",
    "note": "exemple de la table des motifs : vérifier qu'il ne s'agit pas d'un numéro fictif"
+  },
+  {
+   "id": "Cass. com. 12/12/1995 n° 93-21.304 (publié)",
+   "skills": [
+    "gap"
+   ],
+   "portee_retenue": "vice caché des droits sociaux seulement s'il empêche l'activité constituant l'objet social",
+   "derniere_verification": "2026-10-26",
+   "statut_verification": "verifie"
+  },
+  {
+   "id": "Cass. com. 07/07/2020 n° 18-19.173",
+   "skills": [
+    "gap"
+   ],
+   "portee_retenue": "déchéance expresse pour notification tardive appliquée ; divergence sur des méthodes comptables régulières insuffisante pour le dol",
+   "derniere_verification": "2026-10-26",
+   "statut_verification": "verifie"
+  },
+  {
+   "id": "Cass. com. 10/02/2015 n° 14-12.371",
+   "skills": [
+    "gap"
+   ],
+   "portee_retenue": "dol à titre principal et garantie à titre subsidiaire : dénaturation des conclusions censurée",
+   "derniere_verification": "2026-10-26",
+   "statut_verification": "verifie"
+  },
+  {
+   "id": "Cass. com. 17/03/2021 n° 19-11.691",
+   "skills": [
+    "gap"
+   ],
+   "portee_retenue": "déchéance subordonnée par le contrat à la preuve d'un préjudice : inopposable faute de preuve",
+   "derniere_verification": "2026-10-26",
+   "statut_verification": "verifie"
+  },
+  {
+   "id": "Cass. com. 17/03/2021 n° 19-18.901",
+   "skills": [
+    "gap"
+   ],
+   "portee_retenue": "société cible non bénéficiaire faute de stipulation pour autrui",
+   "derniere_verification": "2026-10-26",
+   "statut_verification": "verifie"
+  },
+  {
+   "id": "Cass. com. 12/10/2022 n° 21-12.702",
+   "skills": [
+    "gap"
+   ],
+   "portee_retenue": "demande d'écarter le plafond de la GAP fondée sur le dol ; cassation pour défaut de réponse",
+   "derniere_verification": "2026-10-26",
+   "statut_verification": "verifie"
+  },
+  {
+   "id": "Cass. com. 24/01/2024 n° 20-13.755 (publié)",
+   "skills": [
+    "gap"
+   ],
+   "portee_retenue": "solidarité des cédants : sans effet au profit d'un cessionnaire n'ayant acquis que d'un seul cédant",
+   "derniere_verification": "2026-10-26",
+   "statut_verification": "verifie"
+  },
+  {
+   "id": "Cass. com. 06/11/2024 n° 23-15.254",
+   "skills": [
+    "gap"
+   ],
+   "portee_retenue": "délai de notification courant de la connaissance de l'événement, distinct de l'exigibilité",
+   "derniere_verification": "2026-10-26",
+   "statut_verification": "verifie"
   }
  ],
  "textes": [
@@ -5465,6 +5895,15 @@
     "socle-eca",
     "restructurations",
     "cession-fonds"
+   ]
+  },
+  {
+   "date": "2027-01-01",
+   "objet": "Nouvelles rédactions de LPF L. 176 et L. 59 A (taxes sur les biens et services, ordonnance n° 2025-1247)",
+   "action": "Relire les deux articles à leur date d'effet ; ajuster gap § 2.4 et contentieux-fiscal § 4.3",
+   "skills": [
+    "gap",
+    "contentieux-fiscal"
    ]
   },
   {

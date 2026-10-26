@@ -233,7 +233,7 @@ Yoann Decreton — 03 27 72 00 10 — accueilcambrai@eca-groupe.com
 
 Valider mentalement chaque point avant d'envoyer la réponse :
 
-- [ ] Toutes les références citées vérifiées via MCP Légifrance + LibreJustice + Legal Data Hunter (voir legal-hallucination-checker)
+- [ ] Toutes les références citées lues et vérifiées à la source (Légifrance, LibreJustice, Legal Data Hunter, Pourvoi) — voir legal-hallucination-checker
 - [ ] Zones d'incertitude explicitement balisées avec ⚠️ INCERTAIN
 - [ ] La conclusion répond directement et précisément à la question posée
 - [ ] Niveau de risque justifié par un argumentaire (pas seulement affiché)

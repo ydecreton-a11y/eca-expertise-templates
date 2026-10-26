@@ -75,7 +75,8 @@ TRANSACTION proposée ?
 - Éléments factuels contradictoires à l'argumentaire de l'administration
 - Pièces justificatives disponibles
 - Positions BOFiP favorables applicables (Art. L80 A LPF)
-- Jurisprudence récente favorable (vérifier via MCP Légifrance)
+- Jurisprudence récente favorable (recherchée et lue à la source : Légifrance,
+  LibreJustice, Pourvoi)
 
 ---
 
@@ -221,7 +222,18 @@ confirmation des points actés.
 
 **Conditions :**
 - Désaccord persistant après réponse de l'administration
-- Impôts éligibles : IS, BIC, BNC, BA, TVA (vérifier liste via MCP)
+- Compétence de la commission (LPF L. 59 A, vérifié 26/10/2026 ; nouvelle
+  rédaction au 01/01/2027, « taxes sur les biens et services », issue de
+  l'ordonnance n° 2025-1247) : désaccord sur le montant du résultat BIC, BNC,
+  BA ou du chiffre d'affaires déterminé selon un régime réel ; sur les régimes
+  d'exonération ou d'allégement des entreprises nouvelles (hors qualification
+  des dépenses de recherche) ; sur les rémunérations non déductibles
+  (CGI art. 39, 1, 1° et 111, d) et les dépenses du relevé de l'article
+  54 quater ; sur la valeur vénale servant de base à la TVA immobilière.
+  Elle se prononce sur les faits sans trancher de question de droit, mais peut
+  se prononcer sur l'acte anormal de gestion, le principe et le montant des
+  amortissements et des provisions, et la qualification de charge déductible
+  ou d'immobilisation
 - Délai : à compter de la réponse aux observations — délai et commission
   compétente (départementale, nationale) lus dans le LPF en vigueur (L. 59 s., R*59-1)
 

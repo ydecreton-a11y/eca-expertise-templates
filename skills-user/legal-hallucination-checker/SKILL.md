@@ -101,12 +101,12 @@ rechercher_jurisprudence_judiciaire(search="[numéro pourvoi]", champ="NUM_AFFAI
 
 **Jurisprudence administrative (CE, CAA, TA) :**
 ```
-rechercher_jurisprudence_administrative(search="[numéro]", champ="NUM_AFFAIRE")
+rechercher_jurisprudence_administrative(search="[numéro]")   # champ ALL par défaut : NUM_AFFAIRE n'existe pas pour cette base
 ```
 
 **Décisions constitutionnelles :**
 ```
-rechercher_decisions_constitutionnelles(search="[numéro décision]")
+rechercher_decisions_constitutionnelles(search="[numéro décision]", champ="NUM_DEC")
 ```
 
 **Lois et ordonnances :**

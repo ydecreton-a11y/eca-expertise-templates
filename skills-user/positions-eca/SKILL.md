@@ -135,7 +135,7 @@ Après avoir livré une consultation, un calcul, ou une analyse, **proposer l'aj
 **NE PAS PROPOSER** si :
 - La position est un calcul spécifique au dossier (montant, date)
 - La position est déjà couverte par une entrée existante
-- La source n'a pas pu être vérifiée via MCP Légifrance
+- La source n'a pas pu être lue et vérifiée (Légifrance, LibreJustice, Legal Data Hunter, Pourvoi)
 - Le sujet est en zone d'incertitude totale sans aucune source
 
 ---
@@ -146,7 +146,7 @@ Après avoir livré une consultation, un calcul, ou une analyse, **proposer l'aj
 
 À chaque consultation de la base (Phase 1), si une position active a une "Date vérification" de plus de 6 mois :
 - Signaler : "ℹ️ Position ECA [titre] vérifiée il y a plus de 6 mois. Revérification recommandée."
-- Si Yoann confirme → relancer la vérification MCP Légifrance et mettre à jour la date
+- Si Yoann confirme → relancer la vérification à la source et mettre à jour la date
 - Si la position a évolué → passer le statut en "🔄 À revérifier" et signaler l'écart
 
 ### Détection de conflit inter-positions

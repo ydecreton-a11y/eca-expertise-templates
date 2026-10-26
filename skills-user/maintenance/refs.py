@@ -193,7 +193,8 @@ def extract(d):
     datée (« **Règle (vérifiée JJ/MM/AAAA)** : … »), dans tout le bloc ouvert
     par « **Vérifié … JJ/MM/AAAA** », ou dans un tableau placé sous un titre
     daté. Une référence précédée de « lire » ou suivie de « à lire » /
-    « à vérifier » n'est jamais réputée vérifiée."""
+    « à vérifier » n'est jamais réputée vérifiée. Un nombre précédé de « § »
+    (paragraphe BOFiP ou de skill) n'est jamais lu comme un article."""
     refs = collections.OrderedDict()
     def add(c, a, occ):
         refs.setdefault((c, a), []).append(occ)
@@ -234,6 +235,8 @@ def extract(d):
             for m in ART.finditer(text):
                 art = m.group(1).strip()
                 pre = text[max(0, m.start() - 15):m.start() + 1]
+                if re.search(r'§\s*(?:\d+\s*(?:et|,|à|-)\s*)*$', text[max(0, m.start() - 30):m.start()]):
+                    continue
                 if re.fullmatch(r'\d{1,2}', art) and not re.search(r'(art\.|Art\.|article)\s*$', text[max(0, m.start() - 12):m.start() + len(m.group(0)) - len(art)]):
                     continue
                 if re.fullmatch(r'\d{4}', art) and art.startswith(('19', '20')) and not re.search(r'(art\.|Art\.|C\. ?civ\.)', pre + m.group(0)):
@@ -297,7 +300,9 @@ def cmd_reconcile(idx_path, ext_path, today=None):
                 r['derniere_verification'] = max(dates); r['statut_verification'] = 'verifie'
         else:
             r = {'id': f'{k[0]}:{k[1]}', 'type': 'mention_inexistante' if k in INEXISTANTS else 'article', 'code': k[0], 'article': k[1],
-                 'cle_librejustice': lj_key(k[1]), 'statut_verification': 'a_verifier', 'derniere_verification': None,
+                 'cle_librejustice': lj_key(k[1]),
+                 'statut_verification': 'verifie' if dates else 'a_verifier',
+                 'derniere_verification': max(dates) if dates else None,
                  'etat_source': None, 'occurrences': occ}
             idx['references'].append(r); new.append(k)
     gone = [k for k in cur if k not in seen and not any(o.get('ligne') is None for o in cur[k]['occurrences'])]

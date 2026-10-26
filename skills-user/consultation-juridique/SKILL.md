@@ -97,7 +97,8 @@ II. PROBLÉMATIQUE(S) JURIDIQUE(S)
 
 III. RÈGLES DE DROIT APPLICABLES
    Textes, articles, principes généraux, jurisprudence.
-   [Références vérifiées via MCP Légifrance et/ou BOFiP]
+   [Références lues et vérifiées à la source : Légifrance, LibreJustice,
+    Legal Data Hunter (BOFiP), Pourvoi]
    Distinguer : droit positif / doctrine administrative / jurisprudence
 
 IV. ANALYSE

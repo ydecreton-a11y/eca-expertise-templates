@@ -4,13 +4,14 @@ Créé le 2026-10-23 — dernière maintenance : aucune. Tenu par `maintenance-s
 
 Une entrée 'verifie' a été lue à la source à la date indiquée. Une entrée 'a_verifier' n'a pas encore été contrôlée dans sa version en vigueur : la prochaine maintenance la lit en entier et confronte le passage du skill au texte. Les numéros de ligne sont indicatifs (ils bougent avec les skills) ; l'extrait sert d'ancre.
 
-**239 articles** (91 vérifiés, 148 à vérifier) · 5 BOFiP · 10 décisions · 7 textes · 10 pièges datés · 3 échéances
+**249 articles** (114 vérifiés, 135 à vérifier) · 7 BOFiP · 18 décisions · 7 textes · 10 pièges datés · 4 échéances
 
 ## Échéances annoncées
 
 | Date | Objet | Action | Skills |
 |---|---|---|---|
 | 2027-01-01 | Abrogation des articles TVA du CGI (dont 257 bis) et bascule au CIBS (ordonnance n° 2025-1247) | Remplacer dans les skills chaque référence TVA du CGI par sa référence CIBS, en gardant l'ancienne en regard pour les opérations antérieures | socle-eca, restructurations, cession-fonds |
+| 2027-01-01 | Nouvelles rédactions de LPF L. 176 et L. 59 A (taxes sur les biens et services, ordonnance n° 2025-1247) | Relire les deux articles à leur date d'effet ; ajuster gap § 2.4 et contentieux-fiscal § 4.3 | gap, contentieux-fiscal |
 | 2029-01-01 | Nouvelle rédaction de L. 561-46 CMF (ordonnance n° 2025-1091) | Relire l'article et ajuster redaction-acte (§ 4.2) et acte-definitif-titres | redaction-acte, acte-definitif-titres |
 | à chaque loi de finances | Loi de finances de l'année, loi de finances rectificative, LFSS | Maintenance ciblée sur les articles modifiés (déclenchée par la veille du mercredi) puis contrôle complet au trimestre suivant | tous |
 
@@ -19,19 +20,22 @@ Une entrée 'verifie' a été lue à la source à la date indiquée. Une entrée
 | Code | Article | Dernière vérification | État connu | Skills |
 |---|---|---|---|---|
 | code-civil | 1075 | à vérifier |  | strategie-patrimoniale |
-| code-civil | 1112-1 | à vérifier |  | gap |
+| code-civil | 1112-1 | 2026-10-26 | VIGUEUR | gap |
 | code-civil | 1114 | à vérifier |  | lettre-intention |
 | code-civil | 1123 | à vérifier |  | lettre-intention |
-| code-civil | 1132 | à vérifier |  | gap |
-| code-civil | 1137 | à vérifier |  | gap, protocole-cession |
-| code-civil | 1170 | à vérifier |  | gap |
+| code-civil | 1132 | 2026-10-26 | VIGUEUR | gap |
+| code-civil | 1136 | 2026-10-26 | VIGUEUR | gap |
+| code-civil | 1137 | 2026-10-26 | VIGUEUR | gap, protocole-cession |
+| code-civil | 1170 | 2026-10-26 | VIGUEUR | gap |
 | code-civil | 1188 | à vérifier |  | protocole-cession |
 | code-civil | 1195 | à vérifier |  | analyse-contrat |
+| code-civil | 1205 | 2026-10-26 | VIGUEUR | gap |
 | code-civil | 1211 | à vérifier |  | analyse-contrat |
 | code-civil | 1218 | à vérifier |  | analyse-contrat |
-| code-civil | 1231-3 | à vérifier |  | gap |
+| code-civil | 1231-3 | 2026-10-26 | VIGUEUR | gap |
 | code-civil | 1304-2 | à vérifier |  | cession-fonds, protocole-cession |
 | code-civil | 1304-3 | 2026-10-23 |  | acte-definitif-titres, protocole-cession |
+| code-civil | 1310 | 2026-10-26 | VIGUEUR | gap |
 | code-civil | 1321 | 2026-10-23 |  | acte-definitif-titres |
 | code-civil | 1397 | à vérifier |  | strategie-patrimoniale |
 | code-civil | 1422 | à vérifier |  | strategie-patrimoniale |
@@ -39,8 +43,8 @@ Une entrée 'verifie' a été lue à la source à la date indiquée. Une entrée
 | code-civil | 1427 | 2026-10-23 |  | protocole-cession |
 | code-civil | 1583 | 2026-10-23 |  | acte-definitif-titres, lettre-intention, protocole-cession |
 | code-civil | 1592 | à vérifier |  | protocole-cession |
-| code-civil | 1626 | à vérifier |  | gap |
-| code-civil | 1641 | à vérifier |  | gap |
+| code-civil | 1626 | 2026-10-26 | VIGUEUR | gap |
+| code-civil | 1641 | 2026-10-26 | VIGUEUR | gap |
 | code-civil | 1690 | 2026-10-23 |  | acte-definitif-titres, protocole-cession |
 | code-civil | 1832 | à vérifier |  | strategie-patrimoniale |
 | code-civil | 1836 | 2026-10-23 |  | redaction-acte |
@@ -53,10 +57,12 @@ Une entrée 'verifie' a été lue à la source à la date indiquée. Une entrée
 | code-civil | 1844-8 | à vérifier |  | dissolution-liquidation-tup |
 | code-civil | 1844-9 | à vérifier |  | dissolution-liquidation-tup |
 | code-civil | 1865 | à vérifier |  | acte-definitif-titres |
-| code-civil | 1956 | à vérifier |  | gap |
-| code-civil | 2224 | à vérifier |  | gap |
-| code-civil | 2288 | à vérifier |  | gap |
-| code-civil | 2321 | à vérifier |  | gap |
+| code-civil | 1956 | 2026-10-26 | VIGUEUR | gap |
+| code-civil | 2224 | 2026-10-26 | VIGUEUR | gap |
+| code-civil | 2254 | 2026-10-26 | VIGUEUR | gap |
+| code-civil | 2288 | 2026-10-26 | VIGUEUR | gap |
+| code-civil | 2297 | 2026-10-26 | VIGUEUR | gap |
+| code-civil | 2321 | 2026-10-26 | VIGUEUR | gap |
 | code-civil | 578 | à vérifier |  | strategie-patrimoniale |
 | code-civil | 587 | à vérifier |  | strategie-patrimoniale |
 | code-civil | 893 | à vérifier |  | strategie-patrimoniale |
@@ -157,13 +163,14 @@ Une entrée 'verifie' a été lue à la source à la date indiquée. Une entrée
 | code-de-la-securite-sociale | L. 136-3 | 2026-10-23 |  | juridique-annuel |
 | code-de-la-securite-sociale | L. 136-7 | à vérifier |  | calcul-plus-value |
 | code-de-la-securite-sociale | L. 136-8 | à vérifier |  | calcul-plus-value, note-information-client, socle-eca |
-| code-de-la-securite-sociale | L. 244-3 | à vérifier |  | gap |
+| code-de-la-securite-sociale | L. 244-3 | 2026-10-26 | VIGUEUR | gap |
 | code-des-assurances | L. 132-12 | à vérifier |  | strategie-patrimoniale |
 | code-du-travail | L. 1224-1 | 2026-10-23 |  | cession-fonds, dissolution-liquidation-tup, due-diligence-juridique, lettre-intention, restructurations |
 | code-du-travail | L. 1224-2 | 2026-10-23 |  | cession-fonds |
 | code-du-travail | L. 2312-1 | à vérifier |  | protocole-cession |
 | code-du-travail | L. 2312-8 | 2026-10-23 |  | protocole-cession, restructurations |
 | code-du-travail | L. 2314-9 | 2026-10-23 |  | cession-fonds |
+| code-general-des-impots | 111 | à vérifier |  | contentieux-fiscal |
 | code-general-des-impots | 112 | à vérifier |  | dissolution-liquidation-tup |
 | code-general-des-impots | 117 quater | à vérifier |  | juridique-annuel |
 | code-general-des-impots | 119 bis | à vérifier |  | dissolution-liquidation-tup |
@@ -172,11 +179,11 @@ Une entrée 'verifie' a été lue à la source à la date indiquée. Une entrée
 | code-general-des-impots | 150 U | à vérifier |  | calcul-plus-value |
 | code-general-des-impots | 150 VB | à vérifier |  | calcul-plus-value, socle-eca |
 | code-general-des-impots | 150 VH | à vérifier |  | calcul-plus-value |
-| code-general-des-impots | 150-0 A | 2026-10-23 |  | acte-definitif-titres, calcul-plus-value, protocole-cession |
+| code-general-des-impots | 150-0 A | 2026-10-23 |  | acte-definitif-titres, calcul-plus-value, gap, protocole-cession |
 | code-general-des-impots | 150-0 B | à vérifier |  | calcul-plus-value |
 | code-general-des-impots | 150-0 B bis | à vérifier |  | protocole-cession |
 | code-general-des-impots | 150-0 B ter | à vérifier |  | calcul-plus-value, consultation-juridique, holding-apport, legal-hallucination-checker, protocole-cession, strategie-patrimoniale |
-| code-general-des-impots | 150-0 D | 2026-10-23 |  | gap, protocole-cession |
+| code-general-des-impots | 150-0 D | 2026-10-26 | VIGUEUR | gap, protocole-cession |
 | code-general-des-impots | 150-0 D ter | à vérifier |  | calcul-plus-value |
 | code-general-des-impots | 150-0 E | à vérifier |  | calcul-plus-value |
 | code-general-des-impots | 150-0 F ter | 2026-10-23 | cité comme inexistant | socle-eca |
@@ -196,6 +203,7 @@ Une entrée 'verifie' a été lue à la source à la date indiquée. Une entrée
 | code-general-des-impots | 210 A | 2026-10-23 |  | dissolution-liquidation-tup, restructurations |
 | code-general-des-impots | 210 B | 2026-10-23 | VIGUEUR | holding-apport, restructurations |
 | code-general-des-impots | 210-0 A | 2026-10-23 |  | restructurations |
+| code-general-des-impots | 213 | 2026-10-26 | VIGUEUR | gap |
 | code-general-des-impots | 216 | à vérifier |  | dissolution-liquidation-tup, holding-apport, juridique-annuel |
 | code-general-des-impots | 219 | à vérifier |  | calcul-plus-value, dissolution-liquidation-tup, redaction-acte |
 | code-general-des-impots | 221 | 2026-10-23 |  | dissolution-liquidation-tup, redaction-acte, restructurations |
@@ -209,8 +217,10 @@ Une entrée 'verifie' a été lue à la source à la date indiquée. Une entrée
 | code-general-des-impots | 244 bis B | à vérifier |  | calcul-plus-value |
 | code-general-des-impots | 257 bis | 2026-10-23 | ABROGE_DIFF jusqu'au 2027-01-01 | cession-fonds, restructurations, socle-eca |
 | code-general-des-impots | 37 | 2026-10-23 |  | redaction-acte |
-| code-general-des-impots | 39 | à vérifier |  | contentieux-fiscal |
-| code-general-des-impots | 39 duodecies | à vérifier |  | calcul-plus-value |
+| code-general-des-impots | 38 | 2026-10-26 | VIGUEUR | gap |
+| code-general-des-impots | 39 | à vérifier |  | contentieux-fiscal, gap |
+| code-general-des-impots | 39 duodecies | à vérifier |  | calcul-plus-value, gap |
+| code-general-des-impots | 54 quater | à vérifier |  | contentieux-fiscal |
 | code-general-des-impots | 54 septies | à vérifier |  | restructurations |
 | code-general-des-impots | 57 | à vérifier |  | holding-apport |
 | code-general-des-impots | 635 | 2026-10-23 |  | acte-definitif-titres, cession-fonds, protocole-cession, redaction-acte |
@@ -243,15 +253,16 @@ Une entrée 'verifie' a été lue à la source à la date indiquée. Une entrée
 | code-monetaire-et-financier | L. 561-46 | 2026-10-23 | ABROGE_DIFF jusqu'au 2028-12-31 ; version future au 2029-01-01 | acte-definitif-titres, maintenance-skills, redaction-acte |
 | code-monetaire-et-financier | R. 561-55 | 2026-10-23 |  | redaction-acte |
 | livre-des-procedures-fiscales | L. 10 | à vérifier |  | contentieux-fiscal |
-| livre-des-procedures-fiscales | L. 169 | à vérifier |  | gap |
-| livre-des-procedures-fiscales | L. 176 | à vérifier |  | gap |
+| livre-des-procedures-fiscales | L. 169 | 2026-10-26 | VIGUEUR | gap |
+| livre-des-procedures-fiscales | L. 176 | 2026-10-26 | ABROGE_DIFF jusqu'au 2026-12-31 ; version future au 2027-01-01 | gap |
 | livre-des-procedures-fiscales | L. 190 | à vérifier |  | contentieux-fiscal |
 | livre-des-procedures-fiscales | L. 57 | à vérifier |  | contentieux-fiscal |
 | livre-des-procedures-fiscales | L. 59 | à vérifier |  | contentieux-fiscal |
+| livre-des-procedures-fiscales | L. 59 A | 2026-10-26 | ABROGE_DIFF jusqu'au 2026-12-31 ; version future au 2027-01-01 | contentieux-fiscal |
 | livre-des-procedures-fiscales | L. 64 | à vérifier |  | consultation-juridique, holding-apport |
 | livre-des-procedures-fiscales | L. 64 A | à vérifier |  | holding-apport |
 | livre-des-procedures-fiscales | L. 80 A | à vérifier |  | consultation-juridique, contentieux-fiscal |
-| livre-des-procedures-fiscales | R*196-1 | à vérifier |  | contentieux-fiscal, socle-eca |
+| livre-des-procedures-fiscales | R*196-1 | 2026-10-26 | VIGUEUR | contentieux-fiscal, gap, socle-eca |
 | livre-des-procedures-fiscales | R*196-2 | à vérifier |  | contentieux-fiscal |
 | livre-des-procedures-fiscales | R*196-3 | à vérifier |  | contentieux-fiscal, socle-eca |
 | livre-des-procedures-fiscales | R*199-1 | à vérifier |  | contentieux-fiscal |
@@ -267,6 +278,8 @@ Une entrée 'verifie' a été lue à la source à la date indiquée. Une entrée
 | BOI-BIC-PROV-20-10-10 | contentieux-fiscal | à vérifier | exemple de rédaction (§ X) marqué INCERTAIN dans le skill |
 | BOI-ENR-DMTG-10-20-40-10 | strategie-patrimoniale | à vérifier |  |
 | BOI-RPPM-PVBMI-30-10-60 | legal-hallucination-checker | à vérifier | exemple de format dans la table des motifs |
+| BOI-RPPM-PVBMI-20-10-10-30 | gap | 2026-10-26 | version du 20/12/2019 — § 10 à 140 : clause de garantie de passif (versement à la société § 30, convention contemporaine § 50, caractère définitif § 60-70, limite § 80, réclamation R*196-1 c § 110, pièces § 120-130) ; antérieure au décret n° 2026-692 |
+| BOI-BIC-PVMV-40-40 | gap | 2026-10-26 | § 1 — réduction du prix de cession d'un élément de l'actif immobilisé au cours d'un exercice postérieur (CGI art. 39 duodecies, 9) |
 
 ## Jurisprudence
 
@@ -282,6 +295,14 @@ Une entrée 'verifie' a été lue à la source à la date indiquée. Une entrée
 | Cass. soc. 10/07/2002 | analyse-contrat | conditions de validité de la clause de non-concurrence | à vérifier | référence sans numéro de pourvoi : à compléter |
 | Jurisprudence « Quémener » (CE) | calcul-plus-value, dissolution-liquidation-tup | correctif de calcul de la plus-value sur parts de société de personnes | à vérifier | nom d'usage : établir la référence exacte avant toute citation |
 | CE 27/11/2020 n° 425986 | legal-hallucination-checker | exemple de format | à vérifier | exemple de la table des motifs : vérifier qu'il ne s'agit pas d'un numéro fictif |
+| Cass. com. 12/12/1995 n° 93-21.304 (publié) | gap | vice caché des droits sociaux seulement s'il empêche l'activité constituant l'objet social | 2026-10-26 |  |
+| Cass. com. 07/07/2020 n° 18-19.173 | gap | déchéance expresse pour notification tardive appliquée ; divergence sur des méthodes comptables régulières insuffisante pour le dol | 2026-10-26 |  |
+| Cass. com. 10/02/2015 n° 14-12.371 | gap | dol à titre principal et garantie à titre subsidiaire : dénaturation des conclusions censurée | 2026-10-26 |  |
+| Cass. com. 17/03/2021 n° 19-11.691 | gap | déchéance subordonnée par le contrat à la preuve d'un préjudice : inopposable faute de preuve | 2026-10-26 |  |
+| Cass. com. 17/03/2021 n° 19-18.901 | gap | société cible non bénéficiaire faute de stipulation pour autrui | 2026-10-26 |  |
+| Cass. com. 12/10/2022 n° 21-12.702 | gap | demande d'écarter le plafond de la GAP fondée sur le dol ; cassation pour défaut de réponse | 2026-10-26 |  |
+| Cass. com. 24/01/2024 n° 20-13.755 (publié) | gap | solidarité des cédants : sans effet au profit d'un cessionnaire n'ayant acquis que d'un seul cédant | 2026-10-26 |  |
+| Cass. com. 06/11/2024 n° 23-15.254 | gap | délai de notification courant de la connaissance de l'événement, distinct de l'exigibilité | 2026-10-26 |  |
 
 ## Textes
 
