@@ -36,7 +36,7 @@
 | Process d'actes | `dissolution-liquidation-tup` | Dissolution, liquidation, exécution d'une TUP |
 | Sortie | `note-information-client` | Notes client, courriers, réponses aux collègues |
 | Sortie | `avocat-adverse` | Relecture par le contradicteur le plus compétent |
-| Sortie | `veille-juridique` | Veille ; post LinkedIn du lundi, veille Gamma du mercredi |
+| Sortie | `veille-juridique` | Veille ; post LinkedIn du lundi, veille PowerPoint ECA du mercredi |
 | Outillage | `darwin-skill` | Évaluation et optimisation des skills |
 | Outillage | `pieces-pseudonymisees` | Travail sur pièces pseudonymisées |
 | Outillage | `maintenance-skills` | Contrôle périodique des références citées dans les skills (trimestre, loi de finances) et mise à jour |

@@ -70,7 +70,7 @@ change). Si un outil est indisponible, le dire et passer au suivant.
 | Compte rendu de rendez-vous | Granola | — |
 | Mails, pièces, agenda | Microsoft 365 (brouillons uniquement, jamais d'envoi sans accord) | — |
 | Positions du cabinet, veille, consultations | Notion | — |
-| Slides de veille | Gamma | — |
+| Slides de veille | Générateur PowerPoint ECA du skill `veille-juridique` (dossier `pptx/`), livré sur OneDrive (Microsoft 365) | — |
 | Doctrine, formation et documents de référence internes (tout document présent dans le dépôt le jour de la demande) | Dépôt GitHub (§ 4 bis) | Source primaire |
 
 Identifiants Notion (les vérifier par une recherche si une requête échoue) :

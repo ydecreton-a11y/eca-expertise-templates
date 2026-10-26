@@ -1,6 +1,6 @@
 ---
 name: veille-juridique
-description: "Skill ECA EXPERTISE pour toute veille, synthèse ou analyse d'un texte législatif ou réglementaire nouveau, et pour les deux tâches de veille programmées (lundi LinkedIn, mercredi Gamma). Déclencher sur : loi de finances, ordonnance, décret, circulaire, directive européenne, arrêté, instruction fiscale, jurisprudence récente à impact client. Mots-clés : veille juridique, veille fiscale, actualité, nouveauté fiscale, qu'est-ce que change, analyse de la loi, synthèse réforme, impact réforme, LF 2026, LF 2027, décret récent, nouveauté législative, ce qui change, impact pour mes clients."
+description: "Skill ECA EXPERTISE pour toute veille, synthèse ou analyse d'un texte législatif ou réglementaire nouveau, et pour les deux tâches de veille programmées (lundi LinkedIn, mercredi PowerPoint ECA). Déclencher sur : loi de finances, ordonnance, décret, circulaire, directive européenne, arrêté, instruction fiscale, jurisprudence récente à impact client. Mots-clés : veille juridique, veille fiscale, actualité, nouveauté fiscale, qu'est-ce que change, analyse de la loi, synthèse réforme, impact réforme, LF 2026, LF 2027, décret récent, nouveauté législative, ce qui change, impact pour mes clients."
 ---
 
 # Skill : Veille juridique et fiscale — ECA EXPERTISE
@@ -16,7 +16,7 @@ description: "Skill ECA EXPERTISE pour toute veille, synthèse ou analyse d'un t
 ```
 Analyse ponctuelle d'un texte ou d'une décision   → NOTE DE VEILLE (phases 1 à 5)
 Tâche programmée du lundi                         → POST LINKEDIN (§ Formats programmés A)
-Tâche programmée du mercredi                      → VEILLE INTERNE + SLIDES GAMMA (§ B)
+Tâche programmée du mercredi                      → VEILLE INTERNE + POWERPOINT ECA (§ B)
 ```
 
 ## PHASE 1 — Sourcing (sources primaires, jamais de mémoire)
@@ -51,14 +51,19 @@ Ne retenir que des éléments datés de la période couverte, avec référence e
 - Livraison : envoi à Yoann seul pour relecture ; il transmet lui-même le post
   à la personne qui publie. Jamais d'envoi direct à un tiers.
 
-### B. Mercredi — veille interne et slides Gamma
+### B. Mercredi — veille interne et PowerPoint ECA
 - Période : 7 derniers jours ; sources dans l'ordre de la phase 1.
 - Filtre : impact direct sur les dossiers du cabinet et les PME clientes ;
   écarter ce qui ne concerne que les grands groupes.
 - Pour chaque élément : titre, référence exacte et lien, ce qui change, qui est
   concerné, action cabinet.
-- Slides Gamma (limite de cartes du plan en vigueur) : couverture, résumé,
-  décisions et textes majeurs, synthèse des actions cabinet ; identité ECA.
+- PowerPoint natif ECA, sans limite de slides (décision de Yoann du
+  26/10/2026, en remplacement de Gamma) : produit avec le générateur du
+  dossier `pptx/` de ce skill dans le dépôt (lire son README en entier) ;
+  charte du courrier ECA (logo, ardoise, rouge, Raleway). Le contenu est
+  fourni en JSON ; si le générateur refuse un champ trop long, raccourcir le
+  texte, ne jamais modifier les budgets ni la mise en page. Aucun nom de
+  client dans les slides.
 - Enregistrement des entrées dans la base Notion Veille (socle § 2).
 - **Lien dossiers** : si un élément touche un dossier actif (fiche mémoire),
   le signaler nommément à Yoann dans la synthèse.

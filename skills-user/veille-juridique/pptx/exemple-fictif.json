@@ -1,0 +1,220 @@
+{
+ "semaine": "du 21 au 27 octobre 2026",
+ "date_edition": "28 octobre 2026",
+ "resume": [
+  {
+   "domaine": "Droit des sociétés",
+   "texte": "Exemple fictif de test de mise en page, sans valeur juridique, destiné à vérifier que le texte tient dans son cadre à la longueur maximale autorisée par le générateur Exemple fictif de test de mise en page, sans valeur juridique,."
+  },
+  {
+   "domaine": "Fiscalité des entreprises",
+   "texte": "Exemple fictif de test de mise en page, sans valeur juridique, destiné à vérifier que le texte tient dans son cadre à la longueur maximale."
+  },
+  {
+   "domaine": "Transmission et patrimoine",
+   "texte": "Exemple fictif de test de mise en page, sans valeur juridique, destiné à vérifier que le texte tient dans son cadre à la longueur maximale."
+  },
+  {
+   "domaine": "Droit des sociétés",
+   "texte": "Exemple fictif de test de mise en page, sans valeur juridique, destiné à vérifier que le texte tient dans son cadre à la longueur maximale."
+  },
+  {
+   "domaine": "Fiscalité des entreprises",
+   "texte": "Exemple fictif de test de mise en page, sans valeur juridique, destiné à vérifier que le texte tient dans son cadre à la longueur maximale."
+  },
+  {
+   "domaine": "Contentieux fiscal",
+   "texte": "Sixième point pour tester la pagination du résumé exécutif."
+  }
+ ],
+ "elements": [
+  {
+   "domaine": "Droit des sociétés",
+   "nature": "decret",
+   "titre": "EXEMPLE FICTIF – Titre long d'un élément de veille pour tester le retour à la ligne sur deux lignes",
+   "reference": "EXEMPLE FICTIF – Référence officielle complète avec numéro NOR et date de publication au JORF EXEMPLE FICTIF – Référence officielle complète avec numéro NOR et date de publication au JORF.",
+   "lien": "https://www.legifrance.gouv.fr/",
+   "date_effet": "1er janvier 2027",
+   "avant_label": "Avant",
+   "apres_label": "Après",
+   "avant": "Exemple fictif de test de mise en page, sans valeur juridique, destiné à vérifier que le texte tient dans son cadre à la longueur maximale autorisée par le générateur Exemple fictif de test de mise en page, sans valeur juridique, destiné à vérifier que le texte tient dans son cadre à la longueur maximale autorisée par le générateur.",
+   "apres": "Exemple fictif de test de mise en page, sans valeur juridique, destiné à vérifier que le texte tient dans son cadre à la longueur maximale autorisée par le générateur Exemple fictif de test de mise en page, sans valeur juridique, destiné à vérifier que le texte tient dans son cadre à la longueur maximale autorisée par le générateur.",
+   "concernes": "Exemple fictif de test de mise en page, sans valeur juridique, destiné à vérifier que le texte tient dans son cadre à la longueur maximale autorisée par le générateur Exemple fictif de test de mise.",
+   "incertitudes": "Exemple fictif de test de mise en page, sans valeur juridique, destiné à vérifier que le texte tient dans son cadre à la longueur maximale autorisée par le générateur Exemple fictif de test de mise.",
+   "action": "Exemple fictif de test de mise en page, sans valeur juridique, destiné à vérifier que le texte tient dans son cadre à la longueur maximale autorisée par le générateur Exemple fictif de test de mise en page, sans valeur juridique, destiné à vérifier que le texte tient dans son cadre à la longueur maximale autorisée par le.",
+   "priorite": "haute"
+  },
+  {
+   "domaine": "Fiscalité des entreprises",
+   "nature": "jurisprudence",
+   "titre": "EXEMPLE FICTIF – Titre long d'un élément de veille pour tester le.",
+   "reference": "EXEMPLE FICTIF – Référence officielle complète avec numéro NOR et date de publication au JORF EXEMPLE FICTIF – Référence officielle complète avec numéro NOR et date de publication au JORF.",
+   "lien": "https://www.legifrance.gouv.fr/",
+   "date_effet": "1er janvier 2027",
+   "avant_label": "Faits et question",
+   "apres_label": "Solution et portée",
+   "avant": "Exemple fictif de test de mise en page, sans valeur juridique, destiné à vérifier que le texte tient dans son cadre à la longueur maximale autorisée par le générateur Exemple fictif de test de mise.",
+   "apres": "Exemple fictif de test de mise en page, sans valeur juridique, destiné à vérifier que le texte tient dans son cadre à la longueur maximale autorisée par le générateur Exemple fictif de test de mise en page, sans valeur juridique, destiné à vérifier.",
+   "concernes": "Exemple fictif de test de mise en page, sans valeur juridique, destiné à vérifier que le texte tient dans son cadre à.",
+   "incertitudes": "Exemple fictif de test de mise en page, sans valeur juridique, destiné à vérifier que le.",
+   "action": "Exemple fictif de test de mise en page, sans valeur juridique, destiné à vérifier que le texte tient dans son cadre à la longueur maximale autorisée par le.",
+   "priorite": "moyenne"
+  },
+  {
+   "domaine": "Transmission et patrimoine",
+   "nature": "doctrine",
+   "titre": "EXEMPLE FICTIF – Titre moyen sur une seule ligne",
+   "reference": "EXEMPLE FICTIF – Référence officielle complète avec numéro NOR et date de publication au JORF EXEMPLE FICTIF – Référence officielle complète avec numéro NOR et date de publication au JORF.",
+   "lien": "https://www.legifrance.gouv.fr/",
+   "date_effet": "1er janvier 2027",
+   "avant_label": "Avant",
+   "apres_label": "Après",
+   "avant": "Exemple fictif de test de mise en page, sans valeur juridique, destiné à vérifier que le texte tient dans son cadre à la longueur maximale autorisée par le générateur Exemple fictif de test de mise.",
+   "apres": "Exemple fictif de test de mise en page, sans valeur juridique, destiné à vérifier que le texte tient dans son cadre à la longueur maximale autorisée par le générateur Exemple fictif de test de mise en page, sans valeur juridique, destiné à vérifier.",
+   "concernes": "Exemple fictif de test de mise en page, sans valeur juridique, destiné à vérifier que le texte tient dans son cadre à.",
+   "incertitudes": "Exemple fictif de test de mise en page, sans valeur juridique, destiné à vérifier que le.",
+   "action": "Exemple fictif de test de mise en page, sans valeur juridique, destiné à vérifier que le texte tient dans son cadre à la longueur maximale autorisée par le.",
+   "priorite": "basse"
+  },
+  {
+   "domaine": "Droit des sociétés",
+   "nature": "loi",
+   "titre": "EXEMPLE FICTIF – Titre long d'un élément de veille pour tester le.",
+   "reference": "EXEMPLE FICTIF – Référence officielle complète avec numéro NOR et date de publication au JORF EXEMPLE FICTIF – Référence officielle complète avec numéro NOR et date de publication au JORF.",
+   "lien": "https://www.legifrance.gouv.fr/",
+   "date_effet": "1er janvier 2027",
+   "avant_label": "Avant",
+   "apres_label": "Après",
+   "avant": "Exemple fictif de test de mise en page, sans valeur juridique, destiné à vérifier que le texte tient dans son cadre à la longueur maximale autorisée par le générateur Exemple fictif de test de mise.",
+   "apres": "Exemple fictif de test de mise en page, sans valeur juridique, destiné à vérifier que le texte tient dans son cadre à la longueur maximale autorisée par le générateur Exemple fictif de test de mise en page, sans valeur juridique, destiné à vérifier.",
+   "concernes": "Exemple fictif de test de mise en page, sans valeur juridique, destiné à vérifier que le texte tient dans son cadre à.",
+   "incertitudes": "Exemple fictif de test de mise en page, sans valeur juridique, destiné à vérifier que le.",
+   "action": "Exemple fictif de test de mise en page, sans valeur juridique, destiné à vérifier que le texte tient dans son cadre à la longueur maximale autorisée par le.",
+   "priorite": "haute"
+  },
+  {
+   "domaine": "Fiscalité des entreprises",
+   "nature": "decret",
+   "titre": "EXEMPLE FICTIF – Titre long d'un élément de veille pour tester le.",
+   "reference": "EXEMPLE FICTIF – Référence officielle complète avec numéro NOR et date de publication au JORF EXEMPLE FICTIF – Référence officielle complète avec numéro NOR et date de publication au JORF.",
+   "lien": "https://www.legifrance.gouv.fr/",
+   "date_effet": "1er janvier 2027",
+   "avant_label": "Avant",
+   "apres_label": "Après",
+   "avant": "Exemple fictif de test de mise en page, sans valeur juridique, destiné à vérifier que le texte tient dans son cadre à la longueur maximale autorisée par le générateur Exemple fictif de test de mise.",
+   "apres": "Exemple fictif de test de mise en page, sans valeur juridique, destiné à vérifier que le texte tient dans son cadre à la longueur maximale autorisée par le générateur Exemple fictif de test de mise en page, sans valeur juridique, destiné à vérifier.",
+   "concernes": "Exemple fictif de test de mise en page, sans valeur juridique, destiné à vérifier que le texte tient dans son cadre à.",
+   "incertitudes": "Exemple fictif de test de mise en page, sans valeur juridique, destiné à vérifier que le.",
+   "action": "Exemple fictif de test de mise en page, sans valeur juridique, destiné à vérifier que le texte tient dans son cadre à la longueur maximale autorisée par le.",
+   "priorite": "moyenne"
+  }
+ ],
+ "actions": [
+  {
+   "action": "Exemple fictif de test de mise en page, sans valeur juridique, destiné à vérifier que le texte tient dans son cadre à la longueur maximale autorisée par le générateur.",
+   "echeance": "15 novembre 2026",
+   "priorite": "haute",
+   "renvoi": "Élément 1"
+  },
+  {
+   "action": "Exemple fictif de test de mise en page, sans valeur juridique, destiné à vérifier que le.",
+   "echeance": "15 novembre 2026",
+   "priorite": "moyenne",
+   "renvoi": "Élément 2"
+  },
+  {
+   "action": "Exemple fictif de test de mise en page, sans valeur juridique, destiné à vérifier que le.",
+   "echeance": "15 novembre 2026",
+   "priorite": "basse",
+   "renvoi": "Élément 3"
+  },
+  {
+   "action": "Exemple fictif de test de mise en page, sans valeur juridique, destiné à vérifier que le.",
+   "echeance": "15 novembre 2026",
+   "priorite": "haute",
+   "renvoi": "Élément 4"
+  },
+  {
+   "action": "Exemple fictif de test de mise en page, sans valeur juridique, destiné à vérifier que le.",
+   "echeance": "15 novembre 2026",
+   "priorite": "moyenne",
+   "renvoi": "Élément 5"
+  },
+  {
+   "action": "Exemple fictif de test de mise en page, sans valeur juridique, destiné à vérifier que le.",
+   "echeance": "15 novembre 2026",
+   "priorite": "basse",
+   "renvoi": "Élément 6"
+  },
+  {
+   "action": "Exemple fictif de test de mise en page, sans valeur juridique, destiné à vérifier que le.",
+   "echeance": "15 novembre 2026",
+   "priorite": "haute",
+   "renvoi": "Élément 7"
+  }
+ ],
+ "ecartes": [
+  {
+   "titre": "Exemple fictif d'élément écarté Exemple fictif d'élément.",
+   "motif": "Concerne les seuls grands groupes."
+  },
+  {
+   "titre": "Exemple fictif d'élément écarté Exemple fictif d'élément.",
+   "motif": "Concerne les seuls grands groupes."
+  },
+  {
+   "titre": "Exemple fictif d'élément écarté Exemple fictif d'élément.",
+   "motif": "Concerne les seuls grands groupes."
+  }
+ ],
+ "sources": [
+  {
+   "libelle": "EXEMPLE FICTIF – Source officielle EXEMPLE FICTIF – Source officielle EXEMPLE FICTIF – Source officielle EXEMPLE FICTIF.",
+   "lien": "https://www.legifrance.gouv.fr/"
+  },
+  {
+   "libelle": "EXEMPLE FICTIF – Source officielle EXEMPLE FICTIF – Source officielle.",
+   "lien": "https://www.legifrance.gouv.fr/"
+  },
+  {
+   "libelle": "EXEMPLE FICTIF – Source officielle EXEMPLE FICTIF – Source officielle.",
+   "lien": "https://www.legifrance.gouv.fr/"
+  },
+  {
+   "libelle": "EXEMPLE FICTIF – Source officielle EXEMPLE FICTIF – Source officielle.",
+   "lien": "https://www.legifrance.gouv.fr/"
+  },
+  {
+   "libelle": "EXEMPLE FICTIF – Source officielle EXEMPLE FICTIF – Source officielle.",
+   "lien": "https://www.legifrance.gouv.fr/"
+  },
+  {
+   "libelle": "EXEMPLE FICTIF – Source officielle EXEMPLE FICTIF – Source officielle.",
+   "lien": "https://www.legifrance.gouv.fr/"
+  },
+  {
+   "libelle": "EXEMPLE FICTIF – Source officielle EXEMPLE FICTIF – Source officielle.",
+   "lien": "https://www.legifrance.gouv.fr/"
+  },
+  {
+   "libelle": "EXEMPLE FICTIF – Source officielle EXEMPLE FICTIF – Source officielle.",
+   "lien": "https://www.legifrance.gouv.fr/"
+  },
+  {
+   "libelle": "EXEMPLE FICTIF – Source officielle EXEMPLE FICTIF – Source officielle.",
+   "lien": "https://www.legifrance.gouv.fr/"
+  },
+  {
+   "libelle": "EXEMPLE FICTIF – Source officielle EXEMPLE FICTIF – Source officielle.",
+   "lien": "https://www.legifrance.gouv.fr/"
+  },
+  {
+   "libelle": "EXEMPLE FICTIF – Source officielle EXEMPLE FICTIF – Source officielle.",
+   "lien": "https://www.legifrance.gouv.fr/"
+  },
+  {
+   "libelle": "EXEMPLE FICTIF – Source officielle EXEMPLE FICTIF – Source officielle.",
+   "lien": "https://www.legifrance.gouv.fr/"
+  }
+ ]
+}
