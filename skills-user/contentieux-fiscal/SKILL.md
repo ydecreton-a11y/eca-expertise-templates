@@ -242,7 +242,8 @@ avec un fort poids pratique. L'administration suit généralement l'avis.
 
 ```
 Madame, Monsieur le Président de la Commission [départementale] des
-impôts directs et des taxes sur le chiffre d'affaires,
+impôts directs et des taxes sur le chiffre d'affaires [sur les biens et
+services à compter du 01/01/2027],
 
 [Identification]
 [Référence dossier]
@@ -306,11 +307,14 @@ VI. CALENDRIER PROCÉDURAL
 > Ces trois conditions sont remplies en l'espèce : [développer avec les
 > faits concrets — procédures en cours, historique de défaillance, etc.]
 >
-> En second lieu, le BOFiP (BOI-BIC-PROV-20-10-10 §X) admet qu'une
-> créance fait l'objet d'un risque probable dès lors que [position
-> favorable — à vérifier via BOFiP avant citation].
+> En second lieu, la doctrine administrative (BOI-BIC-PROV-40-20 pour les
+> créances douteuses ou litigieuses, BOI-BIC-PROV-20-10-30 pour le
+> caractère probable de la perte, § [X]) admet qu'une créance fait l'objet
+> d'un risque probable dès lors que [position favorable — paragraphe lu à
+> la source avant citation].
 >
-> ⚠️ INCERTAIN — Vérifier la référence BOFiP exacte (Legal Data Hunter) avant
+> ⚠️ INCERTAIN — Identifiants BOFiP vérifiés le 26/10/2026 ; lire le paragraphe
+> applicable (Legal Data Hunter), dans sa version à la date de clôture, avant
 > intégration dans la réponse définitive.
 >
 > En conséquence, nous demandons l'abandon de ce chef de rectification."

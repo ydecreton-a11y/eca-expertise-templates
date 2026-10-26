@@ -61,14 +61,14 @@ Après avoir livré une consultation, un calcul, ou une analyse, **proposer l'aj
 
 5. Si la position trouvée a un statut "🔄 À revérifier" → signaler :
    "ℹ️ Position ECA existante mais à revérifier : [titre].
-    Je procède avec prudence — vérification Légifrance MCP recommandée."
+    Je procède avec prudence — relecture de la source recommandée."
 ```
 
 ### Règles de consultation
 
 - **Ne jamais ignorer une position active** qui est pertinente pour le sujet
 - **Ne jamais contredire silencieusement** une position active sans signaler le conflit
-- **Toujours vérifier** via Légifrance MCP si le conflit est détecté (la position est peut-être obsolète)
+- **Toujours relire la source** (Légifrance, LibreJustice, Legal Data Hunter, Pourvoi) si le conflit est détecté (la position est peut-être obsolète)
 - **Ne pas surcharger** : max 3-5 positions consultées par livrable. Si le sujet couvre plus de 5 positions → signaler la densité et prioriser.
 
 ---
@@ -208,25 +208,30 @@ Si deux positions actives se contredisent (détecté en Phase 1 ou en cours de l
 ```
 → notion-search("cession parts SARL PV mobilière PFU")
 → Positions trouvées :
-  - "PFU = 31,4 %" (✅ Active, certitude textuelle)
-  - "Abattement retraite 500k€" (✅ Active, si dirigeant 60+)
-  → Appliquer dans la réponse.
+  - "[Taux du PFU applicable — lu à la source]" (✅ Active, certitude textuelle)
+  - "[Abattement fixe de départ en retraite — CGI art. 150-0 D ter]" (✅ Active, si conditions remplies)
+  → Relire la source de chaque position à la date du fait générateur, puis appliquer.
 ```
 
-**Livrable** : consultation avec PFU 31,4 % appliqué, abattement retraite mentionné si applicable.
+**Livrable** : consultation appliquant le PFU et l'abattement retraite si ses conditions sont remplies, taux et montants lus à la source au jour du livrable.
 
 **Phase 2 (enrichissement)** :
 ```
-→ Le livrable a tranché : "le droit d'enregistrement de 3 % avec abattement 23 000 €
-   s'applique en plus de l'IR/PS sur la PV" (Art. 726 CGI)
-→ notion-search("droit enregistrement cession parts SARL 3%")
+→ Le livrable a tranché : "la cession de parts sociales d'une SARL (hors
+   prépondérance immobilière) supporte le droit d'enregistrement du 1° bis du I
+   de l'article 726 du CGI, avec un abattement calculé par part, en plus de
+   l'imposition de la plus-value du cédant" (taux et abattement lus à la source)
+→ notion-search("droit enregistrement cession parts SARL 726")
 → Pas de position existante couvrant ce point
 → Proposition :
   "📌 NOUVELLE POSITION DÉTECTÉE :
-   Position : Cession parts SARL : droit d'enregistrement 3 % après abattement 23 000 €
+   Position : Cession de parts sociales (capital non divisé en actions, hors
+   prépondérance immobilière) : droit d'enregistrement du 1° bis du I de
+   l'article 726, abattement par part (taux et montant lus à la source au jour
+   de la cession) ; prépondérance immobilière : 2° du I
    Domaine : Plus-values mobilières
    Certitude : ✅ Certitude textuelle
-   Référence : Art. 726 I 2° CGI
+   Référence : CGI art. 726, I, 1° bis et 2° (vérifié 26/10/2026)
    Souhaites-tu que je l'ajoute ?"
 → Yoann valide → entrée créée en statut "🆕 Proposition"
 ```

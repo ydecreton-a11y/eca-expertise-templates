@@ -243,7 +243,7 @@ Valider mentalement chaque point avant d'envoyer la réponse :
 - [ ] Référence YD + expert-comptable signataire mentionnée
 - [ ] Profil destinataire identifié et registre calibré
 - [ ] Aucun terme technique non défini en langage courant
-- [ ] Tout taux ou abattement cité a été fetché (jamais de mémoire)
+- [ ] Tout taux ou abattement cité a été lu à la source le jour du livrable (jamais de mémoire)
 - [ ] Action concrète demandée au client en fin de note
 - [ ] Coordonnées du contact ECA mentionnées
 

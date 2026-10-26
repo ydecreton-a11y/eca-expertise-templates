@@ -309,9 +309,14 @@
    "code": "code-general-des-impots",
    "article": "726",
    "cle_librejustice": "726",
-   "statut_verification": "a_verifier",
-   "derniere_verification": null,
-   "etat_source": null,
+   "statut_verification": "verifie",
+   "derniere_verification": "2026-10-26",
+   "etat_source": {
+    "statut": "VIGUEUR",
+    "version_depuis": "2024-01-01",
+    "dernier_texte_modificateur": "Loi n° 2023-1322 du 29/12/2023 (LF 2024), art. 21 et 119",
+    "lecture": "I, 1° (actions), 1° bis (parts sociales, abattement par part), 2° (prépondérance immobilière)"
+   },
    "occurrences": [
     {
      "skill": "acte-definitif-titres",
@@ -320,13 +325,13 @@
     },
     {
      "skill": "positions-eca",
-     "ligne": 221,
-     "extrait": "s'applique en plus de l'IR/PS sur la PV\" (Art. 726 CGI)"
+     "ligne": 222,
+     "extrait": "de l'article 726 du CGI, avec un abattement calculé par part, en plus de"
     },
     {
      "skill": "positions-eca",
-     "ligne": 229,
-     "extrait": "Référence : Art. 726 I 2° CGI"
+     "ligne": 234,
+     "extrait": "Référence : CGI art. 726, I, 1° bis et 2° (vérifié 26/10/2026)"
     },
     {
      "skill": "protocole-cession",
@@ -353,8 +358,7 @@
      "ligne": 375,
      "extrait": "CGI Art. 726 — taux différenciés selon la forme sociale et le caractère de"
     }
-   ],
-   "note": "26/10/2026 : statut « vérifié » retiré — il provenait d'une marque de vérification visant une autre référence de la même ligne ; le skill renvoie à une lecture à la source (« à lire » / « lire »)."
+   ]
   },
   {
    "id": "code-general-des-impots:676",
@@ -862,6 +866,11 @@
      "skill": "calcul-plus-value",
      "ligne": 80,
      "extrait": "| PV mobilière PP | CGI art. 150-0 A à 150-0 E, 200 A ; abattements éventuels (dont départ à la retraite art. 150-0 D ter) | BOFiP RPPM-PVBMI |"
+    },
+    {
+     "skill": "positions-eca",
+     "ligne": 212,
+     "extrait": "- \"[Abattement fixe de départ en retraite — CGI art. 150-0 D ter]\" (✅ Active, si conditions remplies)"
     }
    ]
   },
@@ -978,7 +987,7 @@
     },
     {
      "skill": "contentieux-fiscal",
-     "ligne": 303,
+     "ligne": 304,
      "extrait": "> En premier lieu, l'article 39, 1-5° du CGI admet la déductibilité des"
     },
     {
@@ -1624,7 +1633,7 @@
     },
     {
      "skill": "contentieux-fiscal",
-     "ligne": 338,
+     "ligne": 342,
      "extrait": "- [ ] Position BOFiP opposable (Art. L80 A LPF) recherchée"
     }
    ]
@@ -1880,7 +1889,7 @@
     },
     {
      "skill": "contentieux-fiscal",
-     "ligne": 251,
+     "ligne": 252,
      "extrait": "application de l'article L. 59 du LPF, eu égard au désaccord persistant"
     }
    ]
@@ -5441,7 +5450,7 @@
     {
      "skill": "gap",
      "ligne": 233,
-     "extrait": "les sociétés (CGI art. 213). Le paiement à la cible crée alors une perte"
+     "extrait": "les sociétés (CGI art. 213). Le paiement à la cible crée alors un surcoût"
     }
    ]
   },
@@ -5596,6 +5605,33 @@
     "gap"
    ],
    "note": "§ 1 — réduction du prix de cession d'un élément de l'actif immobilisé au cours d'un exercice postérieur (CGI art. 39 duodecies, 9)",
+   "derniere_verification": "2026-10-26",
+   "statut_verification": "verifie"
+  },
+  {
+   "id": "BOI-BIC-PROV-40-20",
+   "skills": [
+    "contentieux-fiscal"
+   ],
+   "note": "provisions pour dépréciation des stocks et des créances douteuses ou litigieuses (version du 01/04/2015) ; identifiant vérifié, paragraphe à lire à chaque usage",
+   "derniere_verification": "2026-10-26",
+   "statut_verification": "verifie"
+  },
+  {
+   "id": "BOI-BIC-PROV-20-10-30",
+   "skills": [
+    "contentieux-fiscal"
+   ],
+   "note": "caractère probable de la perte ou de la charge (version du 12/09/2012) ; identifiant vérifié",
+   "derniere_verification": "2026-10-26",
+   "statut_verification": "verifie"
+  },
+  {
+   "id": "BOI-ENR-DMTG-10-20-40-10",
+   "skills": [
+    "consultation-juridique"
+   ],
+   "note": "Dutreil — transmission de parts ou actions ; B : cas particulier des sociétés holdings ; identifiant vérifié",
    "derniere_verification": "2026-10-26",
    "statut_verification": "verifie"
   }

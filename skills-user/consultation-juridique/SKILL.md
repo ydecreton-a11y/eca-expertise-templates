@@ -155,7 +155,7 @@ une note via `note-information-client`.
 
 Avant de finaliser la réponse, vérifier mentalement :
 
-- [ ] Toutes les références citées ont été vérifiées (MCP ou BOFiP)
+- [ ] Toutes les références citées ont été lues et vérifiées à la source
 - [ ] Les zones d'incertitude sont signalées avec la balise ⚠️ INCERTAIN
 - [ ] La conclusion répond directement à la question posée au §II
 - [ ] Le niveau de risque est justifié, pas seulement affiché

@@ -4,7 +4,7 @@ Créé le 2026-10-23 — dernière maintenance : aucune. Tenu par `maintenance-s
 
 Une entrée 'verifie' a été lue à la source à la date indiquée. Une entrée 'a_verifier' n'a pas encore été contrôlée dans sa version en vigueur : la prochaine maintenance la lit en entier et confronte le passage du skill au texte. Les numéros de ligne sont indicatifs (ils bougent avec les skills) ; l'extrait sert d'ancre.
 
-**249 articles** (114 vérifiés, 135 à vérifier) · 7 BOFiP · 18 décisions · 7 textes · 10 pièges datés · 4 échéances
+**249 articles** (115 vérifiés, 134 à vérifier) · 10 BOFiP · 18 décisions · 7 textes · 10 pièges datés · 4 échéances
 
 ## Échéances annoncées
 
@@ -184,7 +184,7 @@ Une entrée 'verifie' a été lue à la source à la date indiquée. Une entrée
 | code-general-des-impots | 150-0 B bis | à vérifier |  | protocole-cession |
 | code-general-des-impots | 150-0 B ter | à vérifier |  | calcul-plus-value, consultation-juridique, holding-apport, legal-hallucination-checker, protocole-cession, strategie-patrimoniale |
 | code-general-des-impots | 150-0 D | 2026-10-26 | VIGUEUR | gap, protocole-cession |
-| code-general-des-impots | 150-0 D ter | à vérifier |  | calcul-plus-value |
+| code-general-des-impots | 150-0 D ter | à vérifier |  | calcul-plus-value, positions-eca |
 | code-general-des-impots | 150-0 E | à vérifier |  | calcul-plus-value |
 | code-general-des-impots | 150-0 F ter | 2026-10-23 | cité comme inexistant | socle-eca |
 | code-general-des-impots | 151 nonies | à vérifier |  | calcul-plus-value |
@@ -228,7 +228,7 @@ Une entrée 'verifie' a été lue à la source à la date indiquée. Une entrée
 | code-general-des-impots | 676 | 2026-10-23 |  | acte-definitif-titres, cession-fonds, protocole-cession |
 | code-general-des-impots | 719 | 2026-10-23 |  | cession-fonds |
 | code-general-des-impots | 723 | 2026-10-23 |  | cession-fonds |
-| code-general-des-impots | 726 | à vérifier |  | acte-definitif-titres, positions-eca, protocole-cession |
+| code-general-des-impots | 726 | 2026-10-26 | VIGUEUR | acte-definitif-titres, positions-eca, protocole-cession |
 | code-general-des-impots | 746 | à vérifier |  | dissolution-liquidation-tup, socle-eca, strategie-patrimoniale |
 | code-general-des-impots | 757 B | à vérifier |  | strategie-patrimoniale |
 | code-general-des-impots | 773 | à vérifier |  | strategie-patrimoniale |
@@ -280,6 +280,9 @@ Une entrée 'verifie' a été lue à la source à la date indiquée. Une entrée
 | BOI-RPPM-PVBMI-30-10-60 | legal-hallucination-checker | à vérifier | exemple de format dans la table des motifs |
 | BOI-RPPM-PVBMI-20-10-10-30 | gap | 2026-10-26 | version du 20/12/2019 — § 10 à 140 : clause de garantie de passif (versement à la société § 30, convention contemporaine § 50, caractère définitif § 60-70, limite § 80, réclamation R*196-1 c § 110, pièces § 120-130) ; antérieure au décret n° 2026-692 |
 | BOI-BIC-PVMV-40-40 | gap | 2026-10-26 | § 1 — réduction du prix de cession d'un élément de l'actif immobilisé au cours d'un exercice postérieur (CGI art. 39 duodecies, 9) |
+| BOI-BIC-PROV-40-20 | contentieux-fiscal | 2026-10-26 | provisions pour dépréciation des stocks et des créances douteuses ou litigieuses (version du 01/04/2015) ; identifiant vérifié, paragraphe à lire à chaque usage |
+| BOI-BIC-PROV-20-10-30 | contentieux-fiscal | 2026-10-26 | caractère probable de la perte ou de la charge (version du 12/09/2012) ; identifiant vérifié |
+| BOI-ENR-DMTG-10-20-40-10 | consultation-juridique | 2026-10-26 | Dutreil — transmission de parts ou actions ; B : cas particulier des sociétés holdings ; identifiant vérifié |
 
 ## Jurisprudence
 
