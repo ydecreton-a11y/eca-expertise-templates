@@ -62,6 +62,7 @@ changement de sujet → ne rien exécuter.
 | Statuts, PV, nomination, dénomination, siège, objet, date de clôture, prorogation, capital, transformation | redaction-acte |
 | Question de droit ou de fiscalité, consultation | consultation-juridique |
 | Transmission, patrimoine, donation, succession, régime matrimonial | strategie-patrimoniale |
+| Évaluation de titres ou d'un fonds, sortie ou rachat d'un associé, valeur d'un bloc, barème | evaluation-titres-fonds |
 | Chiffrage d'impôt sur une cession | calcul-plus-value |
 | Contrôle fiscal, rectification, réclamation | contentieux-fiscal |
 | Texte ou décision nouvelle, veille | veille-juridique |
@@ -83,6 +84,7 @@ Transverses toujours actifs : `socle-eca`, `positions-eca`,
 | Acquisition de titres (camp acquéreur) | lettre-intention → due-diligence-juridique → protocole-cession → gap → acte-definitif-titres → avocat-adverse |
 | Cession de titres (camp cédant) | calcul-plus-value → lettre-intention (analyse ou contre-proposition) → protocole-cession → gap → acte-definitif-titres |
 | Reprise d'un fonds | lettre-intention → due-diligence-juridique (allégée) → cession-fonds (compromis puis acte définitif) → avocat-adverse |
+| Sortie ou rachat d'un associé | evaluation-titres-fonds → calcul-plus-value (cédant) → protocole-cession (cession simple) ou redaction-acte (réduction de capital) |
 | Entrée d'un associé ou d'un salarié | consultation-juridique (mécanisme) → protocole-cession (cession simple) ou redaction-acte (augmentation) → pacte-associes |
 | Simplification d'un groupe | restructurations (Phase 1 : TUP, fusion simplifiée ou APA) → dissolution-liquidation-tup si TUP retenue → redaction-acte (statuts de la bénéficiaire) |
 | Filialisation d'une activité exploitée par une société | restructurations (APA) → pacte-associes si entrée d'un tiers |
