@@ -1,6 +1,6 @@
 ---
-name: redaction-acte
-description: "Moteur de rédaction des actes de droit des sociétés ECA EXPERTISE et fiches de toutes les modifications statutaires : statuts, décisions et PV (AGE, unanimes, associé unique), dénomination, siège, objet, date de clôture, durée et prorogation, capital (augmentation, réduction, incorporation), transformation, dirigeants, clauses statutaires, mise en harmonie, passage à l'associé unique, pouvoirs. Organe, majorité, répercussions, formalités, standard M&A. Déclencher sur : rédige, acte, statuts, PV, AGE, décision d'associé unique, nomination, révocation, dénomination, transfert de siège, objet social, date de clôture, prorogation, capital, transformation, mise à jour des statuts, pouvoir. NE PAS utiliser si un skill de process couvre l'acte : pacte (→ pacte-associes), comptes (→ juridique-annuel), apport à holding (→ holding-apport), fusion, scission, APA (→ restructurations), dissolution, TUP (→ dissolution-liquidation-tup), cession (→ protocole-cession, cession-fonds), contrat (→ analyse-contrat)."
+name: "redaction-acte"
+description: "Rédaction des actes de la vie sociale ECA (PV, actes unanimes, décisions d'associé unique, statuts, rapports de gérance, pouvoirs) et fiches des modifications statutaires, dans la forme des modèles du dépôt, sans standard M&A."
 ---
 
 # Rédaction d'actes — moteur ECA
@@ -61,13 +61,16 @@ consécutives, pièces manquantes. **Attendre la validation de Yoann.**
    client.
 2. **Précédents ECA hors dépôt** : dossier client connecté, conversations
    passées (recherche par type d'acte), fiches mémoire.
-3. **Contrôle de niveau** : un précédent incomplet, daté ou en deçà du standard
-   du socle § 6 n'est pas recopié : il sert de base, et l'acte est **reconstruit
-   au standard M&A** (définitions, interprétation, numérotation, délais
-   qualifiés, procédure, annexe « Points de vigilance ECA »). Le dire dans la
-   note d'intention.
+3. **Contrôle de niveau** : un précédent daté ou fautif n'est pas recopié
+   aveuglément : références relues et corrigées, coquilles supprimées, délais
+   qualifiés, mentions obligatoires complétées. Sa **forme est en revanche
+   conservée** : un PV, un acte unanime, une décision, des statuts, un rapport
+   de gérance ou un pouvoir ne sont **jamais** reconstruits au standard M&A (socle § 6.0, décision
+   de Yoann du 27/10/2026). Précédents de forme : PV d'AGE de SARL → précédent
+   « Glanworth » ; procuration pour formalités → précédent « CELEFI ».
 4. **Aucun modèle pertinent** : construire l'acte à partir des textes en
-   vigueur (mentions légales obligatoires d'abord) et du standard du socle § 6.
+   vigueur (mentions légales obligatoires d'abord), dans la forme classique
+   d'un acte de la vie sociale (socle § 6.0).
 5. **Étalonnage externe, en dernier recours et pour la structure seulement** :
    actes comparables déposés au RCS et consultables en ligne (data.inpi.fr,
    Pappers), publications et formulaires professionnels de référence auxquels
@@ -110,8 +113,8 @@ Toujours vérifier en outre : décisions qui augmentent les engagements
 
 Chaque fiche liste ce qu'il faut **trancher, rédiger et prévenir**. Aucune
 modification n'est rédigée sans que sa fiche ait été parcourue en entier et ses
-points reportés dans le plan (Étape 2) ou dans l'annexe « Points de vigilance
-ECA ».
+points reportés dans le plan (Étape 2) ou dans une note interne séparée
+« Points de vigilance ECA » (jamais annexée à un acte déposé au greffe).
 
 ### F1 — Dénomination sociale
 - **Organe** : modification statutaire (4.1).
@@ -288,15 +291,53 @@ questions ouvertes **avant** de rédiger.
 
 ## Étape 6 — Rédaction
 
-Appliquer intégralement le **standard du socle § 6** (définitions et
-interprétation, numérotation, paragraphes en bloc, délais qualifiés, clauses de
-procédure et de style, option la plus sécurisante, annexe « Points de vigilance
-ECA »). Pour un PV : une résolution par décision, organe et majorité rappelés,
-documents communiqués et renonciations aux délais consignés, résultat du vote
-par résolution, date d'effet expresse, condition suspensive le cas échéant,
-statuts mis à jour annexés, pouvoirs pour formalités. Reprendre le texte du
-modèle quand il est juste ; ne le paraphraser que pour l'adapter aux termes
-définis du dossier.
+Les actes de ce skill (PV, actes unanimes, décisions d'associé unique, statuts,
+rapports de gérance, pouvoirs) suivent la **forme des modèles du dépôt
+GitHub** (socle § 6.0) ; si le modèle est insuffisant ou erroné, le compléter
+ou le corriger de sa propre initiative, avec l'exigence d'un avocat senior en
+droit des affaires, sans changer sa forme : **pas** d'article
+« Définitions et interprétation », pas de termes définis en majuscules, pas de
+clauses de style ni d'annexe « Points de vigilance » dans l'acte. Mise en forme
+du précédent reprise telle quelle (en-tête de la société, police et
+présentation du précédent).
+
+Pour un PV d'assemblée (forme « Glanworth ») : numéro RCS ; titre
+« ASSEMBLÉE GÉNÉRALE EXTRAORDINAIRE DU … » ; « L'an …, Le …, À … heures » ;
+lieu, forme, capital et convocation ; « SONT PRÉSENTS OU REPRÉSENTÉS » avec
+le nombre de parts de chacun et le total ; président de séance ; ordre du jour
+numéroté ; documents déposés et déclaration du président ; lecture du
+rapport ; résolutions en titre gras souligné (« PREMIÈRE RÉSOLUTION »…), une
+résolution par décision, article modifié reproduit en italique entre
+guillemets ; mention « Cette résolution est adoptée à l'unanimité… » ou du
+détail des votes ; levée de séance ; « De tout ce que dessus… » ; mention de
+signature électronique ; blocs de signature. Restent obligatoires : majorité
+statutaire respectée, renonciation aux délais consignée si l'assemblée se
+tient sans convocation régulière, date d'effet, statuts mis à jour annexés,
+pouvoirs pour formalités, délais qualifiés (jours calendaires, ouvrés,
+ouvrables). Reprendre le texte du précédent quand il est juste.
+
+Pour une procuration (forme « CELEFI ») : « Je soussigné… agissant en qualité
+de… de la société… », « Donne, par les présentes, pouvoir à… », liste des
+formalités, formule générale de pouvoirs, décharge, « Fait à …, le … »,
+mention « Bon pour pouvoir ».
+
+**Prises d'acte de vigilance dans le PV (souhait de Yoann, 27/10/2026).** Pour
+toute modification (objet, siège, dénomination, capital, transformation, date de
+clôture, dirigeants, associé unique, etc.), reprendre dans la résolution
+concernée, en **quelques lignes** et sous forme de « L'assemblée générale prend
+acte de ce que… », les principaux points de risque issus de la fiche de
+l'Étape 4 bis : par exemple information ou accord du bailleur (déspécialisation,
+L. 145-47 C. com.), suivi des seuils de changement d'activité réelle (CGI
+art. 221, 5) et risque sur les déficits reportables, titre d'occupation du
+nouveau siège, recherche d'antériorité de la dénomination, opposition des
+créanciers, sort de l'exercice ou des mandats, assurances, TVA. Rédaction
+mesurée : énoncer une diligence ou un suivi confié au dirigeant, jamais une
+conclusion fiscale non acquise (ne pas écrire qu'une opération « n'entraîne
+pas » cessation si le seuil peut être franchi). Pas de pavé : trois ou quatre
+puces au plus.
+
+L'analyse complète (chiffrage, incertitudes, sources) va dans une **note
+interne séparée « Points de vigilance ECA »**, jamais dans l'acte déposé.
 
 ## Étape 7 — Contrôle de cohérence
 
@@ -331,3 +372,8 @@ définis du dossier.
 - Prolonger un exercice sans mesurer l'article 37 du CGI et l'intégration
   fiscale.
 - Changer de dénomination sans recherche d'antériorité.
+- Habiller un PV, un acte unanime, des statuts, un rapport ou un pouvoir au
+  standard M&A (définitions, interprétation, clauses de style) : forme du
+  modèle du dépôt uniquement (socle § 6.0).
+- Livrer un PV de modification sans les quelques prises d'acte de vigilance
+  tirées de la fiche de l'Étape 4 bis.
