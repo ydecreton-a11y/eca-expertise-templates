@@ -1,6 +1,6 @@
 ---
-name: socle-eca
-description: "Socle commun de tous les skills ECA EXPERTISE (remplace « shared ») : ouverture de dossier, carte des connecteurs (quel besoin → quel outil), règles de vérification, pièges datés, standard de rédaction M&A international, corpus documentaire évolutif du dépôt (inventaire du jour, recherche plein texte, lecture intégrale du verbatim des documents pertinents), charte et méthode Word ECA, garde-fous (pseudonymisation, périmètre, confidentialité). Chargé automatiquement par tout skill métier ECA. Déclencher sur : socle, shared, référentiel ECA, charte, méthode Word, carte des connecteurs, pièges fiscaux, corpus, Royal Formation, accès dépôt. NE PAS utiliser seul pour répondre à une question de fond : il équipe les autres skills."
+name: "socle-eca"
+description: "Socle commun de tous les skills ECA EXPERTISE : ouverture de dossier, connecteurs, vérification, pièges datés, standard M&A pour les gros actes, forme des modèles pour les actes de la vie sociale, corpus, charte Word, garde-fous."
 ---
 
 # Socle ECA EXPERTISE
@@ -31,13 +31,21 @@ usage, dans la version applicable.
 5. Données comptables→ Pennylane si le chiffre conditionne la réponse
                        (balance, capitaux propres, comptes courants, résultat).
 6. Positions ECA     → skill positions-eca (base Notion « 📌 Positions ECA »).
-7. Corpus            → inventaire du jour, recherche plein texte sur tout le
+7. Veille ECA        → recherche plein texte dans la base Notion « Veille
+                       Juridique ECA » (f201a44e) sur les notions, articles et
+                       régimes de la demande ; charger les fiches pertinentes
+                       (3 à 5 au plus). Source secondaire : toute référence
+                       reprise d'une fiche est relue à la source primaire dans
+                       sa version au fait générateur ; une fiche ancienne est
+                       confrontée aux textes et à la jurisprudence postérieurs.
+8. Corpus            → inventaire du jour, recherche plein texte sur tout le
                        corpus, lecture intégrale des documents pertinents (§ 4 bis).
-8. Annoncer en une ligne : « Suite du dossier X — [dernier état] » ou
+9. Annoncer en une ligne : « Suite du dossier X — [dernier état] » ou
                        « Nouveau dossier ».
 ```
 
-Ne pas bloquer sur une demande générique sans nom propre : passer directement au § 2.
+Ne pas bloquer sur une demande générique sans nom propre : sauter les étapes 1
+à 5 et exécuter les étapes 6 à 8 (positions, veille, corpus), puis le § 2.
 Un dossier déjà engagé ne repart jamais de zéro.
 
 **Planification (règle permanente)** : pour toute tâche non triviale
@@ -75,7 +83,9 @@ change). Si un outil est indisponible, le dire et passer au suivant.
 
 Identifiants Notion (les vérifier par une recherche si une requête échoue) :
 - Positions ECA : collection `6dc1e530-7996-4a62-b5b6-b378b4c8f204`
-- Veille juridique ECA : `f201a44e-556f-4420-8f61-eec1f8cb2d5a`
+- Veille juridique ECA : `f201a44e-556f-4420-8f61-eec1f8cb2d5a` — base de
+  connaissance auto-alimentée par la veille du mercredi (une fiche complète par
+  élément retenu), consultée à l'ouverture de tout dossier (§ 1, étape 7)
 - Consultations : `cadd1870-11e1-4dfa-9298-7d5c5977f564`
 - Clients : `9f595806` (identifiant court — compléter par recherche)
 
@@ -226,9 +236,39 @@ l'index des références (`maintenance-skills`).
 
 ---
 
-## 6. Standard de rédaction ECA — tout contrat et tout acte
+## 6. Standard de rédaction ECA
 
-Rappel permanent de Yoann : **tout contrat est rédigé au standard M&A
+### 6.0 Champ d'application — décision de Yoann du 27/10/2026
+
+**Gros actes → standard M&A international (§ 6.1 à 6.12).** Liste non
+limitative : lettre d'intention, protocole ou promesse de cession de titres,
+garantie d'actif et de passif, acte définitif de cession de titres, compromis
+et acte définitif de cession de fonds de commerce, traité de fusion, traité
+d'apport partiel d'actif, traité d'apport, et tout acte de transaction ou de
+restructuration de même envergure.
+
+**Actes de la vie sociale → pas de standard M&A.** PV d'assemblée, actes
+unanimes, décisions d'associé unique, statuts et statuts mis à jour, rapports
+de gérance ou de présidence, procurations et pouvoirs pour formalités : partir
+des **modèles du dépôt GitHub** (PV d'AGE de SARL : précédent « Glanworth » ;
+procuration : précédent « CELEFI »), en conserver la forme et la présentation.
+Si le modèle est insuffisant ou erroné, le compléter ou le corriger de sa
+propre initiative, avec l'exigence d'un avocat senior en droit des affaires
+(mentions obligatoires, majorités, renonciations, références exactes), sans
+l'habiller au standard M&A : pas d'article de définitions, pas de règles
+d'interprétation, pas de clauses de style, pas d'annexe « Points de
+vigilance » dans l'acte. Les points de vigilance vont dans une note interne
+séparée. Détail : `redaction-acte`, Étape 6.
+
+Restent applicables à **tous** les actes : délais qualifiés (§ 6.3), aucune
+mention de tiers (§ 6.11), relecture profonde (§ 6.12), vérification des
+références (§ 3).
+
+En cas de doute sur la catégorie d'un acte : demander à Yoann.
+
+### 6.1 à 6.12 — Standard M&A (gros actes)
+
+Rappel de Yoann : les gros actes sont rédigés au **standard M&A
 international**, calibré sur le contexte.
 
 1. **Article 1 — Définitions et interprétation** : termes définis en majuscules ;
@@ -301,7 +341,9 @@ notaire.
   (le rouge charte est réservé aux courriers et consultations) ; bleu-gris
   #495864 pour le bloc destinataire et la signature des courriers.
 - Police Raleway sur 100 % des runs ; contrôle par inspection du XML (l'aperçu
-  de rendu n'a pas la police et ne prouve rien).
+  de rendu n'a pas la police et ne prouve rien). Exception : les actes de la vie
+  sociale repris dans la forme d'un précédent (PV « Glanworth », procuration
+  « CELEFI », § 6.0) conservent la police et la présentation du précédent.
 - Lieu de signature : à demander s'il n'est pas précisé.
 - Signature : YD + expert-comptable signataire du dossier.
 
