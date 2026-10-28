@@ -4,7 +4,7 @@ Créé le 2026-10-23 — dernière maintenance : aucune. Tenu par `maintenance-s
 
 Une entrée 'verifie' a été lue à la source à la date indiquée. Une entrée 'a_verifier' n'a pas encore été contrôlée dans sa version en vigueur : la prochaine maintenance la lit en entier et confronte le passage du skill au texte. Les numéros de ligne sont indicatifs (ils bougent avec les skills) ; l'extrait sert d'ancre.
 
-**250 articles** (118 vérifiés, 132 à vérifier) · 10 BOFiP · 18 décisions · 7 textes · 10 pièges datés · 4 échéances
+**250 articles** (119 vérifiés, 131 à vérifier) · 10 BOFiP · 21 décisions · 9 textes · 10 pièges datés · 4 échéances
 
 ## Échéances annoncées
 
@@ -48,7 +48,7 @@ Une entrée 'verifie' a été lue à la source à la date indiquée. Une entrée
 | code-civil | 1690 | 2026-10-23 |  | acte-definitif-titres, protocole-cession |
 | code-civil | 1832 | à vérifier |  | strategie-patrimoniale |
 | code-civil | 1836 | 2026-10-23 |  | redaction-acte |
-| code-civil | 1843-4 | à vérifier |  | pacte-associes, socle-eca |
+| code-civil | 1843-4 | 2026-10-28 | VIGUEUR | evaluation-titres-fonds, pacte-associes, socle-eca |
 | code-civil | 1844 | à vérifier |  | strategie-patrimoniale |
 | code-civil | 1844-4 | 2026-10-23 |  | restructurations |
 | code-civil | 1844-5 | 2026-10-23 |  | dissolution-liquidation-tup, redaction-acte, restructurations |
@@ -78,7 +78,7 @@ Une entrée 'verifie' a été lue à la source à la date indiquée. Une entrée
 | code-de-commerce | L. 210-6 | 2026-10-23 |  | juridique-annuel, lettre-intention, redaction-acte |
 | code-de-commerce | L. 214-1 | 2026-10-23 |  | cession-fonds, lettre-intention |
 | code-de-commerce | L. 221-14 | 2026-10-23 |  | acte-definitif-titres, protocole-cession |
-| code-de-commerce | L. 223-14 | 2026-10-23 |  | protocole-cession |
+| code-de-commerce | L. 223-14 | 2026-10-28 | VIGUEUR | evaluation-titres-fonds, protocole-cession |
 | code-de-commerce | L. 223-17 | 2026-10-23 |  | acte-definitif-titres, protocole-cession |
 | code-de-commerce | L. 223-18 | 2026-10-23 |  | holding-apport, redaction-acte |
 | code-de-commerce | L. 223-19 | à vérifier |  | juridique-annuel |
@@ -205,7 +205,7 @@ Une entrée 'verifie' a été lue à la source à la date indiquée. Une entrée
 | code-general-des-impots | 210-0 A | 2026-10-23 |  | restructurations |
 | code-general-des-impots | 213 | 2026-10-26 | VIGUEUR | gap |
 | code-general-des-impots | 216 | à vérifier |  | dissolution-liquidation-tup, holding-apport, juridique-annuel |
-| code-general-des-impots | 219 | à vérifier |  | calcul-plus-value, dissolution-liquidation-tup, redaction-acte |
+| code-general-des-impots | 219 | à vérifier |  | calcul-plus-value, dissolution-liquidation-tup, evaluation-titres-fonds, redaction-acte |
 | code-general-des-impots | 221 | 2026-10-23 |  | dissolution-liquidation-tup, redaction-acte, restructurations |
 | code-general-des-impots | 223 A | à vérifier |  | holding-apport, redaction-acte, restructurations |
 | code-general-des-impots | 223 sexies | à vérifier |  | holding-apport |
@@ -307,6 +307,9 @@ Une entrée 'verifie' a été lue à la source à la date indiquée. Une entrée
 | Cass. com. 12/10/2022 n° 21-12.702 | gap | demande d'écarter le plafond de la GAP fondée sur le dol ; cassation pour défaut de réponse | 2026-10-26 |  |
 | Cass. com. 24/01/2024 n° 20-13.755 (publié) | gap | solidarité des cédants : sans effet au profit d'un cessionnaire n'ayant acquis que d'un seul cédant | 2026-10-26 |  |
 | Cass. com. 06/11/2024 n° 23-15.254 | gap | délai de notification courant de la connaissance de l'événement, distinct de l'exigibilité | 2026-10-26 |  |
+| CE 03/07/2009 n° 301299 | evaluation-titres-fonds | pas d'abattement pour non-liquidité si un engagement de rachat à dire d'expert garantit une liquidité permanente ; décote de minorité non étayée écartée | 2026-10-28 |  |
+| Cass. com. 01/04/1997 n° 95-12.723 | evaluation-titres-fonds | incidence d'une clause d'agrément appréciée au regard de ses avantages et inconvénients (10 % retenus par les juges du fond) | 2026-10-28 |  |
+| CAA Bordeaux 22/11/2016 n° 14BX03020 | evaluation-titres-fonds | clause d'agrément n'affectant pas la cessibilité : pas d'abattement ; minorité prise en compte par la pondération ; décote générale portée de 30 à 40 % pour un homme-clé | 2026-10-28 |  |
 
 ## Textes
 
@@ -319,6 +322,8 @@ Une entrée 'verifie' a été lue à la source à la date indiquée. Une entrée
 | Décret n° 2026-692 | LPF R*196-1 (en vigueur au 30/07/2026) | socle-eca, contentieux-fiscal | à vérifier |
 | Loi n° 2026-534 | CSG (CSS L. 136-8), version au 27/06/2026 | socle-eca | à vérifier |
 | Règlement (UE) n° 651/2014 | définition de la petite entreprise (CGI 1681 F, I bis) | protocole-cession | à vérifier |
+| Décret n° 2012-432 du 30/03/2012, art. 145 | devoirs généraux des experts-comptables, dont 5° : jamais en situation de conflit d'intérêts | evaluation-titres-fonds | 2026-10-28 |
+| Ordonnance n° 45-2138 du 19/09/1945, art. 21 | secret professionnel de l'expert-comptable et de ses salariés (C. pén. 226-13) | evaluation-titres-fonds | 2026-10-28 |
 
 ## Pièges datés du socle (§ 5)
 

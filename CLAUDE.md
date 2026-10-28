@@ -5,10 +5,11 @@
 > Dernière mise à jour : 23/10/2026 — refonte de l'écosystème (socle unique) ;
 > ajout de `lettre-intention`, `acte-definitif-titres`, `restructurations` et
 > `maintenance-skills` ; index des références et maintenance trimestrielle.
+> 28/10/2026 : ajout de `evaluation-titres-fonds` (documentation dans `12_évaluation_entreprise`).
 
 ---
 
-## 1. Carte de l'écosystème (28 skills)
+## 1. Carte de l'écosystème (29 skills)
 
 | Couche | Skill | Rôle |
 |---|---|---|
@@ -20,6 +21,7 @@
 | Analyse | `consultation-juridique` | Analyse de fond juridique ou fiscale |
 | Analyse | `strategie-patrimoniale` | Transmission, patrimoine, donation, démembrement, régimes, successions |
 | Analyse | `calcul-plus-value` | Chiffrage des plus-values et contributions, scénarios |
+| Analyse | `evaluation-titres-fonds` | Évaluation de titres non cotés et de fonds de commerce ; classeur Excel interne |
 | Analyse | `contentieux-fiscal` | Défense fiscale : rectification, recours, réclamation, juridiction |
 | Analyse | `analyse-contrat` | Analyse et sécurisation d'un contrat entre parties |
 | Analyse | `due-diligence-juridique` | Audit de cible et rapport de DD |

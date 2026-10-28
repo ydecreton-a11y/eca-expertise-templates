@@ -288,17 +288,17 @@
     },
     {
      "skill": "redaction-acte",
-     "ligne": 107,
+     "ligne": 110,
      "extrait": "| Enregistrement | Dans le délai d'un mois : actes constatant la transformation d'une société et ceux constatant une augmentation de capital, sauf augmentation "
     },
     {
      "skill": "redaction-acte",
-     "ligne": 217,
+     "ligne": 220,
      "extrait": "- **Fiscal** : CGI art. 635, 1, 5° (enregistrement) ; rachat de titres et"
     },
     {
      "skill": "redaction-acte",
-     "ligne": 241,
+     "ligne": 244,
      "extrait": "(CGI art. 221, 2) ; à défaut, neutralité. Enregistrement : CGI art. 635, 1,"
     }
    ]
@@ -409,7 +409,7 @@
     },
     {
      "skill": "redaction-acte",
-     "ligne": 104,
+     "ligne": 107,
      "extrait": "| Dépôt des actes | Actes, délibérations ou décisions modifiant les pièces déposées : dépôt dans le délai d'un mois à compter de leur date, avec un exemplaire d"
     }
    ]
@@ -465,7 +465,7 @@
     },
     {
      "skill": "redaction-acte",
-     "ligne": 106,
+     "ligne": 109,
      "extrait": "| Bénéficiaires effectifs | Inscription modificative dans les trente jours suivant tout fait ou acte modifiant les informations déclarées | C. mon. fin. R. 561-"
     }
    ]
@@ -722,7 +722,7 @@
     },
     {
      "skill": "socle-eca",
-     "ligne": 217,
+     "ligne": 227,
      "extrait": "| LMNP — réintégration des amortissements | Le prix d'acquisition est minoré des amortissements déduits, **mais** des exceptions ont été ajoutées (résidences ét"
     }
    ]
@@ -788,7 +788,7 @@
     },
     {
      "skill": "socle-eca",
-     "ligne": 216,
+     "ligne": 226,
      "extrait": "| Prélèvements sociaux du patrimoine | Les taux de CSG sont **différenciés** selon la nature du revenu (dividendes/PV mobilières ≠ revenus fonciers et PV immobi"
     }
    ]
@@ -847,7 +847,7 @@
     },
     {
      "skill": "socle-eca",
-     "ligne": 216,
+     "ligne": 226,
      "extrait": "| Prélèvements sociaux du patrimoine | Les taux de CSG sont **différenciés** selon la nature du revenu (dividendes/PV mobilières ≠ revenus fonciers et PV immobi"
     }
    ]
@@ -1086,8 +1086,13 @@
      "extrait": "| Boni — associé personne morale | Régime mère-fille sur la fraction distribuée, plus-value / moins-value sur titres | CGI art. 145, 216, 219 |"
     },
     {
+     "skill": "evaluation-titres-fonds",
+     "ligne": 144,
+     "extrait": "- **IS normatif :** relire l'art. 219 du CGI en vigueur (taux réduit PME, plafond, conditions)."
+    },
+    {
      "skill": "redaction-acte",
-     "ligne": 179,
+     "ligne": 182,
      "extrait": "le plafond du taux réduit d'IS (CGI art. 219, I, b) et le calendrier des"
     }
    ]
@@ -1136,12 +1141,12 @@
     },
     {
      "skill": "socle-eca",
-     "ligne": 225,
+     "ligne": 235,
      "extrait": "| Contribution différentielle (CDHR) | Elle figure à l'**art. 224 CGI** — l'« art. 150-0 F ter » cité dans les anciennes versions des skills **n'existe pas**. L"
     },
     {
      "skill": "socle-eca",
-     "ligne": 225,
+     "ligne": 235,
      "extrait": "| Contribution différentielle (CDHR) | Elle figure à l'**art. 224 CGI** — l'« art. 150-0 F ter » cité dans les anciennes versions des skills **n'existe pas**. L"
     }
    ]
@@ -1195,7 +1200,7 @@
     },
     {
      "skill": "socle-eca",
-     "ligne": 220,
+     "ligne": 230,
      "extrait": "| Information des salariés (cession titres / fonds) | Champ indexé sur l'absence d'obligation de CSE « attributions élargies » ; délai d'un mois ; amende civile"
     }
    ]
@@ -1352,7 +1357,7 @@
     },
     {
      "skill": "prompt-builder-eca",
-     "ligne": 314,
+     "ligne": 315,
      "extrait": "rappel de l'Art. L. 145-16 que Yoann connaît déjà."
     },
     {
@@ -1537,7 +1542,7 @@
     },
     {
      "skill": "socle-eca",
-     "ligne": 221,
+     "ligne": 231,
      "extrait": "| Recodification de la TVA | Les articles TVA du CGI (ex. art. 257 bis) sont abrogés à effet différé au **01/01/2027** par l'ordonnance n° 2025-1247 (transfert "
     }
    ]
@@ -1818,12 +1823,12 @@
     },
     {
      "skill": "socle-eca",
-     "ligne": 222,
+     "ligne": 232,
      "extrait": "| Délais de réclamation fiscale | R*196-1 LPF modifié par le décret n° 2026-692 (en vigueur au 30/07/2026) ; après une procédure de reprise, le contribuable dis"
     },
     {
      "skill": "socle-eca",
-     "ligne": 222,
+     "ligne": 232,
      "extrait": "| Délais de réclamation fiscale | R*196-1 LPF modifié par le décret n° 2026-692 (en vigueur au 30/07/2026) ; après une procédure de reprise, le contribuable dis"
     }
    ]
@@ -1862,12 +1867,12 @@
     },
     {
      "skill": "socle-eca",
-     "ligne": 222,
+     "ligne": 232,
      "extrait": "| Délais de réclamation fiscale | R*196-1 LPF modifié par le décret n° 2026-692 (en vigueur au 30/07/2026) ; après une procédure de reprise, le contribuable dis"
     },
     {
      "skill": "socle-eca",
-     "ligne": 222,
+     "ligne": 232,
      "extrait": "| Délais de réclamation fiscale | R*196-1 LPF modifié par le décret n° 2026-692 (en vigueur au 30/07/2026) ; après une procédure de reprise, le contribuable dis"
     }
    ]
@@ -1938,7 +1943,7 @@
     },
     {
      "skill": "redaction-acte",
-     "ligne": 269,
+     "ligne": 272,
      "extrait": "(C. civ. 1844-5, vérifié) ; adapter la gouvernance (registre, décisions)."
     },
     {
@@ -2177,32 +2182,37 @@
     },
     {
      "skill": "redaction-acte",
-     "ligne": 136,
+     "ligne": 139,
      "extrait": "obligatoire (CGI art. 221, 2 et 3) → consultation-juridique."
     },
     {
      "skill": "redaction-acte",
-     "ligne": 149,
+     "ligne": 152,
      "extrait": "l'activité réelle emporte cessation d'entreprise (CGI art. 221, 5, a). Il y a"
     },
     {
      "skill": "redaction-acte",
-     "ligne": 177,
+     "ligne": 180,
      "extrait": "à l'IS par CGI art. 221, 1). Intégration fiscale : exercices ouverts et clos aux mêmes"
     },
     {
      "skill": "redaction-acte",
-     "ligne": 241,
+     "ligne": 244,
      "extrait": "(CGI art. 221, 2) ; à défaut, neutralité. Enregistrement : CGI art. 635, 1,"
     },
     {
      "skill": "redaction-acte",
-     "ligne": 318,
+     "ligne": 331,
+     "extrait": "art. 221, 5) et risque sur les déficits reportables, titre d'occupation du"
+    },
+    {
+     "skill": "redaction-acte",
+     "ligne": 359,
      "extrait": "dépôts, seuils de l'article 221, 5 du CGI, expiration de la durée sociale)."
     },
     {
      "skill": "redaction-acte",
-     "ligne": 329,
+     "ligne": 370,
      "extrait": "- Modifier l'objet social sans mesurer l'article 221, 5 du CGI ni la"
     },
     {
@@ -2234,7 +2244,7 @@
     },
     {
      "skill": "socle-eca",
-     "ligne": 219,
+     "ligne": 229,
      "extrait": "| Droit de partage | Taux réduit réservé aux partages consécutifs à un divorce, une séparation de corps ou une rupture de PACS ; un changement de régime matrimo"
     },
     {
@@ -2658,7 +2668,7 @@
     },
     {
      "skill": "redaction-acte",
-     "ligne": 205,
+     "ligne": 208,
      "extrait": "ou par décision de justice (SARL : L. 223-33 renvoyant à L. 223-9 ; SA et"
     }
    ]
@@ -2680,7 +2690,7 @@
     },
     {
      "skill": "redaction-acte",
-     "ligne": 206,
+     "ligne": 209,
      "extrait": "SAS : L. 225-147 — vérifiés) ; cas de dispense et seuils réglementaires à"
     }
    ]
@@ -2702,7 +2712,7 @@
     },
     {
      "skill": "redaction-acte",
-     "ligne": 107,
+     "ligne": 110,
      "extrait": "| Enregistrement | Dans le délai d'un mois : actes constatant la transformation d'une société et ceux constatant une augmentation de capital, sauf augmentation "
     }
    ]
@@ -2758,17 +2768,17 @@
     },
     {
      "skill": "redaction-acte",
-     "ligne": 133,
+     "ligne": 136,
      "extrait": "la moitié des parts (L. 223-18 et L. 223-30, vérifiés). SA — conseil, sous"
     },
     {
      "skill": "redaction-acte",
-     "ligne": 250,
+     "ligne": 253,
      "extrait": "possible, représentant ; SARL : personne physique obligatoire, L. 223-18,"
     },
     {
      "skill": "redaction-acte",
-     "ligne": 262,
+     "ligne": 265,
      "extrait": "impératives, sous réserve de ratification (L. 223-18) ; SA : le conseil, sous"
     }
    ]
@@ -2790,7 +2800,7 @@
     },
     {
      "skill": "redaction-acte",
-     "ligne": 178,
+     "ligne": 181,
      "extrait": "dates, en principe de douze mois (CGI art. 223 A). Lire aussi l'incidence sur"
     },
     {
@@ -2893,7 +2903,7 @@
     },
     {
      "skill": "redaction-acte",
-     "ligne": 223,
+     "ligne": 226,
      "extrait": "personne morale nouvelle (C. com. L. 210-6, vérifié)."
     }
    ]
@@ -2988,12 +2998,12 @@
     },
     {
      "skill": "redaction-acte",
-     "ligne": 89,
+     "ligne": 92,
      "extrait": "| SAS | Les statuts fixent les décisions collectives et leurs conditions ; certaines matières relèvent obligatoirement de la collectivité des associés (capital,"
     },
     {
      "skill": "redaction-acte",
-     "ligne": 92,
+     "ligne": 95,
      "extrait": "| Associé unique | Décision consignée au registre ; pas de délégation (SAS) | C. com. L. 227-9 (SAS) ; L. 223-31 (EURL, à lire) |"
     }
    ]
@@ -3032,7 +3042,7 @@
     },
     {
      "skill": "redaction-acte",
-     "ligne": 92,
+     "ligne": 95,
      "extrait": "| Associé unique | Décision consignée au registre ; pas de délégation (SAS) | C. com. L. 227-9 (SAS) ; L. 223-31 (EURL, à lire) |"
     }
    ]
@@ -3422,7 +3432,7 @@
     },
     {
      "skill": "socle-eca",
-     "ligne": 220,
+     "ligne": 230,
      "extrait": "| Information des salariés (cession titres / fonds) | Champ indexé sur l'absence d'obligation de CSE « attributions élargies » ; délai d'un mois ; amende civile"
     }
    ]
@@ -3459,7 +3469,7 @@
     },
     {
      "skill": "socle-eca",
-     "ligne": 223,
+     "ligne": 233,
      "extrait": "| Pacte Dutreil | Régime modifié par la LF 2026 (art. 8) : lire 787 B dans la version à la date de transmission (biens exclus, détention indirecte, durées). Don"
     },
     {
@@ -3475,10 +3485,20 @@
    "code": "code-civil",
    "article": "1843-4",
    "cle_librejustice": "1843-4",
-   "statut_verification": "a_verifier",
-   "derniere_verification": null,
-   "etat_source": null,
+   "statut_verification": "verifie",
+   "derniere_verification": "2026-10-28",
+   "etat_source": {
+    "statut": "VIGUEUR",
+    "version_depuis": "2020-01-01",
+    "dernier_texte_modificateur": "Ordonnance n° 2019-738 du 17/07/2019, art. 2",
+    "lecture": "I (renvoi légal) et II (cession statutaire, valeur ni déterminée ni déterminable) ; l'expert applique les règles statutaires ou conventionnelles de valorisation"
+   },
    "occurrences": [
+    {
+     "skill": "evaluation-titres-fonds",
+     "ligne": 154,
+     "extrait": "- **Position à motiver :** la procédure légale de la SARL (C. com. art. L. 223-14 — vérifié 28/10/2026 ; prix fixé selon C. civ. art. 1843-4 — vérifié 28/10/202"
+    },
     {
      "skill": "pacte-associes",
      "ligne": 105,
@@ -3486,7 +3506,7 @@
     },
     {
      "skill": "socle-eca",
-     "ligne": 261,
+     "ligne": 301,
      "extrait": "conventionnel exprès à l'art. 1843-4 C. civ. dans la clause d'expertise)."
     }
    ]
@@ -3498,9 +3518,19 @@
    "article": "L. 223-14",
    "cle_librejustice": "l223-14",
    "statut_verification": "verifie",
-   "derniere_verification": "2026-10-23",
-   "etat_source": null,
+   "derniere_verification": "2026-10-28",
+   "etat_source": {
+    "statut": "VIGUEUR",
+    "version_depuis": "2004-03-27",
+    "dernier_texte_modificateur": "Ordonnance n° 2004-274 du 25/03/2004, art. 14",
+    "lecture": "agrément des tiers ; refus → rachat au prix de l'art. 1843-4 dans les trois mois ; détention d'au moins deux ans exigée du cédant (hors exceptions)"
+   },
    "occurrences": [
+    {
+     "skill": "evaluation-titres-fonds",
+     "ligne": 154,
+     "extrait": "- **Position à motiver :** la procédure légale de la SARL (C. com. art. L. 223-14 — vérifié 28/10/2026 ; prix fixé selon C. civ. art. 1843-4 — vérifié 28/10/202"
+    },
     {
      "skill": "protocole-cession",
      "ligne": 136,
@@ -3743,17 +3773,17 @@
    "occurrences": [
     {
      "skill": "redaction-acte",
-     "ligne": 88,
+     "ligne": 91,
      "extrait": "| SARL | Changement de nationalité : unanimité. Siège : associés représentant plus de la moitié des parts. Autres modifications : trois quarts des parts (SARL c"
     },
     {
      "skill": "redaction-acte",
-     "ligne": 133,
+     "ligne": 136,
      "extrait": "la moitié des parts (L. 223-18 et L. 223-30, vérifiés). SA — conseil, sous"
     },
     {
      "skill": "redaction-acte",
-     "ligne": 208,
+     "ligne": 211,
      "extrait": "- **Incorporation de réserves** : SARL, moitié des parts (L. 223-30)."
     }
    ]
@@ -3770,12 +3800,12 @@
    "occurrences": [
     {
      "skill": "redaction-acte",
-     "ligne": 89,
+     "ligne": 92,
      "extrait": "| SAS | Les statuts fixent les décisions collectives et leurs conditions ; certaines matières relèvent obligatoirement de la collectivité des associés (capital,"
     },
     {
      "skill": "redaction-acte",
-     "ligne": 258,
+     "ligne": 261,
      "extrait": "(L. 227-19, vérifié). Cohérence obligatoire avec le pacte → pacte-associes."
     }
    ]
@@ -3792,17 +3822,17 @@
    "occurrences": [
     {
      "skill": "redaction-acte",
-     "ligne": 90,
+     "ligne": 93,
      "extrait": "| SA | AGE ; le conseil peut transférer le siège sur le territoire français et mettre les statuts en harmonie avec la loi, sous réserve de ratification | C. com"
     },
     {
      "skill": "redaction-acte",
-     "ligne": 134,
+     "ligne": 137,
      "extrait": "réserve de ratification par l'AGO (L. 225-36, vérifié). SAS — statuts."
     },
     {
      "skill": "redaction-acte",
-     "ligne": 263,
+     "ligne": 266,
      "extrait": "réserve de ratification par l'AGE (L. 225-36) — vérifiés. Profiter de toute"
     }
    ]
@@ -3819,7 +3849,7 @@
    "occurrences": [
     {
      "skill": "redaction-acte",
-     "ligne": 91,
+     "ligne": 94,
      "extrait": "| Sociétés civiles | Unanimité à défaut de clause contraire ; jamais d'augmentation des engagements sans consentement | C. civ. 1836 |"
     }
    ]
@@ -3836,17 +3866,17 @@
    "occurrences": [
     {
      "skill": "redaction-acte",
-     "ligne": 103,
+     "ligne": 106,
      "extrait": "| Annonce légale | Avis de modification lorsque la modification rend caduque une mention de l'avis de constitution ; il reproduit l'ancienne mention à côté de l"
     },
     {
      "skill": "redaction-acte",
-     "ligne": 143,
+     "ligne": 146,
      "extrait": "changement de département (à vérifier selon R. 210-9 et la pratique du"
     },
     {
      "skill": "redaction-acte",
-     "ligne": 186,
+     "ligne": 189,
      "extrait": "(R. 210-9, à vérifier)."
     }
    ]
@@ -3863,7 +3893,7 @@
    "occurrences": [
     {
      "skill": "redaction-acte",
-     "ligne": 103,
+     "ligne": 106,
      "extrait": "| Annonce légale | Avis de modification lorsque la modification rend caduque une mention de l'avis de constitution ; il reproduit l'ancienne mention à côté de l"
     }
    ]
@@ -3880,12 +3910,12 @@
    "occurrences": [
     {
      "skill": "redaction-acte",
-     "ligne": 105,
+     "ligne": 108,
      "extrait": "| Inscription modificative | Demande par le guichet unique dans le mois de tout fait ou acte la rendant nécessaire | C. com. R. 123-66 |"
     },
     {
      "skill": "redaction-acte",
-     "ligne": 252,
+     "ligne": 255,
      "extrait": "modificative (R. 123-66) et bénéficiaires effectifs (R. 561-55) ; clause de"
     }
    ]
@@ -3902,12 +3932,12 @@
    "occurrences": [
     {
      "skill": "redaction-acte",
-     "ligne": 106,
+     "ligne": 109,
      "extrait": "| Bénéficiaires effectifs | Inscription modificative dans les trente jours suivant tout fait ou acte modifiant les informations déclarées | C. mon. fin. R. 561-"
     },
     {
      "skill": "redaction-acte",
-     "ligne": 252,
+     "ligne": 255,
      "extrait": "modificative (R. 123-66) et bénéficiaires effectifs (R. 561-55) ; clause de"
     }
    ]
@@ -3924,7 +3954,7 @@
    "occurrences": [
     {
      "skill": "redaction-acte",
-     "ligne": 123,
+     "ligne": 126,
      "extrait": "L. 711-3, vérifié 23/10/2026). Proposer le dépôt de la marque et du nom de"
     }
    ]
@@ -3941,8 +3971,13 @@
    "occurrences": [
     {
      "skill": "redaction-acte",
-     "ligne": 160,
+     "ligne": 163,
      "extrait": "déchéance (C. com. L. 145-47, vérifié) ; activité étrangère à la"
+    },
+    {
+     "skill": "redaction-acte",
+     "ligne": 330,
+     "extrait": "L. 145-47 C. com.), suivi des seuils de changement d'activité réelle (CGI"
     }
    ]
   },
@@ -3958,12 +3993,12 @@
    "occurrences": [
     {
      "skill": "redaction-acte",
-     "ligne": 176,
+     "ligne": 179,
      "extrait": "est établie sur les bénéfices de la période écoulée (CGI art. 37, applicable"
     },
     {
      "skill": "redaction-acte",
-     "ligne": 331,
+     "ligne": 372,
      "extrait": "- Prolonger un exercice sans mesurer l'article 37 du CGI et l'intégration"
     }
    ]
@@ -3980,7 +4015,7 @@
    "occurrences": [
     {
      "skill": "redaction-acte",
-     "ligne": 193,
+     "ligne": 196,
      "extrait": "l'année qui suit l'expiration (C. civ. 1844-6)."
     }
    ]
@@ -3997,7 +4032,7 @@
    "occurrences": [
     {
      "skill": "redaction-acte",
-     "ligne": 201,
+     "ligne": 204,
      "extrait": "d'augmentation réservée aux salariés (C. com. L. 225-129-6, vérifié ;"
     }
    ]
@@ -4014,12 +4049,12 @@
    "occurrences": [
     {
      "skill": "redaction-acte",
-     "ligne": 202,
+     "ligne": 205,
      "extrait": "applicable à la SAS par renvoi de L. 227-1, vérifié), sauf exception du"
     },
     {
      "skill": "redaction-acte",
-     "ligne": 232,
+     "ligne": 235,
      "extrait": "- **SAS → autre forme** : règles des SA par renvoi de L. 227-1, **à"
     },
     {
@@ -4041,7 +4076,7 @@
    "occurrences": [
     {
      "skill": "redaction-acte",
-     "ligne": 205,
+     "ligne": 208,
      "extrait": "ou par décision de justice (SARL : L. 223-33 renvoyant à L. 223-9 ; SA et"
     }
    ]
@@ -4058,12 +4093,12 @@
    "occurrences": [
     {
      "skill": "redaction-acte",
-     "ligne": 212,
+     "ligne": 215,
      "extrait": "annulation ; égalité des associés (SARL L. 223-34 ; SA et SAS L. 225-205 —"
     },
     {
      "skill": "redaction-acte",
-     "ligne": 216,
+     "ligne": 219,
      "extrait": "points d'entrée à lire (C. com. L. 223-34, L. 225-204, L. 231-1 s.)."
     }
    ]
@@ -4080,7 +4115,7 @@
    "occurrences": [
     {
      "skill": "redaction-acte",
-     "ligne": 212,
+     "ligne": 215,
      "extrait": "annulation ; égalité des associés (SARL L. 223-34 ; SA et SAS L. 225-205 —"
     }
    ]
@@ -4097,7 +4132,7 @@
    "occurrences": [
     {
      "skill": "redaction-acte",
-     "ligne": 216,
+     "ligne": 219,
      "extrait": "points d'entrée à lire (C. com. L. 223-34, L. 225-204, L. 231-1 s.)."
     }
    ]
@@ -4114,7 +4149,7 @@
    "occurrences": [
     {
      "skill": "redaction-acte",
-     "ligne": 216,
+     "ligne": 219,
      "extrait": "points d'entrée à lire (C. com. L. 223-34, L. 225-204, L. 231-1 s.)."
     }
    ]
@@ -4131,7 +4166,7 @@
    "occurrences": [
     {
      "skill": "redaction-acte",
-     "ligne": 224,
+     "ligne": 227,
      "extrait": "- **SARL → SAS** : unanimité (L. 227-3). **SARL → SA** : majorité de"
     }
    ]
@@ -4148,12 +4183,12 @@
    "occurrences": [
     {
      "skill": "redaction-acte",
-     "ligne": 226,
+     "ligne": 229,
      "extrait": "la situation de la société (L. 223-43). **SARL → SNC ou commandite** :"
     },
     {
      "skill": "redaction-acte",
-     "ligne": 227,
+     "ligne": 230,
      "extrait": "unanimité (L. 223-43)."
     }
    ]
@@ -4170,7 +4205,7 @@
    "occurrences": [
     {
      "skill": "redaction-acte",
-     "ligne": 231,
+     "ligne": 234,
      "extrait": "l'évaluation, à peine de nullité (L. 224-3)."
     }
    ]
@@ -4187,7 +4222,7 @@
    "occurrences": [
     {
      "skill": "redaction-acte",
-     "ligne": 236,
+     "ligne": 239,
      "extrait": "capital (L. 225-244) ; transformation en SARL aux conditions de modification"
     }
    ]
@@ -4204,7 +4239,7 @@
    "occurrences": [
     {
      "skill": "redaction-acte",
-     "ligne": 237,
+     "ligne": 240,
      "extrait": "des statuts des SARL (L. 225-245). **SA → autre forme** : L. 225-243"
     }
    ]
@@ -4221,7 +4256,7 @@
    "occurrences": [
     {
      "skill": "redaction-acte",
-     "ligne": 237,
+     "ligne": 240,
      "extrait": "des statuts des SARL (L. 225-245). **SA → autre forme** : L. 225-243"
     }
    ]
@@ -4238,7 +4273,7 @@
    "occurrences": [
     {
      "skill": "redaction-acte",
-     "ligne": 256,
+     "ligne": 259,
      "extrait": "- Inaliénabilité (dix ans au plus, L. 227-13) et exclusion : unanimité pour"
     }
    ]
@@ -4255,7 +4290,7 @@
    "occurrences": [
     {
      "skill": "redaction-acte",
-     "ligne": 271,
+     "ligne": 274,
      "extrait": "physique peut relever d'un régime fiscal différent — lire CGI art. 8 et 206,"
     }
    ]
@@ -4272,7 +4307,7 @@
    "occurrences": [
     {
      "skill": "redaction-acte",
-     "ligne": 271,
+     "ligne": 274,
      "extrait": "physique peut relever d'un régime fiscal différent — lire CGI art. 8 et 206,"
     }
    ]
@@ -4837,7 +4872,7 @@
    "occurrences": [
     {
      "skill": "socle-eca",
-     "ligne": 216,
+     "ligne": 226,
      "extrait": "| Prélèvements sociaux du patrimoine | Les taux de CSG sont **différenciés** selon la nature du revenu (dividendes/PV mobilières ≠ revenus fonciers et PV immobi"
     }
    ]
@@ -4854,7 +4889,7 @@
    "occurrences": [
     {
      "skill": "socle-eca",
-     "ligne": 218,
+     "ligne": 228,
      "extrait": "| Barème usufruit / nue-propriété | Lire la tranche « moins de N ans révolus » ; erreur fréquente d'une tranche (58 ans → NP 50 %, pas 60 %). | 23/10/2026 | CGI"
     },
     {
@@ -4876,7 +4911,7 @@
    "occurrences": [
     {
      "skill": "socle-eca",
-     "ligne": 223,
+     "ligne": 233,
      "extrait": "| Pacte Dutreil | Régime modifié par la LF 2026 (art. 8) : lire 787 B dans la version à la date de transmission (biens exclus, détention indirecte, durées). Don"
     },
     {
@@ -4898,7 +4933,7 @@
    "occurrences": [
     {
      "skill": "socle-eca",
-     "ligne": 225,
+     "ligne": 235,
      "extrait": "| Contribution différentielle (CDHR) | Elle figure à l'**art. 224 CGI** — l'« art. 150-0 F ter » cité dans les anciennes versions des skills **n'existe pas**. L"
     }
    ],
@@ -5210,12 +5245,12 @@
    "occurrences": [
     {
      "skill": "veille-juridique",
-     "ligne": 230,
+     "ligne": 235,
      "extrait": "**CE, 9 octobre 2024, n° 490685 (mentionné aux tables) — usufruit temporaire, art. 13, 5 CGI**"
     },
     {
      "skill": "veille-juridique",
-     "ligne": 234,
+     "ligne": 239,
      "extrait": "> dérogatoires de l'art. 13, 5 CGI, s'entend de la constitution initiale à titre"
     }
    ]
@@ -5855,6 +5890,33 @@
    "portee_retenue": "délai de notification courant de la connaissance de l'événement, distinct de l'exigibilité",
    "derniere_verification": "2026-10-26",
    "statut_verification": "verifie"
+  },
+  {
+   "id": "CE 03/07/2009 n° 301299",
+   "skills": [
+    "evaluation-titres-fonds"
+   ],
+   "portee_retenue": "pas d'abattement pour non-liquidité si un engagement de rachat à dire d'expert garantit une liquidité permanente ; décote de minorité non étayée écartée",
+   "derniere_verification": "2026-10-28",
+   "statut_verification": "verifie"
+  },
+  {
+   "id": "Cass. com. 01/04/1997 n° 95-12.723",
+   "skills": [
+    "evaluation-titres-fonds"
+   ],
+   "portee_retenue": "incidence d'une clause d'agrément appréciée au regard de ses avantages et inconvénients (10 % retenus par les juges du fond)",
+   "derniere_verification": "2026-10-28",
+   "statut_verification": "verifie"
+  },
+  {
+   "id": "CAA Bordeaux 22/11/2016 n° 14BX03020",
+   "skills": [
+    "evaluation-titres-fonds"
+   ],
+   "portee_retenue": "clause d'agrément n'affectant pas la cessibilité : pas d'abattement ; minorité prise en compte par la pondération ; décote générale portée de 30 à 40 % pour un homme-clé",
+   "derniere_verification": "2026-10-28",
+   "statut_verification": "verifie"
   }
  ],
  "textes": [
@@ -5920,6 +5982,22 @@
    ],
    "objet": "définition de la petite entreprise (CGI 1681 F, I bis)",
    "derniere_verification": null
+  },
+  {
+   "id": "Décret n° 2012-432 du 30/03/2012, art. 145",
+   "skills": [
+    "evaluation-titres-fonds"
+   ],
+   "objet": "devoirs généraux des experts-comptables, dont 5° : jamais en situation de conflit d'intérêts",
+   "derniere_verification": "2026-10-28"
+  },
+  {
+   "id": "Ordonnance n° 45-2138 du 19/09/1945, art. 21",
+   "skills": [
+    "evaluation-titres-fonds"
+   ],
+   "objet": "secret professionnel de l'expert-comptable et de ses salariés (C. pén. 226-13)",
+   "derniere_verification": "2026-10-28"
   }
  ],
  "pieges_dates_socle": [
