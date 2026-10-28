@@ -19,6 +19,7 @@ Bibliothèque de modèles d'actes juridiques et fiscaux du cabinet **ECA EXPERTI
 | `09_Conventions` | Convention de commissionnement intra-groupe (prix de transfert) |
 | `10_Operationnel_Immatriculation` | Devis ECA (template charte), procuration, attestations |
 | `11_Consultations` | Consultations fiscales (ex. filiale belge + entrepôt France) |
+| `12_évaluation_entreprise` | Documentation d'évaluation : Mémento (titres non cotés, fonds de commerce, barèmes), guide DGFiP |
 
 ## Utilisation avec Claude
 
