@@ -828,12 +828,12 @@
     {
      "skill": "legal-hallucination-checker",
      "ligne": 28,
-     "extrait": "| Cons. const. n°2016-538 QPC 22/04/2016 | Existe — vise l'art. 200 A, 2 ter CGI | Portée au regard de la version de l'article applicable |"
+     "extrait": "| Cons. const. n°2016-538 QPC 22/04/2016 (Époux M. D.) | Existe (Légifrance CONSTEXT000032453721 ; texte lu le 29/10/2026). Porte sur les 1 ter et 1 quater de l'art. 150-0 D … | Version de l'art. 150-0 D applicable. Citer les réserves (cons. 11 ; cons. 15) … |"
     },
     {
      "skill": "legal-hallucination-checker",
      "ligne": 28,
-     "extrait": "| Cons. const. n°2016-538 QPC 22/04/2016 | Existe — vise l'art. 200 A, 2 ter CGI | Portée au regard de la version de l'article applicable |"
+     "extrait": "| Cons. const. n°2016-538 QPC 22/04/2016 (Époux M. D.) | Existe (Légifrance CONSTEXT000032453721 ; texte lu le 29/10/2026). Porte sur les 1 ter et 1 quater de l'art. 150-0 D … | Version de l'art. 150-0 D applicable. Citer les réserves (cons. 11 ; cons. 15) … |"
     },
     {
      "skill": "legal-hallucination-checker",
@@ -5748,36 +5748,45 @@
    "skills": [
     "legal-hallucination-checker"
    ],
-   "portee_retenue": "existe ; ne pas en déduire une règle",
-   "derniere_verification": null,
-   "statut_verification": "a_verifier"
+   "portee_retenue": "existe ; point 8 : plus-values du I de 150-0 B ter au taux spécifique du 2 ter de 200 A, quotient exclu (III de 163-0 A) ; décision de TA inédite, application d'espèce",
+   "derniere_verification": "2026-10-29",
+   "statut_verification": "verifie"
   },
   {
    "id": "TA Bordeaux 13/11/2025 n° 2304900",
    "skills": [
     "legal-hallucination-checker"
    ],
-   "portee_retenue": "jurisprudence divergente",
-   "derniere_verification": null,
-   "statut_verification": "a_verifier"
+   "portee_retenue": "quotient et gains d'acquisition d'actions gratuites imposés au barème (80 quaterdecies) ; ne statue pas sur 150-0 B ter, n'est pas une décision contraire à TA Bordeaux 2301446",
+   "derniere_verification": "2026-10-29",
+   "statut_verification": "verifie"
   },
   {
    "id": "TA Paris 13/02/2025 n° 2212919",
    "skills": [
     "legal-hallucination-checker"
    ],
-   "portee_retenue": "jurisprudence divergente",
-   "derniere_verification": null,
-   "statut_verification": "a_verifier"
+   "portee_retenue": "quotient et gains d'acquisition d'actions gratuites imposés au barème (80 quaterdecies) ; plus-value de cession distincte, quotient refusé ; ne statue pas sur 150-0 B ter, n'est pas une décision contraire à TA Bordeaux 2301446",
+   "derniere_verification": "2026-10-29",
+   "statut_verification": "verifie"
+  },
+  {
+   "id": "TA Paris 17/12/2025 n° 2413796",
+   "skills": [
+    "legal-hallucination-checker"
+   ],
+   "portee_retenue": "150-0 B ter : plus-value au taux spécifique du 2 ter de 200 A, quotient exclu (III de 163-0 A) ; décision convergente avec TA Bordeaux 2301446",
+   "derniere_verification": "2026-10-29",
+   "statut_verification": "verifie"
   },
   {
    "id": "Cons. const. n° 2016-538 QPC du 22/04/2016",
    "skills": [
     "legal-hallucination-checker"
    ],
-   "portee_retenue": "vise l'art. 200 A, 2 ter CGI",
-   "derniere_verification": null,
-   "statut_verification": "a_verifier"
+   "portee_retenue": "porte sur 150-0 D, 1 ter et 1 quater (exclusion de l'abattement des plus-values en report avant le 01/01/2013) ; conformité sous réserves des cons. 11 et 15 ; ne porte ni sur 150-0 B ter ni sur 200 A, 2 ter",
+   "derniere_verification": "2026-10-29",
+   "statut_verification": "verifie"
   },
   {
    "id": "Cass. com. 28/05/2026 n° 25-12612",
