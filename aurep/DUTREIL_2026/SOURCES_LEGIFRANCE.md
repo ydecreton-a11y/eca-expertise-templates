@@ -84,7 +84,7 @@ Chaque référence ci-dessous doit être vérifiée sur https://www.legifrance.g
 
 | Décision | Tribunal | Date | Matière | Principe |
 |---|---|---|---|---|
-| **TA Bordeaux n°2301446** | Bordeaux | 19/12/2024 | 150-0 B ter (comparaison) | Quotient 163-0 A jamais applicable à report gains |
+| **TA Bordeaux n°2301446** | Bordeaux | 19/12/2024 | 150-0 B ter (comparaison) | Point 8 : plus-values du I de 150-0 B ter au taux spécifique du 2 ter de 200 A, donc quotient du III de 163-0 A écarté ; jugement inédit, application d'espèce (convergent : TA Paris 17/12/2025 n° 2413796) — vérifié 29/10/2026 |
 | **TA [À surveiller]** | Divers | 2026 | Biens somptuaires | Jurisprudence naissante |
 | **TA [À surveiller]** | Divers | 2026 | Holdings animatrices | Critères appliqués |
 
@@ -92,7 +92,7 @@ Chaque référence ci-dessous doit être vérifiée sur https://www.legifrance.g
 
 | Décision | Date | Matière | Effet |
 |---|---|---|---|
-| **CC n°2016-538 QPC** | 22/04/2016 | Favorabilité historique 150-0 B ter | Justifie régime autonome (vs barème) |
+| **CC n°2016-538 QPC** | 22/04/2016 | Exclusion de l'abattement pour durée de détention (150-0 D, 1 ter et 1 quater) des plus-values mobilières en report avant le 01/01/2013 | Conformité sous réserves : cons. 11 (coefficient d'érosion monétaire), cons. 15 (règles d'assiette et de taux du fait générateur pour un report obligatoire) ; ne porte pas sur 150-0 B ter — vérifié 29/10/2026 |
 
 ---
 

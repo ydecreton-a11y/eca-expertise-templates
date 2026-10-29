@@ -1,6 +1,6 @@
 ---
 name: legal-hallucination-checker
-description: "Vérification bloquante de 100 % des références juridiques (articles, décisions, BOFiP, textes) en fin de tout livrable juridique ou fiscal ECA EXPERTISE, par recoupement Légifrance, LibreJustice, Legal Data Hunter, Pourvoi et OpenEU selon la compétence de chaque outil ; contrôle de l'existence, de la version applicable, du contenu, de la portée et du sort procédural. Déclencher automatiquement en fin de livrable, et sur : vérifie les références, checker, hallucination, contrôle des citations, est-ce que cet arrêt existe, cet article est-il en vigueur."
+description: "Vérification bloquante de 100 % des références juridiques (articles, décisions, BOFiP, textes) en fin de tout livrable juridique ou fiscal ECA EXPERTISE, par recoupement Légifrance, LibreJustice, Legal Data Hunter, Pourvoi et OpenEU selon la compétence de chaque outil ; contrôle de l'existence, de la version applicable, du contenu, de la fidélité des citations (guillemets, pincites, signaux), de la portée et du sort procédural. Déclencher automatiquement en fin de livrable, et sur : vérifie les références, checker, hallucination, contrôle des citations, est-ce que cet arrêt existe, cet article est-il en vigueur."
 ---
 
 # Legal Hallucination Checker — ECA EXPERTISE
@@ -24,8 +24,8 @@ des références du dépôt et `maintenance-skills`).
 
 | Référence | Acquis | À revérifier à chaque usage |
 |-----------|--------|-----------------------------|
-| TA Bordeaux n°2301446 du 19/12/2024 | Existe | ⚠️ NE PAS en déduire une règle : JP divergente depuis (TA Bordeaux 13/11/2025 n°2304900, TA Paris 13/02/2025 n°2212919) ; rechercher toute décision postérieure |
-| Cons. const. n°2016-538 QPC 22/04/2016 | Existe — vise l'art. 200 A, 2 ter CGI | Portée au regard de la version de l'article applicable |
+| TA Bordeaux n°2301446 du 19/12/2024 | Existe (LibreJustice ; point 8 lu le 29/10/2026). Jugement inédit, rejet : les plus-values du I de l'art. 150-0 B ter relèvent du taux spécifique du 2 ter de l'art. 200 A et non du barème de l'art. 197, d'où l'exclusion du quotient (III de l'art. 163-0 A) | ⚠️ Décision de TA : application d'espèce, jamais une règle générale. Décision convergente identifiée : TA Paris 17/12/2025 n°2413796 (même raisonnement, quotient écarté). Les deux décisions longtemps citées comme « divergentes » (TA Bordeaux 13/11/2025 n°2304900 ; TA Paris 13/02/2025 n°2212919) portent sur le quotient appliqué aux gains d'acquisition d'actions gratuites imposés au barème (art. 80 quaterdecies) : elles ne statuent pas sur l'art. 150-0 B ter et ne sont pas des décisions contraires (textes lus le 29/10/2026) ; ne pas les présenter comme telles. Rechercher toute décision postérieure (CAA, CE) |
+| Cons. const. n°2016-538 QPC 22/04/2016 (Époux M. D.) | Existe (Légifrance CONSTEXT000032453721 ; texte lu le 29/10/2026). Porte sur les 1 ter et 1 quater de l'art. 150-0 D (exclusion de l'abattement pour durée de détention des plus-values mobilières placées en report avant le 01/01/2013) : conformité sous les réserves des cons. 11 et 15. Ne porte ni sur l'art. 150-0 B ter ni sur le 2 ter de l'art. 200 A | Version de l'art. 150-0 D applicable. Citer les réserves (cons. 11 : coefficient d'érosion monétaire ; cons. 15 : règles d'assiette et de taux applicables au fait générateur pour une plus-value en report obligatoire), jamais « conforme » sans réserve ni « régime du report validé » |
 | Art. 150-0 B ter CGI | Existe | Version à la date de l'apport |
 | Art. 200 A, 2 ter CGI | Existe | Version à la date du fait générateur |
 
@@ -47,9 +47,14 @@ référence. Interroger Pourvoi sur un arrêt du Conseil d'État ne prouve rien.
 | Cour d'appel | ✅ (partiel) | ✅ | ✅ | ✅ |
 | CJUE / Tribunal de l'Union, actes de l'Union (CELEX) | ❌ (→ OpenEU, compétent) | ✅ | ✅ | ✅ (décisions) |
 | CE, CAA, TA | ✅ (TA partiel) | ✅ | ✅ | ❌ |
-| Cons. const. | ✅ | ✅ | ✅ | ❌ |
+| Cons. const. | ✅ (décisions jointes : voir note) | ✅ | ✅ | ❌ |
 | TJ, tribunal de commerce / TAE | ❌ | ✅ | variable | ❌ |
 | CEDH | ❌ | ✅ | ✅ (CoE) | ❌ |
+
+**Note — décisions jointes du Conseil constitutionnel :** Légifrance peut ne
+pas retrouver une décision rendue sous plusieurs numéros joints (constaté le
+29/10/2026 sur 2016-583/584/585/586 QPC) alors que LibreJustice la retrouve.
+Recouper LibreJustice avant de conclure à une absence.
 
 **Conséquence pratique — fiscal :** le contentieux IS / IR / TVA / pénalités
 relève du juge administratif → Pourvoi est hors champ. Pourvoi ne sert en
@@ -207,7 +212,7 @@ Une décision qui existe peut néanmoins ne plus faire autorité.
 
 **Obligatoire pour :**
 - toute décision de cour d'appel citée (risque de cassation) ;
-- tout arrêt de Cassation de cassation avec renvoi (vérifier la décision de la cour de renvoi) ;
+- tout arrêt de cassation avec renvoi (vérifier la décision de la cour de renvoi) ;
 - toute décision de juridiction du fond administrative (CAA, TA) citée comme autorité (risque d'annulation ou de réformation en CE / CAA).
 
 **Outils :**
@@ -239,6 +244,31 @@ get_decision(url="[url LibreJustice]")  → lire case_chronology
   PARTIELLEMENT_EXACT, avec reformulation proposée.
 - Revirement postérieur identifié → 🔴 SUBSTANTIELLEMENT_ERRONÉ si le
   livrable s'appuie sur la solution abandonnée.
+
+---
+
+### Phase 2quater — Fidélité des citations, des renvois et des signaux
+
+**Obligatoire pour** toute citation entre guillemets, tout renvoi précis
+(point, considérant, paragraphe, alinéa) et tout renvoi introduit par un signal
+(« voir », « cf. », « comp. »). Une référence qui existe peut être citée
+infidèlement : c'est le cas le plus fréquent d'erreur sur une décision réelle.
+
+- **Citation textuelle** : la comparer mot à mot au texte officiel lu à la
+  source (Légifrance, LibreJustice, BOFiP via `get_norm`). Un mot changé, une
+  négation retirée ou une troncature qui change le sens (ex. « ne peut
+  s'appliquer » devenu « s'applique ») → 🔴 ; une coquille sans incidence sur
+  le sens → 🟡. Les coupes « [...] » ne doivent pas altérer le sens.
+- **Renvoi précis** : retrouver le passage au numéro cité ; un point ou un
+  considérant erroné → 🟠, avec le renvoi corrigé.
+- **Signal** : le passage cité doit soutenir la proposition. « Voir » ne couvre
+  ni une solution que la source n'énonce pas, ni son contraire ; une réserve
+  d'interprétation ne se cite jamais comme une validation pure et simple.
+- **Objet de la décision** : vérifier que le livrable lui attribue bien le texte
+  qu'elle examine (ex. QPC 2016-538 : art. 150-0 D, non art. 150-0 B ter).
+- **Aperçus et résumés** (`ai_summary` de LibreJustice, fiche Pourvoi) : ils
+  orientent, ils ne valident ni une citation ni une portée. Lire le texte ; si
+  seul un extrait a été lu, le signaler comme lecture partielle.
 
 ---
 

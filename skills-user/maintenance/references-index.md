@@ -4,7 +4,7 @@ Créé le 2026-10-23 — dernière maintenance : aucune. Tenu par `maintenance-s
 
 Une entrée 'verifie' a été lue à la source à la date indiquée. Une entrée 'a_verifier' n'a pas encore été contrôlée dans sa version en vigueur : la prochaine maintenance la lit en entier et confronte le passage du skill au texte. Les numéros de ligne sont indicatifs (ils bougent avec les skills) ; l'extrait sert d'ancre.
 
-**250 articles** (119 vérifiés, 131 à vérifier) · 10 BOFiP · 21 décisions · 9 textes · 10 pièges datés · 4 échéances
+**250 articles** (119 vérifiés, 131 à vérifier) · 10 BOFiP · 22 décisions · 9 textes · 10 pièges datés · 4 échéances
 
 ## Échéances annoncées
 
@@ -291,10 +291,11 @@ Une entrée 'verifie' a été lue à la source à la date indiquée. Une entrée
 |---|---|---|---|---|
 | Cass. com. 12/02/2025 n° 23-11.410 | juridique-annuel, legal-hallucination-checker | report à nouveau distribuable seulement par l'assemblée approuvant les comptes de l'exercice suivant | 2026-10-23 |  |
 | CE 09/10/2024 n° 490685 | veille-juridique | usufruit temporaire, art. 13, 5 CGI (exemple de veille) | à vérifier |  |
-| TA Bordeaux 19/12/2024 n° 2301446 | legal-hallucination-checker | existe ; ne pas en déduire une règle | à vérifier |  |
-| TA Bordeaux 13/11/2025 n° 2304900 | legal-hallucination-checker | jurisprudence divergente | à vérifier |  |
-| TA Paris 13/02/2025 n° 2212919 | legal-hallucination-checker | jurisprudence divergente | à vérifier |  |
-| Cons. const. n° 2016-538 QPC du 22/04/2016 | legal-hallucination-checker | vise l'art. 200 A, 2 ter CGI | à vérifier |  |
+| TA Bordeaux 19/12/2024 n° 2301446 | legal-hallucination-checker | existe ; point 8 : plus-values du I de 150-0 B ter au taux spécifique du 2 ter de 200 A, quotient exclu (III de 163-0 A) ; décision de TA inédite, application d'espèce | 2026-10-29 |  |
+| TA Bordeaux 13/11/2025 n° 2304900 | legal-hallucination-checker | quotient et gains d'acquisition d'actions gratuites imposés au barème (80 quaterdecies) ; ne statue pas sur 150-0 B ter, n'est pas une décision contraire à TA Bordeaux 2301446 | 2026-10-29 |  |
+| TA Paris 13/02/2025 n° 2212919 | legal-hallucination-checker | quotient et gains d'acquisition d'actions gratuites imposés au barème (80 quaterdecies) ; plus-value de cession distincte, quotient refusé ; ne statue pas sur 150-0 B ter, n'est pas une décision contraire à TA Bordeaux 2301446 | 2026-10-29 |  |
+| TA Paris 17/12/2025 n° 2413796 | legal-hallucination-checker | 150-0 B ter : plus-value au taux spécifique du 2 ter de 200 A, quotient exclu (III de 163-0 A) ; décision convergente avec TA Bordeaux 2301446 | 2026-10-29 |  |
+| Cons. const. n° 2016-538 QPC du 22/04/2016 | legal-hallucination-checker | porte sur 150-0 D, 1 ter et 1 quater (exclusion de l'abattement des plus-values en report avant le 01/01/2013) ; conformité sous réserves des cons. 11 et 15 ; ne porte ni sur 150-0 B ter ni sur 200 A, 2 ter | 2026-10-29 |  |
 | Cass. com. 28/05/2026 n° 25-12612 | socle-eca | Dutreil, trésorerie excédentaire (note du dépôt) | à vérifier |  |
 | Cass. soc. 10/07/2002 | analyse-contrat | conditions de validité de la clause de non-concurrence | à vérifier | référence sans numéro de pourvoi : à compléter |
 | Jurisprudence « Quémener » (CE) | calcul-plus-value, dissolution-liquidation-tup | correctif de calcul de la plus-value sur parts de société de personnes | à vérifier | nom d'usage : établir la référence exacte avant toute citation |
