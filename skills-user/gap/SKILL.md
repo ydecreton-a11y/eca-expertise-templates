@@ -8,8 +8,7 @@ description: "Skill ECA EXPERTISE pour toute garantie d'actif et de passif : né
 > **Socle** : charger `socle-eca` — ouverture du dossier (§ 1), carte des
 > connecteurs (§ 2), règles de vérification (§ 3), accès aux modèles (§ 4),
 > pièges datés (§ 5), standard de rédaction (§ 6), garde-fous (§ 7), Word ECA
-> (§ 8), fin de livrable (§ 9). Un output Casus collé est une base documentaire
-> à recouper (§ 3.4). Aucun taux, seuil ou délai n'est repris de mémoire.
+> (§ 8), fin de livrable (§ 9). Aucun taux, seuil ou délai n'est repris de mémoire.
 > Les références marquées « vérifié 26/10/2026 » ont été lues à la source à
 > cette date ; elles se relisent dans leur version applicable à la date de
 > l'acte (index des références du dépôt, `maintenance-skills`).

@@ -41,9 +41,9 @@ l'apporteur (titres communs → consentement), démembrements, garanties bancair
 
 | Sujet | Contrôle | Points d'entrée |
 |---|---|---|
-| Report d'imposition | Condition de contrôle de la holding, obligations de conservation, cession dans le délai et réinvestissement (quotité, nature, délai), déclarations annuelles | CGI art. 150-0 B ter (version à la date de l'apport, LF récentes) + BOFiP correspondant via Legal Data Hunter |
+| Report d'imposition | Condition de contrôle de la holding, obligations de conservation, cession dans le délai et réinvestissement (quotité, nature, délai), déclarations annuelles | CGI art. 150-0 B ter (version à la date de l'apport, LF récentes) + BOFiP correspondant via Casus ou Legal Data Hunter |
 | Coût global | Purge vs report, CEHR et CDHR des années concernées | Renvoi `calcul-plus-value` ; CGI art. 223 sexies et 224 |
-| Abus de droit | Substance de la holding, réinvestissement économique, calendrier | LPF L. 64 et L. 64 A ; jurisprudence récente (Légifrance + LibreJustice) |
+| Abus de droit | Substance de la holding, réinvestissement économique, calendrier | LPF L. 64 et L. 64 A ; jurisprudence récente (Légifrance, LibreJustice, Casus) |
 | Valeur d'apport | Méthode, cohérence avec une cession proche, surévaluation | Rapport du commissaire aux apports |
 | Commissaire aux apports | Obligation ou dispense selon la forme et les seuils en vigueur ; responsabilité des associés en cas de dispense | C. com. L. 223-9 (SARL), L. 225-147 (SA, SAS par renvoi), textes réglementaires des seuils |
 | Agrément et préemption | Apport = mutation soumise aux clauses statutaires et au pacte | Statuts et pacte de la société apportée |

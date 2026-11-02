@@ -19,8 +19,7 @@ description: >
 > **Socle** : charger `socle-eca` — ouverture du dossier (§ 1), carte des
 > connecteurs (§ 2), règles de vérification (§ 3), accès aux modèles (§ 4),
 > pièges datés (§ 5), standard de rédaction (§ 6), garde-fous (§ 7), Word ECA
-> (§ 8), fin de livrable (§ 9). Un output Casus collé est une base documentaire
-> à recouper (§ 3.4). Aucun taux, seuil ou délai n'est repris de mémoire.
+> (§ 8), fin de livrable (§ 9). Aucun taux, seuil ou délai n'est repris de mémoire.
 
 ## PHASE 0 — Aiguillage
 
@@ -67,11 +66,14 @@ ce qui manque et le demander avant de continuer.
 ## PHASE 2 — Recherche et vérification des sources
 
 Suivre la carte des connecteurs (socle § 2) et les règles du socle § 3 :
+- **Balayage initial** : recherche ouverte Casus sur la question de droit, pour
+  repérer ensemble articles, BOFiP, jurisprudence et réponses ministérielles ;
+  chaque résultat retenu se lit ensuite en texte intégral.
 - **Textes** : version en vigueur à la date du fait générateur (LibreJustice
-  pour la lecture à date, Légifrance en recoupement).
-- **Doctrine fiscale** : BOFiP via Legal Data Hunter ; noter le paragraphe et
-  sa date de publication (opposabilité art. L. 80 A LPF).
-- **Jurisprudence** : administrative (Légifrance, LibreJustice) ; judiciaire
+  pour la lecture à date, Légifrance et Casus en recoupement).
+- **Doctrine fiscale** : BOFiP via Casus ou Legal Data Hunter ; noter le
+  paragraphe et sa date de publication (opposabilité art. L. 80 A LPF).
+- **Jurisprudence** : administrative (Légifrance, LibreJustice, Casus) ; judiciaire
   (Pourvoi, avec parcours procédural) ; Union (OpenEU). Lire la décision, pas
   son résumé ; qualifier sa portée (principe / espèce, publiée ou non).
 - **Positions ECA** et **modules de formation du dépôt** couvrant le sujet
@@ -98,7 +100,7 @@ II. PROBLÉMATIQUE(S) JURIDIQUE(S)
 III. RÈGLES DE DROIT APPLICABLES
    Textes, articles, principes généraux, jurisprudence.
    [Références lues et vérifiées à la source : Légifrance, LibreJustice,
-    Legal Data Hunter (BOFiP), Pourvoi]
+    Casus, Legal Data Hunter (BOFiP), Pourvoi]
    Distinguer : droit positif / doctrine administrative / jurisprudence
 
 IV. ANALYSE

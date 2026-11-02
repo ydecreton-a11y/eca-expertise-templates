@@ -72,7 +72,7 @@ Une entrée 'verifie' a été lue à la source à la date indiquée. Une entrée
 | code-de-commerce | L. 141-23 | 2026-10-23 |  | cession-fonds, lettre-intention, socle-eca |
 | code-de-commerce | L. 141-27 | 2026-10-23 |  | cession-fonds |
 | code-de-commerce | L. 141-28 | 2026-10-23 |  | cession-fonds, lettre-intention, protocole-cession |
-| code-de-commerce | L. 145-16 | 2026-10-23 |  | cession-fonds, dissolution-liquidation-tup, prompt-builder-eca, restructurations |
+| code-de-commerce | L. 145-16 | 2026-10-23 |  | cession-fonds, dissolution-liquidation-tup, restructurations |
 | code-de-commerce | L. 145-16-2 | 2026-10-23 |  | cession-fonds |
 | code-de-commerce | L. 145-47 | 2026-10-23 |  | redaction-acte |
 | code-de-commerce | L. 210-6 | 2026-10-23 |  | juridique-annuel, lettre-intention, redaction-acte |

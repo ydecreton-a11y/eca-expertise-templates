@@ -39,22 +39,28 @@ Chaque outil ne couvre qu'une partie des sources. Un échec de recherche
 n'a de valeur probante que sur un outil **compétent** pour le type de
 référence. Interroger Pourvoi sur un arrêt du Conseil d'État ne prouve rien.
 
-| Type de référence | Légifrance | LibreJustice | Legal Data Hunter | Pourvoi |
-|---|---|---|---|---|
-| Article de code, loi, ordonnance, décret | ✅ | ✅ | ✅ | ❌ |
-| BOFiP (BOI-...) | ❌ | ✅ (`get_norm`, `text_id`) | ✅ (doctrine) | ❌ |
-| Cass. (toutes chambres) | ✅ | ✅ | ✅ | ✅ |
-| Cour d'appel | ✅ (partiel) | ✅ | ✅ | ✅ |
-| CJUE / Tribunal de l'Union, actes de l'Union (CELEX) | ❌ (→ OpenEU, compétent) | ✅ | ✅ | ✅ (décisions) |
-| CE, CAA, TA | ✅ (TA partiel) | ✅ | ✅ | ❌ |
-| Cons. const. | ✅ (décisions jointes : voir note) | ✅ | ✅ | ❌ |
-| TJ, tribunal de commerce / TAE | ❌ | ✅ | variable | ❌ |
-| CEDH | ❌ | ✅ | ✅ (CoE) | ❌ |
+| Type de référence | Légifrance | LibreJustice | Legal Data Hunter | Pourvoi | Casus |
+|---|---|---|---|---|---|
+| Article de code, loi, ordonnance, décret | ✅ | ✅ | ✅ | ❌ | ✅ codes (lois et décrets non codifiés : « hors corpus ») |
+| BOFiP (BOI-...) | ❌ | ✅ (`get_norm`, `text_id`) | ✅ (doctrine) | ❌ | ✅ (une seule version par document) |
+| Cass. (toutes chambres) | ✅ | ✅ | ✅ | ✅ | ✅ |
+| Cour d'appel | ✅ (partiel) | ✅ | ✅ | ✅ | ✅ |
+| CJUE / Tribunal de l'Union, actes de l'Union (CELEX) | ❌ (→ OpenEU, compétent) | ✅ | ✅ | ✅ (décisions) | ✅ (couverture plus courte ; actes de l'Union en texte initial non consolidé) |
+| CE, CAA, TA | ✅ (TA partiel) | ✅ | ✅ | ❌ | ✅ (TA depuis 2022) |
+| Cons. const. | ✅ (décisions jointes : voir note) | ✅ | ✅ | ❌ | ✅ |
+| TJ, tribunal de commerce / TAE | ❌ | ✅ | variable | ❌ | TJ ✅ ; tribunal de commerce ❌ |
+| CEDH | ❌ | ✅ | ✅ (CoE) | ❌ | ✅ (couverture plus courte) |
 
 **Note — décisions jointes du Conseil constitutionnel :** Légifrance peut ne
 pas retrouver une décision rendue sous plusieurs numéros joints (constaté le
 29/10/2026 sur 2016-583/584/585/586 QPC) alors que LibreJustice la retrouve.
 Recouper LibreJustice avant de conclure à une absence.
+
+**Casus : un outil de contrôle en lot, jamais une preuve seule.** Le statut
+« trouvée » établit l'existence dans le corpus ; il ne valide ni la version
+applicable, ni le contenu, ni la portée. Un statut « introuvable » ou « hors
+corpus » n'a aucune valeur probante d'inexistence (retard d'intégration, textes
+non codifiés absents) : poursuivre sur un autre outil compétent.
 
 **Conséquence pratique — fiscal :** le contentieux IS / IR / TVA / pénalités
 relève du juge administratif → Pourvoi est hors champ. Pourvoi ne sert en
@@ -136,12 +142,32 @@ sans conclure à une hallucination.
 
 ---
 
-### Phase 2bis — Vérification croisée via LibreJustice, Legal Data Hunter et Pourvoi
+### Phase 2bis — Vérification croisée via Casus, LibreJustice, Legal Data Hunter et Pourvoi
 
 **Obligatoire pour toute référence non confirmée en Phase 2, et recommandé
 en confirmation croisée pour toute référence à enjeu (🔴 critique, pièges
 datés du `socle-eca` § 5).** N'interroger que les outils compétents (matrice
 ci-dessus).
+
+**Casus :**
+```
+# Passage entier ou liste (50 références par appel au plus) : existence, écarts de citation, version à une date
+resolve_references(texte="[passage du livrable]", date="[date du fait générateur]")
+resolve_references(references=["art. [N] [code]", "BOI-[identifiant]", "[juridiction], [date], n° [numéro]"], date="[JJ/MM/AAAA]")
+
+# Lecture à la source de la référence retenue (toujours passer la date pour un fait daté)
+get_code_article(code="[code]", numeros=["[numéro d'article]"], date="[JJ/MM/AAAA]")
+get_bofip(identifiant="BOI-[identifiant]")
+get_decision(numero="[n° de décision]", juridiction="[juridiction]", date="[JJ/MM/AAAA]")
+```
+Statuts à traiter : « trouvée avec écart » → corriger la citation selon la note
+(date, chambre, numéro) ; « ambiguë » → préciser le code ou la juridiction ;
+« non applicable à la date » → l'article était abrogé à cette date ; « indéterminée
+à la date » → ne pas conclure, lire la version datée dans LibreJustice ; « hors
+corpus » → lire dans Légifrance (JORF). Plusieurs décisions pour un même numéro :
+ne jamais choisir arbitrairement, départager par juridiction et date. Une
+décision se cite après lecture du texte intégral (`get_decision`), pas sur un
+extrait de recherche.
 
 **LibreJustice :**
 ```
