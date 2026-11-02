@@ -245,7 +245,7 @@ celui de l'inventaire du jour) :
 Règles :
 - **Source secondaire** : tout ce qui en est tiré est vérifié à la source
   primaire avant d'être cité ; le corpus ne remplace jamais Légifrance,
-  LibreJustice, Legal Data Hunter ou Pourvoi.
+  LibreJustice, Casus, Legal Data Hunter ou Pourvoi.
 - **Date** : comparer la date du document aux textes en vigueur ; un document
   antérieur à une loi de finances est relu à la lumière de celle-ci.
 - **Écart** entre un document et la source primaire : retenir la source primaire
