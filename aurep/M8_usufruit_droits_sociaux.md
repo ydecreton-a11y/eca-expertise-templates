@@ -95,6 +95,8 @@ L'usufruitier a droit aux dividendes prélevés :
 
 En l'absence de dispositions spécifiques, tous les résultats mis en distribution appartiennent à l'usufruitier.
 
+> **[Mise à jour ECA 02/11/2026 — texte postérieur au module]** Cette règle ne vaut plus lorsque la société distribue le produit de la vente de la **totalité** de ses actifs immobiliers : une telle distribution affecte la substance des parts grevées d'usufruit ; le dividende revient alors, sauf convention contraire entre le nu-propriétaire et l'usufruitier, au nu-propriétaire, l'usufruitier exerçant un quasi-usufruit sur la somme distribuée (Cass. 3e civ., 19 septembre 2024, n° 22-18.687, FS-B, texte intégral lu sur Pourvoi). Prévoir une clause statutaire expresse.
+
 > **Avantage de l'interposition sociétaire :** Contrairement à la détention directe d'un bien démembré (où la plus-value se répartit selon l'art. 621 c. civ.), la société confère à l'usufruitier une capacité de revenus augmentée.
 
 ### 3.3 Clauses contraires pour le résultat exceptionnel
@@ -103,9 +105,9 @@ Il est possible de prévoir dans les statuts ou en assemblée :
 - Une **répartition différente** du résultat exceptionnel ;
 - Un **quasi-usufruit** sur ce résultat exceptionnel (l'usufruitier restitue au nu-propriétaire une créance de restitution à la fin de l'usufruit).
 
-**Prudence :** La Cour de cassation écarte la qualification de donation indirecte pour une clause de répartition inégale des bénéfices (Cass. com. 18 février 2012, n° 11-27745), mais l'administration peut engager une procédure de rectification ou d'abus de droit. Règles de prudence :
+**Prudence :** La Cour de cassation a jugé qu'en participant à la décision collective, émanant d'un organe social, de modifier la répartition des bénéfices entre associés, les usufruitiers n'ont pu consentir une donation ayant pour objet un élément de leur patrimoine (Cass. com. 18 décembre 2012, n° 11-27.745, publié au Bulletin) *[Correction ECA 02/11/2026 : la date « 18 février 2012 » et la qualification « clause de répartition inégale » figuraient à tort dans la version d'origine ; référence et portée vérifiées sur le texte intégral (Casus, LibreJustice)]*, mais l'administration peut engager une procédure de rectification ou d'abus de droit. Règles de prudence :
 - Préférer une **décision ponctuelle en assemblée** aux clauses statutaires de répartition inégale ;
-- Limiter la répartition inégale dans le temps (CE 18 octobre 2022, n° 462947) ;
+- Limiter la répartition inégale dans le temps : le Conseil d'État n'a pas regardé comme léonines des décisions d'assemblée générale extraordinaire dérogeant ponctuellement aux statuts pour la répartition des seules pertes de trois exercices clos (CE 18 octobre 2022, n° 462497, mentionné aux tables) *[Correction ECA 02/11/2026 : numéro « 462947 » erroné dans la version d'origine ; portée précisée d'après le texte intégral (LibreJustice)]* ;
 - **Justifier la décision** dans les procès-verbaux.
 
 ### 3.4 La question épineuse des réserves distribuées
@@ -193,6 +195,8 @@ Pas de problème si le bien existe déjà. Le problème est spécifique aux part
 
 **Q2 — Qui encaisse le prix si une SCI cède ses actifs (capital démembré) ?**  
 Le prix de cession revient à la société. Sur ce prix : le nominal revient au nu-propriétaire ; seule la plus-value (résultat exceptionnel) revient à l'usufruitier en cas de distribution.
+
+> **[Mise à jour ECA 02/11/2026]** Réponse à nuancer depuis Cass. 3e civ., 19 septembre 2024, n° 22-18.687 (FS-B) : si la SCI vend la totalité de ses actifs immobiliers et en distribue le produit, le dividende revient au nu-propriétaire avec quasi-usufruit de l'usufruitier, sauf convention contraire. Fiscalement, à défaut de convention enregistrée avant la vente, la plus-value immobilière d'une SCI à l'IR est imposée aux nus-propriétaires (BOI-RFPI-PVI-30-20, § 90 ; CAA Marseille, 11 mars 2016, n° 13MA03329 ; CAA Nancy, 13 novembre 2025, n° 23NC03203).
 
 **Q3 — Indexation de la créance de restitution du quasi-usufruit ?**  
 Nominalisme monétaire par défaut (art. 1895 c. civ.). Dérogation possible dans les limites du c. mon. et fin. : l'indexation sur l'inflation est interdite ; l'indice doit être en rapport avec l'objet du contrat. Gonfler artificiellement la créance serait risqué.
