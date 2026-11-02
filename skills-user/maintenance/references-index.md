@@ -262,7 +262,7 @@ Une entrée 'verifie' a été lue à la source à la date indiquée. Une entrée
 | livre-des-procedures-fiscales | L. 59 A | 2026-10-26 | ABROGE_DIFF jusqu'au 2026-12-31 ; version future au 2027-01-01 | contentieux-fiscal |
 | livre-des-procedures-fiscales | L. 64 | 2026-10-26 | VIGUEUR | consultation-juridique, holding-apport |
 | livre-des-procedures-fiscales | L. 64 A | 2026-10-26 | VIGUEUR | consultation-juridique, holding-apport |
-| livre-des-procedures-fiscales | L. 80 A | à vérifier |  | consultation-juridique, contentieux-fiscal |
+| livre-des-procedures-fiscales | L. 80 A | à vérifier |  | consultation-juridique, contentieux-fiscal, socle-eca |
 | livre-des-procedures-fiscales | R*196-1 | 2026-10-26 | VIGUEUR | contentieux-fiscal, gap, socle-eca |
 | livre-des-procedures-fiscales | R*196-2 | à vérifier |  | contentieux-fiscal |
 | livre-des-procedures-fiscales | R*196-3 | à vérifier |  | contentieux-fiscal, socle-eca |
