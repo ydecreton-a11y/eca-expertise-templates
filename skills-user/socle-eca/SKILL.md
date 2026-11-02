@@ -115,6 +115,24 @@ Identifiants Notion (les vérifier par une recherche si une requête échoue) :
    avant tout livrable.
 7. **Délai, durée d'engagement, taux** : sans source vérifiée, s'arrêter et le
    dire. Ne jamais estimer.
+8. **Application dans le temps** : pour tout texte modifié, lire dans la loi ou
+   le décret modificateur l'article qui fixe son entrée en vigueur et ses
+   dispositions transitoires. Un texte peut être en vigueur sans être applicable
+   aux faits (application aux revenus d'une année donnée, aux opérations
+   réalisées à compter d'une date, maintien de l'ancien régime pour les
+   situations en cours). Le livrable énonce la règle d'application dans le temps
+   retenue et sa source ; si elle n'a pas été lue, le point est balisé
+   `⚠️ INCERTAIN` (règle 3).
+9. **Renvois et textes d'application** : lorsqu'un article renvoie à un décret,
+   un arrêté, une annexe ou une définition (« dans les conditions fixées par
+   décret »), suivre le renvoi jusqu'à sa source ultime et vérifier que le texte
+   d'application est paru et en vigueur. Une analyse qui s'arrête à l'article
+   principal est signalée comme incomplète.
+10. **Conditions cumulatives ou alternatives** : pour tout régime soumis à
+    conditions, relever pour chacune si le texte la lie par « et » ou par
+    « ou », puis les seuils, exceptions et exemptions. Le caractère cumulatif ou
+    alternatif se lit dans le texte, jamais dans une fiche, un modèle ou une
+    habitude de rédaction.
 
 ---
 
