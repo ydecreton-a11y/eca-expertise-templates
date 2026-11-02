@@ -349,7 +349,10 @@ articles « connus ». Il fait partie du workflow de remise : aucun livrable
 n'est présenté comme final avant le rapport.
 
 Ajouter au contrôle : **version applicable** (le texte cité est-il celui en
-vigueur à la date du fait générateur ? s'il a changé depuis, le signaler) et
+vigueur à la date du fait générateur ? s'il a changé depuis, le signaler),
+**application dans le temps** (la loi ou le décret modificateur a-t-il fixé une
+entrée en vigueur différée ou une disposition transitoire qui écarte la version
+citée pour les faits du dossier ? socle § 3, règle 8) et
 **références internes aux skills** (un skill peut contenir une référence
 erronée — exemple corrigé : l'« art. 150-0 F ter » inexistant, la CDHR étant à
 l'art. 224 CGI).
