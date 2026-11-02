@@ -26,8 +26,11 @@ décrets. Ordre de consultation (socle § 2) :
    d'entrée en vigueur, dispositions transitoires.
 2. **Textes consolidés à date** (LibreJustice) : droit antérieur vs droit
    nouveau, article par article.
-3. **Doctrine** : BOFiP (Legal Data Hunter) — instruction publiée ou attendue.
-4. **Jurisprudence** : CE, CAA, TA (Légifrance, LibreJustice) ; Cass. et CA
+3. **Doctrine** : BOFiP (Casus pour la liste des publications et actualités
+   récentes par série, en contrôlant sa date d'intégration ; Legal Data Hunter)
+   — instruction publiée ou attendue ; au-delà de la date d'intégration de
+   Casus, BOFiP en ligne.
+4. **Jurisprudence** : CE, CAA, TA (Légifrance, LibreJustice, Casus) ; Cass. et CA
    (Pourvoi, avec portée et parcours procédural) ; CJUE (OpenEU).
 5. **Union** : directives, règlements, procédures législatives (OpenEU).
 6. **Base Notion Veille** : vérifier que le sujet n'a pas déjà été traité.

@@ -57,7 +57,9 @@ rapport.
 ### 2.1 Articles de code
 
 Outil : LibreJustice (statut, chronologie des versions, textes modificateurs) ;
-recoupement Légifrance. Pour chaque entrée, lire la fiche de l'article et la
+recoupement Légifrance et Casus (contrôle en lot des références d'un skill,
+frise des versions ; une réponse « indéterminée à la date » se tranche dans
+LibreJustice). Pour chaque entrée, lire la fiche de l'article et la
 classer par comparaison avec sa date de dernière vérification :
 
 | Constat à la source | Classement | Suite |
@@ -96,14 +98,15 @@ En mode loi de finances :
 
 ### 2.3 BOFiP
 
-Lire la publication par son identifiant (LibreJustice ; Legal Data Hunter,
-doctrine). Publication de la série postérieure à la dernière vérification →
+Lire la publication par son identifiant (LibreJustice ; Casus ; Legal Data
+Hunter, doctrine). Casus liste aussi les publications récentes d'une série,
+jusqu'à sa date d'intégration. Publication de la série postérieure à la dernière vérification →
 relire le paragraphe cité ; § 3.
 
 ### 2.4 Jurisprudence
 
 Existence et contenu selon la matrice du checker ; sort procédural (parcours
-procédural Pourvoi, chronologie LibreJustice) ; recherche, triée par date, d'une
+procédural Pourvoi, chronologie LibreJustice, texte intégral Casus) ; recherche, triée par date, d'une
 décision postérieure contraire ou d'un revirement depuis la dernière
 vérification. Une référence incomplète (sans numéro) est complétée ou retirée du
 skill.

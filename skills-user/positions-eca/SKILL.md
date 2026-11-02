@@ -68,7 +68,7 @@ Après avoir livré une consultation, un calcul, ou une analyse, **proposer l'aj
 
 - **Ne jamais ignorer une position active** qui est pertinente pour le sujet
 - **Ne jamais contredire silencieusement** une position active sans signaler le conflit
-- **Toujours relire la source** (Légifrance, LibreJustice, Legal Data Hunter, Pourvoi) si le conflit est détecté (la position est peut-être obsolète)
+- **Toujours relire la source** (Légifrance, LibreJustice, Casus, Legal Data Hunter, Pourvoi) si le conflit est détecté (la position est peut-être obsolète)
 - **Ne pas surcharger** : max 3-5 positions consultées par livrable. Si le sujet couvre plus de 5 positions → signaler la densité et prioriser.
 
 ---
@@ -135,7 +135,7 @@ Après avoir livré une consultation, un calcul, ou une analyse, **proposer l'aj
 **NE PAS PROPOSER** si :
 - La position est un calcul spécifique au dossier (montant, date)
 - La position est déjà couverte par une entrée existante
-- La source n'a pas pu être lue et vérifiée (Légifrance, LibreJustice, Legal Data Hunter, Pourvoi)
+- La source n'a pas pu être lue et vérifiée (Légifrance, LibreJustice, Casus, Legal Data Hunter, Pourvoi)
 - Le sujet est en zone d'incertitude totale sans aucune source
 
 ---

@@ -460,7 +460,7 @@
     },
     {
      "skill": "maintenance-skills",
-     "ligne": 76,
+     "ligne": 78,
      "extrait": "⚠️ **Piège constaté le 23/10/2026 (C. mon. fin. L. 561-46).** Une version"
     },
     {
@@ -5230,12 +5230,12 @@
    "occurrences": [
     {
      "skill": "veille-juridique",
-     "ligne": 234,
+     "ligne": 237,
      "extrait": "**CE, 9 octobre 2024, n° 490685 (mentionné aux tables) — usufruit temporaire, art. 13, 5 CGI**"
     },
     {
      "skill": "veille-juridique",
-     "ligne": 238,
+     "ligne": 241,
      "extrait": "> dérogatoires de l'art. 13, 5 CGI, s'entend de la constitution initiale à titre"
     }
    ]

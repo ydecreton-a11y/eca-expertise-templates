@@ -34,7 +34,7 @@ Les références marquées « vérifié 28/10/2026 » ont été lues à la sourc
    - Pour un scan illisible : rastérisation et OCR en français, avec vérification visuelle de tout tableau chiffré décisif.
    - Si l'accès est refusé : ne pas contourner, le dire et demander.
 3. **Aucune référence de mémoire.**
-   - Articles, décisions, taux, seuils, coefficients de barème : lus à la source primaire (Légifrance, LibreJustice, Pourvoi, Legal Data Hunter / BOFiP) ou dans la pièce ou le document du dépôt.
+   - Articles, décisions, taux, seuils, coefficients de barème : lus à la source primaire (Légifrance, LibreJustice, Casus, Pourvoi, Legal Data Hunter / BOFiP) ou dans la pièce ou le document du dépôt.
    - Un résumé doctrinal (Mémento, guide) n'est pas une source primaire : relire la décision et signaler tout écart avec le résumé.
 4. **Chaque hypothèse de jugement est isolée, sourcée et modifiable** : coefficient de barème, taux, multiple, décote, part de CA perdue.
 5. **Pas de double emploi** entre les flux normatifs, la prime de taux et les décotes. Un risque n'est traité qu'à un seul endroit.
