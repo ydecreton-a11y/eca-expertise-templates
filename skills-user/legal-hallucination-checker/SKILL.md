@@ -283,6 +283,12 @@ infidèlement : c'est le cas le plus fréquent d'erreur sur une décision réell
 | 0-19 | ⛔ HALLUCINATION | Inexistant ou totalement fictif |
 | N/A | ⚪ NON_CONFIRMÉ | Non trouvé sur aucun des outils compétents — vérification manuelle recommandée |
 
+Le statut ✅ n'est attribué qu'une fois exécutés les contrôles obligatoires de la
+référence : phase 2ter pour un arrêt de cassation avec renvoi, une décision de
+cour d'appel ou une décision du fond administratif ; lecture du texte pour toute
+portée citée (la fiche ou le sommaire ne suffisent pas). À défaut, le statut est
+🟡 ou ⚪ avec la mention « contrôle incomplet : [phase non exécutée] ».
+
 **Types d'erreurs fréquentes à détecter :**
 - Numéro de décision CE ou Cass. inversé (ex: 425986 → 425689)
 - Article CGI inexistant ou abrogé
