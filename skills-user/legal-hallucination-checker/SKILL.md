@@ -1,6 +1,6 @@
 ---
 name: legal-hallucination-checker
-description: "Vérification bloquante de 100 % des références juridiques (articles, décisions, BOFiP, textes) en fin de tout livrable juridique ou fiscal ECA EXPERTISE, par recoupement Légifrance, LibreJustice, Legal Data Hunter, Pourvoi et OpenEU selon la compétence de chaque outil ; contrôle de l'existence, de la version applicable, du contenu, de la fidélité des citations (guillemets, pincites, signaux), de la portée et du sort procédural. Déclencher automatiquement en fin de livrable, et sur : vérifie les références, checker, hallucination, contrôle des citations, est-ce que cet arrêt existe, cet article est-il en vigueur."
+description: "Vérification bloquante de 100 % des références juridiques (articles, décisions, BOFiP, textes) en fin de tout livrable juridique ou fiscal ECA EXPERTISE, par recoupement Légifrance, LibreJustice, Casus, Legal Data Hunter, Pourvoi et OpenEU selon la compétence de chaque outil ; contrôle de l'existence, de la version applicable, du contenu, de la fidélité des citations (guillemets, pincites, signaux), de la portée et du sort procédural. Déclencher automatiquement en fin de livrable, et sur : vérifie les références, checker, hallucination, contrôle des citations, est-ce que cet arrêt existe, cet article est-il en vigueur."
 ---
 
 # Legal Hallucination Checker — ECA EXPERTISE
