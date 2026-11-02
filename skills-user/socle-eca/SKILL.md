@@ -63,14 +63,17 @@ change). Si un outil est indisponible, le dire et passer au suivant.
 
 | Besoin | Outil principal | Recoupement |
 |---|---|---|
-| Article de code en vigueur | Légifrance | LibreJustice |
-| Article **à une date donnée** (fait générateur, cession, donation) | LibreJustice (version à date) | Légifrance |
+| Article de code en vigueur | Légifrance | LibreJustice, Casus |
+| Article **à une date donnée** (fait générateur, cession, donation) | LibreJustice (version à date) | Légifrance, Casus (si la réponse est « indéterminée à la date », LibreJustice prévaut) |
 | Loi, ordonnance, décret, JORF du jour | Légifrance | LibreJustice |
-| Doctrine BOFiP | Legal Data Hunter (doctrine FR) | LibreJustice (BOFiP par identifiant) |
-| Jurisprudence administrative fiscale (CE, CAA, TA) | Légifrance | LibreJustice, Legal Data Hunter |
+| Doctrine BOFiP | Casus ou Legal Data Hunter (lecture par identifiant, sommaire, paragraphe exact) | LibreJustice (BOFiP par identifiant) |
+| Jurisprudence administrative fiscale (CE, CAA, TA) | Légifrance, Casus (texte intégral) | LibreJustice, Legal Data Hunter |
 | Jurisprudence judiciaire (Cass., CA) | Pourvoi (portée, parcours procédural) | Légifrance, LibreJustice |
 | Droit de l'Union, CJUE, TVA intracom, mère-fille | OpenEU | Pourvoi (CJUE), LibreJustice |
-| Droit étranger, conventions fiscales, non-résidents | Legal Data Hunter | — |
+| Droit étranger, conventions fiscales, non-résidents | Casus (conventions fiscales de la France) ; Legal Data Hunter (droit étranger) | Texte officiel de la convention (le corpus est issu d'une reconnaissance optique) |
+| Réponses ministérielles (JOAN, JO Sénat) | Casus | — |
+| Recherche ouverte sur une question (articles, BOFiP, jurisprudence, réponses ministérielles classés ensemble) | Casus | Sources primaires du besoin concerné |
+| Contrôle en lot des références d'un passage ou d'un livrable | Casus (existence et écarts de citation) | Lecture à la source primaire (checker) |
 | Conventions collectives | Légifrance | — |
 | Identité d'une société, dirigeants, groupe | Radar | Data.gouv |
 | Valeurs immobilières de marché (DVF) | Data.gouv | — |
@@ -91,6 +94,27 @@ Identifiants Notion (les vérifier par une recherche si une requête échoue) :
 
 ⚠️ Ne jamais confondre la base Positions (6dc1e530) et la base Veille (f201a44e).
 
+**Casus : portée et limites.** Casus est un corpus en lecture seule, interrogé
+en direct comme les autres sources. Il localise, classe et restitue des textes ;
+il ne qualifie rien. Cinq limites s'appliquent à tout usage :
+1. **Retard d'intégration** : chaque réponse et le catalogue donnent la date de
+   couverture de la source. Pour un texte, une instruction ou une décision
+   récents, recouper avec Légifrance ou le BOFiP en ligne ; ne jamais conclure
+   à l'absence d'un texte sur la seule base de Casus (« absent du corpus » ≠
+   « inexistant »).
+2. **Historique des versions partiel** : pour un fait générateur ancien, une
+   réponse « indéterminée à la date » interdit de conclure ; lire la version
+   datée dans LibreJustice.
+3. **BOFiP : une seule version par document** : la position opposable à une date
+   donnée (art. L. 80 A LPF) se lit dans la version datée du BOFiP, via
+   LibreJustice ou le BOFiP en ligne, pas dans Casus seul.
+4. **Droit de l'Union** : texte initial publié au JO, non consolidé, et
+   couverture des juridictions européennes inférieure à celle des juridictions
+   françaises ; passer par OpenEU.
+5. **Conventions fiscales** : texte issu d'une reconnaissance optique ; contrôler
+   taux, seuils et numéros d'article sur le PDF officiel avant de les citer.
+
+
 ---
 
 ## 3. Règles de vérification
@@ -104,10 +128,12 @@ Identifiants Notion (les vérifier par une recherche si une requête échoue) :
 3. **Trois niveaux, toujours distingués** dans le livrable : certitude
    textuelle / position doctrinale ou jurisprudentielle / zone d'incertitude.
    Balise : `⚠️ INCERTAIN — [point] : [raison]. À vérifier via [source].`
-4. **Position fiscale donnée par Yoann ou par Casus** : la vérifier avant de
-   l'intégrer (« Tu me donnes cette position — je la vérifie avant de
-   l'incorporer »). Un output Casus collé reste une base documentaire à
-   recouper, jamais une source qui dispense de vérifier un point contesté.
+4. **Position fiscale donnée par Yoann** : la vérifier avant de l'intégrer
+   (« Tu me donnes cette position — je la vérifie avant de l'incorporer »).
+   Une réponse d'outil, Casus compris, sert à localiser une référence ; la
+   référence se lit ensuite dans son texte intégral et dans sa version
+   applicable, et aucune réponse d'outil ne dispense de vérifier un point
+   contesté.
 5. **Inexistence** : une référence n'est déclarée introuvable qu'après échec
    sur tous les outils compétents (voir matrice du checker). « Non trouvé » ≠
    « inexistant ».

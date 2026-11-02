@@ -6,10 +6,11 @@
 > ajout de `lettre-intention`, `acte-definitif-titres`, `restructurations` et
 > `maintenance-skills` ; index des références et maintenance trimestrielle.
 > 28/10/2026 : ajout de `evaluation-titres-fonds` (documentation dans `12_évaluation_entreprise`).
+> 02/11/2026 : connecteur Casus interrogé en direct (carte des connecteurs `socle-eca` § 2, matrice du checker) ; retrait de `prompt-builder-eca`.
 
 ---
 
-## 1. Carte de l'écosystème (29 skills)
+## 1. Carte de l'écosystème (28 skills)
 
 | Couche | Skill | Rôle |
 |---|---|---|
@@ -17,7 +18,6 @@
 | Transverse | `positions-eca` | Base Notion des positions : consultée avant, enrichie après |
 | Transverse | `legal-hallucination-checker` | Vérification bloquante de 100 % des références en fin de livrable |
 | Orientation | `router-eca` | Reformulation d'intention, enchaînements de skills, codes de prompt |
-| Orientation | `prompt-builder-eca` | Fabrique les prompts Casus / Claude à partir de faits bruts |
 | Analyse | `consultation-juridique` | Analyse de fond juridique ou fiscale |
 | Analyse | `strategie-patrimoniale` | Transmission, patrimoine, donation, démembrement, régimes, successions |
 | Analyse | `calcul-plus-value` | Chiffrage des plus-values et contributions, scénarios |
@@ -45,7 +45,8 @@
 
 Retirés le 23/10/2026 : `shared` (→ `socle-eca`), `diagnostic-transmission` et
 `patrimonial-structuring` (→ `strategie-patrimoniale`), `devils-advocate`
-(→ `avocat-adverse`).
+(→ `avocat-adverse`). Retiré le 02/11/2026 : `prompt-builder-eca` (Casus
+est désormais interrogé en direct comme connecteur).
 
 ---
 
@@ -67,7 +68,7 @@ Retirés le 23/10/2026 : `shared` (→ `socle-eca`), `diagnostic-transmission` e
 
 | Donnée | Où |
 |---|---|
-| Taux, seuils, délais, articles | À la source primaire au jour du livrable (Légifrance, LibreJustice, Legal Data Hunter) — jamais dans un skill |
+| Taux, seuils, délais, articles | À la source primaire au jour du livrable (Légifrance, LibreJustice, Legal Data Hunter, Casus) — jamais dans un skill |
 | Pièges datés (alarmes) | `socle-eca` § 5 |
 | Carte des connecteurs | `socle-eca` § 2 |
 | Standard de rédaction M&A | `socle-eca` § 6 |

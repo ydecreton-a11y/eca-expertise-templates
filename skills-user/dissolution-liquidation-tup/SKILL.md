@@ -52,7 +52,7 @@ sociales, salariés.
 | Boni — associé personne morale | Régime mère-fille sur la fraction distribuée, plus-value / moins-value sur titres | CGI art. 145, 216, 219 |
 | SCI à l'IR | Correctif de calcul de la plus-value sur parts (quotes-parts imposées / déficits) | Jurisprudence Quémener et suites ; BOFiP |
 | SCI à l'IS | Imposition du boni et de l'actif réévalué, partage d'un immeuble | CGI art. 221 ; droits de partage art. 746 |
-| Associés non-résidents | Retenue à la source, convention fiscale applicable | Legal Data Hunter (convention) ; CGI art. 119 bis |
+| Associés non-résidents | Retenue à la source, convention fiscale applicable | Casus (convention fiscale, à contrôler sur le PDF officiel) ; CGI art. 119 bis |
 | Droits d'enregistrement | Dissolution, partage, attribution | CGI art. 811, 746 et s. |
 | Formalités | Publicité, dépôt, radiation, déclaration de cessation | Formalités en vigueur (guichet unique) |
 

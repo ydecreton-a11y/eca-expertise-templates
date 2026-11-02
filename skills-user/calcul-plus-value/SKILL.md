@@ -37,8 +37,10 @@ Question de régime à trancher d'abord                       → consultation-j
 ```
 
 Données à réunir (socle § 1 ; Pennylane si client du cabinet ; Data.gouv
-(valeurs foncières) pour étayer une valeur immobilière ; Legal Data Hunter pour
-une convention fiscale) :
+(valeurs foncières) pour étayer une valeur immobilière ; Casus pour la lecture
+des articles à la date de la cession, du BOFiP par identifiant et d'une
+convention fiscale, à contrôler sur le PDF officiel ; Legal Data Hunter en
+recoupement) :
 - cédant : personne physique / société IR / société IS ; résidence fiscale ;
   situation familiale et RFR prévisible (CEHR, CDHR) ;
 - bien : nature, date et mode d'acquisition (onéreux / gratuit / apport),
@@ -75,13 +77,13 @@ chiffrer les deux.
 
 | Régime | Textes à lire (version à la date de cession) | Doctrine |
 |---|---|---|
-| PV immobilière PP | CGI art. 150 U à 150 VH ; surtaxe art. 1609 nonies G ; prélèvements sociaux CSS L. 136-7 et L. 136-8 | BOFiP RFPI-PVI (Legal Data Hunter) |
+| PV immobilière PP | CGI art. 150 U à 150 VH ; surtaxe art. 1609 nonies G ; prélèvements sociaux CSS L. 136-7 et L. 136-8 | BOFiP RFPI-PVI (Casus, Legal Data Hunter) |
 | LMNP | CGI art. 150 VB III (et ses exceptions) | BOFiP correspondant ; module de formation du dépôt sur l'immobilier |
 | PV mobilière PP | CGI art. 150-0 A à 150-0 E, 200 A ; abattements éventuels (dont départ à la retraite art. 150-0 D ter) | BOFiP RPPM-PVBMI |
 | Report / sursis | CGI art. 150-0 B, 150-0 B ter ; état de suivi annuel | BOFiP RPPM-PVBMI-30 |
 | PV professionnelle | CGI art. 39 duodecies s. ; exonérations art. 151 septies, 151 septies A, 238 quindecies, 151 nonies selon le cas | BOFiP BIC-PVMV |
 | PV à l'IS | CGI art. 219 I a quinquies (titres de participation) ; taux d'IS en vigueur | BOFiP IS-BASE |
-| Non-résidents | CGI art. 244 bis A, 244 bis B ; convention fiscale | Legal Data Hunter (convention) |
+| Non-résidents | CGI art. 244 bis A, 244 bis B ; convention fiscale | Casus (convention fiscale, à contrôler sur le PDF officiel) ; Legal Data Hunter |
 | Contributions | CEHR art. 223 sexies ; CDHR art. 224 ; prélèvements sociaux CSS L. 136-8 | — |
 | Exit tax | CGI art. 167 bis | BOFiP |
 

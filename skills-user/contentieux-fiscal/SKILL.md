@@ -8,8 +8,7 @@ description: "Skill ECA EXPERTISE pour toute procédure de défense fiscale : r�
 > **Socle** : charger `socle-eca` — ouverture du dossier (§ 1), carte des
 > connecteurs (§ 2), règles de vérification (§ 3), accès aux modèles (§ 4),
 > pièges datés (§ 5), standard de rédaction (§ 6), garde-fous (§ 7), Word ECA
-> (§ 8), fin de livrable (§ 9). Un output Casus collé est une base documentaire
-> à recouper (§ 3.4). Aucun taux, seuil ou délai n'est repris de mémoire.
+> (§ 8), fin de livrable (§ 9). Aucun taux, seuil ou délai n'est repris de mémoire.
 
 Ce skill existe parce que la défense fiscale obéit à des règles procédurales
 strictes avec des délais de forclusion qui ne pardonnent pas. Une réponse
@@ -76,7 +75,7 @@ TRANSACTION proposée ?
 - Pièces justificatives disponibles
 - Positions BOFiP favorables applicables (Art. L80 A LPF)
 - Jurisprudence récente favorable (recherchée et lue à la source : Légifrance,
-  LibreJustice, Pourvoi)
+  LibreJustice, Casus, Pourvoi)
 
 ---
 
@@ -87,10 +86,15 @@ Carte des connecteurs (socle § 2) :
   à date) — garanties, délais, motivation, débat oral et contradictoire.
 - **Charte du contribuable vérifié** : version remise au contribuable ; ses
   garanties sont opposables.
-- **Fond** : CGI à la date du fait générateur ; BOFiP opposable (L. 80 A) via
-  Legal Data Hunter, avec le paragraphe exact.
-- **Jurisprudence** : CE, CAA, TA (Légifrance, LibreJustice) ; Pourvoi
-  seulement pour le contentieux judiciaire (enregistrement, IFI, DMTG).
+- **Fond** : CGI à la date du fait générateur ; BOFiP via Casus ou Legal Data
+  Hunter, avec le paragraphe exact. La position opposable (L. 80 A) s'apprécie
+  dans la version du BOFiP en vigueur à la date des faits : la lire datée
+  (LibreJustice ou BOFiP en ligne), Casus ne conservant qu'une version.
+- **Réponses ministérielles** : Casus ; citer l'assemblée (JOAN ou JO Sénat), la
+  législature, la date et la page.
+- **Jurisprudence** : CE, CAA, TA (Légifrance, LibreJustice, Casus en texte
+  intégral) ; Pourvoi seulement pour le contentieux judiciaire (enregistrement,
+  IFI, DMTG).
 - **Pièces comptables** : Pennylane (comptes concernés par chaque chef :
   provisions, charges, TVA) pour reconstituer les faits.
 - **Historique** : fiche mémoire du dossier, Granola (rendez-vous avec le
@@ -314,7 +318,7 @@ VI. CALENDRIER PROCÉDURAL
 > la source avant citation].
 >
 > ⚠️ INCERTAIN — Identifiants BOFiP vérifiés le 26/10/2026 ; lire le paragraphe
-> applicable (Legal Data Hunter), dans sa version à la date de clôture, avant
+> applicable (Casus ou Legal Data Hunter), dans sa version à la date de clôture, avant
 > intégration dans la réponse définitive.
 >
 > En conséquence, nous demandons l'abandon de ce chef de rectification."

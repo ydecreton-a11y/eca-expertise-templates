@@ -28,7 +28,7 @@ question centrale ; aucun livrable précisé ; phrase nominale sans verbe
 (« MARTIN indivision EURL ALPHA »).
 
 Ne pas activer si : mot-clé de skill en tête, document joint, `→ livrable :`
-présent, output Casus collé, code de prompt seul avec demande claire.
+présent, code de prompt seul avec demande claire.
 
 Sortie unique, rien d'autre :
 ```
@@ -70,7 +70,6 @@ changement de sujet → ne rien exécuter.
 | Relecture adverse d'un acte ou d'un argument | avocat-adverse |
 | Évaluer ou optimiser un skill | darwin-skill |
 | Mise à jour des skills, contrôle périodique des références citées, effet d'une loi de finances sur les skills | maintenance-skills |
-| Faits bruts → fabriquer la question pour Casus / Claude | prompt-builder-eca |
 | Pièce avec marqueurs [PERSONNE_1]… | pieces-pseudonymisees (en surcouche) |
 
 Transverses toujours actifs : `socle-eca`, `positions-eca`,
