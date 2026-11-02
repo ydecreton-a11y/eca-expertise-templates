@@ -97,3 +97,6 @@ est désormais interrogé en direct comme connecteur).
 - ❌ Laisser un délai en « jours » non qualifié.
 - ❌ Interroger un connecteur nominatif sur une pièce pseudonymisée.
 - ❌ Livrer sans rapport du checker.
+- ❌ Modifier un skill dans claude.ai sans reporter la modification dans
+  `skills-user/` (demande de fusion fusionnée) : le dépôt et les skills installés
+  restent identiques mot pour mot.

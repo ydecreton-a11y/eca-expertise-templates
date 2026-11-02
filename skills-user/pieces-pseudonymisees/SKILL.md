@@ -18,7 +18,7 @@ Dès qu'un document, un texte collé ou une légende contient des marqueurs de l
 5. **Raisonner avec la légende** : nature de chaque marqueur, rôle indiqué (cédant, holding…), relations relevées (même nom de famille, dénomination reprenant un nom). Un « même nom de famille » n'établit pas un lien de parenté : si la qualification en dépend (donation, abus de droit, conjoint, héritier), poser la question.
 6. **Demander l'attribut, jamais l'identité** : quand la réponse dépend d'une caractéristique de la personne (âge à une date pour le barème de l'usufruit, résidence fiscale, régime matrimonial, lien de parenté, capacité, qualité de dirigeant), demander cette caractéristique pour le marqueur concerné (« âge de [PERSONNE_1] au jour de la donation ? »).
 7. **Genre et accords** : s'appuyer sur la civilité conservée devant le marqueur (« Madame [PERSONNE_2] ») ; à défaut, formulation neutre.
-8. **Ce qui reste en clair** (articles, BOFiP, jurisprudence, dates d'actes, montants, formes sociales) est soumis aux contrôles habituels : vérification Légifrance / LibreJustice / Legal Data Hunter et legal-hallucination-checker inchangés.
+8. **Ce qui reste en clair** (articles, BOFiP, jurisprudence, dates d'actes, montants, formes sociales) est soumis aux contrôles habituels : vérification Légifrance / LibreJustice / Casus / Legal Data Hunter et legal-hallucination-checker inchangés.
 
 ## Livrables restaurables
 

@@ -23,23 +23,23 @@ version: 1.0
 | Code | Position | Effet réel | Skills compatibles | ⚠️ Restrictions |
 |------|----------|------------|-------------------|-----------------|
 | `/think` | Avant | Raisonnement visible étape par étape avant conclusion | Tous | — |
-| `/critique` | Avant | Analyse des failles, incohérences, angles morts | analyse-contrat, consultation-juridique, due-diligence | — |
+| `/critique` | Avant | Analyse des failles, incohérences, angles morts | analyse-contrat, consultation-juridique, due-diligence-juridique | — |
 | `/devil` | Avant | Argumente contre ta propre position | consultation-juridique, contentieux-fiscal | — |
 | `/steelman` | Avant | Construit l'argument le plus solide pour une thèse | contentieux-fiscal, consultation-juridique | — |
 | `/gaps` | Avant | Identifie ce qui manque dans une analyse | Tous les livrables | — |
-| `/verbose` | Avant | Développe chaque point avec profondeur maximale | consultation-juridique, patrimonial-structuring | — |
+| `/verbose` | Avant | Développe chaque point avec profondeur maximale | consultation-juridique, strategie-patrimoniale | — |
 | `/concise` | Avant | Réponse la plus courte sans perdre l'essentiel | note-information-client, veille-juridique | — |
 | `/brutal` | Avant | Direct, sans précautions de forme ni fioritures | Tous (usage interne) | ❌ Jamais sur livrables client |
 | `/nohedge` | Avant | Supprime les formules de prudence excessives | Livrables internes | ❌ Jamais sur livrables juridiques clients — obligation de distinguer certitudes/incertitudes |
 | `/human` | Avant | Ton chaleureux, naturel, zéro jargon juridique | note-information-client | ❌ Incompatible avec consultations techniques |
 | `/bulletproof` | Avant | Structure en points clairs, sans prose superflue | veille-juridique, note-information-client | — |
 | `/firstperson` | Avant | Écrit à la 1ʳᵉ personne (style Yoann) | Posts LinkedIn ECA, ghostwriting | ❌ Jamais sur consultations ou actes |
-| `/inversethink` | Avant | Part du résultat pour remonter aux causes | diagnostic-transmission, consultation-juridique | — |
-| `/compare` | Avant | Compare des options sur critères précis et objectifs | diagnostic-transmission, calcul-plus-value | — |
+| `/inversethink` | Avant | Part du résultat pour remonter aux causes | strategie-patrimoniale, consultation-juridique | — |
+| `/compare` | Avant | Compare des options sur critères précis et objectifs | strategie-patrimoniale, calcul-plus-value | — |
 | `/dashboard` | Après | Tableau de bord interactif (Artifact) | calcul-plus-value (simulations) | — |
 | `/calculator` | Après | Outil de calcul interactif (Artifact) | calcul-plus-value | — |
 | `/chart` | Après | Graphique ou visualisation de données (Artifact) | veille-juridique, calcul-plus-value | — |
-| `/mindmap` | Après | Carte mentale visuelle interactive (Artifact) | diagnostic-transmission | — |
+| `/mindmap` | Après | Carte mentale visuelle interactive (Artifact) | strategie-patrimoniale | — |
 | `/kanban` | Après | Tableau Kanban interactif (Artifact) | Suivi dossiers M&A | — |
 
 ---
