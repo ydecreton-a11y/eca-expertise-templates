@@ -33,8 +33,14 @@ usage, dans la version applicable.
 6. Positions ECA     → skill positions-eca (base Notion « 📌 Positions ECA »).
 7. Veille ECA        → recherche plein texte dans la base Notion « Veille
                        Juridique ECA » (f201a44e) sur les notions, articles et
-                       régimes de la demande ; charger les fiches pertinentes
-                       (3 à 5 au plus). Source secondaire : toute référence
+                       régimes de la demande (plusieurs requêtes, synonymes
+                       compris) ; les extraits de recherche servent à repérer,
+                       jamais à lire. Lire en entier, page ouverte, chaque fiche
+                       dont l'objet recoupe la demande (propriétés et corps),
+                       sans plafond ; si une fiche n'est pas lisible en entier,
+                       le signaler avant le livrable (§ 3.6). Seules 3 à 5
+                       fiches au plus sont mentionnées dans le livrable.
+                       Source secondaire : toute référence
                        reprise d'une fiche est relue à la source primaire dans
                        sa version au fait générateur ; une fiche ancienne est
                        confrontée aux textes et à la jurisprudence postérieurs.
