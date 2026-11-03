@@ -39,17 +39,28 @@ Après avoir livré une consultation, un calcul, ou une analyse, **proposer l'aj
 1. Identifier les mots-clés du sujet demandé par Yoann
    (ex: "PFU", "150-0 B ter", "Dutreil", "quasi-usufruit", "LMNP", etc.)
 
-2. Rechercher dans la base Notion Positions ECA :
+2. REPÉRER les positions susceptibles de concerner la demande, par
+   plusieurs recherches (notions, articles, régimes, synonymes, nom de
+   l'opération), puis par un balayage des positions du ou des domaines
+   concernés :
    notion-search(query="[mots-clés du sujet]",
                   data_source_url="collection://6dc1e530-7996-4a62-b5b6-b378b4c8f204",
-                  page_size=5,
+                  page_size=10,
                   max_highlight_length=200)
+   Les extraits renvoyés par la recherche servent à repérer, jamais à lire.
 
-3. Pour chaque position trouvée pertinente, la CHARGER dans le contexte :
-   — Énoncé de la position
-   — Niveau de certitude (✅ / ⚠️ / ❓)
-   — Référence légale
-   — Note interne (pièges à éviter)
+3. LIRE EN ENTIER chaque position dont l'objet recoupe la demande, quel que
+   soit son statut : ouvrir la page et lire tous les champs (énoncé,
+   certitude, référence légale, source secondaire, note interne, impact
+   client, texte à surveiller, dates de vérification et de revue) ET le corps
+   de la page (vide ou fiche détaillée). Si une page ne peut pas être lue en
+   entier, le signaler avant le livrable (`socle-eca` § 3.6). Ne jamais
+   affirmer avoir lu une position qui n'a pas été lue en entier.
+
+3 bis. TEXTE À SURVEILLER : si la position mentionne un texte à surveiller
+   (réforme, abrogation différée, recodification) dont la date d'effet est
+   atteinte ou proche du fait générateur, relire ce texte à la source avant de
+   s'appuyer sur la position.
 
 4. APPLIQUER les positions actives :
    — Si la réponse est COHÉRENTE avec la position → appliquer silencieusement
@@ -69,7 +80,7 @@ Après avoir livré une consultation, un calcul, ou une analyse, **proposer l'aj
 - **Ne jamais ignorer une position active** qui est pertinente pour le sujet
 - **Ne jamais contredire silencieusement** une position active sans signaler le conflit
 - **Toujours relire la source** (Légifrance, LibreJustice, Casus, Legal Data Hunter, Pourvoi) si le conflit est détecté (la position est peut-être obsolète)
-- **Ne pas surcharger** : max 3-5 positions consultées par livrable. Si le sujet couvre plus de 5 positions → signaler la densité et prioriser.
+- **Lecture sans plafond, mention sobre** : aucune limite au nombre de positions pertinentes lues. Le plafond de 3 à 5 ne vise que les positions mentionnées dans le livrable, qui reste sobre. La liste des positions lues n'est donnée que sur demande de Yoann (« Positions lues intégralement : [titres] »).
 
 ---
 
@@ -144,7 +155,7 @@ Après avoir livré une consultation, un calcul, ou une analyse, **proposer l'aj
 
 ### Détection d'obsolescence
 
-À chaque consultation de la base (Phase 1), si une position active a une "Date vérification" de plus de 6 mois :
+À chaque consultation de la base (Phase 1), appliquer la "Date de revue" lorsqu'elle est renseignée ; à défaut, si une position active a une "Date vérification" de plus de 6 mois :
 - Signaler : "ℹ️ Position ECA [titre] vérifiée il y a plus de 6 mois. Revérification recommandée."
 - Si Yoann confirme → relancer la vérification à la source et mettre à jour la date
 - Si la position a évolué → passer le statut en "🔄 À revérifier" et signaler l'écart
@@ -172,18 +183,9 @@ Si deux positions actives se contredisent (détecté en Phase 1 ou en cours de l
 
 ---
 
-## Domaines disponibles (valeurs exactes pour le champ SELECT)
+## Domaines disponibles
 
-- Fiscalité des revenus
-- Plus-values mobilières
-- Plus-values immobilières
-- IS / Holding
-- Transmission / Dutreil
-- Démembrement / Usufruit
-- Droit des sociétés
-- Régimes matrimoniaux
-- Contentieux fiscal
-- LMNP / Immo
+Lire les valeurs exactes du champ Domaine dans le schéma de la base (notion-fetch sur la collection) au moment de l'usage, et ne jamais les recopier de mémoire : la liste évolue.
 
 ## Certitudes disponibles
 
