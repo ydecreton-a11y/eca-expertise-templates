@@ -210,6 +210,9 @@ trouve dans le dépôt **le jour de la demande**.
    .pdf (texte ; reconnaissance de texte si scanné ou si des pages sont des
    images), .md / .txt, .xlsx / .csv (toutes les feuilles), .doc et .pptx après
    conversion, images par lecture visuelle. Signaler tout fichier illisible.
+   Pour un .docx, relever aussi la numérotation automatique (articles,
+   paragraphes, listes) en lisant le document tel qu'il s'affiche : le texte
+   brut ne la contient pas, et les renvois entre articles en dépendent.
 3. **Recherche plein texte sur 100 % du corpus** — chercher les notions de la
    demande (termes juridiques, synonymes, articles, régimes, noms d'opérations)
    dans le texte **complet** de chaque document, pas seulement dans les titres.
