@@ -325,12 +325,12 @@
     },
     {
      "skill": "positions-eca",
-     "ligne": 222,
+     "ligne": 224,
      "extrait": "de l'article 726 du CGI, avec un abattement calculé par part, en plus de"
     },
     {
      "skill": "positions-eca",
-     "ligne": 234,
+     "ligne": 236,
      "extrait": "Référence : CGI art. 726, I, 1° bis et 2° (vérifié 26/10/2026)"
     },
     {
@@ -722,7 +722,7 @@
     },
     {
      "skill": "socle-eca",
-     "ligne": 271,
+     "ligne": 280,
      "extrait": "| LMNP — réintégration des amortissements | Le prix d'acquisition est minoré des amortissements déduits, **mais** des exceptions ont été ajoutées (résidences ét"
     }
    ]
@@ -788,7 +788,7 @@
     },
     {
      "skill": "socle-eca",
-     "ligne": 270,
+     "ligne": 279,
      "extrait": "| Prélèvements sociaux du patrimoine | Les taux de CSG sont **différenciés** selon la nature du revenu (dividendes/PV mobilières ≠ revenus fonciers et PV immobi"
     }
    ]
@@ -837,7 +837,7 @@
     },
     {
      "skill": "socle-eca",
-     "ligne": 270,
+     "ligne": 279,
      "extrait": "| Prélèvements sociaux du patrimoine | Les taux de CSG sont **différenciés** selon la nature du revenu (dividendes/PV mobilières ≠ revenus fonciers et PV immobi"
     }
    ]
@@ -859,7 +859,7 @@
     },
     {
      "skill": "positions-eca",
-     "ligne": 212,
+     "ligne": 214,
      "extrait": "- \"[Abattement fixe de départ en retraite — CGI art. 150-0 D ter]\" (✅ Active, si conditions remplies)"
     }
    ]
@@ -1077,7 +1077,7 @@
     },
     {
      "skill": "evaluation-titres-fonds",
-     "ligne": 144,
+     "ligne": 150,
      "extrait": "- **IS normatif :** relire l'art. 219 du CGI en vigueur (taux réduit PME, plafond, conditions)."
     },
     {
@@ -1131,12 +1131,12 @@
     },
     {
      "skill": "socle-eca",
-     "ligne": 279,
+     "ligne": 288,
      "extrait": "| Contribution différentielle (CDHR) | Elle figure à l'**art. 224 CGI** — l'« art. 150-0 F ter » cité dans les anciennes versions des skills **n'existe pas**. L"
     },
     {
      "skill": "socle-eca",
-     "ligne": 279,
+     "ligne": 288,
      "extrait": "| Contribution différentielle (CDHR) | Elle figure à l'**art. 224 CGI** — l'« art. 150-0 F ter » cité dans les anciennes versions des skills **n'existe pas**. L"
     }
    ]
@@ -1190,7 +1190,7 @@
     },
     {
      "skill": "socle-eca",
-     "ligne": 274,
+     "ligne": 283,
      "extrait": "| Information des salariés (cession titres / fonds) | Champ indexé sur l'absence d'obligation de CSE « attributions élargies » ; délai d'un mois ; amende civile"
     }
    ]
@@ -1522,7 +1522,7 @@
     },
     {
      "skill": "socle-eca",
-     "ligne": 275,
+     "ligne": 284,
      "extrait": "| Recodification de la TVA | Les articles TVA du CGI (ex. art. 257 bis) sont abrogés à effet différé au **01/01/2027** par l'ordonnance n° 2025-1247 (transfert "
     }
    ]
@@ -1623,7 +1623,7 @@
     },
     {
      "skill": "socle-eca",
-     "ligne": 109,
+     "ligne": 115,
      "extrait": "donnée (art. L. 80 A LPF) se lit dans la version datée du BOFiP, via"
     }
    ]
@@ -1808,12 +1808,12 @@
     },
     {
      "skill": "socle-eca",
-     "ligne": 276,
+     "ligne": 285,
      "extrait": "| Délais de réclamation fiscale | R*196-1 LPF modifié par le décret n° 2026-692 (en vigueur au 30/07/2026) ; après une procédure de reprise, le contribuable dis"
     },
     {
      "skill": "socle-eca",
-     "ligne": 276,
+     "ligne": 285,
      "extrait": "| Délais de réclamation fiscale | R*196-1 LPF modifié par le décret n° 2026-692 (en vigueur au 30/07/2026) ; après une procédure de reprise, le contribuable dis"
     }
    ]
@@ -1852,12 +1852,12 @@
     },
     {
      "skill": "socle-eca",
-     "ligne": 276,
+     "ligne": 285,
      "extrait": "| Délais de réclamation fiscale | R*196-1 LPF modifié par le décret n° 2026-692 (en vigueur au 30/07/2026) ; après une procédure de reprise, le contribuable dis"
     },
     {
      "skill": "socle-eca",
-     "ligne": 276,
+     "ligne": 285,
      "extrait": "| Délais de réclamation fiscale | R*196-1 LPF modifié par le décret n° 2026-692 (en vigueur au 30/07/2026) ; après une procédure de reprise, le contribuable dis"
     }
    ]
@@ -2229,7 +2229,7 @@
     },
     {
      "skill": "socle-eca",
-     "ligne": 273,
+     "ligne": 282,
      "extrait": "| Droit de partage | Taux réduit réservé aux partages consécutifs à un divorce, une séparation de corps ou une rupture de PACS ; un changement de régime matrimo"
     },
     {
@@ -3417,7 +3417,7 @@
     },
     {
      "skill": "socle-eca",
-     "ligne": 274,
+     "ligne": 283,
      "extrait": "| Information des salariés (cession titres / fonds) | Champ indexé sur l'absence d'obligation de CSE « attributions élargies » ; délai d'un mois ; amende civile"
     }
    ]
@@ -3454,7 +3454,7 @@
     },
     {
      "skill": "socle-eca",
-     "ligne": 277,
+     "ligne": 286,
      "extrait": "| Pacte Dutreil | Régime modifié par la LF 2026 (art. 8) : lire 787 B dans la version à la date de transmission (biens exclus, détention indirecte, durées). Don"
     },
     {
@@ -3481,7 +3481,7 @@
    "occurrences": [
     {
      "skill": "evaluation-titres-fonds",
-     "ligne": 154,
+     "ligne": 160,
      "extrait": "- **Position à motiver :** la procédure légale de la SARL (C. com. art. L. 223-14 — vérifié 28/10/2026 ; prix fixé selon C. civ. art. 1843-4 — vérifié 28/10/202"
     },
     {
@@ -3491,7 +3491,7 @@
     },
     {
      "skill": "socle-eca",
-     "ligne": 345,
+     "ligne": 354,
      "extrait": "conventionnel exprès à l'art. 1843-4 C. civ. dans la clause d'expertise)."
     }
    ]
@@ -3513,7 +3513,7 @@
    "occurrences": [
     {
      "skill": "evaluation-titres-fonds",
-     "ligne": 154,
+     "ligne": 160,
      "extrait": "- **Position à motiver :** la procédure légale de la SARL (C. com. art. L. 223-14 — vérifié 28/10/2026 ; prix fixé selon C. civ. art. 1843-4 — vérifié 28/10/202"
     },
     {
@@ -4857,7 +4857,7 @@
    "occurrences": [
     {
      "skill": "socle-eca",
-     "ligne": 270,
+     "ligne": 279,
      "extrait": "| Prélèvements sociaux du patrimoine | Les taux de CSG sont **différenciés** selon la nature du revenu (dividendes/PV mobilières ≠ revenus fonciers et PV immobi"
     }
    ]
@@ -4874,7 +4874,7 @@
    "occurrences": [
     {
      "skill": "socle-eca",
-     "ligne": 272,
+     "ligne": 281,
      "extrait": "| Barème usufruit / nue-propriété | Lire la tranche « moins de N ans révolus » ; erreur fréquente d'une tranche (58 ans → NP 50 %, pas 60 %). | 23/10/2026 | CGI"
     },
     {
@@ -4896,7 +4896,7 @@
    "occurrences": [
     {
      "skill": "socle-eca",
-     "ligne": 277,
+     "ligne": 286,
      "extrait": "| Pacte Dutreil | Régime modifié par la LF 2026 (art. 8) : lire 787 B dans la version à la date de transmission (biens exclus, détention indirecte, durées). Don"
     },
     {
@@ -4918,7 +4918,7 @@
    "occurrences": [
     {
      "skill": "socle-eca",
-     "ligne": 279,
+     "ligne": 288,
      "extrait": "| Contribution différentielle (CDHR) | Elle figure à l'**art. 224 CGI** — l'« art. 150-0 F ter » cité dans les anciennes versions des skills **n'existe pas**. L"
     }
    ],
@@ -5474,13 +5474,24 @@
    "article": "38",
    "cle_librejustice": "38",
    "statut_verification": "verifie",
-   "derniere_verification": "2026-10-26",
+   "derniere_verification": "2026-11-04",
    "etat_source": {
     "statut": "VIGUEUR",
     "version_depuis": "2025-02-16",
-    "lecture": "2 (bénéfice net = variation de l'actif net) seul lu"
+    "dernier_texte_modificateur": "Loi n° 2025-127 du 14/02/2025 (LF 2025), art. 65",
+    "lecture": "2 (bénéfice net = variation de l'actif net) ; 2 bis (produits reçus d'avance rattachés à l'achèvement de la prestation) ; 3 (stocks au prix de revient ou au cours du jour s'il est inférieur)"
    },
    "occurrences": [
+    {
+     "skill": "evaluation-titres-fonds",
+     "ligne": 109,
+     "extrait": "- stock à sa valeur comptable (prix de revient), sans décote forfaitaire : Mémento, rubrique « Stocks et valeurs réalisables à court terme » de l'actif net (val"
+    },
+    {
+     "skill": "evaluation-titres-fonds",
+     "ligne": 137,
+     "extrait": "- **Produits liés au fonctionnement normal de l'activité** (ex. cartes cadeaux non utilisées à leur expiration, rattachées en produit selon CGI art. 38, 2 bis —"
+    },
     {
      "skill": "gap",
      "ligne": 230,

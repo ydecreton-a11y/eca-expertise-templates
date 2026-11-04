@@ -217,7 +217,7 @@ Une entrée 'verifie' a été lue à la source à la date indiquée. Une entrée
 | code-general-des-impots | 244 bis B | à vérifier |  | calcul-plus-value |
 | code-general-des-impots | 257 bis | 2026-10-23 | ABROGE_DIFF jusqu'au 2027-01-01 | cession-fonds, restructurations, socle-eca |
 | code-general-des-impots | 37 | 2026-10-23 |  | redaction-acte |
-| code-general-des-impots | 38 | 2026-10-26 | VIGUEUR | gap |
+| code-general-des-impots | 38 | 2026-11-04 | VIGUEUR | evaluation-titres-fonds, gap |
 | code-general-des-impots | 39 | à vérifier |  | contentieux-fiscal, gap |
 | code-general-des-impots | 39 duodecies | à vérifier |  | calcul-plus-value, gap |
 | code-general-des-impots | 54 quater | à vérifier |  | contentieux-fiscal |
