@@ -106,7 +106,9 @@ Les références marquées « vérifié 28/10/2026 » ont été lues à la sourc
   - capitaux propres ;
   - plus-value sur le fonds = valeur du fonds − VNC des incorporels, du matériel et des agencements compris dans le barème ;
   - réévaluation de l'immobilier par comparaison ;
-  - stock à son coût, décoté si sa rotation est lente ;
+  - stock à sa valeur comptable (prix de revient), sans décote forfaitaire : Mémento, rubrique « Stocks et valeurs réalisables à court terme » de l'actif net (valeurs comptables non modifiées en principe) ; guide DGFiP, III.D (stocks à leur valeur au bilan ; la fiche n° 1 ne prévoit qu'une réévaluation à la hausse) ; une perte de valeur se constate par une dépréciation dans les comptes (CGI art. 38, 3 — vérifié 04/11/2026) ;
+  - stock lent ou périssable : réserve d'inventaire daté avant toute cession, puis dépréciation ciblée des seuls articles périmés ou invendables ; une décote forfaitaire contredirait les comptes établis par le cabinet ;
+  - la décote pour écoulement difficile du Mémento n° 71290 vise le stock cédé avec un fonds : ne jamais la transposer à l'évaluation de titres ;
   - pas d'impôt latent sur les actifs d'exploitation.
 - **Valeur de productivité :** résultat d'exploitation normatif net d'IS capitalisé au coût du capital k = Rf + βa × PRM + prime spécifique (guide DGFiP), g prudent.
 - **Multiple d'EBE retraité :**
@@ -127,11 +129,15 @@ Les références marquées « vérifié 28/10/2026 » ont été lues à la sourc
   - coefficient lu dans le barème du dépôt ou du dossier, jamais de mémoire.
 - **EBE − économie de loyer, × coefficient (indépendants / enseignes), + valeur du droit au bail.**
 - **Droit au bail :** plancher de la valeur du fonds ; méthode du différentiel de loyer × coefficient de situation, ou comparaison.
-- **Stock :** évalué séparément, avec décote si la rotation est lente.
+- **Stock :** évalué séparément, avec décote si l'écoulement est difficile (Mémento n° 71290). Règle propre à la cession d'un fonds, jamais transposée à l'évaluation de titres.
 
 ## Retraitements normatifs (phase 2)
 
-- **Éléments non récurrents :** cartes cadeaux périmées, régularisations, produits ou charges exceptionnels.
+- **Éléments non récurrents :** régularisations, produits ou charges exceptionnels. Critère du guide DGFiP : l'agrégat normatif reflète la performance récurrente et durable et ne neutralise que les éléments non récurrents, atypiques ou non représentatifs.
+- **Produits liés au fonctionnement normal de l'activité** (ex. cartes cadeaux non utilisées à leur expiration, rattachées en produit selon CGI art. 38, 2 bis — vérifié 04/11/2026) : conservés dans l'EBE normatif tant qu'ils sont appelés à se reproduire.
+  - L'absence d'un tel produit sur un premier exercice incomplet ne prouve pas sa non-récurrence.
+  - L'exclure « par prudence » n'est pas neutre dans une sortie d'associé : cela baisse le prix au profit des acquéreurs.
+  - Signaler la cohérence avec la trésorerie : la part des cartes en cours qui ne sera jamais utilisée n'est pas une dette économique ; à défaut de recul pour la mesurer, la retenir en totalité et le dire.
 - **Rémunération des dirigeants :**
   - garder la rémunération normale ;
   - réintégrer l'excédent si elle est excessive ;

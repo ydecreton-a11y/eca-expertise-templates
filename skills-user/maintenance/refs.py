@@ -45,7 +45,7 @@ REMAP = {('code-civil', 'L. 221-14'): ('code-de-commerce', 'L. 221-14'),
          ('code-civil', '3'): ('code-civil', '1137'),
          (CGI, '2 ter'): (CGI, '200 A'),
          ('code-du-travail', 'L. 141-23'): ('code-de-commerce', 'L. 141-23')}
-DROP = {('code-de-commerce', '2026-403'), ('code-de-commerce', '22'),
+DROP = {('code-de-commerce', '2026-403'), ('code-de-commerce', '22'), (CGI, '2 bis'),
         ('code-de-la-securite-sociale', '2026-534'),
         ('livre-des-procedures-fiscales', '2026-692'), (CGI, '2')}
 INEXISTANTS = {(CGI, '150-0 F ter')}
