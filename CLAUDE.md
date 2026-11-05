@@ -8,6 +8,7 @@
 > 28/10/2026 : ajout de `evaluation-titres-fonds` (documentation dans `12_évaluation_entreprise`).
 > 02/11/2026 : connecteur Casus interrogé en direct (carte des connecteurs `socle-eca` § 2, matrice du checker) ; retrait de `prompt-builder-eca`.
 > 05/11/2026 : contrôleur de livrable (modules A à E) branché en fin de livrable (`socle-eca` § 9) ; checker : contrôle de l'adéquation du fondement (Phase 2quinquies).
+> 05/11/2026 : contrôleur de livrable v2 — modules F (structure, renvois, termes définis) et G (fidélité au modèle, option `--modele`).
 
 ---
 

@@ -59,6 +59,7 @@ def doc_protocole(errone):
         d.add_paragraph("Clause rédigée d'après le modèle de pacte de Violaine Schmidt.")                                                    # C1 (x2) + modèle
     else:
         d.add_paragraph("Adresse du Cessionnaire : 12 rue des Exemples, 59000 Lille.")
+    d.add_paragraph("Les Titres sont cédés libres de tout nantissement.")
     d.add_paragraph("Fait à Cambrai, le 5 novembre 2026, en deux exemplaires originaux.")
     return d
 
@@ -92,6 +93,92 @@ def doc_pacte(errone):
         d.add_paragraph("Le prix est minoré de 10 % (dix pour cent) en cas de faute ; l'associé concerné en est informé.")
     d.add_paragraph("Les associés conviennent que l'abattement prévu à l'article 150-0 D du CGI s'applique au taux de 50 % dans les conditions légales.")
     return d
+
+
+def doc_structure(errone):
+    d = Document()
+    d.core_properties.author = "Yoann Decreton"
+    d.add_heading("ACTE DE CESSION", 0)
+    d.add_paragraph("ENTRE M. Jean EXEMPLE (ci-après le « Cédant ») ET la société HORIZON BOIS (ci-après le « Cessionnaire »).")
+    d.add_heading("ARTICLE 1 : DÉFINITIONS", 1)
+    d.add_paragraph("« Actions » désigne les actions cédées.")
+    d.add_paragraph("« Prix » désigne le prix de cession des Actions.")
+    d.add_paragraph("« Date de Réalisation » désigne la date de transfert des Actions." if not errone else "« Comptes de Référence » désigne les comptes du dernier exercice.")
+    d.add_paragraph("« Garantie » désigne la garantie d'actif et de passif consentie par le Cédant.")
+    if errone:
+        d.add_paragraph("« Prix » désigne le prix ajusté selon l'article 2.")              # F : défini deux fois
+    d.add_heading("ARTICLE 2 : PRIX", 1)
+    d.add_heading("2.1 Montant", 2)
+    d.add_paragraph("Le Prix est payé par le Cessionnaire au Cédant à la Date de Réalisation.")
+    d.add_heading("2.3 Paiement" if errone else "2.2 Paiement", 2)            # F : 2.2 manquant
+    d.add_paragraph("Le paiement intervient à la Date de Réalisation, sur les Comptes de Référence." if errone
+                    else "Le paiement intervient à la Date de Réalisation par virement.")
+    d.add_heading("ARTICLE 3 : GARANTIE", 1)
+    d.add_paragraph("Le Cédant consent la Garantie au Cessionnaire." if not errone else "Le Cédant consent une garantie au Cessionnaire.")  # F : Garantie inutilisée
+    d.add_heading("ARTICLE 5 : NOTIFICATIONS" if errone else "ARTICLE 4 : NOTIFICATIONS", 1)   # F : article 4 manquant
+    d.add_paragraph("Les notifications prévues à l'article 7 des présentes sont faites par lettre recommandée." if errone   # F : renvoi vers 7
+                    else "Les notifications prévues à l'article 2.2 ci-dessus sont faites par lettre recommandée.")
+    d.add_paragraph("Le Cédant remet les registres à la Date de Réalisation.")
+    d.add_paragraph("Fait à Cambrai, le 5 novembre 2026.")
+    return d
+
+
+def _remplacer(doc, remplacements, supprimer=(), ajouter_apres=None):
+    for p in list(doc.paragraphs):
+        t = p.text
+        if any(x in t for x in supprimer):
+            p._element.getparent().remove(p._element)
+            continue
+        n = t
+        for a, b in remplacements:
+            n = n.replace(a, b)
+        if n != t and p.runs:
+            p.runs[0].text = n
+            for r in p.runs[1:]:
+                r.text = ""
+        if ajouter_apres and ajouter_apres[0] in n:
+            nouveau = doc.add_paragraph(ajouter_apres[1])
+            p._element.addnext(nouveau._element)
+
+
+DONNEES_FICTIVES = [
+    ("Madame Céline, Annick LEGRAND", "Monsieur Paul, Henri FICTIF"), ("Je soussignée", "Je soussigné"),
+    ("16 décembre 1983 à ARRAS (62)", "3 mars 1979 à DOUAI (59)"), ("Née le", "Né le"),
+    ("5, rue de la Vieille Ville à SIMENCOURT (62123)", "12, rue des Exemples à LILLE (59000)"),
+    ("Agissant en qualité de Présidente", "Agissant en qualité de Président"),
+    ("« CeLeFi »", "« ATELIER FICTIF »"), ("20 000 euros", "7 500 euros"),
+    ("951 054 154 R.C.S. ARRAS", "912 345 678 R.C.S. LILLE MÉTROPOLE"),
+    ("Centre Commercial LECLERC – 95, avenue LOBBEDEZ – 62000 ARRAS", "3 place du Marché – 59400 CAMBRAI"),
+    ("par suppression du nom d’usage « FICHEUX » à la suite du jugement de divorce du Tribunal judiciaire d’ARRAS du 11 juin 2024",
+     "par suppression du nom d’usage « DURAND » à la suite du jugement de divorce du Tribunal judiciaire de LILLE du 3 février 2025"),
+]
+
+
+def docs_modele(dossier):
+    import glob
+    racine = os.path.abspath(os.path.join(ICI, "..", "..", "..", ".."))
+    trouves = [f for f in glob.glob(os.path.join(racine, "**", "*.docx"), recursive=True)
+               if "celefi" in os.path.basename(f).lower() and "pouvoir" in os.path.basename(f).lower()]
+    if not trouves:
+        print("Modèle CELEFI introuvable dans le dépôt : banc G ignoré")
+        return None
+    modele = trouves[0]
+    shutil.copy(modele, os.path.join(dossier, "modele_procuration.docx"))
+    fid = Document(modele)
+    _remplacer(fid, DONNEES_FICTIVES)
+    fid.save(os.path.join(dossier, "g_fidele.docx"))
+    par = Document(modele)
+    _remplacer(par, DONNEES_FICTIVES + [("L’exécution de ce mandat vaudra décharge au mandataire.",
+                                          "Le mandataire sera valablement déchargé par l’accomplissement de sa mission."),
+                                         ("produire toutes pièces justificatives", "fournir les pièces qui seraient utiles")],
+               supprimer=("de la modification de mon adresse personnelle",),
+               ajouter_apres=("de la mise à jour des informations relatives aux bénéficiaires effectifs.",
+                              "de la nomination d’un directeur général délégué ;"))
+    par.save(os.path.join(dossier, "g_reformule.docx"))
+    rel = Document(modele)
+    _remplacer(rel, [x for x in DONNEES_FICTIVES if not x[0].startswith("951")])
+    rel.save(os.path.join(dossier, "g_reliquat.docx"))
+    return os.path.join(dossier, "modele_procuration.docx")
 
 
 def ajouter_suivi_et_commentaire(chemin):
@@ -132,6 +219,11 @@ ATTENDU = {
     "procuration_erronee.docx": [
         ("C", "bloquant", "CELEFI"), ("A", "bloquant", "huit jours"), ("D", "bloquant", "{{ADRESSE_SIEGE}}"),
     ],
+    "structure_erronee.docx": [
+        ("F", "bloquant", "Numérotation discontinue"), ("F", "a_verifier", "2.2 attendu"),
+        ("F", "a_verifier", "article 7"), ("F", "a_verifier", "« Garantie » jamais utilisé"),
+        ("F", "a_verifier", "« Prix » défini plusieurs fois"), ("F", "a_verifier", "« Date de Réalisation »"),
+    ],
     "pacte_errone.docx": [
         ("A", "bloquant", "trente jours"), ("D", "bloquant", "[PERSONNE_1]"),
         ("B", "a_verifier", "150-0 D"), ("B", "a_verifier", "50 %"),
@@ -139,10 +231,19 @@ ATTENDU = {
 }
 
 
-def lancer(chemin):
+ATTENDU_G = {
+    "g_reformule.docx": [("G", "a_verifier", "Rédaction différente du modèle"), ("G", "a_verifier", "Paragraphe du modèle absent"),
+                         ("G", "a_verifier", "Paragraphe ajouté")],
+    "g_reliquat.docx": [("G", "a_verifier", "951 054 154")],
+}
+
+
+def lancer(chemin, modele=None):
     sortie = tempfile.mktemp(suffix=".json")
-    r = subprocess.run([sys.executable, "-I", SCRIPT, chemin, "--json", sortie, "--rapport", os.devnull],
-                       capture_output=True, text=True)
+    cmd = [sys.executable, "-I", SCRIPT, chemin, "--json", sortie, "--rapport", os.devnull]
+    if modele:
+        cmd += ["--modele", modele]
+    r = subprocess.run(cmd, capture_output=True, text=True)
     if r.returncode == 1:
         raise RuntimeError(r.stderr)
     import json
@@ -162,9 +263,14 @@ def main():
         fabrique(False).save(p_ok)
         if nom == "protocole":
             ajouter_suivi_et_commentaire(p_err)
+    doc_structure(True).save(os.path.join(dossier, "structure_erronee.docx"))
+    doc_structure(False).save(os.path.join(dossier, "structure_propre.docx"))
+    modele = docs_modele(dossier)
 
     total, trouves, faux = 0, 0, []
     for fichier in sorted(os.listdir(dossier)):
+        if fichier.startswith(("g_", "modele_")):
+            continue
         res, code = lancer(os.path.join(dossier, fichier))
         constats = res["constats"]
         if fichier in ATTENDU:
@@ -183,6 +289,25 @@ def main():
             for c in bloquants + averif:
                 faux.append((fichier, c))
                 print("    fausse alerte ? %s %s — %s" % (c["module"], c["gravite"], c["objet"]))
+    if modele:
+        for fichier in ("g_fidele.docx", "g_reformule.docx", "g_reliquat.docx"):
+            res, code = lancer(os.path.join(dossier, fichier), modele)
+            cg = [c for c in res["constats"] if c["module"] == "G"]
+            if fichier in ATTENDU_G:
+                for mod, grav, frag in ATTENDU_G[fichier]:
+                    total += 1
+                    ok = any(c["gravite"] == grav and (frag in c["objet"] or frag in c["detail"]) for c in cg)
+                    trouves += ok
+                    print("%s %-28s %s %-10s %s" % ("OK " if ok else "RATÉ", fichier, mod, grav, frag))
+            else:
+                alertes = [c for c in cg if c["gravite"] != "information"]
+                print("PROPRE %-24s alertes G : %d" % (fichier, len(alertes)))
+                for c in alertes:
+                    faux.append((fichier, c))
+                    print("    fausse alerte ? %s — %s | %s" % (c["gravite"], c["objet"], c["detail"][:120]))
+            for c in cg:
+                if c["gravite"] == "information":
+                    print("    " + c["objet"])
     print("\nDétection : %d / %d erreurs insérées" % (trouves, total))
     print("Alertes sur les versions propres : %d" % len(faux))
     return 0 if trouves == total and not faux else 3

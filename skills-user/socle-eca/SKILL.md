@@ -412,9 +412,22 @@ notaire.
      `controle_livrable.py` et sa configuration par leur nom, sans se fier à
      un chemin ; les exécuter avec Python 3 sur le fichier final, après la
      dernière modification et avant la remise.
+   - **Acte de la vie sociale repris d'un modèle du dépôt** (PV, décisions,
+     procuration, § 6.0) : lancer le contrôleur avec l'option `--modele`
+     suivie du fichier du modèle utilisé. Le modèle donne la trame et la
+     présentation, pas un texte intangible : chaque écart signalé (mots
+     retirés ou ajoutés hors données du dossier, paragraphe supprimé ou
+     ajouté) doit être voulu, c'est-à-dire une clause non pertinente écartée
+     ou un modèle complété ou corrigé (§ 6.0), et se justifie alors en une
+     ligne auprès de Yoann ; un écart involontaire (reformulation, oubli) est
+     corrigé. Chaque donnée du précédent restée dans le livrable (nom,
+     adresse, numéro, montant) est vérifiée. Aucune alerte du contrôleur ne
+     justifie d'ajouter à un acte de la vie sociale un article de
+     définitions ou un autre élément du standard M&A.
    - **Anomalie bloquante** (délai non qualifié, mention d'un tiers ou d'un
      précédent client, champ non rempli, suivi des modifications,
-     commentaire, texte masqué, discordance chiffres / lettres) : corriger,
+     commentaire, texte masqué, discordance chiffres / lettres, numérotation
+     d'articles discontinue, renvoi vers un article inexistant) : corriger,
      puis relancer jusqu'à zéro. Un projet circulant expressément comme tel
      peut conserver des champs à remplir : Yoann décide, et la remise le
      mentionne.
@@ -427,8 +440,9 @@ notaire.
      d'anomalies par gravité, corrections faites).
    - **Si le contrôleur ne peut pas s'exécuter** (dépôt inaccessible, pas
      d'environnement Python, code de sortie 1) : le dire en une ligne, faire
-     les contrôles A, C, D et E à la main sur le texte et les propriétés du
-     fichier, et ne jamais présenter le livrable comme contrôlé par l'outil.
+     les contrôles à la main (délais, mentions de tiers, champs et
+     propriétés du fichier, montants, numérotation et renvois, fidélité au
+     modèle) et ne jamais présenter le livrable comme contrôlé par l'outil.
    - **Limites** : contrôle de forme, mécanique ; il ne vérifie ni le fond ni
      l'exactitude des références, et ne remplace ni le checker ni la relecture
      (§ 6.12). Un délai reproduit d'un texte légal hors guillemets peut être
