@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Contrôleur de livrable ECA EXPERTISE — version 1 (modules A à E).
+Contrôleur de livrable ECA EXPERTISE — version 2 (modules A à G).
 
 Contrôles mécaniques d'un livrable Word (.docx), texte (.txt) ou Markdown (.md)
 avant remise. Le contrôleur ne juge pas le fond : il repère, il ne certifie pas.
@@ -16,10 +16,17 @@ avant remise. Le contrôleur ne juge pas le fond : il repère, il ne certifie pa
   D. Résidus de rédaction (champs non remplis, suivi des modifications,
      commentaires, surlignages, texte masqué, métadonnées d'auteur).
   E. Discordances entre montants ou nombres en chiffres et en lettres.
+  F. Structure : numérotation des articles (y compris numérotation automatique
+     de Word), renvois internes vers un article inexistant, termes définis non
+     utilisés, définis deux fois, ou employés sans définition.
+  G. Fidélité au modèle (option --modele) : paragraphes dont la rédaction
+     s'écarte du modèle au-delà des données du dossier, paragraphes ajoutés ou
+     supprimés, données du précédent restées dans le livrable.
 
 Usage :
   python3 controle_livrable.py LIVRABLE.docx [--config fichier.json]
                                [--rapport rapport.md] [--json rapport.json]
+                               [--modele modele_du_depot.docx]
 
 Code de sortie : 2 si au moins une anomalie bloquante, 0 sinon, 1 si erreur.
 Aucune dépendance hors de la bibliothèque standard de Python.
@@ -54,11 +61,16 @@ LETTRE = r"A-Za-zÀ-ÖØ-öø-ÿŒœ"
 class Bloc:
     """Un paragraphe de texte avec sa localisation."""
 
-    def __init__(self, partie, numero, section, texte):
+    def __init__(self, partie, numero, section, texte, label="", style=""):
         self.partie = partie      # corps, note, en-tête, pied, commentaire
         self.numero = numero      # rang du paragraphe dans sa partie
         self.section = section    # dernier titre ou article rencontré
         self.texte = texte
+        self.label = label        # numéro automatique affiché par Word (« ARTICLE 3 : », « 2.1 »), absent du texte
+        self.style = style        # identifiant du style de paragraphe Word
+
+    def affiche(self):
+        return (self.label + " " + self.texte).strip() if self.label else self.texte
 
     def lieu(self):
         lieu = "%s, § %d" % (self.partie, self.numero)
@@ -102,6 +114,126 @@ def _est_titre(p, texte):
     return bool(RE_TITRE.match(texte)) and len(texte) < 140
 
 
+# --------------------------------------------------------------------------
+# Numérotation automatique de Word
+# --------------------------------------------------------------------------
+
+def _romain(n):
+    vals = [(1000, "M"), (900, "CM"), (500, "D"), (400, "CD"), (100, "C"), (90, "XC"),
+            (50, "L"), (40, "XL"), (10, "X"), (9, "IX"), (5, "V"), (4, "IV"), (1, "I")]
+    r = ""
+    for v, l in vals:
+        while n >= v:
+            r += l
+            n -= v
+    return r
+
+
+def _format_num(n, fmt):
+    if fmt in ("upperRoman",):
+        return _romain(n)
+    if fmt in ("lowerRoman",):
+        return _romain(n).lower()
+    if fmt in ("upperLetter",):
+        return chr(64 + ((n - 1) % 26) + 1) if n > 0 else ""
+    if fmt in ("lowerLetter",):
+        return chr(96 + ((n - 1) % 26) + 1) if n > 0 else ""
+    if fmt in ("bullet", "none"):
+        return None
+    return str(n)  # decimal et formats assimilés
+
+
+class Numerotation:
+    """Reconstitue les numéros affichés par Word (numbering.xml et styles.xml)."""
+
+    def __init__(self, z, noms):
+        self.abstraits, self.nums, self.styles = {}, {}, {}
+        self.compteurs = {}
+        if "word/numbering.xml" in noms:
+            r = ET.fromstring(z.read("word/numbering.xml"))
+            for a in r.findall(W + "abstractNum"):
+                niveaux = {}
+                for lvl in a.findall(W + "lvl"):
+                    il = int(lvl.get(W + "ilvl", "0"))
+                    st = lvl.find(W + "start")
+                    fm = lvl.find(W + "numFmt")
+                    tx = lvl.find(W + "lvlText")
+                    niveaux[il] = (int(st.get(W + "val", "1")) if st is not None else 1,
+                                   fm.get(W + "val", "decimal") if fm is not None else "decimal",
+                                   tx.get(W + "val", "") if tx is not None else "")
+                self.abstraits[a.get(W + "abstractNumId")] = niveaux
+            for n in r.findall(W + "num"):
+                ref = n.find(W + "abstractNumId")
+                surcharges = {}
+                for o in n.findall(W + "lvlOverride"):
+                    so = o.find(W + "startOverride")
+                    if so is not None:
+                        surcharges[int(o.get(W + "ilvl", "0"))] = int(so.get(W + "val", "1"))
+                if ref is not None:
+                    self.nums[n.get(W + "numId")] = (ref.get(W + "val"), surcharges)
+        if "word/styles.xml" in noms:
+            r = ET.fromstring(z.read("word/styles.xml"))
+            base = {}
+            for st in r.findall(W + "style"):
+                sid = st.get(W + "styleId")
+                bo = st.find(W + "basedOn")
+                base[sid] = bo.get(W + "val") if bo is not None else None
+                ppr = st.find(W + "pPr")
+                np_ = ppr.find(W + "numPr") if ppr is not None else None
+                if np_ is not None:
+                    ni = np_.find(W + "numId")
+                    il = np_.find(W + "ilvl")
+                    self.styles[sid] = (ni.get(W + "val") if ni is not None else None,
+                                        int(il.get(W + "val", "0")) if il is not None else 0)
+            for sid in list(base):
+                vu, cur = 0, sid
+                while cur and cur not in self.styles and vu < 5:
+                    cur, vu = base.get(cur), vu + 1
+                if cur and cur in self.styles and sid not in self.styles:
+                    self.styles[sid] = self.styles[cur]
+
+    def label(self, p):
+        num_id, ilvl = None, 0
+        ppr = p.find(W + "pPr")
+        if ppr is not None:
+            ps = ppr.find(W + "pStyle")
+            if ps is not None and ps.get(W + "val") in self.styles:
+                num_id, ilvl = self.styles[ps.get(W + "val")]
+            np_ = ppr.find(W + "numPr")
+            if np_ is not None:
+                ni = np_.find(W + "numId")
+                il = np_.find(W + "ilvl")
+                if ni is not None:
+                    num_id = ni.get(W + "val")
+                if il is not None:
+                    ilvl = int(il.get(W + "val", "0"))
+        if not num_id or num_id == "0" or num_id not in self.nums:
+            return ""
+        abs_id, surcharges = self.nums[num_id]
+        niveaux = self.abstraits.get(abs_id, {})
+        if ilvl not in niveaux:
+            return ""
+        # Compteurs par liste abstraite : les listes qui partagent une définition continuent la même suite.
+        cpt = self.compteurs.setdefault(abs_id, {})
+        depart = surcharges.get(ilvl, niveaux[ilvl][0])
+        cpt[ilvl] = cpt.get(ilvl, depart - 1) + 1
+        for k in list(cpt):
+            if k > ilvl:
+                del cpt[k]
+        start, fmt, texte = niveaux[ilvl]
+        if _format_num(1, fmt) is None:
+            return ""
+
+        def remplace(m):
+            k = int(m.group(1)) - 1
+            if k not in niveaux:
+                return ""
+            v = cpt.get(k, surcharges.get(k, niveaux[k][0]))
+            f = _format_num(v, niveaux[k][1])
+            return f if f is not None else ""
+        return re.sub(r"%(\d)", remplace, texte).strip()
+
+
 def lire_docx(chemin):
     blocs, meta, constats_bruts = [], {}, []
     with zipfile.ZipFile(chemin) as z:
@@ -126,14 +258,17 @@ def lire_docx(chemin):
                 continue
             racine = ET.fromstring(z.read(nom))
             section, numero = "", 0
+            numerotation = Numerotation(z, noms) if libelle == "corps" else None
             for p in racine.iter(W + "p"):
+                label = numerotation.label(p) if numerotation else ""
                 texte = _texte_paragraphe(p)
                 if not texte.strip():
                     continue
                 numero += 1
-                if libelle == "corps" and _est_titre(p, texte):
-                    section = re.sub(r"\s+", " ", texte.strip())[:70]
-                blocs.append(Bloc(libelle, numero, section, texte))
+                affiche = (label + " " + texte).strip() if label else texte
+                if libelle == "corps" and _est_titre(p, affiche):
+                    section = re.sub(r"\s+", " ", affiche.strip())[:70]
+                blocs.append(Bloc(libelle, numero, section, texte, label, _style(p)))
 
             if libelle == "corps":
                 n_ins = sum(1 for _ in racine.iter(W + "ins"))
@@ -389,6 +524,9 @@ def module_a(blocs, constats):
                                         "Ne pas modifier la citation ; si le délai engage les parties, préciser son mode de computation hors citation. "
                                         + _extrait(b.texte, m.start(), m.end())))
                 continue
+            if regle:
+                # Règle de computation par défaut présente : délai couvert, qualification recommandée (décision de Yoann du 05/11/2026).
+                gravite = "a_verifier"
             constats.append(Constat("A", gravite, b.lieu(),
                                     "Délai en jours non qualifié : « %s »" % _court(m.group(0), 50),
                                     note_defaut + _extrait(b.texte, m.start(), m.end())))
@@ -625,6 +763,347 @@ def module_e(blocs, constats):
                                         _extrait(t, m.start() - len(" ".join(pris)) - 1, m.end())))
 
 
+# --------------------------------------------------------------------------
+# Module F — Structure : numérotation, renvois internes, termes définis
+# --------------------------------------------------------------------------
+
+RE_TOC = re.compile(r"(?:\t|[.…]{4,})\s*\d+\s*$")
+RE_ART_MOT = re.compile(r"^\s*\[?\s*(?:ARTICLE|Article)\s+(\d+)(?:\.(\d+(?:\.\d+)*))?\b")
+RE_NUM_DEBUT = re.compile(r"^\s*(\d+)(?:\.(\d+(?:\.\d+)*))?\s*[.):\-–]?\s")
+
+
+def _niveau_titre(style):
+    m = re.match(r"^(?:Titre|Heading|titre|heading)\s?(\d)$", style or "")
+    return int(m.group(1)) if m else 0
+
+
+def _est_toc(b):
+    st = (b.style or "").upper()
+    return st.startswith("TM") or st.startswith("TOC") or bool(RE_TOC.search(b.texte))
+
+
+def structure_articles(blocs):
+    """Liste ordonnée des articles et sous-articles du corps : [(numéro tuple, bloc)]."""
+    res = []
+    for b in blocs:
+        if b.partie != "corps" or _est_toc(b):
+            continue
+        aff = b.affiche()
+        m = RE_ART_MOT.match(aff)
+        niveau = _niveau_titre(b.style)
+        if m and len(aff) < 200:
+            num = (int(m.group(1)),) + tuple(int(x) for x in (m.group(2) or "").split(".") if x)
+            res.append((num, b))
+            continue
+        if niveau in (1, 2, 3) and len(aff) < 200:
+            m2 = RE_NUM_DEBUT.match(aff + " ")
+            if m2:
+                num = (int(m2.group(1)),) + tuple(int(x) for x in (m2.group(2) or "").split(".") if x)
+                res.append((num, b))
+                continue
+        # Sous-article numéroté « 3.2 » en tête de paragraphe court (titre non stylé)
+        m3 = re.match(r"^\s*(\d{1,2})\.(\d{1,2}(?:\.\d{1,2})*)\.?\s+[A-ZÉÈÀ]", aff)
+        if m3 and len(aff) < 160:
+            res.append(((int(m3.group(1)),) + tuple(int(x) for x in m3.group(2).split(".")), b))
+    return res
+
+
+RE_RENVOI = re.compile(
+    r"\b(?:l['’]\s*)?(?:articles?|art\.)\s+(\d+(?:\.\d+)*)(?!\.?\d)(?:\s*(?:,|et|à)\s*(\d+(?:\.\d+)*)(?!\.?\d))?"
+    r"(?=\s*(?:ci-dessus|ci-dessous|ci-apr[èe]s|ci-avant|des\s+pr[ée]sentes|du\s+pr[ée]sent|de\s+la\s+pr[ée]sente|[,;.)]|\s+(?:et|ou|pour|qui|sera|seront|ne|de\s+l|en)\b|$))",
+    re.IGNORECASE)
+RE_RENVOI_EXTERNE = re.compile(r"^\s*(?:des\s+[Ss]tatuts|du\s+[Pp]acte|du\s+[Cc]ode|de\s+la\s+[Cc]onvention|du\s+[Rr][èe]glement|de\s+l['’](?:[Aa]ccord|[Aa]cte\s+de)|du\s+[Cc]ontrat\s+de|du\s+[Tt]rait[ée]|de\s+la\s+loi|du\s+d[ée]cret|du\s+CGI|du\s+LPF)")
+
+
+def module_f(blocs, constats, inventaire):
+    corps = [b for b in blocs if b.partie == "corps"]
+    arts = structure_articles(corps)
+    principaux = [(n, b) for n, b in arts if len(n) == 1]
+    numeros = [n[0] for n, _ in principaux]
+    existants = set(n for n, _ in arts)
+    confiance = False
+    # F1 — Numérotation des articles
+    if len(numeros) >= 3:
+        attendu = numeros[0]
+        anomalie = False
+        for (n, b) in principaux:
+            if n[0] != attendu:
+                anomalie = True
+                grav = "bloquant" if not b.label else "a_verifier"
+                if n[0] < attendu:
+                    objet = "Numéro d'article en double ou en arrière : %d après %d" % (n[0], attendu - 1)
+                else:
+                    objet = "Numérotation discontinue : article %d attendu, article %d trouvé" % (attendu, n[0])
+                constats.append(Constat("F", grav, b.lieu(), objet, _court(b.affiche(), 120)))
+            attendu = n[0] + 1
+        confiance = not anomalie
+        # Sous-articles : continuité sous chaque article
+        par_parent = {}
+        for n, b in arts:
+            if len(n) == 2:
+                par_parent.setdefault(n[0], []).append((n[1], b))
+        for parent, liste in par_parent.items():
+            att = liste[0][0]
+            for k, b in liste:
+                if k != att:
+                    constats.append(Constat("F", "a_verifier", b.lieu(),
+                                            "Sous-numérotation discontinue sous l'article %d : %d.%d attendu, %d.%d trouvé" % (parent, parent, att, parent, k),
+                                            _court(b.affiche(), 120)))
+                att = k + 1
+            if parent not in numeros:
+                constats.append(Constat("F", "a_verifier", liste[0][1].lieu(),
+                                        "Sous-article %d.%d rattaché à un article %d introuvable" % (parent, liste[0][0], parent),
+                                        _court(liste[0][1].affiche(), 120)))
+    # F2 — Renvois internes
+    if len(numeros) >= 3:
+        for b in corps:
+            if _est_toc(b):
+                continue
+            t = b.texte
+            for m in RE_RENVOI.finditer(t):
+                suite = t[m.end():m.end() + 40]
+                if RE_RENVOI_EXTERNE.match(suite):
+                    continue
+                avant = t[max(0, m.start() - 60):m.start()]
+                if re.search(r"\b(?:son|sa|ses|leur|leurs|dudit|de\s+ladite|dudit\s+acte)\s*$", avant, re.IGNORECASE):
+                    continue  # article d'un autre acte (« à son article 11 »)
+                if re.search(SOURCES_LEGALES, suite[:30], re.IGNORECASE) or re.search(r"\b(?:CGI|LPF|code|C\.\s?civ|C\.\s?com)\b[^.]{0,20}$", avant, re.IGNORECASE):
+                    continue
+                for g in (m.group(1), m.group(2)):
+                    if not g:
+                        continue
+                    num = tuple(int(x) for x in g.split("."))
+                    if num[0] > 99:
+                        continue  # numéro d'article de code
+                    subs = sorted(n[1] for n in existants if len(n) == 2 and n[0] == num[0])
+                    subs_fiables = bool(subs) and subs == list(range(1, len(subs) + 1))
+                    cible_ok = num in existants or (len(num) > 1 and num[:1] in existants and not subs_fiables) \
+                        or (len(num) > 2 and num[:2] in existants)
+                    if not cible_ok:
+                        if len(num) == 1 and num[0] not in numeros:
+                            grav = "bloquant" if confiance and num[0] > max(numeros) else "a_verifier"
+                        else:
+                            grav = "a_verifier"
+                        constats.append(Constat("F", grav, b.lieu(),
+                                                "Renvoi interne vers l'article %s, introuvable dans le document" % g,
+                                                "Articles repérés : %s. %s" % (_plage(numeros), _extrait(t, m.start(), m.end()))))
+    elif len(numeros) < 3 and any(i["type"] == "renvoi interne" for i in inventaire):
+        constats.append(Constat("F", "information", "Document",
+                                "Structure en articles non reconnue : renvois internes non contrôlés",
+                                "Le document ne comporte pas au moins trois articles identifiables (mot « Article », titre numéroté)."))
+    # F3 — Termes définis
+    termes = {}
+    for b in corps:
+        aff = b.affiche()
+        for m in re.finditer(r"^\s*(?:[-–•]\s*)?[«\"“]\s*([^»\"”]{2,60}?)\s*[»\"”]\s*(?:,|:|–|—|-|d[ée]signe|signifie|s['’]entend|a\s+le\s+sens|d[ée]signent|signifient)", aff):
+            termes.setdefault(m.group(1).strip(), []).append(("liste", b))
+        for m in re.finditer(r"\((?:ci-?apr[èe]s|ensemble|ci-dessous|individuellement|chacun)?[^()]{0,50}?[«\"“]\s*([^»\"”]{2,60}?)\s*[»\"”][^()]{0,40}\)", aff):
+            termes.setdefault(m.group(1).strip(), []).append(("incise", b))
+        if not RE_ART_MOT.match(aff) and not _niveau_titre(b.style):
+            m = re.match(r"^\s*(?:[-–•]\s*)?([A-ZÉÈÀ][\wÀ-ÿ'’\-]*(?:\s+(?:de|du|des|d['’]|de\s+la|à|en|et)?\s*[A-ZÉÈÀ][\wÀ-ÿ'’\-]*){0,4})\s*:\s", aff)
+            if m and len(aff) > len(m.group(0)) + 25 and "finition" in (b.section or ""):
+                termes.setdefault(m.group(1).strip(), []).append(("liste", b))
+    nets = {}
+    for k, v in termes.items():
+        k2 = re.sub(r"^(?:Les|Le|La|L['’])\s*", "", k).replace("(s)", "").strip()
+        if " et le verbe " in k2 or not k2[:1].isupper() or len(k2) > 60:
+            continue
+        nets.setdefault(k2, []).extend(v)
+    termes = nets
+    texte_corps = [(b, b.texte) for b in corps if not _est_toc(b)]
+    def _motif_terme(terme):
+        mots = terme.split()
+        corps = r"\s+".join(re.escape(m) + r"(?:s|x)?" for m in mots)
+        return re.compile(r"(?<![%s])%s(?![%s])" % (LETTRE, corps, LETTRE))
+
+    def _forme(x):
+        return " ".join(re.sub(r"[sx]$", "", w) for w in _sans_accent(x.lower()).split())
+
+    for terme, defs in termes.items():
+        motif = _motif_terme(terme)
+        paragraphes_def = set(id(b) for _, b in defs)
+        usages = sum(len(motif.findall(t)) for b, t in texte_corps if id(b) not in paragraphes_def)
+        listes = [b for k, b in defs if k == "liste"]
+        if usages == 0:
+            constats.append(Constat("F", "a_verifier", defs[0][1].lieu(),
+                                    "Terme défini « %s » jamais utilisé ensuite" % terme,
+                                    "Supprimer la définition ou vérifier que le terme est employé sous la même forme."))
+        if len(listes) > 1 and len(set(_court(b.texte, 300) for b in listes)) > 1:
+            constats.append(Constat("F", "a_verifier", listes[1].lieu(),
+                                    "Terme « %s » défini plusieurs fois" % terme,
+                                    "Premières définitions : %s | %s" % (_court(listes[0].texte, 90), _court(listes[1].texte, 90))))
+    if len(termes) >= 5:
+        connus = set(termes)
+        connus_bas = set(_forme(x) for x in connus)
+        tout_texte = "\n".join(t for _, t in texte_corps)
+        candidats = {}
+        motif_cand = re.compile(r"(?<=[a-zà-ÿ,;:)»] )([A-ZÉÈÀ][a-zà-ÿ'’\-]+(?:\s+(?:de\s+la|de|du|des|d['’]|à|en|et|aux?)?\s*[A-ZÉÈÀ][a-zà-ÿ'’\-]+){1,3})")
+        for b, t in texte_corps:
+            for m in motif_cand.finditer(t):
+                cand = m.group(1)
+                candidats.setdefault(cand, []).append(b)
+        exclus = re.compile(r"^(?:Messieurs|Mesdames|Monsieur|Madame|Mademoiselle|Avocat|Notaire|Expert|Ma[îi]tre|Me|Docteur|Dr|Tribunal|Cour|Conseil|Code|Registre|Greffe|R[ée]publique|Banque|Caisse|Cr[ée]dit|Soci[ée]t[ée]\s+G[ée]n[ée]rale|Union|[ÉE]tat|Direction|Minist[èe]re|Journal|Bulletin|Chambre|Ordre|Conseil|Centre|Institut|Agence|Service)\b")
+        retenus = []
+        for cand, bs in candidats.items():
+            if len(bs) < 3 or exclus.match(cand) or re.search(r"\b(?:Monsieur|Madame|Mme|M)$", cand) \
+                    or re.match(r"^(?:Route|Rue|Avenue|Boulevard|Chemin|Place|All[ée]e|Impasse|Quai|Parc|Zone|ZAC|ZI)\b", cand) \
+                    or re.search(r"(?:Monsieur|Madame|Mademoiselle|Messieurs|M\.|Mme|Me|Ma[îi]tre|Docteur|[Rr]ue|[Aa]venue|[Bb]oulevard|[Pp]lace|[Cc]hemin|[Qq]uai)\s+(?:du\s+|de\s+la\s+|des\s+)?" + re.escape(cand), tout_texte) \
+                    or _forme(cand) in connus_bas:
+                continue
+            if any(_forme(cand).startswith(_forme(k)) or _forme(k).startswith(_forme(cand)) for k in connus):
+                continue
+            retenus.append((len(bs), cand, bs[0]))
+        retenus.sort(reverse=True)
+        for nb, cand, b in retenus[:10]:
+            constats.append(Constat("F", "a_verifier", b.lieu(),
+                                    "Expression en majuscules « %s » employée %d fois sans définition repérée" % (cand, nb),
+                                    "Terme défini manquant, ou majuscule à supprimer (nom propre : ignorer)."))
+        if len(retenus) > 10:
+            constats.append(Constat("F", "information", "Document",
+                                    "%d autres expressions en majuscules sans définition, non détaillées" % (len(retenus) - 10), ""))
+
+
+def _plage(numeros):
+    if not numeros:
+        return "aucun"
+    return "%d à %d (%d)" % (min(numeros), max(numeros), len(numeros))
+
+
+# --------------------------------------------------------------------------
+# Module G — Fidélité au modèle (PV, procurations, actes de la vie sociale)
+# --------------------------------------------------------------------------
+
+import difflib
+
+RE_JETON = re.compile(r"[«»\"“”()\[\]]|(?:[dlnmstjcDLNMSTJC]|qu|Qu)['’]|[\wÀ-ÿ\-./●]+")
+
+
+MOIS = {"janvier", "février", "fevrier", "mars", "avril", "mai", "juin", "juillet", "août", "aout",
+        "septembre", "octobre", "novembre", "décembre", "decembre"}
+MOTS_OUTILS = {"de", "du", "des", "d", "d'", "d’", "la", "le", "les", "l", "l'", "l’", "qu'", "qu’", "à", "a", "au", "aux",
+               "et", "en", "sur", "sous", "chez", "rue", "avenue", "boulevard", "place", "chemin", "route", "impasse", "allée"}
+
+
+def _norm_mot(t):
+    """Forme comparable d'un mot : minuscules, sans accent, sans marque du féminin ni du pluriel."""
+    t = _sans_accent(t.lower())
+    if len(t) > 3:
+        t = re.sub(r"s$", "", t)
+    if len(t) > 1:
+        t = t.rstrip("e")
+    return t
+
+
+def _est_donnee(tok, premier=False):
+    if re.search(r"\d|●|\[|\]", tok):
+        return True
+    if tok.lower() in MOIS:
+        return True
+    lettres = re.sub(r"[^A-Za-zÀ-ÿ]", "", tok)
+    if not lettres:
+        return True  # ponctuation
+    if len(lettres) >= 2 and lettres.isupper():
+        return True
+    if lettres[0].isupper() and not premier:
+        return True
+    return False
+
+
+def _squelette(texte):
+    toks = RE_JETON.findall(texte)
+    return " ".join(_norm_mot(t) for i, t in enumerate(toks)
+                    if not _est_donnee(t, i == 0) and t.lower() not in MOTS_OUTILS)
+
+
+def lire_blocs_corps(chemin):
+    ext = os.path.splitext(chemin)[1].lower()
+    blocs = lire_docx(chemin)[0] if ext == ".docx" else lire_texte(chemin)[0]
+    return [b for b in blocs if b.partie in ("corps", "texte") and b.texte.strip()]
+
+
+def module_g(blocs, constats, chemin_modele, config):
+    modele = lire_blocs_corps(chemin_modele)
+    livrable = [b for b in blocs if b.partie in ("corps", "texte") and b.texte.strip()]
+    sq_m = [_squelette(b.affiche()) for b in modele]
+    sq_l = [_squelette(b.affiche()) for b in livrable]
+    sm = difflib.SequenceMatcher(None, sq_m, sq_l, autojunk=False)
+    nb_donnees, nb_redac = 0, 0
+    for op, i1, i2, j1, j2 in sm.get_opcodes():
+        if op == "equal":
+            for k in range(i2 - i1):
+                if modele[i1 + k].affiche() != livrable[j1 + k].affiche():
+                    nb_donnees += 1
+            continue
+        restants_l = list(range(j1, j2))
+        for i in range(i1, i2):
+            meilleur, score = None, 0.0
+            for j in restants_l:
+                r = difflib.SequenceMatcher(None, sq_m[i].split(), sq_l[j].split(), autojunk=False).ratio()
+                if r > score:
+                    meilleur, score = j, r
+            if meilleur is not None and score >= 0.5:
+                restants_l.remove(meilleur)
+                ecart = _diff_mots(modele[i].affiche(), livrable[meilleur].affiche())
+                if not ecart:
+                    nb_donnees += 1
+                    continue
+                nb_redac += 1
+                constats.append(Constat("G", "a_verifier", livrable[meilleur].lieu(),
+                                        "Rédaction modifiée par rapport au modèle (§ %d du modèle)" % modele[i].numero,
+                                        ecart))
+            else:
+                constats.append(Constat("G", "a_verifier", "Modèle, § %d" % modele[i].numero,
+                                        "Paragraphe du modèle absent du livrable",
+                                        _court(modele[i].affiche(), 160)))
+        for j in restants_l:
+            constats.append(Constat("G", "a_verifier", livrable[j].lieu(),
+                                    "Paragraphe ajouté, absent du modèle",
+                                    _court(livrable[j].affiche(), 160)))
+    # Données du précédent restées dans le livrable
+    cabinet = set(x.lower() for x in config.get("donnees_cabinet", []))
+    communs = set(x.lower() for x in config.get("mots_capitales_courants", []))
+    texte_l = "\n".join(b.affiche() for b in livrable)
+    vues = set()
+    for b in modele:
+        for m in re.finditer(r"\b\d{3}\s?\d{3}\s?\d{3}\b|\b\d{1,3}(?:[  ]\d{3})+\b|[«“]\s*([^»”]{2,40}?)\s*[»”]|\b[A-ZÉÈÀ][A-ZÉÈÀ'’\-]{3,}\b", b.texte):
+            val = (m.group(1) or m.group(0)).strip()
+            cle = val.lower()
+            if cle in vues or cle in cabinet or cle in communs or len(val) < 3:
+                continue
+            vues.add(cle)
+            if re.search(r"(?<![\wÀ-ÿ])%s(?![\wÀ-ÿ])" % re.escape(val), texte_l):
+                constats.append(Constat("G", "a_verifier", "Document",
+                                        "Donnée du modèle reprise telle quelle : « %s »" % _court(val, 50),
+                                        "Présente dans le modèle (§ %d) et dans le livrable : vérifier qu'il s'agit bien d'une donnée du dossier et non d'un reliquat du précédent." % b.numero))
+    constats.append(Constat("G", "information", "Document",
+                            "Comparaison au modèle « %s » : %d paragraphe(s) aux données remplacées, %d rédaction(s) modifiée(s)"
+                            % (os.path.basename(chemin_modele), nb_donnees, nb_redac), ""))
+
+
+def _diff_mots(a, b):
+    """Écarts de rédaction entre deux paragraphes, hors données du dossier ; chaîne vide s'il n'y en a pas."""
+    ta, tb = RE_JETON.findall(a), RE_JETON.findall(b)
+    na, nb = [_norm_mot(t) for t in ta], [_norm_mot(t) for t in tb]
+    sm = difflib.SequenceMatcher(None, na, nb, autojunk=False)
+    morceaux = []
+    for op, i1, i2, j1, j2 in sm.get_opcodes():
+        if op == "equal":
+            continue
+        sup = [t for t in ta[i1:i2]]
+        aj = [t for t in tb[j1:j2]]
+        tous = sup + aj
+        if all(_est_donnee(t) for t in tous):
+            continue
+        # Petits mots qui changent avec une donnée (« de la Vieille Ville » → « des Exemples »)
+        if any(_est_donnee(t) for t in tous) and all(_est_donnee(t) or t.lower() in MOTS_OUTILS for t in tous):
+            continue
+        if sup:
+            morceaux.append("− « %s »" % _court(" ".join(sup), 70))
+        if aj:
+            morceaux.append("+ « %s »" % _court(" ".join(aj), 70))
+    return " ; ".join(morceaux[:6])
+
+
 def _fmt(v):
     if abs(v - round(v)) < 1e-9:
         return "{:,}".format(int(round(v))).replace(",", " ")
@@ -641,6 +1120,8 @@ NOMS_MODULES = {
     "C": "C. Mentions interdites",
     "D": "D. Résidus de rédaction et métadonnées",
     "E": "E. Montants en chiffres et en lettres",
+    "F": "F. Structure : numérotation, renvois internes, termes définis",
+    "G": "G. Fidélité au modèle",
 }
 
 
@@ -657,8 +1138,10 @@ def rapport_markdown(nom, constats, inventaire, nb_blocs):
     l.append("")
     l.append("Contrôle mécanique de forme : il ne vérifie ni l'exactitude juridique ni le contenu des références "
              "(rôle du legal-hallucination-checker et de la relecture).")
-    for mod in "ACDEB":
+    for mod in "ACDEFGB":
         liste = [c for c in constats if c.module == mod]
+        if mod == "G" and not liste:
+            continue
         l.append("")
         l.append("## %s (%d)" % (NOMS_MODULES[mod], len(liste)))
         if not liste:
@@ -674,7 +1157,7 @@ def rapport_markdown(nom, constats, inventaire, nb_blocs):
     internes = [i for i in inventaire if i["type"] == "renvoi interne"]
     if internes:
         l.append("")
-        l.append("## Renvois internes repérés (%d) — contrôle de cohérence en version 2" % len(internes))
+        l.append("## Renvois internes repérés (%d)" % len(internes))
         l.append("")
         l.append(", ".join(sorted(set(i["reference"] for i in internes)))[:1500])
     return "\n".join(l) + "\n"
@@ -690,7 +1173,7 @@ def charger_config(chemin):
         return json.load(f)
 
 
-def controler(chemin, config):
+def controler(chemin, config, modele=None):
     ext = os.path.splitext(chemin)[1].lower()
     if ext == ".docx":
         blocs, meta, bruts = lire_docx(chemin)
@@ -704,19 +1187,23 @@ def controler(chemin, config):
     module_c(blocs, meta, constats, config)
     module_d(blocs, meta, bruts, constats, config)
     module_e(blocs, constats)
+    module_f(blocs, constats, inventaire)
+    if modele:
+        module_g(blocs, constats, modele, config)
     return constats, inventaire, len(blocs), meta
 
 
 def main():
-    ap = argparse.ArgumentParser(description="Contrôleur de livrable ECA EXPERTISE (modules A à E).")
+    ap = argparse.ArgumentParser(description="Contrôleur de livrable ECA EXPERTISE (modules A à G).")
     ap.add_argument("livrable")
     ap.add_argument("--config")
     ap.add_argument("--rapport", help="Chemin du rapport Markdown (sinon affiché)")
     ap.add_argument("--json", help="Chemin d'un export JSON des constats et de l'inventaire")
+    ap.add_argument("--modele", help="Modèle du dépôt dont le livrable doit reprendre le texte (module G : PV, procurations)")
     args = ap.parse_args()
     try:
         config = charger_config(args.config)
-        constats, inventaire, nb, meta = controler(args.livrable, config)
+        constats, inventaire, nb, meta = controler(args.livrable, config, args.modele)
     except Exception as e:  # le contrôle ne doit jamais échouer en silence
         print("ÉCHEC DU CONTRÔLE — %s : %s" % (type(e).__name__, e), file=sys.stderr)
         return 1
