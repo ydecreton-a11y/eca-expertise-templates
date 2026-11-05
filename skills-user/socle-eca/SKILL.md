@@ -1,6 +1,6 @@
 ---
 name: "socle-eca"
-description: "Socle commun de tous les skills ECA EXPERTISE : ouverture de dossier, connecteurs, vérification, pièges datés, standard M&A pour les gros actes, forme des modèles pour les actes de la vie sociale, corpus, charte Word, garde-fous."
+description: "Socle commun de tous les skills ECA EXPERTISE : ouverture de dossier, connecteurs, vérification, pièges datés, standard M&A pour les gros actes, forme des modèles pour les actes de la vie sociale, corpus, charte Word, garde-fous, contrôle de livrable avant remise."
 ---
 
 # Socle ECA EXPERTISE
@@ -315,7 +315,9 @@ séparée. Détail : `redaction-acte`, Étape 6.
 
 Restent applicables à **tous** les actes : délais qualifiés (§ 6.3), aucune
 mention de tiers (§ 6.11), relecture profonde (§ 6.12), vérification des
-références (§ 3).
+références (§ 3). Les délais et les mentions de tiers font en outre l'objet
+d'un contrôle mécanique en fin de livrable (§ 9, point 0), qui ne dispense
+pas de la relecture.
 
 En cas de doute sur la catégorie d'un acte : demander à Yoann.
 
@@ -404,6 +406,34 @@ notaire.
 
 ## 9. Fin de livrable — toujours
 
+0. **Contrôleur de livrable** (bloquant), pour tout livrable remis sous forme
+   de fichier (.docx, .md, .txt) : acte, consultation, note, courrier.
+   - **Accès** : dans le clone du dépôt (§ 4), retrouver le script
+     `controle_livrable.py` et sa configuration par leur nom, sans se fier à
+     un chemin ; les exécuter avec Python 3 sur le fichier final, après la
+     dernière modification et avant la remise.
+   - **Anomalie bloquante** (délai non qualifié, mention d'un tiers ou d'un
+     précédent client, champ non rempli, suivi des modifications,
+     commentaire, texte masqué, discordance chiffres / lettres) : corriger,
+     puis relancer jusqu'à zéro. Un projet circulant expressément comme tel
+     peut conserver des champs à remplir : Yoann décide, et la remise le
+     mentionne.
+   - **« À vérifier »** : examiner chaque point et dire en une ligne ce qui
+     en a été fait (corrigé, maintenu et pourquoi).
+   - **Inventaire des références** (module B) : le transmettre au checker
+     (point 1), qui le recoupe avec sa propre extraction ; toute référence de
+     l'inventaire absente du rapport du checker est vérifiée.
+   - **Rapport** : présenté à Yoann avec le livrable (verdict, nombre
+     d'anomalies par gravité, corrections faites).
+   - **Si le contrôleur ne peut pas s'exécuter** (dépôt inaccessible, pas
+     d'environnement Python, code de sortie 1) : le dire en une ligne, faire
+     les contrôles A, C, D et E à la main sur le texte et les propriétés du
+     fichier, et ne jamais présenter le livrable comme contrôlé par l'outil.
+   - **Limites** : contrôle de forme, mécanique ; il ne vérifie ni le fond ni
+     l'exactitude des références, et ne remplace ni le checker ni la relecture
+     (§ 6.12). Un délai reproduit d'un texte légal hors guillemets peut être
+     signalé à tort : ne jamais réécrire une citation de texte pour lever
+     l'alerte.
 1. `legal-hallucination-checker` sur 100 % des références (bloquant).
 2. `positions-eca` : proposer les positions nouvellement tranchées (max. 3).
 3. Si l'acte engage une partie : proposer `avocat-adverse`.

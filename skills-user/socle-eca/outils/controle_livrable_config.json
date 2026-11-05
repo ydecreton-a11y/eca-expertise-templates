@@ -1,0 +1,187 @@
+{
+  "_lisez_moi": "Configuration du contrôleur de livrable ECA. Modifiable sans toucher au script. Gravités possibles : bloquant, a_verifier, information. Les expressions régulières suivent la syntaxe Python ; la casse est ignorée sauf mention sensible_casse.",
+  "termes_interdits": [
+    {
+      "terme": "Violaine Schmidt",
+      "gravite": "bloquant",
+      "motif": "Auteur d'un modèle de référence (socle-eca § 6.11)"
+    },
+    {
+      "terme": "Schmidt",
+      "gravite": "bloquant",
+      "motif": "Auteur d'un modèle de référence (socle-eca § 6.11)"
+    },
+    {
+      "terme": "Francis Lefebvre",
+      "gravite": "bloquant",
+      "motif": "Source documentaire tierce"
+    },
+    {
+      "terme": "Lefebvre Dalloz",
+      "gravite": "bloquant",
+      "motif": "Source documentaire tierce"
+    },
+    {
+      "terme": "Mémento",
+      "gravite": "bloquant",
+      "motif": "Source documentaire tierce"
+    },
+    {
+      "terme": "Revue Fiduciaire",
+      "gravite": "bloquant",
+      "motif": "Source documentaire tierce"
+    },
+    {
+      "terme": "Royal Formation",
+      "gravite": "bloquant",
+      "motif": "Source documentaire tierce"
+    },
+    {
+      "terme": "AUREP",
+      "gravite": "bloquant",
+      "motif": "Support de formation"
+    },
+    {
+      "terme": "Claude\\s+(?:AI|IA|Code|Opus|Sonnet|Haiku|d['’]Anthropic)|(?:avec|par|via|selon)\\s+Claude",
+      "regex": true,
+      "sensible_casse": true,
+      "gravite": "bloquant",
+      "motif": "Mention d'un outil d'IA"
+    },
+    {
+      "terme": "Anthropic",
+      "gravite": "bloquant",
+      "motif": "Mention d'un outil d'IA"
+    },
+    {
+      "terme": "ChatGPT",
+      "gravite": "bloquant",
+      "motif": "Mention d'un outil d'IA"
+    },
+    {
+      "terme": "intelligence artificielle",
+      "gravite": "a_verifier",
+      "motif": "Mention possible d'un outil d'IA"
+    },
+    {
+      "terme": "IA",
+      "gravite": "a_verifier",
+      "motif": "Mention possible d'un outil d'IA",
+      "sensible_casse": true
+    },
+    {
+      "terme": "Glanworth",
+      "gravite": "bloquant",
+      "motif": "Nom d'un précédent client (modèle de PV)"
+    },
+    {
+      "terme": "CELEFI",
+      "gravite": "bloquant",
+      "motif": "Nom d'un précédent client (modèle de procuration)"
+    },
+    {
+      "terme": "friction",
+      "gravite": "a_verifier",
+      "motif": "Appréciation de « friction » proscrite dans les commentaires"
+    },
+    {
+      "terme": "(?:(?:ce|du|notre|le|au|un)\\s+mod[èe]le(?!\\s+(?:OCDE|ONU|[ée]conomique|fiscal|de\\s+convention))|mod[èe]le\\s+(?:de|d['’])\\s*(?:pacte|statuts|acte|PV|proc[èe]s-verbal|procuration|pouvoir|contrat|protocole|clause|lettre|r[ée]daction))",
+      "regex": true,
+      "gravite": "a_verifier",
+      "motif": "Mention possible d'un modèle d'acte"
+    }
+  ],
+  "auteurs_autorises": [
+    "Yoann Decreton",
+    "Yoann DECRETON",
+    "ECA EXPERTISE",
+    "ECA Expertise",
+    "ydecreton"
+  ],
+  "residus": [
+    {
+      "motif": "\\[\\s*[●•…\\.]+\\s*\\]",
+      "gravite": "bloquant",
+      "libelle": "Champ non rempli [●]"
+    },
+    {
+      "motif": "\\[\\s*\\]",
+      "gravite": "bloquant",
+      "libelle": "Crochets vides"
+    },
+    {
+      "motif": "\\{\\{[^}]*\\}\\}",
+      "gravite": "bloquant",
+      "libelle": "Variable de modèle {{...}}"
+    },
+    {
+      "motif": "(?<![A-Za-z])X{3,}(?![A-Za-z])",
+      "gravite": "bloquant",
+      "libelle": "Marqueur XXX"
+    },
+    {
+      "motif": "\\[(?:[àa] compl[ée]ter|[àa] pr[ée]ciser|nom|pr[ée]nom|date|montant|adresse|siren|siret|ville|rcs|capital|\\?+)\\b[^\\]]{0,40}\\]",
+      "gravite": "bloquant",
+      "libelle": "Champ entre crochets à remplir"
+    },
+    {
+      "motif": "(?<!\\[)\\b[àa] (?:compl[ée]ter|pr[ée]ciser)\\b(?![^\\[\\]]{0,30}\\])",
+      "gravite": "a_verifier",
+      "libelle": "Mention « à compléter / à préciser »"
+    },
+    {
+      "motif": "\\b[àa] (?:confirmer|v[ée]rifier)\\b",
+      "gravite": "a_verifier",
+      "libelle": "Mention « à confirmer / à vérifier »"
+    },
+    {
+      "motif": "\\b(?:TODO|TBD|FIXME)\\b",
+      "gravite": "bloquant",
+      "libelle": "Note de travail",
+      "sensible_casse": true
+    },
+    {
+      "motif": "\\[(?:PERSONNE|SOCIETE|SOCIÉTÉ|X)_\\d+\\]",
+      "gravite": "bloquant",
+      "libelle": "Jeton de pseudonymisation",
+      "sensible_casse": true
+    },
+    {
+      "motif": "INCERTAIN",
+      "gravite": "a_verifier",
+      "libelle": "Balise d'incertitude (à garder dans une consultation, à retirer d'un acte)",
+      "sensible_casse": true
+    },
+    {
+      "motif": "\\.{5,}|…{2,}|_{5,}",
+      "gravite": "information",
+      "libelle": "Zone de pointillés (à remplir à la main ?)"
+    }
+  ],
+  "mots_contexte_fiscal": [
+    "taux",
+    "abattement",
+    "seuil",
+    "plafond",
+    "prélèvement",
+    "prélèvements",
+    "contribution",
+    "impôt",
+    "impôts",
+    "CSG",
+    "CRDS",
+    "droits d'enregistrement",
+    "droits de mutation",
+    "droits de donation",
+    "droits de succession",
+    "TVA",
+    "IS",
+    "IR",
+    "PFU",
+    "CGI",
+    "exonération",
+    "crédit d'impôt",
+    "plus-value",
+    "plus-values"
+  ]
+}

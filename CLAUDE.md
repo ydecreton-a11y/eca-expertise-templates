@@ -7,6 +7,7 @@
 > `maintenance-skills` ; index des références et maintenance trimestrielle.
 > 28/10/2026 : ajout de `evaluation-titres-fonds` (documentation dans `12_évaluation_entreprise`).
 > 02/11/2026 : connecteur Casus interrogé en direct (carte des connecteurs `socle-eca` § 2, matrice du checker) ; retrait de `prompt-builder-eca`.
+> 05/11/2026 : contrôleur de livrable (modules A à E) branché en fin de livrable (`socle-eca` § 9) ; checker : contrôle de l'adéquation du fondement (Phase 2quinquies).
 
 ---
 
@@ -56,7 +57,8 @@ est désormais interrogé en direct comme connecteur).
 1. socle-eca § 1   → ouverture du dossier (mémoire, historique, Granola, mails, Radar, Pennylane)
 2. positions-eca   → positions existantes (base Positions ECA)
 3. skill métier    → plan → validation de Yoann → recherche à la source → rédaction
-4. checker         → 100 % des références vérifiées (bloquant)
+4. contrôleur      → contrôle de forme du fichier remis (socle-eca § 9, point 0 ; bloquant)
+   checker         → 100 % des références vérifiées (bloquant)
 5. positions-eca   → proposition des positions nouvellement tranchées
 6. avocat-adverse  → proposé pour tout acte engageant une partie
 7. Échéances       → signalées en fin de livrable
@@ -82,6 +84,7 @@ est désormais interrogé en direct comme connecteur).
 | Références citées dans les skills (« vérifié JJ/MM/AAAA »), pièges datés, échéances annoncées | `skills-user/maintenance/references-index.json` (vue lisible : `references-index.md`), tenu par `maintenance-skills` |
 | Rapports de maintenance des skills | `skills-user/maintenance/rapports/` |
 | Codes de prompt | `skills-user/prompt-codes-eca.md` |
+| Contrôleur de livrable (script, configuration, banc d'essai) | Dossier `outils` de `socle-eca` — retrouvé par le nom du script (`socle-eca` § 9) |
 
 ---
 
