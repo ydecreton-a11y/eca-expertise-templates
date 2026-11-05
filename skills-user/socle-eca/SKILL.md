@@ -315,9 +315,9 @@ séparée. Détail : `redaction-acte`, Étape 6.
 
 Restent applicables à **tous** les actes : délais qualifiés (§ 6.3), aucune
 mention de tiers (§ 6.11), relecture profonde (§ 6.12), vérification des
-références (§ 3). Les trois premiers points font l'objet d'un contrôle
-mécanique en fin de livrable (§ 9, point 0), qui ne dispense pas de la
-relecture.
+références (§ 3). Les délais et les mentions de tiers font en outre l'objet
+d'un contrôle mécanique en fin de livrable (§ 9, point 0), qui ne dispense
+pas de la relecture.
 
 En cas de doute sur la catégorie d'un acte : demander à Yoann.
 
