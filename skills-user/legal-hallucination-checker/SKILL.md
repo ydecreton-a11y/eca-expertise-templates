@@ -1,6 +1,6 @@
 ---
 name: legal-hallucination-checker
-description: "Vérification bloquante de 100 % des références juridiques (articles, décisions, BOFiP, textes) en fin de tout livrable juridique ou fiscal ECA EXPERTISE, par recoupement Légifrance, LibreJustice, Casus, Legal Data Hunter, Pourvoi et OpenEU selon la compétence de chaque outil ; contrôle de l'existence, de la version applicable, du contenu, de la fidélité des citations (guillemets, pincites, signaux), de l'adéquation du fondement (l'article de code, le texte ou le BOI pose-t-il bien la règle qu'on lui attribue), de la portée et du sort procédural. Déclencher automatiquement en fin de livrable, et sur : vérifie les références, checker, hallucination, contrôle des citations, est-ce que cet arrêt existe, cet article est-il en vigueur."
+description: "Vérification bloquante de 100 % des références juridiques (articles, décisions, BOFiP, textes) en fin de tout livrable juridique ou fiscal ECA EXPERTISE, par recoupement Légifrance, LibreJustice, Casus, Legal Data Hunter, Pourvoi et OpenEU selon la compétence de chaque outil ; contrôle de l'existence, de la version applicable, du contenu, de la fidélité des citations (guillemets, pincites, signaux), de l'adéquation du fondement (l'article de code, le texte ou le BOI pose-t-il bien la règle qu'on lui attribue), de la portée et du sort procédural ; en Phase 0, exécution du contrôleur de livrable sur tout fichier remis. Déclencher automatiquement en fin de livrable, et sur : vérifie les références, checker, hallucination, contrôle des citations, est-ce que cet arrêt existe, cet article est-il en vigueur."
 ---
 
 # Legal Hallucination Checker — ECA EXPERTISE
@@ -70,6 +70,31 @@ droits de mutation à titre gratuit).
 ---
 
 ## Workflow de vérification en 5 phases
+
+### Phase 0 — Contrôleur de livrable (tout livrable remis sous forme de fichier)
+
+Avant la vérification des références, exécuter le contrôleur de livrable sur
+le fichier final (.docx, .md, .txt), selon `socle-eca` § 9, point 0 : script
+`controle_livrable.py` retrouvé par son nom dans le clone du dépôt, avec
+l'option `--modele` pour un acte de la vie sociale repris d'un modèle du
+dépôt (PV, décisions, procuration). Le checker étant l'étape finale bloquante
+de tous les skills de rédaction, cette phase garantit que le contrôle de forme
+n'est jamais omis.
+
+- Anomalies bloquantes : corrigées et contrôleur relancé avant de poursuivre ;
+  « à vérifier » : traitées une à une (§ 9 du socle).
+- Inventaire des références du contrôleur (module B) : recoupé avec
+  l'extraction de la Phase 1 ; toute référence de l'inventaire absente de
+  la Phase 1 y est ajoutée.
+- Contrôleur impossible à exécuter : le dire en une ligne, faire les contrôles
+  à la main (§ 9 du socle), ne jamais présenter le livrable comme contrôlé par
+  l'outil.
+- Contrôleur déjà exécuté sur la version finale (socle § 9, point 0) :
+  reprendre son rapport sans le relancer.
+- Réponse en conversation sans fichier : pas de Phase 0.
+
+Cette phase ne modifie en rien les Phases 1 à 4 : le contrôleur contrôle la
+forme, le checker vérifie les références à la source.
 
 ### Phase 1 — Extraction des références
 
@@ -429,7 +454,8 @@ Si aucune correction n'est nécessaire : "Toutes les références vérifiées �
 ## Point de contrôle — Avant livraison (bloquant à 100 %)
 
 Aucun livrable n'est remis tant qu'une seule référence n'est pas ✅ VÉRIFIÉ_EXACT
-ou 🟡 VÉRIFIÉ_MINEUR corrigée. Le score global du rapport est une information,
+ou 🟡 VÉRIFIÉ_MINEUR corrigée, ni tant que le contrôleur de livrable (Phase 0)
+signale une anomalie bloquante sur un livrable remis sous forme de fichier. Le score global du rapport est une information,
 jamais un seuil de tolérance.
 
 ```
