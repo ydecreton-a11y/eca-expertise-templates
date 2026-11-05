@@ -1,6 +1,6 @@
 ---
 name: legal-hallucination-checker
-description: "Vérification bloquante de 100 % des références juridiques (articles, décisions, BOFiP, textes) en fin de tout livrable juridique ou fiscal ECA EXPERTISE, par recoupement Légifrance, LibreJustice, Casus, Legal Data Hunter, Pourvoi et OpenEU selon la compétence de chaque outil ; contrôle de l'existence, de la version applicable, du contenu, de la fidélité des citations (guillemets, pincites, signaux), de la portée et du sort procédural. Déclencher automatiquement en fin de livrable, et sur : vérifie les références, checker, hallucination, contrôle des citations, est-ce que cet arrêt existe, cet article est-il en vigueur."
+description: "Vérification bloquante de 100 % des références juridiques (articles, décisions, BOFiP, textes) en fin de tout livrable juridique ou fiscal ECA EXPERTISE, par recoupement Légifrance, LibreJustice, Casus, Legal Data Hunter, Pourvoi et OpenEU selon la compétence de chaque outil ; contrôle de l'existence, de la version applicable, du contenu, de la fidélité des citations (guillemets, pincites, signaux), de l'adéquation du fondement (l'article de code, le texte ou le BOI pose-t-il bien la règle qu'on lui attribue), de la portée et du sort procédural. Déclencher automatiquement en fin de livrable, et sur : vérifie les références, checker, hallucination, contrôle des citations, est-ce que cet arrêt existe, cet article est-il en vigueur."
 ---
 
 # Legal Hallucination Checker — ECA EXPERTISE
@@ -93,6 +93,16 @@ Pour chaque référence jurisprudentielle, relever aussi **ce que le livrable
 lui fait dire** (solution, portée, « jurisprudence constante », « principe
 posé par... ») : c'est ce contenu qui sera contrôlé en Phases 2bis et 2ter.
 
+Pour chaque **article de code, loi, ordonnance, décret et BOI**, relever de
+même **la proposition qu'il est censé fonder** dans le livrable : la règle,
+la condition, le taux, le seuil, le délai, la sanction ou l'interprétation
+que la phrase lui rattache (« conformément à l'article… », « en application
+de… », « (art. … ) » placé en fin de phrase, « selon le BOFiP… »). Une
+référence citée sans guillemets ni signal reste rattachée à une proposition :
+c'est cette proposition qui sera contrôlée en Phase 2quinquies. Une référence
+purement indicative, qui ne fonde aucune proposition (ex. un simple renvoi
+du type « régime prévu aux articles [N] et suivants »), est relevée comme telle.
+
 ---
 
 ### Phase 2 — Vérification via MCP Légifrance
@@ -104,6 +114,8 @@ Pour chaque référence extraite :
 rechercher_code(code_name="[Code]", search="[numéro article]", champ="NUM_ARTICLE")
 ```
 Vérifier : article existe, alinéa cité correspond, article en vigueur (non abrogé).
+L'existence ne suffit pas : le contenu de l'article au regard de la
+proposition qu'il fonde se contrôle en Phase 2quinquies.
 
 **Jurisprudence judiciaire :**
 ```
@@ -298,6 +310,58 @@ infidèlement : c'est le cas le plus fréquent d'erreur sur une décision réell
 
 ---
 
+### Phase 2quinquies — Adéquation du fondement (articles de code, textes et BOI)
+
+**Obligatoire pour tout article de code, toute loi, ordonnance ou décret, et
+tout BOI relevé en Phase 1 comme fondant une proposition**, y compris quand il
+est cité sans guillemets ni signal. Un texte qui existe et qui est en vigueur
+peut être cité à l'appui d'une règle qu'il ne pose pas : c'est l'erreur la
+plus difficile à voir, parce que la référence est exacte.
+
+**Méthode :**
+1. Lire à la source, dans la version applicable à la date du fait générateur,
+   le passage pertinent **en entier** (l'alinéa, le I, le 2°, le paragraphe
+   du BOI), et non un extrait de recherche ou un résumé. Pour un article long,
+   lire au moins toute la subdivision dont relève la proposition, ainsi que
+   les renvois et exceptions qu'elle contient (« sous réserve de… », « par
+   dérogation… », « sauf… »). Toute lecture partielle est signalée.
+2. Confronter la proposition du livrable au texte lu, élément par élément :
+   champ d'application (personnes, opérations, biens), conditions, taux,
+   seuils, délais, sanctions, date d'effet, exceptions.
+3. Pour un BOI : vérifier le numéro de paragraphe cité, la date de
+   publication de la version lue, et que la proposition figure bien dans la
+   doctrine administrative et non dans un commentaire de tiers.
+
+**Cas à traiter :**
+- **Le texte pose la règle telle qu'énoncée** → conforme.
+- **Le texte ne pose qu'une partie de la proposition** (une condition omise,
+  une exception passée sous silence, un champ élargi ou restreint) → 🟠,
+  avec la reformulation exacte proposée.
+- **La règle provient d'un autre texte, d'une jurisprudence ou de la
+  doctrine administrative**, et non de l'article cité (ex. une interprétation
+  jurisprudentielle rattachée à l'article qu'elle interprète, une tolérance
+  BOFiP présentée comme une disposition légale) → 🟠, en indiquant la
+  véritable source à citer ; la nouvelle source passe elle-même au checker.
+- **Le texte pose une règle différente ou contraire** (taux, seuil, délai,
+  condition, sanction erronés ; régime d'un autre article attribué à celui-ci)
+  → 🔴.
+- **Doctrine présentée comme loi** (« la loi prévoit… » appuyé sur un BOI) ou
+  **loi présentée comme simple doctrine** → 🟠 ; qualifier correctement la
+  source et sa portée (conditions d'opposabilité de la doctrine
+  administrative, lues à la source au jour du livrable et soumises
+  elles-mêmes au checker).
+- **Référence purement indicative** (Phase 1) → contrôle limité à l'existence
+  et à la version, mais vérifier qu'elle ne fonde en réalité aucune
+  proposition implicite. En cas de doute, elle est traitée comme fondant une
+  proposition. Les références classées indicatives sont listées comme telles
+  dans le rapport, pour que Yoann puisse contester ce classement.
+
+Cette phase s'ajoute à la Phase 2quater, qui couvre les citations entre
+guillemets, les renvois précis et les signaux : un même texte peut relever
+des deux.
+
+---
+
 ### Phase 3 — Classification des résultats
 
 | Score | Statut | Signification |
@@ -312,7 +376,8 @@ infidèlement : c'est le cas le plus fréquent d'erreur sur une décision réell
 Le statut ✅ n'est attribué qu'une fois exécutés les contrôles obligatoires de la
 référence : phase 2ter pour un arrêt de cassation avec renvoi, une décision de
 cour d'appel ou une décision du fond administratif ; lecture du texte pour toute
-portée citée (la fiche ou le sommaire ne suffisent pas). À défaut, le statut est
+portée citée (la fiche ou le sommaire ne suffisent pas) ; phase 2quinquies pour
+tout article, texte ou BOI qui fonde une proposition. À défaut, le statut est
 🟡 ou ⚪ avec la mention « contrôle incomplet : [phase non exécutée] ».
 
 **Types d'erreurs fréquentes à détecter :**
@@ -323,6 +388,10 @@ portée citée (la fiche ou le sommaire ne suffisent pas). À défaut, le statut
 - Décision d'appel citée alors qu'elle a été cassée
 - Arrêt d'espèce ou inédit présenté comme jurisprudence établie
 - Référence BOFiP périmée ou modifiée
+- Article existant et en vigueur cité à l'appui d'une règle qu'il ne pose pas
+  (condition omise, exception tue, taux ou seuil d'un autre texte)
+- Règle jurisprudentielle ou doctrinale rattachée au texte qu'elle interprète
+- Tolérance BOFiP présentée comme disposition légale
 - Numéros de QPC ou SIREN transposés
 
 ---
@@ -339,9 +408,11 @@ SYNTHÈSE
 Total références : N | Exactes : N | Erreurs mineures : N
 Erreurs majeures : N | Hallucinations : N | Non confirmées : N
 Sort procédural contrôlé : N décisions | Cassées / infirmées / renversées : N
+Adéquation du fondement contrôlée : N textes et BOI | Non conformes : N
+Références classées indicatives (non soumises à la Phase 2quinquies) : [liste]
 
 DÉTAIL PAR RÉFÉRENCE
-[Référence] → [Statut] → [Outils ayant confirmé] → [Sort procédural] → [Observation]
+[Référence] → [Statut] → [Outils ayant confirmé] → [Sort procédural ou adéquation du fondement] → [Observation]
 
 RÉFÉRENCES À CORRIGER AVANT REMISE
 [Liste des corrections prioritaires avec texte corrigé proposé]
