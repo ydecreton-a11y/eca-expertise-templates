@@ -9,6 +9,7 @@
 > 02/11/2026 : connecteur Casus interrogé en direct (carte des connecteurs `socle-eca` § 2, matrice du checker) ; retrait de `prompt-builder-eca`.
 > 05/11/2026 : contrôleur de livrable (modules A à E) branché en fin de livrable (`socle-eca` § 9) ; checker : contrôle de l'adéquation du fondement (Phase 2quinquies).
 > 05/11/2026 : contrôleur de livrable v2 — modules F (structure, renvois, termes définis) et G (fidélité au modèle, option `--modele`).
+> 05/11/2026 : le checker exécute le contrôleur en Phase 0 (fichier remis), ce qui l'accroche à la fin de tous les skills de rédaction.
 
 ---
 
