@@ -544,7 +544,7 @@ def module_a(blocs, constats):
         if not defini and terme[0].isupper():
             constats.append(Constat("A", "bloquant", "Document",
                                     "Terme défini « %s » utilisé sans définition repérée" % terme,
-                                    "Ajouter la définition à l'article Définitions, ou écrire le délai en toutes lettres qualifiées."))
+                                    "Écrire le délai qualifié en minuscules (« dix jours ouvrés »), ou, dans un gros acte au standard M&A, ajouter la définition à l'article Définitions."))
 
 
 # --------------------------------------------------------------------------
@@ -1049,7 +1049,7 @@ def module_g(blocs, constats, chemin_modele, config):
                     continue
                 nb_redac += 1
                 constats.append(Constat("G", "a_verifier", livrable[meilleur].lieu(),
-                                        "Rédaction modifiée par rapport au modèle (§ %d du modèle)" % modele[i].numero,
+                                        "Rédaction différente du modèle (§ %d du modèle) : écart voulu à justifier, ou à corriger" % modele[i].numero,
                                         ecart))
             else:
                 constats.append(Constat("G", "a_verifier", "Modèle, § %d" % modele[i].numero,

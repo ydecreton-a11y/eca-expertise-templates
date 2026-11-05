@@ -414,11 +414,16 @@ notaire.
      dernière modification et avant la remise.
    - **Acte de la vie sociale repris d'un modèle du dépôt** (PV, décisions,
      procuration, § 6.0) : lancer le contrôleur avec l'option `--modele`
-     suivie du fichier du modèle utilisé. Chaque écart de rédaction signalé
-     (mots retirés ou ajoutés hors données du dossier, paragraphe supprimé ou
-     ajouté) est soit corrigé pour revenir au texte du modèle, soit justifié
-     en une ligne auprès de Yoann. Chaque donnée du précédent restée dans le
-     livrable (nom, adresse, numéro, montant) est vérifiée.
+     suivie du fichier du modèle utilisé. Le modèle donne la trame et la
+     présentation, pas un texte intangible : chaque écart signalé (mots
+     retirés ou ajoutés hors données du dossier, paragraphe supprimé ou
+     ajouté) doit être voulu, c'est-à-dire une clause non pertinente écartée
+     ou un modèle complété ou corrigé (§ 6.0), et se justifie alors en une
+     ligne auprès de Yoann ; un écart involontaire (reformulation, oubli) est
+     corrigé. Chaque donnée du précédent restée dans le livrable (nom,
+     adresse, numéro, montant) est vérifiée. Aucune alerte du contrôleur ne
+     justifie d'ajouter à un acte de la vie sociale un article de
+     définitions ou un autre élément du standard M&A.
    - **Anomalie bloquante** (délai non qualifié, mention d'un tiers ou d'un
      précédent client, champ non rempli, suivi des modifications,
      commentaire, texte masqué, discordance chiffres / lettres, numérotation

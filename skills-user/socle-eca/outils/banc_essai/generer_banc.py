@@ -232,7 +232,7 @@ ATTENDU = {
 
 
 ATTENDU_G = {
-    "g_reformule.docx": [("G", "a_verifier", "Rédaction modifiée"), ("G", "a_verifier", "Paragraphe du modèle absent"),
+    "g_reformule.docx": [("G", "a_verifier", "Rédaction différente du modèle"), ("G", "a_verifier", "Paragraphe du modèle absent"),
                          ("G", "a_verifier", "Paragraphe ajouté")],
     "g_reliquat.docx": [("G", "a_verifier", "951 054 154")],
 }
