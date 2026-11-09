@@ -10,7 +10,17 @@ exact du premier coup, nourri des vrais chiffres, avec les alertes que le
 dossier impose — sans recopier un taux ou un seuil de mémoire.
 
 Charger `socle-eca`. Pour la rédaction, ce skill s'appuie sur les étapes 3 à 8
-de `redaction-acte`. Les références marquées « vérifié 23/10/2026 » ont été
+de `redaction-acte`.
+
+> **Règle d'or (Yoann, 09/11/2026) — la trame N-1 est un point de départ,
+> jamais le livrable.** Chaque rubrique du rapport de gestion et chaque
+> décision du PV est **réétablie à partir des comptes de l'exercice** (Phase
+> 1 ter) et des faits du dossier. Une phrase de N-1 n'est conservée que si
+> elle reste vraie et suffisante au vu de l'exercice traité ; sinon elle est
+> réécrite, complétée ou supprimée. Le travail attendu est exhaustif dans
+> l'analyse et sélectif dans la restitution : tout est examiné, seul ce qui
+> est significatif est écrit. Un « simple copier-coller de N-1 mis à jour des
+> chiffres » est un livrable défectueux. Les références marquées « vérifié 23/10/2026 » ont été
 lues à la source à cette date ; elles se relisent dans leur version applicable
 à l'exercice traité.
 
@@ -73,6 +83,32 @@ n'est trouvée, le dire (« Ressource absente : PV N-1 ») et partir du modèle.
 Confidentialité : un précédent d'un autre client ne sert que de structure ;
 aucun nom, chiffre ou donnée n'en est repris (socle § 4 et § 7.2).
 
+## Phase 1 ter — Analyse des comptes de l'exercice (obligatoire, avant toute rédaction)
+
+Lire dans Pennylane le compte de résultat et le bilan de N **et** de N-1, puis
+le grand livre des comptes qui portent un enjeu. Rien ne se déduit du seul
+libellé d'un compte : ouvrir les écritures.
+
+| Axe | Ce qu'il faut établir (chiffré, par calcul) |
+|---|---|
+| Activité | CA par nature (ventes, prestations), variation ; marge commerciale ou valeur ajoutée et son taux |
+| Formation du résultat | Variation du résultat d'exploitation expliquée par ses postes significatifs (impôts et taxes, charges externes, personnel, dotations nettes) ; éléments non récurrents (indemnités, cessions, sinistres, primes) ; résultat financier (dividendes reçus, intérêts) ; IS |
+| Situation financière | Stocks, créances clients et dépréciations, dettes fournisseurs (variation du BFR et son financement), trésorerie, endettement financier net, capitaux propres |
+| Parties liées | Tous les flux avec l'associé, les dirigeants, les sociétés du groupe ou de la famille (loyers, prestations, collecte, refacturations, comptes courants, avances) : **montant par convention**, jamais le solde global d'un compte qui mélange plusieurs natures |
+| Filiales et participations | Dividendes reçus, activité et résultats des filiales (à obtenir s'ils manquent), contrôle au sens de L. 233-16 |
+| Changements | Changement de méthode ou de règlement comptable, reclassements affectant la comparabilité |
+| Contentieux et contrôles | Contrôle fiscal ou social, litiges : stade de la procédure (fiche mémoire, conversations, mails), enjeux, provision comptabilisée ou non |
+| Événements | Faits de l'exercice **et** faits survenus entre la clôture et la date du rapport, à distinguer |
+
+Seuil de restitution : un élément est retenu s'il change la compréhension du
+lecteur (variation qui explique le résultat, risque chiffré, opération hors du
+courant). Les points mineurs sont écartés ou regroupés.
+
+Tout chiffre du rapport est recalculé par script ; tout fait non établi par les
+pièces (perspectives, absence d'événement post-clôture, origine d'un produit)
+est soumis au client ou au collaborateur comptable avant signature, et listé
+dans la note interne.
+
 ## Phase 2 — Tableau de contrôle (avant tout acte)
 
 Pour chaque société, une ligne ; chaque point se vérifie à la source en vigueur.
@@ -89,7 +125,9 @@ Pour chaque société, une ligne ; chaque point se vérifie à la source en vigu
 | Rémunération des dirigeants | Organe compétent selon statuts (SARL : statuts ou décision collective ; gérant associé votant selon la jurisprudence en vigueur) ; ratification si versée sans décision préalable | Statuts ; jurisprudence Cass. com. à rechercher via Pourvoi — aucun article du code ne fixe l'organe pour la SARL |
 | Capitaux propres < ½ capital | Décision de dissolution ou non dans le délai légal, publicité, régularisation dans le délai | C. com. L. 223-42 (SARL), L. 225-248 (SA, et SAS par renvoi) |
 | Comptes courants débiteurs | Associé ou dirigeant personne physique : interdiction et sanctions possibles | C. com. L. 223-21 (SARL), L. 225-43 (SA) et L. 227-12 (SAS) ; relier au dossier si déjà identifié |
-| Dépôt et confidentialité | Dépôt dans le délai (un mois après l'approbation, deux mois par voie électronique) avec la proposition et la décision d'affectation ; option de non-publicité selon la taille et l'appartenance à un groupe | C. com. L. 232-21, L. 232-22 et L. 232-23 (vérifiés 23/10/2026 pour L. 232-22 et L. 232-23), L. 232-25 |
+| Dépôt et confidentialité | Dépôt dans le délai (un mois après l'approbation, deux mois par voie électronique) avec la proposition et la décision d'affectation ; option de non-publicité selon la taille et l'appartenance à un groupe. **Recalculer chaque année** les seuils de taille sur les deux derniers exercices et tester l'appartenance à un groupe : une déclaration de confidentialité de N-1 ne se reconduit jamais d'office (déclaration inexacte sinon) | C. com. L. 232-21, L. 232-22 et L. 232-23 (vérifiés 23/10/2026 pour L. 232-22 et L. 232-23), L. 232-25, D. 123-200 et L. 233-16 (vérifiés 09/11/2026) |
+| Rapport de gestion | Contenu exigé par la loi, rubrique par rubrique (Phase 3 bis) ; références de N-1 relues (articles abrogés ou renumérotés) | C. com. L. 232-1, II (vérifié 09/11/2026 — modification programmée au 01/01/2027 : relire la version applicable à la date du rapport), L. 233-6, L. 441-14 et D. 441-6 (vérifiés 09/11/2026) |
+| Trésorerie et paiement du dividende | Capacité à payer à la date prévue (trésorerie, BFR, saisonnalité) ; à défaut, fixer une date de mise en paiement dans le délai légal | C. com. L. 232-13 (vérifié 09/11/2026) |
 | Commissaire aux comptes | Rapports à viser ; fin de mandat à renouveler ou non | C. com. L. 823-1 s. |
 | Historique (situations B et C) | Lacunes des exercices antérieurs, reprise des engagements de la période de formation | Phase 1 bis |
 
@@ -121,6 +159,25 @@ présenter le tableau à Yoann (ou au collaborateur du dossier) avant les actes.
 
 ## Phase 3 — Rédaction des actes
 
+### Phase 3 bis — Rapport de gestion : grille de réécriture
+
+Chaque rubrique est réécrite à partir de la Phase 1 ter ; la formulation de
+N-1 n'est reprise que si elle reste exacte.
+
+| Rubrique | Contenu attendu | Erreurs à proscrire |
+|---|---|---|
+| Situation et évolution de l'activité | Analyse objective et chiffrée : CA, marge, formation du résultat (postes explicatifs), situation financière et endettement | Formules creuses (« bonne orientation », « vigilance de la direction ») non étayées par les chiffres |
+| Événements importants | Faits de l'exercice dans la situation de l'exercice ; seuls les faits postérieurs à la clôture sous la rubrique post-clôture | Placer sous « depuis la clôture » un fait de l'exercice ; affirmer l'absence d'autre événement sans l'avoir fait confirmer |
+| Contentieux et contrôles en cours | Chronologie exacte de la procédure, enjeux notifiés, stade actuel | Toute phrase qui reconnaît le bien-fondé d'un redressement ou contredit la défense (le rapport peut être demandé par l'administration) ; les risques de même nature sur les exercices non prescrits vont dans la note interne, pas dans le rapport |
+| Risques et incertitudes | Risques propres à la société et chiffrés quand c'est possible : prix, crédit, liquidité et trésorerie, réglementaire, fiscal, dépendance | Liste générique reprise de N-1 |
+| Changement comptable | Changement de méthode ou de règlement et effet sur la comparabilité | Tableau N / N-1 présenté comme comparable sans réserve |
+| Filiales et participations | Activité et résultats de chaque filiale ou société contrôlée, dividendes reçus | Rubrique laissée vide ou reprise de N-1 |
+| Délais de paiement | Tableau établi selon D. 441-6 (le logiciel comptable permet en principe de le produire) | Reconduire d'année en année une impossibilité de le produire |
+| Conventions | Conventions nouvelles **et** conventions antérieures poursuivies, identifiées par les flux du grand livre (loyers, prestations, comptes courants) | Se contenter de la liste de N-1 |
+| Mandats | Échéances réelles des mandats de dirigeant et de commissaire aux comptes | Reconduire une décision de renouvellement sans objet |
+
+### Actes (PV, décisions)
+
 1. Trame retenue en Phase 1 bis. À défaut de trame propre au dossier :
    rechercher dans le dépôt, à la date du jour (inventaire, socle § 4 et
    § 4 bis), le modèle correspondant à la forme : PV d'AGO, décisions
@@ -150,6 +207,14 @@ présenter le tableau à Yoann (ou au collaborateur du dossier) avant les actes.
    signaler (renvoi strategie-patrimoniale si enjeu).
 
 ## Phase 4 — Contrôles et suites
+
+- **Revue anti-reconduction** : comparer chaque paragraphe du rapport et du PV
+  à N-1 ; tout paragraphe inchangé est justifié en une ligne (« toujours exact
+  parce que… ») ou réécrit.
+- **Note interne « angles morts »** remise avec les actes, hiérarchisée, limitée
+  aux points significatifs : points à confirmer par le client, conventions à
+  compléter, risques non écrits dans le rapport, questions comptables
+  (provision, classement des réserves), trésorerie du dividende.
 
 - Arithmétique de l'affectation recalculée par script.
 - Cohérence entre PV, liasse et Pennylane (résultat, réserves, dividendes).
@@ -183,3 +248,12 @@ présenter le tableau à Yoann (ou au collaborateur du dossier) avant les actes.
   prévu, organe erroné, mandat expiré).
 - Dossier repris : produire l'acte de l'exercice sans avoir vérifié que les
   exercices antérieurs ont été approuvés et déposés.
+- Reprendre le rapport de gestion de N-1 en ne changeant que les chiffres
+  (risques génériques, perspectives, « aucun événement », excuse sur les délais
+  de paiement, rubrique filiales vide).
+- Reprendre pour une convention le solde d'un compte qui mélange plusieurs
+  natures de flux, ou oublier une convention visible en comptabilité (loyer
+  versé à une société liée).
+- Reconduire la déclaration de confidentialité sans recalculer les seuils sur
+  les deux derniers exercices ni tester l'appartenance à un groupe.
+- Décider le paiement du dividende « ce jour » sans avoir vérifié la trésorerie.
