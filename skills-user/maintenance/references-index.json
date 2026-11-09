@@ -5656,7 +5656,10 @@
    "cle_librejustice": "l232-1",
    "statut_verification": "verifie",
    "derniere_verification": "2026-11-09",
-   "etat_source": "modification programmée au 01/01/2027",
+   "etat_source": {
+    "statut": "en vigueur",
+    "version_jusqu_a": "2027-01-01"
+   },
    "occurrences": [
     {
      "skill": "juridique-annuel",
