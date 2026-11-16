@@ -130,8 +130,9 @@ réponses de Yoann. Ne rien rédiger avant.**
 1. Pacte (et avenant / statuts modifiés) en Word ECA (socle § 8), plus une
    **note de synthèse** à Yoann : profil retenu, choix structurants, points
    ouverts.
-2. `legal-hallucination-checker` sur 100 % des références (bloquant).
-3. `avocat-adverse` : relecture par le conseil du camp opposé.
+2. Relecture adverse en sous-agent (socle § 9) : le conseil du camp opposé.
+3. `legal-hallucination-checker` sur 100 % des références (bloquant), sur la
+   version qui intègre les suites données à la relecture adverse.
 4. `positions-eca` : proposer les positions nouvellement tranchées.
 5. « Échéances » : périodes d'inaliénabilité, dates de leaver, exercices de
    promesses.

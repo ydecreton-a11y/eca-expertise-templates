@@ -79,7 +79,8 @@ Rétroplanning : publicité, délai d'opposition (TUP), arrêté des comptes,
 clôture, radiation, déclarations fiscales de cessation et de résultat de
 liquidation. Délais lus à la source, jours qualifiés.
 
-Puis `legal-hallucination-checker` (bloquant), `positions-eca`, « Échéances ».
+Puis relecture adverse en sous-agent (socle § 9) sur tout livrable écrit,
+`legal-hallucination-checker` (bloquant), `positions-eca`, « Échéances ».
 
 ---
 

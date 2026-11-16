@@ -594,6 +594,7 @@ les montants en chiffres et en lettres concordent-ils ?
 - [ ] Cohérence inter-documents contrôlée (Phase 6), renvois vérifiés un à un
 - [ ] `calcul-plus-value` déclenché si enjeu de plus-value non chiffré
 - [ ] Zones d'incertitude balisées ⚠️ INCERTAIN
+- [ ] Relecture adverse en sous-agent (socle § 9) menée avant le contrôle final, sur tout livrable écrit ; synthèse (attaques 🔴/🟠, meilleure solution éventuelle) présentée avec le livrable
 - [ ] legal-hallucination-checker déclenché sur 100 % des références, sans référence non vérifiée restante (bloquant)
 - [ ] Word ECA conforme au socle § 8 (corps noir ; titres d'actes noir gras)
 - [ ] Conflit d'intérêts vérifié si ECA intervient pour la cible

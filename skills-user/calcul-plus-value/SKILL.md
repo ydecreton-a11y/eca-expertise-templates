@@ -128,4 +128,5 @@ Droits de donation ou de succession demandés en complément → renvoi
 - [ ] Positions ECA appliquées (150-0 B ter ; CDHR dans chaque scénario)
 - [ ] Obligations déclaratives mentionnées
 - [ ] Incertitudes balisées
-- [ ] Fin de livrable du socle § 9 (checker bloquant, positions, échéances)
+- [ ] Fin de livrable du socle § 9 (relecture adverse en sous-agent sur tout
+      livrable écrit, puis checker bloquant, positions, échéances)

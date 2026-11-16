@@ -208,5 +208,5 @@ Cohérence inter-documents : LOI ↔ compromis ↔ déclaration à la commune �
 acte définitif ↔ bail ↔ convention de séquestre (définitions, montants, dates,
 renvois).
 
-Puis : `legal-hallucination-checker` (bloquant), `avocat-adverse`,
-`positions-eca`, section « Échéances ».
+Puis : relecture adverse en sous-agent (socle § 9),
+`legal-hallucination-checker` (bloquant), `positions-eca`, section « Échéances ».

@@ -196,8 +196,8 @@ conditions annoncées). Si une DD est prévue : `due-diligence-juridique`.
       fixe) ; exclusivité et validité datées
 - [ ] Calendrier compatible avec l'information des salariés, l'agrément,
       la préemption et l'accord du bailleur
-- [ ] `legal-hallucination-checker` (bloquant), `avocat-adverse`,
-      `positions-eca`
+- [ ] Relecture adverse en sous-agent (socle § 9), puis
+      `legal-hallucination-checker` (bloquant) et `positions-eca`
 - [ ] Word ECA (socle § 8) ; aucune mention de modèle ni de précédent
 - [ ] Section « Échéances » : fin d'exclusivité, fin de validité, dates du
       calendrier

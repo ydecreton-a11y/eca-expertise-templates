@@ -86,5 +86,7 @@ report, nomination du commissaire, statuts de holding) :
 
 - Cohérence des valeurs entre rapport, traité, statuts, déclarations.
 - Calendrier de cession et de réinvestissement en « Échéances ».
-- `legal-hallucination-checker` (bloquant) ; `avocat-adverse` si un tiers
-  (banque, acquéreur, associé minoritaire) est partie ; `positions-eca`.
+- Relecture adverse en sous-agent (socle § 9) sur tout livrable écrit :
+  l'administration et, si un tiers (banque, acquéreur, associé minoritaire)
+  est partie, son conseil ; puis `legal-hallucination-checker` (bloquant) et
+  `positions-eca`.

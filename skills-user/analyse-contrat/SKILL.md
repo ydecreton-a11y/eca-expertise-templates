@@ -224,6 +224,7 @@ Valider mentalement chaque point avant d'envoyer la réponse :
 - [ ] La conclusion répond directement et précisément à la question posée
 - [ ] Niveau de risque justifié par un argumentaire (pas seulement affiché)
 - [ ] Aucune position incertaine présentée comme certaine
+- [ ] Relecture adverse en sous-agent (socle § 9) menée avant le contrôle final, sur tout livrable écrit ; synthèse (attaques 🔴/🟠, meilleure solution éventuelle) présentée avec le livrable
 - [ ] legal-hallucination-checker déclenché sur 100 % des références, sans référence non vérifiée restante (bloquant)
 - [ ] Word ECA conforme au socle § 8 (corps noir ; titres d'actes noir gras)
 - [ ] Référence YD + expert-comptable signataire mentionnée

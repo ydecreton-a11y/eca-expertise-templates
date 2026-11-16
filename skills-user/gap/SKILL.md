@@ -674,8 +674,9 @@ VI. STRATÉGIE : négociation amiable, expertise, contentieux
 - [ ] Notification : fait générateur, forme, preuve ; sanction du retard (déchéance ou proportionnalité) tranchée
 - [ ] Cohérence des définitions et des renvois avec le protocole et la LOI
 - [ ] Zones d'incertitude balisées ⚠️ INCERTAIN
+- [ ] Relecture adverse en sous-agent (socle § 9) menée avant le contrôle final, sur tout livrable écrit ; synthèse (attaques 🔴/🟠, meilleure solution éventuelle) présentée avec le livrable
 - [ ] legal-hallucination-checker déclenché sur 100 % des références, sans référence non vérifiée restante (bloquant)
-- [ ] `positions-eca` et proposition d'`avocat-adverse` (socle § 9)
+- [ ] `positions-eca` (socle § 9)
 - [ ] Word ECA conforme au socle § 8 (corps noir ; titres d'actes noir gras)
 - [ ] Conflit d'intérêts vérifié si ECA est l'expert-comptable de la cible
 

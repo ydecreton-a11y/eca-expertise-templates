@@ -178,7 +178,7 @@ cession (voir `protocole-cession` § 4.2) : le rappeler au cédant dans la note.
 - [ ] Prix définitif recalculé par script ; montants en chiffres et en lettres concordants
 - [ ] Conjoint, comptes courants, cautions traités expressément
 - [ ] Délais tous qualifiés (jours calendaires, ouvrés ou ouvrables, ou mois)
-- [ ] `legal-hallucination-checker` (bloquant), `avocat-adverse`, `positions-eca`
+- [ ] Relecture adverse en sous-agent (socle § 9), puis `legal-hallucination-checker` (bloquant) et `positions-eca`
 - [ ] Word ECA (socle § 8) ; aucune mention de modèle ou de précédent
 - [ ] Section « Échéances » en fin de livrable
 

@@ -200,4 +200,5 @@ Fichier nommé `<CLIENT>_Evaluation_<objet>_<date>_TRAVAIL_INTERNE.xlsx`. Onglet
 - Recalcul et rapprochement de chaque chiffre résumé dans la réponse avec le classeur.
 - 100 % des références relues, avec leur statut affiché : primaire, doctrine du dépôt, ou secondaire (taux de marché, prime de risque, population).
 - Liste explicite des pièces non vues (bail, inventaire, répartition du CA…).
+- Relecture adverse en sous-agent (socle § 9) sur le classeur et la synthèse : le vérificateur, puis l'expert de la partie adverse, attaquent méthodes, retraitements, pondération, décotes et hypothèses ; puis fin de livrable du socle § 9.
 - Réponse finale courte, avec une section « Sources ».
