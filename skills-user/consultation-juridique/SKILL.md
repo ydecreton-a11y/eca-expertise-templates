@@ -166,6 +166,7 @@ Avant de finaliser la réponse, vérifier mentalement :
 - [ ] Le niveau de risque est justifié, pas seulement affiché
 - [ ] Aucune position incertaine n'est présentée comme certaine
 - [ ] La dimension fiscale d'une opération impliquant des flux est traitée
+- [ ] Relecture adverse en sous-agent (socle § 9) menée avant le contrôle final, sur tout livrable écrit ; synthèse (attaques 🔴/🟠, meilleure solution éventuelle) présentée avec le livrable
 - [ ] Le legal-hallucination-checker a été déclenché sur le livrable final
 
 ---

@@ -267,8 +267,10 @@ Annexes     Comptes de référence ; état détaillé de l'actif et du passif ;
       autorisations, immeubles, salariés)
 - [ ] Rétroplanning en délais qualifiés, avec marges ; « Échéances » produites
 - [ ] Déclaration de conformité traitée selon la forme
-- [ ] `legal-hallucination-checker` (bloquant), `avocat-adverse` (si
-      minoritaires, créanciers ou partie extérieure), `positions-eca`
+- [ ] Relecture adverse en sous-agent (socle § 9) sur tout livrable écrit :
+      l'administration et, s'il en existe, les minoritaires, créanciers ou
+      parties extérieures ; puis `legal-hallucination-checker` (bloquant) et
+      `positions-eca`
 - [ ] Word ECA (socle § 8) ; aucune mention de modèle, d'auteur tiers ni d'acte
       déposé par un tiers
 

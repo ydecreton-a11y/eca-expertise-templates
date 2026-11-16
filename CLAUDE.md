@@ -10,6 +10,7 @@
 > 05/11/2026 : contrôleur de livrable (modules A à E) branché en fin de livrable (`socle-eca` § 9) ; checker : contrôle de l'adéquation du fondement (Phase 2quinquies).
 > 05/11/2026 : contrôleur de livrable v2 — modules F (structure, renvois, termes définis) et G (fidélité au modèle, option `--modele`).
 > 05/11/2026 : le checker exécute le contrôleur en Phase 0 (fichier remis), ce qui l'accroche à la fin de tous les skills de rédaction.
+> 16/11/2026 : `avocat-adverse` lancé automatiquement en sous-agent (lecture seule) avant le contrôle final, sur tout livrable écrit des skills de fond ; étape « meilleure solution » (`socle-eca` § 9).
 
 ---
 
@@ -59,11 +60,11 @@ est désormais interrogé en direct comme connecteur).
 1. socle-eca § 1   → ouverture du dossier (mémoire, historique, Granola, mails, Radar, Pennylane)
 2. positions-eca   → positions existantes (base Positions ECA)
 3. skill métier    → plan → validation de Yoann → recherche à la source → rédaction
+3 bis. avocat-adverse → relecture en sous-agent, lecture seule, sur tout livrable écrit des skills de fond (socle-eca § 9)
 4. contrôleur      → contrôle de forme du fichier remis (socle-eca § 9, point 0 ; bloquant)
    checker         → 100 % des références vérifiées (bloquant)
 5. positions-eca   → proposition des positions nouvellement tranchées
-6. avocat-adverse  → proposé pour tout acte engageant une partie
-7. Échéances       → signalées en fin de livrable
+6. Échéances       → signalées en fin de livrable
 ```
 
 ---

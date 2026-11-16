@@ -107,6 +107,10 @@ VII. Informations à obtenir
 VIII.Échéances (engagements, déclarations, dates d'âge déterminantes pour le barème)
 ```
 
+Avant remise : relecture adverse en sous-agent (socle § 9 ; adversaires :
+l'administration, puis un héritier réservataire ou un notaire contradicteur),
+puis fin de livrable du socle § 9.
+
 Note client → `note-information-client`. Actes notariés (donation, contrat de
 mariage, RAAR) → projet de note ou de clauses pour le notaire, pas d'acte.
 

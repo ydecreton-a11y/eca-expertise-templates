@@ -353,8 +353,9 @@ interne séparée « Points de vigilance ECA »**, jamais dans l'acte déposé.
 1. Word ECA selon socle § 8 (titres d'actes en noir gras).
 2. Liste des **formalités consécutives** (4.2) avec leurs délais **relus à la
    source** et la partie qui les accomplit.
-3. `legal-hallucination-checker` (bloquant), puis `avocat-adverse` si l'acte
-   engage des intérêts divergents, puis `positions-eca`.
+3. `legal-hallucination-checker` (bloquant), puis `positions-eca`. Pas de
+   relecture adverse automatique (socle § 9) : `avocat-adverse` en fil unique,
+   seulement si Yoann la demande.
 4. Section « Échéances » si un délai court à compter de l'acte (oppositions,
    dépôts, seuils de l'article 221, 5 du CGI, expiration de la durée sociale).
 

@@ -406,6 +406,49 @@ notaire.
 
 ## 9. Fin de livrable — toujours
 
+**Ordre** : rédaction → relecture adverse (ci-dessous, livrables concernés) →
+suites données à la relecture → points 0 et 1 sur la version finale → points 2
+à 4 → remise. Les points 0 et 1 passent toujours après la dernière
+modification : une rédaction de remplacement ou un argument issu de la
+relecture adverse est donc contrôlé comme le reste.
+
+**Relecture adverse en sous-agent** (décision de Yoann du 16/11/2026) :
+- **Livrables concernés** : tout livrable écrit destiné à être remis (fichier
+  ou texte rédigé : consultation, analyse, rapport, chiffrage, évaluation,
+  acte, défense) produit par `consultation-juridique`, `analyse-contrat`,
+  `strategie-patrimoniale`, `calcul-plus-value`, `evaluation-titres-fonds`,
+  `holding-apport`, `restructurations`, `dissolution-liquidation-tup`,
+  `due-diligence-juridique`, `lettre-intention`, `protocole-cession`, `gap`,
+  `acte-definitif-titres`, `cession-fonds`, `pacte-associes`,
+  `contentieux-fiscal`.
+- **Exclus** : les réponses conversationnelles, sauf demande expresse de Yoann
+  (/devil, « relecture adverse ») ; `veille-juridique`,
+  `note-information-client`, `redaction-acte`, `juridique-annuel` et les
+  skills d'outillage. Pour eux, `avocat-adverse` reste disponible à la
+  demande, en fil unique.
+- **Seul sous-agent du livrable** : recherche, analyse, rédaction et contrôle
+  des références restent en fil unique. Le sous-agent est lancé
+  automatiquement, sans le proposer ni attendre de validation.
+- **Ce qu'il reçoit** : le livrable complet et les faits utiles du dossier
+  (jamais un résumé), le camp défendu, et la mission d'appliquer le skill
+  `avocat-adverse` (erreurs, risques, meilleure solution). Instructions
+  brèves, contenu complet.
+- **Lecture seule** : il ne modifie ni le livrable ni aucun fichier et
+  n'écrit dans aucun connecteur (Notion, messagerie, dépôt) ; il rend sa
+  relecture au fil principal.
+- **Budget** : une dizaine d'appels d'outils, plafond et non objectif ;
+  priorité aux vérifications dont dépend une attaque 🔴 ou une solution
+  alternative.
+- **Suites** : le fil principal présente à Yoann, avec le livrable, la
+  synthèse de la relecture (attaques 🔴 et 🟠, meilleure solution s'il en
+  existe une). Il corrige lui-même les seules anomalies de forme (délai non
+  qualifié, renvoi faux, coquille) en le signalant ; tout changement de fond
+  ou de solution est soumis à Yoann, qui tranche. Toute modification
+  ultérieure relance les points 0 et 1 sur les passages modifiés.
+- **Sous-agent indisponible** : le dire en une ligne et faire la relecture
+  adverse dans le fil principal, en le signalant.
+
+
 0. **Contrôleur de livrable** (bloquant), pour tout livrable remis sous forme
    de fichier (.docx, .md, .txt) : acte, consultation, note, courrier.
    - **Accès** : dans le clone du dépôt (§ 4), retrouver le script
@@ -450,7 +493,8 @@ notaire.
      l'alerte.
 1. `legal-hallucination-checker` sur 100 % des références (bloquant).
 2. `positions-eca` : proposer les positions nouvellement tranchées (max. 3).
-3. Si l'acte engage une partie : proposer `avocat-adverse`.
+3. Relecture adverse : synthèse présentée avec le livrable (voir ci-dessus) ;
+   pour un livrable exclu, seulement à la demande de Yoann.
 4. Si le dossier génère une échéance (délai de recours, engagement Dutreil,
    opposition, déclaration annuelle de suivi) : la signaler en fin de livrable
    sous « Échéances ».
