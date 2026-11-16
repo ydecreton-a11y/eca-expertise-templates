@@ -226,4 +226,3 @@ modifié par la loi de finances pour 2026, doctrine BOFiP antérieure à cette l
 > Rechercher une mise à jour avant de structurer le Dutreil."
 
 ---
-
