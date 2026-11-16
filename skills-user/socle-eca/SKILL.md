@@ -26,8 +26,14 @@ usage, dans la version applicable.
 2. Historique        → recherche dans les conversations passées sur le nom exact.
 3. Réunions / mails  → Granola (compte rendu du dernier RDV) et Microsoft 365
                        (échanges et pièces) si le dossier est actif.
-4. Identité légale   → Radar (fiche entreprise, dirigeants, structures du
-                       dirigeant). Sauf pièce pseudonymisée (§ 7.1).
+4. Identité légale   → Juriacte d'abord pour une société du cabinet (capital
+                       et répartition, démembrement compris, associés,
+                       dirigeants ; siège par la fiche dossier), puis Radar
+                       (registre public : fiche entreprise, dirigeants,
+                       structures du dirigeant). Tout écart entre les deux
+                       est signalé à Yoann avant un acte. Juriacte est
+                       décompté du forfait du cabinet : pages courtes, fiches
+                       utiles seulement. Sauf pièce pseudonymisée (§ 7.1).
 5. Données comptables→ Pennylane si le chiffre conditionne la réponse
                        (balance, capitaux propres, comptes courants, résultat).
 6. Positions ECA     → skill positions-eca (base Notion « 📌 Positions ECA »).
@@ -81,7 +87,8 @@ change). Si un outil est indisponible, le dire et passer au suivant.
 | Recherche ouverte sur une question (articles, BOFiP, jurisprudence, réponses ministérielles classés ensemble) | Casus | Sources primaires du besoin concerné |
 | Contrôle en lot des références d'un passage ou d'un livrable | Casus (existence et écarts de citation) | Lecture à la source primaire (checker) |
 | Conventions collectives | Légifrance | — |
-| Identité d'une société, dirigeants, groupe | Radar | Data.gouv |
+| Société du cabinet : capital et répartition (démembrement compris, % de détention et de voix), associés, dirigeants, participations ; siège et exercices par la fiche dossier ; état civil par la fiche personne ; missions, formalités, signatures | Juriacte (données internes du cabinet, lecture seule, décompté du forfait : pages courtes) | Radar (état du registre) ; tout écart signalé avant un acte |
+| Identité d'une société, dirigeants, groupe (registre public, toute société) | Radar | Data.gouv |
 | Valeurs immobilières de marché (DVF) | Data.gouv | — |
 | Comptes d'un client du cabinet | Pennylane (lecture seule) | — |
 | Compte rendu de rendez-vous | Granola | — |
@@ -367,7 +374,7 @@ international**, calibré sur le contexte.
 ### 7.1 Pièce pseudonymisée
 Si la pièce contient des marqueurs `[PERSONNE_1]`, `[SOCIETE_1]`, `[X_1]`,
 `{{VARIABLE}}` : appliquer `pieces-pseudonymisees`, et **n'interroger aucun
-connecteur nominatif** (Radar, Pennylane, Microsoft 365, Granola, recherche web)
+connecteur nominatif** (Radar, Juriacte, Pennylane, Microsoft 365, Granola, recherche web)
 avec un élément susceptible de ré-identifier une personne ou une société.
 
 ### 7.2 Confidentialité

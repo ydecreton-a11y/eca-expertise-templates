@@ -11,6 +11,7 @@
 > 05/11/2026 : contrôleur de livrable v2 — modules F (structure, renvois, termes définis) et G (fidélité au modèle, option `--modele`).
 > 05/11/2026 : le checker exécute le contrôleur en Phase 0 (fichier remis), ce qui l'accroche à la fin de tous les skills de rédaction.
 > 16/11/2026 : `avocat-adverse` lancé automatiquement en sous-agent (lecture seule) avant le contrôle final, sur tout livrable écrit des skills de fond ; étape « meilleure solution » (`socle-eca` § 9).
+> 16/11/2026 : connecteur Juriacte (données juridiques internes des sociétés du cabinet), recoupé avec Radar (`socle-eca` § 1 et § 2) ; interdit sur pièce pseudonymisée.
 
 ---
 
@@ -80,6 +81,7 @@ est désormais interrogé en direct comme connecteur).
 | Charte et méthode Word | `socle-eca` § 8 |
 | Corpus documentaire (Dutreil 2026, Royal Formation, démembrement de l'immobilier d'entreprise, Revue Fiduciaire, AUREP) | Ce dépôt — repéré par titre, voir `socle-eca` § 4 bis |
 | Modèles et précédents d'actes | Ce dépôt (dossiers `01_` à `11_`) — trouvés par recherche, pas par chemin |
+| Données juridiques des sociétés du cabinet (capital, associés, dirigeants, siège) | Juriacte, recoupé avec Radar (`socle-eca` § 2) |
 | Positions ECA | Notion, collection `6dc1e530-7996-4a62-b5b6-b378b4c8f204` |
 | Veille | Notion, `f201a44e-556f-4420-8f61-eec1f8cb2d5a` (ne pas confondre avec la base Positions) |
 | Consultations | Notion, `cadd1870-11e1-4dfa-9298-7d5c5977f564` |
