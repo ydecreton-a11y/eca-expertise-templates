@@ -20,6 +20,13 @@ usage, dans la version applicable.
 ## 1. Ouverture de tout dossier — exécuter dans cet ordre
 
 ```
+0. Second cerveau    → dans le clone du dépôt (§ 4), retrouver par son nom le
+                       fichier REGLES-ET-NOTES.md (dossier « Second cerveau »)
+                       et le lire EN ENTIER : règles de sortie, workflow,
+                       notes et avis de Yoann. Il prime sur les habitudes de
+                       rédaction ; il cède devant les textes en vigueur.
+                       Dépôt inaccessible : le dire en une ligne et
+                       poursuivre avec la mémoire.
 1. Mémoire dossier   → si un client, une société ou une personne est nommé :
                        consulter la liste mémoire, lire la fiche /areas/<dossier>.md
                        (et /people/ concernés). C'est la source la plus fiable.
@@ -56,8 +63,8 @@ usage, dans la version applicable.
                        « Nouveau dossier ».
 ```
 
-Ne pas bloquer sur une demande générique sans nom propre : sauter les étapes 1
-à 5 et exécuter les étapes 6 à 8 (positions, veille, corpus), puis le § 2.
+Ne pas bloquer sur une demande générique sans nom propre : exécuter l'étape 0,
+sauter les étapes 1 à 5 et exécuter les étapes 6 à 8 (positions, veille, corpus), puis le § 2.
 Un dossier déjà engagé ne repart jamais de zéro.
 
 **Planification (règle permanente)** : pour toute tâche non triviale
@@ -418,6 +425,14 @@ suites données à la relecture → points 0 et 1 sur la version finale → poin
 à 4 → remise. Les points 0 et 1 passent toujours après la dernière
 modification : une rédaction de remplacement ou un argument issu de la
 relecture adverse est donc contrôlé comme le reste.
+
+**Règles de sortie** (décision de Yoann du 20/11/2026) : avant la remise,
+confronter le livrable final au fichier REGLES-ET-NOTES.md lu à l'étape 0 du
+§ 1 (règles de sortie, forme des actes et des mails) ; tout écart est corrigé
+ou justifié en une ligne. Toute nouvelle règle, note ou avis que Yoann donne
+pendant le travail est ajouté à ce fichier (section concernée, daté, sans
+aucune donnée client : le dépôt est public), par une demande de fusion que
+Claude fusionne lui-même.
 
 **Relecture adverse en sous-agent** (décision de Yoann du 16/11/2026) :
 - **Livrables concernés** : tout livrable écrit destiné à être remis (fichier
