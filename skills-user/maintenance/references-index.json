@@ -923,7 +923,7 @@
     },
     {
      "skill": "legal-hallucination-checker",
-     "ligne": 80,
+     "ligne": 105,
      "extrait": "| `Art. [N] CGI` / `Art. [N] C. civ.` / `Art. L[N] LPF` | Article de code | Art. 150-0 B ter CGI |"
     },
     {
@@ -1126,7 +1126,7 @@
     },
     {
      "skill": "legal-hallucination-checker",
-     "ligne": 390,
+     "ligne": 487,
      "extrait": "l'art. 224 CGI)."
     },
     {
@@ -2118,7 +2118,7 @@
     },
     {
      "skill": "juridique-annuel",
-     "ligne": 87,
+     "ligne": 123,
      "extrait": "| Fiscalité de la distribution | Prélèvement à la source et déclaration des revenus distribués ; associé personne morale | CGI art. 117 quater, 242 ter, 145 et "
     }
    ]
@@ -2145,7 +2145,7 @@
     },
     {
      "skill": "juridique-annuel",
-     "ligne": 87,
+     "ligne": 123,
      "extrait": "| Fiscalité de la distribution | Prélèvement à la source et déclaration des revenus distribués ; associé personne morale | CGI art. 117 quater, 242 ter, 145 et "
     }
    ]
@@ -2824,17 +2824,17 @@
    "occurrences": [
     {
      "skill": "juridique-annuel",
-     "ligne": 67,
+     "ligne": 77,
      "extrait": "| **B — Reprise d'un confrère** | 1. PV antérieurs remis par le client ou par le confrère prédécesseur ; 2. pièces déposées au greffe : avec les comptes annuels"
     },
     {
      "skill": "juridique-annuel",
-     "ligne": 92,
+     "ligne": 128,
      "extrait": "| Dépôt et confidentialité | Dépôt dans le délai (un mois après l'approbation, deux mois par voie électronique) avec la proposition et la décision d'affectation"
     },
     {
      "skill": "juridique-annuel",
-     "ligne": 92,
+     "ligne": 128,
      "extrait": "| Dépôt et confidentialité | Dépôt dans le délai (un mois après l'approbation, deux mois par voie électronique) avec la proposition et la décision d'affectation"
     }
    ]
@@ -2851,17 +2851,17 @@
    "occurrences": [
     {
      "skill": "juridique-annuel",
-     "ligne": 67,
+     "ligne": 77,
      "extrait": "| **B — Reprise d'un confrère** | 1. PV antérieurs remis par le client ou par le confrère prédécesseur ; 2. pièces déposées au greffe : avec les comptes annuels"
     },
     {
      "skill": "juridique-annuel",
-     "ligne": 92,
+     "ligne": 128,
      "extrait": "| Dépôt et confidentialité | Dépôt dans le délai (un mois après l'approbation, deux mois par voie électronique) avec la proposition et la décision d'affectation"
     },
     {
      "skill": "juridique-annuel",
-     "ligne": 92,
+     "ligne": 128,
      "extrait": "| Dépôt et confidentialité | Dépôt dans le délai (un mois après l'approbation, deux mois par voie électronique) avec la proposition et la décision d'affectation"
     }
    ]
@@ -2878,7 +2878,7 @@
    "occurrences": [
     {
      "skill": "juridique-annuel",
-     "ligne": 68,
+     "ligne": 78,
      "extrait": "| **C — Nouvelle immatriculation** | 1. Statuts constitutifs et pièces de constitution du dossier interne ; 2. modèle du dépôt ; 3. précédents ECA anonymisés de"
     },
     {
@@ -2905,7 +2905,7 @@
    "occurrences": [
     {
      "skill": "juridique-annuel",
-     "ligne": 68,
+     "ligne": 78,
      "extrait": "| **C — Nouvelle immatriculation** | 1. Statuts constitutifs et pièces de constitution du dossier interne ; 2. modèle du dépôt ; 3. précédents ECA anonymisés de"
     }
    ]
@@ -2922,7 +2922,7 @@
    "occurrences": [
     {
      "skill": "juridique-annuel",
-     "ligne": 68,
+     "ligne": 78,
      "extrait": "| **C — Nouvelle immatriculation** | 1. Statuts constitutifs et pièces de constitution du dossier interne ; 2. modèle du dépôt ; 3. précédents ECA anonymisés de"
     }
    ]
@@ -2939,7 +2939,7 @@
    "occurrences": [
     {
      "skill": "juridique-annuel",
-     "ligne": 82,
+     "ligne": 118,
      "extrait": "| Délai d'approbation | Respect du délai légal ; prorogation à demander si dépassé | C. com. L. 223-26 (SARL), L. 225-100 (SA), L. 227-9 et statuts (SAS) |"
     }
    ]
@@ -2956,7 +2956,7 @@
    "occurrences": [
     {
      "skill": "juridique-annuel",
-     "ligne": 82,
+     "ligne": 118,
      "extrait": "| Délai d'approbation | Respect du délai légal ; prorogation à demander si dépassé | C. com. L. 223-26 (SARL), L. 225-100 (SA), L. 227-9 et statuts (SAS) |"
     }
    ]
@@ -2973,12 +2973,12 @@
    "occurrences": [
     {
      "skill": "juridique-annuel",
-     "ligne": 82,
+     "ligne": 118,
      "extrait": "| Délai d'approbation | Respect du délai légal ; prorogation à demander si dépassé | C. com. L. 223-26 (SARL), L. 225-100 (SA), L. 227-9 et statuts (SAS) |"
     },
     {
      "skill": "juridique-annuel",
-     "ligne": 83,
+     "ligne": 119,
      "extrait": "| Organe et forme | AGO, consultation écrite, acte unanime, associé unique (registre, approbation par dépôt dans certains cas d'EURL) | C. com. L. 223-27, L. 22"
     },
     {
@@ -3005,7 +3005,7 @@
    "occurrences": [
     {
      "skill": "juridique-annuel",
-     "ligne": 83,
+     "ligne": 119,
      "extrait": "| Organe et forme | AGO, consultation écrite, acte unanime, associé unique (registre, approbation par dépôt dans certains cas d'EURL) | C. com. L. 223-27, L. 22"
     }
    ]
@@ -3022,7 +3022,7 @@
    "occurrences": [
     {
      "skill": "juridique-annuel",
-     "ligne": 83,
+     "ligne": 119,
      "extrait": "| Organe et forme | AGO, consultation écrite, acte unanime, associé unique (registre, approbation par dépôt dans certains cas d'EURL) | C. com. L. 223-27, L. 22"
     },
     {
@@ -3044,7 +3044,7 @@
    "occurrences": [
     {
      "skill": "juridique-annuel",
-     "ligne": 84,
+     "ligne": 120,
      "extrait": "| Affectation | Dotation de la réserve légale jusqu'au plafond ; bénéfice distribuable = bénéfice de l'exercice, diminué des pertes antérieures et des dotations"
     }
    ]
@@ -3061,17 +3061,17 @@
    "occurrences": [
     {
      "skill": "juridique-annuel",
-     "ligne": 84,
+     "ligne": 120,
      "extrait": "| Affectation | Dotation de la réserve légale jusqu'au plafond ; bénéfice distribuable = bénéfice de l'exercice, diminué des pertes antérieures et des dotations"
     },
     {
      "skill": "juridique-annuel",
-     "ligne": 85,
+     "ligne": 121,
      "extrait": "| Distribution | Sommes distribuables constatées après approbation ; décision de l'organe compétent ; aucune distribution si les capitaux propres sont ou devien"
     },
     {
      "skill": "juridique-annuel",
-     "ligne": 109,
+     "ligne": 147,
      "extrait": "priorité sur le bénéfice distribuable de l'exercice (L. 232-11, al. 2,"
     }
    ]
@@ -3088,17 +3088,17 @@
    "occurrences": [
     {
      "skill": "juridique-annuel",
-     "ligne": 85,
+     "ligne": 121,
      "extrait": "| Distribution | Sommes distribuables constatées après approbation ; décision de l'organe compétent ; aucune distribution si les capitaux propres sont ou devien"
     },
     {
      "skill": "juridique-annuel",
-     "ligne": 113,
+     "ligne": 151,
      "extrait": "limite du bénéfice réalisé depuis la clôture précédente (L. 232-12, al. 2,"
     },
     {
      "skill": "juridique-annuel",
-     "ligne": 117,
+     "ligne": 155,
      "extrait": "fictif** (L. 232-12, al. 3) : risque de répétition et de responsabilité."
     }
    ]
@@ -3115,12 +3115,12 @@
    "occurrences": [
     {
      "skill": "juridique-annuel",
-     "ligne": 86,
+     "ligne": 122,
      "extrait": "| Dividendes de dirigeants non salariés | Part des dividendes intégrée à l'assiette sociale au-delà d'un seuil calculé sur le capital, les primes et les comptes"
     },
     {
      "skill": "juridique-annuel",
-     "ligne": 181,
+     "ligne": 246,
      "extrait": "CSS L. 136-3 dans sa version applicable."
     }
    ]
@@ -3137,7 +3137,7 @@
    "occurrences": [
     {
      "skill": "juridique-annuel",
-     "ligne": 87,
+     "ligne": 123,
      "extrait": "| Fiscalité de la distribution | Prélèvement à la source et déclaration des revenus distribués ; associé personne morale | CGI art. 117 quater, 242 ter, 145 et "
     }
    ]
@@ -3154,7 +3154,7 @@
    "occurrences": [
     {
      "skill": "juridique-annuel",
-     "ligne": 87,
+     "ligne": 123,
      "extrait": "| Fiscalité de la distribution | Prélèvement à la source et déclaration des revenus distribués ; associé personne morale | CGI art. 117 quater, 242 ter, 145 et "
     }
    ]
@@ -3171,7 +3171,7 @@
    "occurrences": [
     {
      "skill": "juridique-annuel",
-     "ligne": 88,
+     "ligne": 124,
      "extrait": "| Conventions réglementées | Rapport spécial, vote, associé intéressé exclu du vote selon la forme ; conventions courantes | C. com. L. 223-19 à L. 223-21 (SARL"
     }
    ]
@@ -3188,12 +3188,12 @@
    "occurrences": [
     {
      "skill": "juridique-annuel",
-     "ligne": 88,
+     "ligne": 124,
      "extrait": "| Conventions réglementées | Rapport spécial, vote, associé intéressé exclu du vote selon la forme ; conventions courantes | C. com. L. 223-19 à L. 223-21 (SARL"
     },
     {
      "skill": "juridique-annuel",
-     "ligne": 91,
+     "ligne": 127,
      "extrait": "| Comptes courants débiteurs | Associé ou dirigeant personne physique : interdiction et sanctions possibles | C. com. L. 223-21 (SARL), L. 225-43 (SA) et L. 227"
     }
    ]
@@ -3204,13 +3204,13 @@
    "code": "code-de-commerce",
    "article": "L. 227-10",
    "cle_librejustice": "l227-10",
-   "statut_verification": "a_verifier",
-   "derniere_verification": null,
+   "statut_verification": "verifie",
+   "derniere_verification": "2026-11-09",
    "etat_source": null,
    "occurrences": [
     {
      "skill": "juridique-annuel",
-     "ligne": 88,
+     "ligne": 124,
      "extrait": "| Conventions réglementées | Rapport spécial, vote, associé intéressé exclu du vote selon la forme ; conventions courantes | C. com. L. 223-19 à L. 223-21 (SARL"
     }
    ]
@@ -3227,7 +3227,7 @@
    "occurrences": [
     {
      "skill": "juridique-annuel",
-     "ligne": 88,
+     "ligne": 124,
      "extrait": "| Conventions réglementées | Rapport spécial, vote, associé intéressé exclu du vote selon la forme ; conventions courantes | C. com. L. 223-19 à L. 223-21 (SARL"
     }
    ]
@@ -3244,7 +3244,7 @@
    "occurrences": [
     {
      "skill": "juridique-annuel",
-     "ligne": 90,
+     "ligne": 126,
      "extrait": "| Capitaux propres < ½ capital | Décision de dissolution ou non dans le délai légal, publicité, régularisation dans le délai | C. com. L. 223-42 (SARL), L. 225-"
     }
    ]
@@ -3261,7 +3261,7 @@
    "occurrences": [
     {
      "skill": "juridique-annuel",
-     "ligne": 90,
+     "ligne": 126,
      "extrait": "| Capitaux propres < ½ capital | Décision de dissolution ou non dans le délai légal, publicité, régularisation dans le délai | C. com. L. 223-42 (SARL), L. 225-"
     }
    ]
@@ -3278,7 +3278,7 @@
    "occurrences": [
     {
      "skill": "juridique-annuel",
-     "ligne": 91,
+     "ligne": 127,
      "extrait": "| Comptes courants débiteurs | Associé ou dirigeant personne physique : interdiction et sanctions possibles | C. com. L. 223-21 (SARL), L. 225-43 (SA) et L. 227"
     }
    ]
@@ -3295,7 +3295,7 @@
    "occurrences": [
     {
      "skill": "juridique-annuel",
-     "ligne": 91,
+     "ligne": 127,
      "extrait": "| Comptes courants débiteurs | Associé ou dirigeant personne physique : interdiction et sanctions possibles | C. com. L. 223-21 (SARL), L. 225-43 (SA) et L. 227"
     }
    ]
@@ -3312,7 +3312,7 @@
    "occurrences": [
     {
      "skill": "juridique-annuel",
-     "ligne": 92,
+     "ligne": 128,
      "extrait": "| Dépôt et confidentialité | Dépôt dans le délai (un mois après l'approbation, deux mois par voie électronique) avec la proposition et la décision d'affectation"
     }
    ]
@@ -3329,7 +3329,7 @@
    "occurrences": [
     {
      "skill": "juridique-annuel",
-     "ligne": 92,
+     "ligne": 128,
      "extrait": "| Dépôt et confidentialité | Dépôt dans le délai (un mois après l'approbation, deux mois par voie électronique) avec la proposition et la décision d'affectation"
     }
    ]
@@ -3346,7 +3346,7 @@
    "occurrences": [
     {
      "skill": "juridique-annuel",
-     "ligne": 93,
+     "ligne": 131,
      "extrait": "| Commissaire aux comptes | Rapports à viser ; fin de mandat à renouveler ou non | C. com. L. 823-1 s. |"
     }
    ]
@@ -3491,7 +3491,7 @@
     },
     {
      "skill": "socle-eca",
-     "ligne": 354,
+     "ligne": 356,
      "extrait": "conventionnel exprès à l'art. 1843-4 C. civ. dans la clause d'expertise)."
     }
    ]
@@ -5623,6 +5623,99 @@
      "skill": "note-information-client",
      "ligne": 175,
      "extrait": "| Héritier (succession en cours) | Empathique, pédagogique, pas de pression temporelle (deuil) | Délai de dépôt de la déclaration de succession (CGI art. 641, d"
+    }
+   ]
+  },
+  {
+   "id": "code-de-commerce:L. 233-16",
+   "type": "article",
+   "code": "code-de-commerce",
+   "article": "L. 233-16",
+   "cle_librejustice": "l233-16",
+   "statut_verification": "verifie",
+   "derniere_verification": "2026-11-09",
+   "etat_source": null,
+   "occurrences": [
+    {
+     "skill": "juridique-annuel",
+     "ligne": 98,
+     "extrait": "| Filiales et participations | Dividendes reçus, activité et résultats des filiales (à obtenir s'ils manquent), contrôle au sens de L. 233-16 |"
+    },
+    {
+     "skill": "juridique-annuel",
+     "ligne": 128,
+     "extrait": "| Dépôt et confidentialité | Dépôt dans le délai (un mois après l'approbation, deux mois par voie électronique) avec la proposition et la décision d'affectation"
+    }
+   ]
+  },
+  {
+   "id": "code-de-commerce:L. 232-1",
+   "type": "article",
+   "code": "code-de-commerce",
+   "article": "L. 232-1",
+   "cle_librejustice": "l232-1",
+   "statut_verification": "verifie",
+   "derniere_verification": "2026-11-09",
+   "etat_source": {
+    "statut": "en vigueur",
+    "version_jusqu_a": "2027-01-01"
+   },
+   "occurrences": [
+    {
+     "skill": "juridique-annuel",
+     "ligne": 129,
+     "extrait": "| Rapport de gestion | Contenu exigé par la loi, rubrique par rubrique (Phase 3 bis) ; références de N-1 relues (articles abrogés ou renumérotés) | C. com. L. 2"
+    }
+   ]
+  },
+  {
+   "id": "code-de-commerce:L. 233-6",
+   "type": "article",
+   "code": "code-de-commerce",
+   "article": "L. 233-6",
+   "cle_librejustice": "l233-6",
+   "statut_verification": "verifie",
+   "derniere_verification": "2026-11-09",
+   "etat_source": null,
+   "occurrences": [
+    {
+     "skill": "juridique-annuel",
+     "ligne": 129,
+     "extrait": "| Rapport de gestion | Contenu exigé par la loi, rubrique par rubrique (Phase 3 bis) ; références de N-1 relues (articles abrogés ou renumérotés) | C. com. L. 2"
+    }
+   ]
+  },
+  {
+   "id": "code-de-commerce:L. 441-14",
+   "type": "article",
+   "code": "code-de-commerce",
+   "article": "L. 441-14",
+   "cle_librejustice": "l441-14",
+   "statut_verification": "verifie",
+   "derniere_verification": "2026-11-09",
+   "etat_source": null,
+   "occurrences": [
+    {
+     "skill": "juridique-annuel",
+     "ligne": 129,
+     "extrait": "| Rapport de gestion | Contenu exigé par la loi, rubrique par rubrique (Phase 3 bis) ; références de N-1 relues (articles abrogés ou renumérotés) | C. com. L. 2"
+    }
+   ]
+  },
+  {
+   "id": "code-de-commerce:L. 232-13",
+   "type": "article",
+   "code": "code-de-commerce",
+   "article": "L. 232-13",
+   "cle_librejustice": "l232-13",
+   "statut_verification": "verifie",
+   "derniere_verification": "2026-11-09",
+   "etat_source": null,
+   "occurrences": [
+    {
+     "skill": "juridique-annuel",
+     "ligne": 130,
+     "extrait": "| Trésorerie et paiement du dividende | Capacité à payer à la date prévue (trésorerie, BFR, saisonnalité) ; à défaut, fixer une date de mise en paiement dans le"
     }
    ]
   }

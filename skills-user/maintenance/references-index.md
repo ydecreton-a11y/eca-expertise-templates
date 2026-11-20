@@ -4,7 +4,7 @@ Créé le 2026-10-23 — dernière maintenance : aucune. Tenu par `maintenance-s
 
 Une entrée 'verifie' a été lue à la source à la date indiquée. Une entrée 'a_verifier' n'a pas encore été contrôlée dans sa version en vigueur : la prochaine maintenance la lit en entier et confronte le passage du skill au texte. Les numéros de ligne sont indicatifs (ils bougent avec les skills) ; l'extrait sert d'ancre.
 
-**250 articles** (119 vérifiés, 131 à vérifier) · 10 BOFiP · 22 décisions · 9 textes · 10 pièges datés · 4 échéances
+**255 articles** (125 vérifiés, 130 à vérifier) · 10 BOFiP · 22 décisions · 9 textes · 10 pièges datés · 4 échéances
 
 ## Échéances annoncées
 
@@ -106,7 +106,7 @@ Une entrée 'verifie' a été lue à la source à la date indiquée. Une entrée
 | code-de-commerce | L. 225-38 | à vérifier |  | juridique-annuel |
 | code-de-commerce | L. 225-43 | à vérifier |  | juridique-annuel |
 | code-de-commerce | L. 227-1 | 2026-10-23 |  | redaction-acte, restructurations |
-| code-de-commerce | L. 227-10 | à vérifier |  | juridique-annuel |
+| code-de-commerce | L. 227-10 | 2026-11-09 |  | juridique-annuel |
 | code-de-commerce | L. 227-12 | à vérifier |  | juridique-annuel |
 | code-de-commerce | L. 227-13 | à vérifier |  | redaction-acte |
 | code-de-commerce | L. 227-14 | à vérifier |  | protocole-cession |
@@ -120,13 +120,17 @@ Une entrée 'verifie' a été lue à la source à la date indiquée. Une entrée
 | code-de-commerce | L. 23-10-6 | à vérifier |  | protocole-cession |
 | code-de-commerce | L. 23-10-7 | à vérifier |  | cession-fonds, lettre-intention, protocole-cession |
 | code-de-commerce | L. 231-1 | à vérifier |  | redaction-acte |
+| code-de-commerce | L. 232-1 | 2026-11-09 | en vigueur jusqu'au 2027-01-01 | juridique-annuel |
 | code-de-commerce | L. 232-10 | 2026-10-23 |  | juridique-annuel |
 | code-de-commerce | L. 232-11 | 2026-10-23 |  | juridique-annuel |
 | code-de-commerce | L. 232-12 | 2026-10-23 |  | juridique-annuel |
+| code-de-commerce | L. 232-13 | 2026-11-09 |  | juridique-annuel |
 | code-de-commerce | L. 232-21 | 2026-10-23 |  | juridique-annuel |
 | code-de-commerce | L. 232-22 | 2026-10-23 |  | juridique-annuel |
 | code-de-commerce | L. 232-23 | 2026-10-23 |  | juridique-annuel |
 | code-de-commerce | L. 232-25 | 2026-10-23 |  | juridique-annuel |
+| code-de-commerce | L. 233-16 | 2026-11-09 |  | juridique-annuel |
+| code-de-commerce | L. 233-6 | 2026-11-09 |  | juridique-annuel |
 | code-de-commerce | L. 236-1 | 2026-10-23 |  | restructurations |
 | code-de-commerce | L. 236-10 | 2026-10-23 |  | restructurations |
 | code-de-commerce | L. 236-11 | 2026-10-23 |  | restructurations |
@@ -145,6 +149,7 @@ Une entrée 'verifie' a été lue à la source à la date indiquée. Une entrée
 | code-de-commerce | L. 237-2 | à vérifier |  | dissolution-liquidation-tup |
 | code-de-commerce | L. 237-9 | à vérifier |  | dissolution-liquidation-tup |
 | code-de-commerce | L. 430-1 | à vérifier |  | protocole-cession |
+| code-de-commerce | L. 441-14 | 2026-11-09 |  | juridique-annuel |
 | code-de-commerce | L. 442-1 | à vérifier |  | analyse-contrat |
 | code-de-commerce | L. 823-1 | à vérifier |  | juridique-annuel |
 | code-de-commerce | R. 123-105 | 2026-10-23 |  | acte-definitif-titres, redaction-acte |
