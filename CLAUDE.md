@@ -11,6 +11,7 @@
 > 05/11/2026 : contrôleur de livrable v2 — modules F (structure, renvois, termes définis) et G (fidélité au modèle, option `--modele`).
 > 05/11/2026 : le checker exécute le contrôleur en Phase 0 (fichier remis), ce qui l'accroche à la fin de tous les skills de rédaction.
 > 16/11/2026 : `avocat-adverse` lancé automatiquement en sous-agent (lecture seule) avant le contrôle final, sur tout livrable écrit des skills de fond ; étape « meilleure solution » (`socle-eca` § 9).
+> 20/11/2026 : second cerveau `00_Second_Cerveau/REGLES-ET-NOTES.md` (règles de sortie, workflow, notes et avis de Yoann), lu en entier avant tout livrable.
 > 16/11/2026 : connecteur Juriacte (données juridiques internes des sociétés du cabinet), recoupé avec Radar (`socle-eca` § 1 et § 2) ; interdit sur pièce pseudonymisée.
 
 ---
@@ -58,6 +59,7 @@ est désormais interrogé en direct comme connecteur).
 ## 2. Chaîne d'activation de tout livrable
 
 ```
+0. 00_Second_Cerveau/REGLES-ET-NOTES.md → lu en entier (règles de sortie, workflow, notes et avis)
 1. socle-eca § 1   → ouverture du dossier (mémoire, historique, Granola, mails, Radar, Pennylane)
 2. positions-eca   → positions existantes (base Positions ECA)
 3. skill métier    → plan → validation de Yoann → recherche à la source → rédaction
@@ -74,6 +76,7 @@ est désormais interrogé en direct comme connecteur).
 
 | Donnée | Où |
 |---|---|
+| Règles de sortie, workflow, notes et avis de Yoann (second cerveau) | `00_Second_Cerveau/REGLES-ET-NOTES.md` — lu avant tout livrable, enrichi à chaque nouvelle règle |
 | Taux, seuils, délais, articles | À la source primaire au jour du livrable (Légifrance, LibreJustice, Legal Data Hunter, Casus) — jamais dans un skill |
 | Pièges datés (alarmes) | `socle-eca` § 5 |
 | Carte des connecteurs | `socle-eca` § 2 |
