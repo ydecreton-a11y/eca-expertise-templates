@@ -25,6 +25,7 @@
 - Contrôle de 100 % des références en fin de livrable (legal-hallucination-checker), automatiquement, sans exclure un article « stable » ou « connu ». Aucun livrable n'est final avant ce contrôle.
 - Toute référence non lue en entier dans la session est relue à la source avant remise ou marquée « non vérifiée ».
 - Modèles d'actes : vérifier à la source toutes les références du modèle ; signaler tout écart et proposer la clause corrigée.
+- Connecteurs : interroger ceux qui sont pertinents pour la question posée, jamais un seul quand un autre couvre mieux le besoin, mais sans appels redondants ; tenir compte des quotas (Casus, Legal Data Hunter) (harmonisé le 22/11/2026).
 - Connecteur expiré : passer par un autre connecteur couvrant la même source, sans bloquer.
 
 ## 3. Sous-agents
